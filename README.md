@@ -25,7 +25,6 @@ This system leverages Retrieval-Augmented Generation (RAG) and the DeepSeek-R18B
 - Retrieval-augmented responses
 - File and folder-based knowledge injection
 - LightDark mode UI
-- Streamed Markdown-style chat outputs
 
 ---
 
