@@ -24,11 +24,11 @@ default_convo = [{
 }]
 initial_session_id = str(uuid.uuid4())
 
-
+# 初始数据文件路径
 CONVO_FILE = "data_history/saved_conversations.json"
 
 
-# Load history (if exists)
+# 加载历史记录（若存在）
 def load_json(path, default):
     if os.path.exists(path):
         try:
@@ -56,7 +56,7 @@ def save_file(contents, filename):
         f.write(decoded)
     return path
 
-# Save function
+# 保存函数
 def save_to_file():
     os.makedirs("data", exist_ok=True)
     with open(CONVO_FILE, "w", encoding="utf-8") as f:
@@ -68,7 +68,7 @@ saved_conversations = initial_convo
 subject_options = get_dropdown_options_from_folder(data_folder_path)
 
 app.layout = html.Div([
-    dcc.Interval(id="interval-update-subjects", interval=5000, n_intervals=0),  # Check every 5 seconds
+    dcc.Interval(id="interval-update-subjects", interval=5000, n_intervals=0),  # 每5秒检查一次
     dcc.Store(id='theme-store', data='light'),
     dcc.Store(id='chat-history', data=[]),
     dcc.Store(id='saved-conversations', data=initial_convo),
@@ -82,20 +82,20 @@ app.layout = html.Div([
             dbc.Button("☰", id="sidebar-toggle", color="secondary"),
             dbc.Button("💾", id="save-convo", color="success")
         ], vertical=True,
-            style={"position": "absolute", "right": "-48px", "top": "50%", "transform": "translateY(-50%)"}),
+            style={"position": "absolute", "right": "-47px", "top": "50%", "transform": "translateY(-50%)"}),
 
         html.H4("Chat History", className="p-3 border-bottom"),
         dbc.Button("🧹 Clear All", id="clear-convos", color="danger", style={"width": "100%", "marginBottom": "10px"}),
         html.Div(id="sidebar-history", className="overflow-auto", style={"height": "85vh"})
     ], id="sidebar", style={
-        "position": "fixed", "left": "-250px", "width": "250px", "height": "100%",
+        "position": "fixed", "left": "-13vw", "width": "13vw", "height": "100%",
         "transition": "all 0.3s", "backgroundColor": "#f8f9fa", "zIndex": 1000,
         "boxShadow": "2px 0 5px rgba(0,0,0,0.1)"
     }),
 
     dcc.Loading(
         id="loading-indicator",
-        type="circle",  # Or "dot", "default"
+        type="circle",  # 或 "dot", "default"
         color="gray",
         children=html.Div(
             id="loading-message",
@@ -103,7 +103,7 @@ app.layout = html.Div([
             style={
                 "display": "none",
                 "position": "fixed",
-                "bottom": "20px",
+                "bottom": "1.25vh",
                 "left": "50%",
                 "transform": "translateX(-50%)",
                 "background-color": "rgba(0, 0, 0, 0.7)",
@@ -119,7 +119,7 @@ app.layout = html.Div([
     html.Div([
         dbc.Container([
             dbc.Button("🌙/☀️", id="theme-toggle", color="secondary",
-                       style={"position": "fixed", "top": "10px", "right": "20px", "zIndex": 1000}),
+                       style={"position": "fixed", "top": "0.62vh", "right": "0.78vw", "zIndex": 1000}),
 
             html.Div([
                 dcc.Upload(
@@ -128,7 +128,7 @@ app.layout = html.Div([
                     multiple=False,
                     accept=".pdf"
                 )
-            ], style={"position": "fixed", "top": "60px", "right": "20px", "zIndex": 1000}),
+            ], style={"position": "fixed", "top": "5vh", "right": "0.78vw", "zIndex": 1000}),
 
             # Chat Card
 
@@ -139,8 +139,8 @@ app.layout = html.Div([
                         dbc.Col(
                             dcc.Dropdown(
                                 id='subject-dropdown',
-                                options=[], # Initially empty, populated automatically by interval callback
-                                value=None,  # Initially empty, default value set by callback
+                                options=[],  # 初始为空，由 interval 回调自动填充
+                                value=None,  # 初始为空，由回调设置默认值
                                 clearable=False,
                                 style={
                                     'width': '120px',
@@ -157,7 +157,7 @@ app.layout = html.Div([
                     dcc.Loading(html.Div([
                         html.Div(id="history-list", className="overflow-auto",
                                  style={"height": "400px", "overflowY": "auto"}),
-                        html.Div(id="scroll-anchor")  
+                        html.Div(id="scroll-anchor")  # 锚点元素
                     ])),
                     dcc.Interval(id='scroll-interval', interval=500, n_intervals=0, max_intervals=0)
                 ])
@@ -196,9 +196,9 @@ app.layout = html.Div([
                         mode='text-area',
                         autoSize=False,
                         allowClear=True,
-                        placeholder='Please enter your prompt template:',
+                        placeholder='请输入提示词模板：',
                         defaultValue=prompt_based,
-                        status=None,  # Dynamically set status: success or error
+                        status=None,  # 动态设置状态 success / error
                         style={
                             'fontSize': 16,
                             'height': '180px',
@@ -207,7 +207,7 @@ app.layout = html.Div([
                     ),
                     fac.AntdText(id='prompt-feedback', style={'fontSize': 14, 'marginTop': '4px'}),
 
-                    # Keep the button below
+                    # 保留下方按钮
                     dbc.InputGroup(
                         [
                             dbc.Button("Submit", id="submit-btn", n_clicks=0, color="primary")
@@ -217,20 +217,12 @@ app.layout = html.Div([
                 ],
                 className="mb-4",
                 style={
-                    "position": "absolute",
-                    "top": "110px",
-                    "right": "20px",
-                    "width": "10%"
+                    "position": "fixed",
+                    "top": "10vh", "right": "0.78vw", "width": "12vw"
                 }
             )
         ])
     ], id="main-content", style={
-        "width": "100vw",    # Occupy full viewport width
-        "height": "100vh",    # Occupy full viewport height
-        "margin": "0",       # Remove outer margins
-        "padding": "0",      # Remove inner padding
-        "boxSizing": "border-box",  # Include borders and padding in element's total size
-        "overflow": "hidden",  # Smooth transition for all properties
         "transition": "all 0.3s"
     },)
 ], id="main-container", className="light-theme", style={"height": "100vh"})
@@ -272,9 +264,9 @@ def toggle_theme(n):
 def toggle_sidebar(n, style):
     if n is None:
         return style, dash.no_update
-    is_open = style["left"] == "-250px"
-    new_left = "0" if is_open else "-250px"
-    new_margin = "50px" if is_open else "0"
+    is_open = style["left"] == "-13vw"
+    new_left = "0" if is_open else "-13vw"
+    new_margin = "1.95vw" if is_open else "0"
     style["left"] = new_left
     return style, {"marginLeft": new_margin, "transition": "all 0.3s"}
 
@@ -343,7 +335,7 @@ def display_history(history):
     items = []
     for msg in history:
         if msg["role"] == "user":
-            content_element = html.Span(msg["content"])  
+            content_element = html.Span(msg["content"])  # 用户消息为纯文本
         else:
             content_element = dcc.Markdown(msg["content"], style={"whiteSpace": "pre-wrap"})
 
@@ -479,8 +471,23 @@ def update_subject_dropdown(n_intervals):
     return options, options[0]['value']
 
 
+# @app.callback(
+#     [Output("prompt-box", "children"),
+#      Output("prompt-input", "value")],
+#     Input("submit-btn", "n_clicks"),
+#     State("user-input", "value"),
+#     prevent_initial_call=True
+# )
+# def update_prompt(n_clicks, prompt_input):
+#     try:
+#         filled_prompt = prompt_input.format(q=" ", source=' ')
+#     except (KeyError, ValueError, AttributeError) as e:
+#         return html.P("❌ Prompt 格式错误：请输入包含 {q} 的有效模板字符串。", style={"color": "red"}), ""
+#
+#     return html.P(f"✅ Updated Prompt：{prompt_input}", style={"color": "#333"}), ""
 
-# Callback
+
+# 回调
 @app.callback(
     Output('prompt-input', 'status'),
     Output('prompt-feedback', 'children'),
@@ -505,9 +512,9 @@ def validate_prompt(n_clicks, value, checked):
 
 
 
-# Periodic data updates (can be bound to frontend Store changes)
+# 定期更新数据（可以绑定前端 Store 的变化）
 @app.callback(
-    Output('sync-dummy', 'children'),  # Placeholder for hidden div
+    Output('sync-dummy', 'children'),  # hidden div 占位
     Input('saved-conversations', 'data'),
     prevent_initial_call=True
 )
