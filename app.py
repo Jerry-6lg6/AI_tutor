@@ -24,7 +24,7 @@ default_convo = [{
 }]
 initial_session_id = str(uuid.uuid4())
 
-# 初始数据文件路径
+# initialize the file address
 CONVO_FILE = "data_history/saved_conversations.json"
 
 
