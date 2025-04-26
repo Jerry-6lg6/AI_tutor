@@ -24,11 +24,11 @@ default_convo = [{
 }]
 initial_session_id = str(uuid.uuid4())
 
-# initialize the file address
+
 CONVO_FILE = "data_history/saved_conversations.json"
 
 
-# 加载历史记录（若存在）
+# Load history (if exists)
 def load_json(path, default):
     if os.path.exists(path):
         try:
@@ -56,7 +56,7 @@ def save_file(contents, filename):
         f.write(decoded)
     return path
 
-# 保存函数
+# Save function
 def save_to_file():
     os.makedirs("data", exist_ok=True)
     with open(CONVO_FILE, "w", encoding="utf-8") as f:
@@ -68,7 +68,7 @@ saved_conversations = initial_convo
 subject_options = get_dropdown_options_from_folder(data_folder_path)
 
 app.layout = html.Div([
-    dcc.Interval(id="interval-update-subjects", interval=5000, n_intervals=0),  # 每5秒检查一次
+    dcc.Interval(id="interval-update-subjects", interval=5000, n_intervals=0),  # Check every 5 seconds
     dcc.Store(id='theme-store', data='light'),
     dcc.Store(id='chat-history', data=[]),
     dcc.Store(id='saved-conversations', data=initial_convo),
@@ -95,7 +95,7 @@ app.layout = html.Div([
 
     dcc.Loading(
         id="loading-indicator",
-        type="circle",  # 或 "dot", "default"
+        type="circle",  # Or "dot", "default"
         color="gray",
         children=html.Div(
             id="loading-message",
@@ -139,8 +139,8 @@ app.layout = html.Div([
                         dbc.Col(
                             dcc.Dropdown(
                                 id='subject-dropdown',
-                                options=[],  # 初始为空，由 interval 回调自动填充
-                                value=None,  # 初始为空，由回调设置默认值
+                                options=[], # Initially empty, populated automatically by interval callback
+                                value=None,  # Initially empty, default value set by callback
                                 clearable=False,
                                 style={
                                     'width': '120px',
@@ -198,7 +198,7 @@ app.layout = html.Div([
                         allowClear=True,
                         placeholder='请输入提示词模板：',
                         defaultValue=prompt_based,
-                        status=None,  # 动态设置状态 success / error
+                        status=None,  # Dynamically set status: success or error
                         style={
                             'fontSize': 16,
                             'height': '180px',
@@ -207,7 +207,7 @@ app.layout = html.Div([
                     ),
                     fac.AntdText(id='prompt-feedback', style={'fontSize': 14, 'marginTop': '4px'}),
 
-                    # 保留下方按钮
+                    # Keep the button below
                     dbc.InputGroup(
                         [
                             dbc.Button("Submit", id="submit-btn", n_clicks=0, color="primary")
@@ -225,12 +225,12 @@ app.layout = html.Div([
             )
         ])
     ], id="main-content", style={
-        "width": "100vw",    # 占满视窗宽度
-        "height": "100vh",   # 占满视窗高度
-        "margin": "0",       # 消除边距
-        "padding": "0",      # 消除内边距
-        "boxSizing": "border-box",  # 包含边框和内边距
-        "overflow": "hidden",  # 隐藏滚动条（按需调整）
+        "width": "100vw",    # Occupy full viewport width
+        "height": "100vh",    # Occupy full viewport height
+        "margin": "0",       # Remove outer margins
+        "padding": "0",      # Remove inner padding
+        "boxSizing": "border-box",  # Include borders and padding in element's total size
+        "overflow": "hidden",  # Smooth transition for all properties
         "transition": "all 0.3s"
     },)
 ], id="main-container", className="light-theme", style={"height": "100vh"})
@@ -343,7 +343,7 @@ def display_history(history):
     items = []
     for msg in history:
         if msg["role"] == "user":
-            content_element = html.Span(msg["content"])  # 用户消息为纯文本
+            content_element = html.Span(msg["content"])  
         else:
             content_element = dcc.Markdown(msg["content"], style={"whiteSpace": "pre-wrap"})
 
@@ -479,23 +479,8 @@ def update_subject_dropdown(n_intervals):
     return options, options[0]['value']
 
 
-# @app.callback(
-#     [Output("prompt-box", "children"),
-#      Output("prompt-input", "value")],
-#     Input("submit-btn", "n_clicks"),
-#     State("user-input", "value"),
-#     prevent_initial_call=True
-# )
-# def update_prompt(n_clicks, prompt_input):
-#     try:
-#         filled_prompt = prompt_input.format(q=" ", source=' ')
-#     except (KeyError, ValueError, AttributeError) as e:
-#         return html.P("❌ Prompt 格式错误：请输入包含 {q} 的有效模板字符串。", style={"color": "red"}), ""
-#
-#     return html.P(f"✅ Updated Prompt：{prompt_input}", style={"color": "#333"}), ""
 
-
-# 回调
+# Callback
 @app.callback(
     Output('prompt-input', 'status'),
     Output('prompt-feedback', 'children'),
@@ -520,9 +505,9 @@ def validate_prompt(n_clicks, value, checked):
 
 
 
-# 定期更新数据（可以绑定前端 Store 的变化）
+# Periodic data updates (can be bound to frontend Store changes)
 @app.callback(
-    Output('sync-dummy', 'children'),  # hidden div 占位
+    Output('sync-dummy', 'children'),  # Placeholder for hidden div
     Input('saved-conversations', 'data'),
     prevent_initial_call=True
 )
