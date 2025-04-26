@@ -27,6 +27,32 @@ initial_session_id = str(uuid.uuid4())
 # 初始数据文件路径
 CONVO_FILE = "data_history/saved_conversations.json"
 
+app.index_string = '''
+<!DOCTYPE html>
+<html>
+    <head>
+        {%metas%}
+        <title>{%title%}</title>
+        {%favicon%}
+        {%css%}
+        <style>
+            html, body {
+                overflow: hidden;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        {%app_entry%}
+        <footer>
+            {%config%}
+            {%scripts%}
+            {%renderer%}
+        </footer>
+    </body>
+</html>
+'''
+
 
 # 加载历史记录（若存在）
 def load_json(path, default):
@@ -156,7 +182,7 @@ app.layout = html.Div([
                 dbc.CardBody([
                     dcc.Loading(html.Div([
                         html.Div(id="history-list", className="overflow-auto",
-                                 style={"height": "400px", "overflowY": "auto"}),
+                                 style={"height": "40vh", "overflowY": "auto"}),
                         html.Div(id="scroll-anchor")  # 锚点元素
                     ])),
                     dcc.Interval(id='scroll-interval', interval=500, n_intervals=0, max_intervals=0)
@@ -225,7 +251,7 @@ app.layout = html.Div([
     ], id="main-content", style={
         "transition": "all 0.3s"
     },)
-], id="main-container", className="light-theme", style={"height": "100vh"})
+], id="main-container", className="light-theme", style={"height": "100vh", "overflow": "hidden"})
 
 # Clientside scroll callback
 app.clientside_callback(
