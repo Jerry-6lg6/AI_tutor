@@ -24,7 +24,7 @@ default_convo = [{
 }]
 initial_session_id = str(uuid.uuid4())
 
-# Initial data file path
+
 CONVO_FILE = "data_history/saved_conversations.json"
 
 
