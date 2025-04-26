@@ -1,0 +1,51 @@
+[
+    {
+        "title": "SQL Hosting",
+        "text": [
+            "If you want your web site to be able to store and retrieve data from a \ndatabase, your web server should have access to a database-system that uses the \nSQL language.",
+            "If your web server is hosted by an Internet Service Provider (ISP), you will have to look for SQL hosting plans.",
+            "The most common SQL hosting databases are MS SQL Server, Oracle, MySQL, and MS Access."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "MS SQL Server",
+        "text": [
+            "Microsoft's SQL Server is a popular database software for  database-driven web sites \nwith high traffic.",
+            "SQL Server is a very powerful, robust and full featured SQL database system."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Oracle",
+        "text": [
+            "Oracle is also a popular database software for  database-driven web sites \nwith high traffic.",
+            "Oracle is a very powerful, robust and full featured SQL database system."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "MySQL",
+        "text": [
+            "MySQL is also a popular database software for web sites.",
+            "MySQL is a very powerful, robust and full featured SQL database system.",
+            "MySQL is an inexpensive \nalternative to the expensive Microsoft and Oracle solutions."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "MS Access",
+        "text": [
+            "When a web site requires only a simple database, Microsoft Access can be a \nsolution.",
+            "MS Access is not well suited for very high-traffic, and not as powerful as \nMySQL, SQL Server, or Oracle.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

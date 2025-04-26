@@ -1,0 +1,15 @@
+[
+    {
+        "title": "The else Statement",
+        "text": [
+            "Use the else statement to specify a block of code to be executed if the condition is false.",
+            "Syntax\nif (condition) {\n  // block of code to be executed if the condition is true\n} else {\n  // block of code to be executed if the condition is false\n}",
+            "Example\nint time = 20;\nif (time < 18) {\n  System.out.println(\"Good day.\");\n} else {\n  System.out.println(\"Good evening.\");\n}\n// Outputs \"Good evening.\"\n\n\nTry it Yourself »",
+            "In the example above, time (20) is greater than 18, so the condition is false. \nBecause of this, we move on to the else condition and print to the screen \"Good \nevening\". If the time was less than 18, the program would print \"Good day\".",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

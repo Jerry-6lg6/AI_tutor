@@ -1,0 +1,586 @@
+[
+    {
+        "title": "SQL Intro",
+        "url": "https://www.w3schools.com/sql/sql_intro.asp"
+    },
+    {
+        "title": "SQL Syntax",
+        "url": "https://www.w3schools.com/sql/sql_syntax.asp"
+    },
+    {
+        "title": "SQL Select",
+        "url": "https://www.w3schools.com/sql/sql_select.asp"
+    },
+    {
+        "title": "SQL Select Distinct",
+        "url": "https://www.w3schools.com/sql/sql_distinct.asp"
+    },
+    {
+        "title": "SQL Where",
+        "url": "https://www.w3schools.com/sql/sql_where.asp"
+    },
+    {
+        "title": "SQL Order By",
+        "url": "https://www.w3schools.com/sql/sql_orderby.asp"
+    },
+    {
+        "title": "SQL And",
+        "url": "https://www.w3schools.com/sql/sql_and.asp"
+    },
+    {
+        "title": "SQL Or",
+        "url": "https://www.w3schools.com/sql/sql_or.asp"
+    },
+    {
+        "title": "SQL Not",
+        "url": "https://www.w3schools.com/sql/sql_not.asp"
+    },
+    {
+        "title": "SQL Insert Into",
+        "url": "https://www.w3schools.com/sql/sql_insert.asp"
+    },
+    {
+        "title": "SQL Null Values",
+        "url": "https://www.w3schools.com/sql/sql_null_values.asp"
+    },
+    {
+        "title": "SQL Update",
+        "url": "https://www.w3schools.com/sql/sql_update.asp"
+    },
+    {
+        "title": "SQL Delete",
+        "url": "https://www.w3schools.com/sql/sql_delete.asp"
+    },
+    {
+        "title": "SQL Select Top",
+        "url": "https://www.w3schools.com/sql/sql_top.asp"
+    },
+    {
+        "title": "SQL Aggregate Functions",
+        "url": "https://www.w3schools.com/sql/sql_aggregate_functions.asp"
+    },
+    {
+        "title": "SQL Min and Max",
+        "url": "https://www.w3schools.com/sql/sql_min_max.asp"
+    },
+    {
+        "title": "SQL Count",
+        "url": "https://www.w3schools.com/sql/sql_count.asp"
+    },
+    {
+        "title": "SQL Sum",
+        "url": "https://www.w3schools.com/sql/sql_sum.asp"
+    },
+    {
+        "title": "SQL Avg",
+        "url": "https://www.w3schools.com/sql/sql_avg.asp"
+    },
+    {
+        "title": "SQL Like",
+        "url": "https://www.w3schools.com/sql/sql_like.asp"
+    },
+    {
+        "title": "SQL Wildcards",
+        "url": "https://www.w3schools.com/sql/sql_wildcards.asp"
+    },
+    {
+        "title": "SQL In",
+        "url": "https://www.w3schools.com/sql/sql_in.asp"
+    },
+    {
+        "title": "SQL Between",
+        "url": "https://www.w3schools.com/sql/sql_between.asp"
+    },
+    {
+        "title": "SQL Aliases",
+        "url": "https://www.w3schools.com/sql/sql_alias.asp"
+    },
+    {
+        "title": "SQL Joins",
+        "url": "https://www.w3schools.com/sql/sql_join.asp"
+    },
+    {
+        "title": "SQL Inner Join",
+        "url": "https://www.w3schools.com/sql/sql_join_inner.asp"
+    },
+    {
+        "title": "SQL Left Join",
+        "url": "https://www.w3schools.com/sql/sql_join_left.asp"
+    },
+    {
+        "title": "SQL Right Join",
+        "url": "https://www.w3schools.com/sql/sql_join_right.asp"
+    },
+    {
+        "title": "SQL Full Join",
+        "url": "https://www.w3schools.com/sql/sql_join_full.asp"
+    },
+    {
+        "title": "SQL Self Join",
+        "url": "https://www.w3schools.com/sql/sql_join_self.asp"
+    },
+    {
+        "title": "SQL Union",
+        "url": "https://www.w3schools.com/sql/sql_union.asp"
+    },
+    {
+        "title": "SQL Group By",
+        "url": "https://www.w3schools.com/sql/sql_groupby.asp"
+    },
+    {
+        "title": "SQL Having",
+        "url": "https://www.w3schools.com/sql/sql_having.asp"
+    },
+    {
+        "title": "SQL Exists",
+        "url": "https://www.w3schools.com/sql/sql_exists.asp"
+    },
+    {
+        "title": "SQL Any, All",
+        "url": "https://www.w3schools.com/sql/sql_any_all.asp"
+    },
+    {
+        "title": "SQL Select Into",
+        "url": "https://www.w3schools.com/sql/sql_select_into.asp"
+    },
+    {
+        "title": "SQL Insert Into Select",
+        "url": "https://www.w3schools.com/sql/sql_insert_into_select.asp"
+    },
+    {
+        "title": "SQL Case",
+        "url": "https://www.w3schools.com/sql/sql_case.asp"
+    },
+    {
+        "title": "SQL Null Functions",
+        "url": "https://www.w3schools.com/sql/sql_isnull.asp"
+    },
+    {
+        "title": "SQL Stored Procedures",
+        "url": "https://www.w3schools.com/sql/sql_stored_procedures.asp"
+    },
+    {
+        "title": "SQL Comments",
+        "url": "https://www.w3schools.com/sql/sql_comments.asp"
+    },
+    {
+        "title": "SQL Operators",
+        "url": "https://www.w3schools.com/sql/sql_operators.asp"
+    },
+    {
+        "title": "SQL Create DB",
+        "url": "https://www.w3schools.com/sql/sql_create_db.asp"
+    },
+    {
+        "title": "SQL Drop DB",
+        "url": "https://www.w3schools.com/sql/sql_drop_db.asp"
+    },
+    {
+        "title": "SQL Backup DB",
+        "url": "https://www.w3schools.com/sql/sql_backup_db.asp"
+    },
+    {
+        "title": "SQL Create Table",
+        "url": "https://www.w3schools.com/sql/sql_create_table.asp"
+    },
+    {
+        "title": "SQL Drop Table",
+        "url": "https://www.w3schools.com/sql/sql_drop_table.asp"
+    },
+    {
+        "title": "SQL Alter Table",
+        "url": "https://www.w3schools.com/sql/sql_alter.asp"
+    },
+    {
+        "title": "SQL Constraints",
+        "url": "https://www.w3schools.com/sql/sql_constraints.asp"
+    },
+    {
+        "title": "SQL Not Null",
+        "url": "https://www.w3schools.com/sql/sql_notnull.asp"
+    },
+    {
+        "title": "SQL Unique",
+        "url": "https://www.w3schools.com/sql/sql_unique.asp"
+    },
+    {
+        "title": "SQL Primary Key",
+        "url": "https://www.w3schools.com/sql/sql_primarykey.asp"
+    },
+    {
+        "title": "SQL Foreign Key",
+        "url": "https://www.w3schools.com/sql/sql_foreignkey.asp"
+    },
+    {
+        "title": "SQL Check",
+        "url": "https://www.w3schools.com/sql/sql_check.asp"
+    },
+    {
+        "title": "SQL Default",
+        "url": "https://www.w3schools.com/sql/sql_default.asp"
+    },
+    {
+        "title": "SQL Index",
+        "url": "https://www.w3schools.com/sql/sql_create_index.asp"
+    },
+    {
+        "title": "SQL Auto Increment",
+        "url": "https://www.w3schools.com/sql/sql_autoincrement.asp"
+    },
+    {
+        "title": "SQL Dates",
+        "url": "https://www.w3schools.com/sql/sql_dates.asp"
+    },
+    {
+        "title": "SQL Views",
+        "url": "https://www.w3schools.com/sql/sql_view.asp"
+    },
+    {
+        "title": "SQL Injection",
+        "url": "https://www.w3schools.com/sql/sql_injection.asp"
+    },
+    {
+        "title": "SQL Hosting",
+        "url": "https://www.w3schools.com/sql/sql_hosting.asp"
+    },
+    {
+        "title": "SQL Data Types",
+        "url": "https://www.w3schools.com/sql/sql_datatypes.asp"
+    },
+    {
+        "title": "SQL Keywords",
+        "url": "https://www.w3schools.com/sql/sql_ref_keywords.asp"
+    },
+    {
+        "title": "ADD",
+        "url": "https://www.w3schools.com/sql/sql_ref_add.asp"
+    },
+    {
+        "title": "ADD CONSTRAINT",
+        "url": "https://www.w3schools.com/sql/sql_ref_add_constraint.asp"
+    },
+    {
+        "title": "ALL",
+        "url": "https://www.w3schools.com/sql/sql_ref_all.asp"
+    },
+    {
+        "title": "ALTER",
+        "url": "https://www.w3schools.com/sql/sql_ref_alter.asp"
+    },
+    {
+        "title": "ALTER COLUMN",
+        "url": "https://www.w3schools.com/sql/sql_ref_alter_column.asp"
+    },
+    {
+        "title": "ALTER TABLE",
+        "url": "https://www.w3schools.com/sql/sql_ref_alter_table.asp"
+    },
+    {
+        "title": "AND",
+        "url": "https://www.w3schools.com/sql/sql_ref_and.asp"
+    },
+    {
+        "title": "ANY",
+        "url": "https://www.w3schools.com/sql/sql_ref_any.asp"
+    },
+    {
+        "title": "AS",
+        "url": "https://www.w3schools.com/sql/sql_ref_as.asp"
+    },
+    {
+        "title": "ASC",
+        "url": "https://www.w3schools.com/sql/sql_ref_asc.asp"
+    },
+    {
+        "title": "BACKUP DATABASE",
+        "url": "https://www.w3schools.com/sql/sql_ref_backup_database.asp"
+    },
+    {
+        "title": "BETWEEN",
+        "url": "https://www.w3schools.com/sql/sql_ref_between.asp"
+    },
+    {
+        "title": "CASE",
+        "url": "https://www.w3schools.com/sql/sql_ref_case.asp"
+    },
+    {
+        "title": "CHECK",
+        "url": "https://www.w3schools.com/sql/sql_ref_check.asp"
+    },
+    {
+        "title": "COLUMN",
+        "url": "https://www.w3schools.com/sql/sql_ref_column.asp"
+    },
+    {
+        "title": "CONSTRAINT",
+        "url": "https://www.w3schools.com/sql/sql_ref_constraint.asp"
+    },
+    {
+        "title": "CREATE",
+        "url": "https://www.w3schools.com/sql/sql_ref_create.asp"
+    },
+    {
+        "title": "CREATE DATABASE",
+        "url": "https://www.w3schools.com/sql/sql_ref_create_database.asp"
+    },
+    {
+        "title": "CREATE INDEX",
+        "url": "https://www.w3schools.com/sql/sql_ref_create_index.asp"
+    },
+    {
+        "title": "CREATE OR REPLACE VIEW",
+        "url": "https://www.w3schools.com/sql/sql_ref_create_or_replace_view.asp"
+    },
+    {
+        "title": "CREATE TABLE",
+        "url": "https://www.w3schools.com/sql/sql_ref_create_table.asp"
+    },
+    {
+        "title": "CREATE PROCEDURE",
+        "url": "https://www.w3schools.com/sql/sql_ref_create_procedure.asp"
+    },
+    {
+        "title": "CREATE UNIQUE INDEX",
+        "url": "https://www.w3schools.com/sql/sql_ref_create_unique_index.asp"
+    },
+    {
+        "title": "CREATE VIEW",
+        "url": "https://www.w3schools.com/sql/sql_ref_create_view.asp"
+    },
+    {
+        "title": "DATABASE",
+        "url": "https://www.w3schools.com/sql/sql_ref_database.asp"
+    },
+    {
+        "title": "DEFAULT",
+        "url": "https://www.w3schools.com/sql/sql_ref_default.asp"
+    },
+    {
+        "title": "DELETE",
+        "url": "https://www.w3schools.com/sql/sql_ref_delete.asp"
+    },
+    {
+        "title": "DESC",
+        "url": "https://www.w3schools.com/sql/sql_ref_desc.asp"
+    },
+    {
+        "title": "DISTINCT",
+        "url": "https://www.w3schools.com/sql/sql_ref_distinct.asp"
+    },
+    {
+        "title": "DROP",
+        "url": "https://www.w3schools.com/sql/sql_ref_drop.asp"
+    },
+    {
+        "title": "DROP COLUMN",
+        "url": "https://www.w3schools.com/sql/sql_ref_drop_column.asp"
+    },
+    {
+        "title": "DROP CONSTRAINT",
+        "url": "https://www.w3schools.com/sql/sql_ref_drop_constraint.asp"
+    },
+    {
+        "title": "DROP DATABASE",
+        "url": "https://www.w3schools.com/sql/sql_ref_drop_database.asp"
+    },
+    {
+        "title": "DROP DEFAULT",
+        "url": "https://www.w3schools.com/sql/sql_ref_drop_default.asp"
+    },
+    {
+        "title": "DROP INDEX",
+        "url": "https://www.w3schools.com/sql/sql_ref_drop_index.asp"
+    },
+    {
+        "title": "DROP TABLE",
+        "url": "https://www.w3schools.com/sql/sql_ref_drop_table.asp"
+    },
+    {
+        "title": "DROP VIEW",
+        "url": "https://www.w3schools.com/sql/sql_ref_drop_view.asp"
+    },
+    {
+        "title": "EXEC",
+        "url": "https://www.w3schools.com/sql/sql_ref_exec.asp"
+    },
+    {
+        "title": "EXISTS",
+        "url": "https://www.w3schools.com/sql/sql_ref_exists.asp"
+    },
+    {
+        "title": "FOREIGN KEY",
+        "url": "https://www.w3schools.com/sql/sql_ref_foreign_key.asp"
+    },
+    {
+        "title": "FROM",
+        "url": "https://www.w3schools.com/sql/sql_ref_from.asp"
+    },
+    {
+        "title": "FULL OUTER JOIN",
+        "url": "https://www.w3schools.com/sql/sql_ref_full_outer_join.asp"
+    },
+    {
+        "title": "GROUP BY",
+        "url": "https://www.w3schools.com/sql/sql_ref_group_by.asp"
+    },
+    {
+        "title": "HAVING",
+        "url": "https://www.w3schools.com/sql/sql_ref_having.asp"
+    },
+    {
+        "title": "IN",
+        "url": "https://www.w3schools.com/sql/sql_ref_in.asp"
+    },
+    {
+        "title": "INDEX",
+        "url": "https://www.w3schools.com/sql/sql_ref_index.asp"
+    },
+    {
+        "title": "INNER JOIN",
+        "url": "https://www.w3schools.com/sql/sql_ref_inner_join.asp"
+    },
+    {
+        "title": "INSERT INTO",
+        "url": "https://www.w3schools.com/sql/sql_ref_insert_into.asp"
+    },
+    {
+        "title": "INSERT INTO SELECT",
+        "url": "https://www.w3schools.com/sql/sql_ref_insert_into_select.asp"
+    },
+    {
+        "title": "IS NULL",
+        "url": "https://www.w3schools.com/sql/sql_ref_is_null.asp"
+    },
+    {
+        "title": "IS NOT NULL",
+        "url": "https://www.w3schools.com/sql/sql_ref_is_not_null.asp"
+    },
+    {
+        "title": "JOIN",
+        "url": "https://www.w3schools.com/sql/sql_ref_join.asp"
+    },
+    {
+        "title": "LEFT JOIN",
+        "url": "https://www.w3schools.com/sql/sql_ref_left_join.asp"
+    },
+    {
+        "title": "LIKE",
+        "url": "https://www.w3schools.com/sql/sql_ref_like.asp"
+    },
+    {
+        "title": "LIMIT",
+        "url": "https://www.w3schools.com/sql/sql_ref_limit.asp"
+    },
+    {
+        "title": "NOT",
+        "url": "https://www.w3schools.com/sql/sql_ref_not.asp"
+    },
+    {
+        "title": "NOT NULL",
+        "url": "https://www.w3schools.com/sql/sql_ref_not_null.asp"
+    },
+    {
+        "title": "OR",
+        "url": "https://www.w3schools.com/sql/sql_ref_or.asp"
+    },
+    {
+        "title": "ORDER BY",
+        "url": "https://www.w3schools.com/sql/sql_ref_order_by.asp"
+    },
+    {
+        "title": "OUTER JOIN",
+        "url": "https://www.w3schools.com/sql/sql_ref_outer_join.asp"
+    },
+    {
+        "title": "PRIMARY KEY",
+        "url": "https://www.w3schools.com/sql/sql_ref_primary_key.asp"
+    },
+    {
+        "title": "PROCEDURE",
+        "url": "https://www.w3schools.com/sql/sql_ref_procedure.asp"
+    },
+    {
+        "title": "RIGHT JOIN",
+        "url": "https://www.w3schools.com/sql/sql_ref_right_join.asp"
+    },
+    {
+        "title": "ROWNUM",
+        "url": "https://www.w3schools.com/sql/sql_ref_rownum.asp"
+    },
+    {
+        "title": "SELECT",
+        "url": "https://www.w3schools.com/sql/sql_ref_select.asp"
+    },
+    {
+        "title": "SELECT DISTINCT",
+        "url": "https://www.w3schools.com/sql/sql_ref_select_distinct.asp"
+    },
+    {
+        "title": "SELECT INTO",
+        "url": "https://www.w3schools.com/sql/sql_ref_select_into.asp"
+    },
+    {
+        "title": "SELECT TOP",
+        "url": "https://www.w3schools.com/sql/sql_ref_select_top.asp"
+    },
+    {
+        "title": "SET",
+        "url": "https://www.w3schools.com/sql/sql_ref_set.asp"
+    },
+    {
+        "title": "TABLE",
+        "url": "https://www.w3schools.com/sql/sql_ref_table.asp"
+    },
+    {
+        "title": "TOP",
+        "url": "https://www.w3schools.com/sql/sql_ref_top.asp"
+    },
+    {
+        "title": "TRUNCATE TABLE",
+        "url": "https://www.w3schools.com/sql/sql_ref_truncate_table.asp"
+    },
+    {
+        "title": "UNION",
+        "url": "https://www.w3schools.com/sql/sql_ref_union.asp"
+    },
+    {
+        "title": "UNION ALL",
+        "url": "https://www.w3schools.com/sql/sql_ref_union_all.asp"
+    },
+    {
+        "title": "UNIQUE",
+        "url": "https://www.w3schools.com/sql/sql_ref_unique.asp"
+    },
+    {
+        "title": "UPDATE",
+        "url": "https://www.w3schools.com/sql/sql_ref_update.asp"
+    },
+    {
+        "title": "VALUES",
+        "url": "https://www.w3schools.com/sql/sql_ref_values.asp"
+    },
+    {
+        "title": "VIEW",
+        "url": "https://www.w3schools.com/sql/sql_ref_view.asp"
+    },
+    {
+        "title": "WHERE",
+        "url": "https://www.w3schools.com/sql/sql_ref_where.asp"
+    },
+    {
+        "title": "MySQL Functions",
+        "url": "https://www.w3schools.com/sql/sql_ref_mysql.asp"
+    },
+    {
+        "title": "SQL Server Functions",
+        "url": "https://www.w3schools.com/sql/sql_ref_sqlserver.asp"
+    },
+    {
+        "title": "MS Access Functions",
+        "url": "https://www.w3schools.com/sql/sql_ref_msaccess.asp"
+    },
+    {
+        "title": "SQL Quick Ref",
+        "url": "https://www.w3schools.com/sql/sql_quickref.asp"
+    }
+]

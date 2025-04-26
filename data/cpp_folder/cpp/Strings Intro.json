@@ -1,0 +1,26 @@
+[
+    {
+        "title": "C++ Strings",
+        "text": [
+            "Strings are used for storing text/characters.",
+            "For example, \"Hello World\" is a string.",
+            "A string variable contains a collection of characters surrounded by double quotes:",
+            "Example\nCreate a variable of type string and assign it a value:\n\n  string greeting = \"Hello\";",
+            "To use strings, you must include an additional header file in the source \ncode, the <string> library:",
+            "Example\n\n  // Include the string library#include <string>// Create a string variablestring greeting = \"Hello\";\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string greeting = \"Hello\";"
+            },
+            {
+                "heading": "Example",
+                "code": "// Include the string library#include <string>// Create a string variablestring greeting = \"Hello\";"
+            }
+        ],
+        "tables": []
+    }
+]

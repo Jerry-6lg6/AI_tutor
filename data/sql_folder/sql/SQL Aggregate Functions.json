@@ -1,0 +1,15 @@
+[
+    {
+        "title": "SQL Aggregate Functions",
+        "text": [
+            "An aggregate function is a function that performs a calculation on a set of \nvalues, and returns a single value.",
+            "Aggregate functions are often used with the GROUP \nBY clause of the SELECT \nstatement. The GROUP BY clause splits the result-set into groups of values and \nthe aggregate function can be used to return a single value for each group.",
+            "The most commonly used SQL aggregate functions are:",
+            "Aggregate functions ignore null values (except for COUNT()).",
+            "We will go through the aggregate functions above in the next chapters.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

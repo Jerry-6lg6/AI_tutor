@@ -1,0 +1,31 @@
+[
+    {
+        "title": "HEX Color Values",
+        "text": [
+            "In HTML, a color can be specified using a hexadecimal value in \nthe form:",
+            "#rrggbb",
+            "Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).",
+            "For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other \ntwo (green and blue) are set to 00.",
+            "Another example, #00ff00 is displayed as green, \nbecause green is set to its highest value (ff), and the other two (red and blue) are \nset to 00.",
+            "To display black, set all color parameters to 00, like this: #000000.",
+            "To display white, set all color parameters to ff, like \nthis: #ffffff.",
+            "Experiment by mixing the HEX values below:",
+            "RED\n\nff\n\n\nGREEN\n\n0\n\n\nBLUE\n\n0",
+            "Example\n\n\n\n#ff0000\n\n\n#0000ff\n\n\n#3cb371\n\n\n#ee82ee\n\n\n#ffa500\n\n\n#6a5acd\n\n\n\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Shades of Gray",
+        "text": [
+            "Shades of gray are often defined using equal values for all three parameters:",
+            "Example\n\n\n\n#404040\n\n\n#686868\n\n\n#a0a0a0\n\n\n#bebebe\n\n\n#dcdcdc\n\n\n#f8f8f8\n\n\n\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

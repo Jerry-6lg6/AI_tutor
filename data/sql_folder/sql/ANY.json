@@ -1,0 +1,24 @@
+[
+    {
+        "title": "ANY",
+        "text": [
+            "The ANY command returns true if any of the subquery values meet \nthe \ncondition.",
+            "The following SQL statement returns TRUE and lists the productnames if it \nfinds ANY records in the OrderDetails table where quantity = 10:",
+            "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY (SELECT \n  ProductID FROM OrderDetails WHERE Quantity = 10);\n\n  Try it Yourself »",
+            "The following SQL statement returns TRUE and lists the productnames if it \nfinds ANY records in the OrderDetails table where quantity > 99:",
+            "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY (SELECT ProductID \n  FROM OrderDetails WHERE Quantity > 99);\n\n  Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY (SELECT \n  ProductID FROM OrderDetails WHERE Quantity = 10);"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY (SELECT ProductID \n  FROM OrderDetails WHERE Quantity > 99);"
+            }
+        ],
+        "tables": []
+    }
+]

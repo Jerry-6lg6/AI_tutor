@@ -1,0 +1,196 @@
+[
+    {
+        "title": "Why SOAP?",
+        "text": [
+            "It is important for web applications to be able to communicate over the Internet.",
+            "The best way to communicate between applications is over HTTP,\nbecause HTTP is supported by all Internet browsers and\nservers. SOAP was created to accomplish this.",
+            "SOAP provides a way to communicate between applications running on different\noperating systems, with different technologies and programming\nlanguages."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SOAP Building Blocks",
+        "text": [
+            "A SOAP message is an ordinary XML document containing the following elements:",
+            "All the elements above are declared in the default namespace for the SOAP envelope:",
+            "http://www.w3.org/2003/05/soap-envelope",
+            "and the default namespace for SOAP encoding and data types is:",
+            "http://www.w3.org/2003/05/soap-encoding"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Syntax Rules",
+        "text": [
+            "Here are some important syntax rules:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Skeleton SOAP Message",
+        "text": [
+            "<?xml version=\"1.0\"?>\n<soap:Envelope\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n<soap:Header>\n  ...\n</soap:Header>\n<soap:Body>\n  ...\n   \n  <soap:Fault>\n     \n    ...\n   \n  </soap:Fault>\n</soap:Body>\n</soap:Envelope>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The SOAP Envelope Element",
+        "text": [
+            "The required SOAP Envelope element is the root element of a SOAP message. This element defines the XML document as a SOAP message.",
+            "<?xml version=\"1.0\"?>\n<soap:Envelope\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n   \n  ...\n   \n  Message information goes here\n   \n  ...\n</soap:Envelope>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The xmlns:soap Namespace",
+        "text": [
+            "Notice the xmlns:soap namespace in the example above. It should always have the value of: \"http://www.w3.org/2003/05/soap-envelope\".",
+            "The namespace defines the Envelope as a SOAP Envelope.",
+            "If a different namespace is used, the application generates an error and discards the message."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The encodingStyle Attribute",
+        "text": [
+            "The encodingStyle attribute is used to define the data types used in the \ndocument. This attribute may appear on any SOAP element, and applies to the element's contents and all child elements.",
+            "A SOAP message has no default encoding.",
+            "soap:encodingStyle=\"URI\"",
+            "<?xml version=\"1.0\"?>\n<soap:Envelope\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n   \n  ...\n   \n  Message information goes here\n   \n  ...\n</soap:Envelope>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The SOAP Header Element",
+        "text": [
+            "The optional  SOAP Header element contains application-specific information (like authentication, payment, etc) about the SOAP message.",
+            "If the Header element is present, it must be the first child element of the Envelope element.",
+            "Note: All immediate child elements of the Header element must be namespace-qualified.",
+            "<?xml version=\"1.0\"?>\n<soap:Envelope\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n<soap:Header>\n \n<m:Trans xmlns:m=\"https://www.w3schools.com/transaction/\"\n \nsoap:mustUnderstand=\"1\">234\n \n</m:Trans>\n</soap:Header>...\n...\n</soap:Envelope>",
+            "The example above contains a header with a \"Trans\" element, a \"mustUnderstand\" \nattribute with a value of 1, and a value of 234.",
+            "SOAP defines three attributes in the default namespace. These attributes are: mustUnderstand, \nactor, and encodingStyle.",
+            "The attributes defined in the SOAP Header defines how a recipient should process the SOAP message."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The mustUnderstand Attribute",
+        "text": [
+            "The SOAP mustUnderstand attribute can be used to indicate whether a header entry is mandatory or optional for the recipient to process.",
+            "If you add mustUnderstand=\"1\" to a child element of the Header element it indicates that the receiver processing the Header must recognize the element. If \nthe receiver does not recognize the element it will fail when processing the Header.",
+            "<?xml version=\"1.0\"?>\n<soap:Envelope\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n<soap:Header>\n \n<m:Trans xmlns:m=\"https://www.w3schools.com/transaction/\"\n \nsoap:mustUnderstand=\"1\">234\n \n</m:Trans>\n</soap:Header>\n...\n...\n</soap:Envelope>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The actor Attribute",
+        "text": [
+            "A SOAP message may travel from a sender to a receiver by passing different \nendpoints along the message path. However, not all parts of a SOAP message may be intended for the ultimate \nendpoint, instead, it may be intended for one or more of the endpoints on the message path.",
+            "The SOAP actor attribute is used to address the Header element to a specific endpoint.",
+            "<?xml version=\"1.0\"?>\n<soap:Envelope\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n<soap:Header>\n \n<m:Trans xmlns:m=\"https://www.w3schools.com/transaction/\"\n \nsoap:actor=\"https://www.w3schools.com/code/\">234\n \n</m:Trans>\n</soap:Header>...\n...</soap:Envelope>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The encodingStyle Attribute",
+        "text": [
+            "The encodingStyle attribute is used to define the data types used in the \ndocument. This attribute may appear on any SOAP element, and it will apply to that \nelement's contents and all child elements.",
+            "A SOAP message has no default encoding.",
+            "soap:encodingStyle=\"URI\""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The SOAP Body Element",
+        "text": [
+            "The required SOAP Body element contains the actual SOAP message intended for the ultimate endpoint of the message.",
+            "Immediate child elements of the SOAP Body element may be namespace-qualified.",
+            "<?xml version=\"1.0\"?>\n<soap:Envelope\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n<soap:Body>\n    \n   <m:GetPrice xmlns:m=\"https://www.w3schools.com/prices\">\n         \n      <m:Item>Apples</m:Item>\n    \n   </m:GetPrice>\n</soap:Body>\n</soap:Envelope>",
+            "The example above requests the price of apples. Note that the m:GetPrice and \nthe Item elements above are application-specific elements. They are not a part of the SOAP namespace.",
+            "A SOAP response could look something like this:",
+            "<?xml version=\"1.0\"?>\n<soap:Envelope\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n<soap:Body>\n    \n   <m:GetPriceResponse xmlns:m=\"https://www.w3schools.com/prices\">\n         \n      <m:Price>1.90</m:Price>\n    \n   </m:GetPriceResponse>\n</soap:Body>\n</soap:Envelope>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The SOAP Fault Element",
+        "text": [
+            "The optional SOAP Fault element is used to indicate error \nmessages.",
+            "The  SOAP Fault element holds errors and \nstatus information for a SOAP message.",
+            "If a Fault element is present, it must appear as a child element\nof the Body element. A Fault element can only appear once in a SOAP message.",
+            "The SOAP Fault element has the following sub elements:",
+            "The faultcode values defined below must be used in the faultcode element when \ndescribing faults:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The HTTP Protocol",
+        "text": [
+            "HTTP communicates over TCP/IP. An HTTP client connects to an HTTP server using TCP. After establishing a connection, the client can send an HTTP request message to the server:",
+            "POST /item HTTP/1.1\nHost: 189.123.255.239\nContent-Type: text/plain\nContent-Length: 200",
+            "The server then processes the request and sends an HTTP response back to the client. The response contains a status code that indicates the status of the request:",
+            "200 OK\nContent-Type: text/plain\nContent-Length: 200",
+            "In the example above, the server returned a status code of 200. This is the standard success code for HTTP.",
+            "If the server could not decode the request, it could have returned something like this:",
+            "400 Bad Request\nContent-Length: 0"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SOAP Binding",
+        "text": [
+            "The SOAP specification defines the structure of the SOAP messages, not how \nthey are exchanged. This gap is filled by what is called \"SOAP Bindings\". SOAP \nbindings are mechanisms which allow SOAP messages to be effectively exchanged \nusing a transport protocol.",
+            "Most SOAP implementations provide bindings for common transport protocols, \nsuch as HTTP or SMTP.",
+            "HTTP is synchronous and widely used. A SOAP HTTP request specifies at least two HTTP headers: Content-Type and Content-Length.",
+            "SMTP is asynchronous and is used in last resort or particular cases.",
+            "Java implementations of SOAP usually provide a specific binding for the JMS \n(Java Messaging System) protocol."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Content-Type",
+        "text": [
+            "The Content-Type header for a SOAP request and response defines the MIME type for the message and the \ncharacter encoding (optional) used for the XML body of the request or response.",
+            "Content-Type: MIMEType; charset=character-encoding",
+            "POST /item HTTP/1.1\nContent-Type: application/soap+xml; charset=utf-8"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Content-Length",
+        "text": [
+            "The Content-Length header for a SOAP request and response specifies the number of bytes in the body of the request or response.",
+            "Content-Length: bytes",
+            "POST /item HTTP/1.1\nContent-Type: application/soap+xml; charset=utf-8\nContent-Length: 250"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "A SOAP Example",
+        "text": [
+            "In the example below, a GetStockPrice request is sent to a server. The request has a StockName parameter,\nand a Price parameter that will be returned in the response. The namespace for the function is defined in \"http://www.example.org/stock\".",
+            "HTTP/1.1 200 OK\nContent-Type: application/soap+xml; charset=utf-8\nContent-Length: nnn\n<?xml version=\"1.0\"?>\n<soap:Envelope\nxmlns:soap=\"http://www.w3.org/2003/05/soap-envelope\"\nsoap:encodingStyle=\"http://www.w3.org/2003/05/soap-encoding\">\n  <soap:Body xmlns:m=\"http://www.example.org/stock\">\n     \n    <m:GetStockPriceResponse>\n         \n      <m:Price>34.5</m:Price>\n     \n    </m:GetStockPriceResponse>\n  </soap:Body>\n</soap:Envelope>",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

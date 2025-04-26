@@ -1,0 +1,71 @@
+[
+    {
+        "title": "Python Loops",
+        "text": [
+            "Python has two primitive loop commands:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The while Loop",
+        "text": [
+            "With the while loop we can execute a set of statements as long as a condition is true.",
+            "Example\nPrint i as long as i is less than 6:\n\ni = 1\nwhile i < 6:\n  print(i)\n  i += 1\n\nTry it Yourself »",
+            "Note: remember to increment i, or else the loop will continue forever.",
+            "The while loop requires relevant variables to be ready, in this example we need to define an indexing variable, i, \nwhich we set to 1."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The break Statement",
+        "text": [
+            "With the break statement we can stop the loop even if the \nwhile condition is true:",
+            "Example\nExit the loop when i is 3:\n\ni = 1\nwhile i < 6:\n  print(i)\n    if i == 3:    break  i += 1\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "i = 1\nwhile i < 6:\n  print(i)\n    if i == 3:    break  i += 1"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The continue Statement",
+        "text": [
+            "With the continue statement we can stop the \ncurrent iteration, and continue with the next:",
+            "Example\nContinue to the next iteration if i is 3:\n\ni = 0\nwhile i < 6:\n    i += 1\n  if i == 3:    continue  print(i)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "i = 0\nwhile i < 6:\n    i += 1\n  if i == 3:    continue  print(i)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The else Statement",
+        "text": [
+            "With the else statement we can run a block of code once when the \ncondition no longer is true:",
+            "Example\nPrint a message once the condition is false:\n\ni = 1\nwhile i < 6:\n  print(i)\n  i += 1else:  print(\"i is no longer less than 6\")\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "i = 1\nwhile i < 6:\n  print(i)\n  i += 1else:  print(\"i is no longer less than 6\")"
+            }
+        ],
+        "tables": []
+    }
+]

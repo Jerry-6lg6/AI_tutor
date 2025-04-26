@@ -1,0 +1,178 @@
+[
+    {
+        "title": "Join Sets",
+        "text": [
+            "There are several ways to join two or more sets in Python.",
+            "The union() and update() methods joins all items from both sets.",
+            "The intersection() method keeps ONLY the duplicates.",
+            "The difference() method keeps the items \nfrom the first set that are not in the other set(s).",
+            "The symmetric_difference() method keeps all \nitems EXCEPT the duplicates."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Union",
+        "text": [
+            "The union() method returns a new set with all items from both sets.",
+            "Example\nJoin set1 and set2 into a new set:\n\n  set1 = {\"a\", \"b\", \"c\"}set2 = {1, 2, 3}\n  set3 = set1.union(set2)print(set3)\nTry it Yourself »",
+            "You can use the | operator instead of the union() method, and you will get the same result.",
+            "Example\nUse | to join two sets:\n\n  set1 = {\"a\", \"b\", \"c\"}set2 = {1, 2, 3}\n  set3 = set1 | set2print(set3)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "set1 = {\"a\", \"b\", \"c\"}set2 = {1, 2, 3}\n  set3 = set1.union(set2)print(set3)"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"a\", \"b\", \"c\"}set2 = {1, 2, 3}\n  set3 = set1 | set2print(set3)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Join Multiple Sets",
+        "text": [
+            "All the joining methods and operators can be used to join multiple sets.",
+            "When using a method, just add more sets in the parentheses, separated by commas:",
+            "Example\nJoin multiple sets with the union() method:\n\n  set1 = {\"a\", \"b\", \"c\"}set2 = {1, 2, 3}set3 = {\"John\", \"Elena\"}set4 = {\"apple\", \n  \"bananas\", \"cherry\"}\n  myset = set1.union(set2, set3, set4)print(myset)\nTry it Yourself »",
+            "When using the | operator, separate the sets \nwith more | operators:",
+            "Example\nUse | to join two sets:\n\n  set1 = {\"a\", \"b\", \"c\"}set2 = {1, 2, 3}set3 = {\"John\", \"Elena\"}set4 = {\"apple\", \n  \"bananas\", \"cherry\"}\n  myset = set1 | set2 | set3 |set4print(myset)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "set1 = {\"a\", \"b\", \"c\"}set2 = {1, 2, 3}set3 = {\"John\", \"Elena\"}set4 = {\"apple\", \n  \"bananas\", \"cherry\"}\n  myset = set1.union(set2, set3, set4)print(myset)"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"a\", \"b\", \"c\"}set2 = {1, 2, 3}set3 = {\"John\", \"Elena\"}set4 = {\"apple\", \n  \"bananas\", \"cherry\"}\n  myset = set1 | set2 | set3 |set4print(myset)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Join a Set and a Tuple",
+        "text": [
+            "The union() method allows you to join a set with other data types, like lists or tuples.",
+            "The result will be a set.",
+            "Example\nJoin a set with a tuple:\n\n  x = {\"a\", \"b\", \"c\"}y = (1, 2, 3)\n  z = x.union(y)print(z)\nTry it Yourself »",
+            "Note: The  | \noperator only allows you to join sets with sets, and not with other data types like you \ncan with the  union() method."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = {\"a\", \"b\", \"c\"}y = (1, 2, 3)\n  z = x.union(y)print(z)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Update",
+        "text": [
+            "The update() method inserts all items from one set into another.",
+            "The update() changes the original set, and does not return a new set.",
+            "Example\nThe update() method inserts the items in set2 into set1:\n\n  set1 = {\"a\", \"b\" , \"c\"}set2 = {1, 2, 3}\n  set1.update(set2)print(set1)\nTry it Yourself »",
+            "Note: Both union() and update()\nwill exclude any duplicate items.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "set1 = {\"a\", \"b\" , \"c\"}set2 = {1, 2, 3}\n  set1.update(set2)print(set1)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Intersection",
+        "text": [
+            "Keep ONLY the duplicates",
+            "The intersection() method will return a new set, that only contains the items that are present in both sets.",
+            "Example\nJoin set1 and set2, but keep only the duplicates:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\n  set3 = set1.intersection(set2)print(set3)\nTry it Yourself »",
+            "You can use the & operator instead of the \nintersection() method, and you will get the same result.",
+            "Example\nUse & to join two sets:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\n  set3 = set1 \n  & set2print(set3)\nTry it Yourself »",
+            "Note: The & \noperator only allows you to join sets with sets, and not with other data types like you \ncan with the intersection() method.",
+            "The intersection_update() method will also keep ONLY the duplicates,\nbut it will change the original set instead of returning a new set.",
+            "Example\nKeep the items that exist in both set1, and \nset2:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset1.intersection_update(set2)print(set1)\nTry it Yourself »",
+            "The values True and 1 \nare considered the same value. The same goes for False and 0.",
+            "Example\nJoin sets that contains the values True,\nFalse, 1, and\n0, and see what is considered as duplicates:\n\n  set1 = {\"apple\", 1,  \"banana\", 0, \"cherry\"}\n  set2 = {False, \"google\", \n  1, \"apple\", 2, True}\nset3 = set1.intersection(set2)print(set3)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\n  set3 = set1.intersection(set2)print(set3)"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\n  set3 = set1 \n  & set2print(set3)"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset1.intersection_update(set2)print(set1)"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", 1,  \"banana\", 0, \"cherry\"}\n  set2 = {False, \"google\", \n  1, \"apple\", 2, True}\nset3 = set1.intersection(set2)print(set3)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Difference",
+        "text": [
+            "The difference() method will\nreturn a new set that will contain only the items from the first set that are not present in the other set.",
+            "Example\nKeep all items from set1 that are not in set2:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset3 = set1.difference(set2)print(set3)\nTry it Yourself »",
+            "You can use the - operator instead of the \ndifference() method, and you will get the same result.",
+            "Example\nUse - to join two sets:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\n  set3 = set1 - set2print(set3)\nTry it Yourself »",
+            "Note: The - \noperator only allows you to join sets with sets, and not with other data types like you \ncan with the difference() method.",
+            "The difference_update() method will also keep \nthe items from the first set that are not in the other set,\nbut it will change the original set instead of returning a new set.",
+            "Example\nUse the difference_update() method to keep the items that are not present in both sets:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset1.difference_update(set2)print(set1)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset3 = set1.difference(set2)print(set3)"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\n  set3 = set1 - set2print(set3)"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset1.difference_update(set2)print(set1)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Symmetric Differences",
+        "text": [
+            "The symmetric_difference() method will keep only the elements that are NOT present in both sets.",
+            "Example\nKeep the items that are not present in both sets:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset3 = set1.symmetric_difference(set2)print(set3)\nTry it Yourself »",
+            "You can use the ^ operator instead of the \nsymmetric_difference() method, and you will get the same result.",
+            "Example\nUse ^ to join two sets:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\n  set3 = set1 ^ set2print(set3)\nTry it Yourself »",
+            "Note: The ^ \noperator only allows you to join sets with sets, and not with other data types like you \ncan with the symmetric_difference() method.",
+            "The symmetric_difference_update() method will also keep all \nbut the duplicates,\nbut it will change the original set instead of returning a new set.",
+            "Example\nUse the symmetric_difference_update() method to keep the items that are not present in both sets:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset1.symmetric_difference_update(set2)print(set1)\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset3 = set1.symmetric_difference(set2)print(set3)"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\n  set3 = set1 ^ set2print(set3)"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}set2 = {\"google\", \"microsoft\", \"apple\"}\nset1.symmetric_difference_update(set2)print(set1)"
+            }
+        ],
+        "tables": []
+    }
+]

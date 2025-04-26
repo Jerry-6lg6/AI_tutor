@@ -1,0 +1,139 @@
+[
+    {
+        "title": "The Action Attribute",
+        "text": [
+            "The action attribute defines the action to be performed when the form is submitted.",
+            "Usually, the form data is sent to a file on the server when the user clicks on the submit button.",
+            "In the example below, the form data is sent to a file called \"action_page.php\". \nThis file contains a server-side script that handles the form data:",
+            "Example\nOn submit, send form data to \"action_page.php\":\n\n <form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>\n\nTry it Yourself »",
+            "Tip: If the action attribute is omitted, the action is set to the current page."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Target Attribute",
+        "text": [
+            "The target attribute specifies where to \ndisplay the response that is received after submitting the form.",
+            "The target attribute can have one of the \nfollowing values:",
+            "The default value is _self which means that \nthe response will open in the current window.",
+            "Example\nHere, the submitted result will open in a new browser tab:\n\n<form action=\"/action_page.php\" target=\"_blank\">\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\" target=\"_blank\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Method Attribute",
+        "text": [
+            "The method attribute specifies the HTTP \nmethod to be used when submitting the form data.",
+            "The form-data can be sent as URL variables (with method=\"get\") \nor as HTTP post transaction (with method=\"post\").",
+            "The default HTTP method when submitting form data is GET.",
+            "Example\nThis example uses the GET method when submitting the form data:\n\n<form action=\"/action_page.php\" method=\"get\">\nTry it Yourself »",
+            "Example\nThis example uses the POST method when submitting the form data:\n\n<form action=\"/action_page.php\" method=\"post\">\nTry it Yourself »",
+            "Notes on GET:",
+            "Notes on POST:",
+            "Tip: Always use POST if the form data contains sensitive or personal information!",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\" method=\"get\">"
+            },
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\" method=\"post\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Autocomplete Attribute",
+        "text": [
+            "The autocomplete attribute specifies whether \na form should have autocomplete on or off.",
+            "When autocomplete is on, the browser automatically complete values based on values that the user has entered before.",
+            "Example\nA form with autocomplete on:\n\n    <form action=\"/action_page.php\" autocomplete=\"on\">\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\" autocomplete=\"on\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Novalidate Attribute",
+        "text": [
+            "The novalidate attribute is a boolean attribute.",
+            "When present, it specifies that the form-data (input) should not be validated when submitted.",
+            "Example\nA form with a novalidate attribute:\n\n    <form action=\"/action_page.php\" novalidate>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\" novalidate>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "List of All <form> Attributes",
+        "text": [
+            "Attribute\nDescription\n\n\naccept-charset\nSpecifies the character encodings used for form submission\n\n\naction\nSpecifies where to send the form-data when a form is submitted\n\n\nautocomplete\nSpecifies whether a form should have autocomplete on or off\n\n\nenctype\nSpecifies how the form-data should be encoded when submitting it to the \n  server (only for method=\"post\")\n\n\nmethod\nSpecifies the HTTP method to use when sending form-data\n\n\nname\nSpecifies the name of the form\n\n\nnovalidate\nSpecifies that the form should not be validated when submitted\n\n\nrel\nSpecifies the relationship between a linked resource and the current \n  document\n\n\ntarget\nSpecifies where to display the response that is received after submitting \n  the form",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Attribute": "accept-charset",
+                    "Description": "Specifies the character encodings used for form submission"
+                },
+                {
+                    "Attribute": "action",
+                    "Description": "Specifies where to send the form-data when a form is submitted"
+                },
+                {
+                    "Attribute": "autocomplete",
+                    "Description": "Specifies whether a form should have autocomplete on or off"
+                },
+                {
+                    "Attribute": "enctype",
+                    "Description": "Specifies how the form-data should be encoded when submitting it to the \n  server (only for method=\"post\")"
+                },
+                {
+                    "Attribute": "method",
+                    "Description": "Specifies the HTTP method to use when sending form-data"
+                },
+                {
+                    "Attribute": "name",
+                    "Description": "Specifies the name of the form"
+                },
+                {
+                    "Attribute": "novalidate",
+                    "Description": "Specifies that the form should not be validated when submitted"
+                },
+                {
+                    "Attribute": "rel",
+                    "Description": "Specifies the relationship between a linked resource and the current \n  document"
+                },
+                {
+                    "Attribute": "target",
+                    "Description": "Specifies where to display the response that is received after submitting \n  the form"
+                }
+            ]
+        ]
+    }
+]

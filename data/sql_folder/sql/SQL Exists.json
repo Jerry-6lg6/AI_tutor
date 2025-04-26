@@ -1,0 +1,127 @@
+[
+    {
+        "title": "The SQL EXISTS Operator",
+        "text": [
+            "The EXISTS operator is used to test for the existence of any record in a subquery.",
+            "The EXISTS operator returns TRUE if the subquery returns one or more records.",
+            "SELECT column_name(s)\n  FROM table_name\n  WHERE \n  EXISTS(SELECT column_name FROM table_name WHERE\n  condition);"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the \"Products\" table in the Northwind sample database:",
+            "ProductID\nProductName\nSupplierID\nCategoryID\nUnit\nPrice\n\n\n1\nChais\n1\n1\n10 boxes x 20 bags\n18\n\n\n2\nChang\n1\n1\n24 - 12 oz bottles\n19\n\n\n3\nAniseed Syrup\n1\n2\n12 - 550 ml bottles\n10\n\n\n4\nChef Anton's Cajun Seasoning\n2\n2\n48 - 6 oz jars\n22\n\n\n5\nChef Anton's Gumbo Mix\n2\n2\n36 boxes\n21.35",
+            "And a selection from the \"Suppliers\" table:",
+            "SupplierID\nSupplierName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nExotic Liquid\nCharlotte Cooper\n49 Gilbert St.\nLondon\nEC1 4SD\nUK\n\n\n2\nNew Orleans Cajun Delights\nShelley Burke\nP.O. Box 78934\nNew Orleans\n70117\nUSA\n\n\n3\nGrandma Kelly's Homestead\nRegina Murphy\n707 Oxford Rd.\nAnn Arbor\n48104\nUSA\n\n\n4\nTokyo Traders\nYoshi Nagase\n9-8 Sekimai Musashino-shi\nTokyo\n100\nJapan",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "ProductID": "1",
+                    "ProductName": "Chais",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "10 boxes x 20 bags",
+                    "Price": "18"
+                },
+                {
+                    "ProductID": "2",
+                    "ProductName": "Chang",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "24 - 12 oz bottles",
+                    "Price": "19"
+                },
+                {
+                    "ProductID": "3",
+                    "ProductName": "Aniseed Syrup",
+                    "SupplierID": "1",
+                    "CategoryID": "2",
+                    "Unit": "12 - 550 ml bottles",
+                    "Price": "10"
+                },
+                {
+                    "ProductID": "4",
+                    "ProductName": "Chef Anton's Cajun Seasoning",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "48 - 6 oz jars",
+                    "Price": "22"
+                },
+                {
+                    "ProductID": "5",
+                    "ProductName": "Chef Anton's Gumbo Mix",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "36 boxes",
+                    "Price": "21.35"
+                }
+            ],
+            [
+                {
+                    "SupplierID": "1",
+                    "SupplierName": "Exotic Liquid",
+                    "ContactName": "Charlotte Cooper",
+                    "Address": "49 Gilbert St.",
+                    "City": "London",
+                    "PostalCode": "EC1 4SD",
+                    "Country": "UK"
+                },
+                {
+                    "SupplierID": "2",
+                    "SupplierName": "New Orleans Cajun Delights",
+                    "ContactName": "Shelley Burke",
+                    "Address": "P.O. Box 78934",
+                    "City": "New Orleans",
+                    "PostalCode": "70117",
+                    "Country": "USA"
+                },
+                {
+                    "SupplierID": "3",
+                    "SupplierName": "Grandma Kelly's Homestead",
+                    "ContactName": "Regina Murphy",
+                    "Address": "707 Oxford Rd.",
+                    "City": "Ann Arbor",
+                    "PostalCode": "48104",
+                    "Country": "USA"
+                },
+                {
+                    "SupplierID": "4",
+                    "SupplierName": "Tokyo Traders",
+                    "ContactName": "Yoshi Nagase",
+                    "Address": "9-8 Sekimai Musashino-shi",
+                    "City": "Tokyo",
+                    "PostalCode": "100",
+                    "Country": "Japan"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL EXISTS Examples",
+        "text": [
+            "The following SQL statement returns TRUE and lists the suppliers with a product price less than 20:",
+            "Example\n\n  SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);\n\n  Try it Yourself »",
+            "The following SQL statement returns TRUE and lists the suppliers with a product price \nequal to 22:",
+            "Example\n\n  SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE Products.SupplierID = Suppliers.supplierID AND Price = 22);\n\n  Try it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE Products.SupplierID = Suppliers.supplierID AND Price < 20);"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE Products.SupplierID = Suppliers.supplierID AND Price = 22);"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,81 @@
+[
+    {
+        "title": "Mean, Median, and Mode",
+        "text": [
+            "What can we learn from looking at a group of numbers?",
+            "In Machine Learning (and in mathematics) there are often three values that \ninterests us:",
+            "Example: We have registered the speed of 13 cars:",
+            "speed = [99,86,87,88,111,86,103,87,94,78,77,85,86]",
+            "What is the average, the middle, or the most common speed value?"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Mean",
+        "text": [
+            "The mean value is the average value.",
+            "To calculate the mean, find the sum of all values, and divide the sum by the number of values:",
+            "(99+86+87+88+111+86+103+87+94+78+77+85+86) / 13 = \n  89.77",
+            "The NumPy module has a method for this. Learn about the NumPy module in our NumPy Tutorial.",
+            "Example\nUse the NumPy mean() method to find the \naverage speed:\n\n  import numpyspeed = [99,86,87,88,111,86,103,87,94,78,77,85,86]\nx = numpy.mean(speed)print(x)\nRun example »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import numpyspeed = [99,86,87,88,111,86,103,87,94,78,77,85,86]\nx = numpy.mean(speed)print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Median",
+        "text": [
+            "The median value is the value in the middle, after you have sorted all the values:",
+            "77, 78, 85, 86, 86, 86, 87, 87, 88, 94, 99, 103, 111",
+            "It is important that the numbers are sorted before you can find the median.",
+            "The NumPy module has a method for this:",
+            "Example\nUse the NumPy median() method to find the \nmiddle value:\n\n  import numpyspeed = [99,86,87,88,111,86,103,87,94,78,77,85,86]\nx = numpy.median(speed)print(x)\nTry it Yourself »",
+            "If there are two numbers in the middle, divide the sum of those numbers by \n  two.",
+            "77, 78, 85, 86, 86, 86, 87, \n  87, 94, 98, 99, 103\n(86 + 87) / 2 = 86.5",
+            "Example\nUsing the NumPy module:\n\n  import numpyspeed = [99,86,87,88,86,103,87,94,78,77,85,86]\nx = numpy.median(speed)print(x)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import numpyspeed = [99,86,87,88,111,86,103,87,94,78,77,85,86]\nx = numpy.median(speed)print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "import numpyspeed = [99,86,87,88,86,103,87,94,78,77,85,86]\nx = numpy.median(speed)print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Mode",
+        "text": [
+            "The Mode value is the value that appears the most number of times:",
+            "99,86, 87, 88, 111,86, 103, 87, 94, 78, 77, 85,86 = 86",
+            "The SciPy module has a method for this. Learn about the SciPy module in our\nSciPy Tutorial.",
+            "Example\nUse the SciPy mode() method to find the \nnumber that appears the most:\n\n  from scipy import statsspeed = \n  [99,86,87,88,111,86,103,87,94,78,77,85,86]x = stats.mode(speed)print(x)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "from scipy import statsspeed = \n  [99,86,87,88,111,86,103,87,94,78,77,85,86]x = stats.mode(speed)print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            "The Mean, Median, and Mode are techniques that are often used in Machine \nLearning, so it is important to understand the concept behind them.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

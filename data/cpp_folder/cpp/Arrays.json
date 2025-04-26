@@ -1,0 +1,49 @@
+[
+    {
+        "title": "C++ Arrays",
+        "text": [
+            "Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each \nvalue.",
+            "To declare an array, define the variable type, specify the name \nof the array followed by square brackets \nand specify the number of elements it should store:",
+            "string cars[4];",
+            "We have now declared a variable that holds an array of four strings. To insert \nvalues to it, we can use an array literal - place the values in a \ncomma-separated list, inside curly braces:",
+            "string cars[4] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};",
+            "To create an array of three integers, you could write:",
+            "int myNum[3] = {10, 20, 30};"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Access the Elements of an Array",
+        "text": [
+            "You access an array element by referring to the index number inside square \nbrackets [].",
+            "This statement accesses the value of the first element in \ncars:",
+            "Example\n\n  string cars[4] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\n  cout << cars[0];// Outputs Volvo\n\nTry it Yourself »",
+            "Note: Array indexes start with 0: [0] is the first element. [1] is the second \nelement, etc."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string cars[4] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\n  cout << cars[0];// Outputs Volvo"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Change an Array Element",
+        "text": [
+            "To change the value of a specific element, refer to the index number:",
+            "cars[0] = \"Opel\";",
+            "Example\n\n  string cars[4] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};cars[0] = \"Opel\";\n  cout << cars[0];\n  // Now outputs Opel instead of Volvo\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string cars[4] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};cars[0] = \"Opel\";\n  cout << cars[0];\n  // Now outputs Opel instead of Volvo"
+            }
+        ],
+        "tables": []
+    }
+]

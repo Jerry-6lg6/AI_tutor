@@ -1,0 +1,26 @@
+[
+    {
+        "title": "What are Percentiles?",
+        "text": [
+            "Percentiles are used in statistics to give you a number that describes the \nvalue that a given percent of the values are lower than.",
+            "Example: Let's say we have an array that contains the ages of every person \nliving on a street.",
+            "ages = [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]",
+            "What is the 75. percentile? The answer is 43, meaning that 75% of the people \nare 43 or younger.",
+            "The NumPy module has a method for finding the specified percentile:",
+            "Example\nUse the NumPy percentile() method to find \nthe percentiles:\n\n  import numpyages = \n  [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]\nx = numpy.percentile(ages, 75)print(x)\nTry it Yourself »",
+            "Example\nWhat is the age that 90% of the people are younger than?\n\n  import numpyages = \n  [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]\nx = numpy.percentile(ages, 90)print(x)\nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import numpyages = \n  [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]\nx = numpy.percentile(ages, 75)print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "import numpyages = \n  [5,31,43,48,50,41,7,11,15,39,80,82,32,2,8,6,25,36,27,61,31]\nx = numpy.percentile(ages, 90)print(x)"
+            }
+        ],
+        "tables": []
+    }
+]

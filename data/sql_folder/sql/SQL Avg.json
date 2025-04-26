@@ -1,0 +1,136 @@
+[
+    {
+        "title": "The SQL AVG() Function",
+        "text": [
+            "The AVG() function returns the average value of a numeric column.",
+            "Example\nFind the average price of all products:\n\n  SELECT AVG(Price)FROM Products;\n\n\n  Try it Yourself »",
+            "Note: NULL values are ignored."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT AVG(Price)FROM Products;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Syntax",
+        "text": [
+            "SELECT AVG(column_name)\n  FROM table_name\n  WHERE condition;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Products table used in the examples:",
+            "ProductID\nProductName\nSupplierID\nCategoryID\nUnit\nPrice\n\n\n1\nChais\n1\n1\n10 boxes x 20 bags\n18\n\n2\nChang\n1\n1\n24 - 12 oz bottles\n19\n\n3\nAniseed Syrup\n1\n2\n12 - 550 ml bottles\n10\n\n4\nChef Anton's Cajun Seasoning\n2\n2\n48 - 6 oz jars\n22\n\n5\nChef Anton's Gumbo Mix\n2\n2\n36 boxes\n21.35"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "ProductID": "1",
+                    "ProductName": "Chais",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "10 boxes x 20 bags",
+                    "Price": "18"
+                },
+                {
+                    "ProductID": "2",
+                    "ProductName": "Chang",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "24 - 12 oz bottles",
+                    "Price": "19"
+                },
+                {
+                    "ProductID": "3",
+                    "ProductName": "Aniseed Syrup",
+                    "SupplierID": "1",
+                    "CategoryID": "2",
+                    "Unit": "12 - 550 ml bottles",
+                    "Price": "10"
+                },
+                {
+                    "ProductID": "4",
+                    "ProductName": "Chef Anton's Cajun Seasoning",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "48 - 6 oz jars",
+                    "Price": "22"
+                },
+                {
+                    "ProductID": "5",
+                    "ProductName": "Chef Anton's Gumbo Mix",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "36 boxes",
+                    "Price": "21.35"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Add a WHERE Clause",
+        "text": [
+            "You can add a WHERE clause to specify conditions:",
+            "Example\nReturn the average price of products in category 1:\n\n  SELECT AVG(Price)FROM ProductsWHERE CategoryID = 1;\n\n\n  Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT AVG(Price)FROM ProductsWHERE CategoryID = 1;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Use an Alias",
+        "text": [
+            "Give the AVG column a name by using the AS keyword.",
+            "Example\nName the column \"average price\":\n\nSELECT AVG(Price) AS [average price]FROM Products;\n\n\n  Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT AVG(Price) AS [average price]FROM Products;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Higher Than Average",
+        "text": [
+            "To list all records with a higher price than average, we can use the\nAVG() function in a sub query:",
+            "Example\nReturn all products with a higher price than the average price:\n\n  SELECT * FROM ProductsWHERE price > \n  (SELECT AVG(price) FROM Products);\n\n  Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM ProductsWHERE price > \n  (SELECT AVG(price) FROM Products);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Use AVG() with GROUP BY",
+        "text": [
+            "Here we use the AVG() function and the\nGROUP BY clause, to return the average price \nfor each category in the Products table:",
+            "Example\n\n  SELECT AVG(Price) AS AveragePrice, CategoryIDFROM ProductsGROUP BY CategoryID;\n\nTry it Yourself »",
+            "You will learn more about the\nGROUP BY clause later in this tutorial.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT AVG(Price) AS AveragePrice, CategoryIDFROM ProductsGROUP BY CategoryID;"
+            }
+        ],
+        "tables": []
+    }
+]

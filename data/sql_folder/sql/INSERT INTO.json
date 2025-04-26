@@ -1,0 +1,24 @@
+[
+    {
+        "title": "INSERT INTO",
+        "text": [
+            "The INSERT INTO command is used to insert new rows in a table.",
+            "The following SQL inserts a new record in the \"Customers\" table:",
+            "Example\n\nINSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');",
+            "The following SQL will insert a new record, but only insert data in the \"CustomerName\", \n\"City\", and \"Country\" columns (CustomerID will \nbe updated automatically):",
+            "Example\n\nINSERT INTO Customers (CustomerName, City, Country)\nVALUES ('Cardinal', 'Stavanger', 'Norway');",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');"
+            },
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, City, Country)\nVALUES ('Cardinal', 'Stavanger', 'Norway');"
+            }
+        ],
+        "tables": []
+    }
+]

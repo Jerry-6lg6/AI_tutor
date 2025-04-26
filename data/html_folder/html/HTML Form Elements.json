@@ -1,0 +1,165 @@
+[
+    {
+        "title": "The HTML <form> Elements",
+        "text": [
+            "The HTML <form> element can contain one or more of the following form elements:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <input> Element",
+        "text": [
+            "One of the most used form elements is the <input> element.",
+            "The <input> element can be displayed in several ways, depending on the type \nattribute.",
+            "Example\n\n  <label for=\"fname\">First name:</label><input type=\"text\" id=\"fname\" name=\"fname\">\nTry it Yourself »",
+            "All the different values of the type \nattribute are covered in the next chapter:\nHTML Input Types."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<label for=\"fname\">First name:</label><input type=\"text\" id=\"fname\" name=\"fname\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <label> Element",
+        "text": [
+            "The <label> element defines a label for \nseveral \nform elements.",
+            "The <label> element is useful for \nscreen-reader users, because the screen-reader will read out loud the label when \nthe user focus on the input element.",
+            "The <label> element also help users who have \ndifficulty clicking on very small regions (such as radio buttons or checkboxes) \n- because when the user clicks the text within the <label> element, it toggles \nthe radio button/checkbox.",
+            "The for attribute of the <label> tag should \nbe equal to the id attribute of the <input>  \nelement to bind them together."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <select> Element",
+        "text": [
+            "The <select> element defines a drop-down list:",
+            "Example\n\n  <label for=\"cars\">Choose a car:</label><select id=\"cars\" name=\"cars\">  <option value=\"volvo\">Volvo</option>\n  \n <option value=\"saab\">Saab</option>  <option value=\"fiat\">Fiat</option>\n  \n <option value=\"audi\">Audi</option></select>\nTry it Yourself »",
+            "The <option> element defines an option that can be \nselected.",
+            "By default, the first item in the drop-down list is selected.",
+            "To define a pre-selected option, add the selected attribute \nto the option:",
+            "Use the size attribute to specify the number of visible values:",
+            "Use the multiple attribute to allow the user to select more than one value:",
+            "Example\n\n  <label for=\"cars\">Choose a car:</label><select id=\"cars\" name=\"cars\" size=\"4\" multiple>  <option value=\"volvo\">Volvo</option>\n  \n <option value=\"saab\">Saab</option>  <option value=\"fiat\">Fiat</option>\n  \n <option value=\"audi\">Audi</option></select>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<label for=\"cars\">Choose a car:</label><select id=\"cars\" name=\"cars\">  <option value=\"volvo\">Volvo</option>\n  \n <option value=\"saab\">Saab</option>  <option value=\"fiat\">Fiat</option>\n  \n <option value=\"audi\">Audi</option></select>"
+            },
+            {
+                "heading": "Example",
+                "code": "<option value=\"fiat\" selected>Fiat</option>"
+            },
+            {
+                "heading": "Example",
+                "code": "<label for=\"cars\">Choose a car:</label><select id=\"cars\" name=\"cars\" size=\"3\">  <option value=\"volvo\">Volvo</option>\n  \n <option value=\"saab\">Saab</option>  <option value=\"fiat\">Fiat</option>\n  \n <option value=\"audi\">Audi</option></select>"
+            },
+            {
+                "heading": "Example",
+                "code": "<label for=\"cars\">Choose a car:</label><select id=\"cars\" name=\"cars\" size=\"4\" multiple>  <option value=\"volvo\">Volvo</option>\n  \n <option value=\"saab\">Saab</option>  <option value=\"fiat\">Fiat</option>\n  \n <option value=\"audi\">Audi</option></select>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <textarea> Element",
+        "text": [
+            "The <textarea> element defines a multi-line input field (a text area):",
+            "Example\n\n <textarea name=\"message\" rows=\"10\" cols=\"30\">The cat was playing in the garden.</textarea>\nTry it Yourself »",
+            "The rows attribute specifies the visible number of lines in \na text area.",
+            "The cols attribute specifies the visible width of a text \narea.",
+            "This is how the HTML code above will be displayed in a browser:",
+            "You can also define the size of the text area by using CSS:",
+            "Example\n\n <textarea name=\"message\" \n  style=\"width:200px; height:600px;\">The cat was playing in the garden.</textarea>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<textarea name=\"message\" rows=\"10\" cols=\"30\">The cat was playing in the garden.</textarea>"
+            },
+            {
+                "heading": "Example",
+                "code": "<textarea name=\"message\" \n  style=\"width:200px; height:600px;\">The cat was playing in the garden.</textarea>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <button> Element",
+        "text": [
+            "The <button> element defines a clickable \nbutton:",
+            "Example\n\n <button type=\"button\" \n onclick=\"alert('Hello World!')\">Click Me!</button>\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:",
+            "Note: Always specify the type attribute for the button element. Different browsers may use different default types for the button element."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<button type=\"button\" \n onclick=\"alert('Hello World!')\">Click Me!</button>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <fieldset> and <legend> Elements",
+        "text": [
+            "The <fieldset> element is used to group related data in a form.",
+            "The <legend> element defines a caption for the \n<fieldset>\nelement.",
+            "Example\n\n  <form action=\"/action_page.php\">  <fieldset>    \n  <legend>Personalia:</legend>    <label for=\"fname\">First \n  name:</label><br>    <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>    <label for=\"lname\">Last name:</label><br>    \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>    \n  <input type=\"submit\" value=\"Submit\">  </fieldset></form> \nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <fieldset>    \n  <legend>Personalia:</legend>    <label for=\"fname\">First \n  name:</label><br>    <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>    <label for=\"lname\">Last name:</label><br>    \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>    \n  <input type=\"submit\" value=\"Submit\">  </fieldset></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <datalist> Element",
+        "text": [
+            "The <datalist> element specifies a list of pre-defined options for an <input> element.",
+            "Users will see a drop-down list of the pre-defined options as they input data.",
+            "The list attribute of the <input> element, must refer to the\nid attribute of the <datalist> element.",
+            "Example\n\n<form action=\"/action_page.php\">  <input list=\"browsers\">\n  \n <datalist id=\"browsers\">\n     <option value=\"Edge\">\n \n  <option value=\"Firefox\">\n    <option value=\"Chrome\">\n \n  <option value=\"Opera\">\n    <option value=\"Safari\">\n  \n </datalist> </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <input list=\"browsers\">\n  \n <datalist id=\"browsers\">\n     <option value=\"Edge\">\n \n  <option value=\"Firefox\">\n    <option value=\"Chrome\">\n \n  <option value=\"Opera\">\n    <option value=\"Safari\">\n  \n </datalist> </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <output> Element",
+        "text": [
+            "The <output> element represents the result of a calculation (like one \nperformed by a script).",
+            "Example\nPerform a calculation and show the result in an <output> element:\n\n    <form action=\"/action_page.php\"  oninput=\"x.value=parseInt(a.value)+parseInt(b.value)\">  0\n     \n    <input type=\"range\"  id=\"a\" name=\"a\" value=\"50\">  100 +\n     \n    <input type=\"number\" id=\"b\" name=\"b\" value=\"50\">  =\n     \n    <output name=\"x\" for=\"a b\"></output>  <br><br>  <input type=\"submit\">\n </form>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\"  oninput=\"x.value=parseInt(a.value)+parseInt(b.value)\">  0\n     \n    <input type=\"range\"  id=\"a\" name=\"a\" value=\"50\">  100 +\n     \n    <input type=\"number\" id=\"b\" name=\"b\" value=\"50\">  =\n     \n    <output name=\"x\" for=\"a b\"></output>  <br><br>  <input type=\"submit\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Form Elements",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

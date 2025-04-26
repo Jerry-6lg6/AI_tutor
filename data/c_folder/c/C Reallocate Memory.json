@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Reallocate Memory",
+        "text": [
+            "If the amount of memory you reserved is not enough, you can reallocate\nit to make it larger.",
+            "Reallocating reserves a different (usually larger) amount of memory while keeping the data that was stored in it.",
+            "You can change the size of allocated memory with the realloc() function.",
+            "The realloc() function takes two parameters:",
+            "int *ptr2 = realloc(ptr1, size);",
+            "The realloc() function tries to resize the memory at ptr1 and return the same memory address. If it cannot resize the memory at the current address then it will allocate memory at a different address and return the new address instead.",
+            "Note: When realloc() returns a different memory address, the memory at the original address is no longer reserved and it is not safe to use. When the reallocation is done it is good to assign the new pointer to the previous variable so that the old pointer cannot be used accidentally.",
+            "Example\nIncrease the size of allocated memory:\n\n  int *ptr1, *ptr2, size;// Allocate memory for four integerssize = \n  4 * sizeof(*ptr1);ptr1 = malloc(size);printf(\"%d bytes allocated \n  at address %p \\n\", size, ptr1);// Resize the memory to hold six \n  integerssize = 6 * sizeof(*ptr1);ptr2 = realloc(ptr1, size);\n  printf(\"%d bytes reallocated at address %p \\n\", size, ptr2);\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int *ptr1, *ptr2, size;// Allocate memory for four integerssize = \n  4 * sizeof(*ptr1);ptr1 = malloc(size);printf(\"%d bytes allocated \n  at address %p \\n\", size, ptr1);// Resize the memory to hold six \n  integerssize = 6 * sizeof(*ptr1);ptr2 = realloc(ptr1, size);\n  printf(\"%d bytes reallocated at address %p \\n\", size, ptr2);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "NULL Pointer & Error Checking",
+        "text": [
+            "The realloc() function returns a NULL \npointer if it is not able to allocate more memory. This is very unlikely, but it \nis worth keeping in mind when you need your code to be failproof.",
+            "The following example checks whether realloc() \nis able to resize the memory or not, by checking for a NULL pointer:",
+            "Example\nCheck for a NULL pointer:\n\n  int *ptr1, *ptr2;// Allocate memoryptr1 = malloc(4);// \n  Attempt to resize the memoryptr2 = realloc(ptr1, 8);// Check \n  whether realloc is able to resize the memory or notif (ptr2 == \n  NULL) {  // If reallocation fails  printf(\"Failed. Unable to resize memory\");} else {  \n  // If reallocation is sucessful  \n  printf(\"Success. 8 bytes reallocated at address %p \\n\", ptr2);  ptr1 = ptr2;  \n  // Update ptr1 to point to the newly allocated memory\n  }\nTry it Yourself »",
+            "Note: You should always include error checking (if pointer == NULL) when \nallocating memory.",
+            "Note: You should also always free, or release, \nallocated memory when you are done using it. This is important to make sure that \nyour program behaves as expected, but it will also make it more maintainable and \nefficient.",
+            "To free memory, simply use the free() function:",
+            "Example\nFree allocated memory:\n\n  // Free allocated memory \nfree(ptr1);\nTry it Yourself »",
+            "You will learn more about how to free allocated memory and why this is important in the next chapter.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int *ptr1, *ptr2;// Allocate memoryptr1 = malloc(4);// \n  Attempt to resize the memoryptr2 = realloc(ptr1, 8);// Check \n  whether realloc is able to resize the memory or notif (ptr2 == \n  NULL) {  // If reallocation fails  printf(\"Failed. Unable to resize memory\");} else {  \n  // If reallocation is sucessful  \n  printf(\"Success. 8 bytes reallocated at address %p \\n\", ptr2);  ptr1 = ptr2;  \n  // Update ptr1 to point to the newly allocated memory\n  }"
+            },
+            {
+                "heading": "Example",
+                "code": "// Free allocated memory \nfree(ptr1);"
+            }
+        ],
+        "tables": []
+    }
+]

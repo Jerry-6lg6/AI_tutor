@@ -1,0 +1,51 @@
+[
+    {
+        "title": "UNIQUE",
+        "text": [
+            "The UNIQUE constraint ensures that all \nvalues in a column are unique."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL UNIQUE Constraint on CREATE TABLE",
+        "text": [
+            "The following SQL creates a UNIQUE constraint on the \"ID\" column when the \"Persons\" table is created:",
+            "SQL Server / Oracle / MS Access:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL UNIQUE,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int\n);",
+            "MySQL:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int,\n   \nUNIQUE (ID)\n);",
+            "To name a UNIQUE constraint, and to define a UNIQUE constraint on multiple columns, use the following SQL syntax:",
+            "MySQL / SQL Server / Oracle / MS Access:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int,\n   \nCONSTRAINT UC_Person UNIQUE (ID,LastName)\n);"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL UNIQUE Constraint on ALTER TABLE",
+        "text": [
+            "To create a UNIQUE constraint on the \"ID\" column when the table is already created, use the following SQL:",
+            "MySQL / SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nADD UNIQUE (ID);",
+            "To name a UNIQUE constraint, and to define a UNIQUE constraint on multiple columns, use the following SQL syntax:",
+            "MySQL / SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nADD CONSTRAINT UC_Person UNIQUE (ID,LastName);"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP a UNIQUE Constraint",
+        "text": [
+            "To drop a UNIQUE constraint, use the following SQL:",
+            "MySQL:",
+            "ALTER TABLE Persons\nDROP INDEX UC_Person;",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nDROP CONSTRAINT UC_Person;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

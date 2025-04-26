@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Displaying XML with XSLT",
+        "text": [
+            "XSLT (eXtensible Stylesheet Language Transformations) is the recommended style sheet language \nfor XML.",
+            "XSLT is far more sophisticated than CSS. With XSLT you can add/remove \nelements and attributes to or from the output file. You can also rearrange and \nsort elements, perform tests and make decisions about which elements to hide and \ndisplay, and a lot more.",
+            "XSLT uses XPath to find information in an XML document."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XSLT Example",
+        "text": [
+            "We will use the following XML document:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?><breakfast_menu><food>\n<name>Belgian Waffles</name><price>$5.95</price><description>Two of \nour famous Belgian Waffles with plenty of real maple syrup</description>\n<calories>650</calories></food><food><name>Strawberry \nBelgian Waffles</name><price>$7.95</price><description>Light Belgian \nwaffles covered with strawberries and whipped cream</description>\n<calories>900</calories></food><food><name>Berry-Berry \nBelgian Waffles</name><price>$8.95</price><description>Light Belgian \nwaffles covered with an assortment of fresh berries and whipped \ncream</description><calories>900</calories></food><food>\n<name>French Toast</name><price>$4.50</price><description>Thick \nslices made from our homemade sourdough bread</description>\n<calories>600</calories></food><food><name>Homestyle \nBreakfast</name><price>$6.95</price><description>Two eggs, bacon or \nsausage, toast, and our ever-popular hash browns</description>\n<calories>950</calories></food></breakfast_menu>",
+            "",
+            "Use XSLT to transform XML into HTML, before it is displayed in a browser:",
+            "Example XSLT Stylesheet:\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xsl:version=\"1.0\" \nxmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><body \nstyle=\"font-family:Arial;font-size:12pt;background-color:#EEEEEE\"><xsl:for-each \nselect=\"breakfast_menu/food\">  <div \nstyle=\"background-color:teal;color:white;padding:4px\">    \n<span style=\"font-weight:bold\"><xsl:value-of select=\"name\"/> - </span>    \n<xsl:value-of select=\"price\"/>    </div>  <div \nstyle=\"margin-left:20px;margin-bottom:1em;font-size:10pt\">    \n<p>    <xsl:value-of select=\"description\"/>    \n<span style=\"font-style:italic\"> (<xsl:value-of select=\"calories\"/> calories \nper serving)</span>    </p>  </div></xsl:for-each>\n</body></html>\nTransform the XML Document with XSLT »"
+        ],
+        "examples": [
+            {
+                "heading": "Example XSLT Stylesheet:",
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><html xsl:version=\"1.0\" \nxmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\"><body \nstyle=\"font-family:Arial;font-size:12pt;background-color:#EEEEEE\"><xsl:for-each \nselect=\"breakfast_menu/food\">  <div \nstyle=\"background-color:teal;color:white;padding:4px\">    \n<span style=\"font-weight:bold\"><xsl:value-of select=\"name\"/> - </span>    \n<xsl:value-of select=\"price\"/>    </div>  <div \nstyle=\"margin-left:20px;margin-bottom:1em;font-size:10pt\">    \n<p>    <xsl:value-of select=\"description\"/>    \n<span style=\"font-style:italic\"> (<xsl:value-of select=\"calories\"/> calories \nper serving)</span>    </p>  </div></xsl:for-each>\n</body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "XSLT Tutorial",
+        "text": [
+            "If you want to learn more about XSLT, go to our XSLT Tutorial.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

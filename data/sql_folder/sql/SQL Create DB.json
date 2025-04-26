@@ -1,0 +1,28 @@
+[
+    {
+        "title": "The SQL CREATE DATABASE Statement",
+        "text": [
+            "The CREATE DATABASE statement is used to create a new SQL database.",
+            "CREATE DATABASE databasename;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "CREATE DATABASE Example",
+        "text": [
+            "The following SQL statement creates a database called \"testDB\":",
+            "Example\n\nCREATE DATABASE testDB;",
+            "Tip: Make sure you have admin privilege before creating any database. Once a \ndatabase is created, you can check it in the list of databases with the \nfollowing SQL command: SHOW DATABASES;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE DATABASE testDB;"
+            }
+        ],
+        "tables": []
+    }
+]

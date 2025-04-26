@@ -1,0 +1,95 @@
+[
+    {
+        "title": "HTML Elements",
+        "text": [
+            "The HTML element is everything from the start tag to the end tag:",
+            "<tagname>Content goes here...</tagname>",
+            "Examples of some HTML elements:",
+            "<h1>My \n  First Heading</h1>",
+            "<p>My first paragraph.</p>",
+            "Note: Some HTML elements have no content (like the <br> \nelement). These elements are called empty elements. Empty elements do not have an end tag!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Nested HTML Elements",
+        "text": [
+            "HTML elements can be nested (this means that elements can contain other elements).",
+            "All HTML documents consist of nested HTML elements.",
+            "The following example contains four HTML elements (<html>, <body>, <h1> \nand <p>):",
+            "The <html> element is the root element \nand it defines the whole HTML document.",
+            "It has a start tag <html> and an end tag </html>.",
+            "Then, inside the <html> element there is \na <body> \nelement:",
+            "<body>\n <h1>My First Heading</h1><p>My first paragraph.</p>\n</body>",
+            "The <body> element defines the \ndocument's body.",
+            "It has a start tag <body> and an end tag </body>.",
+            "Then, inside the <body> element there \nare two other elements:\n<h1> and \n<p>:",
+            "<h1>My First Heading</h1><p>My first paragraph.</p>",
+            "The <h1> element defines a heading.",
+            "It has a start tag <h1> and an end tag </h1>:",
+            "<h1>My First Heading</h1>",
+            "The <p> element defines a paragraph.",
+            "It has a start tag <p> and an end tag </p>:",
+            "<p>My first paragraph.</p>",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html>\n<html><body>\n <h1>My First Heading</h1><p>My first paragraph.</p>\n</body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Never Skip the End Tag",
+        "text": [
+            "Some HTML elements will display correctly, even if you forget the end tag:",
+            "Example\n\n<html><body>\n <p>This is a paragraph\n <p>This is a paragraph\n</body></html>\nTry it Yourself »",
+            "However, never rely on this! Unexpected results and errors may occur if you forget the end tag!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<html><body>\n <p>This is a paragraph\n <p>This is a paragraph\n</body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Empty HTML Elements",
+        "text": [
+            "HTML elements with no content are called empty elements.",
+            "The <br> tag defines a line break, and \nis an empty element without a closing tag:",
+            "Example\n\n  <p>This is a <br> paragraph with a line break.</p>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>This is a <br> paragraph with a line break.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML is Not Case Sensitive",
+        "text": [
+            "HTML tags are not case sensitive: <P> means the same as <p>.",
+            "The HTML standard does not require lowercase tags, but W3C\nrecommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.",
+            "At W3Schools we always use lowercase tag names.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Tag Reference",
+        "text": [
+            "W3Schools' tag reference contains additional information about these tags and their attributes.",
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,109 @@
+[
+    {
+        "title": "Boolean Values",
+        "text": [
+            "In programming you often need to know if an expression is \nTrue or False.",
+            "You can evaluate any expression in Python, and get one of two \nanswers, \nTrue or False.",
+            "When you compare two values, the expression is evaluated and Python returns \nthe Boolean answer:",
+            "Example\n\n  print(10 > 9)print(10 == 9)print(10 < 9)\nTry it Yourself »",
+            "When you run a condition in an if statement, Python returns \nTrue or False:",
+            "Example\nPrint a message based on whether the condition is True or \n  False:\n\n  a = 200b = 33if b > a:  print(\"b is greater than a\")\n  else:  print(\"b is not greater than a\")\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(10 > 9)print(10 == 9)print(10 < 9)"
+            },
+            {
+                "heading": "Example",
+                "code": "a = 200b = 33if b > a:  print(\"b is greater than a\")\n  else:  print(\"b is not greater than a\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Evaluate Values and Variables",
+        "text": [
+            "The bool() function allows you to evaluate \nany value, and give you \nTrue or False \nin return,",
+            "Example\nEvaluate a string and a number:\n\n  print(bool(\"Hello\"))print(bool(15))\nTry it Yourself »",
+            "Example\nEvaluate two variables:\n\n  x = \"Hello\"y = 15print(bool(x))print(bool(y))\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(bool(\"Hello\"))print(bool(15))"
+            },
+            {
+                "heading": "Example",
+                "code": "x = \"Hello\"y = 15print(bool(x))print(bool(y))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Most Values are True",
+        "text": [
+            "Almost any value is evaluated to True if it \nhas some sort of content.",
+            "Any string is True, except empty strings.",
+            "Any number is True, except \n0.",
+            "Any list, tuple, set, and dictionary are True, except \nempty ones.",
+            "Example\nThe following will return True:\n\n  bool(\"abc\")bool(123)bool([\"apple\", \"cherry\", \"banana\"])\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "bool(\"abc\")bool(123)bool([\"apple\", \"cherry\", \"banana\"])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Some Values are False",
+        "text": [
+            "In fact, there are not many values that evaluate to\nFalse, except empty values, such as (),\n[], {}, \n\"\", the number\n0, and the value None. \nAnd of course the value False evaluates to\nFalse.",
+            "Example\nThe following will return False:\n\n  bool(False)bool(None)bool(0)bool(\"\")bool(())bool([])\n  bool({})\nTry it Yourself »",
+            "One more value, or object in this case, evaluates to \nFalse, and that is if you have an object that \nis made from a class with a __len__ function that returns \n0 or \nFalse:",
+            "Example\n\n  class myclass():  def __len__(self):    return 0\nmyobj = myclass()print(bool(myobj))\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "bool(False)bool(None)bool(0)bool(\"\")bool(())bool([])\n  bool({})"
+            },
+            {
+                "heading": "Example",
+                "code": "class myclass():  def __len__(self):    return 0\nmyobj = myclass()print(bool(myobj))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Functions can Return a Boolean",
+        "text": [
+            "You can create functions that returns a Boolean Value:",
+            "Example\nPrint the answer of a function:\n\n  def myFunction() :  return Trueprint(myFunction())\nTry it Yourself »",
+            "You can execute code based on the Boolean answer of a function:",
+            "Example\nPrint \"YES!\" if the function returns True, otherwise print \"NO!\":\n\n  def myFunction() :  return Trueif myFunction():  \n  print(\"YES!\")else:  print(\"NO!\")\nTry it Yourself »",
+            "Python also has many built-in functions that return a boolean value, like the \nisinstance() \nfunction, which can be used to determine if an object is of a certain data type:",
+            "Example\nCheck if an object is an integer or not:\n\n  x = 200print(isinstance(x, int))\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def myFunction() :  return Trueprint(myFunction())"
+            },
+            {
+                "heading": "Example",
+                "code": "def myFunction() :  return Trueif myFunction():  \n  print(\"YES!\")else:  print(\"NO!\")"
+            },
+            {
+                "heading": "Example",
+                "code": "x = 200print(isinstance(x, int))"
+            }
+        ],
+        "tables": []
+    }
+]

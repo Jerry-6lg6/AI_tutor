@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Learn HTML Using Notepad or TextEdit",
+        "text": [
+            "Web pages can be created and modified by using professional HTML editors.",
+            "However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).",
+            "We believe that using a simple text editor is a good way to learn HTML.",
+            "Follow the steps below to create your first web page with Notepad or TextEdit."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Step 1: Open Notepad (PC)",
+        "text": [
+            "Windows 8 or later:",
+            "Open the Start Screen (the window symbol at the bottom left on your screen). Type Notepad.",
+            "Windows 7 or earlier:",
+            "Open Start > \nPrograms > Accessories > Notepad"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Step 1: Open TextEdit (Mac)",
+        "text": [
+            "Open Finder > Applications > TextEdit",
+            "Also change some preferences to get the application to \nsave files correctly.\nIn Preferences > Format > \nchoose \"Plain Text\"",
+            "Then under \"Open and Save\", check the box that says \"Display HTML files as HTML code instead of formatted text\".",
+            "Then open a new document to place the code."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Step 2: Write Some HTML",
+        "text": [
+            "Write or copy the following HTML code into Notepad:",
+            "<!DOCTYPE html><html><body><h1>My First Heading</h1>\n<p>My first paragraph.</p></body></html>",
+            "",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Step 3: Save the HTML Page",
+        "text": [
+            "Save the file on your computer. Select File > Save as in the Notepad menu.",
+            "Name the file \"index.htm\" and set the encoding to \nUTF-8 (which is the preferred encoding for HTML files).",
+            "",
+            "Tip: You can use either .htm or .html as file extension. There is no difference; it is up to you."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Step 4: View the HTML Page in Your Browser",
+        "text": [
+            "Open the saved HTML file in your favorite browser (double click on the file, \nor right-click - and choose \"Open with\").",
+            "The result will look much like this:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "W3Schools Online Editor - \"Try it Yourself\"",
+        "text": [
+            "With our free online editor, you can edit the HTML code and view the result in your browser.",
+            "It is the perfect tool when you want to test code fast. It also has color \ncoding and the ability to save and share code with others:",
+            "Example\n\n<!DOCTYPE html>\n<html><head><title>Page Title</title>\n</head><body><h1>This is a Heading</h1><p>This is a paragraph.</p>\n</body></html>\n\nTry it Yourself »",
+            "Click on the \"Try it Yourself\" button to see how it works."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html>\n<html><head><title>Page Title</title>\n</head><body><h1>This is a Heading</h1><p>This is a paragraph.</p>\n</body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "W3Schools Spaces",
+        "text": [
+            "If you want to create your own website and save your code online, try our free website builder, called W3schools Spaces:",
+            "W3Schools Spaces\nW3Schools Spaces\nEverything you need right in the browser.\nGet Started Now"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

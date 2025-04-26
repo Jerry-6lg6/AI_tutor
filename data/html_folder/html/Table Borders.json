@@ -1,0 +1,97 @@
+[
+    {
+        "title": "How To Add a Border",
+        "text": [
+            "To add a border, use the CSS border property on \ntable, th, and \ntd elements:",
+            "Example\n\ntable, th, td\n{\n  border: 1px solid black;\n}\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "table, th, td\n{\n  border: 1px solid black;\n}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Collapsed Table Borders",
+        "text": [
+            "To avoid having double borders like in the example above, set the CSS border-collapse \nproperty to collapse.",
+            "This will make the borders collapse into a single border:",
+            "Example\n\n table, th, td {  border: 1px solid black;\n   \n border-collapse: collapse;}\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "table, th, td {  border: 1px solid black;\n   \n border-collapse: collapse;}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Style Table Borders",
+        "text": [
+            "If you set a background color of each cell,\nand give the border a white color (the same as the document background),\nyou get the impression of an invisible border:",
+            "Example\n\n table, th, td {  border: 1px solid white;\n   \n border-collapse: collapse;}th, td {  background-color: #96D4D4;\n  }\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "table, th, td {  border: 1px solid white;\n   \n border-collapse: collapse;}th, td {  background-color: #96D4D4;\n  }"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Round Table Borders",
+        "text": [
+            "With the border-radius property, the borders get rounded corners:",
+            "Example\n\n table, th, td {  border: 1px solid \n  black;\n   \n border-radius: 10px;}\nTry it Yourself »",
+            "Skip the border around the table by leaving out table from the css selector:",
+            "Example\n\n th, td {  border: 1px solid \n  black;\n   \n border-radius: 10px;}\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "table, th, td {  border: 1px solid \n  black;\n   \n border-radius: 10px;}"
+            },
+            {
+                "heading": "Example",
+                "code": "th, td {  border: 1px solid \n  black;\n   \n border-radius: 10px;}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Dotted Table Borders",
+        "text": [
+            "With the border-style property, you can set the \nappearance of the border.",
+            "The following values are allowed:",
+            "Example\n\n  th, td { \n border-style: dotted;}\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "th, td { \n border-style: dotted;}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Border Color",
+        "text": [
+            "With the border-color property, you can set the color of the border.",
+            "Example\n\n  th, td { \n border-color: #96D4D4;}\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "th, td { \n border-color: #96D4D4;}"
+            }
+        ],
+        "tables": []
+    }
+]

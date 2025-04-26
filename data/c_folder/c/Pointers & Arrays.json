@@ -1,0 +1,86 @@
+[
+    {
+        "title": "Pointers & Arrays",
+        "text": [
+            "You can also use pointers to access arrays.",
+            "Consider the following array of integers:",
+            "Example\n\n    int myNumbers[4] = {25, 50, 75, 100};",
+            "You learned from the arrays chapter that you can loop through the array elements with a for loop:",
+            "Example\n\n    int myNumbers[4] = {25, 50, 75, 100};int i;for (i = 0; i < 4; \n    i++) {  printf(\"%d\\n\", myNumbers[i]);}\n\nResult:\n\n255075100\n\nTry it Yourself »",
+            "Instead of printing the value of each array element, let's print the memory address of each array element:",
+            "Example\n\n    int myNumbers[4] = {25, 50, 75, 100};int i;for (i = 0; i < 4; \n    i++) {  printf(\"%p\\n\", &myNumbers[i]);}\n\nResult:\n\n0x7ffe70f9d8f00x7ffe70f9d8f40x7ffe70f9d8f80x7ffe70f9d8fc\n\nTry it Yourself »",
+            "Note that the last number of each of the elements' memory address is \ndifferent, with an addition of 4.",
+            "It is because the size of an int type is typically 4 bytes, remember:",
+            "Example\n\n    // Create an int variableint myInt;// Get the memory size of an int\n    printf(\"%lu\", sizeof(myInt));\n\nResult:\n\n4\n\nTry it Yourself »",
+            "So from the \"memory address example\" above, you can see that the compiler \nreserves 4 bytes of memory for each array element, which means that the \nentire array takes up 16 bytes (4 * 4) of memory storage:",
+            "Example\n\n    int myNumbers[4] = {25, 50, 75, 100};// Get the size of the myNumbers \n    arrayprintf(\"%lu\", sizeof(myNumbers));\n\nResult:\n\n16\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myNumbers[4] = {25, 50, 75, 100};"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[4] = {25, 50, 75, 100};int i;for (i = 0; i < 4; \n    i++) {  printf(\"%d\\n\", myNumbers[i]);}"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[4] = {25, 50, 75, 100};int i;for (i = 0; i < 4; \n    i++) {  printf(\"%p\\n\", &myNumbers[i]);}"
+            },
+            {
+                "heading": "Example",
+                "code": "// Create an int variableint myInt;// Get the memory size of an int\n    printf(\"%lu\", sizeof(myInt));"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[4] = {25, 50, 75, 100};// Get the size of the myNumbers \n    arrayprintf(\"%lu\", sizeof(myNumbers));"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "How Are Pointers Related to Arrays",
+        "text": [
+            "Ok, so what's the relationship between pointers and arrays? Well, in C, the name of an \narray, is actually a pointer to the first \nelement of the array.",
+            "Confused? Let's try to understand this better, and use our \"memory address example\" above \nagain.",
+            "The memory address of the first element is the same as the \nname of the array:",
+            "Example\n\n    int myNumbers[4] = {25, 50, 75, 100};// Get the memory address of the \n    myNumbers arrayprintf(\"%p\\n\", myNumbers);// Get the memory \n    address of the first array elementprintf(\"%p\\n\", &myNumbers[0]);\n\nResult:\n\n0x7ffe70f9d8f00x7ffe70f9d8f0\n\nTry it Yourself »",
+            "This basically means that we can work with arrays through pointers!",
+            "How? Since myNumbers is a pointer to the first element in myNumbers, you can use \nthe * operator to access it:",
+            "Example\n\n    int myNumbers[4] = {25, 50, 75, 100};// Get the value of the first \n    element in myNumbersprintf(\"%d\", *myNumbers);\n\nResult:\n\n25\n\nTry it Yourself »",
+            "To access the rest of the elements in myNumbers, you can increment the pointer/array (+1, +2, etc):",
+            "Example\n\n    int myNumbers[4] = {25, 50, 75, 100};// Get the value of the second \n    element in myNumbersprintf(\"%d\\n\", *(myNumbers + 1));// Get the value of the \n    third \n    element in myNumbersprintf(\"%d\", *(myNumbers + 2));// \n    and so on..\n\nResult:\n\n5075\n\nTry it Yourself »",
+            "Or loop through it:",
+            "Example\n\n    int myNumbers[4] = {25, 50, 75, 100};int *ptr = myNumbers;int i;\nfor (i = 0; i < 4; i++) {  printf(\"%d\\n\", *(ptr + i));}\n\nResult:\n\n255075100\n\nTry it Yourself »",
+            "It is also possible to change the value of array elements with pointers:",
+            "Example\n\n    int myNumbers[4] = {25, 50, 75, 100};// Change the \n    value of the first element to 13*myNumbers = 13;// Change the \n    value of the second element to 17*(myNumbers +1) = 17;// Get \n    the value of the first elementprintf(\"%d\\n\", *myNumbers);// Get \n    the value of the second elementprintf(\"%d\\n\", *(myNumbers + 1));\n\nResult:\n\n1317\n\nTry it Yourself »",
+            "This way of working with arrays might seem a bit excessive. Especially with \n  simple arrays like in the examples above. However, for large arrays, it can be \n  much more efficient to access and manipulate arrays with pointers.\nIt is also considered faster and easier to access two-dimensional arrays \n  with pointers.\nAnd since strings are actually arrays, you can also use pointers to access \n  strings.\nFor now, it's great that you know how this works. But like we specified in the previous chapter; pointers \n  must be handled with care, since it is possible to overwrite other data stored \n  in memory.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myNumbers[4] = {25, 50, 75, 100};// Get the memory address of the \n    myNumbers arrayprintf(\"%p\\n\", myNumbers);// Get the memory \n    address of the first array elementprintf(\"%p\\n\", &myNumbers[0]);"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[4] = {25, 50, 75, 100};// Get the value of the first \n    element in myNumbersprintf(\"%d\", *myNumbers);"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[4] = {25, 50, 75, 100};// Get the value of the second \n    element in myNumbersprintf(\"%d\\n\", *(myNumbers + 1));// Get the value of the \n    third \n    element in myNumbersprintf(\"%d\", *(myNumbers + 2));// \n    and so on.."
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[4] = {25, 50, 75, 100};int *ptr = myNumbers;int i;\nfor (i = 0; i < 4; i++) {  printf(\"%d\\n\", *(ptr + i));}"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[4] = {25, 50, 75, 100};// Change the \n    value of the first element to 13*myNumbers = 13;// Change the \n    value of the second element to 17*(myNumbers +1) = 17;// Get \n    the value of the first elementprintf(\"%d\\n\", *myNumbers);// Get \n    the value of the second elementprintf(\"%d\\n\", *(myNumbers + 1));"
+            }
+        ],
+        "tables": []
+    }
+]

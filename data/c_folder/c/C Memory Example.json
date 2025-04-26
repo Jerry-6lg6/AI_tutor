@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Real-Life Memory Management Example",
+        "text": [
+            "To demonstrate a practical example of dynamic memory, we created a program that can make a list of any length.",
+            "Regular arrays in C have a fixed length and cannot be changed, but with \ndynamic memory we can create a list as long as we like:",
+            "Example\n\n  struct list {  int *data; // Points to the memory where the list items are \n  stored  int numItems; // Indicates how many items are currently in the list\n   \n  int size; // Indicates how many items fit in the allocated memory};\nvoid addToList(struct list *myList, int item);int main() {\n   \n  struct list myList;  int amount;  // Create a list and start with \n  enough space for 10 items  myList.numItems = 0;  myList.size = 10;\n   \n  myList.data = malloc(myList.size * sizeof(int));  // Find out if \n  memory allocation was successful  if (myList.data == NULL) {    \n  printf(\"Memory allocation failed\");    return 1; // Exit \n  the program with an error code  }  // Add any number of \n  items to the list specified by the amount variable  amount = 44;\n   \n  for (int i = 0; i < amount; i++) {    addToList(&myList, i + 1);  }  // \n  Display the contents of the list  for (int j = 0; j < myList.numItems; j++) {\n     \n  printf(\"%d \", myList.data[j]);  }  // Free the memory when it is no \n  longer needed  free(myList.data);  myList.data = NULL;  return 0;\n  }// This function adds an item to a listvoid addToList(struct list \n  *myList, int item) {  // If the list is full then resize the memory to \n  fit 10 more items  if (myList->numItems == myList->size) {    myList->size += \n  10;    myList->data = realloc( myList->data, myList->size * sizeof(int) );\n   \n  }  // Add the item to the end of the list\n   \n  myList->data[myList->numItems] = item;  myList->numItems++;}\nTry it Yourself »",
+            "This example has three parts:",
+            "The myList structure",
+            "The myList structure contains all of the information about the list, including its contents. It has three members:",
+            "We use a structure so that we can easily pass all of this information into a function.",
+            "The main() function",
+            "The main() function starts by initializing the list with space for 10 items:",
+            "// Create a list and start with enough space for 10 itemsmyList.numItems = \n  0;myList.size = 10;myList.data = malloc(myList.size * sizeof(int));",
+            "myList.numItems is set to 0 because the list starts off empty.",
+            "myList.size keeps track of how much memory is reserved. We set it to 10 because we will reserve enough memory for 10 items.",
+            "We then allocate the memory and store a pointer to it in myList.data.",
+            "Then we include error checking to find out if memory allocation was successful:",
+            "// Find out if memory allocation was successfulif (myList.data == NULL) {  printf(\"Memory allocation failed\");  \n  return 1; // Exit the program with an error code}",
+            "If everything is fine, a loop adds 44 items to the list using the addToList() function:",
+            "// Add any number of items to the list specified by the amount variable\n  amount = 44;for (int i = 0; i < amount; i++) {  \n  addToList(&myList, i + 1);}",
+            "In the code above, &myList is a pointer to the list and i + 1 is a number that we want to add to the list. We chose i + 1 so that the list would start at 1 instead of 0. You can choose any number to add to the list.",
+            "After all of the items have been added to the list, the next loop prints the contents of the list.",
+            "// Display the contents of the listfor (int j = 0; j < myList.numItems; \n  j++) {  printf(\"%d \", myList.data[j]);}",
+            "When we finish printing the list we free the memory to prevent memory leaks.",
+            "// Free the memory when it is no longer neededfree(myList.data);\n  myList.data = NULL;",
+            "The addToList() function",
+            "Our addToList() function adds an item to the list. It takes two parameters:",
+            "void addToList(struct list *myList, int item)",
+            "The function first checks if the list is full by comparing the number of \nitems in the list to the size of the list. If the list is full then it \nreallocates the memory to fit 10 more items:",
+            "// If the list is full then resize the memory to fit 10 more items\n  if (myList->numItems == myList->size) {  myList->size += 10;  \n  myList->data = realloc( myList->data, myList->size * sizeof(int) );}",
+            "Finally, the function adds the item to the end of list. The index at myList->numItems is always at the end of the list because it increases by 1 each time a new item is added.",
+            "// Add the item to the end of the listmyList->data[myList->numItems] = \n  item;myList->numItems++;",
+            "Why do we reserve 10 items at a time?",
+            "Optimizing is a balancing act between memory and performance. Even though we may be allocating some memory that we are not using, reallocating memory too frequently can be inefficient. There is a balance between allocating too much memory and allocating memory too frequently.",
+            "We chose the number 10 for this example, but it depends on how much data you expect and how often it changes. For example, if we know beforehand that we are going to have exactly 44 items then we can allocate memory for exactly 44 items and only allocate it once.",
+            "Complete stdlib Reference\nFor a complete reference of memory management functions and other functions found in the standard library, go to our C \n<stdlib.h> Library Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "struct list {  int *data; // Points to the memory where the list items are \n  stored  int numItems; // Indicates how many items are currently in the list\n   \n  int size; // Indicates how many items fit in the allocated memory};\nvoid addToList(struct list *myList, int item);int main() {\n   \n  struct list myList;  int amount;  // Create a list and start with \n  enough space for 10 items  myList.numItems = 0;  myList.size = 10;\n   \n  myList.data = malloc(myList.size * sizeof(int));  // Find out if \n  memory allocation was successful  if (myList.data == NULL) {    \n  printf(\"Memory allocation failed\");    return 1; // Exit \n  the program with an error code  }  // Add any number of \n  items to the list specified by the amount variable  amount = 44;\n   \n  for (int i = 0; i < amount; i++) {    addToList(&myList, i + 1);  }  // \n  Display the contents of the list  for (int j = 0; j < myList.numItems; j++) {\n     \n  printf(\"%d \", myList.data[j]);  }  // Free the memory when it is no \n  longer needed  free(myList.data);  myList.data = NULL;  return 0;\n  }// This function adds an item to a listvoid addToList(struct list \n  *myList, int item) {  // If the list is full then resize the memory to \n  fit 10 more items  if (myList->numItems == myList->size) {    myList->size += \n  10;    myList->data = realloc( myList->data, myList->size * sizeof(int) );\n   \n  }  // Add the item to the end of the list\n   \n  myList->data[myList->numItems] = item;  myList->numItems++;}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Complete stdlib Reference",
+        "text": [
+            "For a complete reference of memory management functions and other functions found in the standard library, go to our C \n<stdlib.h> Library Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

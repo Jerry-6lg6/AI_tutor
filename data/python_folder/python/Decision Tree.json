@@ -1,0 +1,120 @@
+[
+    {
+        "title": "Decision Tree",
+        "text": [
+            "In this chapter we will show you how to make a \"Decision Tree\". A Decision \nTree is a Flow Chart, and can help you make decisions based on previous experience.",
+            "In the example, a person will try to decide if he/she should go to a comedy show or \nnot.",
+            "Luckily our example person has registered every time there was a comedy show \nin town, and registered some information about the comedian, and also \nregistered if he/she went or not.",
+            "Now, based on this data set, Python can create a decision tree that can be used to decide \nif any new shows are worth attending to.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "How Does it Work?",
+        "text": [
+            "First, read the dataset with pandas:",
+            "Example\nRead and print the data set:\n\n  import pandasdf = pandas.read_csv(\"data.csv\")\nprint(df)\n\nRun example »",
+            "To make a decision tree, all data has to be numerical.",
+            "We have to convert the non numerical columns 'Nationality' and 'Go' into numerical values.",
+            "Pandas has a map() method that takes a dictionary with information on how to \nconvert the values.",
+            "{'UK': 0, 'USA': 1, 'N': 2}",
+            "Means convert the values 'UK' to 0, 'USA' to 1, and 'N' to 2.",
+            "Example\nChange string values into numerical values:\n\n  d = {'UK': 0, \n  'USA': 1, 'N': 2}df['Nationality'] = df['Nationality'].map(d)d = \n  {'YES': 1, 'NO': 0}df['Go'] = df['Go'].map(d)print(df)\n\nRun example »",
+            "Then we have to separate the feature columns from the target column.",
+            "The feature columns are the columns that we try to predict from, and \nthe target column is the column with the values we try to predict.",
+            "Example\nX is the feature columns, \ny is the target column:\n\n  features = ['Age', 'Experience', 'Rank', 'Nationality']X = df[features]y = df['Go']\n  print(X)print(y)\n\nRun example »",
+            "Now we can create the actual decision tree, fit it with our details. Start by \nimporting the modules we need:",
+            "Example\nCreate and display a Decision Tree:\n\n  import pandasfrom sklearn import treefrom sklearn.tree import \n  DecisionTreeClassifierimport matplotlib.pyplot as pltdf = \n  pandas.read_csv(\"data.csv\")d = {'UK': 0, 'USA': 1, 'N': 2}df['Nationality'] \n  = df['Nationality'].map(d)d = {'YES': 1, 'NO': 0}df['Go'] = df['Go'].map(d)\nfeatures = ['Age', 'Experience', 'Rank', 'Nationality']X = df[features]\n  y = df['Go']dtree = DecisionTreeClassifier()dtree = dtree.fit(X, \n  y)tree.plot_tree(dtree, feature_names=features)\n\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pandasdf = pandas.read_csv(\"data.csv\")\nprint(df)"
+            },
+            {
+                "heading": "Example",
+                "code": "d = {'UK': 0, \n  'USA': 1, 'N': 2}df['Nationality'] = df['Nationality'].map(d)d = \n  {'YES': 1, 'NO': 0}df['Go'] = df['Go'].map(d)print(df)"
+            },
+            {
+                "heading": "Example",
+                "code": "features = ['Age', 'Experience', 'Rank', 'Nationality']X = df[features]y = df['Go']\n  print(X)print(y)"
+            },
+            {
+                "heading": "Example",
+                "code": "import pandasfrom sklearn import treefrom sklearn.tree import \n  DecisionTreeClassifierimport matplotlib.pyplot as pltdf = \n  pandas.read_csv(\"data.csv\")d = {'UK': 0, 'USA': 1, 'N': 2}df['Nationality'] \n  = df['Nationality'].map(d)d = {'YES': 1, 'NO': 0}df['Go'] = df['Go'].map(d)\nfeatures = ['Age', 'Experience', 'Rank', 'Nationality']X = df[features]\n  y = df['Go']dtree = DecisionTreeClassifier()dtree = dtree.fit(X, \n  y)tree.plot_tree(dtree, feature_names=features)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Result Explained",
+        "text": [
+            "The decision tree uses your earlier decisions to calculate the odds for you to wanting to go see \na comedian or not.",
+            "Let us read the different aspects of the decision tree:",
+            "",
+            "Rank <= 6.5 means that every comedian with a rank of 6.5 or \nlower will follow the \nTrue arrow (to the left), and the rest will \nfollow the False arrow (to the right).",
+            "gini = 0.497 refers to the quality of the \nsplit, and is always a number between 0.0 and 0.5, where 0.0 would mean all of \nthe samples got the same result, and 0.5 would mean that the split is done \nexactly in the middle.",
+            "samples = 13 means that there are 13 \ncomedians left at this point in the decision, which is all of them since this is \nthe first step.",
+            "value = [6, 7] means that of these 13 \ncomedians, 6 will get a \"NO\", and 7 will get a \n\"GO\".",
+            "Gini\nThere are many ways to split the samples, we use the GINI method in this tutorial.\nThe Gini method uses this formula:\nGini = 1 - (x/n)2 - (y/n)2\nWhere x is the number of positive answers(\"GO\"), \nn is the number of samples, and \ny is the number of negative answers (\"NO\"), \nwhich gives us this calculation:\n1 - (7 / 13)2 - (6 / 13)2 = 0.497",
+            "",
+            "The next step contains two boxes, one box for the comedians with a 'Rank' of \n6.5 or lower, and one box with the rest.",
+            "gini = 0.0 means all of the samples got the \nsame result.",
+            "samples = 5 means that there are 5 comedians \nleft in this branch (5 comedian with a Rank of 6.5 or lower).",
+            "value = [5, 0] means that 5 will get a \"NO\" \nand 0 will get a \"GO\".",
+            "Nationality <= 0.5 means that the comedians \nwith a nationality value of less than 0.5 will follow the arrow to the left \n(which means everyone from the UK, ), and the rest will follow the arrow to the \nright.",
+            "gini = 0.219 means that about 22% of the \nsamples would go in one direction.",
+            "samples = 8 means that there are 8 comedians \nleft in this branch (8 comedian with a Rank higher than 6.5).",
+            "value = [1, 7] means that of these 8 \ncomedians, 1 will get a \"NO\" and 7 will get a \"GO\".",
+            "",
+            "Age <= 35.5 means that comedians \nat the age of 35.5 or younger will follow the arrow to the left, and the rest will follow the arrow to the \nright.",
+            "gini = 0.375 means that about 37,5% of the \nsamples would go in one direction.",
+            "samples = 4 means that there are 4 comedians \nleft in this branch (4 comedians from the UK).",
+            "value = [1, 3] means that of these 4 \ncomedians, 1 will get a \"NO\" and 3 will get a \"GO\".",
+            "gini = 0.0 means all of the samples got the \nsame result.",
+            "samples = 4 means that there are 4 comedians \nleft in this branch (4 comedians not from the UK).",
+            "value = [0, 4] means that of these 4 \ncomedians, 0 will get a \"NO\" and 4 will get a \"GO\".",
+            "",
+            "gini = 0.0 means all of the samples got the \nsame result.",
+            "samples = 2 means that there are 2 comedians \nleft in this branch (2 comedians at the age 35.5 or younger).",
+            "value = [0, 2] means that of these 2 \ncomedians, 0 will get a \"NO\" and 2 will get a \"GO\".",
+            "Experience <= 9.5 means that comedians \nwith 9.5 years of experience, or less, will follow the arrow to the left, and the rest will follow the arrow to the \nright.",
+            "gini = 0.5 means that 50% of the samples \nwould go in one direction.",
+            "samples = 2 means that there are 2 comedians \nleft in this branch (2 comedians older than 35.5).",
+            "value = [1, 1] means that of these 2 \ncomedians, 1 will get a \"NO\" and 1 will get a \"GO\".",
+            "",
+            "gini = 0.0 means all of the samples got the \nsame result.",
+            "samples = 1 means that there is 1 comedian \nleft in this branch (1 comedian with 9.5 years of experience or less).",
+            "value = [0, 1] means that 0 will get a \"NO\" and \n1 will get a \"GO\".",
+            "gini = 0.0 means all of the samples got the \nsame result.",
+            "samples = 1 means that there is 1 comedians \nleft in this branch (1 comedian with more than 9.5 years of experience).",
+            "value = [1, 0] means that 1 will get a \"NO\" and \n0 will get a \"GO\"."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Predict Values",
+        "text": [
+            "We can use the Decision Tree to predict new values.",
+            "Example: Should I go see a show starring a 40 years old American comedian, with 10 years of experience, \nand a comedy ranking of 7?",
+            "Example\nUse predict() method to predict new values:\n\n  print(dtree.predict([[40, 10, 7, 1]]))\n\nRun example »",
+            "Example\nWhat would the answer be if the comedy rank was 6?\n\n  print(dtree.predict([[40, 10, 6, 1]]))\n\nRun example »",
+            "Different Results\nYou will see that the Decision Tree gives you different results if you run \n  it enough times, even if you feed it with the same data.\nThat is because the Decision Tree does not give us a 100% certain answer. It is based on the \n  probability of an outcome, and the answer will vary.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(dtree.predict([[40, 10, 7, 1]]))"
+            },
+            {
+                "heading": "Example",
+                "code": "print(dtree.predict([[40, 10, 6, 1]]))"
+            }
+        ],
+        "tables": []
+    }
+]

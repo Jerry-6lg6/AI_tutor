@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Identifiers",
+        "text": [
+            "All Java variables must be\nidentified with unique names.",
+            "These unique names are called identifiers.",
+            "Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).",
+            "Note: It is recommended to use descriptive names in order to \ncreate understandable and maintainable code:",
+            "Example\n// Good\nint minutesPerHour = 60;\n\n// OK, but not so easy to understand what m actually is\nint m = 60;\n\n\nTry it Yourself »",
+            "The general rules for naming variables are:",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

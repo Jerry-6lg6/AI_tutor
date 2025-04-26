@@ -1,0 +1,99 @@
+[
+    {
+        "title": "The SQL SELECT Statement",
+        "text": [
+            "The SELECT statement is used to select data from a database.",
+            "Example\nReturn data from the Customers table:\n\nSELECT CustomerName, City FROM Customers;\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, City FROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Syntax",
+        "text": [
+            "SELECT column1, column2, ...\nFROM table_name;",
+            "Here, column1, column2, ... are the field names of the table you want to select data from.",
+            "The table_name represents the name of the table you want to select data from."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Customers table used in the examples:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Select ALL columns",
+        "text": [
+            "If you want to return all columns, without specifying every column name, you can use the\nSELECT * syntax:",
+            "Example\nReturn all the columns from the Customers table:\n\n SELECT * FROM Customers;\n\n\n Try it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers;"
+            }
+        ],
+        "tables": []
+    }
+]

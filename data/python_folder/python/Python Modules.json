@@ -1,0 +1,133 @@
+[
+    {
+        "title": "What is a Module?",
+        "text": [
+            "Consider a module to be the same as a code library.",
+            "A file containing a set of functions you want to include in your application."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Create a Module",
+        "text": [
+            "To create a module just save the code you want in a file with the file extension .py:",
+            "Example\nSave this code in a file named mymodule.py\n\n  def greeting(name):  print(\"Hello, \" + name)"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def greeting(name):  print(\"Hello, \" + name)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Use a Module",
+        "text": [
+            "Now we can use the module we just created, by using the import statement:",
+            "Example\nImport the module named mymodule, and call the greeting function:\n\n  import mymodulemymodule.greeting(\"Jonathan\")\n\nRun Example »",
+            "Note: When using a function from a module, use the syntax: module_name.function_name."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mymodulemymodule.greeting(\"Jonathan\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Variables in Module",
+        "text": [
+            "The module can contain functions, as already described, but also variables of \nall types (arrays, dictionaries, objects etc):",
+            "Example\nSave this code in the file mymodule.py\n\n  person1 = {  \"name\": \"John\",  \"age\": 36,  \n  \"country\": \"Norway\"}",
+            "Example\nImport the module named mymodule, and access the person1 dictionary:\n\n  import mymodulea = mymodule.person1[\"age\"]print(a)\nRun Example »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "person1 = {  \"name\": \"John\",  \"age\": 36,  \n  \"country\": \"Norway\"}"
+            },
+            {
+                "heading": "Example",
+                "code": "import mymodulea = mymodule.person1[\"age\"]print(a)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Naming a Module",
+        "text": [
+            "You can name the module file whatever you like, but it must have the file extension \n.py"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Re-naming a Module",
+        "text": [
+            "You can create an alias when you import a module, by using the as keyword:",
+            "Example\nCreate an alias for mymodule called mx:\n\n  import mymodule as mxa = mx.person1[\"age\"]print(a)\nRun Example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mymodule as mxa = mx.person1[\"age\"]print(a)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Built-in Modules",
+        "text": [
+            "There are several built-in modules in Python, which you can import whenever you like.",
+            "Example\nImport and use the platform module:\n\n  import platformx = platform.system()print(x)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import platformx = platform.system()print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using the dir() Function",
+        "text": [
+            "There is a built-in function to list all the function names (or variable \nnames) in a module. The dir() function:",
+            "Example\nList all the defined names belonging to the platform module:\n\n  import platformx = dir(platform)print(x)\nTry it Yourself »",
+            "Note: The dir() function can be used on all \n  modules, also the ones you create yourself."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import platformx = dir(platform)print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Import From Module",
+        "text": [
+            "You can choose to import only parts from a module, by using the from keyword.",
+            "Example\nThe module named mymodule has one function \nand one dictionary:\n\n  def greeting(name):  print(\"Hello, \" + name)person1 \n  = {  \"name\": \"John\",  \"age\": 36,  \"country\": \n  \"Norway\"}",
+            "Example\nImport only the person1 dictionary from the module:\n\n  from mymodule import person1print (person1[\"age\"])\nRun Example »",
+            "Note: When importing using the from \n  keyword, do not use the module name when referring to elements in the module. \n  Example: person1[\"age\"], not\nmymodule.person1[\"age\"]",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def greeting(name):  print(\"Hello, \" + name)person1 \n  = {  \"name\": \"John\",  \"age\": 36,  \"country\": \n  \"Norway\"}"
+            },
+            {
+                "heading": "Example",
+                "code": "from mymodule import person1print (person1[\"age\"])"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "title": "CREATE PROCEDURE",
+        "text": [
+            "The CREATE PROCEDURE command is used to \ncreate a stored procedure.",
+            "A stored procedure is a prepared SQL code that you can save, so the \ncode can be reused over and over again.",
+            "The following SQL creates a stored procedure named \"SelectAllCustomers\" \nthat selects all records from the \"Customers\" table:",
+            "Example\n\n  CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;",
+            "Execute the stored procedure above as follows:",
+            "Example\n\n  EXEC SelectAllCustomers;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;"
+            },
+            {
+                "heading": "Example",
+                "code": "EXEC SelectAllCustomers;"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "title": "The XML Tree Structure",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "An Example XML Document",
+        "text": [
+            "The image above represents books in this XML:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?><bookstore>\n \n<book category=\"cooking\">\n     \n  <title lang=\"en\">Everyday Italian</title>\n     \n  <author>Giada De Laurentiis</author>\n     \n  <year>2005</year>\n     \n  <price>30.00</price>\n \n</book>\n \n<book category=\"children\">\n     \n  <title lang=\"en\">Harry Potter</title>\n     \n  <author>J K. Rowling</author>\n     \n  <year>2005</year>\n     \n  <price>29.99</price>\n \n</book>\n \n<book category=\"web\">\n     \n  <title lang=\"en\">Learning XML</title>\n     \n  <author>Erik T. Ray</author>\n     \n  <year>2003</year>\n     \n  <price>39.95</price>\n \n</book>\n</bookstore>",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Tree Structure",
+        "text": [
+            "XML documents are formed as element trees.",
+            "An XML tree starts at a root element and branches from the \nroot to child elements.",
+            "All elements can have sub elements (child elements):",
+            "<root>\n   \n  <child>\n       \n    <subchild>.....</subchild>\n   \n  </child>\n</root>",
+            "The terms parent, child, and sibling are used to describe the relationships between \nelements.",
+            "Parents have children. Children have parents. Siblings are children on the same level (brothers \nand sisters).",
+            "All elements can have text content (Harry Potter) and attributes (category=\"cooking\")."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Self-Describing Syntax",
+        "text": [
+            "XML uses a much self-describing syntax.",
+            "A prolog defines the XML version and the character encoding:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+            "The next line is the root element of the document:",
+            "<bookstore>",
+            "The next line starts a <book> element:",
+            "<book category=\"cooking\">",
+            "The <book> elements have 4 child elements: <title>, <author>, <year>, <price>.",
+            "<title lang=\"en\">Everyday Italian</title>\n<author>Giada De Laurentiis</author>\n<year>2005</year>\n<price>30.00</price>",
+            "The next line ends the book element:",
+            "</book>",
+            "You can assume, from this example, that the XML document contains information \nabout books in a bookstore.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

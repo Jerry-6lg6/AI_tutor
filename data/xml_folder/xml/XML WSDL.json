@@ -1,0 +1,73 @@
+[
+    {
+        "title": "WSDL Documents",
+        "text": [
+            "An WSDL document describes a web service. It specifies the location \nof the service, and  \nthe methods of the service, using these major elements:",
+            "The main structure of a WSDL document looks like this:",
+            "<definitions>\n<types>\n   \n  data type definitions........\n</types>\n<message>\n   \n  definition of the data being communicated....\n</message>\n<portType>\n   \n  set of operations......\n</portType>\n<binding>\n   \n  protocol and data format specification....\n</binding>\n</definitions>",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "WSDL Example",
+        "text": [
+            "This is a simplified fraction of a WSDL document:",
+            "<message name=\"getTermRequest\">\n    \n   <part name=\"term\" type=\"xs:string\"/>\n</message>\n<message name=\"getTermResponse\">\n    \n   <part name=\"value\" type=\"xs:string\"/>\n</message>\n<portType name=\"glossaryTerms\">\n   \n  <operation name=\"getTerm\">\n       \n    <input message=\"getTermRequest\"/>\n       \n    <output message=\"getTermResponse\"/>\n   \n  </operation>\n</portType>",
+            "In this example the <portType> element defines \"glossaryTerms\" \nas the name of a port, and \"getTerm\" as the name of an operation.",
+            "The \"getTerm\" operation has an input message called \"getTermRequest\" \nand an output message called \"getTermResponse\".",
+            "The <message> elements define the parts of each message and \nthe associated data types."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <portType> Element",
+        "text": [
+            "The <portType> element defines a web service, the operations that can be performed, and the messages that are involved.",
+            "The request-response type is the most common operation type, but WSDL defines four types:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "WSDL One-Way Operation",
+        "text": [
+            "A one-way operation example:",
+            "<message name=\"newTermValues\">\n    \n   <part name=\"term\" type=\"xs:string\"/>\n    \n   <part name=\"value\" type=\"xs:string\"/>\n</message>\n<portType name=\"glossaryTerms\">\n    \n   <operation name=\"setTerm\">\n         \n      <input name=\"newTerm\" message=\"newTermValues\"/>\n    \n   </operation>\n</portType >",
+            "In the example above, the portType \"glossaryTerms\" defines a one-way operation called \"setTerm\".",
+            "The \"setTerm\" operation allows input of new glossary terms messages using a \"newTermValues\" \nmessage with the input parameters \"term\" and \"value\". However, no output is  \ndefined for the operation."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "WSDL Request-Response Operation",
+        "text": [
+            "A request-response operation example:",
+            "<message name=\"getTermRequest\">\n    \n   <part name=\"term\" type=\"xs:string\"/>\n</message>\n<message name=\"getTermResponse\">\n    \n   <part name=\"value\" type=\"xs:string\"/>\n</message>\n<portType name=\"glossaryTerms\">\n   \n  <operation name=\"getTerm\">\n     \n  <input message=\"getTermRequest\"/>\n     \n  <output message=\"getTermResponse\"/>\n   \n  </operation>\n</portType>",
+            "In the example above, the portType \"glossaryTerms\" defines a request-response operation called \"getTerm\".",
+            "The \"getTerm\" operation requires an input message called \"getTermRequest\" \nwith a parameter called \"term\", and will return an output message called \"getTermResponse\" \nwith a parameter called \"value\"."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "WSDL Binding to SOAP",
+        "text": [
+            "WSDL bindings defines the message format and protocol details for a web service.",
+            "A request-response operation example:",
+            "<message name=\"getTermRequest\">\n    \n   <part name=\"term\" type=\"xs:string\"/>\n</message>\n<message name=\"getTermResponse\">\n    \n   <part name=\"value\" type=\"xs:string\"/>\n</message>\n<portType name=\"glossaryTerms\">\n   \n  <operation name=\"getTerm\">\n           \n        <input message=\"getTermRequest\"/>\n                 \n              <output message=\"getTermResponse\"/>\n                 \n                </operation>\n                </portType>\n<binding type=\"glossaryTerms\" name=\"b1\">\n   <soap:binding style=\"document\"\n   transport=\"http://schemas.xmlsoap.org/soap/http\" />\n     <operation>\n         <soap:operation\n     soapAction=\"http://example.com/getTerm\"/>\n         <input><soap:body use=\"literal\"/></input>\n         <output><soap:body use=\"literal\"/></output>\n   \n  </operation>\n</binding>",
+            "The binding element has two attributes - name and type.",
+            "The name attribute (you can use any name you want) defines the name of the \nbinding, and the type attribute points to the port for the binding, in this case the \"glossaryTerms\" port.",
+            "The soap:binding element has two attributes - style and transport.",
+            "The style attribute can be \"rpc\" or \"document\". In this case we use document. The transport attribute defines the SOAP protocol to use.\nIn this case we use HTTP.",
+            "The operation element defines each operation that the portType exposes.",
+            "For each operation the corresponding SOAP action has to be defined. You must \nalso specify how the input and output are encoded. In this case we use \"literal\".",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

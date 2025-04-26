@@ -1,0 +1,24 @@
+[
+    {
+        "title": "GROUP BY",
+        "text": [
+            "The GROUP BY command is used to group the result set (used with aggregate functions: COUNT, MAX, MIN, SUM, \nAVG).",
+            "The following SQL lists the number of customers in each country:",
+            "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country;\n\n\n  Try it Yourself »",
+            "The following SQL lists the number of customers in each country, \nsorted high to low:",
+            "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  ORDER BY COUNT(CustomerID) DESC;\n\n\n  Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  ORDER BY COUNT(CustomerID) DESC;"
+            }
+        ],
+        "tables": []
+    }
+]

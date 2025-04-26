@@ -1,0 +1,148 @@
+[
+    {
+        "title": "The SQL ORDER BY",
+        "text": [
+            "The ORDER BY keyword is used to sort the result-set in ascending or \ndescending order.",
+            "Example\nSort the products by price:\n\n SELECT * FROM Products\n ORDER BY Price;\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Products\n ORDER BY Price;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Syntax",
+        "text": [
+            "SELECT column1, column2, ...\nFROM table_name\nORDER BY column1, column2, ... ASC|DESC;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Products table used in the examples:",
+            "ProductID\nProductName\nSupplierID\nCategoryID\nUnit\nPrice\n\n\n1\nChais\n1\n1\n10 boxes x 20 bags\n18\n\n2\nChang\n1\n1\n24 - 12 oz bottles\n19\n\n3\nAniseed Syrup\n1\n2\n12 - 550 ml bottles\n10\n\n4\nChef Anton's Cajun Seasoning\n2\n2\n48 - 6 oz jars\n22\n\n5\nChef Anton's Gumbo Mix\n2\n2\n36 boxes\n21.35",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "ProductID": "1",
+                    "ProductName": "Chais",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "10 boxes x 20 bags",
+                    "Price": "18"
+                },
+                {
+                    "ProductID": "2",
+                    "ProductName": "Chang",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "24 - 12 oz bottles",
+                    "Price": "19"
+                },
+                {
+                    "ProductID": "3",
+                    "ProductName": "Aniseed Syrup",
+                    "SupplierID": "1",
+                    "CategoryID": "2",
+                    "Unit": "12 - 550 ml bottles",
+                    "Price": "10"
+                },
+                {
+                    "ProductID": "4",
+                    "ProductName": "Chef Anton's Cajun Seasoning",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "48 - 6 oz jars",
+                    "Price": "22"
+                },
+                {
+                    "ProductID": "5",
+                    "ProductName": "Chef Anton's Gumbo Mix",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "36 boxes",
+                    "Price": "21.35"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "DESC",
+        "text": [
+            "The ORDER BY keyword sorts the records in ascending order by default. To sort the records in descending order, use the \nDESC keyword.",
+            "Example\nSort the products from highest to lowest price:\n\n SELECT * FROM Products\n ORDER BY Price DESC;\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Products\n ORDER BY Price DESC;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Order Alphabetically",
+        "text": [
+            "For string values the ORDER BY keyword will order alphabetically:",
+            "Example\nSort the products alphabetically by ProductName:\n\n SELECT * FROM Products\n ORDER BY ProductName;\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Products\n ORDER BY ProductName;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Alphabetically DESC",
+        "text": [
+            "To sort the table reverse alphabetically, use the DESC keyword:",
+            "Example\nSort the products by ProductName in reverse order:\n\n SELECT * FROM Products\n ORDER BY ProductName DESC;\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Products\n ORDER BY ProductName DESC;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "ORDER BY Several Columns",
+        "text": [
+            "The following SQL statement selects all customers from the \"Customers\" table, \nsorted by the \"Country\" and the \"CustomerName\" column. This means that it orders \nby Country, but if some rows have the same Country, it orders them by \nCustomerName:",
+            "Example\n\n SELECT * FROM Customers\n ORDER BY Country, CustomerName;\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n ORDER BY Country, CustomerName;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using Both ASC and DESC",
+        "text": [
+            "The following SQL statement selects all customers from the \"Customers\" table, \nsorted ascending by the \"Country\" and descending by the \"CustomerName\" column:",
+            "Example\n\n SELECT * FROM Customers\n ORDER BY Country ASC, CustomerName DESC;\n\n Try it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n ORDER BY Country ASC, CustomerName DESC;"
+            }
+        ],
+        "tables": []
+    }
+]

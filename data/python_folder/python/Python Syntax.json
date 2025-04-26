@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Execute Python Syntax",
+        "text": [
+            "As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "On this page",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Python Indentation",
+        "text": [
+            "Indentation refers to the spaces at the beginning of a code line.",
+            "Where in other programming languages the indentation in code is for readability \nonly, the indentation in Python is very important.",
+            "Python uses indentation to indicate a block of code.",
+            "Example\n\n  if 5 > 2: \nprint(\"Five is greater than two!\")\n\nTry it Yourself »",
+            "Python will give you an error if you skip the indentation:",
+            "Example\nSyntax Error:\n\nif 5 > 2:\nprint(\"Five is greater than two!\")\n\nTry it Yourself »",
+            "The number of spaces is up to you as a programmer, the most common use is four, but it has \nto be at least one.",
+            "Example\n\n  if 5 > 2: print(\"Five is greater than two!\") \nif 5 > 2:        print(\"Five is greater than two!\") \n\nTry it Yourself »",
+            "You have to use the same number of spaces in the same block of code, \notherwise Python will give you an error:",
+            "Example\nSyntax Error:\n\nif 5 > 2:\n print(\"Five is greater than two!\")\n        print(\"Five is greater than \n  two!\")\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "if 5 > 2: \nprint(\"Five is greater than two!\")"
+            },
+            {
+                "heading": "Example",
+                "code": "if 5 > 2:\nprint(\"Five is greater than two!\")"
+            },
+            {
+                "heading": "Example",
+                "code": "if 5 > 2: print(\"Five is greater than two!\") \nif 5 > 2:        print(\"Five is greater than two!\")"
+            },
+            {
+                "heading": "Example",
+                "code": "if 5 > 2:\n print(\"Five is greater than two!\")\n        print(\"Five is greater than \n  two!\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Python Variables",
+        "text": [
+            "In Python, variables are created when you assign a value to it:\n\nExample\nVariables in Python:\n\n  x = 5y = \"Hello, World!\"\n\nTry it Yourself »\n\nPython has no command for declaring a variable.\nYou will learn more about variables in the \nPython Variables chapter.\n\n\nComments\nPython has commenting capability for the purpose of in-code documentation.\nComments start with a #, and Python will render the rest of the line as a comment:\n\nExample\nComments in Python:\n\n#This is a comment.\nprint(\"Hello, World!\")\n\nTry it Yourself »\n\n\n\n\n\nVideo: Python Syntax\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n❮ Previous\nNext ❯\n\n\n\n\n\n\n\n\n\n\n\n\n★\n+1\n\n\n\n \n\n\n\nTrack your progress - it's free!\n\n\n \n\n\n\n\n\n\n\n          Log in\n        \n\n          Sign Up"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Comments",
+        "text": [
+            "Python has commenting capability for the purpose of in-code documentation.",
+            "Comments start with a #, and Python will render the rest of the line as a comment:\n\nExample\nComments in Python:\n\n#This is a comment.\nprint(\"Hello, World!\")\n\nTry it Yourself »\n\n\n\n\n\nVideo: Python Syntax\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n❮ Previous\nNext ❯\n\n\n\n\n\n\n\n\n\n\n\n\n★\n+1\n\n\n\n \n\n\n\nTrack your progress - it's free!\n\n\n \n\n\n\n\n\n\n\n          Log in\n        \n\n          Sign Up"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

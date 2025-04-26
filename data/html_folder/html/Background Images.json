@@ -1,0 +1,101 @@
+[
+    {
+        "title": "Background Image on an HTML element",
+        "text": [
+            "To add a background image on an HTML element, use the HTML style attribute \nand the CSS background-image property:",
+            "Example\nAdd a background image on a HTML element:\n\n  <p style=\"background-image: url('img_girl.jpg');\">\nTry it Yourself »",
+            "You can also specify the background image in the <style> \nelement, in the <head> \nsection:",
+            "Example\nSpecify the background image in the <style> \n  element:\n\n  <style>p {  background-image: url('img_girl.jpg');\n  }</style>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p style=\"background-image: url('img_girl.jpg');\">"
+            },
+            {
+                "heading": "Example",
+                "code": "<style>p {  background-image: url('img_girl.jpg');\n  }</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Background Image on a Page",
+        "text": [
+            "If you want the entire page to have a background image, you must \nspecify the background image on the <body> element:",
+            "Example\nAdd a background image for the entire page:\n\n  <style>body {  background-image: url('img_girl.jpg');\n  }</style>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>body {  background-image: url('img_girl.jpg');\n  }</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Background Repeat",
+        "text": [
+            "If the background image is smaller than the element, the image will repeat itself, \nhorizontally and vertically, until it reaches the end of the element:",
+            "",
+            "Example\n\n  <style>body {  background-image: url('example_img_girl.jpg');}</style>\nTry it Yourself »",
+            "To avoid the background image from repeating itself, set the background-repeat property \nto no-repeat.",
+            "Example\n\n  <style>body {  background-image: url('example_img_girl.jpg');  \n  background-repeat: no-repeat;}</style>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>body {  background-image: url('example_img_girl.jpg');}</style>"
+            },
+            {
+                "heading": "Example",
+                "code": "<style>body {  background-image: url('example_img_girl.jpg');  \n  background-repeat: no-repeat;}</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Background Cover",
+        "text": [
+            "If you want the background image to cover the entire element, you \ncan set the background-size property to\ncover.",
+            "Also, to make sure the entire element is always covered, set the \nbackground-attachment property to fixed:",
+            "This way, the background image will cover the entire element, with no stretching (the image will \nkeep its original proportions):",
+            "Example\n\n  <style>body {  background-image: url('img_girl.jpg');  \n  background-repeat: no-repeat;  background-attachment: fixed;   \n  background-size: cover;\n  }</style>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>body {  background-image: url('img_girl.jpg');  \n  background-repeat: no-repeat;  background-attachment: fixed;   \n  background-size: cover;\n  }</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Background Stretch",
+        "text": [
+            "If you want the background image to stretch to fit the entire element, you \ncan set the background-size property to\n100% 100%:",
+            "",
+            "Try resizing the browser window, and you will see that the image will stretch, but always cover the entire element.",
+            "Example\n\n  <style>body {  background-image: url('img_girl.jpg');  \n  background-repeat: no-repeat;  background-attachment: fixed;   \n  background-size: 100% 100%;\n  }</style>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>body {  background-image: url('img_girl.jpg');  \n  background-repeat: no-repeat;  background-attachment: fixed;   \n  background-size: 100% 100%;\n  }</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Learn More CSS",
+        "text": [
+            "From the examples above you have learned that background images can be styled by using the CSS background properties.",
+            "To learn more about CSS background properties, study our CSS Background Tutorial.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

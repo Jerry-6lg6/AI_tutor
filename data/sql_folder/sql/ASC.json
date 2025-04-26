@@ -1,0 +1,18 @@
+[
+    {
+        "title": "ASC",
+        "text": [
+            "The ASC command is used to sort the data \nreturned in ascending order.",
+            "The following SQL statement selects all the columns from the \"Customers\" \ntable, sorted by the \"CustomerName\" column:",
+            "Example\n\n SELECT * FROM CustomersORDER BY CustomerName ASC;\n\n Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersORDER BY CustomerName ASC;"
+            }
+        ],
+        "tables": []
+    }
+]

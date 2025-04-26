@@ -1,0 +1,67 @@
+[
+    {
+        "title": "KNN",
+        "text": [
+            "KNN is a simple, supervised machine learning (ML) algorithm that can be used for classification or regression tasks - and is also frequently used in missing value imputation. It is based on the idea that the observations closest to a given data point are the most \"similar\" observations in a data set, and we can therefore classify unforeseen points based on the values of the closest existing points. By choosing K, the user can select the number of nearby observations to use in the algorithm.",
+            "Here, we will show you how to implement the KNN algorithm for classification, and show how different values of K affect the results."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "How does it work?",
+        "text": [
+            "K is the number of nearest neighbors to use. \nFor classification, a majority vote is used to determined which class a new observation should fall into. \nLarger values of K are often more robust to outliers and produce more stable decision boundaries than\nvery small values (K=3 would be better than K=1, which might produce undesirable results.",
+            "Example\nStart by visualizing some data points:\n\nimport matplotlib.pyplot as plt\n\nx = [4, 5, 10, 4, 3, 11, 14 , 8, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\nclasses = [0, 0, 1, 0, 0, 1, 1, 0, 1, 1]\n\nplt.scatter(x, y, c=classes)\nplt.show()\nResult\n\nRun example »",
+            "ADVERTISEMENT",
+            "",
+            "Now we fit the KNN algorithm with K=1:",
+            "from sklearn.neighbors import KNeighborsClassifier\n\ndata = list(zip(x, y))\nknn = KNeighborsClassifier(n_neighbors=1)\n\nknn.fit(data, classes)",
+            "And use it to classify a new data point:",
+            "Example\n\nnew_x = 8\nnew_y = 21\nnew_point = [(new_x, new_y)]\n\nprediction = knn.predict(new_point)\n\nplt.scatter(x + [new_x], y + [new_y], c=classes + [prediction[0]])\nplt.text(x=new_x-1.7, y=new_y-0.7, s=f\"new point, class: {prediction[0]}\")\nplt.show()\n\nResult\n\nRun example »",
+            "Now we do the same thing, but with a higher K value which changes the prediction:",
+            "Example\n\nknn = KNeighborsClassifier(n_neighbors=5)\n\nknn.fit(data, classes)\n\nprediction = knn.predict(new_point)\n\nplt.scatter(x + [new_x], y + [new_y], c=classes + [prediction[0]])\nplt.text(x=new_x-1.7, y=new_y-0.7, s=f\"new point, class: {prediction[0]}\")\nplt.show()\nResult\n\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import matplotlib.pyplot as plt\n\nx = [4, 5, 10, 4, 3, 11, 14 , 8, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\nclasses = [0, 0, 1, 0, 0, 1, 1, 0, 1, 1]\n\nplt.scatter(x, y, c=classes)\nplt.show()"
+            },
+            {
+                "heading": "Example",
+                "code": "new_x = 8\nnew_y = 21\nnew_point = [(new_x, new_y)]\n\nprediction = knn.predict(new_point)\n\nplt.scatter(x + [new_x], y + [new_y], c=classes + [prediction[0]])\nplt.text(x=new_x-1.7, y=new_y-0.7, s=f\"new point, class: {prediction[0]}\")\nplt.show()"
+            },
+            {
+                "heading": "Example",
+                "code": "knn = KNeighborsClassifier(n_neighbors=5)\n\nknn.fit(data, classes)\n\nprediction = knn.predict(new_point)\n\nplt.scatter(x + [new_x], y + [new_y], c=classes + [prediction[0]])\nplt.text(x=new_x-1.7, y=new_y-0.7, s=f\"new point, class: {prediction[0]}\")\nplt.show()"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Example Explained",
+        "text": [
+            "Import the modules you need.",
+            "You can learn about the Matplotlib module in our \"Matplotlib Tutorial.",
+            "scikit-learn is a popular library for machine learning in Python.",
+            "import matplotlib.pyplot as plt\nfrom sklearn.neighbors import KNeighborsClassifier",
+            "Create arrays that resemble variables in a dataset. \nWe have two input features (x and y) and then a target class (class). The input features that are pre-labeled with our target class will be used to predict the class of new data. Note that while we only use two input features here, this method will work with any number of variables:",
+            "x = [4, 5, 10, 4, 3, 11, 14 , 8, 10, 12]\ny = [21, 19, 24, 17, 16, 25, 24, 22, 21, 21]\nclasses = [0, 0, 1, 0, 0, 1, 1, 0, 1, 1]",
+            "Turn the input features into a set of points:",
+            "[(4, 21), (5, 19), (10, 24), (4, 17), (3, 16), (11, 25), (14, 24), (8, 22), (10, 21), (12, 21)]",
+            "Using the input features and target class, we fit a KNN model on the model using 1 nearest neighbor:",
+            "knn = KNeighborsClassifier(n_neighbors=1)\nknn.fit(data, classes)",
+            "Then, we can use the same KNN object to predict the class of new, \nunforeseen data points. First we create new x and y features, and then call knn.predict() on the new data point to get a class of 0 or 1:",
+            "[0]",
+            "When we plot all the data along with the new point and class, we can see it's been labeled blue with the 1 class. The text annotation is just to highlight the location of the new point:",
+            "",
+            "However, when we changes the number of neighbors to 5, the number of points used to classify our new point changes. As a result, so does the classification of the new point:",
+            "[1]",
+            "When we plot the class of the new point along with the older points, we note that the color has changed based on the associated class label:",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

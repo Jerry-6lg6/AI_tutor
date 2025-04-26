@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Limit the Result",
+        "text": [
+            "To limit the result in MongoDB, we use the limit() \nmethod.",
+            "The limit() method takes one parameter, a number defining how many documents \nto return.",
+            "Consider you have a \"customers\" collection:",
+            "Customers\n\n{'_id': 1, 'name': 'John', 'address': 'Highway37'}\n{'_id': 2, 'name': 'Peter', 'address': 'Lowstreet 27'}\n{'_id': 3, 'name': 'Amy', 'address': 'Apple st 652'}\n{'_id': 4, 'name': 'Hannah', 'address': 'Mountain 21'}\n{'_id': 5, 'name': 'Michael', 'address': 'Valley 345'}\n{'_id': 6, 'name': 'Sandy', 'address': 'Ocean blvd 2'}\n{'_id': 7, 'name': 'Betty', 'address': 'Green Grass 1'}\n{'_id': 8, 'name': 'Richard', 'address': 'Sky st 331'}\n{'_id': 9, 'name': 'Susan', 'address': 'One way 98'}\n{'_id': 10, 'name': 'Vicky', 'address': 'Yellow Garden 2'}\n{'_id': 11, 'name': 'Ben', 'address': 'Park Lane 38'}\n{'_id': 12, 'name': 'William', 'address': 'Central st 954'}\n{'_id': 13, 'name': 'Chuck', 'address': 'Main Road 989'}\n{'_id': 14, 'name': 'Viola', 'address': 'Sideway 1633'}",
+            "Example\nLimit the result to only return 5 documents:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyresult = mycol.find().limit(5)#print the result:for x in myresult:  print(x)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Customers",
+                "code": "{'_id': 1, 'name': 'John', 'address': 'Highway37'}\n{'_id': 2, 'name': 'Peter', 'address': 'Lowstreet 27'}\n{'_id': 3, 'name': 'Amy', 'address': 'Apple st 652'}\n{'_id': 4, 'name': 'Hannah', 'address': 'Mountain 21'}\n{'_id': 5, 'name': 'Michael', 'address': 'Valley 345'}\n{'_id': 6, 'name': 'Sandy', 'address': 'Ocean blvd 2'}\n{'_id': 7, 'name': 'Betty', 'address': 'Green Grass 1'}\n{'_id': 8, 'name': 'Richard', 'address': 'Sky st 331'}\n{'_id': 9, 'name': 'Susan', 'address': 'One way 98'}\n{'_id': 10, 'name': 'Vicky', 'address': 'Yellow Garden 2'}\n{'_id': 11, 'name': 'Ben', 'address': 'Park Lane 38'}\n{'_id': 12, 'name': 'William', 'address': 'Central st 954'}\n{'_id': 13, 'name': 'Chuck', 'address': 'Main Road 989'}\n{'_id': 14, 'name': 'Viola', 'address': 'Sideway 1633'}"
+            },
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyresult = mycol.find().limit(5)#print the result:for x in myresult:  print(x)"
+            }
+        ],
+        "tables": []
+    }
+]

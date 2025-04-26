@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Java Variables",
+        "text": [
+            "Variables are containers for storing data values.",
+            "In Java, there are different types of variables, for example:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Declaring (Creating) Variables",
+        "text": [
+            "To create a variable, you must specify the type and assign it a value:",
+            "Syntax\ntype variableName = value;",
+            "Where type is one of Java's types (such as int or String), and \nvariableName is the name of the variable (such as x or\nname). The equal sign is used to assign values to the variable.",
+            "To create a variable that should store text, look at the following example:",
+            "Example\nCreate a variable called name of type String and assign it the value \"John\".\nThen we use println() to print the name variable:\nString name = \"John\";\nSystem.out.println(name);\n\n\nTry it Yourself »",
+            "To create a variable that should store a number, look at the following example:",
+            "Example\nCreate a variable called myNum of type int and assign it the value 15:\nint myNum = 15;\nSystem.out.println(myNum);\n\n\nTry it Yourself »",
+            "You can also declare a variable without assigning the value, and assign the value later:",
+            "Example\nint myNum;\nmyNum = 15;\nSystem.out.println(myNum);\n\n\nTry it Yourself »",
+            "Note that if you assign a new value to an existing variable, it will overwrite the previous value:",
+            "Example\nChange the value of myNum from 15 to 20:\nint myNum = 15;\nmyNum = 20;  // myNum is now 20\nSystem.out.println(myNum);\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Final Variables",
+        "text": [
+            "If you don't want others (or yourself) to overwrite existing values, use the final keyword (this will declare the variable as \"final\" or \"constant\", which means unchangeable and read-only):",
+            "Example\nfinal int myNum = 15;\nmyNum = 20;  // will generate an error: cannot assign a value to a final variable\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Other Types",
+        "text": [
+            "A demonstration of how to declare variables of other types:",
+            "Example\nint myNum = 5;\nfloat myFloatNum = 5.99f;\nchar myLetter = 'D';\nboolean myBool = true;\nString myText = \"Hello\";",
+            "You will learn more about data types in the next section.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "title": "For-Each Loop",
+        "text": [
+            "There is also a \"for-each\" loop, which is used exclusively to loop through elements in an array (or other data sets):",
+            "Syntax\nfor (type variableName : arrayName) {\n  // code block to be executed\n}",
+            "The following example outputs all elements in the cars \narray, using a \"for-each\" loop:",
+            "Example\nString[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\nfor (String i : cars) {\n  System.out.println(i);\n}\n\n\nTry it Yourself »",
+            "Note: Don't worry if you don't understand the example above. You will learn more about Arrays in the Java Arrays chapter.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

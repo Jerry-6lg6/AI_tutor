@@ -1,0 +1,42 @@
+[
+    {
+        "title": "C++ Conditions and If Statements",
+        "text": [
+            "You already know that C++ supports the usual logical conditions from mathematics:",
+            "You can use these conditions to perform different actions for different decisions.",
+            "C++ has the following conditional statements:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The if Statement",
+        "text": [
+            "Use the if statement to specify a block of \nC++ code to be executed if a condition is true.",
+            "Syntax\n\n\n  if (condition) {  // block of code to be executed if the \n  condition is true}",
+            "Note that if is in lowercase letters. Uppercase letters (If or IF) will generate an error.",
+            "In the example below, we test two values to find out if 20 is greater than \n18. If the condition is true, print some text:",
+            "Example\n\n  if (20 > 18) {  cout << \"20 is greater than 18\";}\nTry it Yourself »",
+            "We can also test variables:",
+            "Example\n\n  int x = 20;int y = 18;if (x > y) {  cout << \"x is greater than \n  y\";}\nTry it Yourself »",
+            "In the example above we use two variables, x and y, \nto test whether x is greater than y \n(using the > operator). As x is 20, and y is 18, and we know that 20 is greater than 18, we print to the screen that \"x is greater than y\".",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Syntax",
+                "code": "if (condition) {  // block of code to be executed if the \n  condition is true}"
+            },
+            {
+                "heading": "Example",
+                "code": "if (20 > 18) {  cout << \"20 is greater than 18\";}"
+            },
+            {
+                "heading": "Example",
+                "code": "int x = 20;int y = 18;if (x > y) {  cout << \"x is greater than \n  y\";}"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "title": "An Internal Entity Declaration",
+        "text": [
+            "DTD Example:\n<!ENTITY writer \"Donald Duck.\">\n<!ENTITY copyright \"Copyright W3Schools.\">\nXML example:\n<author>&writer;&copyright;</author>",
+            "Note: An entity has three parts: an ampersand (&), an entity name, and a semicolon (;)."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "An External Entity Declaration",
+        "text": [
+            "DTD Example:\n<!ENTITY writer SYSTEM \"https://www.w3schools.com/entities.dtd\">\n<!ENTITY copyright SYSTEM \"https://www.w3schools.com/entities.dtd\">\nXML example:\n<author>&writer;&copyright;</author>",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

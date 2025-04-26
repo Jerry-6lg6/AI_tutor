@@ -1,0 +1,197 @@
+[
+    {
+        "title": "SQL Aliases",
+        "text": [
+            "SQL aliases are used to give a table, or a column in a table, a temporary name.",
+            "Aliases are often used to make column names more readable.",
+            "An alias only exists for the duration of that query.",
+            "An alias is created with the AS keyword.",
+            "Example\n\n SELECT CustomerID AS ID\n FROM Customers;\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerID AS ID\n FROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "AS is Optional",
+        "text": [
+            "Actually, in most database languages, you can skip the AS keyword and get the same result:",
+            "Example\n\n SELECT CustomerID ID\n FROM Customers;\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerID ID\n FROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Syntax",
+        "text": [
+            "When alias is used on column:",
+            "SELECT column_name AS alias_name\n FROM table_name;",
+            "When alias is used on table:",
+            "SELECT column_name(s)\n FROM table_name AS alias_name;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the\nCustomers\nand \nOrders tables used in the examples:",
+            "OrderID\nCustomerID\nEmployeeID\nOrderDate\nShipperID\n\n\n10248\n90\n5\n7/4/1996\n3\n\n\n10249\n81\n6\n7/5/1996\n1\n\n\n10250\n34\n4\n7/8/1996\n2",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                }
+            ],
+            [
+                {
+                    "OrderID": "10248",
+                    "CustomerID": "90",
+                    "EmployeeID": "5",
+                    "OrderDate": "7/4/1996",
+                    "ShipperID": "3"
+                },
+                {
+                    "OrderID": "10249",
+                    "CustomerID": "81",
+                    "EmployeeID": "6",
+                    "OrderDate": "7/5/1996",
+                    "ShipperID": "1"
+                },
+                {
+                    "OrderID": "10250",
+                    "CustomerID": "34",
+                    "EmployeeID": "4",
+                    "OrderDate": "7/8/1996",
+                    "ShipperID": "2"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Alias for Columns",
+        "text": [
+            "The following SQL statement creates two aliases, one for the CustomerID \ncolumn and one for the CustomerName column:",
+            "Example\n\n SELECT CustomerID AS ID, CustomerName AS Customer\n FROM Customers;\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerID AS ID, CustomerName AS Customer\n FROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using Aliases With a Space Character",
+        "text": [
+            "If you want your alias to contain one or more spaces, like \"My Great Products\",\nsurround your alias with square brackets or double quotes.",
+            "Example\nUsing [square brackets] for aliases with space characters:\n\n SELECT ProductName AS [My Great Products]\n FROM Products;\nTry it Yourself »",
+            "Example\nUsing \"double quotes\" for aliases with space characters:\n\n SELECT ProductName AS \"My Great Products\"\n FROM Products;\nTry it Yourself »",
+            "Note: Some database systems allows both [] and \"\", and some only allows one of them."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT ProductName AS [My Great Products]\n FROM Products;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT ProductName AS \"My Great Products\"\n FROM Products;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Concatenate Columns",
+        "text": [
+            "The following SQL statement creates an alias named \"Address\" that combine four columns (Address, PostalCode, \nCity and Country):",
+            "Example\n\n  SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country \n  AS Address\n FROM Customers;\nTry it Yourself »",
+            "Note: To get the SQL statement above to work in MySQL use the following:",
+            "MySQL Example\n\nSELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address\nFROM Customers;\nTry it Yourself »",
+            "Note: To get the SQL statement above to work in Oracle use the following:",
+            "Oracle Example\n\n  SELECT CustomerName, (Address || ', ' || PostalCode || ' ' || City || ', ' || \n  Country) AS AddressFROM Customers;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, Address + ', ' + PostalCode + ' ' + City + ', ' + Country \n  AS Address\n FROM Customers;"
+            },
+            {
+                "heading": "MySQL Example",
+                "code": "SELECT CustomerName, CONCAT(Address,', ',PostalCode,', ',City,', ',Country) AS Address\nFROM Customers;"
+            },
+            {
+                "heading": "Oracle Example",
+                "code": "SELECT CustomerName, (Address || ', ' || PostalCode || ' ' || City || ', ' || \n  Country) AS AddressFROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Alias for Tables",
+        "text": [
+            "The same rules applies when you want to use an alias for a table.",
+            "Example\nRefer to the Customers table as Persons instead:\n\n SELECT * FROM Customers AS Persons;\n\nTry it Yourself »",
+            "It might seem useless to use aliases on tables, but when you are using more than one table in your queries,\nit can make the SQL statements shorter.",
+            "The following SQL statement selects all the orders from the customer with \nCustomerID=4 (Around the Horn). We use the \"Customers\" and \"Orders\" tables, and \ngive them the table aliases of \"c\" and \"o\" respectively (Here we use \naliases to make the SQL shorter):",
+            "Example\n\n SELECT o.OrderID, o.OrderDate, c.CustomerNameFROM Customers AS c, Orders AS oWHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;\n\nTry it Yourself »",
+            "The following SQL statement is the same as above, but without aliases:",
+            "Example\n\n SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerNameFROM Customers, OrdersWHERE Customers.CustomerName='Around the Horn' AND Customers.CustomerID=Orders.CustomerID;\n\nTry it Yourself »",
+            "Aliases can be useful when:",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers AS Persons;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT o.OrderID, o.OrderDate, c.CustomerNameFROM Customers AS c, Orders AS oWHERE c.CustomerName='Around the Horn' AND c.CustomerID=o.CustomerID;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT Orders.OrderID, Orders.OrderDate, Customers.CustomerNameFROM Customers, OrdersWHERE Customers.CustomerName='Around the Horn' AND Customers.CustomerID=Orders.CustomerID;"
+            }
+        ],
+        "tables": []
+    }
+]

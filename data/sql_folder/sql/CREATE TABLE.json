@@ -1,0 +1,32 @@
+[
+    {
+        "title": "CREATE TABLE",
+        "text": [
+            "The CREATE TABLE command creates a new table \nin the database.",
+            "The following SQL creates a table called \"Persons\" that contains five columns: PersonID, LastName, FirstName, \nAddress, and City:",
+            "Example\n\nCREATE TABLE Persons\n(\n   \nPersonID int,\n   \nLastName varchar(255),\n   \nFirstName varchar(255),\n   \nAddress varchar(255),\n   \nCity varchar(255) \n);"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE TABLE Persons\n(\n   \nPersonID int,\n   \nLastName varchar(255),\n   \nFirstName varchar(255),\n   \nAddress varchar(255),\n   \nCity varchar(255) \n);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CREATE TABLE Using Another Table",
+        "text": [
+            "The following SQL creates a new table called \"TestTables\" (which is \na copy of two columns of the \"Customers\" table):",
+            "Example\n\n  CREATE TABLE TestTable ASSELECT customername, contactnameFROM \n  customers;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE TABLE TestTable ASSELECT customername, contactnameFROM \n  customers;"
+            }
+        ],
+        "tables": []
+    }
+]

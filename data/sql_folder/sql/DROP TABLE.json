@@ -1,0 +1,34 @@
+[
+    {
+        "title": "DROP TABLE",
+        "text": [
+            "The DROP TABLE command deletes a table in \nthe database.",
+            "The following SQL deletes the table \"Shippers\":",
+            "Example\n\n  DROP TABLE Shippers;",
+            "Note: Be careful before deleting a table. Deleting a \ntable results in loss of all information stored in the table!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP TABLE Shippers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "TRUNCATE TABLE",
+        "text": [
+            "The TRUNCATE TABLE command deletes the data inside a table, but \nnot the table itself.",
+            "The following SQL truncates the table \"Categories\":",
+            "Example\n\n  TRUNCATE TABLE Categories;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "TRUNCATE TABLE Categories;"
+            }
+        ],
+        "tables": []
+    }
+]

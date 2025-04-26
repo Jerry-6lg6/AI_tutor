@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Removing Items",
+        "text": [
+            "There are several methods to remove items from a dictionary:",
+            "Example\nThe pop() method removes the item with the specified key name:\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.pop(\"model\")\n  print(thisdict)\nTry it Yourself »",
+            "Example\nThe popitem() method removes the last \n  inserted item (in versions before 3.7, a random item is removed instead):\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.popitem()\n  print(thisdict)\nTry it Yourself »",
+            "Example\nThe del keyword removes the item with the specified \n  key name:\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}del thisdict[\"model\"]print(thisdict)\nTry it Yourself »",
+            "Example\nThe del keyword can also delete the \n  dictionary completely:\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}del thisdictprint(thisdict) #this will cause an error because \"thisdict\" \n  no longer exists.\nTry it Yourself »",
+            "Example\nThe clear() method empties the \n  dictionary:\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.clear()print(thisdict)\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.pop(\"model\")\n  print(thisdict)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.popitem()\n  print(thisdict)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}del thisdict[\"model\"]print(thisdict)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}del thisdictprint(thisdict) #this will cause an error because \"thisdict\" \n  no longer exists."
+            },
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.clear()print(thisdict)"
+            }
+        ],
+        "tables": []
+    }
+]

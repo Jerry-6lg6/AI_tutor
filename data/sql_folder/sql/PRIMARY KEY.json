@@ -1,0 +1,54 @@
+[
+    {
+        "title": "PRIMARY KEY",
+        "text": [
+            "The PRIMARY KEY constraint uniquely identifies each record in a table.",
+            "A table can have only one primary key, which may consist of one single or of multiple fields."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL PRIMARY KEY on CREATE TABLE",
+        "text": [
+            "The following SQL creates a PRIMARY KEY on the \"ID\" column when the \"Persons\" table is created:",
+            "MySQL:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int,\n   \nPRIMARY KEY (ID)\n);",
+            "SQL Server / Oracle / MS Access:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL PRIMARY KEY,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int\n);",
+            "To allow naming of a PRIMARY KEY constraint, and for defining a PRIMARY KEY constraint on multiple columns, use the following SQL syntax:",
+            "MySQL / SQL Server / Oracle / MS Access:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int,\n   \nCONSTRAINT PK_Person PRIMARY KEY (ID,LastName)\n);",
+            "Note: In the example above there is only ONE PRIMARY KEY (PK_Person). \nHowever, the VALUE of the primary key is made up of TWO COLUMNS (ID + LastName)."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL PRIMARY KEY on ALTER TABLE",
+        "text": [
+            "To create a PRIMARY KEY constraint on the \"ID\" column when the table is already created, use the following SQL:",
+            "MySQL / SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nADD PRIMARY KEY (ID);",
+            "To allow naming of a PRIMARY KEY constraint, and for defining a PRIMARY KEY constraint on multiple columns, use the following SQL syntax:",
+            "MySQL / SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);",
+            "Note: If you use the ALTER TABLE statement to add a primary key, the primary key column(s) must\nalready have been declared to not contain NULL values (when the table was first created)."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP a PRIMARY KEY Constraint",
+        "text": [
+            "To drop a PRIMARY KEY constraint, use the following SQL:",
+            "MySQL:",
+            "ALTER TABLE Persons\nDROP PRIMARY KEY;",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nDROP CONSTRAINT PK_Person;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

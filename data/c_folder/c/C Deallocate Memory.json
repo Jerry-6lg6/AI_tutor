@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Deallocate (free) Memory",
+        "text": [
+            "When you no longer need a block of memory you should deallocate it. Deallocation is also referred to as \"freeing\" the memory.",
+            "Dynamic memory stays reserved until it is deallocated or until the program ends.",
+            "Once the memory is deallocated it can be used by other programs or it may even be allocated to another part of your program."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Free Memory",
+        "text": [
+            "To deallocate memory, use the free() function:",
+            "free(pointer);",
+            "The pointer parameter is a pointer to the address of the memory to \nbe deallocated:",
+            "int *ptr;ptr = malloc(sizeof(*ptr));free(ptr);ptr = NULL;",
+            "It is considered a good practice to set a pointer to NULL after freeing memory so that you cannot accidentally continue using it.\nIf you continue using memory after it has been freed you may corrupt data from other programs or even another part of your own program.",
+            "Example\nA working example including error checking and freeing:\n\n  int *ptr;ptr = malloc(sizeof(*ptr)); // Allocate memory for one integer\n// If memory cannot be allocated, print a message and end the main() \n  functionif (ptr == NULL) {\n   \n  printf(\"Unable to allocate memory\");  return 1;}\n  // Set the value of the integer*ptr = 20;// Print the \n  integer valueprintf(\"Integer value: %d\\n\", *ptr);\n// Free allocated memoryfree(ptr);// Set the pointer to \n  NULL to prevent it from being accidentally usedptr = NULL;\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int *ptr;ptr = malloc(sizeof(*ptr)); // Allocate memory for one integer\n// If memory cannot be allocated, print a message and end the main() \n  functionif (ptr == NULL) {\n   \n  printf(\"Unable to allocate memory\");  return 1;}\n  // Set the value of the integer*ptr = 20;// Print the \n  integer valueprintf(\"Integer value: %d\\n\", *ptr);\n// Free allocated memoryfree(ptr);// Set the pointer to \n  NULL to prevent it from being accidentally usedptr = NULL;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Memory Leaks",
+        "text": [
+            "A memory leak happens when dynamic memory is allocated but never freed.",
+            "If a memory leak happens in a loop or in a function that is called frequently it could take up too much memory and cause the computer to slow down.",
+            "There is a risk of a memory leak if a pointer to dynamic memory is lost before the memory can be freed. This can happen accidentally, so it is important to be careful and keep track of pointers to dynamic memory.",
+            "Here are some examples of how a pointer to dynamic memory may be lost.",
+            "Example 1\nThe pointer is overwritten:\n\n  int x = 5;int *ptr;ptr = calloc(2, sizeof(*ptr));ptr = &x;\nIn this example, after the pointer is changed to point at x, the memory allocated by calloc() can no longer be accessed.",
+            "Example 2\nThe pointer exists only inside a function:\n\n  void myFunction() {  int *ptr;  ptr = malloc(sizeof(*ptr));\n  }\n  int main() {  myFunction();  printf(\"The function has \n  ended\");  return 0;}\nIn this example, the memory that was allocated inside of the function remains allocated after the function ends but it cannot be accessed anymore. One way to prevent this problem is to free the memory before the function ends.",
+            "Example 3\nThe pointer gets lost when reallocation fails:\n\n  int* ptr;ptr = malloc(sizeof(*ptr));ptr = realloc(ptr, \n  2*sizeof(*ptr));\nIf realloc() is unable to reallocate memory it will return a pointer to NULL \nand the original memory will remain reserved.\nIn this example, if realloc() fails then the NULL pointer is assigned to the ptr variable, overwriting the original memory address so that it cannot be accessed anymore."
+        ],
+        "examples": [
+            {
+                "heading": "Example 1",
+                "code": "int x = 5;int *ptr;ptr = calloc(2, sizeof(*ptr));ptr = &x;"
+            },
+            {
+                "heading": "Example 2",
+                "code": "void myFunction() {  int *ptr;  ptr = malloc(sizeof(*ptr));\n  }\n  int main() {  myFunction();  printf(\"The function has \n  ended\");  return 0;}"
+            },
+            {
+                "heading": "Example 3",
+                "code": "int* ptr;ptr = malloc(sizeof(*ptr));ptr = realloc(ptr, \n  2*sizeof(*ptr));"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Summary",
+        "text": [
+            "In summary, when managing memory in C, use \nbest practices:\n\nRemember to check for errors (NULL return \nvalues) to find out if memory allocation was sucessful or not\nPrevent memory leaks - always remember to free memory that is no longer used, \nor else the program might underperform or even worse, crash if it runs out of \nmemory\nSet the pointer to NULL after freeing memory so that you cannot accidentally \ncontinue using it",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

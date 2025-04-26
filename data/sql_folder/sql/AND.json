@@ -1,0 +1,18 @@
+[
+    {
+        "title": "AND",
+        "text": [
+            "The AND command is used with WHERE to only include rows where both conditions is true.",
+            "The following SQL statement selects all fields from \"Customers\" where country is \"Germany\" AND city is \"Berlin\":",
+            "Example\n\n SELECT * FROM Customers\n WHERE Country='Germany'\n AND City='Berlin';\n\nTry it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE Country='Germany'\n AND City='Berlin';"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,119 @@
+[
+    {
+        "title": "Strings",
+        "text": [
+            "Strings are used for storing text/characters.",
+            "For example, \"Hello World\" is a string of characters.",
+            "Unlike many other programming languages, C does not have a String type \nto easily create string variables. Instead, you must use the char type and create \nan array of characters to make a string in C:",
+            "char greetings[] = \"Hello World!\";",
+            "Note that you have to use double quotes (\"\").",
+            "To output the string, you can use the printf() function together with the format specifier  %s to tell C that we are now working with strings:",
+            "Example\n\n  char greetings[] = \"Hello World!\";\n  printf(\"%s\", greetings);\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char greetings[] = \"Hello World!\";\n  printf(\"%s\", greetings);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Access Strings",
+        "text": [
+            "Since strings are actually arrays in C, you can access a string by referring to its index number inside square brackets [].",
+            "This example prints the first character (0) in greetings:",
+            "Example\n\n  char greetings[] = \"Hello World!\";\n  printf(\"%c\", greetings[0]);\n\nTry it Yourself »",
+            "Note that we have to use the %c format specifier to print a \nsingle character."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char greetings[] = \"Hello World!\";\n  printf(\"%c\", greetings[0]);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Modify Strings",
+        "text": [
+            "To change the value of a specific character in a string, refer to the index number, and use \nsingle quotes:",
+            "Example\n\n  char greetings[] = \"Hello World!\";greetings[0] = 'J';\n  printf(\"%s\", greetings);// Outputs Jello World! instead of Hello \n  World!\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char greetings[] = \"Hello World!\";greetings[0] = 'J';\n  printf(\"%s\", greetings);// Outputs Jello World! instead of Hello \n  World!"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Loop Through a String",
+        "text": [
+            "You can also loop through the characters of a string, \nusing a for \nloop:",
+            "Example\n\n  char carName[] = \"Volvo\";int i;for (i = 0; i < 5; ++i) {  \n  printf(\"%c\\n\", carName[i]);}\n\nTry it Yourself »",
+            "And like we specified in the arrays chapter, you can also use the sizeof formula (instead of manually \nwrite the size of the array in the loop condition  (i  \n< 5)) to make the loop more sustainable:",
+            "Example\n\n  char carName[] = \"Volvo\";int length = sizeof(carName) / \n  sizeof(carName[0]);int i;for (i = 0; i < length; ++i) {  \n  printf(\"%c\\n\", carName[i]);}\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char carName[] = \"Volvo\";int i;for (i = 0; i < 5; ++i) {  \n  printf(\"%c\\n\", carName[i]);}"
+            },
+            {
+                "heading": "Example",
+                "code": "char carName[] = \"Volvo\";int length = sizeof(carName) / \n  sizeof(carName[0]);int i;for (i = 0; i < length; ++i) {  \n  printf(\"%c\\n\", carName[i]);}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Another Way Of Creating Strings",
+        "text": [
+            "In the examples above, we used a \"string literal\" to create a string \nvariable. This is the easiest way to create a string in C.",
+            "You should also note that you can create a string with a set of characters. This example will \nproduce the same result as the example in the beginning of this page:",
+            "Example\n\n  char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', \n  '!', '\\0'};\n  printf(\"%s\", greetings);\n\nTry it Yourself »",
+            "Why do we include the \\0 character at the end? This is \nknown as the \"null terminating character\", and must be included when creating \nstrings using this method. It tells C that this is the end of the string."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', \n  '!', '\\0'};\n  printf(\"%s\", greetings);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Differences",
+        "text": [
+            "The difference between the two ways of creating strings, is that the first method is easier \nto write, and you do not have to include the \\0 character, as C will do it for \nyou.",
+            "You should \nnote that the size of both arrays is the same: They both have 13 characters \n(space also counts as a character by the way), including the \\0 character:",
+            "Example\n\n  char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', \n  '!', '\\0'};char greetings2[] = \"Hello World!\";printf(\"%lu\\n\", \n  sizeof(greetings));   // Outputs 13printf(\"%lu\\n\", \n  sizeof(greetings2));  // Outputs 13\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char greetings[] = {'H', 'e', 'l', 'l', 'o', ' ', 'W', 'o', 'r', 'l', 'd', \n  '!', '\\0'};char greetings2[] = \"Hello World!\";printf(\"%lu\\n\", \n  sizeof(greetings));   // Outputs 13printf(\"%lu\\n\", \n  sizeof(greetings2));  // Outputs 13"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Real-Life Example",
+        "text": [
+            "Use strings to create a simple welcome message:",
+            "Example\n\n  char message[] = \"Good to see you,\";char fname[] = \"John\";printf(\"%s \n  %s!\", message, fname);\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char message[] = \"Good to see you,\";char fname[] = \"John\";printf(\"%s \n  %s!\", message, fname);"
+            }
+        ],
+        "tables": []
+    }
+]

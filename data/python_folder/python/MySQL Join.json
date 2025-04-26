@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Join Two or More Tables",
+        "text": [
+            "You can combine rows from two or more tables, based on a related column \nbetween them, by using a JOIN statement.",
+            "Consider you have a \"users\" table and a \"products\" table:",
+            "users\n{ id: 1, name: 'John', fav: 154},{ id: \n  2, name: 'Peter', fav: 154},{ id: 3, name: 'Amy', fav: 155},{ id: 4, name: 'Hannah', fav:},{ id: 5, name: 'Michael', fav:}",
+            "products\n{ id: 154, name: \n  'Chocolate Heaven' },{ id: 155, name: 'Tasty Lemons' },{ \n  id: 156, name: 'Vanilla Dreams' }",
+            "These two tables can be combined by using users' fav field and products' \nid field.",
+            "Example\nJoin users and products to see the name of the users favorite product:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\n  mycursor = mydb.cursor()sql = \"SELECT \\  users.name AS user, \n  \\  products.name AS favorite \\  FROM users \\  INNER JOIN \n  products ON users.fav = products.id\"mycursor.execute(sql)\n  myresult = mycursor.fetchall()for x in myresult:  print(x)\nRun example »",
+            "Note: You can use JOIN instead of INNER JOIN. They will \n  both give you the same result.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "users",
+                "code": "{ id: 1, name: 'John', fav: 154},{ id: \n  2, name: 'Peter', fav: 154},{ id: 3, name: 'Amy', fav: 155},{ id: 4, name: 'Hannah', fav:},{ id: 5, name: 'Michael', fav:}"
+            },
+            {
+                "heading": "products",
+                "code": "{ id: 154, name: \n  'Chocolate Heaven' },{ id: 155, name: 'Tasty Lemons' },{ \n  id: 156, name: 'Vanilla Dreams' }"
+            },
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\n  mycursor = mydb.cursor()sql = \"SELECT \\  users.name AS user, \n  \\  products.name AS favorite \\  FROM users \\  INNER JOIN \n  products ON users.fav = products.id\"mycursor.execute(sql)\n  myresult = mycursor.fetchall()for x in myresult:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "LEFT JOIN",
+        "text": [
+            "In the example above, Hannah, and Michael were excluded from the result, that \nis because INNER JOIN only shows the records where there is a match.",
+            "If you want to show all users, even if they do not have a favorite product, \nuse the LEFT JOIN statement:",
+            "Example\nSelect all users and their favorite product:\n\n  sql = \"SELECT \\  users.name AS user, \n  \\  products.name AS favorite \\  FROM users \\  LEFT JOIN \n  products ON users.fav = products.id\"\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "sql = \"SELECT \\  users.name AS user, \n  \\  products.name AS favorite \\  FROM users \\  LEFT JOIN \n  products ON users.fav = products.id\""
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "RIGHT JOIN",
+        "text": [
+            "If you want to return all products, and the users who have them as their \nfavorite, even if no user have them as their favorite, use the RIGHT JOIN \nstatement:",
+            "Example\nSelect all products, and the user(s) who have them as their favorite:\n\n  sql = \"SELECT \\  users.name AS user, \n  \\  products.name AS favorite \\  FROM users \\  RIGHT JOIN \n  products ON users.fav = products.id\"\nRun example »",
+            "Note: Hannah and Michael, who have no favorite product, are not included in the result.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "sql = \"SELECT \\  users.name AS user, \n  \\  products.name AS favorite \\  FROM users \\  RIGHT JOIN \n  products ON users.fav = products.id\""
+            }
+        ],
+        "tables": []
+    }
+]

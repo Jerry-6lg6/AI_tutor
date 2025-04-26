@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Cross Validation",
+        "text": [
+            "When adjusting models we are aiming to increase overall model performance on unseen data. Hyperparameter tuning can lead to much better performance on test sets. However, optimizing parameters to the test set can lead information leakage causing the model to preform worse on unseen data. To correct for this we can perform cross validation.",
+            "To better understand CV, we will be performing different methods on the iris dataset. Let us first load in and separate the data.",
+            "from sklearn import datasets\n\nX, y = datasets.load_iris(return_X_y=True)",
+            "There are many methods to cross validation, we will start by looking at k-fold cross validation."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Stratified K-Fold",
+        "text": [
+            "In cases where classes are imbalanced we need a way to account for the imbalance in both the train and validation sets. To do so we can stratify the target classes, meaning that both sets will have an equal proportion of all classes.",
+            "Example\n\nfrom sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import StratifiedKFold, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\n\nclf = DecisionTreeClassifier(random_state=42)\n\nsk_folds = StratifiedKFold(n_splits = 5)\n\nscores = cross_val_score(clf, X, y, cv = sk_folds)\n\nprint(\"Cross Validation Scores: \", scores)\nprint(\"Average CV Score: \", scores.mean())\nprint(\"Number of CV Scores used in Average: \", len(scores))\n\nRun example »",
+            "While the number of folds is the same, the average CV increases from the basic k-fold when making sure there is stratified classes."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "from sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import StratifiedKFold, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\n\nclf = DecisionTreeClassifier(random_state=42)\n\nsk_folds = StratifiedKFold(n_splits = 5)\n\nscores = cross_val_score(clf, X, y, cv = sk_folds)\n\nprint(\"Cross Validation Scores: \", scores)\nprint(\"Average CV Score: \", scores.mean())\nprint(\"Number of CV Scores used in Average: \", len(scores))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Leave-One-Out (LOO)",
+        "text": [
+            "Instead of selecting the number of splits in the training data set like k-fold LeaveOneOut, utilize 1 observation to validate and n-1 observations to train. This method is an exaustive technique.",
+            "Example\nRun LOO CV:\n\nfrom sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import LeaveOneOut, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\n\nclf = DecisionTreeClassifier(random_state=42)\n\nloo = LeaveOneOut()\n\nscores = cross_val_score(clf, X, y, cv = loo)\n\nprint(\"Cross Validation Scores: \", scores)\nprint(\"Average CV Score: \", scores.mean())\nprint(\"Number of CV Scores used in Average: \", len(scores))\n\nRun example »",
+            "We can observe that the number of cross validation scores performed is equal to the number of observations in the dataset. In this case there are 150 observations in the iris dataset.",
+            "The average CV score is 94%."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "from sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import LeaveOneOut, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\n\nclf = DecisionTreeClassifier(random_state=42)\n\nloo = LeaveOneOut()\n\nscores = cross_val_score(clf, X, y, cv = loo)\n\nprint(\"Cross Validation Scores: \", scores)\nprint(\"Average CV Score: \", scores.mean())\nprint(\"Number of CV Scores used in Average: \", len(scores))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Leave-P-Out (LPO)",
+        "text": [
+            "Leave-P-Out is simply a nuanced diffence to the Leave-One-Out idea, in that we can select the number of p to use in our validation set.",
+            "Example\nRun LPO CV:\n\nfrom sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import LeavePOut, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\n\nclf = DecisionTreeClassifier(random_state=42)\n\nlpo = LeavePOut(p=2)\n\nscores = cross_val_score(clf, X, y, cv = lpo)\n\nprint(\"Cross Validation Scores: \", scores)\nprint(\"Average CV Score: \", scores.mean())\nprint(\"Number of CV Scores used in Average: \", len(scores))\n\nRun example »",
+            "As we can see this is an exhaustive method we many more scores being calculated than Leave-One-Out, even with a p = 2, yet it achieves roughly the same average CV score."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "from sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import LeavePOut, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\n\nclf = DecisionTreeClassifier(random_state=42)\n\nlpo = LeavePOut(p=2)\n\nscores = cross_val_score(clf, X, y, cv = lpo)\n\nprint(\"Cross Validation Scores: \", scores)\nprint(\"Average CV Score: \", scores.mean())\nprint(\"Number of CV Scores used in Average: \", len(scores))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Shuffle Split",
+        "text": [
+            "Unlike KFold, ShuffleSplit leaves out a percentage of the data, not to be used in the train or validation sets. To do so we must decide what the train and test sizes are, as well as the number of splits.",
+            "Example\nRun Shuffle Split CV:\n\nfrom sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import ShuffleSplit, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\n\nclf = DecisionTreeClassifier(random_state=42)\n\nss = ShuffleSplit(train_size=0.6, test_size=0.3, n_splits = 5)\n\nscores = cross_val_score(clf, X, y, cv = ss)\n\nprint(\"Cross Validation Scores: \", scores)\nprint(\"Average CV Score: \", scores.mean())\nprint(\"Number of CV Scores used in Average: \", len(scores))\n\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "from sklearn import datasets\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.model_selection import ShuffleSplit, cross_val_score\n\nX, y = datasets.load_iris(return_X_y=True)\n\nclf = DecisionTreeClassifier(random_state=42)\n\nss = ShuffleSplit(train_size=0.6, test_size=0.3, n_splits = 5)\n\nscores = cross_val_score(clf, X, y, cv = ss)\n\nprint(\"Cross Validation Scores: \", scores)\nprint(\"Average CV Score: \", scores.mean())\nprint(\"Number of CV Scores used in Average: \", len(scores))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Ending Notes",
+        "text": [
+            "These are just a few of the CV methods that can be applied to models. There are many more cross validation classes, with most models having their own class. Check out sklearns cross validation for more CV options.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

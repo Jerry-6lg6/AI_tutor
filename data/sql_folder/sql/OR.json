@@ -1,0 +1,18 @@
+[
+    {
+        "title": "OR",
+        "text": [
+            "The OR command is used with WHERE to include \nrows where either condition is true.",
+            "The following SQL statement selects all fields from \"Customers\" where city is \n\"Berlin\" OR city is \"MÃ¼nchen\":",
+            "Example\n\n  SELECT * FROM Customers\n  WHERE City='Berlin' OR City='MÃ¼nchen';\n\n\n  Try it Yourself Â»",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n  WHERE City='Berlin' OR City='MÃ¼nchen';"
+            }
+        ],
+        "tables": []
+    }
+]

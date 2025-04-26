@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Access Strings",
+        "text": [
+            "You can access the characters in a string by referring to its index number \ninside square brackets [].",
+            "This example prints the first character in \nmyString:",
+            "Example\n\n  string \n  myString = \"Hello\";cout << myString[0];// Outputs H\n\nTry it Yourself »",
+            "Note: String indexes start with 0: [0] is the first character. [1] is the second \ncharacter, etc.",
+            "This example prints the second character in \nmyString:",
+            "Example\n\n  string \n  myString = \"Hello\";cout << myString[1];// Outputs e\n\nTry it Yourself »",
+            "To print the last character of a string, you can use the following code:",
+            "Example\n\n  string \n  myString = \"Hello\";cout << myString[myString.length() - 1];\n  // Outputs o\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string \n  myString = \"Hello\";cout << myString[0];// Outputs H"
+            },
+            {
+                "heading": "Example",
+                "code": "string \n  myString = \"Hello\";cout << myString[1];// Outputs e"
+            },
+            {
+                "heading": "Example",
+                "code": "string \n  myString = \"Hello\";cout << myString[myString.length() - 1];\n  // Outputs o"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Change String Characters",
+        "text": [
+            "To change the value of a specific character in a string, refer to the index \nnumber, and use single quotes:",
+            "Example\n\n  string \n  myString = \"Hello\";myString[0] = 'J';cout << myString;// \n  Outputs Jello instead of Hello\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string \n  myString = \"Hello\";myString[0] = 'J';cout << myString;// \n  Outputs Jello instead of Hello"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The at() function",
+        "text": [
+            "The <string> library also has an at() function that can be used \nto access characters in a string:",
+            "Example\n\n  string myString = \"Hello\";cout << myString; // Outputs Hello\n  cout << myString.at(0);  // First charactercout << myString.at(1);  // \n  Second charactercout << myString.at(myString.length() - 1);  // Last \n  charactermyString.at(0) = 'J';\n  cout << myString;  // Outputs Jello\n\nTry it Yourself »",
+            "Tip: A list of other useful string functions, can be found in our String Functions Reference.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string myString = \"Hello\";cout << myString; // Outputs Hello\n  cout << myString.at(0);  // First charactercout << myString.at(1);  // \n  Second charactercout << myString.at(myString.length() - 1);  // Last \n  charactermyString.at(0) = 'J';\n  cout << myString;  // Outputs Jello"
+            }
+        ],
+        "tables": []
+    }
+]

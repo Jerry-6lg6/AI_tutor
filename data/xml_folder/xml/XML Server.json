@@ -1,0 +1,64 @@
+[
+    {
+        "title": "Storing XML Files on the Server",
+        "text": [
+            "XML files can be stored on an Internet server exactly the same way as HTML files.",
+            "Start Windows Notepad and write the following lines:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<note>\n   \n  <from>Jani</from>\n   \n  <to>Tove</to>\n   \n  <message>Remember me this weekend</message>\n</note>",
+            "Save the file on your web server with a proper name like \"note.xml\"."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Generating XML with PHP",
+        "text": [
+            "XML can be generated on a server without any installed XML software.",
+            "To generate an XML response from the server using PHP, use following code:",
+            "<?php\nheader(\"Content-type: text/xml\");\necho \"<?xml version='1.0' encoding='UTF-8'?>\";\necho \"<note>\";\necho \"<from>Jani</from>\";\necho \"<to>Tove</to>\";\necho \"<message>Remember me this weekend</message>\";\necho \"</note>\";\n?>",
+            "Note that the content type of the response header must be set to \"text/xml\".",
+            "See how the PHP file will be returned from the server.",
+            "If you want to study PHP, you will find our PHP tutorial on our homepage.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Generating XML with ASP",
+        "text": [
+            "To generate an XML response from the server - simply write the following code and save it as an ASP file on the web server:",
+            "<%\nresponse.ContentType=\"text/xml\"\nresponse.Write(\"<?xml version='1.0' encoding='UTF-8'?>\")\nresponse.Write(\"<note>\")\nresponse.Write(\"<from>Jani</from>\")\nresponse.Write(\"<to>Tove</to>\")\nresponse.Write(\"<message>Remember me this weekend</message>\")\nresponse.Write(\"</note>\")\n%>",
+            "Note that the content type of the response must be set to \"text/xml\".",
+            "See how the ASP file will be returned from the server.",
+            "If you want to study ASP, you will find our ASP tutorial on our homepage."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Generating XML From a Database",
+        "text": [
+            "XML can be generated from a database without any installed XML software.",
+            "To generate an XML database response from the server, simply write the following code and save it as an ASP file on the web server:",
+            "<%\nresponse.ContentType = \"text/xml\"\nset conn=Server.CreateObject(\"ADODB.Connection\")\nconn.provider=\"Microsoft.Jet.OLEDB.4.0;\"\nconn.open server.mappath(\"/datafolder/database.mdb\")\nsql=\"select fname,lname from tblGuestBook\"\nset rs=Conn.Execute(sql)\nresponse.write(\"<?xml version='1.0' encoding='UTF-8'?>\")\nresponse.write(\"<guestbook>\")\nwhile (not rs.EOF)\n  response.write(\"<guest>\")\n  response.write(\"<fname>\" & rs(\"fname\") & \"</fname>\")\n  response.write(\"<lname>\" & rs(\"lname\") & \"</lname>\")\n  response.write(\"</guest>\")\n  rs.MoveNext()\nwend\nrs.close()\nconn.close()\nresponse.write(\"</guestbook>\")\n%>",
+            "See the real life database output from the ASP file above.",
+            "The example above uses ASP with ADO.",
+            "If you want to study ASP and ADO, you will find the tutorials on our homepage."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Transforming XML with XSLT on the Server",
+        "text": [
+            "This ASP transforms an XML file to XHTML on the server:",
+            "<%\n'Load XML\nset xml = Server.CreateObject(\"Microsoft.XMLDOM\")\nxml.async = false\nxml.load(Server.MapPath(\"simple.xml\"))\n'Load XSL\nset xsl = Server.CreateObject(\"Microsoft.XMLDOM\")\nxsl.async = false\nxsl.load(Server.MapPath(\"simple.xsl\"))\n'Transform file\nResponse.Write(xml.transformNode(xsl))\n%>",
+            "Example explained",
+            "See how it works.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "title": "C++ Print Numbers",
+        "text": [
+            "You can also use cout() to \nprint numbers.",
+            "However, unlike text, we don't put numbers inside double \nquotes:",
+            "Example\n\n  #include <iostream>using namespace std;int main() {  \n  cout << 3;  return 0;}\nTry it Yourself »",
+            "You can also perform mathematical calculations:",
+            "Example\n\n  cout << 3 + 3;\nTry it Yourself »",
+            "Example\n\n  cout << 2 * 5;\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "#include <iostream>using namespace std;int main() {  \n  cout << 3;  return 0;}"
+            },
+            {
+                "heading": "Example",
+                "code": "cout << 3 + 3;"
+            },
+            {
+                "heading": "Example",
+                "code": "cout << 2 * 5;"
+            }
+        ],
+        "tables": []
+    }
+]

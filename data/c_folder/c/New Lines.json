@@ -1,0 +1,31 @@
+[
+    {
+        "title": "New Lines",
+        "text": [
+            "To insert a new line, you can use the \\n character:",
+            "Example\n\n  #include <stdio.h>int main() {  printf(\"Hello World!\\n\");  \n  printf(\"I am learning C.\");  return 0;}\nTry it Yourself »",
+            "You can also output multiple lines with a single printf() function. \nHowever, this could make the code harder to read:",
+            "Example\n\n  #include <stdio.h>int main() {  printf(\"Hello World!\\nI \n  am learning C.\\nAnd it is awesome!\");  return 0;}\nTry it Yourself »",
+            "Tip: Two \\n characters after each other will create a blank line:",
+            "Example\n\n  #include <stdio.h>int main() {  printf(\"Hello World!\\n\\n\");  \n  printf(\"I am learning C.\");  return 0;}\nTry it Yourself »",
+            "What is \\n exactly?\nThe newline character (\\n) is called an escape sequence, and \nit forces the cursor to change its position to the beginning of the next line on the screen. This results in a new line.\n\nExamples of other valid escape sequences are:\n\n\nEscape Sequence\nDescription\nTry it\n\n\n\\t\nCreates a horizontal tab\nTry it\n\n\n\\\\\nInserts a backslash character (\\)\nTry it\n\n\n\\\"\nInserts a double quote character\nTry it",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "#include <stdio.h>int main() {  printf(\"Hello World!\\n\");  \n  printf(\"I am learning C.\");  return 0;}"
+            },
+            {
+                "heading": "Example",
+                "code": "#include <stdio.h>int main() {  printf(\"Hello World!\\nI \n  am learning C.\\nAnd it is awesome!\");  return 0;}"
+            },
+            {
+                "heading": "Example",
+                "code": "#include <stdio.h>int main() {  printf(\"Hello World!\\n\\n\");  \n  printf(\"I am learning C.\");  return 0;}"
+            }
+        ],
+        "tables": []
+    }
+]

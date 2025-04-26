@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Python Install",
+        "text": [
+            "Many PCs and Macs will have python already installed.",
+            "To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):",
+            "C:\\Users\\Your Name>python --version",
+            "To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:",
+            "python --version",
+            "If you find that you do not have Python installed on your computer, then you can download it for free from the following website: https://www.python.org/"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Python Quickstart",
+        "text": [
+            "Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.",
+            "The way to run a python file is like this on the command line:",
+            "C:\\Users\\Your Name>python helloworld.py",
+            "Where \"helloworld.py\" is the name of your python file.",
+            "Let's write our first Python file, called helloworld.py, which can be done in any text editor.",
+            "print(\"Hello, World!\")",
+            "Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:",
+            "C:\\Users\\Your Name>python helloworld.py",
+            "The output should read:",
+            "Hello, World!",
+            "Congratulations, you have written and executed your first Python program.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "W3Schools' Python Editor",
+        "text": [
+            "We have an online Python editor where you can execute your own Python code and see the result:",
+            "Example\nTry our online Python editor:\n\nprint(\"Hello, World!\")\n\nTry it Yourself »",
+            "This editor will be used in the entire tutorial to demonstrate the different aspects of Python."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(\"Hello, World!\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Python Version",
+        "text": [
+            "To check the Python version of the editor, you can find it by importing the sys module:",
+            "Example\nCheck the Python version of the editor:\n\nimport sys\n\nprint(sys.version)\n\nTry it Yourself »",
+            "You will learn more about importing modules in our \nPython Modules chapter."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import sys\n\nprint(sys.version)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Python Command Line",
+        "text": [
+            "To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.",
+            "Type the following on the Windows, Mac or Linux command line:",
+            "C:\\Users\\Your Name>python",
+            "C:\\Users\\Your Name>py",
+            "From there you can write any python, including our hello world example from earlier in the tutorial:",
+            "C:\\Users\\Your Name>python\nPython 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> print(\"Hello, World!\")",
+            "Which will write \"Hello, World!\" in the command line:",
+            "C:\\Users\\Your Name>python\nPython 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> print(\"Hello, World!\")\nHello, World!",
+            "Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:",
+            "exit()",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

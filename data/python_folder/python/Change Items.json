@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Change Values",
+        "text": [
+            "You can change the value of a specific item by referring to its key name:",
+            "Example\nChange the \"year\" to 2018:\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict[\"year\"] = 2018\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict[\"year\"] = 2018"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Update Dictionary",
+        "text": [
+            "The update() method will update the dictionary with the items from the given \nargument.",
+            "The argument must be a dictionary, or an iterable object with key:value pairs.",
+            "Example\nUpdate the \"year\" of the car by using the update() \nmethod:\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.update({\"year\": 2020})\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.update({\"year\": 2020})"
+            }
+        ],
+        "tables": []
+    }
+]

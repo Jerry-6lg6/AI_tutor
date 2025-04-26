@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Update Table",
+        "text": [
+            "You can update existing records in a table by using \nthe \"UPDATE\" statement:",
+            "Example\nOverwrite the address column from \"Valley 345\" to \"Canyon 123\":\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"UPDATE customers SET address = 'Canyon 123' \n  WHERE address = 'Valley 345'\"mycursor.execute(sql)mydb.commit()\nprint(mycursor.rowcount, \"record(s) affected\")\nRun example »",
+            "Important!: Notice the statement: \n  mydb.commit(). It is required to make the \n  changes, otherwise no \n  changes are made to the table.",
+            "Notice the WHERE clause in the UPDATE syntax: The WHERE clause \nspecifies which record or records that should be updated. If you omit the WHERE \nclause, all records will be updated!",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"UPDATE customers SET address = 'Canyon 123' \n  WHERE address = 'Valley 345'\"mycursor.execute(sql)mydb.commit()\nprint(mycursor.rowcount, \"record(s) affected\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Prevent SQL Injection",
+        "text": [
+            "It is considered a good practice to escape the values of any query, also in \nupdate statements.",
+            "This is to prevent SQL injections, which is a common web hacking technique to  \ndestroy or misuse your database.",
+            "The mysql.connector module uses the placeholder %s to escape values in the \nupdate statement:",
+            "Example\nEscape values by using the placeholder %s \nmethod:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"UPDATE customers SET address = %s \n  WHERE address = %s\"val = (\"Valley 345\", \"Canyon 123\")mycursor.execute(sql, \n  val)mydb.commit()print(mycursor.rowcount, \"record(s) \n  affected\")\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"UPDATE customers SET address = %s \n  WHERE address = %s\"val = (\"Valley 345\", \"Canyon 123\")mycursor.execute(sql, \n  val)mydb.commit()print(mycursor.rowcount, \"record(s) \n  affected\")"
+            }
+        ],
+        "tables": []
+    }
+]

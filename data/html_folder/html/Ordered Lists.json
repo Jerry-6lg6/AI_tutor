@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Ordered HTML List",
+        "text": [
+            "An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.",
+            "The list items will be marked with numbers by default:",
+            "Example\n\n<ol>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ol>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<ol>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ol>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Ordered HTML List - The Type Attribute",
+        "text": [
+            "The type attribute of the <ol> tag, defines the type of the \nlist item marker:",
+            "Numbers:\n\n<ol type=\"1\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>\n\nTry it Yourself »",
+            "Uppercase Letters:\n\n<ol type=\"A\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>\n\nTry it Yourself »",
+            "Lowercase Letters:\n\n<ol type=\"a\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>\n\nTry it Yourself »",
+            "Uppercase Roman Numbers:\n\n<ol type=\"I\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>\n\nTry it Yourself »",
+            "Lowercase Roman Numbers:\n\n<ol type=\"i\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Numbers:",
+                "code": "<ol type=\"1\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>"
+            },
+            {
+                "heading": "Uppercase Letters:",
+                "code": "<ol type=\"A\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>"
+            },
+            {
+                "heading": "Lowercase Letters:",
+                "code": "<ol type=\"a\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>"
+            },
+            {
+                "heading": "Uppercase Roman Numbers:",
+                "code": "<ol type=\"I\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>"
+            },
+            {
+                "heading": "Lowercase Roman Numbers:",
+                "code": "<ol type=\"i\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ol>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Control List Counting",
+        "text": [
+            "By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the start attribute:",
+            "Example\n\n  <ol start=\"50\">  <li>Coffee</li>  <li>Tea</li>  \n  <li>Milk</li></ol>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<ol start=\"50\">  <li>Coffee</li>  <li>Tea</li>  \n  <li>Milk</li></ol>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Nested HTML Lists",
+        "text": [
+            "Lists can be nested (list inside list):",
+            "Example\n\n<ol>  <li>Coffee</li>  <li>Tea\n    <ol>      \n<li>Black tea</li>      <li>Green tea</li>\n    </ol>  \n</li>  <li>Milk</li></ol>\n\nTry it Yourself »",
+            "Note: A list item (<li>) can contain \n  a new list, and other HTML elements, like images and links, etc."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<ol>  <li>Coffee</li>  <li>Tea\n    <ol>      \n<li>Black tea</li>      <li>Green tea</li>\n    </ol>  \n</li>  <li>Milk</li></ol>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML List Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

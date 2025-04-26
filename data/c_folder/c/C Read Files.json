@@ -1,0 +1,69 @@
+[
+    {
+        "title": "Read a File",
+        "text": [
+            "In the previous chapter, we wrote to a file using w \nand a modes inside the fopen() function.",
+            "To read from a file, you can use the\nr mode:",
+            "Example\n\n    FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");",
+            "This will make the filename.txt opened for reading.",
+            "It requires a little bit of work to read a file in C. Hang in there! We will guide you step-by-step.",
+            "Next, we need to create a string that should be big enough to store the content of \nthe file.",
+            "For example, let's create a string that can store \nup to 100 \ncharacters:",
+            "Example\n\n    FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n// Store the content of the filechar myString[100];",
+            "In order to read the content of filename.txt, \nwe can use the\nfgets() function.",
+            "The fgets() function takes three parameters:",
+            "Example\n\n    fgets(myString, 100, \n    fptr);",
+            "Now, we can print the string, which will output the content of the file:",
+            "Example\n\n    FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n// Store the content of the filechar myString[100];// Read \n    the content and store it inside myStringfgets(myString, 100, fptr);\n// Print the file contentprintf(\"%s\", myString);// Close the \n    filefclose(fptr);\n\nHello World! \nRun example »",
+            "Note: The fgets function only reads the first line of the \nfile. If you remember, there were two lines of text in filename.txt.",
+            "To read every line of the file, you can use a while loop:",
+            "Example\n\n    FILE *fptr;// Open a file in read modefptr = \n    fopen(\"filename.txt\", \"r\");// Store the content of the filechar \n    myString[100];// Read the content and print it\n    while(fgets(myString, 100, fptr)) {  printf(\"%s\", myString);}\n    // Close the filefclose(fptr);\n\nHello World!\nHi everybody! \nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");"
+            },
+            {
+                "heading": "Example",
+                "code": "FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n// Store the content of the filechar myString[100];"
+            },
+            {
+                "heading": "Example",
+                "code": "fgets(myString, 100, \n    fptr);"
+            },
+            {
+                "heading": "Example",
+                "code": "FILE *fptr;// Open a file in read modefptr = fopen(\"filename.txt\", \"r\");\n// Store the content of the filechar myString[100];// Read \n    the content and store it inside myStringfgets(myString, 100, fptr);\n// Print the file contentprintf(\"%s\", myString);// Close the \n    filefclose(fptr);"
+            },
+            {
+                "heading": "Example",
+                "code": "FILE *fptr;// Open a file in read modefptr = \n    fopen(\"filename.txt\", \"r\");// Store the content of the filechar \n    myString[100];// Read the content and print it\n    while(fgets(myString, 100, fptr)) {  printf(\"%s\", myString);}\n    // Close the filefclose(fptr);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Good Practice",
+        "text": [
+            "If you try to open a file for reading that does not exist, the fopen() function will return NULL.",
+            "Tip: As a good practice, we can use an if statement to test for NULL, \nand print some text instead (when the file does not exist):",
+            "Example\n\n    FILE *fptr;// Open a file in read modefptr = \n    fopen(\"loremipsum.txt\", \"r\");// Print some text \n    if the file does not existif(fptr == NULL) {  printf(\"Not able to open the \n    file.\");}// Close the filefclose(fptr);\nIf the file does not exist, the following text is printed:\n\nNot able to open the file. \nRun example »",
+            "With this in mind, we can create a more sustainable code if we use our \"read \na file\" example above again:",
+            "Example\nIf the file exist, read the content and print it. If the file does not exist, print a message:\n\n    FILE *fptr;// Open a file in read modefptr = \n    fopen(\"filename.txt\", \"r\");// Store the content of the filechar \n    myString[100];// If the file existif(fptr != NULL) {  \n    // Read the content and print it  while(fgets(myString, 100, fptr)) \n    {    printf(\"%s\", myString);  }// \n    If the file does not exist } else {  printf(\"Not able to open the file.\");}// Close the file\n    fclose(fptr);\n\nHello World!\nHi everybody! \nRun example »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "FILE *fptr;// Open a file in read modefptr = \n    fopen(\"loremipsum.txt\", \"r\");// Print some text \n    if the file does not existif(fptr == NULL) {  printf(\"Not able to open the \n    file.\");}// Close the filefclose(fptr);"
+            },
+            {
+                "heading": "Example",
+                "code": "FILE *fptr;// Open a file in read modefptr = \n    fopen(\"filename.txt\", \"r\");// Store the content of the filechar \n    myString[100];// If the file existif(fptr != NULL) {  \n    // Read the content and print it  while(fgets(myString, 100, fptr)) \n    {    printf(\"%s\", myString);  }// \n    If the file does not exist } else {  printf(\"Not able to open the file.\");}// Close the file\n    fclose(fptr);"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,179 @@
+[
+    {
+        "title": "What is CSS?",
+        "text": [
+            "Cascading Style Sheets (CSS) is used to format the layout of a webpage.",
+            "With CSS, you can control the color, font, the size of text, the spacing \nbetween elements, how elements are positioned and laid out, what background \nimages or background colors are to be used, different displays for different devices \nand screen sizes, and much more!",
+            "Tip: The word cascading means that a style \napplied to a parent element will also apply to all children elements within the \nparent. So, if you set the color of the body text to \"blue\", all headings, \nparagraphs, and other text elements within the body will also get the same color (unless you specify \nsomething else)!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Using CSS",
+        "text": [
+            "CSS can be added to HTML documents in 3 ways:",
+            "The most common way to add CSS, is to keep the styles in external CSS \nfiles. However, in this tutorial we will use inline and internal styles, because this is easier to \ndemonstrate, and easier for you to try it yourself."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Inline CSS",
+        "text": [
+            "An inline CSS is used to apply a unique style to a single HTML element.",
+            "An inline CSS uses the style attribute of an HTML element.",
+            "The following example sets the text color of the <h1> element to blue, \nand the text color of the <p> element to red:",
+            "Example\n\n <h1 style=\"color:blue;\">A Blue Heading</h1><p \n  style=\"color:red;\">A red paragraph.</p>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"color:blue;\">A Blue Heading</h1><p \n  style=\"color:red;\">A red paragraph.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Internal CSS",
+        "text": [
+            "An internal CSS is used to define a style for a single HTML page.",
+            "An internal CSS is defined in the <head> section of an HTML page, \nwithin a <style> element.",
+            "The following example sets the text color of ALL the <h1> elements \n(on that page) to blue, and the text color of ALL the <p> elements to \nred. In addition, the page will be displayed with a \"powderblue\" background \ncolor:",
+            "Example\n\n<!DOCTYPE html><html><head><style>\n body {background-color: powderblue;}h1   {color: blue;}p    {color: red;}\n</style></head><body><h1>This is a \n heading</h1><p>This is a paragraph.</p></body></html>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html><head><style>\n body {background-color: powderblue;}h1   {color: blue;}p    {color: red;}\n</style></head><body><h1>This is a \n heading</h1><p>This is a paragraph.</p></body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "External CSS",
+        "text": [
+            "An external style sheet is used to define the style for many HTML pages.",
+            "To use an external style sheet, add a link to it in the <head> section of each HTML page:",
+            "Example\n\n<!DOCTYPE html><html><head>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head><body><h1>This is a heading</h1><p>This is a paragraph.</p></body></html>\nTry it Yourself »",
+            "The external style sheet can be written in any text editor. The file must not contain any \nHTML code, and must be saved with a .css extension.",
+            "Here is what the \"styles.css\" file looks like:",
+            "\"styles.css\":\n\n body {  background-color: powderblue;}h1 {  color: blue;}p {  color: red;}",
+            "Tip: With an external style sheet, you can change the look of an entire web site, by changing one file!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html><head>\n  <link rel=\"stylesheet\" href=\"styles.css\">\n</head><body><h1>This is a heading</h1><p>This is a paragraph.</p></body></html>"
+            },
+            {
+                "heading": "\"styles.css\":",
+                "code": "body {  background-color: powderblue;}h1 {  color: blue;}p {  color: red;}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CSS Colors, Fonts and Sizes",
+        "text": [
+            "Here, we will demonstrate some commonly used CSS properties. You will learn \nmore about them later.",
+            "The CSS color property defines the text color to be used.",
+            "The CSS font-family property defines the font to be used.",
+            "The CSS font-size property defines the text size to be used.",
+            "Example\nUse of CSS color, font-family and font-size properties:\n\n<!DOCTYPE html>\n <html><head><style>h1 {  color: blue;  font-family: verdana;  font-size: 300%;}p {\n    color: red;  \n font-family: courier;  font-size: 160%;}</style></head><body>\n <h1>This is a heading</h1><p>This is a paragraph.</p></body></html>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html>\n <html><head><style>h1 {  color: blue;  font-family: verdana;  font-size: 300%;}p {\n    color: red;  \n font-family: courier;  font-size: 160%;}</style></head><body>\n <h1>This is a heading</h1><p>This is a paragraph.</p></body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CSS Border",
+        "text": [
+            "The CSS border property defines a border \naround an HTML element.",
+            "Tip: You can define a border for nearly all HTML elements.",
+            "Example\nUse of CSS border property: \n\n p {  border: 2px \nsolid powderblue;}\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "p {  border: 2px \nsolid powderblue;}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CSS Padding",
+        "text": [
+            "The CSS padding property defines a padding \n(space) between the text and the border.",
+            "Example\nUse of CSS border and padding properties:\n\n p {  border: 2px \nsolid powderblue;  padding: 30px;}\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "p {  border: 2px \nsolid powderblue;  padding: 30px;}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CSS Margin",
+        "text": [
+            "The CSS margin property defines a margin \n(space) outside the border.",
+            "Example\nUse of CSS border and margin properties:\n\n p {  border: 2px \nsolid powderblue;  margin: 50px;\n }\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "p {  border: 2px \nsolid powderblue;  margin: 50px;\n }"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Link to External CSS",
+        "text": [
+            "External style sheets can be referenced with a full URL or with a path relative to the current web page.",
+            "Example\nThis example uses a full URL to link to a style sheet:\n\n<link rel=\"stylesheet\" href=\"https://www.w3schools.com/html/styles.css\">\n\n\nTry it Yourself »",
+            "Example\nThis example links to a style sheet located in the html folder on the current web site: \n\n<link rel=\"stylesheet\" href=\"/html/styles.css\">\n\n\nTry it Yourself »",
+            "Example\nThis example links to a style sheet located in the same folder as the current page:\n\n<link rel=\"stylesheet\" href=\"styles.css\">\n\n\nTry it Yourself »",
+            "You can read more about file paths in the chapter HTML \nFile Paths."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<link rel=\"stylesheet\" href=\"https://www.w3schools.com/html/styles.css\">"
+            },
+            {
+                "heading": "Example",
+                "code": "<link rel=\"stylesheet\" href=\"/html/styles.css\">"
+            },
+            {
+                "heading": "Example",
+                "code": "<link rel=\"stylesheet\" href=\"styles.css\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            "Tip: You can learn much more about CSS in our CSS Tutorial.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Style Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

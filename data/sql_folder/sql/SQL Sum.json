@@ -1,0 +1,134 @@
+[
+    {
+        "title": "The SQL SUM() Function",
+        "text": [
+            "The SUM() function returns the total sum of a numeric column.",
+            "Example\nReturn the sum of all Quantity fields in the OrderDetails table:\n\nSELECT SUM(Quantity)FROM OrderDetails;\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT SUM(Quantity)FROM OrderDetails;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Syntax",
+        "text": [
+            "SELECT SUM(column_name)\nFROM table_name\nWHERE condition;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the OrderDetails table used in the examples:",
+            "OrderDetailID\nOrderID\nProductID\nQuantity\n\n\n1\n10248\n11\n12\n\n\n2\n10248\n42\n10\n\n\n3\n10248\n72\n5\n\n\n4\n10249\n14\n9\n\n\n5\n10249\n51\n40",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "OrderDetailID": "1",
+                    "OrderID": "10248",
+                    "ProductID": "11",
+                    "Quantity": "12"
+                },
+                {
+                    "OrderDetailID": "2",
+                    "OrderID": "10248",
+                    "ProductID": "42",
+                    "Quantity": "10"
+                },
+                {
+                    "OrderDetailID": "3",
+                    "OrderID": "10248",
+                    "ProductID": "72",
+                    "Quantity": "5"
+                },
+                {
+                    "OrderDetailID": "4",
+                    "OrderID": "10249",
+                    "ProductID": "14",
+                    "Quantity": "9"
+                },
+                {
+                    "OrderDetailID": "5",
+                    "OrderID": "10249",
+                    "ProductID": "51",
+                    "Quantity": "40"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Add a WHERE Clause",
+        "text": [
+            "You can add a WHERE clause to specify conditions:",
+            "Example\nReturn the sum of the Quantity field for the product with\nProductID 11:\n\n  SELECT SUM(Quantity)FROM OrderDetailsWHERE ProductId = 11;\n\n\n  Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT SUM(Quantity)FROM OrderDetailsWHERE ProductId = 11;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Use an Alias",
+        "text": [
+            "Give the summarized column a name by using the AS keyword.",
+            "Example\nName the column \"total\":\n\nSELECT SUM(Quantity) AS totalFROM OrderDetails;\n\n\n  Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT SUM(Quantity) AS totalFROM OrderDetails;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Use SUM() with GROUP BY",
+        "text": [
+            "Here we use the SUM() function and the\nGROUP BY clause, to return the Quantity\nfor each OrderID in the OrderDetails table:",
+            "Example\n\n  SELECT OrderID, SUM(Quantity) AS [Total Quantity]FROM OrderDetails\n  GROUP BY OrderID; \nTry it Yourself »",
+            "You will learn more about the\nGROUP BY clause later in this tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT OrderID, SUM(Quantity) AS [Total Quantity]FROM OrderDetails\n  GROUP BY OrderID;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "SUM() With an Expression",
+        "text": [
+            "The parameter inside the SUM() function can also be an expression.",
+            "If we assume that each product in the OrderDetails column costs 10 dollars, we can find the total earnings in dollars by \nmultiply each quantity with 10:",
+            "Example\nUse an expression inside the SUM() function:\n\nSELECT SUM(Quantity * 10)FROM OrderDetails;\nTry it Yourself »",
+            "We can also join the OrderDetails table to the \nProducts table to find the actual amount, instead of assuming it is 10 dollars:",
+            "Example\nJoin OrderDetails with \nProducts, and use SUM() to find the total amount:\n\nSELECT SUM(Price * Quantity)\nFROM OrderDetails\nLEFT JOIN Products ON OrderDetails.ProductID = Products.ProductID;\nTry it Yourself »",
+            "You will learn more about Joins later in this tutorial.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT SUM(Quantity * 10)FROM OrderDetails;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT SUM(Price * Quantity)\nFROM OrderDetails\nLEFT JOIN Products ON OrderDetails.ProductID = Products.ProductID;"
+            }
+        ],
+        "tables": []
+    }
+]

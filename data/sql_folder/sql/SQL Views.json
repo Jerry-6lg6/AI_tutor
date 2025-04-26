@@ -1,0 +1,82 @@
+[
+    {
+        "title": "SQL CREATE VIEW Statement",
+        "text": [
+            "In SQL, a view is a virtual table based on the result-set of an SQL statement.",
+            "A view contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database.",
+            "You can add SQL statements and functions to a view and present the data as if the data were coming from one single table.",
+            "A view is created with the CREATE VIEW \nstatement.",
+            "CREATE VIEW view_name AS\nSELECT column1, column2, ...\nFROM table_name\nWHERE condition;",
+            "Note: A view always shows up-to-date data! The database engine recreates the \nview, every time a user queries it."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL CREATE VIEW Examples",
+        "text": [
+            "The following SQL creates a view that shows all customers from Brazil:",
+            "Example\n\nCREATE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName\nFROM Customers\nWHERE Country = 'Brazil';",
+            "We can query the view above as follows:",
+            "Example\n\nSELECT * FROM [Brazil Customers];",
+            "The following SQL creates a view that selects every product in the \"Products\" table with a price higher than the average price:",
+            "Example\n\nCREATE VIEW [Products Above Average Price] AS\nSELECT ProductName, Price\nFROM Products\nWHERE Price > (SELECT AVG(Price) FROM Products);",
+            "We can query the view above as follows:",
+            "Example\n\nSELECT * FROM [Products Above Average Price];",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName\nFROM Customers\nWHERE Country = 'Brazil';"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM [Brazil Customers];"
+            },
+            {
+                "heading": "Example",
+                "code": "CREATE VIEW [Products Above Average Price] AS\nSELECT ProductName, Price\nFROM Products\nWHERE Price > (SELECT AVG(Price) FROM Products);"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM [Products Above Average Price];"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "SQL Updating a View",
+        "text": [
+            "A view can be updated with the CREATE OR REPLACE \nVIEW statement.",
+            "CREATE OR REPLACE VIEW view_name AS\nSELECT column1, column2, ...\nFROM table_name\nWHERE condition;",
+            "The following SQL adds the \"City\" column to the \"Brazil Customers\" view:",
+            "Example\n\nCREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = 'Brazil';"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = 'Brazil';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "SQL Dropping a View",
+        "text": [
+            "A view is deleted with the DROP VIEW \nstatement.",
+            "DROP VIEW view_name;",
+            "The following SQL drops the \"Brazil Customers\" view:",
+            "Example\n\nDROP VIEW [Brazil Customers];",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP VIEW [Brazil Customers];"
+            }
+        ],
+        "tables": []
+    }
+]

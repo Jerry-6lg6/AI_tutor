@@ -1,0 +1,56 @@
+[
+    {
+        "title": "C++ Data Types",
+        "text": [
+            "As explained in the Variables chapter, a variable in C++ must be a specified data type:",
+            "Example\n\n  int myNum = 5;               \n  // Integer (whole number)float myFloatNum = 5.99;     \n  // Floating point numberdouble myDoubleNum = 9.98;   // Floating point numberchar myLetter = 'D';         \n  // Characterbool \n  myBoolean = true;       // Booleanstring myText = \"Hello\";     \n  // String\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myNum = 5;               \n  // Integer (whole number)float myFloatNum = 5.99;     \n  // Floating point numberdouble myDoubleNum = 9.98;   // Floating point numberchar myLetter = 'D';         \n  // Characterbool \n  myBoolean = true;       // Booleanstring myText = \"Hello\";     \n  // String"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Basic Data Types",
+        "text": [
+            "The data type specifies the size and type of information the variable will store:",
+            "Data Type\nSize\nDescription\n\n\nboolean\n1 byte\nStores true or false values\n\n\nchar\n1 byte\nStores a single character/letter/number, or ASCII values\n\n\nint\n2 or 4 bytes\nStores whole numbers, without decimals\n\n\nfloat\n4 bytes\nStores fractional numbers, containing one or more decimals. Sufficient for \nstoring 6-7 decimal digits\n\n\ndouble\n8 bytes\nStores fractional numbers, containing one or more decimals. Sufficient for \nstoring 15 decimal digits",
+            "You will learn more about the individual data types in the next chapters.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Data Type": "boolean",
+                    "Size": "1 byte",
+                    "Description": "Stores true or false values"
+                },
+                {
+                    "Data Type": "char",
+                    "Size": "1 byte",
+                    "Description": "Stores a single character/letter/number, or ASCII values"
+                },
+                {
+                    "Data Type": "int",
+                    "Size": "2 or 4 bytes",
+                    "Description": "Stores whole numbers, without decimals"
+                },
+                {
+                    "Data Type": "float",
+                    "Size": "4 bytes",
+                    "Description": "Stores fractional numbers, containing one or more decimals. Sufficient for \nstoring 6-7 decimal digits"
+                },
+                {
+                    "Data Type": "double",
+                    "Size": "8 bytes",
+                    "Description": "Stores fractional numbers, containing one or more decimals. Sufficient for \nstoring 15 decimal digits"
+                }
+            ]
+        ]
+    }
+]

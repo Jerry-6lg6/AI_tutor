@@ -1,0 +1,19 @@
+[
+    {
+        "title": "DROP INDEX",
+        "text": [
+            "The DROP INDEX command is used to delete an \nindex in a table.",
+            "MS Access:",
+            "DROP INDEX index_name ON table_name;",
+            "SQL Server:",
+            "DROP INDEX table_name.index_name;",
+            "DB2/Oracle:",
+            "DROP INDEX index_name;",
+            "MySQL:",
+            "ALTER TABLE table_nameDROP INDEX index_name;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

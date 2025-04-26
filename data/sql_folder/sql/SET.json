@@ -1,0 +1,25 @@
+[
+    {
+        "title": "SET",
+        "text": [
+            "The SET command is used with UPDATE to specify which columns and values that should be updated \nin a table.",
+            "The following SQL updates the first customer (CustomerID = 1) with a new ContactName and \na new City:",
+            "Example\n\n UPDATE Customers\n SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'\n WHERE CustomerID = 1;",
+            "The following SQL will \nupdate the \"ContactName\" field to \"Juan\" for all records where Country is \"Mexico\":",
+            "Example\n\nUPDATE Customers\nSET ContactName='Juan'\nWHERE Country='Mexico';",
+            "Note: Be careful when updating records in a table! Notice the WHERE clause in the \nUPDATE statement.\nThe WHERE clause specifies which record(s) that should be updated. If \nyou omit the WHERE clause, all records in the table will be updated!",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "UPDATE Customers\n SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'\n WHERE CustomerID = 1;"
+            },
+            {
+                "heading": "Example",
+                "code": "UPDATE Customers\nSET ContactName='Juan'\nWHERE Country='Mexico';"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "title": "XML Separates Data from Presentation",
+        "text": [
+            "XML does not carry any information about how to be displayed.",
+            "The same XML data can be used in many different presentation scenarios.",
+            "Because of this, with XML, there is a full separation between data and \npresentation."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML is Often a Complement to HTML",
+        "text": [
+            "In many HTML applications, XML is used to \nstore or transport data, while HTML is used to format and display the \nsame data."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Separates Data from HTML",
+        "text": [
+            "When displaying data in HTML, you should not have to edit the HTML file when the data changes.",
+            "With XML, the data can be stored in separate XML files.",
+            "With a few lines of JavaScript code, you can read an XML file and update \nthe data content of any HTML page.",
+            "Books.xml\n\n <?xml version=\"1.0\" encoding=\"UTF-8\"?><bookstore>  <book \n category=\"cooking\">    <title lang=\"en\">Everyday \n Italian</title>    <author>Giada De Laurentiis</author>    \n <year>2005</year>    <price>30.00</price>  </book>\n  <book category=\"children\">    <title lang=\"en\">Harry \n Potter</title>    <author>J K. Rowling</author>    \n <year>2005</year>    <price>29.99</price>  </book>\n  <book category=\"web\">    <title lang=\"en\">XQuery \n Kick Start</title>    <author>James McGovern</author>    \n <author>Per Bothner</author>    <author>Kurt Cagle</author>    \n <author>James Linn</author>    <author>Vaidyanathan \n Nagarajan</author>    <year>2003</year>    \n <price>49.99</price>  </book>  <book category=\"web\" \n cover=\"paperback\">    <title lang=\"en\">Learning XML</title>    \n <author>Erik T. Ray</author>    <year>2003</year>    \n <price>39.95</price>  </book></bookstore>",
+            "You will learn a lot more about using XML and JavaScript in the DOM section of this tutorial.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Books.xml",
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><bookstore>  <book \n category=\"cooking\">    <title lang=\"en\">Everyday \n Italian</title>    <author>Giada De Laurentiis</author>    \n <year>2005</year>    <price>30.00</price>  </book>\n  <book category=\"children\">    <title lang=\"en\">Harry \n Potter</title>    <author>J K. Rowling</author>    \n <year>2005</year>    <price>29.99</price>  </book>\n  <book category=\"web\">    <title lang=\"en\">XQuery \n Kick Start</title>    <author>James McGovern</author>    \n <author>Per Bothner</author>    <author>Kurt Cagle</author>    \n <author>James Linn</author>    <author>Vaidyanathan \n Nagarajan</author>    <year>2003</year>    \n <price>49.99</price>  </book>  <book category=\"web\" \n cover=\"paperback\">    <title lang=\"en\">Learning XML</title>    \n <author>Erik T. Ray</author>    <year>2003</year>    \n <price>39.95</price>  </book></bookstore>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Transaction Data",
+        "text": [
+            "Thousands of XML formats exist, in many different industries, to describe day-to-day data transactions:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Example: XML News",
+        "text": [
+            "XMLNews is a specification for exchanging news and other information.",
+            "Using a standard makes it easier for both news producers and news consumers to produce, receive, and archive any kind of news information across different hardware, software, and programming languages.",
+            "An example XMLNews document:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<nitf>\n \n<head>\n   \n<title>Colombia Earthquake</title>\n \n</head>\n \n<body>\n   \n<headline>\n       \n  <hl1>143 Dead in Colombia Earthquake</hl1>\n   \n</headline>\n   \n<byline>\n       \n  <bytag>By Jared Kotler, Associated Press Writer</bytag>\n   \n</byline>\n   \n<dateline>\n       \n  <location>Bogota, Colombia</location>\n       \n  <date>Monday January 25 1999 7:28 ET</date>\n   \n</dateline>\n \n</body>\n</nitf>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Example: XML Weather Service",
+        "text": [
+            "An XML national weather service from NOAA (National Oceanic and Atmospheric Administration):",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<current_observation>\n<credit>NOAA's National Weather Service</credit>\n<credit_URL>http://weather.gov/</credit_URL>\n<image>\n \n<url>http://weather.gov/images/xml_logo.gif</url>\n \n<title>NOAA's National Weather Service</title>\n \n<link>http://weather.gov</link>\n</image>\n<location>New York/John F. Kennedy Intl Airport, NY</location>\n<station_id>KJFK</station_id>\n<latitude>40.66</latitude>\n<longitude>-73.78</longitude>\n<observation_time_rfc822>Mon, 11 Feb 2008 06:51:00 -0500 EST\n</observation_time_rfc822>\n<weather>A Few Clouds</weather>\n<temp_f>11</temp_f>\n<temp_c>-12</temp_c>\n<relative_humidity>36</relative_humidity>\n<wind_dir>West</wind_dir>\n<wind_degrees>280</wind_degrees> \n<wind_mph>18.4</wind_mph>\n<wind_gust_mph>29</wind_gust_mph> \n<pressure_mb>1023.6</pressure_mb>\n<pressure_in>30.23</pressure_in>\n<dewpoint_f>-11</dewpoint_f>\n<dewpoint_c>-24</dewpoint_c>\n<windchill_f>-7</windchill_f>\n<windchill_c>-22</windchill_c>\n<visibility_mi>10.00</visibility_mi>\n<icon_url_base>http://weather.gov/weather/images/fcicons/</icon_url_base>\n<icon_url_name>nfew.jpg</icon_url_name>\n<disclaimer_url>http://weather.gov/disclaimer.html</disclaimer_url>\n<copyright_url>http://weather.gov/disclaimer.html</copyright_url>\n</current_observation>",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

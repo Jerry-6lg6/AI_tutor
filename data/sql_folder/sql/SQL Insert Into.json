@@ -1,0 +1,243 @@
+[
+    {
+        "title": "The SQL INSERT INTO Statement",
+        "text": [
+            "The INSERT INTO statement is used to insert new records in a table.",
+            "It is possible to write the INSERT INTO \nstatement in two ways:",
+            "1. Specify both the column names and the values to be inserted:",
+            "INSERT INTO table_name (column1, column2, column3, ...)\nVALUES (value1, value2, value3, ...);",
+            "2. If you are adding values for all the columns of the table, you do not need to \nspecify the column names in the SQL query. However, make sure the order of the \nvalues is in the same order as the columns in the table. Here, the \nINSERT INTO syntax \nwould be as follows:",
+            "INSERT INTO table_name\nVALUES (value1, value2, value3, ...);"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Customers table used in the examples:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n89\nWhite Clover Markets\nKarl Jablonski\n305 - 14th Ave. S. Suite 3B\nSeattle\n98128\nUSA\n\n\n90\nWilman Kala\nMatti Karttunen\nKeskuskatu 45\nHelsinki\n21240\nFinland\n\n\n91\nWolski\nZbyszek\nul. Filtrowa 68\nWalla\n01-012\nPoland",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "89",
+                    "CustomerName": "White Clover Markets",
+                    "ContactName": "Karl Jablonski",
+                    "Address": "305 - 14th Ave. S. Suite 3B",
+                    "City": "Seattle",
+                    "PostalCode": "98128",
+                    "Country": "USA"
+                },
+                {
+                    "CustomerID": "90",
+                    "CustomerName": "Wilman Kala",
+                    "ContactName": "Matti Karttunen",
+                    "Address": "Keskuskatu 45",
+                    "City": "Helsinki",
+                    "PostalCode": "21240",
+                    "Country": "Finland"
+                },
+                {
+                    "CustomerID": "91",
+                    "CustomerName": "Wolski",
+                    "ContactName": "Zbyszek",
+                    "Address": "ul. Filtrowa 68",
+                    "City": "Walla",
+                    "PostalCode": "01-012",
+                    "Country": "Poland"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "INSERT INTO Example",
+        "text": [
+            "The following SQL statement inserts a new record in the \"Customers\" table:",
+            "Example\n\nINSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');",
+            "The selection from the \"Customers\" table will now look like this:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n89\nWhite Clover Markets\nKarl Jablonski\n305 - 14th Ave. S. Suite 3B\nSeattle\n98128\nUSA\n\n\n90\nWilman Kala\nMatti Karttunen\nKeskuskatu 45\nHelsinki\n21240\nFinland\n\n\n91\nWolski\nZbyszek\nul. Filtrowa 68\nWalla\n01-012\nPoland\n\n\n92\nCardinal\nTom B. Erichsen\nSkagen 21\nStavanger\n4006\nNorway",
+            "Did you notice that we did not insert any number into the CustomerID \nfield?The CustomerID column is \nan auto-increment field and will be \ngenerated automatically when a new record is inserted into the table."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "CustomerID": "89",
+                    "CustomerName": "White Clover Markets",
+                    "ContactName": "Karl Jablonski",
+                    "Address": "305 - 14th Ave. S. Suite 3B",
+                    "City": "Seattle",
+                    "PostalCode": "98128",
+                    "Country": "USA"
+                },
+                {
+                    "CustomerID": "90",
+                    "CustomerName": "Wilman Kala",
+                    "ContactName": "Matti Karttunen",
+                    "Address": "Keskuskatu 45",
+                    "City": "Helsinki",
+                    "PostalCode": "21240",
+                    "Country": "Finland"
+                },
+                {
+                    "CustomerID": "91",
+                    "CustomerName": "Wolski",
+                    "ContactName": "Zbyszek",
+                    "Address": "ul. Filtrowa 68",
+                    "City": "Walla",
+                    "PostalCode": "01-012",
+                    "Country": "Poland"
+                },
+                {
+                    "CustomerID": "92",
+                    "CustomerName": "Cardinal",
+                    "ContactName": "Tom B. Erichsen",
+                    "Address": "Skagen 21",
+                    "City": "Stavanger",
+                    "PostalCode": "4006",
+                    "Country": "Norway"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Insert Data Only in Specified Columns",
+        "text": [
+            "It is also possible to only insert data in specific columns.",
+            "The following SQL statement will insert a new record, but only insert data in the \"CustomerName\", \n\"City\", and \"Country\" columns (CustomerID will \nbe updated automatically):",
+            "Example\n\nINSERT INTO Customers (CustomerName, City, Country)\nVALUES ('Cardinal', 'Stavanger', 'Norway');",
+            "The selection from the \"Customers\" table will now look like this:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n89\nWhite Clover Markets\nKarl Jablonski\n305 - 14th Ave. S. Suite 3B\nSeattle\n98128\nUSA\n\n\n90\nWilman Kala\nMatti Karttunen\nKeskuskatu 45\nHelsinki\n21240\nFinland\n\n\n91\nWolski\nZbyszek\nul. Filtrowa 68\nWalla\n01-012\nPoland\n\n\n92\nCardinal\nnull\nnull \nStavanger\nnull\nNorway"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, City, Country)\nVALUES ('Cardinal', 'Stavanger', 'Norway');"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "CustomerID": "89",
+                    "CustomerName": "White Clover Markets",
+                    "ContactName": "Karl Jablonski",
+                    "Address": "305 - 14th Ave. S. Suite 3B",
+                    "City": "Seattle",
+                    "PostalCode": "98128",
+                    "Country": "USA"
+                },
+                {
+                    "CustomerID": "90",
+                    "CustomerName": "Wilman Kala",
+                    "ContactName": "Matti Karttunen",
+                    "Address": "Keskuskatu 45",
+                    "City": "Helsinki",
+                    "PostalCode": "21240",
+                    "Country": "Finland"
+                },
+                {
+                    "CustomerID": "91",
+                    "CustomerName": "Wolski",
+                    "ContactName": "Zbyszek",
+                    "Address": "ul. Filtrowa 68",
+                    "City": "Walla",
+                    "PostalCode": "01-012",
+                    "Country": "Poland"
+                },
+                {
+                    "CustomerID": "92",
+                    "CustomerName": "Cardinal",
+                    "ContactName": "null",
+                    "Address": "null",
+                    "City": "Stavanger",
+                    "PostalCode": "null",
+                    "Country": "Norway"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Insert Multiple Rows",
+        "text": [
+            "It is also possible to insert multiple rows in one statement.",
+            "To insert multiple rows of data, we use the same INSERT INTO statement, but with multiple values:",
+            "Example\n\nINSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES\n('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'),\n('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'),\n('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');",
+            "Make sure you separate each set of values with a comma ,.",
+            "The selection from the \"Customers\" table will now look like this:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n89\nWhite Clover Markets\nKarl Jablonski\n305 - 14th Ave. S. Suite 3B\nSeattle\n98128\nUSA\n\n\n90\nWilman Kala\nMatti Karttunen\nKeskuskatu 45\nHelsinki\n21240\nFinland\n\n\n91\nWolski\nZbyszek\nul. Filtrowa 68\nWalla\n01-012\nPoland\n\n\n92\nCardinal\nTom B. Erichsen\nSkagen 21\nStavanger\n4006\nNorway\n\n\n93\nGreasy Burger\nPer Olsen\nGateveien 15\nSandnes\n4306\nNorway\n\n\n94\nTasty Tee\nFinn Egan\nStreetroad 19B\nLiverpool\nL1 0AA\nUK",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)\nVALUES\n('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway'),\n('Greasy Burger', 'Per Olsen', 'Gateveien 15', 'Sandnes', '4306', 'Norway'),\n('Tasty Tee', 'Finn Egan', 'Streetroad 19B', 'Liverpool', 'L1 0AA', 'UK');"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "CustomerID": "89",
+                    "CustomerName": "White Clover Markets",
+                    "ContactName": "Karl Jablonski",
+                    "Address": "305 - 14th Ave. S. Suite 3B",
+                    "City": "Seattle",
+                    "PostalCode": "98128",
+                    "Country": "USA"
+                },
+                {
+                    "CustomerID": "90",
+                    "CustomerName": "Wilman Kala",
+                    "ContactName": "Matti Karttunen",
+                    "Address": "Keskuskatu 45",
+                    "City": "Helsinki",
+                    "PostalCode": "21240",
+                    "Country": "Finland"
+                },
+                {
+                    "CustomerID": "91",
+                    "CustomerName": "Wolski",
+                    "ContactName": "Zbyszek",
+                    "Address": "ul. Filtrowa 68",
+                    "City": "Walla",
+                    "PostalCode": "01-012",
+                    "Country": "Poland"
+                },
+                {
+                    "CustomerID": "92",
+                    "CustomerName": "Cardinal",
+                    "ContactName": "Tom B. Erichsen",
+                    "Address": "Skagen 21",
+                    "City": "Stavanger",
+                    "PostalCode": "4006",
+                    "Country": "Norway"
+                },
+                {
+                    "CustomerID": "93",
+                    "CustomerName": "Greasy Burger",
+                    "ContactName": "Per Olsen",
+                    "Address": "Gateveien 15",
+                    "City": "Sandnes",
+                    "PostalCode": "4306",
+                    "Country": "Norway"
+                },
+                {
+                    "CustomerID": "94",
+                    "CustomerName": "Tasty Tee",
+                    "ContactName": "Finn Egan",
+                    "Address": "Streetroad 19B",
+                    "City": "Liverpool",
+                    "PostalCode": "L1 0AA",
+                    "Country": "UK"
+                }
+            ]
+        ]
+    }
+]

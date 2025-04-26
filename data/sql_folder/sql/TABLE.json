@@ -1,0 +1,86 @@
+[
+    {
+        "title": "CREATE TABLE",
+        "text": [
+            "The CREATE TABLE command creates a new table \nin the database.",
+            "The following SQL creates a table called \"Persons\" that contains five columns: PersonID, LastName, FirstName, \nAddress, and City:",
+            "Example\n\nCREATE TABLE Persons\n(\n   \nPersonID int,\n   \nLastName varchar(255),\n   \nFirstName varchar(255),\n   \nAddress varchar(255),\n   \nCity varchar(255) \n);"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE TABLE Persons\n(\n   \nPersonID int,\n   \nLastName varchar(255),\n   \nFirstName varchar(255),\n   \nAddress varchar(255),\n   \nCity varchar(255) \n);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CREATE TABLE Using Another Table",
+        "text": [
+            "A copy of an existing table can also be created using \nCREATE TABLE.",
+            "The following SQL creates a new table called \"TestTables\" (which is \na copy of the \"Customers\" table):",
+            "Example\n\n  CREATE TABLE TestTable ASSELECT customername, contactnameFROM \n  customers;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE TABLE TestTable ASSELECT customername, contactnameFROM \n  customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "ALTER TABLE",
+        "text": [
+            "The ALTER TABLE command adds, deletes, or \nmodifies columns in a table.",
+            "The ALTER TABLE command also adds and \ndeletes various constraints in a table.",
+            "The following SQL adds an \"Email\" column to the \"Customers\" table:",
+            "Example\n\n  ALTER TABLE CustomersADD Email varchar(255);",
+            "The following SQL deletes the \"Email\" column from the \"Customers\" table:",
+            "Example\n\n  ALTER TABLE CustomersDROP COLUMN Email;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE CustomersADD Email varchar(255);"
+            },
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE CustomersDROP COLUMN Email;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "DROP TABLE",
+        "text": [
+            "The DROP TABLE command deletes a table in \nthe database.",
+            "The following SQL deletes the table \"Shippers\":",
+            "Example\n\n  DROP TABLE Shippers;",
+            "Note: Be careful before deleting a table. Deleting a \ntable results in loss of all information stored in the table!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP TABLE Shippers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "TRUNCATE TABLE",
+        "text": [
+            "The TRUNCATE TABLE command deletes the data inside a table, but \nnot the table itself.",
+            "The following SQL truncates the table \"Categories\":",
+            "Example\n\n  TRUNCATE TABLE Categories;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "TRUNCATE TABLE Categories;"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,145 @@
+[
+    {
+        "title": "Python For Loops",
+        "text": [
+            "A for loop is used for iterating over a sequence (that is either a list, a tuple, \na dictionary, a set, or a string).",
+            "This is less like the for keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.",
+            "With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.",
+            "Example\nPrint each fruit in a fruit list:\n\n  fruits = [\"apple\", \"banana\", \"cherry\"]for \n  x in fruits:\n\t \n\tprint(x)\n\nTry it Yourself »",
+            "The for loop does not require an indexing variable to set beforehand."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "fruits = [\"apple\", \"banana\", \"cherry\"]for \n  x in fruits:\n\t \n\tprint(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Looping Through a String",
+        "text": [
+            "Even strings are iterable objects, they contain a sequence of characters:",
+            "Example\nLoop through the letters in the word \"banana\":\n\n  for x in \"banana\":  print(x)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for x in \"banana\":  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The break Statement",
+        "text": [
+            "With the break statement we can stop the \nloop before it has looped through all the items:",
+            "Example\nExit the loop when x is \"banana\":\n\n  fruits = [\"apple\", \"banana\", \"cherry\"]for x in fruits:  print(x)\n    if x == \n  \"banana\":    break\n\nTry it Yourself »",
+            "Example\nExit the loop when x is \"banana\", \nbut this time the break comes before the print:\n\n  fruits = [\"apple\", \"banana\", \"cherry\"]for x in fruits:  if x == \n  \"banana\":    break  print(x)\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "fruits = [\"apple\", \"banana\", \"cherry\"]for x in fruits:  print(x)\n    if x == \n  \"banana\":    break"
+            },
+            {
+                "heading": "Example",
+                "code": "fruits = [\"apple\", \"banana\", \"cherry\"]for x in fruits:  if x == \n  \"banana\":    break  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The continue Statement",
+        "text": [
+            "With the continue statement we can stop the \ncurrent iteration of the loop, and continue with the next:",
+            "Example\nDo not print banana:\n\n  fruits = [\"apple\", \"banana\", \"cherry\"]for x in fruits:  if x == \n  \"banana\":    continue  print(x)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "fruits = [\"apple\", \"banana\", \"cherry\"]for x in fruits:  if x == \n  \"banana\":    continue  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The range() Function",
+        "text": [
+            "The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.",
+            "Example\nUsing the range() function:\n\n  for x in range(6):\n\t \n\tprint(x)\n\nTry it Yourself »",
+            "Note that range(6) is not the values of 0 to 6, but the values 0 to 5.",
+            "The range() function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: range(2, 6), which \nmeans values from 2 to 6 (but not including 6):",
+            "Example\nUsing the start parameter:\n\n  for x in range(2, 6):\n\t \n\tprint(x)\n\nTry it Yourself »",
+            "The range() function defaults to increment the sequence by 1,\nhowever it is possible to specify the increment value by adding a third parameter: range(2, 30, 3):",
+            "Example\nIncrement the sequence with 3 (default is 1):\n\n  for x in range(2, 30, 3):\n\t \n\tprint(x)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for x in range(6):\n\t \n\tprint(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "for x in range(2, 6):\n\t \n\tprint(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "for x in range(2, 30, 3):\n\t \n\tprint(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Else in For Loop",
+        "text": [
+            "The else keyword in a\nfor loop specifies a block of code to be \nexecuted when the loop is finished:",
+            "Example\nPrint all numbers from 0 to 5, and print a message when the loop has ended:\n\n  for x in range(6): \n\tprint(x)else: \n\tprint(\"Finally finished!\")\nTry it Yourself »",
+            "Note: The else block will NOT be executed if the loop is stopped by a break statement.",
+            "Example\nBreak the loop when x is 3, and see what happens with the \nelse block:\n\n  for x in range(6):  if x == 3: break \n\tprint(x)else: \n\tprint(\"Finally finished!\")\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for x in range(6): \n\tprint(x)else: \n\tprint(\"Finally finished!\")"
+            },
+            {
+                "heading": "Example",
+                "code": "for x in range(6):  if x == 3: break \n\tprint(x)else: \n\tprint(\"Finally finished!\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Nested Loops",
+        "text": [
+            "A nested loop is a loop inside a loop.",
+            "The \"inner loop\" will be executed one time for each iteration of the \"outer \nloop\":",
+            "Example\nPrint each adjective for every fruit:\n\n  adj = [\"red\", \"big\", \"tasty\"]fruits = [\"apple\", \"banana\", \"cherry\"]\nfor x in adj:  for y in fruits:    print(x, y)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "adj = [\"red\", \"big\", \"tasty\"]fruits = [\"apple\", \"banana\", \"cherry\"]\nfor x in adj:  for y in fruits:    print(x, y)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The pass Statement",
+        "text": [
+            "for loops cannot be empty, but if you for \nsome reason have a for loop with no content, put in the pass statement to avoid getting an error.",
+            "Example\n\n  for x in [0, 1, 2]:  pass\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for x in [0, 1, 2]:  pass"
+            }
+        ],
+        "tables": []
+    }
+]

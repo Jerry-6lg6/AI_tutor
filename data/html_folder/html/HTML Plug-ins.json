@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Plug-ins",
+        "text": [
+            "Plug-ins were designed to be used for many different purposes:\n\nTo run Java applets\nTo run Microsoft ActiveX controls\nTo display Flash movies\nTo display maps\nTo scan for viruses\nTo verify a bank id\n\n\nWarning !\nMost browsers no longer support Java Applets and Plug-ins.\nActiveX controls are no longer supported in any browsers.\nThe support for Shockwave Flash has also been turned off in modern browsers.\n\n\n\n\nThe <object> Element\nThe <object> element is supported by all browsers.\nThe <object> element defines an embedded object within an HTML document.\nIt was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages,\nbut can also be used to include HTML in HTML:\n\nExample\n\n<object width=\"100%\" height=\"500px\" data=\"snippet.html\"></object>\n\nTry it Yourself »\n\nOr images if you like:\n\nExample\n\n<object data=\"audi.jpeg\"></object>\n\nTry it Yourself »\n\n\n\n\n\n\n\n\n\nThe <embed> Element\nThe <embed> element is supported in all major browsers.\nThe <embed> element also defines an embedded object within an HTML document.\nWeb browsers have supported the <embed> element for a \nlong time. However, it has not been a part of the HTML  \nspecification before HTML5.\n\nExample\n\n<embed src=\"audi.jpeg\">\n\nTry it Yourself »\n\n\nNote that the <embed> element does not have a closing tag. It can not \ncontain alternative text.\n\nThe <embed> element can also be used to include HTML in HTML:\n\nExample\n\n <embed width=\"100%\" height=\"500px\" src=\"snippet.html\">\n\nTry it Yourself »\n\n\n\n\n❮ Previous\nNext ❯\n\n\n\n\n\n\n\n\n\n\n\n\n★\n+1\n\n\n\n \n\n\n\nTrack your progress - it's free!\n\n\n \n\n\n\n\n\n\n\n          Log in\n        \n\n          Sign Up"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <object> Element",
+        "text": [
+            "The <object> element is supported by all browsers.",
+            "The <object> element defines an embedded object within an HTML document.",
+            "It was designed to embed plug-ins (like Java applets, PDF readers, and Flash Players) in web pages,\nbut can also be used to include HTML in HTML:",
+            "Example\n\n<object width=\"100%\" height=\"500px\" data=\"snippet.html\"></object>\n\nTry it Yourself »",
+            "Or images if you like:",
+            "Example\n\n<object data=\"audi.jpeg\"></object>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<object width=\"100%\" height=\"500px\" data=\"snippet.html\"></object>"
+            },
+            {
+                "heading": "Example",
+                "code": "<object data=\"audi.jpeg\"></object>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <embed> Element",
+        "text": [
+            "The <embed> element is supported in all major browsers.",
+            "The <embed> element also defines an embedded object within an HTML document.",
+            "Web browsers have supported the <embed> element for a \nlong time. However, it has not been a part of the HTML  \nspecification before HTML5.",
+            "Example\n\n<embed src=\"audi.jpeg\">\n\nTry it Yourself »",
+            "Note that the <embed> element does not have a closing tag. It can not \ncontain alternative text.",
+            "The <embed> element can also be used to include HTML in HTML:",
+            "Example\n\n <embed width=\"100%\" height=\"500px\" src=\"snippet.html\">\n\nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<embed src=\"audi.jpeg\">"
+            },
+            {
+                "heading": "Example",
+                "code": "<embed width=\"100%\" height=\"500px\" src=\"snippet.html\">"
+            }
+        ],
+        "tables": []
+    }
+]

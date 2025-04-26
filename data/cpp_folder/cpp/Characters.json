@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Character Types",
+        "text": [
+            "The char data type is used to store a \nsingle character. The character must be \nsurrounded by single quotes, like 'A' or 'c':",
+            "Example\n\n  char myGrade = 'B';\n  cout << myGrade;\nTry it Yourself »",
+            "Alternatively, if you are familiar with ASCII, you can use ASCII values to display certain characters:",
+            "Example\n\n  char a = 65, b = 66, c = 67;cout << a;cout << b;cout << c;\nTry it Yourself »",
+            "Tip: A list of all ASCII values can be found in our ASCII Table Reference.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char myGrade = 'B';\n  cout << myGrade;"
+            },
+            {
+                "heading": "Example",
+                "code": "char a = 65, b = 66, c = 67;cout << a;cout << b;cout << c;"
+            }
+        ],
+        "tables": []
+    }
+]

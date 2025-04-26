@@ -1,0 +1,126 @@
+[
+    {
+        "title": "XML Documents Must Have a Root Element",
+        "text": [
+            "XML documents must contain one root element that is the \nparent \nof all other elements:",
+            "<root>\n    <child>\n        <subchild>.....</subchild>\n    </child>\n </root>",
+            "In this example <note> is the root element:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n <note>\n   <to>Tove</to>\n   <from>Jani</from>\n   <heading>Reminder</heading>\n   <body>Don't forget me this weekend!</body>\n </note>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The XML Prolog",
+        "text": [
+            "This line is called the XML prolog:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+            "The XML prolog is optional. If it exists, it must come first in the document.",
+            "XML documents can contain international characters, like Norwegian Ã¸Ã¦Ã¥ or \nFrench ÃªÃ¨Ã©.",
+            "To avoid errors, you should specify the encoding used, or save your XML files \nas UTF-8.",
+            "UTF-8 is the default character encoding for XML documents.",
+            "Character encoding can be studied in our \nCharacter Set Tutorial.",
+            "UTF-8 is also the default encoding for HTML5, CSS, JavaScript, PHP, and SQL.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "All XML Elements Must Have a Closing Tag",
+        "text": [
+            "In XML, it is illegal to omit the closing tag. All elements must have \na closing tag:",
+            "<p>This is a paragraph.</p>\n <br />",
+            "Note: The XML prolog does not have a closing tag!\nThis is not an error. The prolog is not a part of the XML document."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Tags are Case Sensitive",
+        "text": [
+            "XML tags are case sensitive. The tag <Letter> is different from the tag \n<letter>.",
+            "Opening and closing tags must be written with the same case:",
+            "<message>This is correct</message>",
+            "\"Opening and closing tags\" are often referred to as \"Start and end tags\". Use \nwhatever you prefer. It is exactly the same thing."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Elements Must be Properly Nested",
+        "text": [
+            "In HTML, you might see improperly nested elements:",
+            "<b><i>This text is bold and italic</b></i>",
+            "In XML, all elements must be properly nested within each other:",
+            "<b><i>This text is bold and italic</i></b>",
+            "In the example above, \"Properly nested\" simply means that since the <i> \nelement is opened inside the <b> element, it must be closed inside the <b> \nelement."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Attribute Values Must Always be Quoted",
+        "text": [
+            "XML elements can have attributes in name/value pairs just like in HTML.",
+            "In XML, the attribute values must always be quoted:",
+            "<note date=\"12/11/2007\">\n   <to>Tove</to>\n   <from>Jani</from>\n </note>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Entity References",
+        "text": [
+            "Some characters have a special meaning in XML.",
+            "If you place a character like \"<\" inside an XML element, it will generate an \nerror because the parser interprets it as the start of a new element.",
+            "This will generate an XML error:",
+            "<message>salary < 1000</message>",
+            "To avoid this error, replace the \"<\" character with an entity reference:",
+            "<message>salary &lt; 1000</message>",
+            "There are 5 pre-defined entity references in XML:",
+            "Only < and & are strictly illegal in XML, but it is a good habit to replace > \nwith &gt; as well."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Comments in XML",
+        "text": [
+            "The syntax for writing comments in XML is similar to that of HTML:",
+            "<!-- This is a comment -->",
+            "Two dashes in the middle of a comment are not allowed:",
+            "<!-- This is an invalid -- comment -->"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "White-space is Preserved in XML",
+        "text": [
+            "XML does not truncate multiple white-spaces (HTML truncates multiple \nwhite-spaces to one single white-space):"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Stores New Line as LF",
+        "text": [
+            "Windows applications store a new line as: carriage return and line feed \n(CR+LF).",
+            "Unix and Mac OSX use LF.",
+            "Old Mac systems use CR.",
+            "XML stores a new line as LF."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Well Formed XML",
+        "text": [
+            "XML documents that conform to the syntax rules above are said to be \"Well \nFormed\" XML documents.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "title": "SELECT DISTINCT",
+        "text": [
+            "The SELECT DISTINCT command returns only \ndistinct (different) values in the result set.",
+            "The following SQL statement selects only the DISTINCT values from the \"Country\" column in the \"Customers\" table:",
+            "Example\n\nSELECT DISTINCT Country FROM Customers;\n\nTry it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT DISTINCT Country FROM Customers;"
+            }
+        ],
+        "tables": []
+    }
+]

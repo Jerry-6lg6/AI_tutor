@@ -1,0 +1,87 @@
+[
+    {
+        "title": "C++ Operators",
+        "text": [
+            "Operators are used to perform operations on variables and values.",
+            "In the example below, we use the\n+ operator to add together two values:",
+            "Example\n\n  int x = 100 + 50;\nTry it Yourself »",
+            "Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:",
+            "Example\n\n  int sum1 = 100 + 50;        \n  // 150 (100 + 50)\n  int sum2 = sum1 + 250;      // 400 (150 + 250)\n  int sum3 = sum2 + sum2;     // 800 (400 + 400)\nTry it Yourself »",
+            "C++ divides the operators into the following groups:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x = 100 + 50;"
+            },
+            {
+                "heading": "Example",
+                "code": "int sum1 = 100 + 50;        \n  // 150 (100 + 50)\n  int sum2 = sum1 + 250;      // 400 (150 + 250)\n  int sum3 = sum2 + sum2;     // 800 (400 + 400)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Arithmetic Operators",
+        "text": [
+            "Arithmetic operators are used to perform common mathematical operations.",
+            "Operator\nName\nDescription\nExample\nTry it\n\n\n+\nAddition\nAdds together two values\nx + y\nTry it »\n\n\n-\nSubtraction\nSubtracts one value from another\nx - y\nTry it »\n\n\n*\nMultiplication\nMultiplies two values\nx * y\nTry it »\n\n\n/\nDivision\nDivides one value by another\nx / y\nTry it »\n\n\n%\nModulus\nReturns the division remainder\nx % y\nTry it »\n\n\n++\nIncrement\nIncreases the value of a variable by 1\n++x\nTry it »\n\n\n--\nDecrement\nDecreases the value of a variable by 1\n--x\nTry it »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Operator": "+",
+                    "Name": "Addition",
+                    "Description": "Adds together two values",
+                    "Example": "x + y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "-",
+                    "Name": "Subtraction",
+                    "Description": "Subtracts one value from another",
+                    "Example": "x - y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "*",
+                    "Name": "Multiplication",
+                    "Description": "Multiplies two values",
+                    "Example": "x * y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "/",
+                    "Name": "Division",
+                    "Description": "Divides one value by another",
+                    "Example": "x / y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "%",
+                    "Name": "Modulus",
+                    "Description": "Returns the division remainder",
+                    "Example": "x % y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "++",
+                    "Name": "Increment",
+                    "Description": "Increases the value of a variable by 1",
+                    "Example": "++x",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "--",
+                    "Name": "Decrement",
+                    "Description": "Decreases the value of a variable by 1",
+                    "Example": "--x",
+                    "Try it": "Try it »"
+                }
+            ]
+        ]
+    }
+]

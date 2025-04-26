@@ -1,0 +1,126 @@
+[
+    {
+        "title": "The form Attribute",
+        "text": [
+            "The input form attribute specifies the form \nthe <input> element belongs to.",
+            "The value of this attribute must be equal to the id attribute of the <form> \nelement it belongs to.",
+            "Example\nAn input field located outside of the HTML form (but still a part of the form):\n\n  \n    <form action=\"/action_page.php\" id=\"form1\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <input type=\"submit\" value=\"Submit\"></form><label for=\"lname\">Last \n    name:</label><input type=\"text\" id=\"lname\" \n    name=\"lname\" form=\"form1\">\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\" id=\"form1\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <input type=\"submit\" value=\"Submit\"></form><label for=\"lname\">Last \n    name:</label><input type=\"text\" id=\"lname\" \n    name=\"lname\" form=\"form1\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The formaction Attribute",
+        "text": [
+            "The input formaction attribute specifies the URL of \nthe file that will process the input when the form is submitted.",
+            "Note: This attribute overrides the \naction attribute of the <form> element.",
+            "The formaction attribute works with the \nfollowing input types: submit and image.",
+            "Example\nAn HTML form with two submit buttons, with different actions:\n\n  \n    <form action=\"/action_page.php\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <input type=\"submit\" value=\"Submit\">  \n    <input type=\"submit\" formaction=\"/action_page2.php\" value=\"Submit as Admin\">\n    </form> \nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <input type=\"submit\" value=\"Submit\">  \n    <input type=\"submit\" formaction=\"/action_page2.php\" value=\"Submit as Admin\">\n    </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The formenctype Attribute",
+        "text": [
+            "The input formenctype  attribute specifies how the form-data should be encoded when submitted (only for forms with method=\"post\").",
+            "Note: This attribute overrides the enctype attribute of the <form> element.",
+            "The formenctype attribute works with the \nfollowing input types: submit and image.",
+            "Example\nA form with two submit buttons. The first sends the form-data with default encoding, \nthe second sends the form-data encoded as \"multipart/form-data\":\n\n  \n    <form action=\"/action_page_binary.asp\" method=\"post\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <input type=\"submit\" value=\"Submit\">  <input type=\"submit\" \n    formenctype=\"multipart/form-data\"  value=\"Submit as \n    Multipart/form-data\"></form>   \n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page_binary.asp\" method=\"post\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <input type=\"submit\" value=\"Submit\">  <input type=\"submit\" \n    formenctype=\"multipart/form-data\"  value=\"Submit as \n    Multipart/form-data\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The formmethod Attribute",
+        "text": [
+            "The input formmethod  attribute defines the HTTP method for sending form-data to the action URL.",
+            "Note: This attribute overrides the method  attribute of the <form> element.",
+            "The formmethod attribute works with the \nfollowing input types: submit and image.",
+            "The form-data can be sent as URL variables (method=\"get\") or as an HTTP post \ntransaction (method=\"post\").",
+            "Notes on the \"get\" method:",
+            "Notes on the \"post\" method:",
+            "Example\nA form with two submit buttons. The first sends the form-data with \nmethod=\"get\". The second sends the form-data with method=\"post\":\n\n    <form action=\"/action_page.php\" method=\"get\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <input type=\"submit\" value=\"Submit using \n    GET\">  <input type=\"submit\" formmethod=\"post\" value=\"Submit using \n    POST\"></form> \nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\" method=\"get\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <input type=\"submit\" value=\"Submit using \n    GET\">  <input type=\"submit\" formmethod=\"post\" value=\"Submit using \n    POST\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The formtarget Attribute",
+        "text": [
+            "The input formtarget attribute specifies a name or a keyword that indicates where \nto display the response that is received after submitting the form.",
+            "Note: This attribute overrides the target attribute of the <form> element.",
+            "The formtarget attribute works with the \nfollowing input types: submit and image.",
+            "Example\nA form with two submit buttons, with different target windows:\n\n    <form action=\"/action_page.php\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <input type=\"submit\" value=\"Submit\">  \n    <input type=\"submit\" formtarget=\"_blank\" value=\"Submit to a new window/tab\">\n    </form> \nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <input type=\"submit\" value=\"Submit\">  \n    <input type=\"submit\" formtarget=\"_blank\" value=\"Submit to a new window/tab\">\n    </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The formnovalidate Attribute",
+        "text": [
+            "The input formnovalidate attribute specifies \nthat an <input> element should not be validated when submitted.",
+            "Note: This attribute overrides the novalidate attribute of the <form> \nelement.",
+            "The formnovalidate attribute works with the \nfollowing input types: submit.",
+            "Example\nA form with two submit buttons (with and without validation):\n\n    <form action=\"/action_page.php\">  <label for=\"email\">Enter your \n    email:</label>  <input type=\"email\" id=\"email\" name=\"email\"><br><br>  \n    <input type=\"submit\" value=\"Submit\">  <input type=\"submit\" \n    formnovalidate=\"formnovalidate\"  value=\"Submit without validation\">\n    </form> \nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <label for=\"email\">Enter your \n    email:</label>  <input type=\"email\" id=\"email\" name=\"email\"><br><br>  \n    <input type=\"submit\" value=\"Submit\">  <input type=\"submit\" \n    formnovalidate=\"formnovalidate\"  value=\"Submit without validation\">\n    </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The novalidate Attribute",
+        "text": [
+            "The novalidate attribute is a <form> attribute.",
+            "When present, novalidate specifies that all of the form-data should not be validated when submitted.",
+            "Example\nSpecify that no form-data should be validated on submit:\n\n   \n    <form action=\"/action_page.php\" novalidate>  <label \n    for=\"email\">Enter your email:</label>  <input type=\"email\" \n    id=\"email\" name=\"email\"><br><br>  <input type=\"submit\" \n    value=\"Submit\"></form> \nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\" novalidate>  <label \n    for=\"email\">Enter your email:</label>  <input type=\"email\" \n    id=\"email\" name=\"email\"><br><br>  <input type=\"submit\" \n    value=\"Submit\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Form and Input Elements",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

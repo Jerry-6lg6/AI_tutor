@@ -1,0 +1,76 @@
+[
+    {
+        "title": "Cities",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Layout Elements",
+        "text": [
+            "HTML has several semantic elements that define the different parts of a web page:",
+            "<header> - Defines a header for a document or a section\n<nav> - Defines a set of navigation links\n<section> - Defines a section in a document\n<article> - Defines independent, self-contained content\n<aside> - Defines content aside from the content (like a sidebar)\n<footer> - Defines a footer for a document or a section\n<details> - Defines additional details \n  that the user can open and close on demand\n<summary> - Defines a heading for the <details> element"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Layout Techniques",
+        "text": [
+            "There are four different techniques to create multicolumn layouts. Each \ntechnique has its pros and cons:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "CSS Frameworks",
+        "text": [
+            "If you want to create your layout fast, you can use a CSS framework, like\nW3.CSS or Bootstrap.",
+            "Ever heard about W3Schools Spaces? Here you can create your website from scratch or use a template, and host it for free.\nGet started for free ❯\n* no credit card required"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "CSS Float Layout",
+        "text": [
+            "It is common to do entire web layouts using the CSS \nfloat property. Float is easy to learn \n- you just need to remember how the float and \nclear properties work. \nDisadvantages: Floating elements are tied to the document flow, which may harm \nthe flexibility. Learn more about float in our CSS \nFloat and Clear chapter.",
+            "Example\n\n\nCities\n\n\n\n\nLondon\nParis\nTokyo\n\n\n\nLondon\nLondon is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.\nStanding on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.\n\n\n\nFooter\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Cities",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "CSS Flexbox Layout",
+        "text": [
+            "Use of flexbox ensures that elements behave predictably when the page layout \nmust accommodate different screen sizes and different display devices.",
+            "Learn more about flexbox in our\nCSS Flexbox chapter.",
+            "Example\n\n\nCities\n\n\n\n\nLondon\nParis\nTokyo\n\n\n\nLondon\nLondon is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.\nStanding on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.\n\n\n\nFooter\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Cities",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "CSS Grid Layout",
+        "text": [
+            "The CSS Grid Layout Module offers a grid-based layout system, with rows and columns,\nmaking it easier to design web pages without having to use floats and positioning.",
+            "Learn more about CSS grids in our\nCSS Grid Intro chapter.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

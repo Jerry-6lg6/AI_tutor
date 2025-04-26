@@ -1,0 +1,136 @@
+[
+    {
+        "title": "Java Operators",
+        "text": [
+            "Operators are used to perform operations on variables and values.",
+            "In the example below, we use the\n+ operator to add together two values:",
+            "Example\nint x = 100 + 50;\n\n\nTry it Yourself »",
+            "Although the + operator is often used to add together two values, like in the example above, it can also be used to add together a variable and a value, or a variable and another variable:",
+            "Example\nint sum1 = 100 + 50;        // 150 (100 + 50)\nint sum2 = sum1 + 250;      // 400 (150 + 250)\nint sum3 = sum2 + sum2;     // 800 (400 + 400)\n\n\nTry it Yourself »",
+            "Java divides the operators into the following groups:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Arithmetic Operators",
+        "text": [
+            "Arithmetic operators are used to perform common mathematical operations.",
+            "Operator\nName\nDescription\nExample\nTry it\n\n\n+\nAddition\nAdds together two values\nx + y\nTry it »\n\n\n-\nSubtraction\nSubtracts one value from another\nx - y\nTry it »\n\n\n*\nMultiplication\nMultiplies two values\nx * y\nTry it »\n\n\n/\nDivision\nDivides one value by another\nx / y\nTry it »\n\n\n%\nModulus\nReturns the division remainder\nx % y\nTry it »\n\n\n++\nIncrement\nIncreases the value of a variable by 1\n++x\nTry it »\n\n\n--\nDecrement\nDecreases the value of a variable by 1\n--x\nTry it »",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Operator": "+",
+                    "Name": "Addition",
+                    "Description": "Adds together two values",
+                    "Example": "x + y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "-",
+                    "Name": "Subtraction",
+                    "Description": "Subtracts one value from another",
+                    "Example": "x - y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "*",
+                    "Name": "Multiplication",
+                    "Description": "Multiplies two values",
+                    "Example": "x * y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "/",
+                    "Name": "Division",
+                    "Description": "Divides one value by another",
+                    "Example": "x / y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "%",
+                    "Name": "Modulus",
+                    "Description": "Returns the division remainder",
+                    "Example": "x % y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "++",
+                    "Name": "Increment",
+                    "Description": "Increases the value of a variable by 1",
+                    "Example": "++x",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "--",
+                    "Name": "Decrement",
+                    "Description": "Decreases the value of a variable by 1",
+                    "Example": "--x",
+                    "Try it": "Try it »"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Java Assignment Operators",
+        "text": [
+            "Assignment operators are used to assign values to variables.",
+            "In the example below, we use the assignment operator (=) \nto assign the value 10 to a variable called x:",
+            "Example\nint x = 10;\n\n\nTry it Yourself »",
+            "The addition assignment operator (+=) adds a value to a variable:",
+            "Example\nint x = 10;\nx += 5;\n\n\nTry it Yourself »",
+            "A list of all assignment operators:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Java Comparison Operators",
+        "text": [
+            "Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.",
+            "The return value of a comparison is either true or false. These values are known as \nBoolean values, and you will learn more about them in the Booleans and If..Else chapter.",
+            "In the following example, we use the greater than operator (>) to find out if 5 is greater than 3:",
+            "Example\nint x = 5;\nint y = 3;\nSystem.out.println(x > y); // returns true, because 5 is higher than 3\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Java Logical Operators",
+        "text": [
+            "You can also test for true or false \nvalues with logical operators.",
+            "Logical operators are used to determine the logic between variables or \nvalues:",
+            "Operator\nName\nDescription\nExample\nTry it\n\n\n&& \nLogical and\nReturns true if both statements are true\nx < 5 &&  x < 10\nTry it »\n\n\n|| \nLogical or\nReturns true if one of the statements is true\nx < 5 || x < 4\nTry it »\n\n\n!\nLogical not\nReverse the result, returns false if the result is true\n!(x < 5 && x < 10)\nTry it »",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Operator": "&&",
+                    "Name": "Logical and",
+                    "Description": "Returns true if both statements are true",
+                    "Example": "x < 5 &&  x < 10",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "||",
+                    "Name": "Logical or",
+                    "Description": "Returns true if one of the statements is true",
+                    "Example": "x < 5 || x < 4",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "!",
+                    "Name": "Logical not",
+                    "Description": "Reverse the result, returns false if the result is true",
+                    "Example": "!(x < 5 && x < 10)",
+                    "Try it": "Try it »"
+                }
+            ]
+        ]
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Select From a Table",
+        "text": [
+            "To select from a table in MySQL, use the \"SELECT\" statement:",
+            "Example\nSelect all records from the \"customers\" table, and display the \n  result:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()mycursor.execute(\"SELECT * FROM customers\")\n  myresult = mycursor.fetchall()for x in myresult:  print(x)\nRun example »",
+            "Note: We use the fetchall() \n  method, which fetches all rows from the last executed statement."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()mycursor.execute(\"SELECT * FROM customers\")\n  myresult = mycursor.fetchall()for x in myresult:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Selecting Columns",
+        "text": [
+            "To select only some of the columns in a table, use the \"SELECT\" statement \nfollowed by the column name(s):",
+            "Example\nSelect only the name and address columns:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()mycursor.execute(\"SELECT name, \n  address FROM \n  customers\")myresult = mycursor.fetchall()for x in myresult:  \n  print(x)\nRun example »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()mycursor.execute(\"SELECT name, \n  address FROM \n  customers\")myresult = mycursor.fetchall()for x in myresult:  \n  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using the fetchone() Method",
+        "text": [
+            "If you are only interested in one row, you can use the \nfetchone() method.",
+            "The fetchone() method will return the first row of \nthe result:",
+            "Example\nFetch only one row:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()mycursor.execute(\"SELECT * FROM customers\")\n  myresult = mycursor.fetchone()print(myresult)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()mycursor.execute(\"SELECT * FROM customers\")\n  myresult = mycursor.fetchone()print(myresult)"
+            }
+        ],
+        "tables": []
+    }
+]

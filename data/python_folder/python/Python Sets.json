@@ -1,0 +1,149 @@
+[
+    {
+        "title": "Set",
+        "text": [
+            "Sets are used to store multiple items in a single variable.",
+            "Set is one of 4 built-in data types in Python used to store collections of \ndata, the other 3 are List, \nTuple, and Dictionary, all with different qualities and usage.",
+            "A set is a collection which is unordered, unchangeable*, and unindexed.",
+            "* Note: Set items are unchangeable, but you can remove \n  items and add new items.",
+            "Sets are written with curly brackets.",
+            "Example\nCreate a Set:\n\nthisset = {\"apple\", \"banana\", \"cherry\"}print(thisset)\nTry it Yourself »",
+            "Note: Sets are unordered, so you cannot be sure in which \n  order the items will appear."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}print(thisset)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Set Items",
+        "text": [
+            "Set items are unordered, unchangeable, and do not allow duplicate values."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Unordered",
+        "text": [
+            "Unordered means that the items in a set do not have a defined order.",
+            "Set items can appear in a different order every time you use them, \nand cannot be referred to by index or key."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Unchangeable",
+        "text": [
+            "Set items are unchangeable, meaning that we cannot change the items after the set has been created.",
+            "Once a set is created, you cannot change its items, but you can remove items \nand add new items."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Duplicates Not Allowed",
+        "text": [
+            "Sets cannot have two items with the same value.",
+            "Example\nDuplicate values will be ignored:\n\n  thisset = {\"apple\", \"banana\", \"cherry\", \"apple\"}\n  print(thisset)\n\nTry it Yourself »",
+            "Note: The values True\n  and 1 are considered the same value in sets, \n  and are treated as duplicates:",
+            "Example\nTrue\n  and 1 is considered the same value:\n\n  thisset = {\"apple\", \"banana\", \"cherry\", True, 1, 2}\n  print(thisset)\n\nTry it Yourself »",
+            "Note: The values False\n  and 0 are considered the same value in sets, \n  and are treated as duplicates:",
+            "Example\nFalse\n  and 0 is considered the same value:\n\n  thisset = {\"apple\", \"banana\", \"cherry\", False, True, 0}\n  print(thisset)\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\", \"apple\"}\n  print(thisset)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\", True, 1, 2}\n  print(thisset)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\", False, True, 0}\n  print(thisset)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Get the Length of a Set",
+        "text": [
+            "To determine how many items a set has, use the len() \nfunction.",
+            "Example\nGet the number of items in a set:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}\n  print(len(thisset))\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}\n  print(len(thisset))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Set Items - Data Types",
+        "text": [
+            "Set items can be of any data type:",
+            "Example\nString, int and boolean data types:\n\n  set1 = {\"apple\", \"banana\", \"cherry\"}\n  set2 = {1, 5, 7, 9, 3}\n  set3 = {True, False, False}\nTry it Yourself »",
+            "A set can contain different data types:",
+            "Example\nA set with strings, integers and boolean values:\n\n  set1 = {\"abc\", 34, True, 40, \"male\"}\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "set1 = {\"apple\", \"banana\", \"cherry\"}\n  set2 = {1, 5, 7, 9, 3}\n  set3 = {True, False, False}"
+            },
+            {
+                "heading": "Example",
+                "code": "set1 = {\"abc\", 34, True, 40, \"male\"}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "type()",
+        "text": [
+            "From Python's perspective, sets are defined as objects with the data type 'set':",
+            "<class 'set'>",
+            "Example\nWhat is the data type of a set?\n\nmyset = {\"apple\", \"banana\", \"cherry\"}\nprint(type(myset))\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "myset = {\"apple\", \"banana\", \"cherry\"}\nprint(type(myset))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The set() Constructor",
+        "text": [
+            "It is also possible to use the set() \nconstructor to make a set.",
+            "Example\nUsing the set() constructor to make a set:\n\nthisset = set((\"apple\", \"banana\", \"cherry\")) # note the double round-brackets\nprint(thisset)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = set((\"apple\", \"banana\", \"cherry\")) # note the double round-brackets\nprint(thisset)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Python Collections (Arrays)",
+        "text": [
+            "There are four collection data types in the Python programming language:",
+            "*Set items are unchangeable, but you can remove items and add new \n  items.\n**As of Python version 3.7, dictionaries are ordered. \n  In Python 3.6 and earlier, dictionaries are unordered.",
+            "When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

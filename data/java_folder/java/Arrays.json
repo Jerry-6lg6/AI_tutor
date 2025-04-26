@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Java Arrays",
+        "text": [
+            "Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each \nvalue.",
+            "To declare an array, define the variable type with square brackets:",
+            "String[] cars;",
+            "We have now declared a variable that holds an array of strings. To insert \nvalues to it, you can place the values in a \ncomma-separated list, inside curly braces:",
+            "String[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};",
+            "To create an array of integers, you could write:",
+            "int[] myNum = {10, 20, 30, 40};"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Access the Elements of an Array",
+        "text": [
+            "You can access an array element by referring to the index number.",
+            "This statement accesses the value of the first element in cars:",
+            "Example\nString[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\nSystem.out.println(cars[0]);\n// Outputs Volvo\n\n\nTry it Yourself »",
+            "Note: Array indexes start with 0: [0] is the first element. [1] is the second \nelement, etc."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Change an Array Element",
+        "text": [
+            "To change the value of a specific element, refer to the index number:",
+            "Example\ncars[0] = \"Opel\";",
+            "Example\nString[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\ncars[0] = \"Opel\";\nSystem.out.println(cars[0]);\n// Now outputs Opel instead of Volvo\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Array Length",
+        "text": [
+            "To find out how many elements an array has, use the length property:",
+            "Example\nString[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\nSystem.out.println(cars.length);\n// Outputs 4\n\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

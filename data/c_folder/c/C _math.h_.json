@@ -1,0 +1,20 @@
+[
+    {
+        "title": "C Math Functions",
+        "text": [
+            "The <math.h> library has many functions that allow you to perform mathematical tasks on numbers."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Related Pages",
+        "text": [
+            "C Math Tutorial",
+            "C Functions Tutorial",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,95 @@
+[
+    {
+        "title": "Example Explained",
+        "text": [
+            "First we have a List that contains duplicates:",
+            "A List with Duplicates\n\nmylist = [\"a\", \"b\", \"a\", \"c\", \"c\"]\n\n\nmylist = list(dict.fromkeys(mylist))\nprint(mylist)",
+            "Create a dictionary, \nusing the List items as keys. This will automatically remove any duplicates \nbecause dictionaries cannot have duplicate keys.",
+            "Create a Dictionary\n\n\n      mylist = [\"a\", \"b\", \"a\", \"c\", \"c\"]\n\nmylist = list(dict.fromkeys(mylist))\n    print(mylist)",
+            "Then, convert the dictionary back into a list:",
+            "Convert Into a List\n\n\n      mylist = [\"a\", \"b\", \"a\", \"c\", \"c\"]\n\nmylist = list(dict.fromkeys(mylist))\nprint(mylist)",
+            "Now we have a List without any duplicates, and it has the same order as the \noriginal List.",
+            "Print the List to demonstrate the result",
+            "Print the List\n\n\n    mylist = [\"a\", \"b\", \"a\", \"c\", \"c\"]\n    mylist = list(dict.fromkeys(mylist))\nprint(mylist)",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "A List with Duplicates",
+                "code": "mylist = [\"a\", \"b\", \"a\", \"c\", \"c\"]\n\n\nmylist = list(dict.fromkeys(mylist))\nprint(mylist)"
+            },
+            {
+                "heading": "Create a Dictionary",
+                "code": "mylist = [\"a\", \"b\", \"a\", \"c\", \"c\"]\n\nmylist = list(dict.fromkeys(mylist))\n    print(mylist)"
+            },
+            {
+                "heading": "Convert Into a List",
+                "code": "mylist = [\"a\", \"b\", \"a\", \"c\", \"c\"]\n\nmylist = list(dict.fromkeys(mylist))\nprint(mylist)"
+            },
+            {
+                "heading": "Print the List",
+                "code": "mylist = [\"a\", \"b\", \"a\", \"c\", \"c\"]\n    mylist = list(dict.fromkeys(mylist))\nprint(mylist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Create a Function",
+        "text": [
+            "If you like to have a function where you can send your lists, and get them \nback without duplicates, you can create a function and insert the code from the \nexample above.",
+            "Example\n\n  def my_function(x):  return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def my_function(x):  return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Example Explained",
+        "text": [
+            "Create a function that takes a List as an argument.",
+            "Create a Function\n\ndef my_function(x):\n    return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)",
+            "Create a dictionary, using this List items as keys.",
+            "Create a Dictionary\n\ndef my_function(x):\n    return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)",
+            "Convert the dictionary into a list.",
+            "Convert Into a List\n\ndef my_function(x):\n    return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)",
+            "Return the list",
+            "Return List\n\ndef my_function(x):\n    return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)",
+            "Call the function, with a list as a parameter:",
+            "Call the Function\n\ndef my_function(x):\n    return list(dict.fromkeys(x))\nmylist = my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)",
+            "Print the result:",
+            "Print the Result\n\ndef my_function(x):\n    return list(dict.fromkeys(x))\n  mylist = my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Create a Function",
+                "code": "def my_function(x):\n    return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)"
+            },
+            {
+                "heading": "Create a Dictionary",
+                "code": "def my_function(x):\n    return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)"
+            },
+            {
+                "heading": "Convert Into a List",
+                "code": "def my_function(x):\n    return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)"
+            },
+            {
+                "heading": "Return List",
+                "code": "def my_function(x):\n    return list(dict.fromkeys(x))mylist = \n  my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)"
+            },
+            {
+                "heading": "Call the Function",
+                "code": "def my_function(x):\n    return list(dict.fromkeys(x))\nmylist = my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)"
+            },
+            {
+                "heading": "Print the Result",
+                "code": "def my_function(x):\n    return list(dict.fromkeys(x))\n  mylist = my_function([\"a\", \"b\", \"a\", \"c\", \"c\"])\nprint(mylist)"
+            }
+        ],
+        "tables": []
+    }
+]

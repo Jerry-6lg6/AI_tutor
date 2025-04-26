@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Update Collection",
+        "text": [
+            "You can update a record, or document as it is called in MongoDB, by using \nthe update_one() method.",
+            "The first parameter of the update_one() method \nis a query object defining which document to update.",
+            "Note: If the query finds more than one record, only the first \noccurrence is updated.",
+            "The second parameter  \nis an object defining the new values of the document.",
+            "Example\nChange the address from \"Valley 345\" to \"Canyon 123\":\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": \"Valley 345\" }newvalues = { \"$set\": { \n  \"address\": \"Canyon 123\" } }\nmycol.update_one(myquery, newvalues)#print \"customers\" after the update:for x in mycol.find():  print(x)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": \"Valley 345\" }newvalues = { \"$set\": { \n  \"address\": \"Canyon 123\" } }\nmycol.update_one(myquery, newvalues)#print \"customers\" after the update:for x in mycol.find():  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Update Many",
+        "text": [
+            "To update all documents that meets the criteria of the query, use \nthe update_many() method.",
+            "Example\nUpdate all documents where the address starts with the letter \"S\":\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": { \"$regex\": \"^S\" } }newvalues = { \"$set\": { \n  \"name\": \"Minnie\" } }\nx = mycol.update_many(myquery, newvalues)print(x.modified_count, \"documents updated.\")\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": { \"$regex\": \"^S\" } }newvalues = { \"$set\": { \n  \"name\": \"Minnie\" } }\nx = mycol.update_many(myquery, newvalues)print(x.modified_count, \"documents updated.\")"
+            }
+        ],
+        "tables": []
+    }
+]

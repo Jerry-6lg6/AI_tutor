@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Delete Collection",
+        "text": [
+            "You can delete a table, or collection as it is called in MongoDB, by using \nthe drop() method.",
+            "Example\nDelete the \"customers\" collection:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmycol.drop()\nRun example »",
+            "The drop() method returns true if the collection was dropped successfully, \nand false if the collection does not exist.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmycol.drop()"
+            }
+        ],
+        "tables": []
+    }
+]

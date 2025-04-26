@@ -1,0 +1,13 @@
+[
+    {
+        "title": "Non-Primitive Data Types",
+        "text": [
+            "Non-primitive data types are called reference types because \nthey refer to objects.",
+            "The main differences between primitive and non-primitive data types are:",
+            "Examples of non-primitive types are Strings, Arrays, Classes etc. You will learn more about these in a later chapter.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

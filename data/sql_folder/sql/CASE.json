@@ -1,0 +1,24 @@
+[
+    {
+        "title": "CASE",
+        "text": [
+            "The CASE command is used is to \ncreate different output based on conditions.",
+            "The following SQL goes through several conditions and returns a value when the \nspecified condition is met:",
+            "Example\n\n  SELECT OrderID, Quantity,CASE    WHEN Quantity > 30 \n  THEN 'The quantity is greater than 30'    WHEN Quantity = \n  30 THEN 'The quantity is 30'    ELSE 'The quantity is under 30'ENDFROM OrderDetails;\nTry it Yourself »",
+            "The following SQL will order the customers by City. However, if City is NULL, \nthen order by Country:",
+            "Example\n\n  SELECT CustomerName, City, CountryFROM CustomersORDER BY(CASE    \n  WHEN City IS NULL THEN Country    ELSE CityEND);\nTry it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT OrderID, Quantity,CASE    WHEN Quantity > 30 \n  THEN 'The quantity is greater than 30'    WHEN Quantity = \n  30 THEN 'The quantity is 30'    ELSE 'The quantity is under 30'ENDFROM OrderDetails;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, City, CountryFROM CustomersORDER BY(CASE    \n  WHEN City IS NULL THEN Country    ELSE CityEND);"
+            }
+        ],
+        "tables": []
+    }
+]

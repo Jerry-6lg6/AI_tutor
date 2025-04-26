@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Adding Items",
+        "text": [
+            "Adding an item to the dictionary is done by using a new index key and assigning a value to it:",
+            "Example\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict[\"color\"] = \"red\"print(thisdict)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict[\"color\"] = \"red\"print(thisdict)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Update Dictionary",
+        "text": [
+            "The update() method will update the dictionary with the items from \na given \nargument. If the item does not exist, the item will be added.",
+            "The argument must be a dictionary, or an iterable object with key:value pairs.",
+            "Example\nAdd a color item to the dictionary by using the update() \nmethod:\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.update({\"color\": \n  \"red\"})\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}thisdict.update({\"color\": \n  \"red\"})"
+            }
+        ],
+        "tables": []
+    }
+]

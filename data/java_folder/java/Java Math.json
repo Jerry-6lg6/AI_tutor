@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Random Numbers",
+        "text": [
+            "Math.random() returns a random number between 0.0 (inclusive), and 1.0 (exclusive):",
+            "Example\nMath.random();\n\n\nTry it Yourself »",
+            "To get more control over the random number, for example, if you only want a random \nnumber between 0 and 100, you can use the following formula:",
+            "Example\nint randomNum = (int)(Math.random() * 101);  // 0 to 100\n\nTry it Yourself »",
+            "Complete Math Reference\nFor a complete reference of Math methods, go to our Java Math Methods Reference.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Complete Math Reference",
+        "text": [
+            "For a complete reference of Math methods, go to our Java Math Methods Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

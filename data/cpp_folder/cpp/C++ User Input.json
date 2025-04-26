@@ -1,0 +1,44 @@
+[
+    {
+        "title": "C++ User Input",
+        "text": [
+            "You have already learned that cout is used to output (print) values. Now we will use cin to get user input.",
+            "cin is a predefined variable that reads data from the keyboard with the extraction operator (>>).",
+            "In the following example, the user can input a number, which is stored in the \nvariable x. Then we print the value of x:",
+            "Example\n\n  int x; cout << \"Type a number: \"; // Type a number and \n  press entercin >> x; // Get user \n  input from the keyboardcout << \"Your number is: \" << x; \n  // Display the input value\nRun example »",
+            "Good To Know\ncout is pronounced \"see-out\". Used for output, and uses the insertion operator (<<)\ncin is pronounced \"see-in\". Used for input, and uses the extraction operator (>>)"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x; cout << \"Type a number: \"; // Type a number and \n  press entercin >> x; // Get user \n  input from the keyboardcout << \"Your number is: \" << x; \n  // Display the input value"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Creating a Simple Calculator",
+        "text": [
+            "In this example, the user must input two numbers. Then we print the \nsum by calculating (adding) the two numbers:",
+            "Example\n\n  int x, y;int sum;cout << \"Type a number: \";cin >> x;cout << \"Type another number: \";cin >> \n  y;sum = x + y;cout << \"Sum is: \" << sum;\nRun example »",
+            "There you go! You just built a basic calculator!",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x, y;int sum;cout << \"Type a number: \";cin >> x;cout << \"Type another number: \";cin >> \n  y;sum = x + y;cout << \"Sum is: \" << sum;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Complete <iostream> Reference",
+        "text": [
+            "Tip: Both cin and cout belongs to the <iostream> library, \nwhich is short for standard  input /  \noutput\n\nstreams. For a complete reference of <iostream> objects along with detailed information, go to our C++ iostream Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

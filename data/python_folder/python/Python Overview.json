@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Python Reference",
+        "text": [
+            "Built-in Functions\nString Methods\nList Methods\nDictionary Methods\nTuple Methods\nSet Methods\nFile Methods\nKeywords\nExceptions\nGlossary"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Module Reference",
+        "text": [
+            "Random Module\nRequests Module\nMath Module\nCMath Module",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

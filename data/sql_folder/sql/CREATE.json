@@ -1,0 +1,140 @@
+[
+    {
+        "title": "CREATE DATABASE",
+        "text": [
+            "The CREATE DATABASE command is used is to \ncreate a new SQL database.",
+            "The following SQL creates a database called \"testDB\":",
+            "Example\n\nCREATE DATABASE testDB;",
+            "Tip: Make sure you have admin privilege before creating any database. Once a \ndatabase is created, you can check it in the list of databases with the \nfollowing SQL command: SHOW DATABASES;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE DATABASE testDB;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CREATE TABLE",
+        "text": [
+            "The CREATE TABLE command creates a new table \nin the database.",
+            "The following SQL creates a table called \"Persons\" that contains five columns: PersonID, LastName, FirstName, \nAddress, and City:",
+            "Example\n\nCREATE TABLE Persons\n(\n   \nPersonID int,\n   \nLastName varchar(255),\n   \nFirstName varchar(255),\n   \nAddress varchar(255),\n   \nCity varchar(255) \n);"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE TABLE Persons\n(\n   \nPersonID int,\n   \nLastName varchar(255),\n   \nFirstName varchar(255),\n   \nAddress varchar(255),\n   \nCity varchar(255) \n);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CREATE TABLE Using Another Table",
+        "text": [
+            "The following SQL creates a new table called \"TestTables\" (which is \na copy of two columns of the \"Customers\" table):",
+            "Example\n\nCREATE TABLE TestTable ASSELECT customername, contactname\nFROM customers;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE TABLE TestTable ASSELECT customername, contactname\nFROM customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CREATE INDEX",
+        "text": [
+            "The CREATE INDEX command is used to \ncreate indexes in tables (allows duplicate values).",
+            "Indexes are used to retrieve data from the database very fast. The users cannot see the indexes, they are just used to speed up searches/queries.",
+            "The following SQL creates an index named \"idx_lastname\" on the \"LastName\" column in the \"Persons\" table:",
+            "CREATE INDEX idx_lastname\nON Persons (LastName);",
+            "If you want to create an index on a combination of columns, you can list the column names within the parentheses, separated by commas:",
+            "CREATE INDEX idx_pname\nON Persons (LastName, FirstName);",
+            "Note: The syntax for creating indexes varies among different databases. Therefore: Check the syntax for creating indexes in your database.",
+            "Note: Updating a table with indexes takes more time than updating a table without (because the indexes also need an update).\nSo, only create indexes on columns that will be frequently searched against."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "CREATE UNIQUE INDEX",
+        "text": [
+            "The CREATE UNIQUE INDEX command creates a unique index on a table (no duplicate values \nallowed)",
+            "The following SQL creates an index named \"uidx_pid\" on the \"PersonID\" column in the \"Persons\" table:",
+            "CREATE UNIQUE INDEX uidx_pid\nON Persons (PersonID);"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "CREATE VIEW",
+        "text": [
+            "The CREATE VIEW command creates a view.",
+            "A view is a virtual table based on the result set of an SQL statement.",
+            "The following SQL creates a view that selects all customers from Brazil:",
+            "Example\n\nCREATE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName\nFROM Customers\nWHERE Country = \"Brazil\";"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName\nFROM Customers\nWHERE Country = \"Brazil\";"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CREATE OR REPLACE VIEW",
+        "text": [
+            "The CREATE OR REPLACE VIEW command updates a view.",
+            "The following SQL adds the \"City\" column to the \"Brazil Customers\" view:",
+            "Example\n\nCREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = \"Brazil\";"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = \"Brazil\";"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Query The View",
+        "text": [
+            "We can query the view above as follows:",
+            "Example\n\nSELECT * FROM [Brazil \n  Customers];"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM [Brazil \n  Customers];"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "CREATE PROCEDURE",
+        "text": [
+            "The CREATE PROCEDURE command is used to \ncreate a stored procedure.",
+            "A stored procedure is a prepared SQL code that you can save, so the \ncode can be reused over and over again.",
+            "The following SQL creates a stored procedure named \"SelectAllCustomers\" \nthat selects all records from the \"Customers\" table:",
+            "Example\n\n  CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;",
+            "Execute the stored procedure above as follows:",
+            "Example\n\n  EXEC SelectAllCustomers;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;"
+            },
+            {
+                "heading": "Example",
+                "code": "EXEC SelectAllCustomers;"
+            }
+        ],
+        "tables": []
+    }
+]

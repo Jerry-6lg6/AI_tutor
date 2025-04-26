@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Add Items",
+        "text": [
+            "Once a set is created, you cannot change its items, but you can add new items.",
+            "To add one item to a set use the add() \nmethod.",
+            "Example\nAdd an item to a set, using the add() \nmethod:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}\n  thisset.add(\"orange\")print(thisset)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}\n  thisset.add(\"orange\")print(thisset)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Add Sets",
+        "text": [
+            "To add items from another set into the current set, use the update() \nmethod.",
+            "Example\nAdd elements from tropical into \nthisset:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}tropical = {\"pineapple\", \"mango\", \"papaya\"}\n  thisset.update(tropical)\nprint(thisset)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}tropical = {\"pineapple\", \"mango\", \"papaya\"}\n  thisset.update(tropical)\nprint(thisset)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Add Any Iterable",
+        "text": [
+            "The object in the update() method does not have \nto be a set, it can be any iterable object (tuples, lists, dictionaries etc.).",
+            "Example\nAdd elements of a list to at set:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}\n  mylist = [\"kiwi\", \"orange\"]\n  thisset.update(mylist)\nprint(thisset)\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}\n  mylist = [\"kiwi\", \"orange\"]\n  thisset.update(mylist)\nprint(thisset)"
+            }
+        ],
+        "tables": []
+    }
+]

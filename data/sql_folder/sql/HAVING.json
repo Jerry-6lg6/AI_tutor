@@ -1,0 +1,24 @@
+[
+    {
+        "title": "HAVING",
+        "text": [
+            "The HAVING command is used instead of WHERE with aggregate functions.",
+            "The following SQL lists the number of customers in each country. \nOnly include countries with more than 5 customers:",
+            "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  HAVING COUNT(CustomerID) > 5;\n\n\n  Try it Yourself »",
+            "The following SQL lists the number of customers in each country, \nsorted high to low (Only include countries with more than 5 customers):",
+            "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY CountryHAVING COUNT(CustomerID) \n  > 5\n  ORDER BY COUNT(CustomerID) DESC;\n\n\n  Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  HAVING COUNT(CustomerID) > 5;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY CountryHAVING COUNT(CustomerID) \n  > 5\n  ORDER BY COUNT(CustomerID) DESC;"
+            }
+        ],
+        "tables": []
+    }
+]

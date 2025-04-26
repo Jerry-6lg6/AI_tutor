@@ -1,0 +1,65 @@
+[
+    {
+        "title": "HTML Comment Tag",
+        "text": [
+            "You can add comments to your HTML source by using the following syntax:",
+            "<!-- Write your comments here -->",
+            "Notice that there is an exclamation point (!) in the start tag, but not in the \nend tag.",
+            "Note: Comments are not displayed by the browser, but they can help document your HTML source code."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Add Comments",
+        "text": [
+            "With comments you can place notifications and reminders in your HTML code:",
+            "Example\n\n<!-- This is a comment --><p>This is a paragraph.</p>\n<!-- Remember to add more information here -->\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!-- This is a comment --><p>This is a paragraph.</p>\n<!-- Remember to add more information here -->"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Hide Content",
+        "text": [
+            "Comments can be used to hide content.",
+            "This can be helpful if you hide content temporarily:",
+            "Example\n\n  <p>This is a paragraph.</p><!-- <p>This is another paragraph \n  </p> --><p>This is a paragraph too.</p>\n\nTry it Yourself »",
+            "You can also hide more than one line. Everything between the <!-- and the -->\nwill be hidden from the display.",
+            "Example\nHide a section of HTML code:\n\n  <p>This is a paragraph.</p><!--<p>Look at this cool \n  image:</p>\n<img border=\"0\" src=\"pic_trulli.jpg\" \nalt=\"Trulli\">--><p>This is a paragraph too.</p>\n\nTry it Yourself »",
+            "Comments are also great for debugging HTML, because you can \ncomment out HTML lines of code, one at a time, to search for errors.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>This is a paragraph.</p><!-- <p>This is another paragraph \n  </p> --><p>This is a paragraph too.</p>"
+            },
+            {
+                "heading": "Example",
+                "code": "<p>This is a paragraph.</p><!--<p>Look at this cool \n  image:</p>\n<img border=\"0\" src=\"pic_trulli.jpg\" \nalt=\"Trulli\">--><p>This is a paragraph too.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Hide Inline Content",
+        "text": [
+            "Comments can be used to hide parts in the middle of the HTML code.",
+            "Example\nHide a part of a paragraph:\n\n  <p>This <!-- great text --> is a paragraph.</p>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>This <!-- great text --> is a paragraph.</p>"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Omit Array Size",
+        "text": [
+            "In C++, you don't have to specify the size of the array. The compiler is \nsmart enough to determine the size of the array based on the number of inserted values:",
+            "string cars[] = {\"Volvo\", \"BMW\", \"Ford\"}; // Three array elements",
+            "The example above is equal to:",
+            "string cars[3] = {\"Volvo\", \"BMW\", \"Ford\"}; // Also three array elements",
+            "However, the last approach is considered as \"good practice\", because it will reduce \nthe chance of errors in your program."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Omit Elements on Declaration",
+        "text": [
+            "It is also possible to declare an array without specifying the elements on \ndeclaration, and add them later:",
+            "Example\n\n  string cars[5];cars[0] = \"Volvo\";cars[1] = \"BMW\";cars[2] \n  = \"Ford\";cars[3] = \"Mazda\";cars[4] = \"Tesla\";\nTry it Yourself »",
+            "Note: The example above only works when you have specified the size of the array.",
+            "If you don't specify the array size, an error occurs:",
+            "Example\n\n  string cars[];  \n  // Array size is not specifiedcars[0] = \"Volvo\";cars[1] = \"BMW\";cars[2] \n  = \"Ford\";cars[3] = \"Mazda\";cars[4] = \"Tesla\";\n// error: array size missing in 'cars'\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string cars[5];cars[0] = \"Volvo\";cars[1] = \"BMW\";cars[2] \n  = \"Ford\";cars[3] = \"Mazda\";cars[4] = \"Tesla\";"
+            },
+            {
+                "heading": "Example",
+                "code": "string cars[];  \n  // Array size is not specifiedcars[0] = \"Volvo\";cars[1] = \"BMW\";cars[2] \n  = \"Ford\";cars[3] = \"Mazda\";cars[4] = \"Tesla\";\n// error: array size missing in 'cars'"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Fixed Size (Arrays) vs. Dynamic Size (Vectors)",
+        "text": [
+            "You will often hear the terms \"fixed size\" and \"dynamic size\" when discussing \narrays in C++.",
+            "This is because the size of an array in C++ is fixed, meaning you \ncannot add or remove elements \nafter it is created.",
+            "For operations that require adding and removing array elements, C++ provides\nvectors, which are resizable arrays.",
+            "The size of a vector is dynamic, meaning it can grow and shrink as needed.",
+            "Vectors are found in the <vector> library, and they come with many useful \nfunctions to add, remove and modify elements:",
+            "Vectors - Dynamic Size Example\n\n  // A vector with 3 elementsvector<string> cars = {\"Volvo\", \"BMW\", \"Ford\"};\n// Adding another element to the vectorcars.push_back(\"Tesla\");\nTry it Yourself »",
+            "This was just an introduction to vectors to let you know that \n\"resizable \narrays\" exist.\nDon't worry if you don't understand the syntax above.\nYou will learn much more about vectors and other data structures in a later chapter.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

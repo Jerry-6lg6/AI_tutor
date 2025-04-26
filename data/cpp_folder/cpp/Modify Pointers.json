@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Modify the Pointer Value",
+        "text": [
+            "You can also change the pointer's value. But note that this will also change \nthe value of the original variable:",
+            "Example\n\n    string food = \"Pizza\";string* ptr = &food;// Output the value \n    of food (Pizza)cout << food << \"\\n\";// Output the memory address \n    of food (0x6dfed4)cout << &food << \"\\n\";// Access the memory \n    address of food and output its value (Pizza)cout << *ptr << \"\\n\";\n// Change the value of the pointer*ptr = \"Hamburger\";// \n    Output the new value of the pointer (Hamburger)cout << *ptr << \"\\n\";// \n    Output the new value of the food variable (Hamburger)cout << food << \"\\n\";\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string food = \"Pizza\";string* ptr = &food;// Output the value \n    of food (Pizza)cout << food << \"\\n\";// Output the memory address \n    of food (0x6dfed4)cout << &food << \"\\n\";// Access the memory \n    address of food and output its value (Pizza)cout << *ptr << \"\\n\";\n// Change the value of the pointer*ptr = \"Hamburger\";// \n    Output the new value of the pointer (Hamburger)cout << *ptr << \"\\n\";// \n    Output the new value of the food variable (Hamburger)cout << food << \"\\n\";"
+            }
+        ],
+        "tables": []
+    }
+]

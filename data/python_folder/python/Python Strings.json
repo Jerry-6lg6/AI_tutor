@@ -1,0 +1,156 @@
+[
+    {
+        "title": "Strings",
+        "text": [
+            "Strings in python are surrounded by either single quotation marks, or double quotation marks.",
+            "'hello' is the same as \"hello\".",
+            "You can display a string literal with the print() function:",
+            "Example\n\nprint(\"Hello\")\nprint('Hello')\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(\"Hello\")\nprint('Hello')"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Quotes Inside Quotes",
+        "text": [
+            "You can use quotes inside a string, as long as they don't match the quotes surrounding the string:",
+            "Example\n\nprint(\"It's alright\")\nprint(\"He is called 'Johnny'\")\nprint('He is called \"Johnny\"')\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(\"It's alright\")\nprint(\"He is called 'Johnny'\")\nprint('He is called \"Johnny\"')"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Assign String to a Variable",
+        "text": [
+            "Assigning a string to a variable is done with the variable name followed by \nan equal sign and the string:",
+            "Example\n\na = \"Hello\"print(a)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \"Hello\"print(a)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Multiline Strings",
+        "text": [
+            "You can assign a multiline string to a variable by using three quotes:",
+            "Example\nYou can use three double quotes:\n\n  a = \"\"\"Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do \n  eiusmod tempor incididuntut labore et dolore magna aliqua.\"\"\"print(a)\nTry it Yourself »",
+            "Or three single quotes:",
+            "Example\n\n  a = '''Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do \n  eiusmod tempor incididuntut labore et dolore magna aliqua.'''print(a)\nTry it Yourself »",
+            "Note: in the result, the line breaks are inserted at the same position as in the code.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \"\"\"Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do \n  eiusmod tempor incididuntut labore et dolore magna aliqua.\"\"\"print(a)"
+            },
+            {
+                "heading": "Example",
+                "code": "a = '''Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do \n  eiusmod tempor incididuntut labore et dolore magna aliqua.'''print(a)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Strings are Arrays",
+        "text": [
+            "Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.",
+            "However, Python does not have a character data type, a single character is simply a string with a length of 1.",
+            "Square brackets can be used to access elements of the string.",
+            "Example\nGet the character at position 1 (remember that the first character has the \nposition 0):\n\na = \"Hello, World!\"\nprint(a[1])\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \"Hello, World!\"\nprint(a[1])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Looping Through a String",
+        "text": [
+            "Since strings are arrays, we can loop through the characters in a string, with a for loop.",
+            "Example\nLoop through the letters in the word \"banana\":\n\n  for x in \"banana\":  print(x)\n\nTry it Yourself »",
+            "Learn more about For Loops in our Python For Loops chapter."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for x in \"banana\":  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "String Length",
+        "text": [
+            "To get the length of a string, use the len() function.",
+            "Example\nThe len() function returns the length of a string:\n\na = \"Hello, World!\"\nprint(len(a))\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \"Hello, World!\"\nprint(len(a))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Check String",
+        "text": [
+            "To check if a certain phrase or character is present in a string, we can use \nthe keyword \nin.",
+            "Example\nCheck if \"free\" is present in the following text:\n\n  txt = \"The best things in life are free!\"print(\"free\" in txt)\n\nTry it Yourself »",
+            "Use it in an if statement:",
+            "Example\nPrint only if \"free\" is present:\n\n  txt = \"The best things in life are free!\"if \"free\" in txt: \nprint(\"Yes, 'free' is present.\")\n\nTry it Yourself »",
+            "Learn more about If statements in our Python \nIf...Else chapter."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "txt = \"The best things in life are free!\"print(\"free\" in txt)"
+            },
+            {
+                "heading": "Example",
+                "code": "txt = \"The best things in life are free!\"if \"free\" in txt: \nprint(\"Yes, 'free' is present.\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Check if NOT",
+        "text": [
+            "To check if a certain phrase or character is NOT present in a string, we can use \nthe keyword not in.",
+            "Example\nCheck if \"expensive\" is NOT present in the following text:\n\n  txt = \"The best things in life are free!\"print(\"expensive\" not in txt)\n  \nTry it Yourself »",
+            "Use it in an if statement:",
+            "Example\nprint only if \"expensive\" is NOT present:\n\n  txt = \"The best things in life are free!\"if \"expensive\" not in txt: \nprint(\"No, 'expensive' is NOT present.\")\n  \nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "txt = \"The best things in life are free!\"print(\"expensive\" not in txt)"
+            },
+            {
+                "heading": "Example",
+                "code": "txt = \"The best things in life are free!\"if \"expensive\" not in txt: \nprint(\"No, 'expensive' is NOT present.\")"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Format Specifiers",
+        "text": [
+            "Format specifiers are used together with the printf() \nfunction to tell the compiler what type of data the variable is storing. It is \nbasically a placeholder for the variable value.",
+            "A format specifier starts \nwith a percentage sign %, followed by a character.",
+            "For example, to output the value of an int variable, \nuse the format \nspecifier %d surrounded by double quotes (\"\"), \ninside the printf() function:",
+            "Example\n\n  int myNum = 15;printf(\"%d\", myNum);  // Outputs 15\nTry it Yourself »",
+            "To print other types, use %c for char and %f for float:",
+            "Example\n\n  // Create variablesint myNum = 15;            // Integer (whole number)float \n  myFloatNum = 5.99;   // Floating point numberchar myLetter = 'D';       // \n  Character// Print variablesprintf(\"%d\\n\", myNum);\n  printf(\"%f\\n\", myFloatNum);printf(\"%c\\n\", myLetter);\nTry it Yourself »",
+            "To combine both text and a variable, separate them with a comma inside the \nprintf() function:",
+            "Example\n\n  int myNum = 15;printf(\"My favorite number is: %d\", myNum);\nTry it Yourself »",
+            "To print different types in a single printf() function, you can use the \nfollowing:",
+            "Example\n\n  int myNum = 15;char myLetter = 'D';printf(\"My number is %d and my \n  letter is %c\", myNum, myLetter);\nTry it Yourself »",
+            "You will learn more about Data Types in a later chapter."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myNum = 15;printf(\"%d\", myNum);  // Outputs 15"
+            },
+            {
+                "heading": "Example",
+                "code": "// Create variablesint myNum = 15;            // Integer (whole number)float \n  myFloatNum = 5.99;   // Floating point numberchar myLetter = 'D';       // \n  Character// Print variablesprintf(\"%d\\n\", myNum);\n  printf(\"%f\\n\", myFloatNum);printf(\"%c\\n\", myLetter);"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNum = 15;printf(\"My favorite number is: %d\", myNum);"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNum = 15;char myLetter = 'D';printf(\"My number is %d and my \n  letter is %c\", myNum, myLetter);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Print Values Without Variables",
+        "text": [
+            "You can also just print a value without storing it in a variable, as long as you use the correct format specifier:",
+            "Example\n\n  printf(\"My favorite number is: %d\", 15);printf(\"My favorite letter is: \n  %c\", 'D');\nTry it Yourself »",
+            "However, it is more sustainable to use variables as they are saved for later and can be re-used whenever.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "printf(\"My favorite number is: %d\", 15);printf(\"My favorite letter is: \n  %c\", 'D');"
+            }
+        ],
+        "tables": []
+    }
+]

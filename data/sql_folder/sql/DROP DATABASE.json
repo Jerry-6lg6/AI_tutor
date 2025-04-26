@@ -1,0 +1,19 @@
+[
+    {
+        "title": "DROP DATABASE",
+        "text": [
+            "The DROP DATABASE command is used to \ndelete an existing SQL database.",
+            "The following SQL drops a database named \"testDB\":",
+            "Example\n\n  DROP DATABASE testDB;",
+            "Note: Be careful before dropping a database. Deleting \na database will result in loss of complete information stored in the database!",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP DATABASE testDB;"
+            }
+        ],
+        "tables": []
+    }
+]

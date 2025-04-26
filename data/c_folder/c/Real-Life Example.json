@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Real-Life Example",
+        "text": [
+            "To demonstrate a practical example of using arrays, let's create a program that calculates the average of different ages:",
+            "Example\n\n  // An array storing different agesint ages[] = {20, 22, 18, 35, 48, 26, \n  87, 70};float avg, sum = 0;int i;// Get the length of the \n  arrayint length = sizeof(ages) / sizeof(ages[0]);// Loop through \n  the elements of the arrayfor (i = 0; i < \n  length; i++) {  sum += ages[i];}// Calculate the average \n  by dividing the sum by the lengthavg = sum / length;// Print the \n  averageprintf(\"The average age is: %.2f\", avg);\n\nTry it Yourself »",
+            "And in this example, we create a program that finds the lowest age among different ages:",
+            "Example\n\n  // An array storing different agesint ages[] = {20, 22, 18, 35, 48, 26, \n  87, 70};int i;// Get the length of the arrayint length = sizeof(ages) / \n  sizeof(ages[0]);// Create a variable and assign the first array \n  element of ages to itint lowestAge = ages[0];// Loop through \n  the elements of the ages array to find the lowest agefor (i = 0; i < \n  length; i++) {  if (lowestAge > ages[i]) {    \n  lowestAge = ages[i];  }}\n\nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// An array storing different agesint ages[] = {20, 22, 18, 35, 48, 26, \n  87, 70};float avg, sum = 0;int i;// Get the length of the \n  arrayint length = sizeof(ages) / sizeof(ages[0]);// Loop through \n  the elements of the arrayfor (i = 0; i < \n  length; i++) {  sum += ages[i];}// Calculate the average \n  by dividing the sum by the lengthavg = sum / length;// Print the \n  averageprintf(\"The average age is: %.2f\", avg);"
+            },
+            {
+                "heading": "Example",
+                "code": "// An array storing different agesint ages[] = {20, 22, 18, 35, 48, 26, \n  87, 70};int i;// Get the length of the arrayint length = sizeof(ages) / \n  sizeof(ages[0]);// Create a variable and assign the first array \n  element of ages to itint lowestAge = ages[0];// Loop through \n  the elements of the ages array to find the lowest agefor (i = 0; i < \n  length; i++) {  if (lowestAge > ages[i]) {    \n  lowestAge = ages[i];  }}"
+            }
+        ],
+        "tables": []
+    }
+]

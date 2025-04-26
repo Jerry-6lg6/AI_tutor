@@ -1,0 +1,19 @@
+[
+    {
+        "title": "IS NULL",
+        "text": [
+            "The IS NULL command is used to test for \nempty values (NULL values).",
+            "The following SQL lists all customers with a NULL value in the \"Address\" \nfield:",
+            "Example\n\n  SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NULL;\n\nTry it Yourself »",
+            "Note: A NULL value is \ndifferent from a zero value or a field that contains spaces. A field with a NULL \nvalue is one that has been left blank during record creation!\nTip: Always use IS NULL to look for NULL values.",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NULL;"
+            }
+        ],
+        "tables": []
+    }
+]

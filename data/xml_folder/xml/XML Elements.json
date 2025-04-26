@@ -1,0 +1,82 @@
+[
+    {
+        "title": "What is an XML Element?",
+        "text": [
+            "An XML element is everything from (including) the element's start tag to \n(including) the element's end tag.",
+            "<price>29.99</price>",
+            "An element can contain:",
+            "<bookstore>\n  <book category=\"children\">\n    <title>Harry Potter</title> \n    <author>J K. Rowling</author>\n    <year>2005</year>\n    <price>29.99</price>\n  </book>\n  <book category=\"web\">\n    <title>Learning XML</title>\n    <author>Erik T. Ray</author>\n    <year>2003</year>\n    <price>39.95</price>\n  </book>\n</bookstore>",
+            "In the example above:",
+            "<title>, <author>, <year>, and <price> have text \ncontent because they contain text (like 29.99).",
+            "<bookstore> and <book> have element contents, \nbecause they contain elements.",
+            "<book> has an attribute \n(category=\"children\")."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Empty XML Elements",
+        "text": [
+            "An element with no content is said to be empty.",
+            "In XML, you can indicate an empty element like this:",
+            "<element></element>",
+            "You can also use a so called self-closing tag:",
+            "<element />",
+            "The two forms produce identical results in XML software (Readers, Parsers, \nBrowsers).",
+            "Empty elements can have attributes.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Naming Rules",
+        "text": [
+            "XML elements must follow these naming rules:",
+            "Any name can be used, no words are reserved (except xml)."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Best Naming Practices",
+        "text": [
+            "Create descriptive names, like this: \n<person>, <firstname>, <lastname>.",
+            "Create short and simple names, like this: <book_title> not like this: \n<the_title_of_the_book>.",
+            "Avoid \"-\". If you name something \"first-name\", some software may \nthink you want to subtract \"name\" from \"first\".",
+            "Avoid \".\". If you name something \"first.name\", some software may \nthink that \"name\" is a property of the object \"first\".",
+            "Avoid \":\". Colons are reserved for  \nnamespaces (more later).",
+            "Non-English letters like Ã©Ã²Ã¡ are perfectly legal in XML, but watch out for \nproblems if your software doesn't support them!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Naming Conventions",
+        "text": [
+            "Some commonly \nused naming conventions for XML elements:",
+            "Tip! Choose your naming style, and be consistent about it!",
+            "XML documents often have a corresponding database. A common practice is to use \nthe naming rules of the database for the XML elements."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Elements are Extensible",
+        "text": [
+            "XML elements can be extended to carry more information.",
+            "Look at the following XML example:",
+            "<note>\n \n<to>Tove</to>\n \n<from>Jani</from>\n \n<body>Don't forget me this weekend!</body>\n</note>",
+            "Let's imagine that we created an application that extracted the <to>, <from>, \nand <body> elements from the XML document to produce this output:",
+            "MESSAGE\nTo: Tove\nFrom: Jani\nDon't forget me this weekend!",
+            "Imagine that the author of the XML document added some extra information to it:",
+            "<note>\n \n<date>2008-01-10</date>\n \n<to>Tove</to>\n \n<from>Jani</from>\n \n<heading>Reminder</heading>\n \n<body>Don't forget me this weekend!</body>\n</note>",
+            "Should the application break or crash?",
+            "No. The application should still be able to find the <to>, <from>, and <body> \nelements in the XML document and produce the same output.",
+            "This is one of the beauties of XML. It can be extended without breaking \napplications.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

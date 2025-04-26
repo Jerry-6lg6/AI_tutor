@@ -1,0 +1,36 @@
+[
+    {
+        "title": "The SQL SELECT INTO Statement",
+        "text": [
+            "The SELECT INTO statement copies data from one table into a new table.",
+            "Copy all columns into a new table:",
+            "SELECT *\nINTO newtable [IN externaldb]\nFROM oldtableWHERE condition;",
+            "Copy only some columns into a new table:",
+            "SELECT column1, column2, column3, ...\nINTO newtable [IN externaldb] \nFROM oldtableWHERE condition;",
+            "The new table will be created with the column-names and types as defined in the old table.\nYou can create new column names using the AS clause."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL SELECT INTO Examples",
+        "text": [
+            "The following SQL statement creates a backup copy of Customers:",
+            "SELECT * INTO CustomersBackup2017\nFROM Customers;",
+            "The following SQL statement uses the IN clause to copy the table into a new \ntable in another database:",
+            "SELECT *\nINTO CustomersBackup2017 IN 'Backup.mdb'\nFROM Customers;",
+            "The following SQL statement copies only a few columns into a new table:",
+            "SELECT CustomerName, ContactName INTO CustomersBackup2017\nFROM Customers;",
+            "The following SQL statement copies only the German customers into a new table:",
+            "SELECT *\nINTO CustomersGermany\nFROM Customers\nWHERE Country = 'Germany';",
+            "The following SQL statement copies data from more than one table into a new table:",
+            "SELECT Customers.CustomerName, Orders.OrderIDINTO CustomersOrderBackup2017\nFROM Customers\n LEFT JOIN Orders\n ON Customers.CustomerID = Orders.CustomerID;",
+            "Tip: SELECT INTO can also be used to create a \nnew, empty table using the schema of another. Just add a \nWHERE clause that \ncauses the query to return no data:",
+            "SELECT * INTO newtableFROM oldtableWHERE 1 = 0;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

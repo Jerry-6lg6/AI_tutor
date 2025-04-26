@@ -1,0 +1,386 @@
+[
+    {
+        "title": "HTML Input Types",
+        "text": [
+            "Here are the different input types you can use in HTML:",
+            "Tip: The default value of the type attribute \nis \n\"text\"."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Input Type Text",
+        "text": [
+            "<input type=\"text\"> defines a \nsingle-line text input field:",
+            "Example\n\n<form>\n    <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\"><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\">\n</form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>\n    <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\"><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\">\n</form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Password",
+        "text": [
+            "<input type=\"password\"> defines a password field:",
+            "Example\n\n<form>\n   <label for=\"username\">Username:</label><br>  <input type=\"text\" \n  id=\"username\" name=\"username\"><br>  <label for=\"pwd\">Password:</label><br>  \n  <input type=\"password\" id=\"pwd\" name=\"pwd\">\n</form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:",
+            "The characters in a password field are masked (shown as asterisks or circles).",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>\n   <label for=\"username\">Username:</label><br>  <input type=\"text\" \n  id=\"username\" name=\"username\"><br>  <label for=\"pwd\">Password:</label><br>  \n  <input type=\"password\" id=\"pwd\" name=\"pwd\">\n</form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Submit",
+        "text": [
+            "<input type=\"submit\"> defines a button for \nsubmitting form data to a form-handler.",
+            "The form-handler is typically a server page with a script for processing \ninput data.",
+            "The form-handler is specified in the form's action \nattribute:",
+            "Example\n\n <form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:",
+            "If you omit the submit button's value attribute, the button will get a default text:",
+            "Example\n\n <form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\"></form>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>"
+            },
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Reset",
+        "text": [
+            "<input type=\"reset\"> defines a reset button \nthat will reset all form values to their default values:",
+            "Example\n\n <form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\" value=\"Submit\">  <input type=\"reset\" \n  value=\"Reset\"></form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:",
+            "If you change the input values and then click the \"Reset\" button, the form-data will be reset to the default values."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\" value=\"Submit\">  <input type=\"reset\" \n  value=\"Reset\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Radio",
+        "text": [
+            "<input type=\"radio\"> defines a radio button.",
+            "Radio buttons let a user select ONLY ONE of a limited number of choices:",
+            "Example\n\n<p>Choose your favorite Web language:</p>\n<form>  <input type=\"radio\" id=\"html\" name=\"fav_language\" \n  value=\"HTML\">  <label for=\"html\">HTML</label><br>  <input \n  type=\"radio\" id=\"css\" name=\"fav_language\" value=\"CSS\">  <label \n  for=\"css\">CSS</label><br>  <input type=\"radio\" id=\"javascript\" \n  name=\"fav_language\" value=\"JavaScript\">  <label for=\"javascript\">JavaScript</label></form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>Choose your favorite Web language:</p>\n<form>  <input type=\"radio\" id=\"html\" name=\"fav_language\" \n  value=\"HTML\">  <label for=\"html\">HTML</label><br>  <input \n  type=\"radio\" id=\"css\" name=\"fav_language\" value=\"CSS\">  <label \n  for=\"css\">CSS</label><br>  <input type=\"radio\" id=\"javascript\" \n  name=\"fav_language\" value=\"JavaScript\">  <label for=\"javascript\">JavaScript</label></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Checkbox",
+        "text": [
+            "<input type=\"checkbox\"> defines a checkbox.",
+            "Checkboxes let a user select ZERO or MORE options of a limited number of choices.",
+            "Example\n\n <form>  <input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\">  \n  <label for=\"vehicle1\"> I have a bike</label><br>  <input \n  type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\">  <label for=\"vehicle2\"> \n  I have a car</label><br>  <input type=\"checkbox\" \n  id=\"vehicle3\" name=\"vehicle3\" \n  value=\"Boat\">  <label for=\"vehicle3\"> I have a boat</label>\n </form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\">  \n  <label for=\"vehicle1\"> I have a bike</label><br>  <input \n  type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\">  <label for=\"vehicle2\"> \n  I have a car</label><br>  <input type=\"checkbox\" \n  id=\"vehicle3\" name=\"vehicle3\" \n  value=\"Boat\">  <label for=\"vehicle3\"> I have a boat</label>\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Button",
+        "text": [
+            "<input type=\"button\"> defines a button:",
+            "Example\n\n  <input type=\"button\" onclick=\"alert('Hello World!')\" value=\"Click Me!\">\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<input type=\"button\" onclick=\"alert('Hello World!')\" value=\"Click Me!\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Color",
+        "text": [
+            "The <input type=\"color\"> is used for input fields that should contain a color.",
+            "Depending on browser support, a color picker can show up in the input field.",
+            "Example\n\n <form>  <label for=\"favcolor\">Select your favorite \n  color:</label>  <input type=\"color\" id=\"favcolor\" name=\"favcolor\">\n </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"favcolor\">Select your favorite \n  color:</label>  <input type=\"color\" id=\"favcolor\" name=\"favcolor\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Date",
+        "text": [
+            "The <input type=\"date\"> is used for input fields that should contain a date.",
+            "Depending on browser support, a date picker can show up in the input field.",
+            "Example\n\n <form>  <label for=\"birthday\">Birthday:</label>  <input \n  type=\"date\" id=\"birthday\" name=\"birthday\"></form>\nTry it Yourself »",
+            "You can also use the min and max attributes to add restrictions to dates:",
+            "Example\n\n <form>  <label for=\"datemax\">Enter a date before \n  1980-01-01:</label>  <input type=\"date\" id=\"datemax\" name=\"datemax\" \n  max=\"1979-12-31\"><br><br>  <label for=\"datemin\">Enter a date after \n  2000-01-01:</label>  <input type=\"date\" id=\"datemin\" name=\"datemin\" \n  min=\"2000-01-02\"></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"birthday\">Birthday:</label>  <input \n  type=\"date\" id=\"birthday\" name=\"birthday\"></form>"
+            },
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"datemax\">Enter a date before \n  1980-01-01:</label>  <input type=\"date\" id=\"datemax\" name=\"datemax\" \n  max=\"1979-12-31\"><br><br>  <label for=\"datemin\">Enter a date after \n  2000-01-01:</label>  <input type=\"date\" id=\"datemin\" name=\"datemin\" \n  min=\"2000-01-02\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Datetime-local",
+        "text": [
+            "The <input type=\"datetime-local\"> specifies \na date and time input field, with no time zone.",
+            "Depending on browser support, a date picker can show up in the input field.",
+            "Example\n\n <form>  <label for=\"birthdaytime\">Birthday (date and \n  time):</label>  <input type=\"datetime-local\" id=\"birthdaytime\" name=\"birthdaytime\">\n </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"birthdaytime\">Birthday (date and \n  time):</label>  <input type=\"datetime-local\" id=\"birthdaytime\" name=\"birthdaytime\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Email",
+        "text": [
+            "The <input type=\"email\"> is used for input fields that should contain an e-mail address.",
+            "Depending on browser support, the e-mail address can be automatically validated when submitted.",
+            "Some smartphones recognize the email type, and add \".com\" to the keyboard to match email input.",
+            "Example\n\n <form>  <label for=\"email\">Enter your email:</label>  \n  <input type=\"email\" id=\"email\" name=\"email\">\n </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"email\">Enter your email:</label>  \n  <input type=\"email\" id=\"email\" name=\"email\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Image",
+        "text": [
+            "The <input type=\"image\"> \ndefines an image as a submit button.",
+            "The path to the image is specified in the src attribute.",
+            "Example\n\n <form><input type=\"image\" src=\"img_submit.gif\" alt=\"Submit\" \n  width=\"48\" height=\"48\"></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form><input type=\"image\" src=\"img_submit.gif\" alt=\"Submit\" \n  width=\"48\" height=\"48\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type File",
+        "text": [
+            "The <input type=\"file\"> \ndefines a file-select field and a \"Browse\" button for file uploads.",
+            "Example\n\n  <form>  <label for=\"myfile\">Select a file:</label>  \n  <input type=\"file\" id=\"myfile\" name=\"myfile\"></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"myfile\">Select a file:</label>  \n  <input type=\"file\" id=\"myfile\" name=\"myfile\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Hidden",
+        "text": [
+            "The <input type=\"hidden\"> \ndefines a hidden input field (not visible to a user).",
+            "A hidden field lets web developers include data that cannot be seen or \nmodified by users when a form is submitted.",
+            "A hidden field often stores what database record that needs to be updated \nwhen the form is submitted.",
+            "Note: While the value is not displayed to the user in the \npage's content, it is visible (and can be edited) using any browser's developer \ntools or \"View Source\" functionality. Do not use hidden inputs as a form of \nsecurity!",
+            "Example\n\n  <form>  <label for=\"fname\">First name:</label>  \n  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  <input \n  type=\"hidden\" id=\"custId\" name=\"custId\" value=\"3487\">  <input \n  type=\"submit\" value=\"Submit\"></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"fname\">First name:</label>  \n  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  <input \n  type=\"hidden\" id=\"custId\" name=\"custId\" value=\"3487\">  <input \n  type=\"submit\" value=\"Submit\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Month",
+        "text": [
+            "The <input type=\"month\"> allows the user to select a month and year.",
+            "Depending on browser support, a date picker can show up in the input field.",
+            "Example\n\n <form>  <label for=\"bdaymonth\">Birthday (month and \n  year):</label>  <input type=\"month\" id=\"bdaymonth\" name=\"bdaymonth\">\n </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"bdaymonth\">Birthday (month and \n  year):</label>  <input type=\"month\" id=\"bdaymonth\" name=\"bdaymonth\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Number",
+        "text": [
+            "The <input type=\"number\"> defines a \nnumeric input field.",
+            "You can also set restrictions on what numbers are accepted.",
+            "The following example displays a numeric input field, where you can enter a value from 1 to 5:",
+            "Example\n\n <form>  <label for=\"quantity\">Quantity (between 1 and \n  5):</label>  <input type=\"number\" id=\"quantity\" name=\"quantity\" \n  min=\"1\" max=\"5\"></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"quantity\">Quantity (between 1 and \n  5):</label>  <input type=\"number\" id=\"quantity\" name=\"quantity\" \n  min=\"1\" max=\"5\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Restrictions",
+        "text": [
+            "Here is a list of some common input restrictions:",
+            "You will learn more about input restrictions in the next chapter.",
+            "The following example displays a numeric input field, where you can enter a \nvalue from 0 to 100, in steps of 10. The default value is 30:",
+            "Example\n\n <form>  <label for=\"quantity\">Quantity:</label>  <input \n  type=\"number\" id=\"quantity\" name=\"quantity\" min=\"0\" max=\"100\" step=\"10\" \n  value=\"30\"></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"quantity\">Quantity:</label>  <input \n  type=\"number\" id=\"quantity\" name=\"quantity\" min=\"0\" max=\"100\" step=\"10\" \n  value=\"30\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Range",
+        "text": [
+            "The <input type=\"range\"> defines a control for entering a number whose exact value is not important (like a slider control). Default \nrange is 0 to 100. However, you can set restrictions on what \nnumbers are accepted with the min, max, and step attributes:",
+            "Example\n\n    <form>  <label for=\"vol\">Volume (between 0 and 50):</label>  \n    <input type=\"range\" id=\"vol\" name=\"vol\" min=\"0\" max=\"50\">\n </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"vol\">Volume (between 0 and 50):</label>  \n    <input type=\"range\" id=\"vol\" name=\"vol\" min=\"0\" max=\"50\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Search",
+        "text": [
+            "The <input type=\"search\"> is used for search fields (a search field behaves like a regular text field).",
+            "Example\n\n <form>  <label for=\"gsearch\">Search Google:</label>  \n  <input type=\"search\" id=\"gsearch\" name=\"gsearch\">\n </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"gsearch\">Search Google:</label>  \n  <input type=\"search\" id=\"gsearch\" name=\"gsearch\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Tel",
+        "text": [
+            "The <input type=\"tel\"> is used for input fields that should contain a telephone number.",
+            "Example\n\n    <form>  <label for=\"phone\">Enter your phone number:</label>  \n    <input type=\"tel\" id=\"phone\" name=\"phone\" \n    pattern=\"[0-9]{3}-[0-9]{2}-[0-9]{3}\"></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"phone\">Enter your phone number:</label>  \n    <input type=\"tel\" id=\"phone\" name=\"phone\" \n    pattern=\"[0-9]{3}-[0-9]{2}-[0-9]{3}\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Time",
+        "text": [
+            "The <input type=\"time\"> allows the user to select a time (no time zone).",
+            "Depending on browser support, a time picker can show up in the input field.",
+            "Example\n\n <form>  <label for=\"appt\">Select a time:</label>  \n  <input type=\"time\" id=\"appt\" name=\"appt\">\n </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"appt\">Select a time:</label>  \n  <input type=\"time\" id=\"appt\" name=\"appt\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Url",
+        "text": [
+            "The <input type=\"url\"> is used for input fields that should contain a URL address.",
+            "Depending on browser support, the url field can be automatically validated \nwhen submitted.",
+            "Some smartphones recognize the url type, and adds \".com\" to the keyboard to match \nurl input.",
+            "Example\n\n <form>  <label for=\"homepage\">Add your homepage:</label>  \n  <input type=\"url\" id=\"homepage\" name=\"homepage\">\n </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"homepage\">Add your homepage:</label>  \n  <input type=\"url\" id=\"homepage\" name=\"homepage\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Input Type Week",
+        "text": [
+            "The <input type=\"week\"> allows the user to select a week and year.",
+            "Depending on browser support, a date picker can show up in the input field.",
+            "Example\n\n <form>  <label for=\"week\">Select a week:</label>  \n  <input type=\"week\" id=\"week\" name=\"week\">\n </form>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"week\">Select a week:</label>  \n  <input type=\"week\" id=\"week\" name=\"week\">\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Input Type Attribute",
+        "text": [
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

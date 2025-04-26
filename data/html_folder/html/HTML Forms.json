@@ -1,0 +1,119 @@
+[
+    {
+        "title": "The <form> Element",
+        "text": [
+            "The HTML <form> element is used to \ncreate an HTML form for user input:",
+            "<form>\n .\nform elements\n .\n </form>",
+            "The <form> element is a container for different types of input elements, \nsuch as: text fields, checkboxes, radio \nbuttons, submit buttons, etc.",
+            "All\nthe different form elements are covered in this chapter:\nHTML Form Elements."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <input> Element",
+        "text": [
+            "The HTML <input> element is the most \nused form element.",
+            "An <input> element can be displayed in \nmany ways, depending on the type \nattribute.",
+            "Here are some examples:",
+            "All the different input types are covered in this chapter:\nHTML Input Types.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Text Fields",
+        "text": [
+            "The <input type=\"text\"> defines a single-line input field for \ntext input.",
+            "Example\nA form with input fields for text:\n\n <form>\n    <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\"><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\"></form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:",
+            "Note: The form itself is not visible. Also note that the default width \nof an input field is 20 characters."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>\n    <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\"><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <label> Element",
+        "text": [
+            "Notice the use of the <label> element in the \nexample above.",
+            "The <label> tag defines a label for many \nform elements.",
+            "The <label> element is useful for \nscreen-reader users, because the screen-reader will read out loud the label when \nthe user focuses on the input element.",
+            "The <label> element also helps users who have \ndifficulty clicking on very small regions (such as radio buttons or checkboxes) \n- because when the user clicks the text within the <label> element, it toggles \nthe radio button/checkbox.",
+            "The for attribute of the <label> tag should \nbe equal to the id attribute of the <input>  \nelement to bind them together."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Radio Buttons",
+        "text": [
+            "The <input type=\"radio\"> defines a radio button.",
+            "Radio buttons let a user select ONE of a limited number of choices.",
+            "Example\nA form with radio buttons:\n\n<p>Choose your favorite Web language:</p>\n<form>  <input type=\"radio\" id=\"html\" name=\"fav_language\" \n  value=\"HTML\">  <label for=\"html\">HTML</label><br>  <input \n  type=\"radio\" id=\"css\" name=\"fav_language\" value=\"CSS\">  <label \n  for=\"css\">CSS</label><br>  <input type=\"radio\" id=\"javascript\" \n  name=\"fav_language\" value=\"JavaScript\">  <label for=\"javascript\">JavaScript</label></form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:",
+            "Choose your favorite Web language:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>Choose your favorite Web language:</p>\n<form>  <input type=\"radio\" id=\"html\" name=\"fav_language\" \n  value=\"HTML\">  <label for=\"html\">HTML</label><br>  <input \n  type=\"radio\" id=\"css\" name=\"fav_language\" value=\"CSS\">  <label \n  for=\"css\">CSS</label><br>  <input type=\"radio\" id=\"javascript\" \n  name=\"fav_language\" value=\"JavaScript\">  <label for=\"javascript\">JavaScript</label></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Checkboxes",
+        "text": [
+            "The <input type=\"checkbox\"> defines a checkbox.",
+            "Checkboxes let a user select ZERO or MORE options of a limited number of choices.",
+            "Example\nA form with checkboxes:\n\n <form>  <input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\">  \n  <label for=\"vehicle1\"> I have a bike</label><br>  <input \n  type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\">  <label for=\"vehicle2\"> \n  I have a car</label><br>  <input type=\"checkbox\" \n  id=\"vehicle3\" name=\"vehicle3\" \n  value=\"Boat\">  <label for=\"vehicle3\"> I have a boat</label>\n </form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <input type=\"checkbox\" id=\"vehicle1\" name=\"vehicle1\" value=\"Bike\">  \n  <label for=\"vehicle1\"> I have a bike</label><br>  <input \n  type=\"checkbox\" id=\"vehicle2\" name=\"vehicle2\" value=\"Car\">  <label for=\"vehicle2\"> \n  I have a car</label><br>  <input type=\"checkbox\" \n  id=\"vehicle3\" name=\"vehicle3\" \n  value=\"Boat\">  <label for=\"vehicle3\"> I have a boat</label>\n </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Submit Button",
+        "text": [
+            "The <input type=\"submit\"> defines a button for submitting the form data to a form-handler.",
+            "The form-handler is typically a file on the server with a script for processing \ninput data.",
+            "The form-handler is specified in the form's action \nattribute.",
+            "Example\nA form with a submit button:\n\n <form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>\n\nTry it Yourself »",
+            "This is how the HTML code above will be displayed in a browser:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" name=\"fname\" \n  value=\"John\"><br>  <label for=\"lname\">Last name:</label><br>  \n  <input type=\"text\" id=\"lname\" name=\"lname\" value=\"Doe\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Name Attribute for <input>",
+        "text": [
+            "Notice that each input field must have a name attribute to be submitted.",
+            "If the name attribute is omitted, the value of the input field will not be sent at all.",
+            "Example\nThis example will not submit the value of the \"First name\" input field: \n\n <form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" value=\"John\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\">  <label for=\"fname\">First \n  name:</label><br>  <input type=\"text\" id=\"fname\" value=\"John\"><br><br>  \n  <input type=\"submit\" value=\"Submit\"></form>"
+            }
+        ],
+        "tables": []
+    }
+]

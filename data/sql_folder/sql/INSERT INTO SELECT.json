@@ -1,0 +1,30 @@
+[
+    {
+        "title": "INSERT INTO SELECT",
+        "text": [
+            "The INSERT INTO SELECT command copies data \nfrom one table and inserts it into another table.",
+            "The following SQL copies \"Suppliers\" into \"Customers\" (the columns \nthat are not filled with data, will contain NULL):",
+            "Example\n\n INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM Suppliers;",
+            "The following SQL copies \"Suppliers\" into \"Customers\" (fill all \ncolumns):",
+            "Example\n\n  INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, \n  Country)SELECT SupplierName, ContactName, Address, City, PostalCode, \n  Country FROM Suppliers;",
+            "The following SQL copies only the German suppliers into \"Customers\":",
+            "Example\n\n INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM SuppliersWHERE Country='Germany';",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM Suppliers;"
+            },
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, \n  Country)SELECT SupplierName, ContactName, Address, City, PostalCode, \n  Country FROM Suppliers;"
+            },
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM SuppliersWHERE Country='Germany';"
+            }
+        ],
+        "tables": []
+    }
+]

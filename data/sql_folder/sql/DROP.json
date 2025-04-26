@@ -1,0 +1,142 @@
+[
+    {
+        "title": "DROP COLUMN",
+        "text": [
+            "The DROP COLUMN command is used to delete a column in an existing table.",
+            "The following SQL deletes the \"ContactName\" column from the \"Customers\" table:",
+            "Example\n\n  ALTER TABLE CustomersDROP COLUMN ContactName;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE CustomersDROP COLUMN ContactName;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "DROP a UNIQUE Constraint",
+        "text": [
+            "To drop a UNIQUE constraint, use the following SQL:",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nDROP CONSTRAINT UC_Person;",
+            "MySQL:",
+            "ALTER TABLE Persons\nDROP INDEX UC_Person;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP a PRIMARY KEY Constraint",
+        "text": [
+            "To drop a PRIMARY KEY constraint, use the following SQL:",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nDROP CONSTRAINT PK_Person;",
+            "MySQL:",
+            "ALTER TABLE Persons\nDROP PRIMARY KEY;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP a FOREIGN KEY Constraint",
+        "text": [
+            "To drop a FOREIGN KEY constraint, use the following SQL:",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Orders\nDROP CONSTRAINT FK_PersonOrder;",
+            "MySQL:",
+            "ALTER TABLE Orders\nDROP FOREIGN KEY FK_PersonOrder;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP a CHECK Constraint",
+        "text": [
+            "To drop a CHECK constraint, use the following SQL:",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nDROP CONSTRAINT CHK_PersonAge;",
+            "MySQL:",
+            "ALTER TABLE Persons\nDROP CHECK CHK_PersonAge;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP DEFAULT",
+        "text": [
+            "The DROP DEFAULT command is used to delete \na DEFAULT constraint.",
+            "To drop a DEFAULT constraint, use the following SQL:",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nALTER COLUMN City DROP DEFAULT;",
+            "MySQL:",
+            "ALTER TABLE Persons\nALTER City DROP DEFAULT;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP INDEX",
+        "text": [
+            "The DROP INDEX command is used to delete an \nindex in a table.",
+            "MS Access:",
+            "DROP INDEX index_name ON table_name;",
+            "SQL Server:",
+            "DROP INDEX table_name.index_name;",
+            "DB2/Oracle:",
+            "DROP INDEX index_name;",
+            "MySQL:",
+            "ALTER TABLE table_nameDROP INDEX index_name;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP DATABASE",
+        "text": [
+            "The DROP DATABASE command is used is to \ndelete an existing SQL database.",
+            "The following SQL drops a database named \"testDB\":",
+            "Example\n\n  DROP DATABASE testDB;",
+            "Note: Be careful before dropping a database. Deleting \na database will result in loss of complete information stored in the database!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP DATABASE testDB;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "DROP TABLE",
+        "text": [
+            "The DROP TABLE command deletes a table in \nthe database.",
+            "The following SQL deletes the table \"Shippers\":",
+            "Example\n\n  DROP TABLE Shippers;",
+            "Note: Be careful before deleting a table. Deleting a \ntable results in loss of all information stored in the table!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP TABLE Shippers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "DROP VIEW",
+        "text": [
+            "The DROP VIEW command deletes a view.",
+            "The following SQL drops the \"Brazil Customers\" view:",
+            "Example\n\nDROP VIEW [Brazil Customers];",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP VIEW [Brazil Customers];"
+            }
+        ],
+        "tables": []
+    }
+]

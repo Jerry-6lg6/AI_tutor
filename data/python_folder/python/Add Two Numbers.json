@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Add Two Numbers with User Input",
+        "text": [
+            "In this example, the user must input two numbers. Then we print the sum by calculating (adding) the two numbers:",
+            "Example\n\n  x = input(\"Type a number: \")y = input(\"Type another number: \")sum \n  = int(x) + int(y)print(\"The sum is: \", sum) \nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = input(\"Type a number: \")y = input(\"Type another number: \")sum \n  = int(x) + int(y)print(\"The sum is: \", sum)"
+            }
+        ],
+        "tables": []
+    }
+]

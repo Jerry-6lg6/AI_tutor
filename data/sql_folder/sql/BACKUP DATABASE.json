@@ -1,0 +1,27 @@
+[
+    {
+        "title": "BACKUP DATABASE",
+        "text": [
+            "The BACKUP DATABASE command is used in SQL \nServer to create a full back up of an existing SQL database.",
+            "The following SQL statement creates a full back up of the existing database \"testDB\" \nto the D disk:",
+            "Example\n\nBACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak';",
+            "Tip: Always back up the database to a different drive than the \nactual database. If you get a disk crash, you will not lose your backup \nfile along with the database.",
+            "A differential back up only backs up the parts of the database that have \nchanged since the last full database backup.",
+            "The following SQL statement creates a differential back up of the database \"testDB\":",
+            "Example\n\nBACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak'WITH \n  DIFFERENTIAL;",
+            "Tip: A differential back up reduces the back up time (since only the changes are backed up).",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "BACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak';"
+            },
+            {
+                "heading": "Example",
+                "code": "BACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak'WITH \n  DIFFERENTIAL;"
+            }
+        ],
+        "tables": []
+    }
+]

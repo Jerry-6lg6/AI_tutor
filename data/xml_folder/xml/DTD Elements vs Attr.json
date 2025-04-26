@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Use of Elements vs. Attributes",
+        "text": [
+            "Data can be stored in child elements or in attributes.",
+            "Take a look at these examples:",
+            "<person sex=\"female\">\n \n<firstname>Anna</firstname>\n \n<lastname>Smith</lastname>\n</person>",
+            "<person>\n \n<sex>female</sex>\n \n<firstname>Anna</firstname>\n \n<lastname>Smith</lastname>\n</person>",
+            "In the first example sex is an attribute. In the last, sex is a child element. Both examples provide the same information.",
+            "There are no rules about when to use attributes, and when to use child elements. My experience is that attributes are handy in HTML, but in XML you should try to avoid them. Use child elements if the information feels like data."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "My Favorite Way",
+        "text": [
+            "I like to store data in child elements.",
+            "The following three XML documents contain exactly the same information:",
+            "A date attribute is used in the first example:",
+            "<note date=\"12/11/2002\">\n \n<to>Tove</to>\n \n<from>Jani</from>\n \n<heading>Reminder</heading>\n \n<body>Don't forget me this weekend!</body>\n</note>",
+            "A date element is used in the second example:",
+            "<note>\n \n<date>12/11/2002</date>\n \n<to>Tove</to>\n \n<from>Jani</from>\n \n<heading>Reminder</heading>\n \n<body>Don't forget me this weekend!</body>\n</note>",
+            "An expanded date element is used in the third: (THIS IS MY FAVORITE):",
+            "<note>\n \n<date>\n     \n  <day>12</day>\n     \n  <month>11</month>\n     \n  <year>2002</year>\n \n</date>\n \n<to>Tove</to>\n \n<from>Jani</from>\n \n<heading>Reminder</heading>\n \n<body>Don't forget me this weekend!</body>\n</note>",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Avoid using attributes?",
+        "text": [
+            "Should you avoid using attributes?",
+            "Some of the problems with attributes are:",
+            "If you use attributes as containers for data, you end up with documents that are difficult to read and maintain. Try to use  elements to\ndescribe data. Use attributes only to provide information that is not relevant to the data.",
+            "Don't end up like this (this is not how XML should be used):",
+            "<note day=\"12\" month=\"11\" year=\"2002\"\nto=\"Tove\" from=\"Jani\" heading=\"Reminder\"\nbody=\"Don't forget me this weekend!\">\n</note>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "An Exception to my Attribute Rule",
+        "text": [
+            "Rules always have exceptions.",
+            "My rule about attributes has one exception:",
+            "Sometimes I assign ID references to elements. These ID references can be used to access XML elements in much the same way as the NAME or\nID attributes in HTML. This example demonstrates this:",
+            "<messages>\n  <note id=\"p501\">\n     \n    <to>Tove</to>\n     \n    <from>Jani</from>\n     \n    <heading>Reminder</heading>\n     \n    <body>Don't forget me this weekend!</body>\n  </note>\n  <note id=\"p502\">\n     \n    <to>Jani</to>\n     \n    <from>Tove</from>\n     \n    <heading>Re: Reminder</heading>\n     \n    <body>I will not!</body>\n  </note>\n</messages>",
+            "The ID in these examples is just a counter, or a unique identifier, to identify the different notes in the XML file, and not a part of the note data.",
+            "What I am trying to say here is that metadata (data about data) should be stored as attributes, and that data itself should be stored as elements.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

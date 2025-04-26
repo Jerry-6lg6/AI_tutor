@@ -1,0 +1,62 @@
+[
+    {
+        "title": "String Format",
+        "text": [
+            "As we learned in the Python Variables chapter, we cannot combine strings and numbers like this:",
+            "Example\n\n  age = 36txt = \"My name is John, I am \" + ageprint(txt)\n\nTry it Yourself »",
+            "But we can combine strings and numbers by using f-strings or the format() method!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "age = 36txt = \"My name is John, I am \" + ageprint(txt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "F-Strings",
+        "text": [
+            "F-String was introduced in Python 3.6,\nand is now the preferred way of formatting strings.",
+            "To specify a string as an f-string, simply put an f in front of the string \nliteral, and add curly brackets {} as \nplaceholders for variables and other operations.",
+            "Example\nCreate an f-string:\n\n  age = 36txt = f\"My name is John, I am {age}\"print(txt)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "age = 36txt = f\"My name is John, I am {age}\"print(txt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Placeholders and Modifiers",
+        "text": [
+            "A placeholder can contain variables,\noperations, functions, and modifiers to format the value.",
+            "Example\nAdd a placeholder for the price variable:\n\nprice = 59\n\ntxt = f\"The price is {price} dollars\"\n\nprint(txt)\n\nTry it Yourself »",
+            "A placeholder can include a modifier to format the value.",
+            "A modifier is included by adding a colon : followed by a legal formatting type, like \n.2f which means fixed point number with 2 decimals:",
+            "Example\nDisplay the price with 2 decimals:\n\nprice = 59\n\ntxt = f\"The price is {price:.2f} dollars\"\n\nprint(txt)\n\nTry it Yourself »",
+            "A placeholder can contain Python code, like math operations:",
+            "Example\nPerform a math operation in the placeholder, and return the result:\n\ntxt = f\"The price is {20 * 59} dollars\"\n\nprint(txt)\n\nTry it Yourself »",
+            "",
+            "Learn more about String Formatting in our String Formatting chapter.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "price = 59\n\ntxt = f\"The price is {price} dollars\"\n\nprint(txt)"
+            },
+            {
+                "heading": "Example",
+                "code": "price = 59\n\ntxt = f\"The price is {price:.2f} dollars\"\n\nprint(txt)"
+            },
+            {
+                "heading": "Example",
+                "code": "txt = f\"The price is {20 * 59} dollars\"\n\nprint(txt)"
+            }
+        ],
+        "tables": []
+    }
+]

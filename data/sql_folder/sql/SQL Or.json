@@ -1,0 +1,129 @@
+[
+    {
+        "title": "The SQL OR Operator",
+        "text": [
+            "The WHERE clause can contain one or more\nOR operators.",
+            "The OR operator \nis used to filter records based on more than one condition, like if you want to \nreturn all customers from Germany but also those from Spain:",
+            "Example\nSelect all customers from Germany or Spain:\n\n SELECT *\n FROM Customers\n WHERE Country = 'Germany' OR Country = 'Spain';\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT *\n FROM Customers\n WHERE Country = 'Germany' OR Country = 'Spain';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Syntax",
+        "text": [
+            "SELECT column1, column2, ...\nFROM table_name\nWHERE condition1 OR condition2 OR condition3 ...;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "OR vs AND",
+        "text": [
+            "The OR operator displays a record if any of the conditions are TRUE.\nThe AND operator displays a record if all the conditions are TRUE."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Customers table used in the examples:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "At Least One Condition Must Be True",
+        "text": [
+            "The following SQL statement selects all fields from Customers where either\nCity is \"Berlin\", \nCustomerName starts with the letter \"G\" or \nCountry is \"Norway\":",
+            "Example\n\n SELECT * FROM Customers\n WHERE City = 'Berlin'\n OR CustomerName LIKE 'G%'\n OR Country = 'Norway'; \n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE City = 'Berlin'\n OR CustomerName LIKE 'G%'\n OR Country = 'Norway';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Combining AND and OR",
+        "text": [
+            "You can combine the AND and OR operators.",
+            "The following SQL statement selects all customers from Spain that starts with a \"G\" or an \"R\".",
+            "Make sure you use parenthesis to get the correct result.",
+            "Example\nSelect all Spanish customers that starts with either \"G\" or \"R\":\n\n SELECT * FROM Customers\n WHERE Country = 'Spain'\n AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');\nTry it Yourself »",
+            "Without parenthesis, the select statement will return all customers from Spain that starts with a \"G\", plus\nall customers that starts with an \"R\", regardless of the country value:",
+            "Example\nSelect all customers that either:\nare from Spain and starts with either \"G\", or\nstarts with the letter \"R\":\n\n SELECT * FROM Customers\n WHERE Country = 'Spain'\n AND CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE Country = 'Spain'\n AND (CustomerName LIKE 'G%' OR CustomerName LIKE 'R%');"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE Country = 'Spain'\n AND CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,182 @@
+[
+    {
+        "title": "What is XHTML?",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Why XHTML?",
+        "text": [
+            "XML is a markup language where all documents must be marked up correctly (be \"well-formed\").",
+            "XHTML was developed to make HTML more extensible and flexible to work with \nother data formats (such as XML). In addition, browsers ignore errors in HTML \npages, and try to display the website even if it has some errors in the markup. \nSo XHTML comes with a much stricter error handling.",
+            "If you want to study XML, please read our XML Tutorial."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The Most Important Differences from HTML",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XHTML - <!DOCTYPE ....> Is Mandatory",
+        "text": [
+            "An XHTML document must have an XHTML <!DOCTYPE> declaration.",
+            "The <html>, <head>, <title>, and <body> elements must also be present, and the xmlns attribute in <html> \nmust specify the xml namespace for the document.",
+            "Example\nHere is an XHTML document with a minimum of required tags: \n\n  <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\n  \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n \n<title>Title of document</title>\n</head>\n<body>  some content here... \n</body>\n</html>"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.1//EN\"\n  \"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd\"><html xmlns=\"http://www.w3.org/1999/xhtml\">\n<head>\n \n<title>Title of document</title>\n</head>\n<body>  some content here... \n</body>\n</html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "XHTML Elements Must be Properly Nested",
+        "text": [
+            "In XHTML, elements must always be properly nested within each other, like this:",
+            "Correct:\n\n<b><i>Some \n  text</i></b>",
+            "Wrong:\n\n<b><i>Some \n  text</b></i>"
+        ],
+        "examples": [
+            {
+                "heading": "Correct:",
+                "code": "<b><i>Some \n  text</i></b>"
+            },
+            {
+                "heading": "Wrong:",
+                "code": "<b><i>Some \n  text</b></i>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "XHTML Elements Must Always be Closed",
+        "text": [
+            "In XHTML, elements must always be closed, like this:",
+            "Correct:\n\n<p>This is a paragraph</p>\n<p>This is another paragraph</p>",
+            "Wrong:\n\n<p>This is a paragraph\n<p>This is another paragraph"
+        ],
+        "examples": [
+            {
+                "heading": "Correct:",
+                "code": "<p>This is a paragraph</p>\n<p>This is another paragraph</p>"
+            },
+            {
+                "heading": "Wrong:",
+                "code": "<p>This is a paragraph\n<p>This is another paragraph"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "XHTML Empty Elements Must Always be Closed",
+        "text": [
+            "In XHTML, empty elements must always be closed, like this:",
+            "Correct:\n\nA break: <br />\nA horizontal rule: <hr />\nAn image: <img src=\"happy.gif\" alt=\"Happy face\" />",
+            "Wrong:\n\nA break: <br>\nA horizontal rule: <hr>\nAn image: <img src=\"happy.gif\" alt=\"Happy face\">"
+        ],
+        "examples": [
+            {
+                "heading": "Correct:",
+                "code": "A break: <br />\nA horizontal rule: <hr />\nAn image: <img src=\"happy.gif\" alt=\"Happy face\" />"
+            },
+            {
+                "heading": "Wrong:",
+                "code": "A break: <br>\nA horizontal rule: <hr>\nAn image: <img src=\"happy.gif\" alt=\"Happy face\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "XHTML Elements Must be in Lowercase",
+        "text": [
+            "In XHTML, element names must always be in lowercase, like this:",
+            "Correct:\n\n<body>\n<p>This is a paragraph</p>\n</body>",
+            "Wrong:\n\n<BODY>\n<P>This is a paragraph</P>\n</BODY>"
+        ],
+        "examples": [
+            {
+                "heading": "Correct:",
+                "code": "<body>\n<p>This is a paragraph</p>\n</body>"
+            },
+            {
+                "heading": "Wrong:",
+                "code": "<BODY>\n<P>This is a paragraph</P>\n</BODY>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "XHTML Attribute Names Must be in Lowercase",
+        "text": [
+            "In XHTML, attribute names must always be in lowercase, like this:",
+            "Correct:\n\n  <a href=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>",
+            "Wrong:\n\n  <a HREF=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+        ],
+        "examples": [
+            {
+                "heading": "Correct:",
+                "code": "<a href=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+            },
+            {
+                "heading": "Wrong:",
+                "code": "<a HREF=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "XHTML Attribute Values Must be Quoted",
+        "text": [
+            "In XHTML, attribute values must always be quoted, like this:",
+            "Correct:\n\n  <a href=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>",
+            "Wrong:\n\n  <a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>"
+        ],
+        "examples": [
+            {
+                "heading": "Correct:",
+                "code": "<a href=\"https://www.w3schools.com/html/\">Visit our HTML tutorial</a>"
+            },
+            {
+                "heading": "Wrong:",
+                "code": "<a href=https://www.w3schools.com/html/>Visit our HTML tutorial</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "XHTML Attribute Minimization is Forbidden",
+        "text": [
+            "In XHTML, attribute minimization is forbidden:",
+            "Correct:\n\n <input type=\"checkbox\" name=\"vehicle\" value=\"car\" checked=\"checked\" /><input type=\"text\" name=\"lastname\" disabled=\"disabled\" />",
+            "Wrong:\n\n <input type=\"checkbox\" name=\"vehicle\" value=\"car\" checked /><input type=\"text\" name=\"lastname\" disabled />"
+        ],
+        "examples": [
+            {
+                "heading": "Correct:",
+                "code": "<input type=\"checkbox\" name=\"vehicle\" value=\"car\" checked=\"checked\" /><input type=\"text\" name=\"lastname\" disabled=\"disabled\" />"
+            },
+            {
+                "heading": "Wrong:",
+                "code": "<input type=\"checkbox\" name=\"vehicle\" value=\"car\" checked /><input type=\"text\" name=\"lastname\" disabled />"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Validate HTML With The W3C Validator",
+        "text": [
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

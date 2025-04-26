@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Java Data Types",
+        "text": [
+            "As explained in the previous chapter, a variable in Java must be a specified data type:",
+            "Example\nint myNum = 5;               // Integer (whole number)\nfloat myFloatNum = 5.99f;    // Floating point number\nchar myLetter = 'D';         // Character\nboolean myBool = true;       // Boolean\nString myText = \"Hello\";     // String\n\n\nTry it Yourself »",
+            "Data types are divided into two groups:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Primitive Data Types",
+        "text": [
+            "A primitive data type specifies the type of a variable and the kind of values it can hold.",
+            "There are eight primitive data types in Java:",
+            "Data Type\n\nDescription\n\n\nbyte\n\nStores whole numbers from -128 to 127\n\n\nshort\n\nStores whole numbers from -32,768 to 32,767\n\n\nint\n\nStores whole numbers from -2,147,483,648 to 2,147,483,647\n\n\nlong\n\nStores whole numbers from -9,223,372,036,854,775,808 to \n9,223,372,036,854,775,807\n\n\nfloat\n\nStores fractional numbers. Sufficient for \nstoring 6 to 7 decimal digits\n\n\ndouble\n\nStores fractional numbers. Sufficient for \nstoring 15 to 16 decimal digits\n\n\nboolean\n\nStores true or false values\n\n\nchar\n\nStores a single character/letter or ASCII values",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Data Type": "byte",
+                    "Description": "Stores whole numbers from -128 to 127"
+                },
+                {
+                    "Data Type": "short",
+                    "Description": "Stores whole numbers from -32,768 to 32,767"
+                },
+                {
+                    "Data Type": "int",
+                    "Description": "Stores whole numbers from -2,147,483,648 to 2,147,483,647"
+                },
+                {
+                    "Data Type": "long",
+                    "Description": "Stores whole numbers from -9,223,372,036,854,775,808 to \n9,223,372,036,854,775,807"
+                },
+                {
+                    "Data Type": "float",
+                    "Description": "Stores fractional numbers. Sufficient for \nstoring 6 to 7 decimal digits"
+                },
+                {
+                    "Data Type": "double",
+                    "Description": "Stores fractional numbers. Sufficient for \nstoring 15 to 16 decimal digits"
+                },
+                {
+                    "Data Type": "boolean",
+                    "Description": "Stores true or false values"
+                },
+                {
+                    "Data Type": "char",
+                    "Description": "Stores a single character/letter or ASCII values"
+                }
+            ]
+        ]
+    }
+]

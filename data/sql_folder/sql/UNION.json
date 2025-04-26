@@ -1,0 +1,18 @@
+[
+    {
+        "title": "UNION",
+        "text": [
+            "The UNION command combines the result set of two or more SELECT statements (only \ndistinct values)",
+            "The following SQL statement returns the cities \n(only distinct values) from both the \"Customers\" and the \"Suppliers\" table:",
+            "Example\n\n SELECT City FROM CustomersUNIONSELECT City FROM SuppliersORDER BY City;\n\n\n Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT City FROM CustomersUNIONSELECT City FROM SuppliersORDER BY City;"
+            }
+        ],
+        "tables": []
+    }
+]

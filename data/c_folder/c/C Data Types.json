@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Data Types",
+        "text": [
+            "As explained in the Variables chapter, a variable in C must be a specified \ndata type, \nand you must use a format specifier inside the printf() function to display it:",
+            "Example\n\n  // Create variablesint myNum = 5;             // Integer (whole number)float \n  myFloatNum = 5.99;   // Floating point numberchar myLetter = 'D';       // \n  Character// Print variablesprintf(\"%d\\n\", myNum);\n  printf(\"%f\\n\", myFloatNum);printf(\"%c\\n\", myLetter);\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Create variablesint myNum = 5;             // Integer (whole number)float \n  myFloatNum = 5.99;   // Floating point numberchar myLetter = 'D';       // \n  Character// Print variablesprintf(\"%d\\n\", myNum);\n  printf(\"%f\\n\", myFloatNum);printf(\"%c\\n\", myLetter);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Basic Data Types",
+        "text": [
+            "The data type specifies the size and type of information the variable will store.",
+            "In this tutorial, we will focus on the most basic ones:",
+            "Data Type\nSize\nDescription\nExample\n\n\nint\n2 or 4 bytes\nStores whole numbers, without decimals\n1\n\n\nfloat\n4 bytes\nStores fractional numbers, containing one or more decimals. Sufficient for \nstoring 6-7 decimal digits\n1.99\n\n\ndouble\n8 bytes\nStores fractional numbers, containing one or more decimals. Sufficient for \nstoring 15 decimal digits\n1.99\n\n\nchar\n1 byte\nStores a single character/letter/number, or ASCII values\n'A'"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Data Type": "int",
+                    "Size": "2 or 4 bytes",
+                    "Description": "Stores whole numbers, without decimals",
+                    "Example": "1"
+                },
+                {
+                    "Data Type": "float",
+                    "Size": "4 bytes",
+                    "Description": "Stores fractional numbers, containing one or more decimals. Sufficient for \nstoring 6-7 decimal digits",
+                    "Example": "1.99"
+                },
+                {
+                    "Data Type": "double",
+                    "Size": "8 bytes",
+                    "Description": "Stores fractional numbers, containing one or more decimals. Sufficient for \nstoring 15 decimal digits",
+                    "Example": "1.99"
+                },
+                {
+                    "Data Type": "char",
+                    "Size": "1 byte",
+                    "Description": "Stores a single character/letter/number, or ASCII values",
+                    "Example": "'A'"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Basic Format Specifiers",
+        "text": [
+            "There are different format specifiers for each data type. Here are some of \nthem:",
+            "Format Specifier\nData Type\nTry it\n\n\n%d or %i\nint\nTry it »\n\n\n%f or %F\nfloat\nTry it »\n\n\n%lf\ndouble\nTry it »\n\n\n%c\nchar\nTry it »\n\n\n%s\nUsed for strings (text), which you will learn more about in a later chapter\nTry it »",
+            "Note: It is important that you use the correct format specifier for the specified data type. \nIf not, the program may produce errors or even crash.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Format Specifier": "%d or %i",
+                    "Data Type": "int",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Format Specifier": "%f or %F",
+                    "Data Type": "float",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Format Specifier": "%lf",
+                    "Data Type": "double",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Format Specifier": "%c",
+                    "Data Type": "char",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Format Specifier": "%s",
+                    "Data Type": "Used for strings (text), which you will learn more about in a later chapter",
+                    "Try it": "Try it »"
+                }
+            ]
+        ]
+    }
+]

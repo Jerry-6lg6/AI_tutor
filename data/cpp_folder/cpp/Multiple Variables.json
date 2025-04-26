@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Declare Many Variables",
+        "text": [
+            "To declare more than one variable of the same type, \nuse a comma-separated list:",
+            "Example\n\n  int x = 5, y = 6, z = 50;cout << \n  x + y + z;\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x = 5, y = 6, z = 50;cout << \n  x + y + z;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "One Value to Multiple Variables",
+        "text": [
+            "You can also assign the same value to multiple variables in one line:",
+            "Example\n\n  int x, y, z;x = y = z = 50;cout << x + y + z;\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x, y, z;x = y = z = 50;cout << x + y + z;"
+            }
+        ],
+        "tables": []
+    }
+]

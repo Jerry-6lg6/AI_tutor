@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Memory Address",
+        "text": [
+            "In the example from the previous page, the & operator was used to create a reference variable. \nBut it can also be used to get the memory address of a variable; which is the \nlocation of where the variable is stored on the computer.",
+            "When a variable is created in C++, a memory address is assigned to the variable. \nAnd when we assign a value to the variable, it is stored in this memory \naddress.",
+            "To access it, use the & \noperator, and the result will represent where the variable is stored:",
+            "Example\n\n  string food = \"Pizza\";\n  cout << &food; // Outputs 0x6dfed4\n\nTry it Yourself »",
+            "Note: The memory address is in hexadecimal form (0x..). Note \nthat \nyou may not get the same result in your program.",
+            "And why is it useful to know the memory address?\nReferences and Pointers (which you will learn about in the next chapter) \n  are important in C++, because they give you the \nability to manipulate the data in the computer's memory - which can reduce the code and improve the performance.\nThese two features are one of the things that make C++ stand out from other \n  programming languages, like Python and Java.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string food = \"Pizza\";\n  cout << &food; // Outputs 0x6dfed4"
+            }
+        ],
+        "tables": []
+    }
+]

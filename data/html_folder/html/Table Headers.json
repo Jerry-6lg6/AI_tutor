@@ -1,0 +1,80 @@
+[
+    {
+        "title": "HTML Table Headers",
+        "text": [
+            "Table headers are defined with th elements. \nEach th element represents a table cell.",
+            "Example\n\n  <table>  <tr>    <th>Firstname</th>    \n  <th>Lastname</th>    <th>Age</th>  </tr>  \n  <tr>    <td>Jill</td>    <td>Smith</td>    \n  <td>50</td>  </tr>  <tr>    <td>Eve</td>    \n  <td>Jackson</td>    <td>94</td>  </tr></table>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table>  <tr>    <th>Firstname</th>    \n  <th>Lastname</th>    <th>Age</th>  </tr>  \n  <tr>    <td>Jill</td>    <td>Smith</td>    \n  <td>50</td>  </tr>  <tr>    <td>Eve</td>    \n  <td>Jackson</td>    <td>94</td>  </tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Vertical Table Headers",
+        "text": [
+            "To use the first column as table headers, define the first cell in each row as a \n<th> element:",
+            "Example\n\n  <table>  <tr>    <th>Firstname</th>    \n  <td>Jill</td>    <td>Eve</td>  </tr>  \n  <tr>    \n  <th>Lastname</th>    <td>Smith</td>    \n  <td>Jackson</td>  </tr>  <tr>    <th>Age</th>    <td>94</td>    \n  <td>50</td>  </tr></table>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table>  <tr>    <th>Firstname</th>    \n  <td>Jill</td>    <td>Eve</td>  </tr>  \n  <tr>    \n  <th>Lastname</th>    <td>Smith</td>    \n  <td>Jackson</td>  </tr>  <tr>    <th>Age</th>    <td>94</td>    \n  <td>50</td>  </tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Align Table Headers",
+        "text": [
+            "By default, table headers are bold and centered:",
+            "To left-align the table headers, use the CSS text-align property:",
+            "Example\n\nth {  text-align: left;\n}\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "th {  text-align: left;\n}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Header for Multiple Columns",
+        "text": [
+            "You can have a header that spans over two or more columns.",
+            "To do this, use the colspan attribute on the \n<th> element:",
+            "Example\n\n  <table>  <tr>    <th colspan=\"2\">Name</th>    <th>Age</th>  </tr>  \n  <tr>    <td>Jill</td>    <td>Smith</td>    \n  <td>50</td>  </tr>  <tr>    <td>Eve</td>    \n  <td>Jackson</td>    <td>94</td>  </tr></table>\nTry it Yourself »",
+            "You will learn more about colspan and rowspan in the Table colspan & rowspan chapter."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table>  <tr>    <th colspan=\"2\">Name</th>    <th>Age</th>  </tr>  \n  <tr>    <td>Jill</td>    <td>Smith</td>    \n  <td>50</td>  </tr>  <tr>    <td>Eve</td>    \n  <td>Jackson</td>    <td>94</td>  </tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Table Caption",
+        "text": [
+            "You can add a caption that serves as a heading for the entire table.",
+            "To add a caption to a table, use the <caption> tag:",
+            "Example\n\n <table style=\"width:100%\">  <caption>Monthly savings</caption>  <tr>    <th>Month</th>    <th>Savings</th>  </tr>  <tr>    <td>January</td>    <td>$100</td>  </tr>  <tr>    <td>February</td>    <td>$50</td>  </tr>\n </table>\nTry it Yourself »",
+            "Note: The <caption> tag \nshould be inserted immediately after the <table> tag.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table style=\"width:100%\">  <caption>Monthly savings</caption>  <tr>    <th>Month</th>    <th>Savings</th>  </tr>  <tr>    <td>January</td>    <td>$100</td>  </tr>  <tr>    <td>February</td>    <td>$50</td>  </tr>\n </table>"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "title": "NOT",
+        "text": [
+            "The NOT command is used with WHERE to only \ninclude rows where a condition is not true.",
+            "The following SQL statement selects all fields from \"Customers\" where country is NOT \"Germany\":",
+            "Example\n\n SELECT * FROM Customers\n WHERE \n  NOT Country='Germany';\n\nTry it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE \n  NOT Country='Germany';"
+            }
+        ],
+        "tables": []
+    }
+]

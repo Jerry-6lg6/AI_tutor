@@ -1,0 +1,209 @@
+[
+    {
+        "title": "The SQL BETWEEN Operator",
+        "text": [
+            "The BETWEEN operator selects values within a given range. The values can be numbers, text, or dates.",
+            "The BETWEEN operator is inclusive: begin and end values are included.",
+            "Example\nSelects all products with a price between 10 and 20:\n\n SELECT * FROM ProductsWHERE Price BETWEEN 10 AND 20;\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM ProductsWHERE Price BETWEEN 10 AND 20;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Syntax",
+        "text": [
+            "SELECT column_name(s)\nFROM table_name\nWHERE column_name BETWEEN value1 AND value2;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Products table used in the examples:",
+            "ProductID\nProductName\nSupplierID\nCategoryID\nUnit\nPrice\n\n\n1\nChais\n1\n1\n10 boxes x 20 bags\n18\n\n2\nChang\n1\n1\n24 - 12 oz bottles\n19\n\n3\nAniseed Syrup\n1\n2\n12 - 550 ml bottles\n10\n\n4\nChef Anton's Cajun Seasoning\n2\n2\n48 - 6 oz jars\n22\n\n5\nChef Anton's Gumbo Mix\n2\n2\n36 boxes\n21.35",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "ProductID": "1",
+                    "ProductName": "Chais",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "10 boxes x 20 bags",
+                    "Price": "18"
+                },
+                {
+                    "ProductID": "2",
+                    "ProductName": "Chang",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "24 - 12 oz bottles",
+                    "Price": "19"
+                },
+                {
+                    "ProductID": "3",
+                    "ProductName": "Aniseed Syrup",
+                    "SupplierID": "1",
+                    "CategoryID": "2",
+                    "Unit": "12 - 550 ml bottles",
+                    "Price": "10"
+                },
+                {
+                    "ProductID": "4",
+                    "ProductName": "Chef Anton's Cajun Seasoning",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "48 - 6 oz jars",
+                    "Price": "22"
+                },
+                {
+                    "ProductID": "5",
+                    "ProductName": "Chef Anton's Gumbo Mix",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "36 boxes",
+                    "Price": "21.35"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "NOT BETWEEN",
+        "text": [
+            "To display the products outside the range of the previous example, use \nNOT BETWEEN:",
+            "Example\n\n SELECT * FROM ProductsWHERE Price NOT BETWEEN 10 AND 20;\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM ProductsWHERE Price NOT BETWEEN 10 AND 20;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "BETWEEN with IN",
+        "text": [
+            "The following SQL statement selects all products with a price between 10 and \n20. In addition, the CategoryID must be either 1,2, or 3:",
+            "Example\n\n SELECT * FROM ProductsWHERE Price BETWEEN 10 AND 20AND CategoryID IN (1,2,3);\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM ProductsWHERE Price BETWEEN 10 AND 20AND CategoryID IN (1,2,3);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "BETWEEN Text Values",
+        "text": [
+            "The following SQL statement selects all products with a ProductName alphabetically between Carnarvon \nTigers and Mozzarella di Giovanni:",
+            "Example\n\n SELECT * FROM ProductsWHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella \n  di Giovanni'ORDER BY ProductName;\n\nTry it Yourself »",
+            "The following SQL statement selects all products with a ProductName between Carnarvon \nTigers and Chef Anton's Cajun Seasoning:",
+            "Example\n\n SELECT * FROM ProductsWHERE ProductName BETWEEN \"Carnarvon Tigers\" AND \n  \"Chef Anton's Cajun Seasoning\"ORDER BY ProductName;\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM ProductsWHERE ProductName BETWEEN 'Carnarvon Tigers' AND 'Mozzarella \n  di Giovanni'ORDER BY ProductName;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM ProductsWHERE ProductName BETWEEN \"Carnarvon Tigers\" AND \n  \"Chef Anton's Cajun Seasoning\"ORDER BY ProductName;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "NOT BETWEEN Text Values",
+        "text": [
+            "The following SQL statement selects all products with a ProductName not \nbetween Carnarvon \nTigers and Mozzarella di Giovanni:",
+            "Example\n\n SELECT * FROM ProductsWHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella \n  di Giovanni'ORDER BY ProductName;\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM ProductsWHERE ProductName NOT BETWEEN 'Carnarvon Tigers' AND 'Mozzarella \n  di Giovanni'ORDER BY ProductName;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "BETWEEN Dates",
+        "text": [
+            "The following SQL statement selects all orders with an OrderDate between '01-July-1996' and \n'31-July-1996':",
+            "Example\n\n SELECT * FROM OrdersWHERE OrderDate BETWEEN #07/01/1996# AND #07/31/1996#;\n\nTry it Yourself »",
+            "OR:",
+            "Example\n\nSELECT * FROM OrdersWHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM OrdersWHERE OrderDate BETWEEN #07/01/1996# AND #07/31/1996#;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM OrdersWHERE OrderDate BETWEEN '1996-07-01' AND '1996-07-31';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Sample Table",
+        "text": [
+            "Below is a selection from the Orders table used in the examples:",
+            "OrderID\nCustomerID\nEmployeeID\nOrderDate\nShipperID\n\n\n10248\n90\n5\n7/4/1996\n3\n\n\n10249\n81\n6\n7/5/1996\n1\n\n\n10250\n34\n4\n7/8/1996\n2\n\n\n10251\n84\n3\n7/9/1996\n1\n\n\n10252\n76\n4\n7/10/1996\n2",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "OrderID": "10248",
+                    "CustomerID": "90",
+                    "EmployeeID": "5",
+                    "OrderDate": "7/4/1996",
+                    "ShipperID": "3"
+                },
+                {
+                    "OrderID": "10249",
+                    "CustomerID": "81",
+                    "EmployeeID": "6",
+                    "OrderDate": "7/5/1996",
+                    "ShipperID": "1"
+                },
+                {
+                    "OrderID": "10250",
+                    "CustomerID": "34",
+                    "EmployeeID": "4",
+                    "OrderDate": "7/8/1996",
+                    "ShipperID": "2"
+                },
+                {
+                    "OrderID": "10251",
+                    "CustomerID": "84",
+                    "EmployeeID": "3",
+                    "OrderDate": "7/9/1996",
+                    "ShipperID": "1"
+                },
+                {
+                    "OrderID": "10252",
+                    "CustomerID": "76",
+                    "EmployeeID": "4",
+                    "OrderDate": "7/10/1996",
+                    "ShipperID": "2"
+                }
+            ]
+        ]
+    }
+]

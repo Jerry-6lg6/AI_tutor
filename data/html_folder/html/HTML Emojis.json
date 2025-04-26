@@ -1,0 +1,76 @@
+[
+    {
+        "title": "HTML Emojis Examples",
+        "text": [
+            "🚀🚁🚂🚃🚄",
+            "HTML Emoji Transport Symbols",
+            "💺💻💼💽💾",
+            "HTML Emoji Office Symbols",
+            "👮👯👰👱👲",
+            "HTML Emoji People Symbols",
+            "🐂🐃🐄🐅🐆",
+            "HTML Emoji Animals Symbols"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "What are Emojis?",
+        "text": [
+            "Emojis look like images, or icons, but they are not.",
+            "They are letters (characters) from the UTF-8 (Unicode) character set.",
+            "UTF-8 covers almost all of the characters and symbols in the world."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The HTML charset Attribute",
+        "text": [
+            "To display an HTML page correctly, a web browser must know the character set used in the page.",
+            "This is specified in the <meta> tag:",
+            "<meta charset=\"UTF-8\">",
+            "If not specified, UTF-8 is the default character set in HTML."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "UTF-8 Characters",
+        "text": [
+            "Many UTF-8 characters cannot be typed on a keyboard,\nbut they can always be displayed using numbers (called entity numbers):",
+            "The <meta charset=\"UTF-8\"> element defines the character set.",
+            "The characters A, B, and C, are displayed by the numbers 65, 66, and 67.",
+            "To let the browser understand that you are displaying a character, you must start the entity number\nwith &# and end it with ; (semicolon).",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html>\n<html>\n<meta charset=\"UTF-8\">\n<body>\n<p>I will display A B C</p>\n<p>I will display &#65; &#66; &#67;</p>\n</body>\n</html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Emoji Characters",
+        "text": [
+            "Emojis are also characters from the UTF-8 alphabet:",
+            "Example\n\n<!DOCTYPE html>\n<html>\n<meta charset=\"UTF-8\">\n<body>\n<h1>My First Emoji</h1>\n<p>&#128512;</p>\n</body></html>\n\nTry it Yourself »",
+            "Since Emojis are characters, they can be copied, displayed,\nand sized just like any other character in HTML.",
+            "Example\n\n<!DOCTYPE html>\n<html>\n<meta charset=\"UTF-8\">\n<body>\n<h1>Sized Emojis</h1>\n  <p style=\"font-size:48px\">&#128512; &#128516; &#128525; &#128151;</p>\n</body></html>\n\nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html>\n<html>\n<meta charset=\"UTF-8\">\n<body>\n<h1>My First Emoji</h1>\n<p>&#128512;</p>\n</body></html>"
+            },
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html>\n<html>\n<meta charset=\"UTF-8\">\n<body>\n<h1>Sized Emojis</h1>\n  <p style=\"font-size:48px\">&#128512; &#128516; &#128525; &#128151;</p>\n</body></html>"
+            }
+        ],
+        "tables": []
+    }
+]

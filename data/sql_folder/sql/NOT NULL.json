@@ -1,0 +1,20 @@
+[
+    {
+        "title": "NOT NULL",
+        "text": [
+            "The NOT NULL constraint enforces a column to \nnot accept NULL values, which means that you cannot insert or update a record without adding a value to this field.",
+            "The following SQL ensures that the \"ID\", \"LastName\", and \n\"FirstName\" columns \nwill NOT accept NULL values:",
+            "Example\n\n  CREATE TABLE Persons (    ID int NOT NULL,    \n  LastName varchar(255) NOT NULL,    FirstName varchar(255) \n  NOT NULL,    Age int);",
+            "The following SQL creates a NOT NULL constraint on the \"Age\" column when the \"Persons\" table is already created:",
+            "ALTER TABLE Persons\nMODIFY Age int NOT NULL;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE TABLE Persons (    ID int NOT NULL,    \n  LastName varchar(255) NOT NULL,    FirstName varchar(255) \n  NOT NULL,    Age int);"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "title": "String Length",
+        "text": [
+            "To get the length of a string, use the length() function:",
+            "Example\n\n  string txt = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";cout << \"The length of the txt \n  string is: \" << txt.length();\nTry it Yourself »",
+            "Tip: You might see some C++ programs that use the size() function to get the length of a string. This is \njust an alias of length(). It is completely up to you if you want to use length() or size():",
+            "Example\n\n  string txt = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";cout << \"The length of the txt \n  string is: \" << txt.size();\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string txt = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";cout << \"The length of the txt \n  string is: \" << txt.length();"
+            },
+            {
+                "heading": "Example",
+                "code": "string txt = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";cout << \"The length of the txt \n  string is: \" << txt.size();"
+            }
+        ],
+        "tables": []
+    }
+]

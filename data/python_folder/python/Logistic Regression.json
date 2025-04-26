@@ -1,0 +1,98 @@
+[
+    {
+        "title": "Logistic Regression",
+        "text": [
+            "Logistic regression aims to solve classification problems. It does this by predicting categorical outcomes, unlike linear regression that predicts a continuous outcome.",
+            "In the simplest case there are two outcomes, which is called binomial, an example of which is predicting if a tumor is malignant or benign. Other cases have more than two outcomes to classify, in this case it is called multinomial. A common example for multinomial logistic regression would be predicting the class of an iris flower between 3 different species.",
+            "Here we will be using basic logistic regression to predict a binomial variable. This means it has only two possible outcomes."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "How does it work?",
+        "text": [
+            "In Python we have modules that will do the work for us. Start by importing the NumPy module.",
+            "import numpy",
+            "Store the independent variables in X.",
+            "Store the dependent variable in y.",
+            "Below is a sample dataset:",
+            "#X represents the size of a tumor in centimeters.\nX = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)\n#Note: X has to be reshaped into a column from a row for the LogisticRegression() function to work.\n\n#y represents whether or not the tumor is cancerous (0 for \"No\", 1 for \"Yes\").\ny = numpy.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])",
+            "We will use a method from the sklearn module, so we will have to import that module as well:",
+            "from sklearn import linear_model",
+            "From the sklearn module we will use the LogisticRegression() method to create a logistic regression object.",
+            "This object has a method called fit() that takes the independent and dependent values as parameters and fills the regression object with data that describes the relationship:",
+            "logr = linear_model.LogisticRegression()\nlogr.fit(X,y)",
+            "Now we have a logistic regression object that is ready to whether a tumor is cancerous based on the tumor size:",
+            "#predict if tumor is cancerous where the size is 3.46mm:\npredicted = logr.predict(numpy.array([3.46]).reshape(-1,1))",
+            "Example\nSee the whole example in action:\n\nimport numpy\nfrom sklearn import linear_model\n\n#Reshaped for Logistic function.\nX = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)\ny = numpy.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])\n\nlogr = linear_model.LogisticRegression()\nlogr.fit(X,y)\n\n#predict if tumor is cancerous where the size is 3.46mm:\npredicted = logr.predict(numpy.array([3.46]).reshape(-1,1))\nprint(predicted)\nResult\n\n\n [0]\n \n\nRun example »",
+            "We have predicted that a tumor with a size of 3.46mm will not be cancerous.",
+            "ADVERTISEMENT",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import numpy\nfrom sklearn import linear_model\n\n#Reshaped for Logistic function.\nX = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)\ny = numpy.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])\n\nlogr = linear_model.LogisticRegression()\nlogr.fit(X,y)\n\n#predict if tumor is cancerous where the size is 3.46mm:\npredicted = logr.predict(numpy.array([3.46]).reshape(-1,1))\nprint(predicted)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Coefficient",
+        "text": [
+            "In logistic regression the coefficient is the expected change in log-odds of having the outcome per unit change in X.",
+            "This does not have the most intuitive understanding so let's use it to create something that makes more sense, odds.",
+            "Example\nSee the whole example in action:\n\nimport numpy\nfrom sklearn import linear_model\n\n#Reshaped for Logistic function.\nX = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)\ny = numpy.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])\n\nlogr = linear_model.LogisticRegression()\nlogr.fit(X,y)\n\nlog_odds = logr.coef_ \nodds = numpy.exp(log_odds)\n\nprint(odds)\nResult\n\n\n [4.03541657]\n \n\nRun example »",
+            "This tells us that as the size of a tumor increases by 1mm the odds of it being a \ncancerous tumor increases by 4x."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import numpy\nfrom sklearn import linear_model\n\n#Reshaped for Logistic function.\nX = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)\ny = numpy.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])\n\nlogr = linear_model.LogisticRegression()\nlogr.fit(X,y)\n\nlog_odds = logr.coef_ \nodds = numpy.exp(log_odds)\n\nprint(odds)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Probability",
+        "text": [
+            "The coefficient and intercept values can be used to find the probability that each tumor is cancerous.",
+            "Create a function that uses the model's coefficient and intercept values to return a new value. This new value represents probability that the given observation is a tumor:",
+            "def logit2prob(logr,x):\n     \n    log_odds = logr.coef_ * x + logr.intercept_\n     \n    odds = numpy.exp(log_odds)\n     \n    probability = odds / (1 + odds)\n     \n    return(probability)"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Function Explained",
+        "text": [
+            "To find the log-odds for each observation, we must first create a formula that looks similar to the one from linear regression, extracting the coefficient and the intercept.",
+            "log_odds = logr.coef_ * x + logr.intercept_",
+            "To then convert the log-odds to odds we must exponentiate the log-odds.",
+            "odds = numpy.exp(log_odds)",
+            "Now that we have the odds, we can convert it to probability by dividing it by 1 plus the odds.",
+            "probability = odds / (1 + odds)",
+            "Let us now use the function with what we have learned to find out the probability that each tumor is cancerous.",
+            "Example\nSee the whole example in action:\n\nimport numpy\nfrom sklearn import linear_model\n\nX = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)\ny = numpy.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])\n\nlogr = linear_model.LogisticRegression()\nlogr.fit(X,y)\n\ndef logit2prob(logr, X):\n     \n    log_odds = logr.coef_ * X + logr.intercept_\n     \n    odds = numpy.exp(log_odds)\n     \n    probability = odds / (1 + odds)\n     \n    return(probability)\n\nprint(logit2prob(logr, X))\nResult\n\n\n\n  [[0.60749955]\n   [0.19268876]\n   [0.12775886]\n   [0.00955221]\n   [0.08038616]\n   [0.07345637]\n   [0.88362743]\n   [0.77901378]\n   [0.88924409]\n   [0.81293497]\n   [0.57719129]\n   [0.96664243]]\n   \n\n\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import numpy\nfrom sklearn import linear_model\n\nX = numpy.array([3.78, 2.44, 2.09, 0.14, 1.72, 1.65, 4.92, 4.37, 4.96, 4.52, 3.69, 5.88]).reshape(-1,1)\ny = numpy.array([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1])\n\nlogr = linear_model.LogisticRegression()\nlogr.fit(X,y)\n\ndef logit2prob(logr, X):\n     \n    log_odds = logr.coef_ * X + logr.intercept_\n     \n    odds = numpy.exp(log_odds)\n     \n    probability = odds / (1 + odds)\n     \n    return(probability)\n\nprint(logit2prob(logr, X))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Results Explained",
+        "text": [
+            "3.78 0.61 The probability that a tumor with the size 3.78cm is cancerous is 61%.",
+            "2.44 0.19 The probability that a tumor with the size 2.44cm is cancerous is 19%.",
+            "2.09 0.13 The probability that a tumor with the size 2.09cm is cancerous is 13%.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

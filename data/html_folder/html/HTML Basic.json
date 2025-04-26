@@ -1,0 +1,104 @@
+[
+    {
+        "title": "HTML Documents",
+        "text": [
+            "All HTML documents must start with a document type declaration: <!DOCTYPE html>.",
+            "The HTML document itself begins with <html> and ends with </html>.",
+            "The visible part of the HTML document is between <body> and </body>.",
+            "Example\n\n<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <!DOCTYPE> Declaration",
+        "text": [
+            "The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.",
+            "It must only appear once, at the top of the page (before any HTML tags).",
+            "The <!DOCTYPE> declaration is not case sensitive.",
+            "The <!DOCTYPE> declaration for HTML5 is:",
+            "<!DOCTYPE html>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Headings",
+        "text": [
+            "HTML headings are defined with the <h1> to <h6> tags.",
+            "<h1> defines the most important heading. <h6> defines the least important \nheading:",
+            "Example\n\n<h1>This is heading 1</h1>\n<h2>This is heading 2</h2>\n<h3>This is heading 3</h3>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1>This is heading 1</h1>\n<h2>This is heading 2</h2>\n<h3>This is heading 3</h3>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Paragraphs",
+        "text": [
+            "HTML paragraphs are defined with the <p> tag:",
+            "Example\n\n<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Links",
+        "text": [
+            "HTML links are defined with the <a> tag:",
+            "Example\n\n<a href=\"https://www.w3schools.com\">This is a link</a>\n\nTry it Yourself »",
+            "The link's destination is specified in the href attribute.",
+            "Attributes are used to provide additional information about HTML elements.",
+            "You will learn more about attributes in a later chapter."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<a href=\"https://www.w3schools.com\">This is a link</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Images",
+        "text": [
+            "HTML images are defined with the <img> tag.",
+            "The source file (src), alternative text (alt), \nwidth, and height are provided as attributes:",
+            "Example\n\n<img src=\"w3schools.jpg\" alt=\"W3Schools.com\" width=\"104\" height=\"142\">\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<img src=\"w3schools.jpg\" alt=\"W3Schools.com\" width=\"104\" height=\"142\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "How to View HTML Source",
+        "text": [
+            "Have you ever seen a Web page and wondered \"Hey! How did they do that?\"",
+            "Click CTRL + U in an HTML page, or right-click on the page and select \"View Page Source\". This will open a \nnew tab \ncontaining the HTML source code of the page.",
+            "Right-click on an element (or a blank area), and choose \"Inspect\" to see what elements are made up of (you will see both \nthe HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the \nElements or Styles panel that opens.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

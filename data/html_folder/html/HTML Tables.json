@@ -1,0 +1,76 @@
+[
+    {
+        "title": "Define an HTML Table",
+        "text": [
+            "A table in HTML consists of table cells inside rows and columns.",
+            "Example\nA simple HTML table:\n\n<table> \n<tr>    <th>Company</th>\n    <th>Contact</th>     <th>Country</th>\n \n</tr> \n<tr>    <td>Alfreds Futterkiste</td>\n    <td>Maria \n  Anders</td>     <td>Germany</td>\n \n</tr>  <tr>    <td>Centro \n  comercial Moctezuma</td>\n    <td>Francisco \n  Chang</td>     <td>Mexico</td>\n  </tr></table>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table> \n<tr>    <th>Company</th>\n    <th>Contact</th>     <th>Country</th>\n \n</tr> \n<tr>    <td>Alfreds Futterkiste</td>\n    <td>Maria \n  Anders</td>     <td>Germany</td>\n \n</tr>  <tr>    <td>Centro \n  comercial Moctezuma</td>\n    <td>Francisco \n  Chang</td>     <td>Mexico</td>\n  </tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Table Cells",
+        "text": [
+            "Each table cell is defined by a\n<td> and a </td> tag.",
+            "td \nstands for table data.",
+            "Everything between <td> and </td> \nis the content of a table cell.",
+            "Example\n\n<table> \n<tr>    <td>Emil</td>\n    <td>Tobias</td>     <td>Linus</td>\n \n</tr></table>\n\nTry it Yourself »",
+            "Note: A table cell can contain \nall sorts of HTML elements: text, images, lists, links, other tables, etc.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table> \n<tr>    <td>Emil</td>\n    <td>Tobias</td>     <td>Linus</td>\n \n</tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Table Rows",
+        "text": [
+            "Each table row starts with a \n<tr> and ends with a </tr> tag.",
+            "tr \nstands for table row.",
+            "Example\n\n<table> \n<tr>    <td>Emil</td>\n    <td>Tobias</td>     <td>Linus</td>\n \n</tr> \n<tr>    <td>16</td>\n    <td>14</td>     <td>10</td>\n \n</tr></table>\n\nTry it Yourself »",
+            "You can have as many rows as you like in a table; just make sure that the number of cells are the same in each row.",
+            "Note: There are times when a row can have less or more cells than another. You will learn about that in a later chapter."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table> \n<tr>    <td>Emil</td>\n    <td>Tobias</td>     <td>Linus</td>\n \n</tr> \n<tr>    <td>16</td>\n    <td>14</td>     <td>10</td>\n \n</tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Table Headers",
+        "text": [
+            "Sometimes you want your cells to be table header cells. In those cases use the\n<th> tag instead of the\n<td> tag:",
+            "th \nstands for table header.",
+            "Example\nLet the first row be table header cells:\n\n<table> \n<tr>    <th>Person 1</th>\n    <th>Person 2</th>     <th>Person \n  3</th>\n \n</tr> \n<tr>    <td>Emil</td>\n    <td>Tobias</td>     <td>Linus</td>\n \n</tr> \n<tr>    <td>16</td>\n    <td>14</td>     <td>10</td>\n \n</tr></table>\n\nTry it Yourself »",
+            "By default, the text in <th> elements \nare bold and centered, but you can change that with CSS.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table> \n<tr>    <th>Person 1</th>\n    <th>Person 2</th>     <th>Person \n  3</th>\n \n</tr> \n<tr>    <td>Emil</td>\n    <td>Tobias</td>     <td>Linus</td>\n \n</tr> \n<tr>    <td>16</td>\n    <td>14</td>     <td>10</td>\n \n</tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Table Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

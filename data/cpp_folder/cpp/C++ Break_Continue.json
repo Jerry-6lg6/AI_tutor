@@ -1,0 +1,55 @@
+[
+    {
+        "title": "C++ Break",
+        "text": [
+            "You have already seen the break statement used in an earlier chapter of this tutorial. It was used to \"jump out\" of a switch statement.",
+            "The break statement can also be used to jump out of a \nloop.",
+            "This example jumps out of the loop when i is equal to 4:",
+            "Example\n\n  for (int i = 0; i < 10; i++) {  if (i == 4) {    \n  break;  }  cout << i << \"\\n\";} \n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for (int i = 0; i < 10; i++) {  if (i == 4) {    \n  break;  }  cout << i << \"\\n\";}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "C++ Continue",
+        "text": [
+            "The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.",
+            "This example skips the value of 4:",
+            "Example\n\n  for (int i = 0; i < 10; i++) {  if (i == 4) {    \n  continue;  }  cout << i << \"\\n\";} \n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for (int i = 0; i < 10; i++) {  if (i == 4) {    \n  continue;  }  cout << i << \"\\n\";}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Break and Continue in While Loop",
+        "text": [
+            "You can also use break and continue in while loops:",
+            "Break Example\n\n  int i = 0;while (i < 10) {  cout << i << \"\\n\";  i++;\n    if (i == 4) {    break;  \n  }} \n\nTry it Yourself »",
+            "Continue Example\n\n  int i = 0;while (i < 10) {  if (i == 4) {    i++;    continue;\n    }  cout << i << \"\\n\";  i++;} \n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Break Example",
+                "code": "int i = 0;while (i < 10) {  cout << i << \"\\n\";  i++;\n    if (i == 4) {    break;  \n  }}"
+            },
+            {
+                "heading": "Continue Example",
+                "code": "int i = 0;while (i < 10) {  if (i == 4) {    i++;    continue;\n    }  cout << i << \"\\n\";  i++;}"
+            }
+        ],
+        "tables": []
+    }
+]

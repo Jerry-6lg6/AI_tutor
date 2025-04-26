@@ -1,0 +1,26 @@
+[
+    {
+        "title": "DELETE",
+        "text": [
+            "The DELETE command is used to delete \nexisting records in a table.",
+            "The following SQL statement deletes the customer \"Alfreds Futterkiste\" from \nthe \"Customers\" table:",
+            "Example\n\n DELETE FROM Customers\n WHERE CustomerName='Alfreds Futterkiste';",
+            "Note: Be careful when deleting records in a table! Notice the WHERE clause in the \nDELETE statement.\nThe WHERE clause specifies which record(s) should be deleted. If \nyou omit the WHERE clause, all records in the table will be deleted!",
+            "It is possible to delete all rows in a table without deleting the table. This \nmeans that the table structure, attributes, and indexes will be intact:",
+            "The following SQL statement deletes all rows in the \"Customers\" table, \nwithout deleting the table. This means that the table structure, attributes, and \nindexes will be intact:",
+            "Example\n\n  DELETE FROM Customers;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DELETE FROM Customers\n WHERE CustomerName='Alfreds Futterkiste';"
+            },
+            {
+                "heading": "Example",
+                "code": "DELETE FROM Customers;"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,193 @@
+[
+    {
+        "title": "What is Responsive Web Design?",
+        "text": [
+            "Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge,\na website, to make it look good on all devices (desktops, tablets, and phones):",
+            "Try it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Setting The Viewport",
+        "text": [
+            "To create a responsive website, add the following <meta> \ntag to all your web pages:",
+            "Example\n\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n\nTry it Yourself »",
+            "This will set the viewport of your page, which will give the browser instructions on how \nto control the page's dimensions and scaling.",
+            "Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:",
+            "Without the viewport meta tag:\n\n\n\n    With the viewport meta tag:",
+            "Tip: If you are browsing this page on a phone or a tablet, you can click on the two links above to see the difference.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Responsive Images",
+        "text": [
+            "Responsive images are images that scale nicely to fit any browser size.",
+            "If the CSS width property is set to 100%, the image will be responsive and scale \nup and down:",
+            "Example\n\n<img \n  src=\"img_girl.jpg\" style=\"width:100%;\">\n\nTry it Yourself »",
+            "Notice that in the example above, the image can be scaled up to be larger than its original size.\nA better solution, in many cases, will be to use the max-width property instead."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<img \n  src=\"img_girl.jpg\" style=\"width:100%;\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using the max-width Property",
+        "text": [
+            "If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:",
+            "Example\n\n<img \n  src=\"img_girl.jpg\" style=\"max-width:100%;height:auto;\">\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<img \n  src=\"img_girl.jpg\" style=\"max-width:100%;height:auto;\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Show Different Images Depending on Browser Width",
+        "text": [
+            "The HTML <picture> element allows you to define different images for \ndifferent browser window sizes.",
+            "Resize the browser window to see how the image below changes depending on the width:",
+            "Example\n\n  <picture>  <source srcset=\"img_smallflower.jpg\" media=\"(max-width: \n  600px)\">  <source srcset=\"img_flowers.jpg\" media=\"(max-width: \n  1500px)\">  <source srcset=\"flowers.jpg\">  <img src=\"img_smallflower.jpg\" \n  alt=\"Flowers\"></picture>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<picture>  <source srcset=\"img_smallflower.jpg\" media=\"(max-width: \n  600px)\">  <source srcset=\"img_flowers.jpg\" media=\"(max-width: \n  1500px)\">  <source srcset=\"flowers.jpg\">  <img src=\"img_smallflower.jpg\" \n  alt=\"Flowers\"></picture>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Responsive Text Size",
+        "text": [
+            "The text size can be set with a \"vw\" unit, which means the \"viewport width\".",
+            "That way the text size will follow the size of the browser window:",
+            "Hello World\nResize the browser window to see how the text size scales.",
+            "Example\n\n<h1 style=\"font-size:10vw\">Hello World</h1>\n\nTry it Yourself »",
+            "Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"font-size:10vw\">Hello World</h1>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Media Queries",
+        "text": [
+            "In addition to resize text and images, it is also common to use media queries \nin responsive web pages.",
+            "With media queries you can define completely different styles for different browser \nsizes.",
+            "Example: resize the browser window to see that the three div elements below will display \nhorizontally on large screens and stack vertically on small screens:",
+            "Left Menu\n\n\nMain Content\n\n\nRight Content",
+            "Example\n\n  <style>.left, .right {  float: left;  \n  width: 20%; /* The width is 20%, by default */}.main {  float: left;  width: 60%; /* The width is 60%, by default */}/* Use a media query to \n  add a breakpoint at 800px: */@media screen and (max-width: 800px) {  .left, \n  .main, .right {    \n  width: 100%; /* The width is 100%, when the viewport is 800px or smaller */  \n  }}</style>\n\nTry it Yourself »",
+            "Tip: To learn more about Media Queries and Responsive Web Design, read our RWD Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>.left, .right {  float: left;  \n  width: 20%; /* The width is 20%, by default */}.main {  float: left;  width: 60%; /* The width is 60%, by default */}/* Use a media query to \n  add a breakpoint at 800px: */@media screen and (max-width: 800px) {  .left, \n  .main, .right {    \n  width: 100%; /* The width is 100%, when the viewport is 800px or smaller */  \n  }}</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Responsive Web Page - Full Example",
+        "text": [
+            "A responsive web page should look good on large desktop screens and on small mobile phones.",
+            "",
+            "Try it Yourself »",
+            "Ever heard about W3Schools Spaces? Here you can create your website from scratch or use a template, and host it for free.\nGet started for free ❯\n* no credit card required"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Responsive Web Design - Frameworks",
+        "text": [
+            "All popular CSS Frameworks offer responsive design.",
+            "They are free, and easy to use."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "W3.CSS",
+        "text": [
+            "W3.CSS is a modern CSS framework with support for desktop, tablet, and mobile \ndesign by default.",
+            "W3.CSS is smaller and faster than similar CSS frameworks.",
+            "W3.CSS is designed to be independent of jQuery or any other JavaScript library.",
+            "W3.CSS Demo\nResize the page to see the responsiveness!",
+            "London\nLondon is the capital city of England.\nIt is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants.\n\n\nParis\nParis is the capital of France.\nThe Paris area is one of the largest population centers in Europe,\nwith more than 12 million inhabitants.\n\n\nTokyo\nTokyo is the capital of Japan.\nIt is the center of the Greater Tokyo Area,\nand the most populous metropolitan area in the world.",
+            "Example\n\n <!DOCTYPE html><html><head><title>W3.CSS</title><meta name=\"viewport\" \n content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" \n href=\"https://www.w3schools.com/w3css/4/w3.css\"></head><body><div \n class=\"w3-container w3-green\">  <h1>W3Schools Demo</h1>   \n <p>Resize this responsive page!</p> </div><div \n class=\"w3-row-padding\">  <div class=\"w3-third\">    <h2>London</h2>    <p>London is the capital city of England.</p>    <p>It is the most populous city in the United Kingdom,    with a \n metropolitan area of over 13 million inhabitants.</p>  </div>  <div \n class=\"w3-third\">    <h2>Paris</h2>    <p>Paris is \n the capital of France.</p>     <p>The Paris area is one of the largest \n population centers in Europe,    with more than 12 million \n inhabitants.</p>  </div>  <div class=\"w3-third\">    \n <h2>Tokyo</h2>    <p>Tokyo is the capital of Japan.</p>    <p>It \n is the center of the Greater Tokyo Area,    and the most populous \n metropolitan area in the world.</p>  </div></div></body>\n </html>\nTry it Yourself »",
+            "To learn more about W3.CSS, read our W3.CSS Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html><head><title>W3.CSS</title><meta name=\"viewport\" \n content=\"width=device-width, initial-scale=1\"><link rel=\"stylesheet\" \n href=\"https://www.w3schools.com/w3css/4/w3.css\"></head><body><div \n class=\"w3-container w3-green\">  <h1>W3Schools Demo</h1>   \n <p>Resize this responsive page!</p> </div><div \n class=\"w3-row-padding\">  <div class=\"w3-third\">    <h2>London</h2>    <p>London is the capital city of England.</p>    <p>It is the most populous city in the United Kingdom,    with a \n metropolitan area of over 13 million inhabitants.</p>  </div>  <div \n class=\"w3-third\">    <h2>Paris</h2>    <p>Paris is \n the capital of France.</p>     <p>The Paris area is one of the largest \n population centers in Europe,    with more than 12 million \n inhabitants.</p>  </div>  <div class=\"w3-third\">    \n <h2>Tokyo</h2>    <p>Tokyo is the capital of Japan.</p>    <p>It \n is the center of the Greater Tokyo Area,    and the most populous \n metropolitan area in the world.</p>  </div></div></body>\n </html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "London",
+        "text": [
+            "London is the capital city of England.",
+            "It is the most populous city in the United Kingdom,\nwith a metropolitan area of over 13 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Paris",
+        "text": [
+            "Paris is the capital of France.",
+            "The Paris area is one of the largest population centers in Europe,\nwith more than 12 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Tokyo",
+        "text": [
+            "Tokyo is the capital of Japan.",
+            "It is the center of the Greater Tokyo Area,\nand the most populous metropolitan area in the world."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Bootstrap",
+        "text": [
+            "Another popular CSS framework is Bootstrap:",
+            "Example\n\n  <!DOCTYPE html><html lang=\"en\"><head><title>Bootstrap 5 \n  Example</title><meta charset=\"utf-8\"><meta name=\"viewport\" \n  content=\"width=device-width, initial-scale=1\"><link \n  href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css\" \n  rel=\"stylesheet\"><script \n  src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js\"></script>\n  </head><body><div class=\"container-fluid p-5 bg-primary text-white \n  text-center\">  <h1>My First Bootstrap Page</h1>  <p>Resize \n  this responsive page to see the effect!</p> </div><div \n  class=\"container mt-5\">  <div class=\"row\">    <div \n  class=\"col-sm-4\">      <h3>Column 1</h3>      \n  <p>Lorem ipsum...</p>    </div>    <div \n  class=\"col-sm-4\">      <h3>Column 2</h3>      \n  <p>Lorem ipsum...</p>    </div>    <div \n  class=\"col-sm-4\">      <h3>Column 3</h3>       \n  <p>Lorem ipsum...</p>    </div>  </div></div>\nTry it Yourself »",
+            "To learn more about Bootstrap, go to our Bootstrap Tutorial.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html lang=\"en\"><head><title>Bootstrap 5 \n  Example</title><meta charset=\"utf-8\"><meta name=\"viewport\" \n  content=\"width=device-width, initial-scale=1\"><link \n  href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css\" \n  rel=\"stylesheet\"><script \n  src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js\"></script>\n  </head><body><div class=\"container-fluid p-5 bg-primary text-white \n  text-center\">  <h1>My First Bootstrap Page</h1>  <p>Resize \n  this responsive page to see the effect!</p> </div><div \n  class=\"container mt-5\">  <div class=\"row\">    <div \n  class=\"col-sm-4\">      <h3>Column 1</h3>      \n  <p>Lorem ipsum...</p>    </div>    <div \n  class=\"col-sm-4\">      <h3>Column 2</h3>      \n  <p>Lorem ipsum...</p>    </div>    <div \n  class=\"col-sm-4\">      <h3>Column 3</h3>       \n  <p>Lorem ipsum...</p>    </div>  </div></div>"
+            }
+        ],
+        "tables": []
+    }
+]

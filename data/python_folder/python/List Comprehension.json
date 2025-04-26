@@ -1,0 +1,83 @@
+[
+    {
+        "title": "List Comprehension",
+        "text": [
+            "List comprehension offers a shorter syntax when you want to create a new list based on the values of an \nexisting list.",
+            "Example:",
+            "Based on a list of fruits, you want a new list, containing only the fruits \nwith the letter \"a\" in the name.",
+            "Without list comprehension you will have to write a for statement \nwith a conditional test inside:",
+            "Example\n\n  fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\", \"mango\"]newlist = []\nfor x in fruits:  if \"a\" in x:    \n  newlist.append(x)print(newlist)\nTry it Yourself »",
+            "With list comprehension you can do all that with only one line of code:",
+            "Example\n\n  fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\", \"mango\"]newlist = [x \n  for x in fruits if \"a\" in x]print(newlist)\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\", \"mango\"]newlist = []\nfor x in fruits:  if \"a\" in x:    \n  newlist.append(x)print(newlist)"
+            },
+            {
+                "heading": "Example",
+                "code": "fruits = [\"apple\", \"banana\", \"cherry\", \"kiwi\", \"mango\"]newlist = [x \n  for x in fruits if \"a\" in x]print(newlist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Syntax",
+        "text": [
+            "newlist = [expression for item in iterable if condition == True]",
+            "The return value is a new list, leaving the old list unchanged.",
+            "The condition is like a filter that only accepts the items that evaluate to \nTrue.",
+            "Example\nOnly accept items that are not \"apple\":\n\n  newlist = [x for x in fruits if x != \"apple\"]\nTry it Yourself »",
+            "The condition\nif x != \"apple\"\n will return True for all elements other \nthan \"apple\", making the new list contain all fruits except \"apple\".",
+            "The condition is optional and can be omitted:",
+            "Example\nWith no if statement:\n\n  newlist = [x for x in fruits]\nTry it Yourself »",
+            "The iterable can be any iterable object, like a list, tuple, set etc.",
+            "Example\nYou can use the range() function to create an iterable:\n\n  newlist = [x for x in range(10)]\nTry it Yourself »",
+            "Same example, but with a condition:",
+            "Example\nAccept only numbers lower than 5:\n\n  newlist = [x for x in range(10) if x < 5]\nTry it Yourself »",
+            "The expression is the current item in the iteration, but it is also the \noutcome, which you can manipulate before it ends up like a list item in the new \nlist:",
+            "Example\nSet the values in the new list to upper case:\n\n  newlist = [x.upper() \n  for x in fruits]\nTry it Yourself »",
+            "You can set the outcome to whatever you like:",
+            "Example\nSet all values in the new list to 'hello':\n\nnewlist = ['hello' for x in fruits]\nTry it Yourself »",
+            "The expression can also contain conditions, not like a filter, but as a \nway to manipulate the outcome:",
+            "Example\nReturn \"orange\" instead of \"banana\":\n\n  newlist = [x if x != \"banana\" else \"orange\" \n  for x in fruits]\nTry it Yourself »",
+            "The expression in the example above says:",
+            "\"Return the item if it is not banana, if it is banana return orange\".",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "newlist = [x for x in fruits if x != \"apple\"]"
+            },
+            {
+                "heading": "Example",
+                "code": "newlist = [x for x in fruits]"
+            },
+            {
+                "heading": "Example",
+                "code": "newlist = [x for x in range(10)]"
+            },
+            {
+                "heading": "Example",
+                "code": "newlist = [x for x in range(10) if x < 5]"
+            },
+            {
+                "heading": "Example",
+                "code": "newlist = [x.upper() \n  for x in fruits]"
+            },
+            {
+                "heading": "Example",
+                "code": "newlist = ['hello' for x in fruits]"
+            },
+            {
+                "heading": "Example",
+                "code": "newlist = [x if x != \"banana\" else \"orange\" \n  for x in fruits]"
+            }
+        ],
+        "tables": []
+    }
+]

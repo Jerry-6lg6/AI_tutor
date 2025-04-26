@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Creating References",
+        "text": [
+            "A reference variable is a \"reference\" to an existing variable, and \nit is created with the & operator:",
+            "string food = \"Pizza\";  // food variablestring &meal = food;    \n  // reference to food",
+            "Now, we can use either the variable name food or the reference name meal \nto refer to the food variable:",
+            "Example\n\n  string food = \"Pizza\";string &meal = food;\n  cout << food << \"\\n\";  \n  // Outputs Pizzacout << meal << \"\\n\";  // \n  Outputs Pizza\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string food = \"Pizza\";string &meal = food;\n  cout << food << \"\\n\";  \n  // Outputs Pizzacout << meal << \"\\n\";  // \n  Outputs Pizza"
+            }
+        ],
+        "tables": []
+    }
+]

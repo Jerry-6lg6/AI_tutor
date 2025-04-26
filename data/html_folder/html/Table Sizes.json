@@ -1,0 +1,47 @@
+[
+    {
+        "title": "HTML Table Width",
+        "text": [
+            "To set the width of a table, add the style \nattribute to the <table> element:",
+            "Example\nSet the width of the table to 100%:\n\n<table style=\"width:100%\"> \n<tr>    <th>Firstname</th>\n    <th>Lastname</th>     <th>Age</th>\n \n</tr> \n<tr>    <td>Jill</td>\n    <td>Smith</td>     <td>50</td>\n \n</tr>  <tr>    <td>Eve</td>\n    <td>Jackson</td>     <td>94</td>\n  </tr></table>\n\nTry it Yourself »",
+            "Note: Using a percentage as the size unit for a width means \nhow wide will this element be compared to its parent element, which in this case \nis the <body> \nelement."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table style=\"width:100%\"> \n<tr>    <th>Firstname</th>\n    <th>Lastname</th>     <th>Age</th>\n \n</tr> \n<tr>    <td>Jill</td>\n    <td>Smith</td>     <td>50</td>\n \n</tr>  <tr>    <td>Eve</td>\n    <td>Jackson</td>     <td>94</td>\n  </tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Table Column Width",
+        "text": [
+            "To set the size of a specific column, add the style \nattribute on a <th> or\n<td> element:",
+            "Example\nSet the width of the first column to 70%:\n\n<table style=\"width:100%\"> \n<tr>    <th style=\"width:70%\">Firstname</th>\n    <th>Lastname</th>     <th>Age</th>\n \n</tr> \n<tr>    <td>Jill</td>\n    <td>Smith</td>     <td>50</td>\n \n</tr>  <tr>    <td>Eve</td>\n    <td>Jackson</td>     <td>94</td>\n  </tr></table>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table style=\"width:100%\"> \n<tr>    <th style=\"width:70%\">Firstname</th>\n    <th>Lastname</th>     <th>Age</th>\n \n</tr> \n<tr>    <td>Jill</td>\n    <td>Smith</td>     <td>50</td>\n \n</tr>  <tr>    <td>Eve</td>\n    <td>Jackson</td>     <td>94</td>\n  </tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Table Row Height",
+        "text": [
+            "To set the height of a specific row, add the style \nattribute on a table row element:",
+            "Example\nSet the height of the second row to 200 pixels:\n\n<table style=\"width:100%\"> \n<tr>    <th>Firstname</th>\n    <th>Lastname</th>     <th>Age</th>\n \n</tr> \n<tr style=\"height:200px\">    <td>Jill</td>\n    <td>Smith</td>     <td>50</td>\n \n</tr>  <tr>    <td>Eve</td>\n    <td>Jackson</td>     <td>94</td>\n  </tr></table>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table style=\"width:100%\"> \n<tr>    <th>Firstname</th>\n    <th>Lastname</th>     <th>Age</th>\n \n</tr> \n<tr style=\"height:200px\">    <td>Jill</td>\n    <td>Smith</td>     <td>50</td>\n \n</tr>  <tr>    <td>Eve</td>\n    <td>Jackson</td>     <td>94</td>\n  </tr></table>"
+            }
+        ],
+        "tables": []
+    }
+]

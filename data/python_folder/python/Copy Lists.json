@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Copy a List",
+        "text": [
+            "You cannot copy a list simply by typing list2 = \nlist1, because: list2 will only be a \nreference to list1, and changes made in\nlist1 will automatically also be made in\nlist2."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Use the copy() method",
+        "text": [
+            "You can use the built-in List method copy() to copy a list.",
+            "Example\nMake a copy of a list with the copy() method:\n\nthislist = [\"apple\", \"banana\", \"cherry\"]mylist \n  = thislist.copy()\n  print(mylist)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\"]mylist \n  = thislist.copy()\n  print(mylist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Use the list() method",
+        "text": [
+            "Another way to make a copy is to use the built-in method list().",
+            "Example\nMake a copy of a list with the list() method:\n\nthislist = [\"apple\", \"banana\", \"cherry\"]mylist \n  = list(thislist)\n  print(mylist)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\"]mylist \n  = list(thislist)\n  print(mylist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Use the slice Operator",
+        "text": [
+            "You can also make a copy of a list by using the : (slice) operator.",
+            "Example\nMake a copy of a list with the : operator:\n\nthislist = [\"apple\", \"banana\", \"cherry\"]\nmylist = thislist[:]print(mylist)\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\"]\nmylist = thislist[:]print(mylist)"
+            }
+        ],
+        "tables": []
+    }
+]

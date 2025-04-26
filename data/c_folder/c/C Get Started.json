@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Get Started With C",
+        "text": [
+            "To start using C, you need two things:",
+            "There are many text editors and compilers to choose from. In this tutorial, we \nwill use an IDE (see below)."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "C Install IDE",
+        "text": [
+            "An IDE (Integrated Development Environment) is used to edit AND compile the code.",
+            "Popular IDE's include Code::Blocks, Eclipse, and Visual Studio. These are all \nfree, and they can be used to both edit and debug C code.",
+            "Note: Web-based IDE's can work as well, but functionality is limited.",
+            "We will use Code::Blocks in our tutorial, which we believe is a good place to start.",
+            "You can find the latest version of Codeblocks at http://www.codeblocks.org/. \nDownload the mingw-setup.exe file, which will install the text editor with \na compiler."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "C Quickstart",
+        "text": [
+            "Let's create our first C file.",
+            "Open Codeblocks and go to File > New > Empty File.",
+            "Write the following C code and save the file as \nmyfirstprogram.c (File > Save File as):",
+            "myfirstprogram.c\n\n  #include <stdio.h>int main() {  printf(\"Hello World!\");  \n  return 0;}",
+            "Don't worry if you don't understand the code above - we will discuss it in detail in later chapters. For now, focus on how to run the code.",
+            "In Codeblocks, it should look like this:",
+            "Then, go to Build > Build and Run to run (execute) the program. The result will look something to this:",
+            "Hello World!Process returned 0 (0x0) execution time : 0.011 sPress any \n  key to continue.",
+            "Congratulations! You have now written and executed your first C program."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Learning C At W3Schools",
+        "text": [
+            "When learning C at W3Schools.com, you can use our \"Try it Yourself\" tool, \nwhich shows both the code and the result. It is used to write, run, and test \ncode right in your browser:",
+            "myfirstprogram.c\nCode:\n\n  #include <stdio.h>int main() {  printf(\"Hello World!\");  \n  return 0;}\nResult:\n\n\n  Hello World!\n\nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "myfirstprogram.c",
+                "code": "#include <stdio.h>int main() {  printf(\"Hello World!\");  \n  return 0;}"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "title": "ALTER COLUMN",
+        "text": [
+            "The ALTER COLUMN command is used to change the data type of a column in a table.",
+            "The following SQL changes the data type of the column named \"BirthDate\" in \nthe \"Employees\" table to type year:",
+            "Example\n\n  ALTER TABLE EmployeesALTER COLUMN BirthDate \n  year;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE EmployeesALTER COLUMN BirthDate \n  year;"
+            }
+        ],
+        "tables": []
+    }
+]

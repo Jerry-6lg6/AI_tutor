@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Python Dates",
+        "text": [
+            "A date in Python is not a data type of its own, but we can import a module \nnamed datetime to work with dates as date \nobjects.",
+            "Example\nImport the datetime module and display the current date:\n\n  import datetimex = datetime.datetime.now()print(x)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import datetimex = datetime.datetime.now()print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Date Output",
+        "text": [
+            "When we execute the code from the example above the result will be:",
+            "The date contains year, month, day, hour, minute, second, and microsecond.",
+            "The datetime module has many methods to return information about the date \nobject.",
+            "Here are a few examples, you will learn more about them later in this \nchapter:",
+            "Example\nReturn the year and name of weekday:\n\n  import datetimex = datetime.datetime.now()print(x.year)\n  print(x.strftime(\"%A\"))\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import datetimex = datetime.datetime.now()print(x.year)\n  print(x.strftime(\"%A\"))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Creating Date Objects",
+        "text": [
+            "To create a date, we can use the datetime() class (constructor) of the\ndatetime module.",
+            "The datetime() class requires three parameters to create a date: year, \nmonth, day.",
+            "Example\nCreate a date object:\n\n  import datetimex = datetime.datetime(2020, 5, 17)\nprint(x)\nTry it Yourself »",
+            "The datetime() class also takes parameters for time and timezone (hour, \nminute, second, microsecond, tzone), but they are optional, and has a default \nvalue of 0, (None for timezone).",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import datetimex = datetime.datetime(2020, 5, 17)\nprint(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The strftime() Method",
+        "text": [
+            "The datetime object has a method for formatting date objects into readable strings.",
+            "The method is called strftime(), and takes one parameter, \nformat, to specify the format of the returned string:",
+            "Example\nDisplay the name of the month:\n\n  import datetimex = datetime.datetime(2018, 6, 1)print(x.strftime(\"%B\"))\nTry it Yourself »",
+            "A reference of all the legal format codes:",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import datetimex = datetime.datetime(2018, 6, 1)print(x.strftime(\"%B\"))"
+            }
+        ],
+        "tables": []
+    }
+]

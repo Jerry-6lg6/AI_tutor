@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Filter the Result",
+        "text": [
+            "When finding documents in a collection, you can filter the result by using a \nquery object.",
+            "The first argument of the find() method \nis a query object, and is used to limit the search.",
+            "Example\nFind document(s) with the address \"Park Lane 38\":\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": \"Park Lane 38\" }\nmydoc = mycol.find(myquery)for x in mydoc:  print(x)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": \"Park Lane 38\" }\nmydoc = mycol.find(myquery)for x in mydoc:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Advanced Query",
+        "text": [
+            "To make advanced queries you can use modifiers as values in the query object.",
+            "E.g. to find the documents where the \"address\" field starts with the letter \"S\" \nor higher (alphabetically), use the greater than modifier:\n{\"$gt\": \"S\"}:",
+            "Example\nFind documents where the address starts with the letter \"S\" or \nhigher:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": { \"$gt\": \"S\" } }mydoc = mycol.find(myquery)\nfor x in mydoc:  print(x)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": { \"$gt\": \"S\" } }mydoc = mycol.find(myquery)\nfor x in mydoc:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Filter With Regular Expressions",
+        "text": [
+            "You can also use regular expressions as a modifier.",
+            "Regular expressions can only be used to query strings.",
+            "To find only the documents where the \"address\" field starts with the letter \"S\", use the regular \nexpression {\"$regex\": \"^S\"}:",
+            "Example\nFind documents where the address starts with the letter \"S\":\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": { \"$regex\": \"^S\" } }mydoc = mycol.find(myquery)\nfor x in mydoc:  print(x)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": { \"$regex\": \"^S\" } }mydoc = mycol.find(myquery)\nfor x in mydoc:  print(x)"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,181 @@
+[
+    {
+        "title": "RegEx Module",
+        "text": [
+            "Python has a built-in package called re, which can be used to work with \nRegular Expressions.",
+            "Import the re module:",
+            "import re"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RegEx in Python",
+        "text": [
+            "When you have imported the re module, you \ncan start using regular expressions:",
+            "Example\nSearch the string to see if it starts with \"The\" and ends with \"Spain\":\n\n    import \n    retxt = \"The rain in Spain\"x = re.search(\"^The.*Spain$\", txt)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import \n    retxt = \"The rain in Spain\"x = re.search(\"^The.*Spain$\", txt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "RegEx Functions",
+        "text": [
+            "The re module offers a set of functions that allows \nus to search a string for a match:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Metacharacters",
+        "text": [
+            "Metacharacters are characters with a special meaning:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Special Sequences",
+        "text": [
+            "A special sequence is a \\ followed by one of the characters in the list below, and has a special meaning:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Sets",
+        "text": [
+            "A set is a set of characters inside a pair of square brackets \n[] with a special meaning:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The findall() Function",
+        "text": [
+            "The findall() function returns a list containing all matches.",
+            "Example\nPrint a list of all matches:\n\n  import retxt = \"The rain in Spain\"x = re.findall(\"ai\", \n  txt)\n  print(x)\nTry it Yourself »",
+            "The list contains the matches in the order they are found.",
+            "If no matches are found, an empty list is returned:",
+            "Example\nReturn an empty list if no match was found:\n\n  import retxt = \"The rain in Spain\"x = re.findall(\"Portugal\", \n  txt)\n  print(x)\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import retxt = \"The rain in Spain\"x = re.findall(\"ai\", \n  txt)\n  print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "import retxt = \"The rain in Spain\"x = re.findall(\"Portugal\", \n  txt)\n  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The search() Function",
+        "text": [
+            "The search() function searches the string \nfor a match, and returns a Match object if there is a \nmatch.",
+            "If there is more than one match, \nonly the first occurrence of the match will be returned:",
+            "Example\nSearch for the first white-space character in the string:\n\n  import retxt = \"The rain in Spain\"x = re.search(\"\\s\", \n  txt)\nprint(\"The first white-space character is located in \n  position:\", x.start()) \nTry it Yourself »",
+            "If no matches are found, the value None is returned:",
+            "Example\nMake a search that returns no match:\n\n  import retxt = \"The rain in Spain\"x = re.search(\"Portugal\", \n  txt)\n  print(x)\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import retxt = \"The rain in Spain\"x = re.search(\"\\s\", \n  txt)\nprint(\"The first white-space character is located in \n  position:\", x.start())"
+            },
+            {
+                "heading": "Example",
+                "code": "import retxt = \"The rain in Spain\"x = re.search(\"Portugal\", \n  txt)\n  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The split() Function",
+        "text": [
+            "The split() function returns a list where \nthe string has been split at each match:",
+            "Example\nSplit at each white-space character:\n\n  import retxt = \"The rain in Spain\"x = re.split(\"\\s\", \n  txt)\n  print(x)\nTry it Yourself »",
+            "You can control the number of occurrences by specifying the \nmaxsplit \nparameter:",
+            "Example\nSplit the string only at the first occurrence:\n\n  import retxt = \"The rain in Spain\"x = re.split(\"\\s\", \n  txt, \n  1)\n  print(x)\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import retxt = \"The rain in Spain\"x = re.split(\"\\s\", \n  txt)\n  print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "import retxt = \"The rain in Spain\"x = re.split(\"\\s\", \n  txt, \n  1)\n  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The sub() Function",
+        "text": [
+            "The sub() function replaces the matches with \nthe text of your choice:",
+            "Example\nReplace every white-space character with the number 9:\n\n  import retxt = \"The rain in Spain\"x = re.sub(\"\\s\", \n  \"9\", txt)\n  print(x)\nTry it Yourself »",
+            "You can control the number of replacements by specifying the\ncount \nparameter:",
+            "Example\nReplace the first 2 occurrences:\n\n  import retxt = \"The rain in Spain\"x = re.sub(\"\\s\", \n  \"9\", txt, 2)\n  print(x)\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import retxt = \"The rain in Spain\"x = re.sub(\"\\s\", \n  \"9\", txt)\n  print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "import retxt = \"The rain in Spain\"x = re.sub(\"\\s\", \n  \"9\", txt, 2)\n  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Match Object",
+        "text": [
+            "A Match Object is an object containing information \nabout the search and the result.",
+            "Note: If there is no match, the value None will be \nreturned, instead of the Match Object.",
+            "Example\nDo a search that will return a Match Object:\n\n  import retxt = \"The rain in Spain\"x = re.search(\"ai\", \n  txt)\n  print(x) #this will print an object\nTry it Yourself »",
+            "The Match object has properties and methods used to retrieve information \nabout the search, and the result:",
+            ".span() returns a tuple containing the start-, and end positions of the match.\n.string returns the string passed into the function\n.group() returns the part of the string where there was a match",
+            "Example\nPrint the position (start- and end-position) of the first match occurrence.\nThe regular expression looks for any words that starts with an upper case \n  \"S\":\n\n    import re\n    txt = \"The rain in Spain\"\n    x = re.search(r\"\\bS\\w+\", txt)\n    print(x.span())\nTry it Yourself »",
+            "Example\nPrint the string passed into the function:\n\n    import re\n    txt = \"The rain in Spain\"\n    x = re.search(r\"\\bS\\w+\", txt)\n    print(x.string)\nTry it Yourself »",
+            "Example\nPrint the part of the string where there was a match.\nThe regular expression looks for any words that starts with an upper case \n  \"S\":\n\n    import re\n    txt = \"The rain in Spain\"\n    x = re.search(r\"\\bS\\w+\", txt)\n    print(x.group())\nTry it Yourself »",
+            "Note: If there is no match, the value None will be \nreturned, instead of the Match Object.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import retxt = \"The rain in Spain\"x = re.search(\"ai\", \n  txt)\n  print(x) #this will print an object"
+            },
+            {
+                "heading": "Example",
+                "code": "import re\n    txt = \"The rain in Spain\"\n    x = re.search(r\"\\bS\\w+\", txt)\n    print(x.span())"
+            },
+            {
+                "heading": "Example",
+                "code": "import re\n    txt = \"The rain in Spain\"\n    x = re.search(r\"\\bS\\w+\", txt)\n    print(x.string)"
+            },
+            {
+                "heading": "Example",
+                "code": "import re\n    txt = \"The rain in Spain\"\n    x = re.search(r\"\\bS\\w+\", txt)\n    print(x.group())"
+            }
+        ],
+        "tables": []
+    }
+]

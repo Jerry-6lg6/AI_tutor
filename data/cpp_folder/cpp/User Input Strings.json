@@ -1,0 +1,30 @@
+[
+    {
+        "title": "User Input Strings",
+        "text": [
+            "It is possible to use the extraction operator >> on cin to \nstore a string entered by a user:",
+            "Example\n\n  string firstName;cout << \"Type your first name: \"; cin >> \n  firstName; \n  // get user input from the keyboardcout << \"Your name is: \" << \n  firstName;// Type your first name: John// Your name is: John",
+            "However, cin considers a space (whitespace, tabs, etc) as a terminating \ncharacter, which means that it can only store a single word (even if you type \nmany words):",
+            "Example\n\n  string fullName;cout << \"Type your full name: \"; cin >> \n  fullName;cout << \"Your name is: \" << \n  fullName;// Type your full name: John Doe// Your name is: John",
+            "From the example above, you would expect the program to print \"John Doe\", but it only prints \"John\". That's why, when working with strings, we often use the getline() \nfunction to read a line of text. It takes cin as the first parameter, and the string \nvariable as second:",
+            "Example\n\n  string fullName;cout << \"Type your full name: \"; \n  getline (cin, fullName);cout << \"Your name is: \" << \n  fullName;// Type your full name: John Doe// Your name is: John Doe\nRun example »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string firstName;cout << \"Type your first name: \"; cin >> \n  firstName; \n  // get user input from the keyboardcout << \"Your name is: \" << \n  firstName;// Type your first name: John// Your name is: John"
+            },
+            {
+                "heading": "Example",
+                "code": "string fullName;cout << \"Type your full name: \"; cin >> \n  fullName;cout << \"Your name is: \" << \n  fullName;// Type your full name: John Doe// Your name is: John"
+            },
+            {
+                "heading": "Example",
+                "code": "string fullName;cout << \"Type your full name: \"; \n  getline (cin, fullName);cout << \"Your name is: \" << \n  fullName;// Type your full name: John Doe// Your name is: John Doe"
+            }
+        ],
+        "tables": []
+    }
+]

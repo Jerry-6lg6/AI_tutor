@@ -1,0 +1,58 @@
+[
+    {
+        "title": "XML Parser",
+        "text": [
+            "The XML DOM (Document Object Model) defines the properties and methods for accessing \nand editing XML.",
+            "However, before an XML document can be accessed, it must be \nloaded into an XML DOM object.",
+            "All modern browsers have a built-in XML parser that can convert text into an XML DOM object."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Parsing a Text String",
+        "text": [
+            "This example parses a text string into an XML DOM object, and  \nextracts the info from it with JavaScript:",
+            "Example\n\n<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nvar text, parser, xmlDoc;\ntext = \"<bookstore><book>\" +\n\"<title>Everyday Italian</title>\" +\n\"<author>Giada De Laurentiis</author>\" +\n\"<year>2005</year>\" +\n\"</book></bookstore>\";\nparser = new DOMParser();\nxmlDoc = parser.parseFromString(text,\"text/xml\");\ndocument.getElementById(\"demo\").innerHTML =\nxmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;\n</script></body></html>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<html>\n<body>\n<p id=\"demo\"></p>\n<script>\nvar text, parser, xmlDoc;\ntext = \"<bookstore><book>\" +\n\"<title>Everyday Italian</title>\" +\n\"<author>Giada De Laurentiis</author>\" +\n\"<year>2005</year>\" +\n\"</book></bookstore>\";\nparser = new DOMParser();\nxmlDoc = parser.parseFromString(text,\"text/xml\");\ndocument.getElementById(\"demo\").innerHTML =\nxmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;\n</script></body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Example Explained",
+        "text": [
+            "A text string is defined:",
+            "text = \"<bookstore><book>\" +\n\"<title>Everyday Italian</title>\" +\n\"<author>Giada De Laurentiis</author>\" +\n\"<year>2005</year>\" +\n\"</book></bookstore>\";",
+            "An XML DOM parser is created:",
+            "parser = new DOMParser();",
+            "The parser creates a new XML DOM object using the text string:",
+            "xmlDoc = parser.parseFromString(text,\"text/xml\");"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The XMLHttpRequest Object",
+        "text": [
+            "The XMLHttpRequest Object has a built in XML Parser.",
+            "The responseText property returns the response as a string.",
+            "The responseXML property returns the response as an XML DOM object.",
+            "If you want to use the response as an XML DOM object, you can use the responseXML \nproperty.",
+            "Example\nRequest the file cd_catalog.xml and \nuse the response as an XML DOM object:\n\nxmlDoc = xmlhttp.responseXML;\n txt = \"\";\nx = xmlDoc.getElementsByTagName(\"ARTIST\");\nfor (i = 0; i < x.length; i++) {\n    txt += x[i].childNodes[0].nodeValue + \"<br>\";\n }\ndocument.getElementById(\"demo\").innerHTML = txt;\nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "xmlDoc = xmlhttp.responseXML;\n txt = \"\";\nx = xmlDoc.getElementsByTagName(\"ARTIST\");\nfor (i = 0; i < x.length; i++) {\n    txt += x[i].childNodes[0].nodeValue + \"<br>\";\n }\ndocument.getElementById(\"demo\").innerHTML = txt;"
+            }
+        ],
+        "tables": []
+    }
+]

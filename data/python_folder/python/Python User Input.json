@@ -1,0 +1,29 @@
+[
+    {
+        "title": "User Input",
+        "text": [
+            "Python allows for user input.",
+            "That means we are able to ask the user for input.",
+            "The method is a bit different in Python 3.6 than Python 2.7.",
+            "Python 3.6 uses the input() method.",
+            "Python 2.7 uses the raw_input() method.",
+            "The following example asks for the username, and when you entered the username, it gets printed on \nthe screen:",
+            "Python 3.6\n\n  username = input(\"Enter username:\")\nprint(\"Username is: \" + username)\n\nRun Example »",
+            "Python 2.7\n\n  username = raw_input(\"Enter username:\")\nprint(\"Username \n  is: \" + username)\n\nRun Example »",
+            "Python stops executing when it comes to the input() function, and continues \nwhen the user has given some input.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Python 3.6",
+                "code": "username = input(\"Enter username:\")\nprint(\"Username is: \" + username)"
+            },
+            {
+                "heading": "Python 2.7",
+                "code": "username = raw_input(\"Enter username:\")\nprint(\"Username \n  is: \" + username)"
+            }
+        ],
+        "tables": []
+    }
+]

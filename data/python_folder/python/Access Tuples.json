@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Access Tuple Items",
+        "text": [
+            "You can access tuple items by referring to the index number, inside square \nbrackets:",
+            "Example\nPrint the second item in the tuple:\n\nthistuple = (\"apple\", \"banana\", \"cherry\")\nprint(thistuple[1])\n\nTry it Yourself »",
+            "Note: The first item has index 0."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\")\nprint(thistuple[1])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Negative Indexing",
+        "text": [
+            "Negative indexing means start from the end.",
+            "-1 refers to the last item, \n-2 refers to the second last item etc.",
+            "Example\nPrint the last item of the tuple:\n\nthistuple = (\"apple\", \"banana\", \"cherry\")\nprint(thistuple[-1])\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\")\nprint(thistuple[-1])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Range of Indexes",
+        "text": [
+            "You can specify a range of indexes by specifying where to start and where to \nend the range.",
+            "When specifying a range, the return value will be a new tuple with the \nspecified items.",
+            "Example\nReturn the third, fourth, and fifth item:\n\nthistuple = (\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(thistuple[2:5])\n\nTry it Yourself »",
+            "Note: The search will start at index 2 (included) and end at index 5 (not included).",
+            "Remember that the first item has index 0.",
+            "By leaving out the start value, the range will start at the first item:",
+            "Example\nThis example returns the items from the beginning to, but NOT included, \"kiwi\":\n\nthistuple = (\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(thistuple[:4])\n\nTry it Yourself »",
+            "By leaving out the end value, the range will go on to the end of the tuple:",
+            "Example\nThis example returns the items from \"cherry\" and to the end:\n\nthistuple = (\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(thistuple[2:])\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(thistuple[2:5])"
+            },
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(thistuple[:4])"
+            },
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(thistuple[2:])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Range of Negative Indexes",
+        "text": [
+            "Specify negative indexes if you want to start the search from the end of the \ntuple:",
+            "Example\nThis example returns the items from index -4 (included) to index -1 (excluded)\n\nthistuple = (\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(thistuple[-4:-1])\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\", \"orange\", \"kiwi\", \"melon\", \"mango\")\nprint(thistuple[-4:-1])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Check if Item Exists",
+        "text": [
+            "To determine if a specified item is present in a tuple use the in keyword:",
+            "Example\nCheck if \"apple\" is present in the tuple:\n\nthistuple = (\"apple\", \"banana\", \"cherry\")\n  if \"apple\" in thistuple:  print(\"Yes, 'apple' is in the fruits \n  tuple\")\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\")\n  if \"apple\" in thistuple:  print(\"Yes, 'apple' is in the fruits \n  tuple\")"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,194 @@
+[
+    {
+        "title": "SQL Wildcard Characters",
+        "text": [
+            "A wildcard character is used to substitute one or more characters in a string.",
+            "Wildcard characters are used with the \nLIKE \noperator. The LIKE operator is used in a \nWHERE clause to search for a specified pattern in a column.",
+            "Example\nReturn all customers that starts with the letter 'a':\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE 'a%'; \nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE CustomerName LIKE 'a%';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Wildcard Characters",
+        "text": [
+            "* Not supported in PostgreSQL and MySQL databases.",
+            "** Supported only in Oracle databases."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Customers table used in the examples:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Using the % Wildcard",
+        "text": [
+            "The % wildcard represents any number of characters, even zero characters.",
+            "Example\nReturn all customers that ends with the pattern 'es':\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE '%es';\n\nTry it Yourself »",
+            "Example\nReturn all customers that contains the pattern 'mer':\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE '%mer%';\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE CustomerName LIKE '%es';"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE CustomerName LIKE '%mer%';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using the _ Wildcard",
+        "text": [
+            "The _ wildcard represents a single character.",
+            "It can be any character or number, but each _ represents one, and only one, character.",
+            "Example\nReturn all customers with a City starting with any character, followed by \"ondon\":\n\n SELECT * FROM Customers\n WHERE City LIKE '_ondon';\n\n\n Try it Yourself »",
+            "Example\nReturn all customers with a City starting with \"L\", followed by any \n3 characters, ending with \"on\":\n\n SELECT * FROM Customers\n WHERE City LIKE 'L___on';\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE City LIKE '_ondon';"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE City LIKE 'L___on';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using the [] Wildcard",
+        "text": [
+            "The [] wildcard returns a result if any\nof the characters inside gets a match.",
+            "Example\nReturn all customers starting with either \"b\", \"s\", or \"p\":\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE '[bsp]%';\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE CustomerName LIKE '[bsp]%';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using the - Wildcard",
+        "text": [
+            "The - wildcard allows you to specify a range \nof characters inside the [] wildcard.",
+            "Example\nReturn all customers starting with \n\"a\", \"b\", \"c\", \"d\", \"e\" or \"f\":\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE '[a-f]%';\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE CustomerName LIKE '[a-f]%';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Combine Wildcards",
+        "text": [
+            "Any wildcard, like % and _ \n, can be used in combination with other \nwildcards.",
+            "Example\nReturn all customers that starts with \"a\" and are at least 3 characters in length:\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE 'a__%';\nTry it Yourself »",
+            "Example\nReturn all customers that have \"r\" in the second position:\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE '_r%';\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n  WHERE CustomerName LIKE 'a__%';"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n  WHERE CustomerName LIKE '_r%';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Without Wildcard",
+        "text": [
+            "If no wildcard is specified, the phrase has to have an exact match to return a result.",
+            "Example\nReturn all customers from Spain: \n\n SELECT * FROM Customers\n  WHERE Country \n  LIKE 'Spain';\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n  WHERE Country \n  LIKE 'Spain';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Microsoft Access Wildcards",
+        "text": [
+            "The Microsoft Access Database has some other wildcards:",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

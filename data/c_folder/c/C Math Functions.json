@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Math Functions",
+        "text": [
+            "There is also a list of math functions available, that allows you to perform mathematical tasks on numbers.",
+            "To use them, you must include the math.h\nheader file in your program:",
+            "#include <math.h>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Square Root",
+        "text": [
+            "To find the square root of a number, use the sqrt() \nfunction:",
+            "Example\n\n  printf(\"%f\", sqrt(16));\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "printf(\"%f\", sqrt(16));"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Round a Number",
+        "text": [
+            "The ceil() function rounds a number upwards to its nearest integer, and the floor()  method rounds a number downwards to its nearest integer, and returns the result:",
+            "Example\n\n  printf(\"%f\", ceil(1.4));printf(\"%f\", \n  floor(1.4));\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "printf(\"%f\", ceil(1.4));printf(\"%f\", \n  floor(1.4));"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Power",
+        "text": [
+            "The pow() function returns the value of x to the power of\ny (xy):",
+            "Example\n\n  printf(\"%f\", pow(4, 3));\n\nTry it Yourself »",
+            "Complete Math Reference\nFor a complete reference of math functions, go to our C \n<math.h> Library Reference.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "printf(\"%f\", pow(4, 3));"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Complete Math Reference",
+        "text": [
+            "For a complete reference of math functions, go to our C \n<math.h> Library Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

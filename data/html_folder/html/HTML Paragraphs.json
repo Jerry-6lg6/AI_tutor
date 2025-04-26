@@ -1,0 +1,106 @@
+[
+    {
+        "title": "HTML Paragraphs",
+        "text": [
+            "The HTML <p> element defines a paragraph.",
+            "A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.",
+            "Example\n\n<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>This is a paragraph.</p>\n<p>This is another paragraph.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Display",
+        "text": [
+            "You cannot be sure how HTML will be displayed.",
+            "Large or small screens, and resized windows will create different results.",
+            "With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.",
+            "The browser will automatically remove any extra spaces and lines when the page is \ndisplayed:",
+            "Example\n\n <p>This paragraphcontains a lot of linesin the source code,but \n the browser ignores it.</p><p>This paragraphcontains         \n a lot of spacesin the source         \n code,but the        browser ignores \n it.</p>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>This paragraphcontains a lot of linesin the source code,but \n the browser ignores it.</p><p>This paragraphcontains         \n a lot of spacesin the source         \n code,but the        browser ignores \n it.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Horizontal Rules",
+        "text": [
+            "The <hr> tag defines a thematic break in an HTML page, and is most often \ndisplayed as a horizontal rule.",
+            "The <hr> element is used to separate content (or define a change) in an HTML \npage:",
+            "Example\n\n <h1>This is heading 1</h1><p>This is some text.</p><hr><h2>This is heading 2</h2><p>This is some other text.</p><hr>\n\nTry it Yourself »",
+            "The <hr> tag is an empty tag, which means that it has no end tag."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1>This is heading 1</h1><p>This is some text.</p><hr><h2>This is heading 2</h2><p>This is some other text.</p><hr>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Line Breaks",
+        "text": [
+            "The HTML <br> element defines a line break.",
+            "Use <br> if you want a line break (a new line) without starting a new paragraph:",
+            "Example\n\n<p>This is<br>a paragraph<br>with line breaks.</p>\nTry it Yourself »",
+            "The <br> tag is an empty tag, which means that it has no end tag."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>This is<br>a paragraph<br>with line breaks.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Poem Problem",
+        "text": [
+            "This poem will display on a single line:",
+            "Example\n\n <p>  My Bonnie lies over \n the ocean.  My Bonnie lies over the sea.  My Bonnie \n lies over the ocean.  Oh, bring back my Bonnie to me.</p>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>  My Bonnie lies over \n the ocean.  My Bonnie lies over the sea.  My Bonnie \n lies over the ocean.  Oh, bring back my Bonnie to me.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Solution - The HTML <pre> Element",
+        "text": [
+            "The HTML <pre> element defines preformatted text.",
+            "The text inside a <pre> element is displayed in a fixed-width font (usually \nCourier), and it preserves both spaces and line breaks:",
+            "Example\n\n <pre>  My Bonnie lies over the ocean.\n  My Bonnie lies over the sea.  My Bonnie lies over the \nocean.  Oh, bring back my Bonnie to me.</pre>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<pre>  My Bonnie lies over the ocean.\n  My Bonnie lies over the sea.  My Bonnie lies over the \nocean.  Oh, bring back my Bonnie to me.</pre>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Tag Reference",
+        "text": [
+            "W3Schools' tag reference contains additional information about HTML elements and their attributes.",
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

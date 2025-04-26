@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Java Comments",
+        "text": [
+            "Comments can be used to explain Java code, and to make it more readable. It can also be used to \nprevent execution when testing alternative code."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Single-line Comments",
+        "text": [
+            "Single-line comments start with two forward slashes (//).",
+            "Any text between // and the end of the line \nis ignored by Java (will not be executed).",
+            "This example uses a single-line comment before a line of code:",
+            "Example\n// This is a comment\nSystem.out.println(\"Hello World\");\n\n\nTry it Yourself »",
+            "This example uses a single-line comment at the end of a line of code:",
+            "Example\nSystem.out.println(\"Hello World\"); // This is a comment\n\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Java Multi-line Comments",
+        "text": [
+            "Multi-line comments start with /* and ends with */.",
+            "Any text between /* and */ will be ignored by Java.",
+            "This example uses a multi-line comment (a comment block) to explain the code:",
+            "Example\n/* The code below will print the words Hello World\nto the screen, and it is amazing */\nSystem.out.println(\"Hello World\");\n\n\nTry it Yourself »",
+            "Single or multi-line comments?\nIt's up to you which one you use. Normally, we use // for short comments, and /* */ for longer.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

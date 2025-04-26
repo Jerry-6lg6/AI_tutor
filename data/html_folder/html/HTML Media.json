@@ -1,0 +1,30 @@
+[
+    {
+        "title": "What is Multimedia?",
+        "text": [
+            "Multimedia comes in many different formats. It can be almost anything you can \nhear or see, like images, music, \nsound, videos, records, films, animations, and more.",
+            "Web pages often contain multimedia elements of different types and formats."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Browser Support",
+        "text": [
+            "The first web browsers had support for text only, limited to a single font in a single color.",
+            "Later came browsers with support for colors, fonts, images, and multimedia!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Multimedia Formats",
+        "text": [
+            "Multimedia elements (like audio or video) are stored in media files.",
+            "The most common way to discover the type of a file, is to look at the file \nextension.",
+            "Multimedia files have formats and different extensions \nlike: .wav, .mp3, .mp4, .mpg, .wmv, and .avi."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

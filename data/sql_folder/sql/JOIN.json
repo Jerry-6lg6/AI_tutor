@@ -1,0 +1,68 @@
+[
+    {
+        "title": "INNER JOIN",
+        "text": [
+            "The INNER JOIN command returns rows that have matching values in both tables.",
+            "The following SQL selects all orders with customer information:",
+            "Example\n\n  SELECT Orders.OrderID, Customers.CustomerNameFROM OrdersINNER JOIN \n  Customers ON Orders.CustomerID = Customers.CustomerID;\n\n Try it Yourself »",
+            "Note: The INNER JOIN keyword selects all rows from both \ntables as long as there is a match between the columns. If there are records in the \n\"Orders\" table that do not have matches in \"Customers\", these orders will not \nbe shown!",
+            "The following SQL statement selects all orders with customer and shipper \ninformation:",
+            "Example\n\n  SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperNameFROM \n  ((OrdersINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)\n  INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Orders.OrderID, Customers.CustomerNameFROM OrdersINNER JOIN \n  Customers ON Orders.CustomerID = Customers.CustomerID;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperNameFROM \n  ((OrdersINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)\n  INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "LEFT JOIN",
+        "text": [
+            "The LEFT JOIN command returns all rows from \nthe left table, and the matching rows from the right table. The result is NULL \nfrom the right side, if there is no match.",
+            "The following SQL will select all customers, and any orders they \nmight have:",
+            "Example\n\n SELECT Customers.CustomerName, Orders.OrderID\n FROM Customers\n LEFT JOIN Orders\n ON Customers.CustomerID = Orders.CustomerID\n ORDER BY Customers.CustomerName;\n\nTry it Yourself »",
+            "Note: The LEFT JOIN keyword returns all records from the \nleft table (Customers), even if there are no matches in the right table \n(Orders)."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Customers.CustomerName, Orders.OrderID\n FROM Customers\n LEFT JOIN Orders\n ON Customers.CustomerID = Orders.CustomerID\n ORDER BY Customers.CustomerName;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "RIGHT JOIN",
+        "text": [
+            "The RIGHT JOIN command returns all rows from \nthe right table, and the matching records from the left table. The result is \nNULL from the left side, when there is no match.",
+            "The following SQL will return all employees, and any orders they \nmight have placed:",
+            "Example\n\n SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n ORDER BY Orders.OrderID;\nTry it Yourself »",
+            "Note: The RIGHT JOIN keyword returns all records from the \nright table (Employees), even if there are no matches in the left table \n(Orders)."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n ORDER BY Orders.OrderID;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "FULL OUTER JOIN",
+        "text": [
+            "The FULL OUTER JOIN command returns all rows \nwhen there is a match in either left table or right table.",
+            "The following SQL statement selects all customers, and all orders:",
+            "SELECT Customers.CustomerName, Orders.OrderID\nFROM Customers\nFULL OUTER JOIN Orders\nON Customers.CustomerID=Orders.CustomerID\nORDER BY Customers.CustomerName;",
+            "Note: The FULL OUTER JOIN keyword returns all the rows from \nthe left table (Customers), and all the rows from the right table (Orders). If \nthere are rows in \"Customers\" that do not have matches in \"Orders\", or if there \nare rows in \"Orders\" that do not have matches in \"Customers\", those rows will be \nlisted as well.",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

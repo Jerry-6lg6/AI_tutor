@@ -1,0 +1,247 @@
+[
+    {
+        "title": "The value Attribute",
+        "text": [
+            "The input value attribute specifies an initial value for an input field:",
+            "Example\nInput fields with initial (default) values:\n\n<form>\n  <label for=\"fname\">First name:</label><br>  <input type=\"text\" \n  id=\"fname\" name=\"fname\" value=\"John\"><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\" \n  value=\"Doe\"></form>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>\n  <label for=\"fname\">First name:</label><br>  <input type=\"text\" \n  id=\"fname\" name=\"fname\" value=\"John\"><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\" \n  value=\"Doe\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The readonly Attribute",
+        "text": [
+            "The input readonly attribute specifies that an input field is read-only.",
+            "A read-only input field cannot be modified (however, a user can tab to it, highlight it, and copy the text from it).",
+            "The value of a read-only input field will be sent when submitting the form!",
+            "Example\nA read-only input field:\n\n<form>\n  <label for=\"fname\">First name:</label><br>  <input type=\"text\" \n  id=\"fname\" name=\"fname\" value=\"John\" readonly><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\" \n  value=\"Doe\"></form>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>\n  <label for=\"fname\">First name:</label><br>  <input type=\"text\" \n  id=\"fname\" name=\"fname\" value=\"John\" readonly><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\" \n  value=\"Doe\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The disabled Attribute",
+        "text": [
+            "The input disabled attribute specifies that an input field should be disabled.",
+            "A disabled input field is unusable and un-clickable.",
+            "The value of a disabled input field will not be sent when submitting the form!",
+            "Example\nA disabled input field:\n\n<form>\n  <label for=\"fname\">First name:</label><br>  <input type=\"text\" \n  id=\"fname\" name=\"fname\" value=\"John\" disabled><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\" \n  value=\"Doe\"></form>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>\n  <label for=\"fname\">First name:</label><br>  <input type=\"text\" \n  id=\"fname\" name=\"fname\" value=\"John\" disabled><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\" \n  value=\"Doe\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The size Attribute",
+        "text": [
+            "The input size attribute specifies the \nvisible width, in characters, of an input field.",
+            "The default value for size is 20.",
+            "Note: The size attribute \nworks with the following input types: text, search, tel, url, email, and \npassword.",
+            "Example\nSet a width for an input field:\n\n  <form>  <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\" size=\"50\"><br>  <label \n  for=\"pin\">PIN:</label><br>  <input type=\"text\" id=\"pin\" name=\"pin\" \n  size=\"4\"></form> \nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\" size=\"50\"><br>  <label \n  for=\"pin\">PIN:</label><br>  <input type=\"text\" id=\"pin\" name=\"pin\" \n  size=\"4\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The maxlength Attribute",
+        "text": [
+            "The input maxlength attribute specifies the maximum number of characters allowed in an input field.",
+            "Note: When a maxlength is set, the input field will not accept more than the \nspecified number of characters. However, this attribute does not provide any feedback. \nSo, if you want to alert the user, \nyou must write JavaScript code.",
+            "Example\nSet a maximum length for an input field:\n\n  <form>  <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\" size=\"50\"><br>  <label \n  for=\"pin\">PIN:</label><br>  <input type=\"text\" id=\"pin\" name=\"pin\" \n  maxlength=\"4\" size=\"4\"></form> \nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\" size=\"50\"><br>  <label \n  for=\"pin\">PIN:</label><br>  <input type=\"text\" id=\"pin\" name=\"pin\" \n  maxlength=\"4\" size=\"4\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The min and max Attributes",
+        "text": [
+            "The input min and max attributes specify the minimum and maximum values for an \ninput field.",
+            "The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.",
+            "Tip: Use the max and min attributes together to create a \nrange of legal values.",
+            "Example\nSet a max date, a min date, and a range of legal values:\n\n<form>  <label for=\"datemax\">Enter a date before \n  1980-01-01:</label>  <input type=\"date\" id=\"datemax\" name=\"datemax\" \n  max=\"1979-12-31\"><br><br>  <label for=\"datemin\">Enter a date \n  after 2000-01-01:</label>  <input type=\"date\" id=\"datemin\" name=\"datemin\" \n  min=\"2000-01-02\"><br><br>  <label for=\"quantity\">Quantity \n  (between 1 and 5):</label>  <input type=\"number\" id=\"quantity\" \n  name=\"quantity\" min=\"1\" max=\"5\"></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"datemax\">Enter a date before \n  1980-01-01:</label>  <input type=\"date\" id=\"datemax\" name=\"datemax\" \n  max=\"1979-12-31\"><br><br>  <label for=\"datemin\">Enter a date \n  after 2000-01-01:</label>  <input type=\"date\" id=\"datemin\" name=\"datemin\" \n  min=\"2000-01-02\"><br><br>  <label for=\"quantity\">Quantity \n  (between 1 and 5):</label>  <input type=\"number\" id=\"quantity\" \n  name=\"quantity\" min=\"1\" max=\"5\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The multiple Attribute",
+        "text": [
+            "The input multiple attribute specifies that the user is allowed to enter more than one value in \nan input field.",
+            "The multiple attribute works with the following input types: email, and file.",
+            "Example\nA file upload field that accepts multiple values:\n\n  <form>  <label for=\"files\">Select files:</label>  <input \n  type=\"file\" id=\"files\" name=\"files\" multiple></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"files\">Select files:</label>  <input \n  type=\"file\" id=\"files\" name=\"files\" multiple></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The pattern Attribute",
+        "text": [
+            "The input pattern attribute specifies a regular expression that the \ninput field's value is checked against, when the form is submitted.",
+            "The pattern attribute works with the following input types: text, \ndate, search, url, tel, email, and password.",
+            "Tip: Use the global title attribute to describe the pattern to help the user.",
+            "Tip: Learn more about regular expressions in our JavaScript tutorial.",
+            "Example\nAn input field that can contain only three letters (no numbers or special \ncharacters):\n\n  <form>  <label for=\"country_code\">Country code:</label>  \n  <input type=\"text\" id=\"country_code\" name=\"country_code\"  \n  pattern=\"[A-Za-z]{3}\" title=\"Three letter country code\"></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"country_code\">Country code:</label>  \n  <input type=\"text\" id=\"country_code\" name=\"country_code\"  \n  pattern=\"[A-Za-z]{3}\" title=\"Three letter country code\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The placeholder Attribute",
+        "text": [
+            "The input placeholder attribute specifies \na short hint that describes the expected value of an input field (a sample value or a short description of the \nexpected format).",
+            "The short hint is displayed in the input field before the user enters a \nvalue.",
+            "The placeholder attribute works with the following input types: text, search, url, \nnumber, tel, email, and password.",
+            "Example\nAn input field with a placeholder text:\n\n  <form>  <label for=\"phone\">Enter a phone number:</label>  \n  <input type=\"tel\" id=\"phone\" name=\"phone\"  \n  placeholder=\"123-45-678\"  pattern=\"[0-9]{3}-[0-9]{2}-[0-9]{3}\">\n  </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"phone\">Enter a phone number:</label>  \n  <input type=\"tel\" id=\"phone\" name=\"phone\"  \n  placeholder=\"123-45-678\"  pattern=\"[0-9]{3}-[0-9]{2}-[0-9]{3}\">\n  </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The required Attribute",
+        "text": [
+            "The input required attribute specifies that an input field must be filled out before submitting the form.",
+            "The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.",
+            "Example\nA required input field:\n\n  <form>  <label for=\"username\">Username:</label>  <input \n  type=\"text\" id=\"username\" name=\"username\" required></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"username\">Username:</label>  <input \n  type=\"text\" id=\"username\" name=\"username\" required></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The step Attribute",
+        "text": [
+            "The input step attribute specifies the legal number intervals for an \ninput field.",
+            "Example: if step=\"3\", legal numbers could be -3, 0, 3, 6, etc.",
+            "Tip: This attribute can be used together with the max and min attributes to create a range of legal values.",
+            "The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.",
+            "Example\nAn input field with a specified legal number intervals:\n\n  <form>  <label for=\"points\">Points:</label>  <input \n  type=\"number\" id=\"points\" name=\"points\" step=\"3\"></form>\nTry it Yourself »",
+            "Note: Input restrictions are not foolproof, and JavaScript provides many ways to \nadd illegal input. To safely restrict input, it must also be checked by the receiver \n(the server)!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"points\">Points:</label>  <input \n  type=\"number\" id=\"points\" name=\"points\" step=\"3\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The autofocus Attribute",
+        "text": [
+            "The input autofocus attribute specifies that \nan input field should automatically get focus when the page loads.",
+            "Example\nLet the \"First name\" input field automatically get focus when the page loads:\n\n  <form>  <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\" autofocus><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\">\n  </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"fname\">First name:</label><br>  <input \n  type=\"text\" id=\"fname\" name=\"fname\" autofocus><br>  <label for=\"lname\">Last \n  name:</label><br>  <input type=\"text\" id=\"lname\" name=\"lname\">\n  </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The height and width Attributes",
+        "text": [
+            "The input height and width attributes specify the height and width of an <input \ntype=\"image\"> element.",
+            "Tip: Always specify both the height and width attributes for \nimages. If height and width are set, the space required for the image is \nreserved when the page is loaded. Without these attributes, the browser does not \nknow the size of the image, and cannot reserve the appropriate space to it. The \neffect will be that the page layout will change during loading (while the images \nload).",
+            "Example\nDefine an image as the submit button, with height and width attributes:\n\n  <form>  <label for=\"fname\">First name:</label>  <input \n  type=\"text\" id=\"fname\" name=\"fname\"><br><br>  <label for=\"lname\">Last \n  name:</label>  <input type=\"text\" id=\"lname\" name=\"lname\"><br><br>  \n  <input type=\"image\" src=\"img_submit.gif\" alt=\"Submit\" width=\"48\" height=\"48\">\n  </form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form>  <label for=\"fname\">First name:</label>  <input \n  type=\"text\" id=\"fname\" name=\"fname\"><br><br>  <label for=\"lname\">Last \n  name:</label>  <input type=\"text\" id=\"lname\" name=\"lname\"><br><br>  \n  <input type=\"image\" src=\"img_submit.gif\" alt=\"Submit\" width=\"48\" height=\"48\">\n  </form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The list Attribute",
+        "text": [
+            "The input list attribute refers to a <datalist> element that contains pre-defined options for an <input> element.",
+            "Example\nAn <input> element with pre-defined values in a <datalist>:\n\n  <form> \n<input list=\"browsers\"> \n <datalist id=\"browsers\">\n     <option value=\"Edge\">\n \n  <option value=\"Firefox\">\n \n  <option value=\"Chrome\">\n \n  <option value=\"Opera\">\n \n  <option value=\"Safari\">\n  \n </datalist></form>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form> \n<input list=\"browsers\"> \n <datalist id=\"browsers\">\n     <option value=\"Edge\">\n \n  <option value=\"Firefox\">\n \n  <option value=\"Chrome\">\n \n  <option value=\"Opera\">\n \n  <option value=\"Safari\">\n  \n </datalist></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The autocomplete Attribute",
+        "text": [
+            "The input autocomplete attribute specifies whether a form or \nan input field should have autocomplete on or off.",
+            "Autocomplete allows the browser to predict the value. When a user starts to \ntype in a field, the browser should display options to fill in the field, based \non earlier typed values.",
+            "The autocomplete attribute works with <form> and the \nfollowing <input> types: text, search, url, tel, email, password, datepickers, range, and color.",
+            "Example\nAn HTML form with autocomplete on, and off for one input field:\n\n    <form action=\"/action_page.php\" autocomplete=\"on\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <label for=\"email\">Email:</label>  \n    <input type=\"email\" id=\"email\" name=\"email\" autocomplete=\"off\"><br><br>  \n    <input type=\"submit\" value=\"Submit\"></form>\n\nTry it Yourself »",
+            "Tip: In some browsers you may need to activate an \nautocomplete function for this to work (Look under \"Preferences\" in the \nbrowser's menu).",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<form action=\"/action_page.php\" autocomplete=\"on\">  <label for=\"fname\">First \n    name:</label>  <input type=\"text\" id=\"fname\" name=\"fname\"><br><br>  \n    <label for=\"lname\">Last name:</label>  <input type=\"text\" id=\"lname\" \n    name=\"lname\"><br><br>  <label for=\"email\">Email:</label>  \n    <input type=\"email\" id=\"email\" name=\"email\" autocomplete=\"off\"><br><br>  \n    <input type=\"submit\" value=\"Submit\"></form>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Form and Input Elements",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

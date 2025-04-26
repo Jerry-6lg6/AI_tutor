@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Characters",
+        "text": [
+            "The char data type is used to store a \nsingle character. The character must be \nsurrounded by single quotes, like 'A' or 'c':",
+            "Example\nchar myGrade = 'B';\nSystem.out.println(myGrade);\n\n\nTry it Yourself »",
+            "Alternatively, if you are familiar with ASCII values, you can use those to display certain characters:",
+            "Example\nchar myVar1 = 65, myVar2 = 66, myVar3 = 67;\nSystem.out.println(myVar1);\nSystem.out.println(myVar2);\nSystem.out.println(myVar3);\n\n\nTry it Yourself »",
+            "Tip: A list of all ASCII values can be found in our ASCII Table Reference."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Strings",
+        "text": [
+            "The String data type is used to store a sequence of characters (text). String values must be surrounded by double quotes:",
+            "Example\nString greeting = \"Hello World\";\nSystem.out.println(greeting);\n\n\nTry it Yourself »",
+            "The String type is so much used and integrated in Java, that some call it \"the special \nninth type\".\nA String in Java is actually a non-primitive data type, because it refers to \nan object. The String object has methods that are used to perform certain \noperations on strings. Don't worry if you don't understand the term \"object\" just yet. We will learn more about strings and objects in a later chapter.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

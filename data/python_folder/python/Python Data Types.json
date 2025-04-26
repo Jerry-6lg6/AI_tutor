@@ -1,0 +1,198 @@
+[
+    {
+        "title": "Built-in Data Types",
+        "text": [
+            "In programming, data type is an important concept.",
+            "Variables can store data of different types, and different types can do \ndifferent things.",
+            "Python has the following data types built-in by default, in these categories:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Getting the Data Type",
+        "text": [
+            "You can get the data type of any object by using the type() function:",
+            "Example\nPrint the data type of the variable x:\n\nx = 5\nprint(type(x))\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = 5\nprint(type(x))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Setting the Data Type",
+        "text": [
+            "In Python, the data type is set when you assign a value to a variable:",
+            "Example\nData Type\nTry it\n\n\nx = \"Hello World\"\nstr\nTry it »\n\n\nx = 20\nint\nTry it »\n\n\nx = 20.5\nfloat\nTry it »\n\n\nx = 1j\ncomplex\nTry it »\n\n\nx = [\"apple\", \"banana\", \"cherry\"]\nlist\nTry it »\n\n\nx = (\"apple\", \"banana\", \"cherry\")\ntuple\nTry it »\n\n\nx = range(6)\nrange\nTry it »\n\n\nx = {\"name\" : \"John\", \"age\" : 36}\ndict\nTry it »\n\n\nx = {\"apple\", \"banana\", \"cherry\"}\nset\nTry it »\n\n\nx = frozenset({\"apple\", \"banana\", \"cherry\"})\nfrozenset\nTry it »\n\n\nx = True\nbool\nTry it »\n\n\nx = b\"Hello\"\nbytes\nTry it »\n\n\nx = bytearray(5)\nbytearray\nTry it »\n\n\nx = memoryview(bytes(5))\nmemoryview\nTry it »\n\n\nx = None\nNoneType\nTry it »",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Example": "x = \"Hello World\"",
+                    "Data Type": "str",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = 20",
+                    "Data Type": "int",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = 20.5",
+                    "Data Type": "float",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = 1j",
+                    "Data Type": "complex",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = [\"apple\", \"banana\", \"cherry\"]",
+                    "Data Type": "list",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = (\"apple\", \"banana\", \"cherry\")",
+                    "Data Type": "tuple",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = range(6)",
+                    "Data Type": "range",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = {\"name\" : \"John\", \"age\" : 36}",
+                    "Data Type": "dict",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = {\"apple\", \"banana\", \"cherry\"}",
+                    "Data Type": "set",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = frozenset({\"apple\", \"banana\", \"cherry\"})",
+                    "Data Type": "frozenset",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = True",
+                    "Data Type": "bool",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = b\"Hello\"",
+                    "Data Type": "bytes",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = bytearray(5)",
+                    "Data Type": "bytearray",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = memoryview(bytes(5))",
+                    "Data Type": "memoryview",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = None",
+                    "Data Type": "NoneType",
+                    "Try it": "Try it »"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Setting the Specific Data Type",
+        "text": [
+            "If you want to specify the data type, you can use the following \nconstructor functions:",
+            "Example\nData Type\nTry it\n\n\nx = str(\"Hello World\")\nstr\nTry it »\n\n\nx = int(20)\nint\nTry it »\n\n\nx = float(20.5)\nfloat\nTry it »\n\n\nx = complex(1j)\ncomplex\nTry it »\n\n\nx = list((\"apple\", \"banana\", \"cherry\"))\nlist\nTry it »\n\n\nx = tuple((\"apple\", \"banana\", \"cherry\"))\ntuple\nTry it »\n\n\nx = range(6)\nrange\nTry it »\n\n\nx = dict(name=\"John\", age=36)\ndict\nTry it »\n\n\nx = set((\"apple\", \"banana\", \"cherry\"))\nset\nTry it »\n\n\nx = frozenset((\"apple\", \"banana\", \"cherry\"))\nfrozenset\nTry it »\n\n\nx = bool(5)\nbool\nTry it »\n\n\nx = bytes(5)\nbytes\nTry it »\n\n\nx = bytearray(5)\nbytearray\nTry it »\n\n\nx = memoryview(bytes(5))\nmemoryview\nTry it »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Example": "x = str(\"Hello World\")",
+                    "Data Type": "str",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = int(20)",
+                    "Data Type": "int",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = float(20.5)",
+                    "Data Type": "float",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = complex(1j)",
+                    "Data Type": "complex",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = list((\"apple\", \"banana\", \"cherry\"))",
+                    "Data Type": "list",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = tuple((\"apple\", \"banana\", \"cherry\"))",
+                    "Data Type": "tuple",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = range(6)",
+                    "Data Type": "range",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = dict(name=\"John\", age=36)",
+                    "Data Type": "dict",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = set((\"apple\", \"banana\", \"cherry\"))",
+                    "Data Type": "set",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = frozenset((\"apple\", \"banana\", \"cherry\"))",
+                    "Data Type": "frozenset",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = bool(5)",
+                    "Data Type": "bool",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = bytes(5)",
+                    "Data Type": "bytes",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = bytearray(5)",
+                    "Data Type": "bytearray",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Example": "x = memoryview(bytes(5))",
+                    "Data Type": "memoryview",
+                    "Try it": "Try it »"
+                }
+            ]
+        ]
+    }
+]

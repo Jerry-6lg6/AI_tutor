@@ -1,0 +1,152 @@
+[
+    {
+        "title": "What is a confusion matrix?",
+        "text": [
+            "It is a table that is used in classification problems to assess where errors in the model were made.",
+            "The rows represent the actual classes the outcomes should have been.\nWhile the columns represent the predictions we have made.\nUsing this table it is easy to see which predictions are wrong."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Creating a Confusion Matrix",
+        "text": [
+            "Confusion matrixes can be created by predictions made from a logistic regression.",
+            "For now we will generate actual and predicted values by utilizing NumPy:",
+            "import numpy",
+            "Next we will need to generate the numbers for \"actual\" and \"predicted\" values.",
+            "actual = numpy.random.binomial(1, 0.9, size = 1000)\npredicted = numpy.random.binomial(1, 0.9, size = 1000)",
+            "In order to create the confusion matrix we need to import metrics from the sklearn module.",
+            "from sklearn import metrics",
+            "Once metrics is imported we can use the confusion matrix function on our actual and predicted values.",
+            "confusion_matrix = metrics.confusion_matrix(actual, predicted)",
+            "To create a more interpretable visual display we need to convert the table into a confusion matrix display.",
+            "cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, display_labels = [0, \n1])",
+            "Vizualizing the display requires that we import pyplot from matplotlib.",
+            "import matplotlib.pyplot as plt",
+            "Finally to display the plot we can use the functions plot() and show() from pyplot.",
+            "cm_display.plot()\nplt.show()",
+            "See the whole example in action:",
+            "Example\n\n  import matplotlib.pyplot as pltimport numpyfrom sklearn import metrics\nactual = numpy.random.binomial(1,.9,size = 1000)predicted = \n  numpy.random.binomial(1,.9,size = 1000)confusion_matrix = \n  metrics.confusion_matrix(actual, predicted)cm_display = \n  metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, \n  display_labels = [0, 1])cm_display.plot()plt.show()\nResult\n\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import matplotlib.pyplot as pltimport numpyfrom sklearn import metrics\nactual = numpy.random.binomial(1,.9,size = 1000)predicted = \n  numpy.random.binomial(1,.9,size = 1000)confusion_matrix = \n  metrics.confusion_matrix(actual, predicted)cm_display = \n  metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix, \n  display_labels = [0, 1])cm_display.plot()plt.show()"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Results Explained",
+        "text": [
+            "The Confusion Matrix created has four different quadrants:",
+            "True Negative (Top-Left Quadrant)\nFalse Positive (Top-Right Quadrant)\nFalse Negative (Bottom-Left Quadrant)\nTrue Positive (Bottom-Right Quadrant)",
+            "True means that the values were accurately predicted, False means that there was an error or wrong prediction.",
+            "Now that we have made a Confusion Matrix, we can calculate different measures to quantify the quality of the model. First, lets look at Accuracy.",
+            "ADVERTISEMENT",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Created Metrics",
+        "text": [
+            "The matrix provides us with many useful metrics that help us to evaluate our classification model.",
+            "The different measures include: Accuracy, Precision, Sensitivity (Recall), Specificity, and the F-score, explained below."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Accuracy",
+        "text": [
+            "Accuracy measures how often the model is correct.",
+            "(True Positive + True Negative) / Total Predictions",
+            "Example\n\nAccuracy = metrics.accuracy_score(actual, predicted)\n\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "Accuracy = metrics.accuracy_score(actual, predicted)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Precision",
+        "text": [
+            "Of the positives predicted, what percentage is truly positive?",
+            "True Positive / (True Positive + False Positive)",
+            "Precision does not evaluate the correctly predicted negative cases:",
+            "Example\n\nPrecision = metrics.precision_score(actual, predicted)\n\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "Precision = metrics.precision_score(actual, predicted)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Sensitivity (Recall)",
+        "text": [
+            "Of all the positive cases, what percentage are predicted positive?",
+            "Sensitivity (sometimes called Recall) measures how good the model is at predicting positives.",
+            "This means it looks at true positives and false negatives (which are positives that have been incorrectly predicted as negative).",
+            "True Positive / (True Positive + False Negative)",
+            "Sensitivity is good at understanding how well the model predicts something is positive:",
+            "Example\n\nSensitivity_recall = metrics.recall_score(actual, predicted)\n\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "Sensitivity_recall = metrics.recall_score(actual, predicted)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Specificity",
+        "text": [
+            "How well the model is at prediciting negative results?",
+            "Specificity is similar to sensitivity, but looks at it from the persepctive of negative results.",
+            "True Negative / (True Negative + False Positive)",
+            "Since it is just the opposite of Recall, we use the recall_score function, taking the opposite position label:",
+            "Example\n\nSpecificity = metrics.recall_score(actual, predicted, pos_label=0)\n\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "Specificity = metrics.recall_score(actual, predicted, pos_label=0)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "F-score",
+        "text": [
+            "F-score is the \"harmonic mean\" of precision and sensitivity.",
+            "It considers both false positive and false negative cases and is good for imbalanced datasets.",
+            "2 * ((Precision * Sensitivity) / (Precision + Sensitivity))",
+            "This score does not take into consideration the True Negative values:",
+            "Example\n\nF1_score = metrics.f1_score(actual, predicted)\n\nRun example »",
+            "All calulations in one:",
+            "Example\n\n#metrics\nprint({\"Accuracy\":Accuracy,\"Precision\":Precision,\"Sensitivity_recall\":Sensitivity_recall,\"Specificity\":Specificity,\"F1_score\":F1_score})\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "F1_score = metrics.f1_score(actual, predicted)"
+            },
+            {
+                "heading": "Example",
+                "code": "#metrics\nprint({\"Accuracy\":Accuracy,\"Precision\":Precision,\"Sensitivity_recall\":Sensitivity_recall,\"Specificity\":Specificity,\"F1_score\":F1_score})"
+            }
+        ],
+        "tables": []
+    }
+]

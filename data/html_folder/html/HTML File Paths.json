@@ -1,0 +1,70 @@
+[
+    {
+        "title": "File Path Examples",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML File Paths",
+        "text": [
+            "A file path describes the location of a file in a web site's folder structure.",
+            "File paths are used when linking to external files, like:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Absolute File Paths",
+        "text": [
+            "An absolute file path is the full URL to a file:",
+            "Example\n\n<img src=\"https://www.w3schools.com/images/picture.jpg\" \n  alt=\"Mountain\">\n\nTry it Yourself »",
+            "The <img> tag is explained in the chapter: HTML Images.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<img src=\"https://www.w3schools.com/images/picture.jpg\" \n  alt=\"Mountain\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Relative File Paths",
+        "text": [
+            "A relative file path points to a file relative to the current page.",
+            "In the following example, the file path points to a file in the images folder located \nat the root of the current web:",
+            "Example\n\n<img src=\"/images/picture.jpg\" \nalt=\"Mountain\">\n\nTry it Yourself »",
+            "In the following example, the file path points to a file in the images folder located in the \ncurrent folder:",
+            "Example\n\n<img src=\"images/picture.jpg\" \nalt=\"Mountain\">\n\n\nTry it Yourself »",
+            "In the following example, the file path points to a file in the images folder located in the \nfolder one level up from the current folder:",
+            "Example\n\n<img src=\"../images/picture.jpg\" \nalt=\"Mountain\">\n\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<img src=\"/images/picture.jpg\" \nalt=\"Mountain\">"
+            },
+            {
+                "heading": "Example",
+                "code": "<img src=\"images/picture.jpg\" \nalt=\"Mountain\">"
+            },
+            {
+                "heading": "Example",
+                "code": "<img src=\"../images/picture.jpg\" \nalt=\"Mountain\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Best Practice",
+        "text": [
+            "It is best practice to use relative file paths (if possible).",
+            "When using relative file paths, your web pages will not be bound to your current \nbase URL. All links will work on your own computer (localhost) as well as on \nyour current public domain and your future public domains.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

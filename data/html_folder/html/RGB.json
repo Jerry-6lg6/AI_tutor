@@ -1,0 +1,46 @@
+[
+    {
+        "title": "RGB Color Values",
+        "text": [
+            "In HTML, a color can be specified as an RGB value, using this formula:",
+            "rgb(red, green, blue)",
+            "Each parameter (red, green, and \nblue) defines the intensity of the color with a value between 0 and 255.",
+            "This means that there are 256 x 256 x 256 = 16777216 possible colors!",
+            "For example, rgb(255, 0, 0) is displayed as red, \nbecause red is set to its highest value (255), and the other two (green and blue) are \nset to 0.",
+            "Another example, rgb(0, 255, 0) is displayed as green, \nbecause green is set to its highest value (255), and the other two (red and blue) are \nset to 0.",
+            "To display black, set all color parameters to 0, like this: rgb(0, 0, 0).",
+            "To display white, set all color parameters to 255, like \nthis: rgb(255, 255, 255).",
+            "Example\n\n\n\nrgb(255, 0, 0)\n\n\nrgb(0, 0, 255)\n\n\nrgb(60, 179, 113)\n\n\nrgb(238, 130, 238)\n\n\nrgb(255, 165, 0)\n\n\nrgb(106, 90, 205)\n\n\n\n\nTry it Yourself »",
+            "Experiment by mixing the RGB values below:",
+            "RED\n\n255\n\n\nGREEN\n\n0\n\n\nBLUE\n\n0",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Shades of Gray",
+        "text": [
+            "Shades of gray are often defined using equal values for all three parameters:",
+            "Example\n\n\n\nrgb(60, 60, 60)\n\n\nrgb(100, 100, 100)\n\n\nrgb(140, 140, 140)\n\n\nrgb(180, 180, 180)\n\n\nrgb(200, 200, 200)\n\n\nrgb(240, 240, 240)\n\n\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RGBA Color Values",
+        "text": [
+            "RGBA color values are an extension of RGB color values with an Alpha channel \n- which specifies the opacity for a color.",
+            "An RGBA color value is \nspecified with:",
+            "rgba(red, green, blue, \nalpha)",
+            "The alpha parameter is a number \nbetween 0.0 (fully transparent) and 1.0 (not transparent at all):",
+            "Example\n\n\n\nrgba(255, 99, 71, 0)\n\n\nrgba(255, 99, 71, 0.2)\n\n\nrgba(255, 99, 71, 0.4)\n\n\nrgba(255, 99, 71, 0.6)\n\n\nrgba(255, 99, 71, 0.8)\n\n\nrgba(255, 99, 71, 1)\n\n\n\n\nTry it Yourself »",
+            "Experiment by mixing the RGBA values below:",
+            "RED\n\n255\n\n\nGREEN\n\n0\n\n\nBLUE\n\n0\n\n\nALPHA\n\n0",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

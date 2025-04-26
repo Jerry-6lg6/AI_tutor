@@ -1,0 +1,55 @@
+[
+    {
+        "title": "URL - Uniform Resource Locator",
+        "text": [
+            "Web browsers request pages from web servers by using a URL.",
+            "A Uniform Resource Locator (URL) is used to address a document (or other data) on the web.",
+            "A web address like \nhttps://www.w3schools.com/html/default.asp follows these syntax rules:",
+            "scheme://prefix.domain:port/path/filename",
+            "Explanation:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Common URL Schemes",
+        "text": [
+            "The table below lists some common schemes:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "URL Encoding",
+        "text": [
+            "URLs can only be sent over the Internet using the\nASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be \nconverted.",
+            "URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet.",
+            "URL encoding replaces non-ASCII characters with a \"%\" followed by hexadecimal digits.",
+            "URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Try It Yourself",
+        "text": [
+            "If you click \"Submit\", the browser will URL encode the input before it is sent to the server.",
+            "A page at the server will display the received input.",
+            "Try some other input and click Submit again."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "ASCII Encoding Examples",
+        "text": [
+            "Your browser will encode input, according to the character-set used in your page.",
+            "The default character-set in HTML5 is UTF-8.",
+            "For a complete reference of all URL encodings, visit our\nURL Encoding Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "title": "UNION ALL",
+        "text": [
+            "The UNION ALL command combines the result set of two or more SELECT statements (allows \nduplicate values).",
+            "The following SQL statement returns the cities \n(duplicate values also) from both the \"Customers\" and the \"Suppliers\" table:",
+            "Example\n\n SELECT City FROM CustomersUNION ALLSELECT City FROM Suppliers\n ORDER BY City;\n\n\n Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT City FROM CustomersUNION ALLSELECT City FROM Suppliers\n ORDER BY City;"
+            }
+        ],
+        "tables": []
+    }
+]

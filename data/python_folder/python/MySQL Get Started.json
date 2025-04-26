@@ -1,0 +1,48 @@
+[
+    {
+        "title": "MySQL Database",
+        "text": [
+            "To be able to experiment with the code examples in this tutorial, you should \nhave MySQL installed on your computer.",
+            "You can download a MySQL database at\nhttps://www.mysql.com/downloads/."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Install MySQL Driver",
+        "text": [
+            "Python needs a MySQL driver to access the MySQL database.",
+            "In this tutorial we will use the driver \"MySQL Connector\".",
+            "We recommend that you use PIP to install \"MySQL Connector\".",
+            "PIP is most likely already installed in your Python environment.",
+            "Navigate your command line to the location of PIP, and type the following:",
+            "Download and install \"MySQL Connector\":\n\nC:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>python -m pip install \n  mysql-connector-python",
+            "Now you have downloaded and installed a MySQL driver."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Test MySQL Connector",
+        "text": [
+            "To test if the installation was successful, or if you already have \"MySQL \nConnector\" \ninstalled, create a Python page with \nthe following content:",
+            "demo_mysql_test.py:\n\n  import mysql.connector\nRun example »",
+            "If the above code was executed with no errors, \"MySQL Connector\" is installed and \nready to be used.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Create Connection",
+        "text": [
+            "Start by creating a connection to the database.",
+            "Use the username and password from your MySQL database:",
+            "demo_mysql_connection.py:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",  user=\"yourusername\",  password=\"yourpassword\")\nprint(mydb)\nRun example »",
+            "Now you can start querying the database using SQL statements.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

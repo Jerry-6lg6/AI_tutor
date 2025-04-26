@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Delete a Table",
+        "text": [
+            "You can delete an existing table by using \nthe \"DROP TABLE\" statement:",
+            "Example\nDelete the table \"customers\":\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"DROP TABLE customers\"mycursor.execute(sql)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"DROP TABLE customers\"mycursor.execute(sql)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Drop Only if Exist",
+        "text": [
+            "If the table you want to delete is already deleted, or for any other \nreason does not exist, you can use the IF EXISTS keyword to avoid getting an \nerror.",
+            "Example\nDelete the table \"customers\" if it exists:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = \n  mydb.cursor()sql = \"DROP TABLE IF EXISTS customers\"mycursor.execute(sql)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = \n  mydb.cursor()sql = \"DROP TABLE IF EXISTS customers\"mycursor.execute(sql)"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,117 @@
+[
+    {
+        "title": "SQL FULL OUTER JOIN Keyword",
+        "text": [
+            "The FULL OUTER JOIN keyword returns all records when there is a match in \nleft (table1) or right (table2) table records.",
+            "Tip: FULL OUTER JOIN and \nFULL JOIN are the same.",
+            "SELECT column_name(s)\n FROM table1\n FULL OUTER JOIN table2 ON table1.column_name = table2.column_name\n WHERE condition;",
+            "",
+            "Note: FULL OUTER JOIN can potentially return very large \nresult-sets!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "In this tutorial we will use the well-known Northwind sample database.",
+            "Below is a selection from the \"Customers\" table:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico",
+            "And a selection from the \"Orders\" table:",
+            "OrderID\nCustomerID\nEmployeeID\nOrderDate\nShipperID\n\n\n10308\n2\n7\n1996-09-18\n3\n\n\n10309\n37\n3\n1996-09-19\n1\n\n\n10310\n77\n8\n1996-09-20\n2",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                }
+            ],
+            [
+                {
+                    "OrderID": "10308",
+                    "CustomerID": "2",
+                    "EmployeeID": "7",
+                    "OrderDate": "1996-09-18",
+                    "ShipperID": "3"
+                },
+                {
+                    "OrderID": "10309",
+                    "CustomerID": "37",
+                    "EmployeeID": "3",
+                    "OrderDate": "1996-09-19",
+                    "ShipperID": "1"
+                },
+                {
+                    "OrderID": "10310",
+                    "CustomerID": "77",
+                    "EmployeeID": "8",
+                    "OrderDate": "1996-09-20",
+                    "ShipperID": "2"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL FULL OUTER JOIN Example",
+        "text": [
+            "The following SQL statement selects all customers, and all orders:",
+            "SELECT Customers.CustomerName, Orders.OrderID\n  FROM Customers\n  FULL OUTER JOIN Orders\n  ON Customers.CustomerID=Orders.CustomerID\n  ORDER BY Customers.CustomerName;",
+            "A selection from the result set may look like this:",
+            "CustomerName\nOrderID\n\n\nNull\n10309\n\n\nNull\n10310\n\n\nAlfreds Futterkiste\nNull\n\n\nAna Trujillo Emparedados y helados \n10308\n\n\nAntonio Moreno TaquerÃ­a \nNull",
+            "Note: The FULL OUTER JOIN keyword returns all matching \nrecords from both tables whether the other table matches or not. So, if \nthere are rows in \"Customers\" that do not have matches in \"Orders\", or if there \nare rows in \"Orders\" that do not have matches in \"Customers\", those rows will be \nlisted as well.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerName": "Null",
+                    "OrderID": "10309"
+                },
+                {
+                    "CustomerName": "Null",
+                    "OrderID": "10310"
+                },
+                {
+                    "CustomerName": "Alfreds Futterkiste",
+                    "OrderID": "Null"
+                },
+                {
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "OrderID": "10308"
+                },
+                {
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "OrderID": "Null"
+                }
+            ]
+        ]
+    }
+]

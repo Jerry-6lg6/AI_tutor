@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Set Decimal Precision",
+        "text": [
+            "You have probably already noticed that if you print a floating point number, \nthe output will show many digits after the decimal point:",
+            "Example\n\n  float myFloatNum = 3.5;double myDoubleNum = 19.99;\n  printf(\"%f\\n\", myFloatNum); \n  // Outputs 3.500000printf(\"%lf\", myDoubleNum); // Outputs \n  19.990000\nTry it Yourself »",
+            "If you want to remove the extra zeros (set decimal precision), you can use a \ndot (.) followed by a number that specifies how many digits that should be shown \nafter the decimal point:",
+            "Example\n\n  float myFloatNum = 3.5;printf(\"%f\\n\", myFloatNum);   // Default will show 6 digits after the decimal pointprintf(\"%.1f\\n\", \n  myFloatNum); // Only show 1 digitprintf(\"%.2f\\n\", myFloatNum); // Only \n  show 2 digitsprintf(\"%.4f\", myFloatNum);   // Only show 4 digits\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "float myFloatNum = 3.5;double myDoubleNum = 19.99;\n  printf(\"%f\\n\", myFloatNum); \n  // Outputs 3.500000printf(\"%lf\", myDoubleNum); // Outputs \n  19.990000"
+            },
+            {
+                "heading": "Example",
+                "code": "float myFloatNum = 3.5;printf(\"%f\\n\", myFloatNum);   // Default will show 6 digits after the decimal pointprintf(\"%.1f\\n\", \n  myFloatNum); // Only show 1 digitprintf(\"%.2f\\n\", myFloatNum); // Only \n  show 2 digitsprintf(\"%.4f\", myFloatNum);   // Only show 4 digits"
+            }
+        ],
+        "tables": []
+    }
+]

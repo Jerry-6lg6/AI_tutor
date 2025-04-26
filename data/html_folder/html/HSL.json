@@ -1,0 +1,50 @@
+[
+    {
+        "title": "HSL Color Values",
+        "text": [
+            "In HTML, a color can be specified using hue, saturation, and lightness (HSL) in \nthe form:",
+            "hsl(hue, saturation, lightness)",
+            "Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.",
+            "Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.",
+            "Lightness is also a percentage value. 0% is black, and 100% is white.",
+            "Experiment by mixing the HSL values below:",
+            "HUE\n\n0\n\n\nSATURATION\n\n100%\n\n\nLIGHTNESS\n\n50%",
+            "Example\n\n\n\nhsl(0, 100%, 50%)\n\n\nhsl(240, 100%, 50%)\n\n\nhsl(147, 50%, 47%)\n\n\nhsl(300, 76%, 72%)\n\n\nhsl(39, 100%, 50%)\n\n\nhsl(248, 53%, 58%)\n\n\n\n\nTry it Yourself »",
+            "Saturation can be described as the intensity of a color.",
+            "100% is pure color, no shades of gray.",
+            "50% is 50% gray, but you can still see the color.",
+            "0% is completely gray; you can no longer see the color.",
+            "Example\n\n\n\nhsl(0, 100%, 50%)\n\n\nhsl(0, 80%, 50%)\n\n\nhsl(0, 60%, 50%)\n\n\nhsl(0, 40%, 50%)\n\n\nhsl(0, 20%, 50%)\n\n\nhsl(0, 0%, 50%)\n\n\n\n\nTry it Yourself »",
+            "",
+            "The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light), \nand 100% means full lightness (white).",
+            "Example\n\n\n\nhsl(0, 100%, 0%)\n\n\nhsl(0, 100%, 25%)\n\n\nhsl(0, 100%, 50%)\n\n\nhsl(0, 100%, 75%)\n\n\nhsl(0, 100%, 90%)\n\n\nhsl(0, 100%, 100%)\n\n\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Shades of Gray",
+        "text": [
+            "Shades of gray are often defined by setting the hue and saturation to 0, and \nadjusting the lightness from 0% to 100% to get darker/lighter shades:",
+            "Example\n\n\n\nhsl(0, 0%, 20%)\n\n\nhsl(0, 0%, 30%)\n\n\nhsl(0, 0%, 40%)\n\n\nhsl(0, 0%, 60%)\n\n\nhsl(0, 0%, 70%)\n\n\nhsl(0, 0%, 90%)\n\n\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HSLA Color Values",
+        "text": [
+            "HSLA color values are an extension of HSL color values, with an Alpha channel \n- which specifies the opacity for a color.",
+            "An HSLA color value is \nspecified with:",
+            "hsla(hue, saturation, lightness, \nalpha)",
+            "The alpha parameter is a number \nbetween 0.0 (fully transparent) and 1.0 (not transparent at all):",
+            "Experiment by mixing the HSLA values below:",
+            "HUE\n\n0\n\n\nSATURATION\n\n100%\n\n\nLIGHTNESS\n\n50%\n\n\nALPHA\n\n0.5",
+            "Example\n\n\n\nhsla(9, 100%, 64%, 0)\n\n\nhsla(9, 100%, 64%, 0.2)\n\n\nhsla(9, 100%, 64%, 0.4)\n\n\nhsla(9, 100%, 64%, 0.6)\n\n\nhsla(9, 100%, 64%, 0.8)\n\n\nhsla(9, 100%, 64%, 1)\n\n\n\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

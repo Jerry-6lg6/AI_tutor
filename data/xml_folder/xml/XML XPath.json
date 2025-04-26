@@ -1,0 +1,49 @@
+[
+    {
+        "title": "What is XPath?",
+        "text": [
+            "XPath is a major element in the XSLT standard.",
+            "XPath can be used to navigate through elements and attributes in an XML document."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XPath Path Expressions",
+        "text": [
+            "XPath uses path expressions to select nodes or node-sets in an XML document. These path \nexpressions look very much like the expressions you see when you work with a traditional computer file system.",
+            "XPath expressions can be used in JavaScript, Java, XML Schema, PHP, Python, \nC and C++, and lots of other languages."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XPath is Used in XSLT",
+        "text": [
+            "XPath is a major element in the XSLT standard.",
+            "With XPath knowledge you will be able to take great advantage of XSL.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XPath Example",
+        "text": [
+            "We will use the following XML document:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bookstore>\n<book category=\"cooking\">\n \n<title lang=\"en\">Everyday Italian</title>\n \n<author>Giada De Laurentiis</author>\n \n<year>2005</year>\n \n<price>30.00</price>\n</book>\n<book category=\"children\">\n \n<title lang=\"en\">Harry Potter</title>\n \n<author>J K. Rowling</author>\n \n<year>2005</year>\n \n<price>29.99</price>\n</book>\n<book category=\"web\">\n \n<title lang=\"en\">XQuery Kick Start</title>\n \n<author>James McGovern</author>\n \n<author>Per Bothner</author>\n \n<author>Kurt Cagle</author>\n \n<author>James Linn</author>\n \n<author>Vaidyanathan Nagarajan</author>\n \n<year>2003</year>\n \n<price>49.99</price>\n</book>\n<book category=\"web\">\n \n<title lang=\"en\">Learning XML</title>\n \n<author>Erik T. Ray</author>\n \n<year>2003</year>\n \n<price>39.95</price>\n</book>\n</bookstore>",
+            "In the table below we have listed some XPath expressions and the result of the expressions:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XPath Tutorial",
+        "text": [
+            "You will learn a lot more about XPath in our XPath Tutorial.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,60 @@
+[
+    {
+        "title": "Declaring Attributes",
+        "text": [
+            "An attribute declaration has the following syntax:",
+            "<!ATTLIST element-name attribute-name attribute-type attribute-value>\nDTD example:\n<!ATTLIST payment type CDATA \"check\">\nXML example:\n<payment type=\"check\" />",
+            "The attribute-type can be one of the following:",
+            "The attribute-value can be one of the following:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "A Default Attribute Value",
+        "text": [
+            "DTD:\n<!ELEMENT square EMPTY>\n<!ATTLIST square width CDATA \"0\">\nValid XML:\n<square width=\"100\" />",
+            "In the example above, the \"square\" element is defined to be an empty element with\na \"width\" attribute of  type CDATA. If no width is specified, it has a default\nvalue of 0."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "#REQUIRED",
+        "text": [
+            "DTD:\n<!ATTLIST person number CDATA #REQUIRED>\nValid XML:\n<person number=\"5677\" />\nInvalid XML:\n<person />",
+            "Use the #REQUIRED keyword if you don't have an option for a default value, but still want to force the attribute to be present."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "#IMPLIED",
+        "text": [
+            "DTD:\n<!ATTLIST contact fax CDATA #IMPLIED>\nValid XML:\n<contact fax=\"555-667788\" />\nValid XML:\n<contact />",
+            "Use the #IMPLIED keyword if you don't want to force the author to include an attribute, and you don't have an option for a default value."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "#FIXED",
+        "text": [
+            "DTD:\n<!ATTLIST sender company CDATA #FIXED \"Microsoft\">\nValid XML:\n<sender company=\"Microsoft\" />\nInvalid XML:\n<sender company=\"W3Schools\" />",
+            "Use the #FIXED keyword when you want an attribute to have a fixed value\nwithout allowing the author to change it. If an author includes another value,\nthe XML parser will return an error."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Enumerated Attribute Values",
+        "text": [
+            "DTD:\n<!ATTLIST payment type (check|cash) \"cash\">\nXML example:\n<payment type=\"check\" />\nor\n<payment type=\"cash\" />",
+            "Use enumerated attribute values when you want the attribute value to be one of a fixed set of legal values.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

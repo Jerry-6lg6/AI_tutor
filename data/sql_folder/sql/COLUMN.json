@@ -1,0 +1,33 @@
+[
+    {
+        "title": "ALTER COLUMN",
+        "text": [
+            "The ALTER COLUMN command is used to change the data type of a column in a table.",
+            "The following SQL changes the data type of the column named \"BirthDate\" in \nthe \"Employees\" table to type year:",
+            "Example\n\n  ALTER TABLE EmployeesALTER COLUMN BirthDate \n  year;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE EmployeesALTER COLUMN BirthDate \n  year;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "DROP COLUMN",
+        "text": [
+            "The DROP COLUMN command is used to delete a column in an \nexisting table.",
+            "The following SQL deletes the \"ContactName\" column from the \"Customers\" table:",
+            "Example\n\n  ALTER TABLE CustomersDROP COLUMN ContactName;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE CustomersDROP COLUMN ContactName;"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Limit the Result",
+        "text": [
+            "You can limit the number of records returned from the query, by using the \"LIMIT\" statement:",
+            "Example\nSelect the 5 first records in the \"customers\" table:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()mycursor.execute(\"SELECT * FROM customers LIMIT 5\")myresult = mycursor.fetchall()for x in \n  myresult:  print(x)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()mycursor.execute(\"SELECT * FROM customers LIMIT 5\")myresult = mycursor.fetchall()for x in \n  myresult:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Start From Another Position",
+        "text": [
+            "If you want to return five records, starting from the third record, you \ncan use the \"OFFSET\" keyword:",
+            "Example\nStart from position 3, and return 5 records:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()mycursor.execute(\"SELECT * FROM customers LIMIT 5 \n  OFFSET 2\")myresult = mycursor.fetchall()for x in \n  myresult:  print(x)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()mycursor.execute(\"SELECT * FROM customers LIMIT 5 \n  OFFSET 2\")myresult = mycursor.fetchall()for x in \n  myresult:  print(x)"
+            }
+        ],
+        "tables": []
+    }
+]

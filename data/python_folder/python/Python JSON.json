@@ -1,0 +1,95 @@
+[
+    {
+        "title": "JSON in Python",
+        "text": [
+            "Python has a built-in package called json, which can be used to work with JSON data.",
+            "Example\nImport the json module:\n\n    import json"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import json"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Parse JSON - Convert from JSON to Python",
+        "text": [
+            "If you have a JSON string, you can parse it by using the\njson.loads() method.",
+            "The result will be a Python dictionary.",
+            "Example\nConvert from JSON to Python:\n\n  import json# some JSON:x =  '{ \"name\":\"John\", \"age\":30, \"city\":\"New \n  York\"}'# parse x:y = json.loads(x)# the result is a \n  Python dictionary:print(y[\"age\"])\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import json# some JSON:x =  '{ \"name\":\"John\", \"age\":30, \"city\":\"New \n  York\"}'# parse x:y = json.loads(x)# the result is a \n  Python dictionary:print(y[\"age\"])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Convert from Python to JSON",
+        "text": [
+            "If you have a Python object, you can convert it into a JSON string by \nusing the json.dumps() method.",
+            "Example\nConvert from Python to JSON:\n\n  import json# a Python object (dict):x = {  \"name\": \n  \"John\",  \"age\": 30,  \"city\": \"New York\"}# \n  convert into JSON:y = json.dumps(x)# the result is a JSON string:\n  print(y)\nTry it Yourself »",
+            "",
+            "You can convert Python objects of the following types, into JSON strings:",
+            "Example\nConvert Python objects into JSON strings, and print the values:\n\n  import jsonprint(json.dumps({\"name\": \"John\", \"age\": 30}))print(json.dumps([\"apple\", \n  \"bananas\"]))print(json.dumps((\"apple\", \"bananas\")))\n  print(json.dumps(\"hello\"))print(json.dumps(42))print(json.dumps(31.76))print(json.dumps(True))print(json.dumps(False))print(json.dumps(None))\nTry it Yourself »",
+            "When you convert from Python to JSON, Python objects are converted into the JSON (JavaScript) equivalent:",
+            "Example\nConvert a Python object containing all the legal data types:\n\n  import jsonx = {  \"name\": \n  \"John\",  \"age\": 30,  \"married\": True,  \n  \"divorced\": False,  \"children\": (\"Ann\",\"Billy\"),  \"pets\": \n  None,  \"cars\": [    {\"model\": \"BMW 230\", \"mpg\": \n  27.5},    {\"model\": \"Ford Edge\", \"mpg\": 24.1}  ]\n  }print(json.dumps(x))\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import json# a Python object (dict):x = {  \"name\": \n  \"John\",  \"age\": 30,  \"city\": \"New York\"}# \n  convert into JSON:y = json.dumps(x)# the result is a JSON string:\n  print(y)"
+            },
+            {
+                "heading": "Example",
+                "code": "import jsonprint(json.dumps({\"name\": \"John\", \"age\": 30}))print(json.dumps([\"apple\", \n  \"bananas\"]))print(json.dumps((\"apple\", \"bananas\")))\n  print(json.dumps(\"hello\"))print(json.dumps(42))print(json.dumps(31.76))print(json.dumps(True))print(json.dumps(False))print(json.dumps(None))"
+            },
+            {
+                "heading": "Example",
+                "code": "import jsonx = {  \"name\": \n  \"John\",  \"age\": 30,  \"married\": True,  \n  \"divorced\": False,  \"children\": (\"Ann\",\"Billy\"),  \"pets\": \n  None,  \"cars\": [    {\"model\": \"BMW 230\", \"mpg\": \n  27.5},    {\"model\": \"Ford Edge\", \"mpg\": 24.1}  ]\n  }print(json.dumps(x))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Format the Result",
+        "text": [
+            "The example above prints a JSON string, but it is not very easy to read, with no indentations and line breaks.",
+            "The json.dumps() method has parameters to \nmake it easier to read the result:",
+            "Example\nUse the indent parameter to define the numbers \nof indents:\n\n    json.dumps(x, indent=4)\nTry it Yourself »",
+            "You can also define the separators, default value is (\", \", \": \"), which \nmeans using a comma and a space to separate each object, and a colon and a space \nto separate keys from values:",
+            "Example\nUse the separators parameter to change the \ndefault separator:\n\n    json.dumps(x, indent=4, separators=(\". \", \" = \"))\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "json.dumps(x, indent=4)"
+            },
+            {
+                "heading": "Example",
+                "code": "json.dumps(x, indent=4, separators=(\". \", \" = \"))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Order the Result",
+        "text": [
+            "The json.dumps() method has parameters to \norder the keys in the result:",
+            "Example\nUse the sort_keys parameter to specify if \nthe result should be sorted or not:\n\n    json.dumps(x, indent=4, sort_keys=True)\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "json.dumps(x, indent=4, sort_keys=True)"
+            }
+        ],
+        "tables": []
+    }
+]

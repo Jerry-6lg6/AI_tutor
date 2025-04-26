@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Get the Size of an Array",
+        "text": [
+            "To get the size of an array, you can use the sizeof() \noperator:",
+            "Example\n\n  int myNumbers[5] = {10, 20, 30, 40, 50};cout << sizeof(myNumbers);\n\nResult:\n\n\n  20\n\n\nTry it Yourself »",
+            "Why did the result show 20 instead of \n5, when the array contains 5 elements?",
+            "It is because the sizeof() operator returns the size of a type in \nbytes.",
+            "You learned from the Data Types chapter that an int \ntype is usually 4 bytes, so from the example above, 4 x 5 (4 bytes x 5 elements) = 20 bytes.",
+            "To find out how many elements an array has, you have to divide the size of the array \nby the size of the first element in the array:",
+            "Example\n\n  int myNumbers[5] = {10, 20, 30, 40, 50};int getArrayLength = \n  sizeof(myNumbers) / sizeof(myNumbers[0]);cout << getArrayLength;\n\nResult:\n\n\n  5\n\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myNumbers[5] = {10, 20, 30, 40, 50};cout << sizeof(myNumbers);"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[5] = {10, 20, 30, 40, 50};int getArrayLength = \n  sizeof(myNumbers) / sizeof(myNumbers[0]);cout << getArrayLength;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Loop Through an Array with sizeof()",
+        "text": [
+            "In the Arrays and Loops Chapter, we wrote the size of the array in the loop condition (i < \n5). This is not ideal, since it will only work for arrays of a specified size.",
+            "However, by using the sizeof() approach from \nthe example above, we can now make loops that work for arrays of any size, which \nis more \nsustainable.",
+            "Instead of writing:",
+            "int myNumbers[5] = {10, 20, 30, 40, 50};for (int i = 0; i < \n  5; i++) {  cout << myNumbers[i] << \n  \"\\n\";}",
+            "It is better to write:",
+            "Example\n\n  int myNumbers[5] = {10, 20, 30, 40, 50};for (int i = 0; i < \n  sizeof(myNumbers) / sizeof(myNumbers[0]); i++) {  cout << myNumbers[i] << \n  \"\\n\";}\n \nTry it Yourself »",
+            "Note that, in C++ version 11 (2011), you can also use the \"for-each\" loop, \nwhich is even cleaner and simpler:",
+            "Example\n\n  int myNumbers[5] = {10, 20, 30, 40, 50};for (int i : myNumbers) {  \n  cout << i << \"\\n\";}\n\nTry it Yourself »",
+            "It is good to know the different ways to loop through an array, since you may encounter them all in different programs.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myNumbers[5] = {10, 20, 30, 40, 50};for (int i = 0; i < \n  sizeof(myNumbers) / sizeof(myNumbers[0]); i++) {  cout << myNumbers[i] << \n  \"\\n\";}"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[5] = {10, 20, 30, 40, 50};for (int i : myNumbers) {  \n  cout << i << \"\\n\";}"
+            }
+        ],
+        "tables": []
+    }
+]

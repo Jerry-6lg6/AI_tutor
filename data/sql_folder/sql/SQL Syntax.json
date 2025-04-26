@@ -1,0 +1,107 @@
+[
+    {
+        "title": "SQL Statements",
+        "text": [
+            "Most of the actions you need to perform on a database are done with SQL statements.",
+            "SQL statements consist of keywords that are easy to understand.",
+            "The following SQL statement returns all records from a table named \"Customers\":",
+            "Example\nSelect all records from the Customers table:\n\n SELECT * FROM Customers;\n\n\n Try it Yourself »",
+            "In this tutorial we will teach you all about the different SQL statements."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Database Tables",
+        "text": [
+            "A database most often contains one or more tables. Each table is identified \nby a name (e.g. \"Customers\" or \"Orders\"), and contain records (rows) with \ndata.",
+            "In this tutorial we will use the well-known Northwind sample database \n(included in MS Access and MS SQL Server).",
+            "Below is a selection from the Customers table used in the examples:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden",
+            "The table above contains five records (one for each customer) and seven columns \n(CustomerID, CustomerName, ContactName, Address, City, PostalCode, and Country).",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Keep in Mind That...",
+        "text": [
+            "In this tutorial we will write all SQL keywords in upper-case."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Semicolon after SQL Statements?",
+        "text": [
+            "Some database systems require a semicolon at the end of each SQL statement.",
+            "Semicolon is the standard way to separate each SQL statement in database \nsystems that allow more than one SQL statement to be executed in the same call \nto the server.",
+            "In this tutorial, we will use semicolon at the end of each SQL statement."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Some of The Most Important SQL Commands",
+        "text": [
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

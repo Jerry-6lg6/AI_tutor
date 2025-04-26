@@ -1,0 +1,94 @@
+[
+    {
+        "title": "The class Attribute",
+        "text": [
+            "The class attribute is often used to point \nto a class name in a style sheet. It can also be used by a JavaScript to access and \nmanipulate elements with the specific class name.",
+            "In the following example we have three <div> elements \nwith a class attribute with the value of \n\"city\". All of the three <div> \nelements will be styled equally according to the .city \nstyle definition in the head section:",
+            "Example\n\n <!DOCTYPE html><html><head><style>\n  .city {  background-color: tomato;  color: white;  \n  border: 2px solid black;  margin: 20px;\n    padding: 20px;} </style>\n </head><body><div class=\"city\">\n  \n <h2>London</h2>  <p>London is the capital of England.</p>\n </div><div class=\"city\">\n  \n <h2>Paris</h2>  <p>Paris is the capital of France.</p></div><div class=\"city\">\n  \n <h2>Tokyo</h2>  <p>Tokyo is the capital of Japan.</p></div></body></html>\n \n\n Try it Yourself »",
+            "In the following example we have two <span> elements \nwith a class attribute with the value of \n\"note\". Both <span> \nelements will be styled equally according to the .note \nstyle definition in the head section:",
+            "Example\n\n <!DOCTYPE html><html><head><style>.note {\n    font-size: 120%;  color: red;}\n </style></head><body><h1>My <span class=\"note\">Important</span> Heading</h1><p>This is some <span class=\"note\">important</span> text.</p></body></html>\n\n Try it Yourself »",
+            "Tip: The class attribute can be used on any HTML element.\nNote: The class name is case sensitive!\nTip: You can learn much more about CSS in our CSS Tutorial.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html><head><style>\n  .city {  background-color: tomato;  color: white;  \n  border: 2px solid black;  margin: 20px;\n    padding: 20px;} </style>\n </head><body><div class=\"city\">\n  \n <h2>London</h2>  <p>London is the capital of England.</p>\n </div><div class=\"city\">\n  \n <h2>Paris</h2>  <p>Paris is the capital of France.</p></div><div class=\"city\">\n  \n <h2>Tokyo</h2>  <p>Tokyo is the capital of Japan.</p></div></body></html>"
+            },
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html><head><style>.note {\n    font-size: 120%;  color: red;}\n </style></head><body><h1>My <span class=\"note\">Important</span> Heading</h1><p>This is some <span class=\"note\">important</span> text.</p></body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Syntax For Class",
+        "text": [
+            "To create a class; write a period (.) character, followed by a \nclass name. \nThen, define the CSS properties within curly braces {}:",
+            "Example\nCreate a class named \"city\":\n\n  <!DOCTYPE html><html><head><style>.city {  \n  background-color: tomato;  color: white;  padding: 10px;\n  }</style></head><body><h2 class=\"city\">London</h2>\n  <p>London is the capital of England.</p><h2 class=\"city\">Paris</h2>\n  <p>Paris is the capital of France.</p><h2 class=\"city\">Tokyo</h2>\n  <p>Tokyo is the capital of Japan.</p></body></html>\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html><head><style>.city {  \n  background-color: tomato;  color: white;  padding: 10px;\n  }</style></head><body><h2 class=\"city\">London</h2>\n  <p>London is the capital of England.</p><h2 class=\"city\">Paris</h2>\n  <p>Paris is the capital of France.</p><h2 class=\"city\">Tokyo</h2>\n  <p>Tokyo is the capital of Japan.</p></body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Multiple Classes",
+        "text": [
+            "HTML elements can belong to more than one class.",
+            "To define multiple classes, separate the class names with a space, e.g. <div \nclass=\"city main\">. The element will be styled according to all the \nclasses specified.",
+            "In the following example, the first <h2> element belongs to both the \ncity class and also to the main class, \nand will get the CSS styles from both of the classes:",
+            "Example\n\n  <h2 \n  class=\"city main\">London</h2><h2 class=\"city\">Paris</h2><h2 \n  class=\"city\">Tokyo</h2>\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h2 \n  class=\"city main\">London</h2><h2 class=\"city\">Paris</h2><h2 \n  class=\"city\">Tokyo</h2>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Different Elements Can Share Same Class",
+        "text": [
+            "Different HTML elements can point to the same class name.",
+            "In the following example, both <h2> and <p> \npoint to the \"city\" class \nand will share the same style:",
+            "Example\n\n  <h2 class=\"city\">Paris</h2><p \n  class=\"city\">Paris is the capital of France</p>\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h2 class=\"city\">Paris</h2><p \n  class=\"city\">Paris is the capital of France</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Use of the class Attribute in JavaScript",
+        "text": [
+            "The class name can also be used by JavaScript to perform certain tasks for \nspecific elements.",
+            "JavaScript can access elements with a specific class name with the getElementsByClassName() method:",
+            "Example\nClick on a button to hide all elements with the class name \n  \"city\":\n\n  <script>function myFunction() {  var x = document.getElementsByClassName(\"city\");  for (var i = 0; i < x.length; \n  i++) {    x[i].style.display = \"none\";  }}</script>\n\n Try it Yourself »",
+            "Don't worry if you don't understand the code in the example above.\nYou will learn more about JavaScript in our HTML JavaScript chapter, or you can study our\nJavaScript Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<script>function myFunction() {  var x = document.getElementsByClassName(\"city\");  for (var i = 0; i < x.length; \n  i++) {    x[i].style.display = \"none\";  }}</script>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

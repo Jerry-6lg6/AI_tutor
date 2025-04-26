@@ -1,0 +1,37 @@
+[
+    {
+        "title": "LIKE",
+        "text": [
+            "The LIKE command is used in a WHERE clause \nto search for a specified pattern in a column.",
+            "You can use two wildcards with LIKE:",
+            "The following SQL selects all customers with a CustomerName starting with \n\"a\":",
+            "Example\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE 'a%';\n\n Try it Yourself »",
+            "The following SQL selects all customers with a CustomerName ending with \"a\":",
+            "Example\n\n SELECT * FROM Customers\n WHERE CustomerName LIKE '%a'; \n\n Try it Yourself »",
+            "The following SQL selects all customers with a CustomerName that \nhave \"or\" in any position:",
+            "Example\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE '%or%';\n\n\n Try it Yourself »",
+            "The following SQL statement selects all customers with a CustomerName that \nstarts with \"a\" and are at least 3 characters in length:",
+            "Example\n\n SELECT * FROM Customers\n  WHERE CustomerName LIKE 'a__%';\nTry it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE CustomerName LIKE 'a%';"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE CustomerName LIKE '%a';"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n  WHERE CustomerName LIKE '%or%';"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n  WHERE CustomerName LIKE 'a__%';"
+            }
+        ],
+        "tables": []
+    }
+]

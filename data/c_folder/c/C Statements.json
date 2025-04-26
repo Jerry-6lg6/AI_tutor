@@ -1,0 +1,45 @@
+[
+    {
+        "title": "Statements",
+        "text": [
+            "A computer program is a list of \"instructions\" to be \"executed\" by a computer.",
+            "In a programming language, these programming instructions are called statements.",
+            "The following statement \"instructs\" the compiler to print the text \"Hello World\" \nto the screen:",
+            "Example\n\n  printf(\"Hello World!\");\nTry it Yourself »",
+            "It is important that you end the statement with a semicolon ;",
+            "If you forget the semicolon (;), an error will occur \nand the program will not run:",
+            "Example\n\n    printf(\"Hello World!\")\n\nerror: expected ';' before 'return'\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "printf(\"Hello World!\");"
+            },
+            {
+                "heading": "Example",
+                "code": "printf(\"Hello World!\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Many Statements",
+        "text": [
+            "Most C programs contain many statements.",
+            "The statements are executed, one by one, in the same order as they are \nwritten:",
+            "Example\n\n  printf(\"Hello World!\");printf(\"Have \n  a good day!\");return 0;\nTry it Yourself »",
+            "From the example above, we have three statements:",
+            "The first statement is executed first (print \"Hello World!\" to the screen).\nThen the second statement is executed (print \"Have a good day!\" to the screen).\nAnd at last, the third statement is executed (end the C program successfully).",
+            "You will learn more about statements while reading this tutorial. For now, just remember to always end them with a semicolon to avoid any errors.\nComing up: The next chapter will teach you how to control \n  the output and how to insert new lines to make it more readable.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "printf(\"Hello World!\");printf(\"Have \n  a good day!\");return 0;"
+            }
+        ],
+        "tables": []
+    }
+]

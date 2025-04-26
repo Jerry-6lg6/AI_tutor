@@ -1,0 +1,116 @@
+[
+    {
+        "title": "What is PIP?",
+        "text": [
+            "PIP is a package manager for Python packages, or modules if you like.",
+            "Note: If you have Python version 3.4 or later, PIP is included by default."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "What is a Package?",
+        "text": [
+            "A package contains all the files you need for a module.",
+            "Modules are Python code libraries you can include in your project."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Check if PIP is Installed",
+        "text": [
+            "Navigate your command line to the location of Python's script directory, and type the following:",
+            "Example\nCheck PIP version:\n\nC:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>pip --version"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "C:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>pip --version"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Install PIP",
+        "text": [
+            "If you do not have PIP installed, you can download and install it from this page:\nhttps://pypi.org/project/pip/"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Download a Package",
+        "text": [
+            "Downloading a package is very easy.",
+            "Open the command line interface and tell PIP to download the package you \nwant.",
+            "Navigate your command line to the location of Python's script directory, and type the following:",
+            "Example\nDownload a package named \"camelcase\":\n\nC:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>pip \n  install camelcase",
+            "Now you have downloaded and installed your first package!",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "C:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>pip \n  install camelcase"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using a Package",
+        "text": [
+            "Once the package is installed, it is ready to use.",
+            "Import the \"camelcase\" package into your project.",
+            "Example\nImport and use \"camelcase\":\n\n  import camelcasec = camelcase.CamelCase()txt = \"hello world\"\nprint(c.hump(txt))\nRun Example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import camelcasec = camelcase.CamelCase()txt = \"hello world\"\nprint(c.hump(txt))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Find Packages",
+        "text": [
+            "Find more packages at https://pypi.org/."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Remove a Package",
+        "text": [
+            "Use the uninstall command to remove a package:",
+            "Example\nUninstall the package named \"camelcase\":\n\nC:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>pip \n  uninstall camelcase",
+            "The PIP Package Manager will ask you to confirm that you want to remove the \ncamelcase package:",
+            "Uninstalling camelcase-02.1:  Would remove:    c:\\users\\Your Name\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\camelcase-0.2-py3.6.egg-info    \n  c:\\users\\Your Name\\appdata\\local\\programs\\python\\python36-32\\lib\\site-packages\\camelcase\\*\n  Proceed (y/n)?",
+            "Press y and the package will be removed."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "C:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>pip \n  uninstall camelcase"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "List Packages",
+        "text": [
+            "Use the list command to list all the packages installed on your system:",
+            "Example\nList installed packages:\n\nC:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>pip list\nResult:\n\n  Package         Version\n  -----------------------camelcase       0.2mysql-connector 2.1.6\n  pip             \n  18.1pymongo         3.6.1\n  setuptools      39.0.1",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "C:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>pip list"
+            }
+        ],
+        "tables": []
+    }
+]

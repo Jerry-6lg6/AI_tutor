@@ -1,0 +1,23 @@
+[
+    {
+        "title": "String Concatenation",
+        "text": [
+            "To concatenate, or combine, two strings you can use the + operator.",
+            "Example\nMerge variable a with variable \nb into variable c:\n\n  a = \"Hello\"b = \"World\"c = a + b\nprint(c)\n\nTry it Yourself »",
+            "Example\nTo add a space between them, add a \" \":\n\n  a = \"Hello\"b = \"World\"c = a + \" \" + b\nprint(c)\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \"Hello\"b = \"World\"c = a + b\nprint(c)"
+            },
+            {
+                "heading": "Example",
+                "code": "a = \"Hello\"b = \"World\"c = a + \" \" + b\nprint(c)"
+            }
+        ],
+        "tables": []
+    }
+]

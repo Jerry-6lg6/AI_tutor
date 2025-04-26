@@ -1,0 +1,31 @@
+[
+    {
+        "title": "SELECT TOP, LIMIT and ROWNUM",
+        "text": [
+            "The LIMIT, SELECT TOP \nor ROWNUM command is used to specify the number of records to return.",
+            "Note: SQL Server uses \nSELECT TOP. MySQL \nuses LIMIT, and Oracle uses \nROWNUM.",
+            "The following SQL statement selects the first three records from the \"Customers\" table \n(SQL SERVER):",
+            "Example\n\n SELECT TOP 3 * FROM Customers;\n\n\n Try it Yourself »",
+            "The following SQL statement shows the equivalent example using the LIMIT clause \n(MySQL):",
+            "Example\n\n SELECT * FROM CustomersLIMIT 3;\n\n Try it Yourself »",
+            "The following SQL statement shows the equivalent example using ROWNUM \n(Oracle):",
+            "Example\n\nSELECT * FROM CustomersWHERE ROWNUM  <= 3;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT TOP 3 * FROM Customers;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersLIMIT 3;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersWHERE ROWNUM  <= 3;"
+            }
+        ],
+        "tables": []
+    }
+]

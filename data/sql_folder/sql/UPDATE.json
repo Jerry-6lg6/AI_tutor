@@ -1,0 +1,25 @@
+[
+    {
+        "title": "UPDATE",
+        "text": [
+            "The UPDATE command is used to update existing rows in a table.",
+            "The following SQL statement updates the first customer (CustomerID = 1) with a new contact person and \na new city.",
+            "Example\n\n UPDATE Customers\n SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'\n WHERE CustomerID = 1;",
+            "The following SQL statement will \nupdate the contactname to \"Juan\" for all records where country is \"Mexico\":",
+            "Example\n\nUPDATE Customers\nSET ContactName='Juan'\nWHERE Country='Mexico';",
+            "Note: Be careful when updating records in a table! Notice the WHERE clause in the \nUPDATE statement.\nThe WHERE clause specifies which record(s) that should be updated. If \nyou omit the WHERE clause, all records in the table will be updated!",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "UPDATE Customers\n SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'\n WHERE CustomerID = 1;"
+            },
+            {
+                "heading": "Example",
+                "code": "UPDATE Customers\nSET ContactName='Juan'\nWHERE Country='Mexico';"
+            }
+        ],
+        "tables": []
+    }
+]

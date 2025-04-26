@@ -1,0 +1,65 @@
+[
+    {
+        "title": "The Building Blocks of XML Documents",
+        "text": [
+            "Seen from a DTD point of view, all XML documents are made up by the following building blocks:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Elements",
+        "text": [
+            "Elements are the main building blocks of both XML and HTML documents.",
+            "Examples of HTML elements are \"body\" and \"table\". Examples of XML elements could be\n\"note\" and \"message\". Elements can contain text, other elements, or be empty. Examples of empty HTML elements are \"hr\", \"br\" and\n\"img\".",
+            "Examples:",
+            "<body>some text</body>\n<message>some text</message>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Attributes",
+        "text": [
+            "Attributes provide  extra information about elements.",
+            "Attributes are always placed inside the opening tag of an element. Attributes\nalways come in name/value pairs. The following \"img\" element has additional information about a source file:",
+            "<img src=\"computer.gif\" />",
+            "The name of the element is \"img\". The name of the attribute is\n\"src\". The value of the attribute is \"computer.gif\".\nSince the element itself is empty it is closed by a \" /\".",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Entities",
+        "text": [
+            "Some characters have a special meaning in XML, like the less than sign (<) \nthat defines the start of an XML tag.",
+            "Most of you know the HTML entity: \"&nbsp;\". This \"no-breaking-space\" entity is used in HTML to insert an extra space in a document.\nEntities are expanded when a document is parsed by an XML parser.",
+            "The following entities are predefined in XML:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "PCDATA",
+        "text": [
+            "PCDATA means parsed character data.",
+            "Think of character data as the text found between the start tag and the end tag of an XML element.",
+            "PCDATA is text that WILL be parsed by a parser. The text will be examined by the parser for entities and markup.",
+            "Tags inside the text will be treated as markup and entities will be expanded.",
+            "However, parsed character data should not contain any &, <, or > characters; \nthese need to be represented by the &amp; &lt; and &gt; entities, respectively."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "CDATA",
+        "text": [
+            "CDATA means character data.",
+            "CDATA is text that will NOT be parsed by a parser.\nTags inside the text will NOT be treated as markup and entities will not be expanded.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

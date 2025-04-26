@@ -1,0 +1,160 @@
+[
+    {
+        "title": "The HTML <head> Element",
+        "text": [
+            "The <head> element is a container for metadata (data \nabout data) and is placed between the <html> tag and the <body> tag.",
+            "HTML metadata is data about the HTML document. Metadata is not displayed on \nthe page.",
+            "Metadata typically define the document title, character set, styles, scripts, and other meta information."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The HTML <title> Element",
+        "text": [
+            "The <title> element defines the title of the document. \nThe title must be text-only, and it is shown in the browser's title bar or in \nthe page's tab.",
+            "The <title> element is required in HTML documents!",
+            "The content of a page title is very important for search engine optimization \n(SEO)! The page title is used by search engine algorithms to decide the order \nwhen listing pages in search results.",
+            "The <title> element:",
+            "So, try to make the title as accurate and meaningful as possible!",
+            "A simple HTML document:",
+            "Example\n\n<!DOCTYPE html>\n<html><head>\n \n<title>A Meaningful Page \n Title</title>\n </head>\n<body>\nThe content of the document......\n</body>\n</html>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html>\n<html><head>\n \n<title>A Meaningful Page \n Title</title>\n </head>\n<body>\nThe content of the document......\n</body>\n</html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The HTML <style> Element",
+        "text": [
+            "The <style> element is used to define style information for a \nsingle HTML page:",
+            "Example\n\n<style>\n   \n  body {background-color: powderblue;}  h1 {color: red;}\n   \n  p {color: blue;}\n</style>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>\n   \n  body {background-color: powderblue;}  h1 {color: red;}\n   \n  p {color: blue;}\n</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The HTML <link> Element",
+        "text": [
+            "The <link> element defines the \nrelationship between the current document and an external resource.The <link> \ntag is most often used to link to external style sheets:",
+            "Example\n\n<link rel=\"stylesheet\" href=\"mystyle.css\">\n\nTry it Yourself »",
+            "Tip: To learn all about CSS, visit our CSS Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<link rel=\"stylesheet\" href=\"mystyle.css\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The HTML <meta> Element",
+        "text": [
+            "The <meta> element is typically used \nto specify the character set, page description, keywords, author of the document, \nand viewport settings.",
+            "The metadata will not be displayed on the page, but is used by browsers (how to display content \nor reload page), \nby search engines (keywords), and other web services."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Examples",
+        "text": [
+            "Define the character set used:",
+            "<meta charset=\"UTF-8\">",
+            "Define keywords for search engines:",
+            "<meta name=\"keywords\" content=\"HTML, CSS, JavaScript\">",
+            "Define a description of your web page:",
+            "<meta name=\"description\" content=\"Free Web tutorials\">",
+            "Define the author of a page:",
+            "<meta name=\"author\" content=\"John Doe\">",
+            "Refresh document every 30 seconds:",
+            "<meta http-equiv=\"refresh\" content=\"30\">",
+            "Setting the viewport to make your website look good on all devices:",
+            "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "Example of <meta> tags:",
+            "Example\n\n <meta charset=\"UTF-8\"><meta name=\"description\" content=\"Free Web tutorials\"><meta name=\"keywords\" content=\"HTML, CSS, JavaScript\"><meta name=\"author\" content=\"John \n  Doe\">\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<meta charset=\"UTF-8\"><meta name=\"description\" content=\"Free Web tutorials\"><meta name=\"keywords\" content=\"HTML, CSS, JavaScript\"><meta name=\"author\" content=\"John \n  Doe\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Setting The Viewport",
+        "text": [
+            "The viewport is the user's visible area of a web page. It varies with the device \n- it will be smaller on a mobile phone than on a computer screen.",
+            "You should include the following <meta> element in all your web pages:",
+            "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "This gives the browser instructions on how \nto control the page's dimensions and scaling.",
+            "The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).",
+            "The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.",
+            "Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:",
+            "Tip: If you are browsing this page with a phone or a tablet, you can click on the two links below to see the difference.",
+            "Without the \nviewport meta tag\n\n\n\n\nWith the \nviewport meta tag"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The HTML <script> Element",
+        "text": [
+            "The <script> element is used to define client-side JavaScripts.",
+            "The following JavaScript writes \"Hello JavaScript!\" into an HTML element with id=\"demo\":",
+            "Example\n\n<script>function myFunction() {\n   \n document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n }</script>\nTry it Yourself »",
+            "Tip: To learn all about JavaScript, visit our JavaScript Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<script>function myFunction() {\n   \n document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n }</script>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The HTML <base> Element",
+        "text": [
+            "The <base> element specifies the base URL and/or target for all relative URLs in a page.",
+            "The <base> tag must have either an \nhref or a target attribute present, or both.",
+            "There can only be one single <base> \nelement in a document!",
+            "Example\nSpecify a default URL and a default target for all links on a page:\n\n   <head><base href=\"https://www.w3schools.com/\" target=\"_blank\"></head>\n<body><img src=\"images/stickman.gif\" width=\"24\" height=\"39\" \n   alt=\"Stickman\"><a href=\"tags/tag_base.asp\">HTML base Tag</a></body>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<head><base href=\"https://www.w3schools.com/\" target=\"_blank\"></head>\n<body><img src=\"images/stickman.gif\" width=\"24\" height=\"39\" \n   alt=\"Stickman\"><a href=\"tags/tag_base.asp\">HTML base Tag</a></body>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML head Elements",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

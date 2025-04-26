@@ -1,0 +1,40 @@
+[
+    {
+        "title": "Numbers",
+        "text": [
+            "Primitive number types are divided into two groups:",
+            "Integer types stores whole numbers, positive or negative (such as 123 or -456), without decimals. \nValid types are byte, short, int \nand long. Which type you should use, depends on the numeric value.",
+            "Floating point types represents numbers with a fractional part, \ncontaining one or more decimals. There are two types: float and double.",
+            "Even though there are many numeric types in Java, the most used for numbers \nare int (for whole numbers) and double (for floating point numbers). However, we will describe them all as you continue to \nread."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Integer Types",
+        "text": [
+            "The byte data type can store whole numbers \nfrom -128 to 127. This can be used instead of int or other integer types to \nsave memory when you are certain that the value will be within -128 and 127:",
+            "The short data type can store whole numbers from -32768 to 32767:",
+            "The int data type can store whole numbers from -2147483648 to 2147483647.  In general, and in our tutorial, the int data type is \nthe preferred data type when we create variables with a numeric value.",
+            "The long data type can store whole numbers from -9223372036854775808 to 9223372036854775807. This is used when int is not large enough to store the value. Note that you should end the value with an \"L\":",
+            "Example\nlong myNum = 15000000000L;\nSystem.out.println(myNum);\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Floating Point Types",
+        "text": [
+            "You should use a floating point type whenever you need a number with a decimal, such as 9.99 or 3.14515.",
+            "The float and double data types can store fractional numbers. Note that you should end the value with an \"f\" for floats and \"d\" for doubles:",
+            "Float Example\nfloat myNum = 5.75f;\nSystem.out.println(myNum);\n\n\nTry it Yourself »",
+            "Double Example\ndouble myNum = 19.99d;\nSystem.out.println(myNum);\n\n\nTry it Yourself »",
+            "A floating point number can also be a scientific number with an \"e\" to indicate the power of 10:",
+            "Example\nfloat f1 = 35e3f;\ndouble d1 = 12E4d;\nSystem.out.println(f1);\nSystem.out.println(d1);\n\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

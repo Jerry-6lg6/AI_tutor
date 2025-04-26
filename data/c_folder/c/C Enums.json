@@ -1,0 +1,46 @@
+[
+    {
+        "title": "C Enums",
+        "text": [
+            "An enum is a special type that represents a group of constants (unchangeable values).",
+            "To create an enum, use the enum keyword, \nfollowed by the name of the enum, and separate the enum items with a comma:",
+            "enum Level {  LOW,  MEDIUM,  HIGH};",
+            "Note that the last item does not need a comma.\nIt is not required to use uppercase, but often considered as good practice.\nEnum is short for \"enumerations\", which means \"specifically listed\".",
+            "To access the enum, you must create a variable of it.",
+            "Inside the main() method, specify the enum keyword, followed by the name \nof the enum (Level) and then the name of the enum variable (myVar in this \nexample):",
+            "enum Level myVar;",
+            "Now that you have created an enum variable (myVar), you can assign \na value to it.",
+            "The assigned value must be one of the items inside the enum (LOW, MEDIUM or HIGH):",
+            "enum Level myVar = MEDIUM;",
+            "By default, the first item (LOW) has the value 0, the second \n(MEDIUM) has the value 1, etc.",
+            "If you now try to print myVar, it will output 1, which represents MEDIUM:",
+            "int main() {  // Create an enum variable and assign a value to it  enum Level myVar \n  = MEDIUM;\n  // Print the enum variable  printf(\"%d\", myVar);  \n  return 0;}\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Change Values",
+        "text": [
+            "As you know, the first item of an enum has the value 0. The second has the value 1, and so on.",
+            "To make more sense of the values, you can easily change them:",
+            "enum Level {  LOW = 25,  MEDIUM = 50,  HIGH = 75\n  };\n\n    printf(\"%d\", myVar); // Now outputs 50\nTry it Yourself »",
+            "Note that if you assign a value to one specific item, the next items will update their numbers accordingly:",
+            "enum Level {  LOW = 5,  MEDIUM, // Now 6  HIGH // Now 7\n  };\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Enum in a Switch Statement",
+        "text": [
+            "Enums are often used in switch statements to check for corresponding values:",
+            "enum Level {  LOW = 1,  MEDIUM,  HIGH};int main() {  \n  enum Level myVar = MEDIUM;  switch (myVar) {    \n  case 1:      printf(\"Low Level\");      \n  break;    case 2:      \n  printf(\"Medium level\");      break;    \n  case 3:      printf(\"High level\");      \n  break;  }  return 0;}\nTry it Yourself »",
+            "Why And When To Use Enums?\nEnums are used to give names to constants, which makes the code easier to \n  read and maintain.\nUse enums when you have values that you know aren't going to change, like month days, days, colors, deck of cards, etc.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Delete Document",
+        "text": [
+            "To delete one document, we use the\ndelete_one() method.",
+            "The first parameter of the delete_one() method \nis a query object defining which document to delete.",
+            "Note: If the query finds more than one document, only the first \noccurrence is deleted.",
+            "Example\nDelete the document with the address \"Mountain 21\":\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": \"Mountain 21\" }\nmycol.delete_one(myquery)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": \"Mountain 21\" }\nmycol.delete_one(myquery)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Delete Many Documents",
+        "text": [
+            "To delete more than one document, use the\ndelete_many() method.",
+            "The first parameter of the delete_many() method \nis a query object defining which documents to delete.",
+            "Example\nDelete all documents were the address starts with the letter S:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": {\"$regex\": \"^S\"} }\nx = mycol.delete_many(myquery)print(x.deleted_count, \" documents \n  deleted.\")\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmyquery = { \"address\": {\"$regex\": \"^S\"} }\nx = mycol.delete_many(myquery)print(x.deleted_count, \" documents \n  deleted.\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Delete All Documents in a Collection",
+        "text": [
+            "To delete all documents in a collection, pass an empty query object to the delete_many() method:",
+            "Example\nDelete all documents in the \"customers\" collection:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nx = mycol.delete_many({})print(x.deleted_count, \" documents \n  deleted.\")\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nx = mycol.delete_many({})print(x.deleted_count, \" documents \n  deleted.\")"
+            }
+        ],
+        "tables": []
+    }
+]

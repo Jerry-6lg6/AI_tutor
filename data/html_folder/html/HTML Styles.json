@@ -1,0 +1,98 @@
+[
+    {
+        "title": "The HTML Style Attribute",
+        "text": [
+            "Setting the style of an HTML element, can be done with the style attribute.",
+            "The HTML style attribute has the following syntax:",
+            "<tagname\nstyle=\"property:value;\">",
+            "The property is a CSS property. The value is a CSS value.",
+            "You will learn more about CSS later in this tutorial."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Background Color",
+        "text": [
+            "The CSS background-color property defines the background color \nfor an HTML element.",
+            "Example\nSet the background color for a page to powderblue:\n\n <body style=\"background-color:powderblue;\"><h1>This is a heading</h1><p>This is a paragraph.</p></body>\nTry it Yourself »",
+            "Example\nSet background color for two different elements:\n\n  <body><h1 style=\"background-color:powderblue;\">This is a heading</h1><p \n  style=\"background-color:tomato;\">This is a paragraph.</p></body>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<body style=\"background-color:powderblue;\"><h1>This is a heading</h1><p>This is a paragraph.</p></body>"
+            },
+            {
+                "heading": "Example",
+                "code": "<body><h1 style=\"background-color:powderblue;\">This is a heading</h1><p \n  style=\"background-color:tomato;\">This is a paragraph.</p></body>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Text Color",
+        "text": [
+            "The CSS color property defines the text color for \nan HTML element:",
+            "Example\n\n <h1 style=\"color:blue;\">This is a heading</h1>\n <p style=\"color:red;\">This is a paragraph.</p>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"color:blue;\">This is a heading</h1>\n <p style=\"color:red;\">This is a paragraph.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Fonts",
+        "text": [
+            "The CSS font-family property defines the font to be used  \nfor an HTML element:",
+            "Example\n\n <h1 style=\"font-family:verdana;\">This is a heading</h1><p style=\"font-family:courier;\">This is a paragraph.</p>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"font-family:verdana;\">This is a heading</h1><p style=\"font-family:courier;\">This is a paragraph.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Text Size",
+        "text": [
+            "The CSS font-size property defines the text size for \nan HTML element:",
+            "Example\n\n <h1 style=\"font-size:300%;\">This is a heading</h1><p \nstyle=\"font-size:160%;\">This is a paragraph.</p>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"font-size:300%;\">This is a heading</h1><p \nstyle=\"font-size:160%;\">This is a paragraph.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Text Alignment",
+        "text": [
+            "The CSS text-align property defines the horizontal text alignment for an HTML element:",
+            "Example\n\n <h1 style=\"text-align:center;\">Centered Heading</h1>\n <p style=\"text-align:center;\">Centered paragraph.</p>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"text-align:center;\">Centered Heading</h1>\n <p style=\"text-align:center;\">Centered paragraph.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

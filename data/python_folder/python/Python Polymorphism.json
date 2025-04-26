@@ -1,0 +1,65 @@
+[
+    {
+        "title": "Function Polymorphism",
+        "text": [
+            "An example of a Python function that can be used on different objects is the \nlen() function.",
+            "For strings len() returns the number of characters:",
+            "For tuples len() returns the number of items \nin the tuple:",
+            "For dictionaries len() returns the number of key/value pairs \nin the dictionary:",
+            "Example\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}\n\nprint(len(thisdict))\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = \"Hello World!\"\n\nprint(len(x))"
+            },
+            {
+                "heading": "Example",
+                "code": "mytuple = (\"apple\", \"banana\", \"cherry\")\n\nprint(len(mytuple))"
+            },
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}\n\nprint(len(thisdict))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Class Polymorphism",
+        "text": [
+            "Polymorphism is often used in Class methods, where we can have multiple \nclasses with the same method name.",
+            "For example, say we have three classes: Car, \nBoat, and Plane, and they all have \na method called move():",
+            "Example\nDifferent classes with the same method:\n\nclass Car:\n  def __init__(self, brand, model):\n    self.brand = brand\n    self.model = model\n\n  def move(self):\n    print(\"Drive!\")\n\nclass Boat:\n  def __init__(self, brand, model):\n    self.brand = brand\n    self.model = model\n\n  def move(self):\n    print(\"Sail!\")\n\nclass Plane:\n  def __init__(self, brand, model):\n    self.brand = brand\n    self.model = model\n\n  def move(self):\n    print(\"Fly!\")\n\ncar1 = Car(\"Ford\", \"Mustang\")        #Create a Car object\nboat1 = Boat(\"Ibiza\", \"Touring 20\") #Create a Boat object\nplane1 = Plane(\"Boeing\", \"747\")     #Create a Plane object\n\nfor x in (car1, boat1, plane1):\n  x.move()\n\nTry it Yourself »",
+            "Look at the for loop at the end.\nBecause of polymorphism we can execute the same method for all three classes."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "class Car:\n  def __init__(self, brand, model):\n    self.brand = brand\n    self.model = model\n\n  def move(self):\n    print(\"Drive!\")\n\nclass Boat:\n  def __init__(self, brand, model):\n    self.brand = brand\n    self.model = model\n\n  def move(self):\n    print(\"Sail!\")\n\nclass Plane:\n  def __init__(self, brand, model):\n    self.brand = brand\n    self.model = model\n\n  def move(self):\n    print(\"Fly!\")\n\ncar1 = Car(\"Ford\", \"Mustang\")        #Create a Car object\nboat1 = Boat(\"Ibiza\", \"Touring 20\") #Create a Boat object\nplane1 = Plane(\"Boeing\", \"747\")     #Create a Plane object\n\nfor x in (car1, boat1, plane1):\n  x.move()"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Inheritance Class Polymorphism",
+        "text": [
+            "What about classes with child classes with the same name? Can we use polymorphism there?",
+            "Yes. If we use the example above and make a parent class called \nVehicle, and make Car, \nBoat, Plane\nchild classes of Vehicle, the child classes \ninherits the Vehicle methods, but can override \nthem:",
+            "Example\nCreate a class called Vehicle and make Car, \nBoat, Plane\n  child classes of \n  Vehicle:\n\n    class Vehicle:  def __init__(self, brand, model):    \n    self.brand = brand    self.model = model  \n    def move(self):    print(\"Move!\")class \n    Car(Vehicle):  passclass Boat(Vehicle):  def \n    move(self):    print(\"Sail!\")class \n    Plane(Vehicle):  def move(self):    \n    print(\"Fly!\")car1 = Car(\"Ford\", \"Mustang\")       #Create a Car object\n    boat1 = Boat(\"Ibiza\", \"Touring 20\") #Create a Boat objectplane1 = \n    Plane(\"Boeing\", \"747\")     #Create a Plane objectfor x in (car1, boat1, \n    plane1):  print(x.brand)  print(x.model)  x.move()\n\nTry it Yourself »",
+            "Child classes inherits the properties and methods from the parent class.",
+            "In the example above you can see that the Car class is empty, but \nit inherits brand, \nmodel, and move() from\nVehicle.",
+            "The Boat and Plane classes also \ninherit brand, model, \nand move() from Vehicle, but they both override the \nmove() method.",
+            "Because of polymorphism we can execute the same method for all classes.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "class Vehicle:  def __init__(self, brand, model):    \n    self.brand = brand    self.model = model  \n    def move(self):    print(\"Move!\")class \n    Car(Vehicle):  passclass Boat(Vehicle):  def \n    move(self):    print(\"Sail!\")class \n    Plane(Vehicle):  def move(self):    \n    print(\"Fly!\")car1 = Car(\"Ford\", \"Mustang\")       #Create a Car object\n    boat1 = Boat(\"Ibiza\", \"Touring 20\") #Create a Boat objectplane1 = \n    Plane(\"Boeing\", \"747\")     #Create a Plane objectfor x in (car1, boat1, \n    plane1):  print(x.brand)  print(x.model)  x.move()"
+            }
+        ],
+        "tables": []
+    }
+]

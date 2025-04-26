@@ -1,0 +1,170 @@
+[
+    {
+        "title": "Python Conditions and If statements",
+        "text": [
+            "Python supports the usual logical conditions from mathematics:",
+            "These conditions can be used in several ways, most commonly in \"if statements\" and loops.",
+            "An \"if statement\" is written by using the if keyword.",
+            "Example\nIf statement:\n\na = 33\nb = 200\nif b > a:  print(\"b is greater than a\")\n\nTry it Yourself »",
+            "In this example we use two variables, a and b,\nwhich are used as part of the if statement to test whether b is greater than a.\nAs a is 33, and b is 200,\nwe know that 200 is greater than 33, and so we print to screen that \"b is greater than a\"."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = 33\nb = 200\nif b > a:  print(\"b is greater than a\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Indentation",
+        "text": [
+            "Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.\n\n\nExample\nIf statement, without indentation (will raise an error):\n\na = 33\nb = 200\nif b > a:\nprint(\"b is greater than a\")\n# you will get an error\n\nTry it Yourself »\n\n\n\n\n\n\n\nElif\nThe elif keyword is Python's way of saying \"if the previous conditions were not true, then \ntry this condition\".\n\nExample\n\na = 33\nb = 33\nif b > a:\n\t \n\tprint(\"b is greater than a\")\nelif a == b:\n\t \n\tprint(\"a and b are equal\")\n\nTry it Yourself »\n\nIn this example a is equal to b, so the first condition is not true, but the elif condition is true, so we print to screen that \"a and b are equal\".\n\nElse\nThe else keyword catches anything which isn't caught by the preceding conditions.\n\nExample\n\na = 200\nb = 33\nif b > a:\n\t \n\tprint(\"b is greater than a\")\nelif a == b:\n\t \n\tprint(\"a and b are equal\")\n  else:\n\t \n\tprint(\"a is greater than b\")\n\nTry it Yourself »\n\nIn this example a is greater than b,\nso the first condition is not true, also the elif condition is not true,\nso we go to the else condition and print to screen that \"a is greater than b\".\nYou can also have an else without the\nelif:\n\nExample\n\na = 200\nb = 33\nif b > a:\n\t \n\tprint(\"b is greater than a\")\n  else:\n\t \n\tprint(\"b is not greater than a\")\n\nTry it Yourself »\n\n\nShort Hand If\nIf you have only one statement to execute, you can put it on the same line as the if statement.\n\nExample\nOne line if statement:\n\n  if a > b: print(\"a is greater than b\")\n\nTry it Yourself »\n\n\nShort Hand If ... Else\nIf you have only one statement to execute, one for if, and one for else, you can put it \nall on the same line:\n\nExample\nOne line if else statement:\n\n  a = 2b = 330print(\"A\") if a > b else print(\"B\")\nTry it Yourself »\n\n\nThis technique is known as Ternary Operators, or Conditional \n  Expressions.\n\nYou can also have multiple else statements on the same line:\n\nExample\nOne line if else statement, with 3 conditions:\n\n  a = 330b = 330print(\"A\") if a > b else print(\"=\") if a == b else print(\"B\")\nTry it Yourself »\n\n\nAnd\nThe and keyword is a logical operator, and \nis used to combine conditional statements:\n\nExample\nTest if a is greater than\n  b, AND if c \n  is greater than a:\n\n  a = 200b = 33c = 500if a > b and c > a:\n\t \n\tprint(\"Both conditions are True\")\n\nTry it Yourself »\n\n\nOr\nThe or keyword is a logical operator, and \nis used to combine conditional statements:\n\nExample\nTest if a is greater than\n  b, OR if a \n  is greater than c:\n\n  a = 200b = 33c = 500if a > b or a > c:\n\t \n\tprint(\"At least one of the conditions is True\")\n\nTry it Yourself »\n\n\nNot\nThe not keyword is a logical operator, and \nis used to reverse the result of the conditional statement:\n\nExample\nTest if a is NOT greater than\n  b:\n\n  a = 33b = 200if not a > b:\n\t \n\tprint(\"a is NOT greater than b\")\n\nTry it Yourself »\n\n\nNested If\nYou can have if statements inside \nif statements, this is called nested\nif statements.\n\nExample\n\n  x = 41if x > 10:\n\t \n\tprint(\"Above ten,\")  if x > 20:    print(\"and \n  also above 20!\")  else:    print(\"but not \n  above 20.\")\nTry it Yourself »\n\n\nThe pass Statement\nif statements cannot be empty, but if you \nfor some reason have an if statement with no content, put in the pass statement to avoid getting an error.\n\nExample\n\n  a = 33b = 200if b > a:  pass\nTry it Yourself »\n\n\n\n\n\n\n❮ Previous\nNext ❯\n\n\n\n\n\n\n\n\n\n\n\n\n★\n+1\n\n\n\n \n\n\n\nTrack your progress - it's free!\n\n\n \n\n\n\n\n\n\n\n          Log in\n        \n\n          Sign Up"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Elif",
+        "text": [
+            "The elif keyword is Python's way of saying \"if the previous conditions were not true, then \ntry this condition\".",
+            "Example\n\na = 33\nb = 33\nif b > a:\n\t \n\tprint(\"b is greater than a\")\nelif a == b:\n\t \n\tprint(\"a and b are equal\")\n\nTry it Yourself »",
+            "In this example a is equal to b, so the first condition is not true, but the elif condition is true, so we print to screen that \"a and b are equal\"."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = 33\nb = 33\nif b > a:\n\t \n\tprint(\"b is greater than a\")\nelif a == b:\n\t \n\tprint(\"a and b are equal\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Else",
+        "text": [
+            "The else keyword catches anything which isn't caught by the preceding conditions.",
+            "Example\n\na = 200\nb = 33\nif b > a:\n\t \n\tprint(\"b is greater than a\")\nelif a == b:\n\t \n\tprint(\"a and b are equal\")\n  else:\n\t \n\tprint(\"a is greater than b\")\n\nTry it Yourself »",
+            "In this example a is greater than b,\nso the first condition is not true, also the elif condition is not true,\nso we go to the else condition and print to screen that \"a is greater than b\".",
+            "You can also have an else without the\nelif:",
+            "Example\n\na = 200\nb = 33\nif b > a:\n\t \n\tprint(\"b is greater than a\")\n  else:\n\t \n\tprint(\"b is not greater than a\")\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = 200\nb = 33\nif b > a:\n\t \n\tprint(\"b is greater than a\")\nelif a == b:\n\t \n\tprint(\"a and b are equal\")\n  else:\n\t \n\tprint(\"a is greater than b\")"
+            },
+            {
+                "heading": "Example",
+                "code": "a = 200\nb = 33\nif b > a:\n\t \n\tprint(\"b is greater than a\")\n  else:\n\t \n\tprint(\"b is not greater than a\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Short Hand If",
+        "text": [
+            "If you have only one statement to execute, you can put it on the same line as the if statement.",
+            "Example\nOne line if statement:\n\n  if a > b: print(\"a is greater than b\")\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "if a > b: print(\"a is greater than b\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Short Hand If ... Else",
+        "text": [
+            "If you have only one statement to execute, one for if, and one for else, you can put it \nall on the same line:",
+            "Example\nOne line if else statement:\n\n  a = 2b = 330print(\"A\") if a > b else print(\"B\")\nTry it Yourself »",
+            "This technique is known as Ternary Operators, or Conditional \n  Expressions.",
+            "You can also have multiple else statements on the same line:",
+            "Example\nOne line if else statement, with 3 conditions:\n\n  a = 330b = 330print(\"A\") if a > b else print(\"=\") if a == b else print(\"B\")\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = 2b = 330print(\"A\") if a > b else print(\"B\")"
+            },
+            {
+                "heading": "Example",
+                "code": "a = 330b = 330print(\"A\") if a > b else print(\"=\") if a == b else print(\"B\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "And",
+        "text": [
+            "The and keyword is a logical operator, and \nis used to combine conditional statements:",
+            "Example\nTest if a is greater than\n  b, AND if c \n  is greater than a:\n\n  a = 200b = 33c = 500if a > b and c > a:\n\t \n\tprint(\"Both conditions are True\")\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = 200b = 33c = 500if a > b and c > a:\n\t \n\tprint(\"Both conditions are True\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Or",
+        "text": [
+            "The or keyword is a logical operator, and \nis used to combine conditional statements:",
+            "Example\nTest if a is greater than\n  b, OR if a \n  is greater than c:\n\n  a = 200b = 33c = 500if a > b or a > c:\n\t \n\tprint(\"At least one of the conditions is True\")\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = 200b = 33c = 500if a > b or a > c:\n\t \n\tprint(\"At least one of the conditions is True\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Not",
+        "text": [
+            "The not keyword is a logical operator, and \nis used to reverse the result of the conditional statement:",
+            "Example\nTest if a is NOT greater than\n  b:\n\n  a = 33b = 200if not a > b:\n\t \n\tprint(\"a is NOT greater than b\")\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = 33b = 200if not a > b:\n\t \n\tprint(\"a is NOT greater than b\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Nested If",
+        "text": [
+            "You can have if statements inside \nif statements, this is called nested\nif statements.",
+            "Example\n\n  x = 41if x > 10:\n\t \n\tprint(\"Above ten,\")  if x > 20:    print(\"and \n  also above 20!\")  else:    print(\"but not \n  above 20.\")\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = 41if x > 10:\n\t \n\tprint(\"Above ten,\")  if x > 20:    print(\"and \n  also above 20!\")  else:    print(\"but not \n  above 20.\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The pass Statement",
+        "text": [
+            "if statements cannot be empty, but if you \nfor some reason have an if statement with no content, put in the pass statement to avoid getting an error.",
+            "Example\n\n  a = 33b = 200if b > a:  pass\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = 33b = 200if b > a:  pass"
+            }
+        ],
+        "tables": []
+    }
+]

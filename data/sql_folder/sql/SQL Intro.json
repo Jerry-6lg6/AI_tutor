@@ -1,0 +1,53 @@
+[
+    {
+        "title": "What is SQL?",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "What Can SQL do?",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL is a Standard - BUT....",
+        "text": [
+            "Although SQL is an ANSI/ISO standard, there are different versions of the SQL language.",
+            "However, to be compliant with the ANSI standard, they all support at least the major commands (such as \nSELECT, UPDATE, \nDELETE, INSERT, \nWHERE) in a similar manner.",
+            "Note: Most of the SQL database programs also have their own proprietary extensions in addition to the SQL standard!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Using SQL in Your Web Site",
+        "text": [
+            "To build a web site that shows data from a database, you will need:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDBMS",
+        "text": [
+            "RDBMS stands for Relational Database Management System.",
+            "RDBMS is the basis for SQL, and for all modern database systems such as MS SQL Server, IBM DB2, Oracle, MySQL, and Microsoft Access.",
+            "The data in RDBMS is stored in database objects called tables. A table is a collection of related data entries and it consists of columns and rows.",
+            "Look at the \"Customers\" table:",
+            "Example\n\nSELECT * FROM Customers;\n\nTry it Yourself »",
+            "Every table is broken up into smaller entities called fields. The fields in \nthe Customers table consist of CustomerID, CustomerName, ContactName, Address, \nCity, PostalCode and Country. A field is a column in a table that is designed to maintain \nspecific information about every record in the table.",
+            "A record, also called a row, is each individual entry that exists in a table. \nFor example, there are 91 records in the above Customers table. A record is a \nhorizontal entity in a table.",
+            "A column is a vertical entity in a table that contains all information \nassociated with a specific field in a table."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers;"
+            }
+        ],
+        "tables": []
+    }
+]

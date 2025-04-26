@@ -1,0 +1,55 @@
+[
+    {
+        "title": "SQL CHECK Constraint",
+        "text": [
+            "The CHECK constraint is used to limit the value range that can be placed in a column.",
+            "If you define a CHECK constraint on a column it \nwill allow only certain values for this column.",
+            "If you define a CHECK constraint on a table it can limit the values in certain columns based on values in other columns in the row."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL CHECK on CREATE TABLE",
+        "text": [
+            "The following SQL creates a CHECK constraint on the \"Age\" column when the \"Persons\" table is created.\nThe CHECK constraint ensures that the age of a person must be 18, or older:",
+            "MySQL:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int,\n   \nCHECK (Age>=18)\n);",
+            "SQL Server / Oracle / MS Access:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int CHECK (Age>=18)\n);",
+            "To allow naming of a CHECK constraint, and for defining a \nCHECK constraint on multiple columns, use the following SQL syntax:",
+            "MySQL / SQL Server / Oracle / MS Access:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int,\n   \nCity varchar(255),\n   \nCONSTRAINT CHK_Person CHECK (Age>=18 AND City='Sandnes')\n);",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL CHECK on ALTER TABLE",
+        "text": [
+            "To create a CHECK constraint on the \"Age\" column when the table is already created, use the following SQL:",
+            "MySQL / SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nADD CHECK (Age>=18);",
+            "To allow naming of a CHECK constraint, and for defining a \nCHECK constraint on multiple columns, use the following SQL syntax:",
+            "MySQL / SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nADD CONSTRAINT CHK_PersonAge CHECK (Age>=18 AND City='Sandnes');"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP a CHECK Constraint",
+        "text": [
+            "To drop a CHECK constraint, use the following SQL:",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nDROP CONSTRAINT CHK_PersonAge;",
+            "MySQL:",
+            "ALTER TABLE Persons\nDROP CHECK CHK_PersonAge;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

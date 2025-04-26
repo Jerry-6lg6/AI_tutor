@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Data Distribution",
+        "text": [
+            "Earlier in this tutorial we have worked with very small amounts of data in our examples, just to \nunderstand the different concepts.",
+            "In the real world, the data sets are much bigger, but it can be difficult to \ngather real world data, at least at an early stage of a project.",
+            "To create big data sets for testing, we use the Python module NumPy, which \ncomes with a number of methods to create random data sets, of any size.",
+            "Example\nCreate an array containing 250 random floats between 0 and 5:\n\n  import numpyx = numpy.random.uniform(0.0, 5.0, 250)\nprint(x)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import numpyx = numpy.random.uniform(0.0, 5.0, 250)\nprint(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Histogram",
+        "text": [
+            "To visualize the data set we can draw a histogram with the data we collected.",
+            "We will use the Python module Matplotlib to draw a histogram.",
+            "Learn about the Matplotlib module in our Matplotlib Tutorial.",
+            "We use the array from the example above to draw a histogram with 5 bars.",
+            "The first bar represents how many values in the array are between 0 and 1.",
+            "The second bar represents how many values are between 1 and 2.",
+            "Etc.",
+            "Which gives us this result:",
+            "Note: The array values are random numbers and will not \n  show the exact same result on your computer."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import numpyimport matplotlib.pyplot as pltx = \n  numpy.random.uniform(0.0, 5.0, 250)plt.hist(x, 5)plt.show()"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Big Data Distributions",
+        "text": [
+            "An array containing 250 values is not considered very big, but now you know how to create a random set of values, and by changing the parameters, you can create the data set \nas big as you want.",
+            "Example\nCreate an array with 100000 random numbers, and display them using a \n  histogram with 100 bars:\n\n  import numpyimport matplotlib.pyplot as pltx = \n  numpy.random.uniform(0.0, 5.0, 100000)plt.hist(x, 100)plt.show()\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import numpyimport matplotlib.pyplot as pltx = \n  numpy.random.uniform(0.0, 5.0, 100000)plt.hist(x, 100)plt.show()"
+            }
+        ],
+        "tables": []
+    }
+]

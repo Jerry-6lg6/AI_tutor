@@ -1,0 +1,26 @@
+[
+    {
+        "title": "C++ Output (Print Text)",
+        "text": [
+            "The cout object, together with the << \noperator, is used to output values and print text.",
+            "Just remember to surround the text with double quotes (\"\"):",
+            "Example\n\n  #include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\";  return 0;}\nTry it Yourself »",
+            "You can add as many cout objects as you want. However, note that it does not insert a new line at the end of the output:",
+            "Example\n\n  #include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\";  cout << \"I am learning C++\";  return 0;}\nTry it Yourself »",
+            "Tip: You will learn how to add new lines in the C++ New Lines chapter.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "#include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\";  return 0;}"
+            },
+            {
+                "heading": "Example",
+                "code": "#include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\";  cout << \"I am learning C++\";  return 0;}"
+            }
+        ],
+        "tables": []
+    }
+]

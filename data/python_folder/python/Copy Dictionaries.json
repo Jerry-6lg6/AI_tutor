@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Copy a Dictionary",
+        "text": [
+            "You cannot copy a dictionary simply by typing dict2 = \ndict1, because: dict2 will only be a \nreference to dict1, and changes made in\ndict1 will automatically also be made in\ndict2.",
+            "There are ways to make a copy, one way is to use the built-in Dictionary \nmethod \ncopy().",
+            "Example\nMake a copy of a dictionary with the copy() method:\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}mydict \n  = thisdict.copy()\n  print(mydict)\n\nTry it Yourself »",
+            "Another way to make a copy is to use the built-in function \ndict().",
+            "Example\nMake a copy of a dictionary with the dict() \nfunction:\n\nthisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}mydict \n  = dict(thisdict)\n  print(mydict)\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}mydict \n  = thisdict.copy()\n  print(mydict)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisdict =\t{\n  \"brand\": \"Ford\",\n  \"model\": \"Mustang\",\n  \"year\": 1964\n}mydict \n  = dict(thisdict)\n  print(mydict)"
+            }
+        ],
+        "tables": []
+    }
+]

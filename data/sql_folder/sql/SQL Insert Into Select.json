@@ -1,0 +1,113 @@
+[
+    {
+        "title": "The SQL INSERT INTO SELECT Statement",
+        "text": [
+            "The INSERT INTO SELECT statement copies data from one table and \ninserts it into another table.",
+            "The INSERT INTO SELECT statement requires that \nthe data types in source and target tables match.",
+            "Note: The existing records in the target table are unaffected.",
+            "Copy all columns from one table to another table:",
+            "INSERT INTO table2\nSELECT * FROM table1WHERE condition;",
+            "Copy only some columns from one table into another table:",
+            "INSERT INTO table2 (column1, column2, column3, ...)\nSELECT column1, column2, column3, ... FROM table1\nWHERE condition;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "In this tutorial we will use the well-known Northwind sample database.",
+            "Below is a selection from the \"Customers\" table:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico",
+            "And a selection from the \"Suppliers\" table:",
+            "SupplierID\nSupplierName\nContactName\nAddress\nCity\nPostal Code\nCountry\n\n\n1\nExotic Liquid\nCharlotte Cooper\n49 Gilbert St.\nLondona\nEC1 4SD\nUK\n\n\n2\nNew Orleans Cajun Delights\nShelley Burke\nP.O. Box 78934\nNew Orleans\n70117\nUSA\n\n\n3\nGrandma Kelly's Homestead\nRegina Murphy\n707 Oxford Rd.\nAnn Arbor\n48104\nUSA",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                }
+            ],
+            [
+                {
+                    "SupplierID": "1",
+                    "SupplierName": "Exotic Liquid",
+                    "ContactName": "Charlotte Cooper",
+                    "Address": "49 Gilbert St.",
+                    "City": "Londona",
+                    "Postal Code": "EC1 4SD",
+                    "Country": "UK"
+                },
+                {
+                    "SupplierID": "2",
+                    "SupplierName": "New Orleans Cajun Delights",
+                    "ContactName": "Shelley Burke",
+                    "Address": "P.O. Box 78934",
+                    "City": "New Orleans",
+                    "Postal Code": "70117",
+                    "Country": "USA"
+                },
+                {
+                    "SupplierID": "3",
+                    "SupplierName": "Grandma Kelly's Homestead",
+                    "ContactName": "Regina Murphy",
+                    "Address": "707 Oxford Rd.",
+                    "City": "Ann Arbor",
+                    "Postal Code": "48104",
+                    "Country": "USA"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL INSERT INTO SELECT Examples",
+        "text": [
+            "Example\nCopy \"Suppliers\" into \"Customers\" (the columns that are not filled with data, will contain NULL):\n\n INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM Suppliers;",
+            "Example\nCopy \"Suppliers\" into \"Customers\" (fill all columns):\n\n  INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, \n  Country)SELECT SupplierName, ContactName, Address, City, PostalCode, \n  Country FROM Suppliers;",
+            "Example\nCopy only the German suppliers into \"Customers\":\n\n INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM SuppliersWHERE Country='Germany';",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM Suppliers;"
+            },
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, \n  Country)SELECT SupplierName, ContactName, Address, City, PostalCode, \n  Country FROM Suppliers;"
+            },
+            {
+                "heading": "Example",
+                "code": "INSERT INTO Customers (CustomerName, \n  City, Country)\n SELECT SupplierName, City, Country FROM SuppliersWHERE Country='Germany';"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "title": "The Title Element",
+        "text": [
+            "The <title> element adds a title \nto your page:",
+            "Example\n\n<!DOCTYPE html>\n<html><head>\n \n<title>HTML Tutorial</title>\n </head>\n<body>\nThe content of the document......\n</body>\n</html>\n\nThe title is shown in the browser's title bar:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html>\n<html><head>\n \n<title>HTML Tutorial</title>\n </head>\n<body>\nThe content of the document......\n</body>\n</html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "What is a Good Title?",
+        "text": [
+            "The title should describe the content and the meaning of the page.",
+            "The page title is very important for search engine optimization \n(SEO). The text is used by search engine algorithms to decide the order \nwhen listing pages in search results.",
+            "The <title> element:",
+            "So, try to make the title as accurate and meaningful as possible!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Title Tag",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

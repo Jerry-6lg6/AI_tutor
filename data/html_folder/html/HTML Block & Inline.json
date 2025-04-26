@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Block-level Elements",
+        "text": [
+            "A block-level element always starts on a new line, and the browsers \nautomatically add some space (a margin) before and after the element.",
+            "A block-level element always takes up the full width available \n(stretches out to the left and right as far as it can).",
+            "Two commonly used block elements are: <p> \nand <div>.",
+            "The <p> element defines a paragraph in an \nHTML document.",
+            "The <div> element defines a division \nor a section in an HTML document.",
+            "The <p> element is a block-level element.",
+            "The <div> element is a block-level element.",
+            "Example\n\n<p>Hello World</p><div>Hello World</div>\nTry it Yourself »",
+            "Here are the block-level elements in HTML:",
+            "<address>\n<article>\n<aside>\n<blockquote>\n<canvas>\n<dd>\n<div>\n<dl>\n<dt>\n<fieldset>\n<figcaption>\n<figure>\n<footer>\n<form>\n<h1>-<h6>\n<header>\n<hr>\n<li>\n<main>\n<nav>\n<noscript>\n<ol>\n<p>\n<pre>\n<section>\n<table>\n<tfoot>\n<ul>\n<video>"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>Hello World</p><div>Hello World</div>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Inline Elements",
+        "text": [
+            "An inline element does not start on a new line.",
+            "An inline element only takes up as much width as necessary.",
+            "This is a <span> element \ninside a paragraph.",
+            "Example\n\n<span>Hello World</span>\nTry it Yourself »",
+            "Here are the inline elements in HTML:",
+            "<a>\n<abbr>\n<acronym>\n<b>\n<bdo>\n<big>\n<br>\n<button>\n<cite>\n<code>\n<dfn>\n<em>\n<i>\n<img>\n<input>\n<kbd>\n<label>\n<map>\n<object>\n<output>\n<q>\n<samp>\n<script>\n<select>\n<small>\n<span>\n<strong>\n<sub>\n<sup>\n<textarea>\n<time>\n<tt>\n<var>",
+            "Note: An inline element cannot contain a block-level \n  element!",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<span>Hello World</span>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <div> Element",
+        "text": [
+            "The <div> element is \noften used as a container for other HTML elements.",
+            "The <div> element has no required attributes, but style, class and id are common.",
+            "When used together with CSS, the <div> element can be used to style blocks of \ncontent:",
+            "Example\n\n<div style=\"background-color:black;color:white;padding:20px;\">\n   <h2>London</h2>  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>\n </div>\n\nTry it Yourself »",
+            "You will learn more about the <div> element in the next chapter."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<div style=\"background-color:black;color:white;padding:20px;\">\n   <h2>London</h2>  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>\n </div>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The <span> Element",
+        "text": [
+            "The <span> element is  \nan inline container used to mark up a part of a text, or a part of a document.",
+            "The <span> element has no required attributes, but style, class and id are common.",
+            "When used together with CSS, the <span> element can be used to style parts of the text:",
+            "Example\n\n  <p>My mother has <span style=\"color:blue;font-weight:bold;\">blue</span> eyes \n  and my father has <span style=\"color:darkolivegreen;font-weight:bold;\">dark \n  green</span> eyes.</p>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>My mother has <span style=\"color:blue;font-weight:bold;\">blue</span> eyes \n  and my father has <span style=\"color:darkolivegreen;font-weight:bold;\">dark \n  green</span> eyes.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

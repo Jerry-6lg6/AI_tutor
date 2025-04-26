@@ -1,0 +1,37 @@
+[
+    {
+        "title": "The SQL DROP TABLE Statement",
+        "text": [
+            "The DROP TABLE statement is used to drop an existing table in a database.",
+            "DROP TABLE table_name;",
+            "Note: Be careful before dropping a table. Deleting a \ntable will result in loss of complete information stored in the table!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL DROP TABLE Example",
+        "text": [
+            "The following SQL statement drops the existing table \"Shippers\":",
+            "Example\n\n  DROP TABLE Shippers;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP TABLE Shippers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "SQL TRUNCATE TABLE",
+        "text": [
+            "The TRUNCATE TABLE statement is used to delete the data inside a table, but \nnot the table itself.",
+            "TRUNCATE TABLE table_name;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

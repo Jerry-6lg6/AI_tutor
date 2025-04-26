@@ -1,0 +1,46 @@
+[
+    {
+        "title": "HTML Symbol Entities",
+        "text": [
+            "HTML entities were described in the previous chapter.",
+            "Many mathematical, technical, and currency symbols, are not present on a normal keyboard.",
+            "To add such symbols to an HTML page, you can use the entity name or the entity number \n(a decimal or a hexadecimal reference) for the symbol:",
+            "Example\nDisplay the euro sign:\n\n<p>I will display &euro;</p>\n<p>I will display &#8364;</p>\n<p>I will display &#x20AC;</p>\n\nWill display as:\n\nI will display €\nI will display €\nI will display €\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>I will display &euro;</p>\n<p>I will display &#8364;</p>\n<p>I will display &#x20AC;</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Some Mathematical Symbols Supported by HTML",
+        "text": [
+            "Full Math Symbols Reference",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Some Greek Letters Supported by HTML",
+        "text": [
+            "Full Greek Reference"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Some Other Entities Supported by HTML",
+        "text": [
+            "Full Currency Reference",
+            "Full Arrows Reference",
+            "Full Symbols Reference",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

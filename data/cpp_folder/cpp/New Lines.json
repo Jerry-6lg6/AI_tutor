@@ -1,0 +1,37 @@
+[
+    {
+        "title": "New Lines",
+        "text": [
+            "To insert a new line in your output, you can use the \\n character:",
+            "Example\n\n  #include <iostream>using namespace std;int main() {  \n  cout << \"Hello World! \\n\";  cout << \"I am learning C++\";  return 0;}\nTry it Yourself »",
+            "You can also use another << operator and place the \\n character after the text, like this:",
+            "Example\n\n  #include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\" << \"\\n\";  cout << \"I am learning C++\";  return 0;}\nTry it Yourself »",
+            "Tip: Two \\n characters after each other will create a blank line:",
+            "Example\n\n  #include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\" << \"\\n\\n\";  cout << \"I am learning C++\";  return 0;}\nTry it Yourself »",
+            "Another way to insert a new line, is with the endl manipulator:",
+            "Example\n\n  #include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\" << endl;  cout << \"I am learning C++\";  return 0;}\nTry it Yourself »",
+            "Both \\n and endl \nare used to break lines. \nHowever, \\n is most used.\nBut what is \\n exactly?\nThe newline character (\\n) is called an escape sequence, and \nit forces the cursor to change its position to the beginning of the next line on the screen. This results in a new line.\n\nExamples of other valid escape sequences are:\n\n\nEscape Sequence\nDescription\nTry it\n\n\n\\t\nCreates a horizontal tab\nTry it\n\n\n\\\\\nInserts a backslash character (\\)\nTry it\n\n\n\\\"\nInserts a double quote character\nTry it",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "#include <iostream>using namespace std;int main() {  \n  cout << \"Hello World! \\n\";  cout << \"I am learning C++\";  return 0;}"
+            },
+            {
+                "heading": "Example",
+                "code": "#include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\" << \"\\n\";  cout << \"I am learning C++\";  return 0;}"
+            },
+            {
+                "heading": "Example",
+                "code": "#include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\" << \"\\n\\n\";  cout << \"I am learning C++\";  return 0;}"
+            },
+            {
+                "heading": "Example",
+                "code": "#include <iostream>using namespace std;int main() {  \n  cout << \"Hello World!\" << endl;  cout << \"I am learning C++\";  return 0;}"
+            }
+        ],
+        "tables": []
+    }
+]

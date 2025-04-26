@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Write to an Existing File",
+        "text": [
+            "To write to an existing file, you must add a parameter to the\nopen() function:",
+            "\"a\" - Append - will append to the end of the file",
+            "\"w\" - Write - will overwrite any existing content",
+            "Example\nOpen the file \"demofile2.txt\" and append content to the file:\n\n  f = open(\"demofile2.txt\", \"a\")f.write(\"Now the file has more content!\")\n  f.close()#open and read the file after the appending:f = \n  open(\"demofile2.txt\", \"r\")print(f.read())\nRun Example »",
+            "Example\nOpen the file \"demofile3.txt\" and overwrite the content:\n\n  f = open(\"demofile3.txt\", \"w\")\n  f.write(\"Woops! I have deleted the content!\")f.close()\n  #open and read the file after the overwriting:f = open(\"demofile3.txt\", \"r\")\n  print(f.read())\nRun Example »",
+            "Note: the \"w\" method will overwrite the entire file."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "f = open(\"demofile2.txt\", \"a\")f.write(\"Now the file has more content!\")\n  f.close()#open and read the file after the appending:f = \n  open(\"demofile2.txt\", \"r\")print(f.read())"
+            },
+            {
+                "heading": "Example",
+                "code": "f = open(\"demofile3.txt\", \"w\")\n  f.write(\"Woops! I have deleted the content!\")f.close()\n  #open and read the file after the overwriting:f = open(\"demofile3.txt\", \"r\")\n  print(f.read())"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Create a New File",
+        "text": [
+            "To create a new file in Python, use the open() method, \nwith one of the following parameters:",
+            "\"x\" - Create - will create a file, returns \nan error if the file exists",
+            "\"a\" - Append - will create a file if the \nspecified file does not exists",
+            "\"w\" - Write - will create a file if the \nspecified file does not exists",
+            "Example\nCreate a file called \"myfile.txt\":\n\n  f = open(\"myfile.txt\", \"x\")",
+            "Result: a new empty file is created!",
+            "Example\nCreate a new file if it does not exist:\n\n  f = open(\"myfile.txt\", \"w\")",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "f = open(\"myfile.txt\", \"x\")"
+            },
+            {
+                "heading": "Example",
+                "code": "f = open(\"myfile.txt\", \"w\")"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Short Hand if...else",
+        "text": [
+            "There is also a short-hand if else, which is known as the ternary \noperator because it consists of three operands.",
+            "It can be used to \nreplace multiple lines of code with a single line, and is most often used to replace \nsimple if else statements:",
+            "Syntax\nvariable = (condition) ? expressionTrue :  expressionFalse;",
+            "Instead of writing:",
+            "Example\nint time = 20;\nif (time < 18) {\n  System.out.println(\"Good day.\");\n} else {\n  System.out.println(\"Good evening.\");\n}\n\n\nTry it Yourself »",
+            "You can simply write:",
+            "Example\nint time = 20;\nString result = (time < 18) ? \"Good day.\" : \"Good evening.\";\nSystem.out.println(result);\n\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

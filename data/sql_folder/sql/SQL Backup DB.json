@@ -1,0 +1,53 @@
+[
+    {
+        "title": "The SQL BACKUP DATABASE Statement",
+        "text": [
+            "The BACKUP DATABASE statement is used in SQL Server to create a full back up of an existing SQL database.",
+            "BACKUP DATABASE databasenameTO DISK = 'filepath';"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The SQL BACKUP WITH DIFFERENTIAL Statement",
+        "text": [
+            "A differential back up only backs up the parts of the database that have \nchanged since the last full database backup.",
+            "BACKUP DATABASE databasenameTO DISK = 'filepath'WITH \n  DIFFERENTIAL;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "BACKUP DATABASE Example",
+        "text": [
+            "The following SQL statement creates a full back up of the existing database \"testDB\" \nto the D disk:",
+            "Example\n\nBACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak';",
+            "Tip: Always back up the database to a different drive than the \nactual database. Then, if you get a disk crash, you will not lose your backup \nfile along with the database.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "BACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "BACKUP WITH DIFFERENTIAL Example",
+        "text": [
+            "The following SQL statement creates a differential back up of the database \"testDB\":",
+            "Example\n\nBACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak'WITH \n  DIFFERENTIAL;",
+            "Tip: A differential back up reduces the back up time (since only the changes are backed up).",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "BACKUP DATABASE testDBTO DISK = 'D:\\backups\\testDB.bak'WITH \n  DIFFERENTIAL;"
+            }
+        ],
+        "tables": []
+    }
+]

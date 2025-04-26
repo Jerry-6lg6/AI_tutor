@@ -1,0 +1,95 @@
+[
+    {
+        "title": "String Functions",
+        "text": [
+            "C also has many useful string functions, which can be used to perform \ncertain operations on strings.",
+            "To use them, you must include the <string.h> header file in your program:",
+            "#include <string.h>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "String Length",
+        "text": [
+            "For example, to get the length of a string, you can use the strlen() function:",
+            "Example\n\n  char alphabet[] = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";printf(\"%d\", \n  strlen(alphabet));\n\nTry it Yourself »",
+            "In the Strings chapter, we used sizeof to get the size of a string/array. Note that sizeof and strlen behaves differently, as sizeof also includes the \\0 character \nwhen counting:",
+            "Example\n\n  char alphabet[] = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";printf(\"%d\", \n  strlen(alphabet));   // 26printf(\"%d\", \n  sizeof(alphabet));   // 27\n\nTry it Yourself »",
+            "It is also important that you know that sizeof will always return the memory size (in bytes), and not the actual \nstring length:",
+            "Example\n\n  char alphabet[50] = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";printf(\"%d\", \n  strlen(alphabet));   // 26printf(\"%d\", sizeof(alphabet));   // \n  50\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char alphabet[] = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";printf(\"%d\", \n  strlen(alphabet));"
+            },
+            {
+                "heading": "Example",
+                "code": "char alphabet[] = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";printf(\"%d\", \n  strlen(alphabet));   // 26printf(\"%d\", \n  sizeof(alphabet));   // 27"
+            },
+            {
+                "heading": "Example",
+                "code": "char alphabet[50] = \"ABCDEFGHIJKLMNOPQRSTUVWXYZ\";printf(\"%d\", \n  strlen(alphabet));   // 26printf(\"%d\", sizeof(alphabet));   // \n  50"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Concatenate Strings",
+        "text": [
+            "To concatenate (combine) two strings, you can use the strcat() function:",
+            "Example\n\n  char str1[20] = \"Hello \";char str2[] = \"World!\";// \n  Concatenate \n  str2 to str1 (result is stored in str1)strcat(str1, str2);// \n  Print str1printf(\"%s\", str1);\n\nTry it Yourself »",
+            "Note that the size of str1 should be large enough to store the result of the \ntwo strings combined (20 in our example).",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char str1[20] = \"Hello \";char str2[] = \"World!\";// \n  Concatenate \n  str2 to str1 (result is stored in str1)strcat(str1, str2);// \n  Print str1printf(\"%s\", str1);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Copy Strings",
+        "text": [
+            "To copy the value of one string to another, you can use the strcpy() function:",
+            "Example\n\n  char str1[20] = \"Hello World!\";char str2[20];// Copy str1 to str2\n  strcpy(str2, str1);// Print str2 printf(\"%s\", str2);\n\nTry it Yourself »",
+            "Note that the size of str2 should be large \nenough to store the copied string (20 in our example)."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char str1[20] = \"Hello World!\";char str2[20];// Copy str1 to str2\n  strcpy(str2, str1);// Print str2 printf(\"%s\", str2);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Compare Strings",
+        "text": [
+            "To compare two strings, you can use the strcmp() \nfunction.",
+            "It returns 0 if the two strings are equal, otherwise a value that is not 0:",
+            "Example\n\n  char str1[] = \"Hello\";char str2[] = \"Hello\";char str3[] = \"Hi\";\n// Compare str1 and str2, and print the resultprintf(\"%d\\n\", \n  strcmp(str1, str2));  // Returns 0 (the strings are equal)// \n  Compare str1 and str3, and print the result\n  printf(\"%d\\n\", strcmp(str1, str3));  // Returns -4 (the strings are not \n  equal)\n\nTry it Yourself »",
+            "Complete String Reference\nFor a complete reference of string functions, go to our C \n<string.h> Library Reference.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char str1[] = \"Hello\";char str2[] = \"Hello\";char str3[] = \"Hi\";\n// Compare str1 and str2, and print the resultprintf(\"%d\\n\", \n  strcmp(str1, str2));  // Returns 0 (the strings are equal)// \n  Compare str1 and str3, and print the result\n  printf(\"%d\\n\", strcmp(str1, str3));  // Returns -4 (the strings are not \n  equal)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Complete String Reference",
+        "text": [
+            "For a complete reference of string functions, go to our C \n<string.h> Library Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

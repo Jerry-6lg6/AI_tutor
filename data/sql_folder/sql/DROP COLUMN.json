@@ -1,0 +1,18 @@
+[
+    {
+        "title": "DROP COLUMN",
+        "text": [
+            "The DROP COLUMN command is used to delete a column in an \nexisting table.",
+            "The following SQL deletes the \"ContactName\" column from the \"Customers\" table:",
+            "Example\n\n  ALTER TABLE CustomersDROP COLUMN ContactName;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE CustomersDROP COLUMN ContactName;"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Nested Dictionaries",
+        "text": [
+            "A dictionary can contain dictionaries, this is called nested \ndictionaries.",
+            "Example\nCreate a dictionary that contain three dictionaries:\n\n  myfamily = {  \"child1\" : {    \"name\" : \"Emil\",\n      \"year\" : 2004  },  \"child2\" : {    \n  \"name\" : \"Tobias\",    \"year\" : 2007  },  \n  \"child3\" : {    \"name\" : \"Linus\",\n      \"year\" : 2011  }} \nTry it Yourself »",
+            "Or, if you want to add three dictionaries into a new \ndictionary:",
+            "Example\nCreate three dictionaries, then create one dictionary that will contain the \nother three dictionaries:\n\n  child1 = {  \"name\" : \"Emil\",  \"year\" : 2004}child2 = {  \n  \"name\" : \"Tobias\",  \"year\" : 2007}child3 = {  \"name\" : \"Linus\",  \n  \"year\" : 2011}myfamily = {  \"child1\" : child1,  \n  \"child2\" : child2,  \"child3\" : child3}\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "myfamily = {  \"child1\" : {    \"name\" : \"Emil\",\n      \"year\" : 2004  },  \"child2\" : {    \n  \"name\" : \"Tobias\",    \"year\" : 2007  },  \n  \"child3\" : {    \"name\" : \"Linus\",\n      \"year\" : 2011  }}"
+            },
+            {
+                "heading": "Example",
+                "code": "child1 = {  \"name\" : \"Emil\",  \"year\" : 2004}child2 = {  \n  \"name\" : \"Tobias\",  \"year\" : 2007}child3 = {  \"name\" : \"Linus\",  \n  \"year\" : 2011}myfamily = {  \"child1\" : child1,  \n  \"child2\" : child2,  \"child3\" : child3}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Access Items in Nested Dictionaries",
+        "text": [
+            "To access items from a nested dictionary, you use the name of the dictionaries, starting with the \nouter dictionary:",
+            "Example\nPrint the name of child 2:\n\n  print(myfamily[\"child2\"][\"name\"]) \nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(myfamily[\"child2\"][\"name\"])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Loop Through Nested Dictionaries",
+        "text": [
+            "You can loop through a dictionary by using the items() method like this:",
+            "Example\nLoop through the keys and values of all nested dictionaries:\n\nfor x, obj in myfamily.items():\n  print(x)\n    \n  for y in obj:\n    print(y + ':', obj[y])\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for x, obj in myfamily.items():\n  print(x)\n    \n  for y in obj:\n    print(y + ':', obj[y])"
+            }
+        ],
+        "tables": []
+    }
+]

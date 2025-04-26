@@ -1,0 +1,334 @@
+[
+    {
+        "title": "C Intro",
+        "url": "https://www.w3schools.com/c/c_intro.php"
+    },
+    {
+        "title": "C Get Started",
+        "url": "https://www.w3schools.com/c/c_getstarted.php"
+    },
+    {
+        "title": "C Syntax",
+        "url": "https://www.w3schools.com/c/c_syntax.php"
+    },
+    {
+        "title": "C Syntax",
+        "url": "https://www.w3schools.com/c/c_syntax.php"
+    },
+    {
+        "title": "C Statements",
+        "url": "https://www.w3schools.com/c/c_statements.php"
+    },
+    {
+        "title": "C Output",
+        "url": "https://www.w3schools.com/c/c_output.php"
+    },
+    {
+        "title": "Print Text",
+        "url": "https://www.w3schools.com/c/c_output.php"
+    },
+    {
+        "title": "New Lines",
+        "url": "https://www.w3schools.com/c/c_newline.php"
+    },
+    {
+        "title": "C Comments",
+        "url": "https://www.w3schools.com/c/c_comments.php"
+    },
+    {
+        "title": "C Variables",
+        "url": "https://www.w3schools.com/c/c_variables.php"
+    },
+    {
+        "title": "Create Variables",
+        "url": "https://www.w3schools.com/c/c_variables.php"
+    },
+    {
+        "title": "Format Specifiers",
+        "url": "https://www.w3schools.com/c/c_variables_format.php"
+    },
+    {
+        "title": "Change Values",
+        "url": "https://www.w3schools.com/c/c_variables_change.php"
+    },
+    {
+        "title": "Multiple Variables",
+        "url": "https://www.w3schools.com/c/c_variables_multiple.php"
+    },
+    {
+        "title": "Variable Names",
+        "url": "https://www.w3schools.com/c/c_variables_names.php"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/c/c_variables_reallife.php"
+    },
+    {
+        "title": "C Data Types",
+        "url": "https://www.w3schools.com/c/c_data_types.php"
+    },
+    {
+        "title": "Data Types",
+        "url": "https://www.w3schools.com/c/c_data_types.php"
+    },
+    {
+        "title": "Characters",
+        "url": "https://www.w3schools.com/c/c_data_types_characters.php"
+    },
+    {
+        "title": "Numbers",
+        "url": "https://www.w3schools.com/c/c_data_types_numbers.php"
+    },
+    {
+        "title": "Decimal Precision",
+        "url": "https://www.w3schools.com/c/c_data_types_dec.php"
+    },
+    {
+        "title": "Memory Size",
+        "url": "https://www.w3schools.com/c/c_data_types_sizeof.php"
+    },
+    {
+        "title": "Real-Life Example",
+        "url": "https://www.w3schools.com/c/c_data_types_reallife.php"
+    },
+    {
+        "title": "Type Conversion",
+        "url": "https://www.w3schools.com/c/c_type_conversion.php"
+    },
+    {
+        "title": "C Constants",
+        "url": "https://www.w3schools.com/c/c_constants.php"
+    },
+    {
+        "title": "C Operators",
+        "url": "https://www.w3schools.com/c/c_operators.php"
+    },
+    {
+        "title": "C Booleans",
+        "url": "https://www.w3schools.com/c/c_booleans.php"
+    },
+    {
+        "title": "Booleans",
+        "url": "https://www.w3schools.com/c/c_booleans.php"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/c/c_booleans_reallife.php"
+    },
+    {
+        "title": "C If...Else",
+        "url": "https://www.w3schools.com/c/c_conditions.php"
+    },
+    {
+        "title": "if",
+        "url": "https://www.w3schools.com/c/c_conditions.php"
+    },
+    {
+        "title": "else",
+        "url": "https://www.w3schools.com/c/c_conditions_else.php"
+    },
+    {
+        "title": "else if",
+        "url": "https://www.w3schools.com/c/c_conditions_elseif.php"
+    },
+    {
+        "title": "Short Hand If",
+        "url": "https://www.w3schools.com/c/c_conditions_short_hand.php"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/c/c_conditions_reallife.php"
+    },
+    {
+        "title": "C Switch",
+        "url": "https://www.w3schools.com/c/c_switch.php"
+    },
+    {
+        "title": "C While Loop",
+        "url": "https://www.w3schools.com/c/c_while_loop.php"
+    },
+    {
+        "title": "While Loop",
+        "url": "https://www.w3schools.com/c/c_while_loop.php"
+    },
+    {
+        "title": "Do/While Loop",
+        "url": "https://www.w3schools.com/c/c_do_while_loop.php"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/c/c_while_loop_reallife.php"
+    },
+    {
+        "title": "C For Loop",
+        "url": "https://www.w3schools.com/c/c_for_loop.php"
+    },
+    {
+        "title": "For Loop",
+        "url": "https://www.w3schools.com/c/c_for_loop.php"
+    },
+    {
+        "title": "Nested Loops",
+        "url": "https://www.w3schools.com/c/c_for_loop_nested.php"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/c/c_for_loop_reallife.php"
+    },
+    {
+        "title": "C Break/Continue",
+        "url": "https://www.w3schools.com/c/c_break_continue.php"
+    },
+    {
+        "title": "C Arrays",
+        "url": "https://www.w3schools.com/c/c_arrays.php"
+    },
+    {
+        "title": "Arrays",
+        "url": "https://www.w3schools.com/c/c_arrays.php"
+    },
+    {
+        "title": "Array Size",
+        "url": "https://www.w3schools.com/c/c_arrays_size.php"
+    },
+    {
+        "title": "Real-Life Example",
+        "url": "https://www.w3schools.com/c/c_arrays_reallife.php"
+    },
+    {
+        "title": "Multidimensional Arrays",
+        "url": "https://www.w3schools.com/c/c_arrays_multi.php"
+    },
+    {
+        "title": "C Strings",
+        "url": "https://www.w3schools.com/c/c_strings.php"
+    },
+    {
+        "title": "Strings",
+        "url": "https://www.w3schools.com/c/c_strings.php"
+    },
+    {
+        "title": "Special Characters",
+        "url": "https://www.w3schools.com/c/c_strings_esc.php"
+    },
+    {
+        "title": "String Functions",
+        "url": "https://www.w3schools.com/c/c_strings_functions.php"
+    },
+    {
+        "title": "C User Input",
+        "url": "https://www.w3schools.com/c/c_user_input.php"
+    },
+    {
+        "title": "C Memory Address",
+        "url": "https://www.w3schools.com/c/c_memory_address.php"
+    },
+    {
+        "title": "C Pointers",
+        "url": "https://www.w3schools.com/c/c_pointers.php"
+    },
+    {
+        "title": "Pointers",
+        "url": "https://www.w3schools.com/c/c_pointers.php"
+    },
+    {
+        "title": "Pointers & Arrays",
+        "url": "https://www.w3schools.com/c/c_pointers_arrays.php"
+    },
+    {
+        "title": "C Functions",
+        "url": "https://www.w3schools.com/c/c_functions.php"
+    },
+    {
+        "title": "C Function Parameters",
+        "url": "https://www.w3schools.com/c/c_functions_parameters.php"
+    },
+    {
+        "title": "C Scope",
+        "url": "https://www.w3schools.com/c/c_scope.php"
+    },
+    {
+        "title": "C Function Declaration",
+        "url": "https://www.w3schools.com/c/c_functions_decl.php"
+    },
+    {
+        "title": "C Recursion",
+        "url": "https://www.w3schools.com/c/c_functions_recursion.php"
+    },
+    {
+        "title": "C Math Functions",
+        "url": "https://www.w3schools.com/c/c_math.php"
+    },
+    {
+        "title": "C Create Files",
+        "url": "https://www.w3schools.com/c/c_files.php"
+    },
+    {
+        "title": "C Write To Files",
+        "url": "https://www.w3schools.com/c/c_files_write.php"
+    },
+    {
+        "title": "C Read Files",
+        "url": "https://www.w3schools.com/c/c_files_read.php"
+    },
+    {
+        "title": "C Structures",
+        "url": "https://www.w3schools.com/c/c_structs.php"
+    },
+    {
+        "title": "C Enums",
+        "url": "https://www.w3schools.com/c/c_enums.php"
+    },
+    {
+        "title": "C Memory Management",
+        "url": "https://www.w3schools.com/c/c_memory_management.php"
+    },
+    {
+        "title": "C Allocate Memory",
+        "url": "https://www.w3schools.com/c/c_memory_allocate.php"
+    },
+    {
+        "title": "C Access Memory",
+        "url": "https://www.w3schools.com/c/c_memory_access.php"
+    },
+    {
+        "title": "C Reallocate Memory",
+        "url": "https://www.w3schools.com/c/c_memory_reallocate.php"
+    },
+    {
+        "title": "C Deallocate Memory",
+        "url": "https://www.w3schools.com/c/c_memory_deallocate.php"
+    },
+    {
+        "title": "C Memory Example",
+        "url": "https://www.w3schools.com/c/c_memory_reallife.php"
+    },
+    {
+        "title": "C Reference",
+        "url": "https://www.w3schools.com/c/c_ref_reference.php"
+    },
+    {
+        "title": "C Keywords",
+        "url": "https://www.w3schools.com/c/c_ref_keywords.php"
+    },
+    {
+        "title": "C <stdio.h>",
+        "url": "https://www.w3schools.com/c/c_ref_stdio.php"
+    },
+    {
+        "title": "C <stdlib.h>",
+        "url": "https://www.w3schools.com/c/c_ref_stdlib.php"
+    },
+    {
+        "title": "C <string.h>",
+        "url": "https://www.w3schools.com/c/c_ref_string.php"
+    },
+    {
+        "title": "C <math.h>",
+        "url": "https://www.w3schools.com/c/c_ref_math.php"
+    },
+    {
+        "title": "C <ctype.h>",
+        "url": "https://www.w3schools.com/c/c_ref_ctype.php"
+    }
+]

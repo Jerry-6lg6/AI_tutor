@@ -1,0 +1,60 @@
+[
+    {
+        "title": "What is the DOM?",
+        "text": [
+            "The Document Object Model (DOM) defines a standard for accessing and manipulating documents:",
+            "\"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the \ncontent, structure, and style of a document.\"",
+            "The HTML DOM defines a standard way for accessing and manipulating HTML documents. \nIt presents an HTML document as a tree-structure.",
+            "The XML DOM defines a standard way for accessing and manipulating XML documents. \nIt presents an XML document as a tree-structure.",
+            "Understanding the DOM is a must for anyone working with HTML or XML."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The HTML DOM",
+        "text": [
+            "All HTML elements can be accessed through the HTML DOM.",
+            "This example changes the value of an HTML element with id=\"demo\":",
+            "Example\n\n<h1 id=\"demo\">This is a Heading</h1>\n <button type=\"button\"onclick=\"document.getElementById('demo').innerHTML = \n 'Hello World!'\">Click Me!</button>\n\nTry it Yourself »",
+            "You can learn a lot more about the HTML DOM in our \nJavaScript tutorial.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 id=\"demo\">This is a Heading</h1>\n <button type=\"button\"onclick=\"document.getElementById('demo').innerHTML = \n 'Hello World!'\">Click Me!</button>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The XML DOM",
+        "text": [
+            "All XML elements can be accessed through the XML DOM.",
+            "Books.xml\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bookstore>\n  <book category=\"cooking\">\n    <title lang=\"en\">Everyday \nItalian</title>    <author>Giada De Laurentiis</author>    \n<year>2005</year>    <price>30.00</price>  </book>\n  <book category=\"children\">    <title lang=\"en\">Harry \nPotter</title>    <author>J K. Rowling</author>    \n<year>2005</year>    <price>29.99</price>  </book></bookstore>",
+            "This code retrieves the text value of the first <title> element in an \nXML document:",
+            "Example\n\ntxt = xmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;",
+            "The XML DOM is a standard for how to get, change, add, and delete XML elements.",
+            "This example loads a text string into an XML DOM object, and  \nextracts the info from it with JavaScript:",
+            "Example\n\n <html><body><p id=\"demo\"></p><script>var text, parser, \n xmlDoc;text = \"<bookstore><book>\" +\"<title>Everyday \n Italian</title>\" +\"<author>Giada De Laurentiis</author>\" +\n \"<year>2005</year>\" +\"</book></bookstore>\";parser = new DOMParser();\n xmlDoc = parser.parseFromString(text,\"text/xml\");\n document.getElementById(\"demo\").innerHTML =xmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;\n </script></body></html>\n\nTry it Yourself »",
+            "You will learn a lot more about the XML DOM in our XML DOM Tutorial.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Books.xml",
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bookstore>\n  <book category=\"cooking\">\n    <title lang=\"en\">Everyday \nItalian</title>    <author>Giada De Laurentiis</author>    \n<year>2005</year>    <price>30.00</price>  </book>\n  <book category=\"children\">    <title lang=\"en\">Harry \nPotter</title>    <author>J K. Rowling</author>    \n<year>2005</year>    <price>29.99</price>  </book></bookstore>"
+            },
+            {
+                "heading": "Example",
+                "code": "txt = xmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;"
+            },
+            {
+                "heading": "Example",
+                "code": "<html><body><p id=\"demo\"></p><script>var text, parser, \n xmlDoc;text = \"<bookstore><book>\" +\"<title>Everyday \n Italian</title>\" +\"<author>Giada De Laurentiis</author>\" +\n \"<year>2005</year>\" +\"</book></bookstore>\";parser = new DOMParser();\n xmlDoc = parser.parseFromString(text,\"text/xml\");\n document.getElementById(\"demo\").innerHTML =xmlDoc.getElementsByTagName(\"title\")[0].childNodes[0].nodeValue;\n </script></body></html>"
+            }
+        ],
+        "tables": []
+    }
+]

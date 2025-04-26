@@ -1,0 +1,94 @@
+[
+    {
+        "title": "Sort List Alphanumerically",
+        "text": [
+            "List objects have a \nsort() method that will sort the list alphanumerically, ascending, by default:",
+            "Example\nSort the list alphabetically:\n\nthislist = [\"orange\", \"mango\", \"kiwi\", \n  \"pineapple\", \"banana\"]thislist.sort()\nprint(thislist)\n\nTry it Yourself »",
+            "Example\nSort the list numerically:\n\nthislist = [100, 50, 65, 82, 23]thislist.sort()\nprint(thislist)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"orange\", \"mango\", \"kiwi\", \n  \"pineapple\", \"banana\"]thislist.sort()\nprint(thislist)"
+            },
+            {
+                "heading": "Example",
+                "code": "thislist = [100, 50, 65, 82, 23]thislist.sort()\nprint(thislist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Sort Descending",
+        "text": [
+            "To sort descending, use the keyword argument reverse = True:",
+            "Example\nSort the list descending:\n\nthislist = [\"orange\", \"mango\", \"kiwi\", \n  \"pineapple\", \"banana\"]thislist.sort(reverse = True)\nprint(thislist)\n\nTry it Yourself »",
+            "Example\nSort the list descending:\n\nthislist = [100, 50, 65, 82, 23]thislist.sort(reverse = True)\nprint(thislist)\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"orange\", \"mango\", \"kiwi\", \n  \"pineapple\", \"banana\"]thislist.sort(reverse = True)\nprint(thislist)"
+            },
+            {
+                "heading": "Example",
+                "code": "thislist = [100, 50, 65, 82, 23]thislist.sort(reverse = True)\nprint(thislist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Customize Sort Function",
+        "text": [
+            "You can also customize your own function by using the keyword argument key = \nfunction.",
+            "The function will return a number that will be used to sort the list (the \nlowest number first):",
+            "Example\nSort the list based on how close the number is to 50:\n\n  def myfunc(n):  return abs(n - 50)thislist = [100, 50, 65, 82, 23]thislist.sort(key = \n  myfunc)print(thislist)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def myfunc(n):  return abs(n - 50)thislist = [100, 50, 65, 82, 23]thislist.sort(key = \n  myfunc)print(thislist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Case Insensitive Sort",
+        "text": [
+            "By default the sort() method is case sensitive,\nresulting in all capital letters being sorted before lower case letters:",
+            "Example\nCase sensitive sorting can give an unexpected result:\n\n  thislist = [\"banana\", \"Orange\", \"Kiwi\", \"cherry\"]thislist.sort()print(thislist)\n\nTry it Yourself »",
+            "Luckily we can use built-in functions as key functions when sorting a list.",
+            "So if you want a case-insensitive sort function, use str.lower as a key function:",
+            "Example\nPerform a case-insensitive sort of the list:\n\n  thislist = [\"banana\", \"Orange\", \"Kiwi\", \"cherry\"]thislist.sort(key \n  = str.lower)print(thislist)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"banana\", \"Orange\", \"Kiwi\", \"cherry\"]thislist.sort()print(thislist)"
+            },
+            {
+                "heading": "Example",
+                "code": "thislist = [\"banana\", \"Orange\", \"Kiwi\", \"cherry\"]thislist.sort(key \n  = str.lower)print(thislist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Reverse Order",
+        "text": [
+            "What if you want to reverse the order of a list, regardless of the alphabet?",
+            "The reverse() method reverses the current sorting order of the elements.",
+            "Example\nReverse the order of the list items:\n\n  thislist = [\"banana\", \"Orange\", \"Kiwi\", \"cherry\"]thislist.reverse()print(thislist)\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"banana\", \"Orange\", \"Kiwi\", \"cherry\"]thislist.reverse()print(thislist)"
+            }
+        ],
+        "tables": []
+    }
+]

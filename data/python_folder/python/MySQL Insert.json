@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Insert Into Table",
+        "text": [
+            "To fill a table in MySQL, use the \"INSERT INTO\" statement.",
+            "Example\nInsert a record in the \"customers\" table:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"INSERT INTO customers (name, \n  address) VALUES (%s, %s)\"val = (\"John\", \"Highway 21\")mycursor.execute(sql, \n  val)\nmydb.commit()print(mycursor.rowcount, \"record inserted.\")\nRun example »",
+            "Important!: Notice the statement: \n  mydb.commit(). It is required to make the \n  changes, otherwise no \n  changes are made to the table."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"INSERT INTO customers (name, \n  address) VALUES (%s, %s)\"val = (\"John\", \"Highway 21\")mycursor.execute(sql, \n  val)\nmydb.commit()print(mycursor.rowcount, \"record inserted.\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Insert Multiple Rows",
+        "text": [
+            "To insert multiple rows into a table, use the \nexecutemany() method.",
+            "The second parameter of the executemany() method \nis a list of tuples, containing the data you want to insert:",
+            "Example\nFill the \"customers\" table with data:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"INSERT INTO customers (name, \n  address) VALUES (%s, %s)\"val = [  ('Peter', 'Lowstreet 4'),  \n  ('Amy', 'Apple st 652'),  ('Hannah', 'Mountain 21'),  \n  ('Michael', 'Valley 345'),  ('Sandy', 'Ocean blvd 2'),  \n  ('Betty', 'Green Grass 1'),  ('Richard', 'Sky st 331'),  \n  ('Susan', 'One way 98'),  ('Vicky', 'Yellow Garden 2'),  \n  ('Ben', 'Park Lane 38'),  ('William', 'Central st 954'),  \n  ('Chuck', 'Main Road 989'),  ('Viola', 'Sideway 1633')]\n  mycursor.executemany(sql, val)mydb.commit()print(mycursor.rowcount, \"was inserted.\")\nRun example »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"INSERT INTO customers (name, \n  address) VALUES (%s, %s)\"val = [  ('Peter', 'Lowstreet 4'),  \n  ('Amy', 'Apple st 652'),  ('Hannah', 'Mountain 21'),  \n  ('Michael', 'Valley 345'),  ('Sandy', 'Ocean blvd 2'),  \n  ('Betty', 'Green Grass 1'),  ('Richard', 'Sky st 331'),  \n  ('Susan', 'One way 98'),  ('Vicky', 'Yellow Garden 2'),  \n  ('Ben', 'Park Lane 38'),  ('William', 'Central st 954'),  \n  ('Chuck', 'Main Road 989'),  ('Viola', 'Sideway 1633')]\n  mycursor.executemany(sql, val)mydb.commit()print(mycursor.rowcount, \"was inserted.\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Get Inserted ID",
+        "text": [
+            "You can get the id of the row you \njust inserted by asking the cursor object.",
+            "Note: If you insert more than one row, the id of the last \ninserted row is returned.",
+            "Example\nInsert one row, and return the ID:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"INSERT INTO customers (name, \n  address) VALUES (%s, %s)\"val = (\"Michelle\", \"Blue Village\")\n  mycursor.execute(sql, val)mydb.commit()print(\"1 record \n  inserted, ID:\", mycursor.lastrowid)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"INSERT INTO customers (name, \n  address) VALUES (%s, %s)\"val = (\"Michelle\", \"Blue Village\")\n  mycursor.execute(sql, val)mydb.commit()print(\"1 record \n  inserted, ID:\", mycursor.lastrowid)"
+            }
+        ],
+        "tables": []
+    }
+]

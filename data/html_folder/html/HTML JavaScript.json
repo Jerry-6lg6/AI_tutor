@@ -1,0 +1,77 @@
+[
+    {
+        "title": "My First JavaScript",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The HTML <script> Tag",
+        "text": [
+            "The HTML <script> tag is used to define a client-side script \n(JavaScript).",
+            "The <script> element either contains script statements, or it points to an \nexternal script file through the src attribute.",
+            "Common uses for JavaScript are image manipulation, form validation, and \ndynamic changes of content.",
+            "To select an HTML element, JavaScript most often uses the \ndocument.getElementById() method.",
+            "This JavaScript example writes \"Hello JavaScript!\" into an HTML element with id=\"demo\":",
+            "Example\n\n<script>\n document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\nTry it Yourself »",
+            "Tip: You can learn much more about JavaScript in our JavaScript Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<script>\n document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "A Taste of JavaScript",
+        "text": [
+            "Here are some examples of what JavaScript can do:",
+            "Example\nJavaScript can change content:\n\n document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n\nTry it Yourself »",
+            "Example\nJavaScript can change styles:\n\ndocument.getElementById(\"demo\").style.fontSize = \"25px\";document.getElementById(\"demo\").style.color = \"red\";document.getElementById(\"demo\").style.backgroundColor = \"yellow\";\nTry it Yourself »",
+            "Example\nJavaScript can change attributes:\n\n document.getElementById(\"image\").src = \"picture.gif\";\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";"
+            },
+            {
+                "heading": "Example",
+                "code": "document.getElementById(\"demo\").style.fontSize = \"25px\";document.getElementById(\"demo\").style.color = \"red\";document.getElementById(\"demo\").style.backgroundColor = \"yellow\";"
+            },
+            {
+                "heading": "Example",
+                "code": "document.getElementById(\"image\").src = \"picture.gif\";"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The HTML <noscript> Tag",
+        "text": [
+            "The HTML <noscript> tag defines an alternate content \nto be displayed to users that \nhave disabled scripts in their browser or have a browser that doesn't support \nscripts:",
+            "Example\n\n<script>\n document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script><noscript>Sorry, your browser does not support JavaScript!</noscript>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<script>\n document.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script><noscript>Sorry, your browser does not support JavaScript!</noscript>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Script Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

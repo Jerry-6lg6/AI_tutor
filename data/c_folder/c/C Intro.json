@@ -1,0 +1,35 @@
+[
+    {
+        "title": "What is C?",
+        "text": [
+            "C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.",
+            "It is a very popular language, despite being old. The main reason for its popularity is because it is a fundamental language in the field of computer science.",
+            "C is strongly associated with UNIX, as it was developed to write the UNIX operating system."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Why Learn C?",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Difference between C and C++",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Get Started",
+        "text": [
+            "This tutorial will teach you the basics of C.",
+            "When you are finished with this tutorial, you will be able to write C programs and create real-life examples.",
+            "It is not necessary to have any prior programming experience.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,19 @@
+[
+    {
+        "title": "CREATE DATABASE",
+        "text": [
+            "The CREATE DATABASE command is used is to \ncreate a new SQL database.",
+            "The following SQL creates a database called \"testDB\":",
+            "Example\n\nCREATE DATABASE testDB;",
+            "Tip: Make sure you have admin privilege before creating any database. Once a \ndatabase is created, you can check it in the list of databases with the \nfollowing SQL command: SHOW DATABASES;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE DATABASE testDB;"
+            }
+        ],
+        "tables": []
+    }
+]

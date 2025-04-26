@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Slicing",
+        "text": [
+            "You can return a range of characters by using the slice syntax.",
+            "Specify the start index and the end index, separated by a colon, to return a \npart of the string.",
+            "Example\nGet the characters from position 2 to position 5 (not included):\n\nb = \"Hello, World!\"\n  print(b[2:5])\n\nTry it Yourself »",
+            "Note: The first character has index 0."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "b = \"Hello, World!\"\n  print(b[2:5])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Slice From the Start",
+        "text": [
+            "By leaving out the start index, the range will start at the first character:",
+            "Example\nGet the characters from the start to position 5 (not included):\n\nb = \"Hello, World!\"\n  print(b[:5])\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "b = \"Hello, World!\"\n  print(b[:5])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Slice To the End",
+        "text": [
+            "By leaving out the end index, the range will go to the end:",
+            "Example\nGet the characters from position 2, and all the way to the end:\n\nb = \"Hello, World!\"\n  print(b[2:])\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "b = \"Hello, World!\"\n  print(b[2:])"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Negative Indexing",
+        "text": [
+            "Example\nGet the characters:\nFrom: \"o\" in \"World!\" (position -5)\nTo, but not included: \"d\" in \"World!\" (position -2):\n\nb = \"Hello, World!\"\n  print(b[-5:-2])\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "b = \"Hello, World!\"\n  print(b[-5:-2])"
+            }
+        ],
+        "tables": []
+    }
+]

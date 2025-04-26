@@ -1,0 +1,105 @@
+[
+    {
+        "title": "Declaring Elements",
+        "text": [
+            "In a DTD, XML elements are declared with the following syntax:",
+            "<!ELEMENT element-name category>or<!ELEMENT element-name (element-content)>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Empty Elements",
+        "text": [
+            "Empty elements are declared with the category keyword EMPTY:",
+            "<!ELEMENT element-name EMPTY>\nExample:\n<!ELEMENT br EMPTY>\nXML example:\n<br />"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Elements with Parsed Character Data",
+        "text": [
+            "Elements with only parsed character data are declared with #PCDATA inside parentheses:",
+            "<!ELEMENT element-name (#PCDATA)>\nExample:\n<!ELEMENT from (#PCDATA)>",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Elements with any Contents",
+        "text": [
+            "Elements declared with the category keyword ANY, can contain any combination of parsable data:",
+            "<!ELEMENT element-name ANY>\nExample:\n<!ELEMENT note ANY>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Elements with Children (sequences)",
+        "text": [
+            "Elements with one or more children are declared with the name of the children elements inside parentheses:",
+            "<!ELEMENT element-name (child1)>\nor\n<!ELEMENT element-name (child1,child2,...)>\nExample:\n<!ELEMENT note (to,from,heading,body)>",
+            "When children are declared in a sequence separated by commas, the children must appear in the same sequence in the document.\nIn a full declaration, the children must also be declared, and the children can also have children.\nThe full declaration of the \"note\" element is:",
+            "<!ELEMENT note (to,from,heading,body)>\n<!ELEMENT to      (#PCDATA)>\n<!ELEMENT from    (#PCDATA)>\n<!ELEMENT heading (#PCDATA)>\n<!ELEMENT body    (#PCDATA)>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Declaring Only One Occurrence of an Element",
+        "text": [
+            "<!ELEMENT element-name (child-name)>\nExample:\n<!ELEMENT note (message)>",
+            "The example above declares that the child element \"message\" must occur once, and only once inside the \"note\" element."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Declaring Minimum One Occurrence of an Element",
+        "text": [
+            "<!ELEMENT element-name (child-name+)>\nExample:\n<!ELEMENT note (message+)>",
+            "The + sign in the example above declares that the child element \"message\" must occur\none or more times inside the \"note\" element."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Declaring Zero or More Occurrences of an Element",
+        "text": [
+            "<!ELEMENT element-name (child-name*)>\nExample:\n<!ELEMENT note (message*)>",
+            "The * sign in the example above declares that the child element \"message\" can occur zero or more times inside the \"note\" element."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Declaring Zero or One Occurrences of an Element",
+        "text": [
+            "<!ELEMENT element-name (child-name?)>\nExample:\n<!ELEMENT note (message?)>",
+            "The ? sign in the example above declares that the child element \"message\" can occur zero or one time inside the \"note\" element."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Declaring either/or Content",
+        "text": [
+            "<!ELEMENT note (to,from,header,(message|body))>",
+            "The example above declares that the \"note\" element must contain a \"to\" element, a \"from\"\nelement, a \"header\" element, and either a \"message\" or a \"body\" element."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Declaring Mixed Content",
+        "text": [
+            "<!ELEMENT note (#PCDATA|to|from|header|message)*>",
+            "The example above declares that the \"note\" element can contain zero or more occurrences of parsed character data, \"to\", \"from\", \"header\", or \"message\" elements.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

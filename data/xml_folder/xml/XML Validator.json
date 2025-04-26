@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Well Formed XML Documents",
+        "text": [
+            "An XML document with correct syntax is called \"Well Formed\".",
+            "The syntax rules were described in the previous chapters:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<note>\n<to>Tove</to>\n<from>Jani</from>\n<heading>Reminder</heading>\n<body>Don't forget me this weekend!</body>\n</note>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Errors Will Stop You",
+        "text": [
+            "Errors in XML documents will stop your XML applications.",
+            "The W3C XML specification states that a program should stop processing an XML document if it finds an error.\nThe reason is that XML software should be small, fast, and compatible.",
+            "HTML browsers are allowed to display HTML documents with errors (like missing end tags).",
+            "With XML, errors are not allowed.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Syntax-Check Your XML",
+        "text": [
+            "To help you syntax-check your XML, we have created an XML validator.",
+            "Try to syntax-check correct XML :",
+            "Try to syntax-check incorrect XML :",
+            "Try to syntax-check your own XML :"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Valid XML Documents",
+        "text": [
+            "A \"well formed\" XML document is not the same as a \"valid\" XML document.",
+            "A \"valid\" XML document must be well formed. In addition, it must conform to a  \ndocument type definition.",
+            "There are two different document type definitions that can be used with XML:",
+            "A document type definition defines the rules and the legal elements and attributes \nfor an XML document.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

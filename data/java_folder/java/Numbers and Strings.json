@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Adding Numbers and Strings",
+        "text": [
+            "WARNING!\nJava uses the + operator for both addition and concatenation.\nNumbers are added. Strings are concatenated.",
+            "If you add two numbers, the result will be a number:",
+            "Example\nint x = 10;\nint y = 20;\nint z = x + y;  // z will be 30 (an integer/number)\n\n\nTry it Yourself »",
+            "If you add two strings, the result will be a string concatenation:",
+            "Example\nString x = \"10\";\nString y = \"20\";\nString z = x + y;  // z will be 1020 (a String)\n\n\nTry it Yourself »",
+            "If you add a number and a string, the result will be a string concatenation:",
+            "Example\nString x = \"10\";\nint y = 20;\nString z = x + y;  // z will be 1020 (a String)\n\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

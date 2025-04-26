@@ -1,0 +1,68 @@
+[
+    {
+        "title": "SQL Self Join",
+        "text": [
+            "A self join is a regular join, but the table is joined with itself.",
+            "SELECT column_name(s)\nFROM table1 T1, table1 T2\n  WHERE condition;",
+            "T1 and T2 are different table aliases for the same table."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "In this tutorial we will use the well-known Northwind sample database.",
+            "Below is a selection from the \"Customers\" table:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL Self Join Example",
+        "text": [
+            "The following SQL statement matches customers that are from the same city:",
+            "Example\n\n  SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, \n  A.CityFROM Customers A, Customers BWHERE A.CustomerID <> B.CustomerID\n  AND A.City = B.City ORDER BY A.City;\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, \n  A.CityFROM Customers A, Customers BWHERE A.CustomerID <> B.CustomerID\n  AND A.City = B.City ORDER BY A.City;"
+            }
+        ],
+        "tables": []
+    }
+]

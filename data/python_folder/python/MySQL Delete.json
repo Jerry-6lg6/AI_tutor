@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Delete Record",
+        "text": [
+            "You can delete records from an existing table by using the \"DELETE FROM\" statement:",
+            "Example\nDelete any record where the address is \"Mountain 21\":\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"DELETE FROM customers WHERE address = \n  'Mountain 21'\"mycursor.execute(sql)mydb.commit()print(mycursor.rowcount, \"record(s) deleted\")\nRun example »",
+            "Important!: Notice the statement: \n  mydb.commit(). It is required to make the \n  changes, otherwise no \n  changes are made to the table.",
+            "Notice the WHERE clause in the DELETE syntax: The WHERE clause \nspecifies which record(s) that should be deleted. If you omit the WHERE \nclause, all records will be deleted!",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"DELETE FROM customers WHERE address = \n  'Mountain 21'\"mycursor.execute(sql)mydb.commit()print(mycursor.rowcount, \"record(s) deleted\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Prevent SQL Injection",
+        "text": [
+            "It is considered a good practice to escape the values of any query, also in delete statements.",
+            "This is to prevent SQL injections, which is a common web hacking technique to  \ndestroy or misuse your database.",
+            "The mysql.connector module uses the placeholder %s to escape values in the delete statement:",
+            "Example\nEscape values by using the placeholder %s \nmethod:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"DELETE FROM customers WHERE address = \n  %s\"adr = (\"Yellow Garden 2\", )\n  mycursor.execute(sql, adr)mydb.commit()print(mycursor.rowcount, \"record(s) deleted\")\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"DELETE FROM customers WHERE address = \n  %s\"adr = (\"Yellow Garden 2\", )\n  mycursor.execute(sql, adr)mydb.commit()print(mycursor.rowcount, \"record(s) deleted\")"
+            }
+        ],
+        "tables": []
+    }
+]

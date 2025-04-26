@@ -1,0 +1,146 @@
+[
+    {
+        "title": "HTML Formatting Elements",
+        "text": [
+            "Formatting elements were designed to display special types of text:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML <b> and <strong> Elements",
+        "text": [
+            "The HTML <b> element defines bold text, \nwithout any extra importance.",
+            "Example\n\n    <b>This text is bold</b>\nTry it Yourself »",
+            "The HTML <strong> element defines text \nwith strong importance. The content inside is typically displayed in bold.",
+            "Example\n\n     <strong>This text is \n     important!</strong>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<b>This text is bold</b>"
+            },
+            {
+                "heading": "Example",
+                "code": "<strong>This text is \n     important!</strong>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <i> and <em> Elements",
+        "text": [
+            "The HTML <i> element defines a part of \ntext in an alternate voice or mood. The content inside is typically displayed in \nitalic.",
+            "Tip: The <i> tag is often used to indicate a technical term, \na phrase from another language, a thought, a ship name, etc.",
+            "Example\n\n    <i>This text is italic</i>\nTry it Yourself »",
+            "The HTML <em> element defines \nemphasized text. The content inside is typically displayed in italic.",
+            "Tip: A screen reader will pronounce the words in <em> \nwith an emphasis, using verbal stress.",
+            "Example\n\n    <em>This text is \n emphasized</em>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<i>This text is italic</i>"
+            },
+            {
+                "heading": "Example",
+                "code": "<em>This text is \n emphasized</em>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <small> Element",
+        "text": [
+            "The HTML <small> element defines \nsmaller text:",
+            "Example\n\n  <small>This is some smaller text.</small>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<small>This is some smaller text.</small>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <mark> Element",
+        "text": [
+            "The HTML <mark> element defines text \nthat should be marked or highlighted:",
+            "Example\n\n  <p>Do not forget to buy <mark>milk</mark> today.</p>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>Do not forget to buy <mark>milk</mark> today.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <del> Element",
+        "text": [
+            "The HTML <del> element defines text \nthat has been deleted from a document. Browsers will usually strike a line \nthrough deleted text:",
+            "Example\n\n <p>My favorite color is <del>blue</del> red.</p>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>My favorite color is <del>blue</del> red.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <ins> Element",
+        "text": [
+            "The HTML <ins> element defines a text \nthat has been inserted into a document. Browsers will usually underline inserted \ntext:",
+            "Example\n\n  <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <sub> Element",
+        "text": [
+            "The HTML <sub> element defines \nsubscript text. Subscript text appears half a character below the normal line, \nand is sometimes rendered in a smaller font. Subscript text can be used for \nchemical formulas, like H2O:",
+            "Example\n\n <p>This \n is <sub>subscripted</sub> text.</p>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>This \n is <sub>subscripted</sub> text.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <sup> Element",
+        "text": [
+            "The HTML <sup> element defines \nsuperscript text. Superscript text appears half a character above the normal \nline, and is sometimes rendered in a smaller font. Superscript text can be used \nfor footnotes, like WWW[1]:",
+            "Example\n\n <p>This \n is <sup>superscripted</sup> text.</p>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>This \n is <sup>superscripted</sup> text.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Text Formatting Elements",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

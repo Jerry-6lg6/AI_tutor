@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Loop Through an Array",
+        "text": [
+            "You can loop through the array elements with the for loop, and use the length \nproperty to specify how many times the loop should run.",
+            "The following example outputs all elements in the cars \narray:",
+            "Example\nString[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\nfor (int i = 0; i < cars.length; i++) {\n  System.out.println(cars[i]);\n}\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Loop Through an Array with For-Each",
+        "text": [
+            "There is also a \"for-each\" loop, which is used exclusively to loop through elements in arrays:",
+            "Syntax\nfor (type variable : arrayname) {\n  ...\n}",
+            "The following example outputs all elements in the cars \narray, using a \"for-each\" loop:",
+            "Example\nString[] cars = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\"};\nfor (String i : cars) {\n  System.out.println(i);\n}\n\n\nTry it Yourself »",
+            "The example above can be read like this: for each String element (called \ni - as in \nindex) in cars, print out the value of i.",
+            "If you compare the for loop and for-each loop, you will see that the for-each method is easier to write, it \ndoes not require a counter (using the length property), and it is more readable.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,157 @@
+[
+    {
+        "title": "The SQL DELETE Statement",
+        "text": [
+            "The DELETE statement is used to delete existing records in a table.",
+            "DELETE FROM table_name WHERE condition;",
+            "Note: Be careful when deleting records in a table! Notice the \nWHERE clause in the \nDELETE statement.\nThe WHERE clause specifies which record(s) should be deleted. If \nyou omit the WHERE clause, all records in the table will be deleted!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Customers table used in the examples:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL DELETE Example",
+        "text": [
+            "The following SQL statement deletes the customer \"Alfreds Futterkiste\" from \nthe \"Customers\" table:",
+            "Example\n\n DELETE FROM Customers\n WHERE CustomerName='Alfreds Futterkiste';",
+            "The \"Customers\" table will now look like this:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DELETE FROM Customers\n WHERE CustomerName='Alfreds Futterkiste';"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Delete All Records",
+        "text": [
+            "It is possible to delete all rows in a table without deleting the table. This \nmeans that the table structure, attributes, and indexes will be intact:",
+            "DELETE FROM table_name;",
+            "The following SQL statement deletes all rows in the \"Customers\" table, without deleting the table:",
+            "Example\n\n  DELETE FROM Customers;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DELETE FROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Delete a Table",
+        "text": [
+            "To delete the table completely, use the DROP TABLE statement:",
+            "Example\nRemove the Customers table:\n\n  DROP TABLE Customers;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP TABLE Customers;"
+            }
+        ],
+        "tables": []
+    }
+]

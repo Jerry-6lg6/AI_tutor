@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Real Life Example",
+        "text": [
+            "To demonstrate a practical example of the for loop, let's create a program that counts to 100 by tens:",
+            "Example\n\n  for (int i = 0; i <= 100; i += 10) {  cout << i << \"\\n\";}\nTry it Yourself »",
+            "In this example, we create a program that only print even numbers between 0 and 10 (inclusive):",
+            "Example\n\n  for (int i = 0; i <= 10; i = i + 2) {  cout << i << \"\\n\";}\nTry it Yourself »",
+            "Here we only print odd numbers:",
+            "Example\n\n  for (int i = 1; i <= 10; i = i + 2) {  cout << i << \"\\n\";}\nTry it Yourself »",
+            "In this example we print the powers of 2 up to 512:",
+            "Example\n\n  for (int i = 2; i <= 512; i *= 2) {  cout << i << \"\\n\";}\nTry it Yourself »",
+            "And in this example, we create a program that prints the multiplication table for a specified number:",
+            "Example\n\n  int number = 2;int i;// Print the multiplication table for the \n  number 2for (i = 1; i <= 10; i++) {  cout << number << \" x \" << i \n  << \" = \" << number * i << \"\\n\";}\nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for (int i = 0; i <= 100; i += 10) {  cout << i << \"\\n\";}"
+            },
+            {
+                "heading": "Example",
+                "code": "for (int i = 0; i <= 10; i = i + 2) {  cout << i << \"\\n\";}"
+            },
+            {
+                "heading": "Example",
+                "code": "for (int i = 1; i <= 10; i = i + 2) {  cout << i << \"\\n\";}"
+            },
+            {
+                "heading": "Example",
+                "code": "for (int i = 2; i <= 512; i *= 2) {  cout << i << \"\\n\";}"
+            },
+            {
+                "heading": "Example",
+                "code": "int number = 2;int i;// Print the multiplication table for the \n  number 2for (i = 1; i <= 10; i++) {  cout << number << \" x \" << i \n  << \" = \" << number * i << \"\\n\";}"
+            }
+        ],
+        "tables": []
+    }
+]

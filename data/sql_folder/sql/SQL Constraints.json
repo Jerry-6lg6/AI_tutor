@@ -1,0 +1,24 @@
+[
+    {
+        "title": "SQL Create Constraints",
+        "text": [
+            "Constraints can be specified when the table is created with the \nCREATE TABLE statement, or after the table is created \nwith the ALTER TABLE statement.",
+            "CREATE TABLE table_name (\n    column1 datatype constraint,\n    column2 datatype constraint,\n    column3 datatype constraint,\n   \n....\n);"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL Constraints",
+        "text": [
+            "SQL constraints are used to specify rules for the data in a table.",
+            "Constraints are used to limit the type of data that can go into a table. This \nensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and the data action, \nthe action is aborted.",
+            "Constraints can be column level or table level. Column level constraints \napply to a column, and table level constraints apply to the whole table.",
+            "The following constraints are commonly used in SQL:",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

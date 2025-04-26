@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Strings - Special Characters",
+        "text": [
+            "Because strings must be written within quotes, Java will misunderstand this string, \nand generate an error:",
+            "String txt = \"We are the so-called \"Vikings\" from the north.\";",
+            "The solution to avoid this problem, is to use the backslash escape character.",
+            "The backslash (\\) escape character turns special characters into string characters:",
+            "The sequence \\\"  inserts a double quote in a string:\n\nExample\nString txt = \"We are the so-called \\\"Vikings\\\" from the north.\";\n\n\nTry it Yourself »\n\n\nThe sequence \\'  inserts a single quote in a string:\n\nExample\nString txt = \"It\\'s alright.\";\n\n\nTry it Yourself »\n\n\nThe sequence \\\\  inserts a single backslash in a string:\n\nExample\nString txt = \"The character \\\\ is called backslash.\";\n\n\nTry it Yourself »\n\n\nOther common escape sequences that are valid in Java are:\n\n\nCode\nResult\nTry it\n\n\n\\n\nNew Line\nTry it »\n\n\n\\r\nCarriage Return\nTry it »\n\n\n\\t\nTab\nTry it »\n\n\n\\b\nBackspace\nTry it »\n\n\n\\f\nForm Feed\n\n\n\n\n\n\n\n\n❮ Previous\nNext ❯\n\n\n\n\n\n\n\n\n\n\n\n\n★\n+1\n\n\n\n \n\n\n\nTrack your progress - it's free!\n\n\n \n\n\n\n\n\n\n\n          Log in\n        \n\n          Sign Up"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

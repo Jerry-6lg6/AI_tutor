@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Find One",
+        "text": [
+            "To select data from a collection in MongoDB, we can use the\nfind_one() method.",
+            "The find_one() method returns the first \noccurrence in the selection.",
+            "Example\nFind the first document in the customers collection:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nx = mycol.find_one()print(x)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nx = mycol.find_one()print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Find All",
+        "text": [
+            "To select data from a table in MongoDB, we can also use the\nfind() method.",
+            "The find() method returns all \noccurrences in the selection.",
+            "The first parameter of the find() method \nis a query object. In this example we use an empty query object, which selects \nall documents in the collection.",
+            "No parameters in the find() method gives you the same result as SELECT * in MySQL.",
+            "Example\nReturn all documents in the \"customers\" collection, and print each document:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nfor x in mycol.find():  print(x)\nRun example »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nfor x in mycol.find():  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Return Only Some Fields",
+        "text": [
+            "The second parameter of the find() method \nis an object describing which fields to include in the result.",
+            "This parameter is optional, and if omitted, all fields will be included in \nthe result.",
+            "Example\nReturn only the names and addresses, not the _ids:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nfor x in mycol.find({},{ \"_id\": 0, \"name\": 1, \"address\": 1 }):  \n    print(x)\nRun example »",
+            "You are not allowed to specify both 0 and 1 values in the same object (except \nif one of the fields is the _id field). If you specify a field with the value 0, all other fields get the value 1, \nand vice versa:",
+            "Example\nThis example will exclude \"address\" from the result:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nfor x in mycol.find({},{ \"address\": 0 }):  \n    print(x)\nRun example »",
+            "Example\nYou get an error if you specify both 0 and 1 values in the same object \n(except if one of the fields is the _id field):\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nfor x in mycol.find({},{ \"name\": 1, \"address\": 0 }):  \n    print(x)",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nfor x in mycol.find({},{ \"_id\": 0, \"name\": 1, \"address\": 1 }):  \n    print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nfor x in mycol.find({},{ \"address\": 0 }):  \n    print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nfor x in mycol.find({},{ \"name\": 1, \"address\": 0 }):  \n    print(x)"
+            }
+        ],
+        "tables": []
+    }
+]

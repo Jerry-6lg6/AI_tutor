@@ -1,0 +1,48 @@
+[
+    {
+        "title": "The char Type",
+        "text": [
+            "The char data type is used to store a \nsingle character.",
+            "The character must be surrounded by single quotes, like 'A' or 'c', and we use the %c format specifier to print it:",
+            "Example\n\n  char myGrade = 'A';\n  printf(\"%c\", myGrade);\nTry it Yourself »",
+            "Alternatively, if you are familiar with ASCII, you can use ASCII values to display certain characters. Note that these values are not surrounded by quotes (''), \nas they are numbers:",
+            "Example\n\n  char a = 65, b = 66, c = 67;\n  printf(\"%c\", a);printf(\"%c\", b);printf(\"%c\", c);\nTry it Yourself »",
+            "Tip: A list of all ASCII values can be found in our ASCII Table Reference."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char myGrade = 'A';\n  printf(\"%c\", myGrade);"
+            },
+            {
+                "heading": "Example",
+                "code": "char a = 65, b = 66, c = 67;\n  printf(\"%c\", a);printf(\"%c\", b);printf(\"%c\", c);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Notes on Characters",
+        "text": [
+            "If you try to store more than a single character, it will only print the last \ncharacter:",
+            "Example\n\n  char myText = 'Hello';\n  printf(\"%c\", myText);\nTry it Yourself »",
+            "Note: Don't use the char type for storing multiple \ncharacters, as it may produce errors.",
+            "To store multiple characters (or whole words), use strings (which you will learn more about in a later chapter):",
+            "Example\n\n  char myText[] = \"Hello\";printf(\"%s\", myText);\nTry it Yourself »",
+            "For now, just know that we use strings for storing multiple characters/text, and the char type for single characters.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "char myText = 'Hello';\n  printf(\"%c\", myText);"
+            },
+            {
+                "heading": "Example",
+                "code": "char myText[] = \"Hello\";printf(\"%s\", myText);"
+            }
+        ],
+        "tables": []
+    }
+]

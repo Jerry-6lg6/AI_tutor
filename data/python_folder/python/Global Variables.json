@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Global Variables",
+        "text": [
+            "Variables that are created outside of a function (as in all of the examples \nin the previous pages) are known as global variables.",
+            "Global variables can be used by everyone, both inside of \nfunctions and outside.",
+            "Example\nCreate a variable outside of a function, and use it inside the function\n\nx = \"awesome\"\n  def myfunc():  print(\"Python is \" + x)myfunc()\nTry it Yourself »",
+            "If you create a variable with the same name inside a function, this variable \nwill be local, and can only be used inside the function. The global variable \nwith the same name will remain as it was, global and with the original value.",
+            "Example\nCreate a variable inside a function, with the same name as the global \n  variable\n\nx = \"awesome\"\n  def myfunc():  x = \"fantastic\"  print(\"Python is \" + x)myfunc()\nprint(\"Python is \" + x)\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = \"awesome\"\n  def myfunc():  print(\"Python is \" + x)myfunc()"
+            },
+            {
+                "heading": "Example",
+                "code": "x = \"awesome\"\n  def myfunc():  x = \"fantastic\"  print(\"Python is \" + x)myfunc()\nprint(\"Python is \" + x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The global Keyword",
+        "text": [
+            "Normally, when you create a variable inside a function, that variable is \nlocal, and can only be used inside that function.",
+            "To create a global variable inside a function, you can use the \nglobal keyword.",
+            "Example\nIf you use the global keyword, the variable belongs to the global scope:\n\n  def myfunc():  global x  x = \"fantastic\"myfunc()\nprint(\"Python is \" + x)\nTry it Yourself »",
+            "Also, use the global keyword if you want to change a global variable inside a function.",
+            "Example\nTo change the value of a global variable inside a function, refer to the \n  variable by using the global keyword:\n\n  x = \"awesome\"def myfunc():  global x  x = \"fantastic\"myfunc()\nprint(\"Python is \" + x)\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def myfunc():  global x  x = \"fantastic\"myfunc()\nprint(\"Python is \" + x)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = \"awesome\"def myfunc():  global x  x = \"fantastic\"myfunc()\nprint(\"Python is \" + x)"
+            }
+        ],
+        "tables": []
+    }
+]

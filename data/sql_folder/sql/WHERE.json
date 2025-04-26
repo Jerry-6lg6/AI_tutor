@@ -1,0 +1,27 @@
+[
+    {
+        "title": "SELECT",
+        "text": [
+            "The WHERE command filters a result set to include only records that fulfill a specified condition.",
+            "The following SQL statement selects all the customers from  \n\"Mexico\" in the \"Customers\" table:",
+            "Example\n\nSELECT * FROM Customers\nWHERE Country='Mexico';\n\nTry it Yourself »",
+            "SQL requires single quotes around text values (most database systems will \nalso allow double quotes).",
+            "However, numeric fields should not be enclosed in quotes:",
+            "Example\n\n SELECT * FROM Customers\n WHERE CustomerID=1;\n\n Try it Yourself »",
+            "Note: The WHERE clause is not only used in SELECT statement, it is also used in UPDATE,\nDELETE statement, etc.!",
+            "The following operators can be used in the WHERE clause:",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\nWHERE Country='Mexico';"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n WHERE CustomerID=1;"
+            }
+        ],
+        "tables": []
+    }
+]

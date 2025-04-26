@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Select With a Filter",
+        "text": [
+            "When selecting records from a table, you can filter the selection by using \nthe \"WHERE\" statement:",
+            "Example\nSelect record(s) where the address is \"Park Lane 38\":\n  result:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"SELECT * FROM customers WHERE address ='Park Lane \n  38'\"mycursor.execute(sql)\n  myresult = mycursor.fetchall()for x in myresult:  print(x)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"SELECT * FROM customers WHERE address ='Park Lane \n  38'\"mycursor.execute(sql)\n  myresult = mycursor.fetchall()for x in myresult:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Wildcard Characters",
+        "text": [
+            "You can also select the records that starts, includes, or ends with a given letter \nor phrase.",
+            "Use the %  to represent wildcard \ncharacters:",
+            "Example\nSelect records where the address contains the word \"way\":\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"SELECT * FROM customers WHERE address \n  LIKE '%way%'\"mycursor.execute(sql)myresult = mycursor.fetchall()for x in myresult:  \n  print(x)\nRun example »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"SELECT * FROM customers WHERE address \n  LIKE '%way%'\"mycursor.execute(sql)myresult = mycursor.fetchall()for x in myresult:  \n  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Prevent SQL Injection",
+        "text": [
+            "When query values are provided by the user, you should escape the values.",
+            "This is to prevent SQL injections, which is a common web hacking technique to  \ndestroy or misuse your database.",
+            "The mysql.connector module has methods to escape query values:",
+            "Example\nEscape query values by using the placholder %s \nmethod:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"SELECT * FROM customers WHERE \n  address = %s\"adr = (\"Yellow Garden 2\", )\n  mycursor.execute(sql, adr)myresult = mycursor.fetchall()for x in myresult:  \n  print(x)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"SELECT * FROM customers WHERE \n  address = %s\"adr = (\"Yellow Garden 2\", )\n  mycursor.execute(sql, adr)myresult = mycursor.fetchall()for x in myresult:  \n  print(x)"
+            }
+        ],
+        "tables": []
+    }
+]

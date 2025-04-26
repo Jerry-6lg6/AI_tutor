@@ -1,0 +1,18 @@
+[
+    {
+        "title": "IS NOT NULL",
+        "text": [
+            "The IS NOT NULL command is used to test for \nnon-empty values (NOT NULL values).",
+            "The following SQL lists all customers with a value in the \"Address\" field:",
+            "Example\n\n  SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NOT NULL;\n\nTry it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NOT NULL;"
+            }
+        ],
+        "tables": []
+    }
+]

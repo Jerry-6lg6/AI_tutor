@@ -1,0 +1,29 @@
+[
+    {
+        "title": "Creating Pointers",
+        "text": [
+            "You learned from the previous chapter, that we can get the memory \naddress of a variable by using the & \noperator:",
+            "Example\n\n  string food = \"Pizza\"; \n    // A food variable of type stringcout << \n    food;  // Outputs the value of food (Pizza)\n  cout << &food; // Outputs the memory address of food (0x6dfed4)\n\nTry it Yourself »",
+            "A pointer however, is a variable that stores the memory address as its value.",
+            "A pointer variable points to a data type (like int or string) of the same \ntype, and is created with the * operator. The address of the variable you're working with is assigned to the pointer:",
+            "Example\n\n    string food = \"Pizza\";  // A food variable \n    of type stringstring* ptr = \n    &food;    // A pointer variable, with the name \n    ptr, that stores the \n    address of food// Output the value of food (Pizza)cout << food << \"\\n\";// Output \n    the memory address of food (0x6dfed4)cout << &food << \"\\n\";// \n    Output the memory address of food with the pointer (0x6dfed4)cout << \n    ptr << \"\\n\";\n\nTry it Yourself »",
+            "Create a pointer variable with the name ptr, that points to a string variable, by using the \nasterisk sign \n* (string* ptr). \nNote that the type of the pointer has to match the type of the variable you're \nworking with.",
+            "Use the & operator to store the memory address of the \nvariable called food, and assign it to the pointer.",
+            "Now, ptr holds the value of food's memory address.",
+            "Tip: There are three ways to declare pointer variables, but the first way is preferred:\n\n\n    string* mystring; // Preferredstring *mystring;string * mystring;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string food = \"Pizza\"; \n    // A food variable of type stringcout << \n    food;  // Outputs the value of food (Pizza)\n  cout << &food; // Outputs the memory address of food (0x6dfed4)"
+            },
+            {
+                "heading": "Example",
+                "code": "string food = \"Pizza\";  // A food variable \n    of type stringstring* ptr = \n    &food;    // A pointer variable, with the name \n    ptr, that stores the \n    address of food// Output the value of food (Pizza)cout << food << \"\\n\";// Output \n    the memory address of food (0x6dfed4)cout << &food << \"\\n\";// \n    Output the memory address of food with the pointer (0x6dfed4)cout << \n    ptr << \"\\n\";"
+            }
+        ],
+        "tables": []
+    }
+]

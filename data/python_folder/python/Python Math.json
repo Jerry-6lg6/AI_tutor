@@ -1,0 +1,69 @@
+[
+    {
+        "title": "Built-in Math Functions",
+        "text": [
+            "The min() and max() functions can be used to find the lowest or highest value in an iterable:",
+            "Example\n\n    x = min(5, 10, 25)y = max(5, 10, 25)print(x)print(y)\nTry it Yourself »",
+            "The abs() function returns the absolute (positive) value of the specified number:",
+            "Example\n\n    x = abs(-7.25)print(x)\nTry it Yourself »",
+            "The pow(x, y) function returns the value of x to the power of y (xy).",
+            "Example\nReturn the value of 4 to the power of 3 (same as 4 * 4 * 4):\n\n    x = pow(4, 3)print(x)\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = min(5, 10, 25)y = max(5, 10, 25)print(x)print(y)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = abs(-7.25)print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = pow(4, 3)print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Math Module",
+        "text": [
+            "Python has also a built-in module called math, which extends the list of mathematical functions.",
+            "To use it, you must import the math module:",
+            "import math",
+            "When you have imported the math module, you \ncan start using methods and constants of the module.",
+            "The math.sqrt() method for example, returns the square root of a number:",
+            "Example\n\n    import \n    mathx = math.sqrt(64)print(x)\nTry it Yourself »",
+            "The math.ceil() method rounds a number upwards to \nits nearest integer, and the math.floor() \nmethod rounds a number downwards to its nearest integer, and returns the result:",
+            "Example\n\n    import \n    mathx = math.ceil(1.4)y = math.floor(1.4)print(x) # \n    returns 2print(y) # returns 1\nTry it Yourself »",
+            "The math.pi constant, returns the value of \nPI (3.14...):",
+            "Example\n\n    import \n    mathx = math.piprint(x) \nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import \n    mathx = math.sqrt(64)print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "import \n    mathx = math.ceil(1.4)y = math.floor(1.4)print(x) # \n    returns 2print(y) # returns 1"
+            },
+            {
+                "heading": "Example",
+                "code": "import \n    mathx = math.piprint(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Complete Math Module Reference",
+        "text": [
+            "In our Math Module Reference you will \nfind a complete reference of all methods and constants that belongs to the Math module.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

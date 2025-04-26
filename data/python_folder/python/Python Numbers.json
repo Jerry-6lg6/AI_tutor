@@ -1,0 +1,104 @@
+[
+    {
+        "title": "Python Numbers",
+        "text": [
+            "There are three numeric types in Python:",
+            "Variables of numeric types are created when you assign a value to them:",
+            "Example\n\nx = 1    \n  # inty = 2.8  # floatz = 1j   # complex",
+            "To verify the type of any object in Python, use the type() function:",
+            "Example\n\n  print(type(x))print(type(y))print(type(z))\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = 1    \n  # inty = 2.8  # floatz = 1j   # complex"
+            },
+            {
+                "heading": "Example",
+                "code": "print(type(x))print(type(y))print(type(z))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Int",
+        "text": [
+            "Int, or integer, is a whole number, \npositive or negative, without decimals, of unlimited length.",
+            "Example\nIntegers:\n\nx = 1y = 35656222554887711z = \n  -3255522print(type(x))print(type(y))print(type(z))\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = 1y = 35656222554887711z = \n  -3255522print(type(x))print(type(y))print(type(z))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Float",
+        "text": [
+            "Float, or \"floating point number\" is a number, positive or negative, containing one or more decimals.",
+            "Example\nFloats:\n\nx = 1.10y = 1.0z = -35.59print(type(x))print(type(y))print(type(z))\nTry it Yourself »",
+            "Float can also be scientific numbers with an \"e\" to indicate the power of 10.",
+            "Example\nFloats:\n\n  x = 35e3y = 12E4z = -87.7e100print(type(x))print(type(y))\n  print(type(z))\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = 1.10y = 1.0z = -35.59print(type(x))print(type(y))print(type(z))"
+            },
+            {
+                "heading": "Example",
+                "code": "x = 35e3y = 12E4z = -87.7e100print(type(x))print(type(y))\n  print(type(z))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Complex",
+        "text": [
+            "Complex numbers are written with a \"j\" as the imaginary part:",
+            "Example\nComplex:\n\n  x = 3+5jy = 5jz = -5jprint(type(x))print(type(y))\n  print(type(z))\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = 3+5jy = 5jz = -5jprint(type(x))print(type(y))\n  print(type(z))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Type Conversion",
+        "text": [
+            "You can convert from one type to another with the int(), \nfloat(), and complex() methods:",
+            "Example\nConvert from one type to another:\n\n  x = 1    # inty = 2.8  # floatz = 1j   # complex#convert from int to float:\n  a = float(x)#convert from float to int:\n  b = int(y)#convert from int to complex:c = complex(x)print(a)print(b)\n  print(c)print(type(a))print(type(b))\n  print(type(c))\nTry it Yourself »",
+            "Note: You cannot convert complex numbers into another number type."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = 1    # inty = 2.8  # floatz = 1j   # complex#convert from int to float:\n  a = float(x)#convert from float to int:\n  b = int(y)#convert from int to complex:c = complex(x)print(a)print(b)\n  print(c)print(type(a))print(type(b))\n  print(type(c))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Random Number",
+        "text": [
+            "Python does not have a random() function to \nmake a random number, but Python has a built-in module called\nrandom that can be used to make random numbers:",
+            "Example\nImport the random module, and display a random number from 1 to 9:\n\n  import randomprint(random.randrange(1, 10))\nTry it Yourself »",
+            "In our Random Module Reference you will learn more about the Random module.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import randomprint(random.randrange(1, 10))"
+            }
+        ],
+        "tables": []
+    }
+]

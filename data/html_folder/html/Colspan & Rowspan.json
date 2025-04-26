@@ -1,0 +1,35 @@
+[
+    {
+        "title": "HTML Table - Colspan",
+        "text": [
+            "To make a cell span over multiple columns, use the colspan attribute:",
+            "Example\n\n  <table>  <tr>    <th colspan=\"2\">Name</th>    \n  <th>Age</th>  </tr>  <tr>    \n  <td>Jill</td>    <td>Smith</td>    \n  <td>43</td>  </tr>  <tr>    <td>Eve</td>    \n  <td>Jackson</td>    <td>57</td>  </tr></table>\nTry it Yourself »",
+            "Note: The value of the colspan attribute represents the number of columns to span."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table>  <tr>    <th colspan=\"2\">Name</th>    \n  <th>Age</th>  </tr>  <tr>    \n  <td>Jill</td>    <td>Smith</td>    \n  <td>43</td>  </tr>  <tr>    <td>Eve</td>    \n  <td>Jackson</td>    <td>57</td>  </tr></table>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Table - Rowspan",
+        "text": [
+            "To make a cell span over multiple rows, use the rowspan attribute:",
+            "Example\n\n  <table>  <tr>    <th>Name</th>    \n  <td>Jill</td>  </tr>  <tr>    <th rowspan=\"2\">Phone</th>    \n  <td>555-1234</td>  </tr>  <tr>    \n  <td>555-8745</td></tr></table>\nTry it Yourself »",
+            "Note: The value of the rowspan attribute represents the number of \nrows to span.",
+            "",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<table>  <tr>    <th>Name</th>    \n  <td>Jill</td>  </tr>  <tr>    <th rowspan=\"2\">Phone</th>    \n  <td>555-1234</td>  </tr>  <tr>    \n  <td>555-8745</td></tr></table>"
+            }
+        ],
+        "tables": []
+    }
+]

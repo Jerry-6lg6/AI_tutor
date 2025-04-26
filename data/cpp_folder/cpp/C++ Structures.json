@@ -1,0 +1,72 @@
+[
+    {
+        "title": "C++ Structures",
+        "text": [
+            "Structures (also called structs) are a way to group several related variables into one place. Each variable in the structure is \nknown as a member of the structure.",
+            "Unlike an array, a structure can contain many \ndifferent data types (int, string, bool, etc.)."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Create a Structure",
+        "text": [
+            "To create a structure, use the struct \nkeyword and declare each of its members inside curly braces.",
+            "After the declaration, specify the name of the structure variable (myStructure in the example below):",
+            "struct {             // Structure declaration  int myNum;         // Member (int \n  variable)  string myString;   // Member (string variable)} \n  myStructure;       // Structure variable"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Access Structure Members",
+        "text": [
+            "To access members of a structure, use the dot syntax (.):",
+            "Example\nAssign data to members of a structure and print it:\n\n  // Create a structure variable called myStructurestruct {\n  int myNum;\n  string myString;\n} myStructure;\n// Assign values to members of myStructure\nmyStructure.myNum = 1;\nmyStructure.myString = \"Hello World!\";\n// Print members of myStructure\ncout << myStructure.myNum << \"\\n\";\ncout << myStructure.myString << \"\\n\";\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Create a structure variable called myStructurestruct {\n  int myNum;\n  string myString;\n} myStructure;\n// Assign values to members of myStructure\nmyStructure.myNum = 1;\nmyStructure.myString = \"Hello World!\";\n// Print members of myStructure\ncout << myStructure.myNum << \"\\n\";\ncout << myStructure.myString << \"\\n\";"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "One Structure in Multiple Variables",
+        "text": [
+            "You can use a comma (,) to use one structure in many variables:",
+            "struct {\n  int myNum;\n  string myString;\n} myStruct1, myStruct2, myStruct3; // Multiple structure variables separated with commas",
+            "This example shows how to use a structure in two different variables:",
+            "Example\nUse one structure to represent two cars:\n\nstruct {\n  string brand;\n  string model;\n  int year;\n} myCar1, myCar2;  // We can add variables by separating them with a comma here\n\n// Put data into the first structure\nmyCar1.brand = \"BMW\";\nmyCar1.model = \"X5\";\nmyCar1.year = 1999;\n\n// Put data into the second structure\nmyCar2.brand = \"Ford\";\nmyCar2.model = \"Mustang\";\nmyCar2.year = 1969;\n\n// Print the structure members\ncout << myCar1.brand << \" \" << myCar1.model << \" \" << myCar1.year << \"\\n\";\ncout << myCar2.brand << \" \" << myCar2.model << \" \" << myCar2.year << \"\\n\";\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "struct {\n  string brand;\n  string model;\n  int year;\n} myCar1, myCar2;  // We can add variables by separating them with a comma here\n\n// Put data into the first structure\nmyCar1.brand = \"BMW\";\nmyCar1.model = \"X5\";\nmyCar1.year = 1999;\n\n// Put data into the second structure\nmyCar2.brand = \"Ford\";\nmyCar2.model = \"Mustang\";\nmyCar2.year = 1969;\n\n// Print the structure members\ncout << myCar1.brand << \" \" << myCar1.model << \" \" << myCar1.year << \"\\n\";\ncout << myCar2.brand << \" \" << myCar2.model << \" \" << myCar2.year << \"\\n\";"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Named Structures",
+        "text": [
+            "By giving a name to the structure, you can treat it as a data type. This means that you can create variables with this structure anywhere in the program at any time.",
+            "To create a named structure, put the name of the structure right after the struct keyword:",
+            "struct myDataType { // This structure is named \"myDataType\"\n   \n  int myNum;\n   \n  string myString;\n};",
+            "To declare a variable that uses the structure, use the name of the structure as the data type of the variable:",
+            "myDataType myVar;",
+            "Example\nUse one structure to represent two cars:\n\n// Declare a structure named \"car\"\nstruct car {\n  string brand;\n  string model;\n  int year;\n};\n\nint main() {\n  // Create a car structure and store it in myCar1;\n  car myCar1; \n  myCar1.brand = \"BMW\";\n  myCar1.model = \"X5\";\n  myCar1.year = 1999;\n\n  // Create another car structure and store it in myCar2;\n  car myCar2;\n  myCar2.brand = \"Ford\";\n  myCar2.model = \"Mustang\";\n  myCar2.year = 1969;\n  \n  // Print the structure members\n  cout << myCar1.brand << \" \" << myCar1.model << \" \" << myCar1.year << \"\\n\";\n  cout << myCar2.brand << \" \" << myCar2.model << \" \" << myCar2.year << \"\\n\";\n  \n  return 0;\n}\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Declare a structure named \"car\"\nstruct car {\n  string brand;\n  string model;\n  int year;\n};\n\nint main() {\n  // Create a car structure and store it in myCar1;\n  car myCar1; \n  myCar1.brand = \"BMW\";\n  myCar1.model = \"X5\";\n  myCar1.year = 1999;\n\n  // Create another car structure and store it in myCar2;\n  car myCar2;\n  myCar2.brand = \"Ford\";\n  myCar2.model = \"Mustang\";\n  myCar2.year = 1969;\n  \n  // Print the structure members\n  cout << myCar1.brand << \" \" << myCar1.model << \" \" << myCar1.year << \"\\n\";\n  cout << myCar2.brand << \" \" << myCar2.model << \" \" << myCar2.year << \"\\n\";\n  \n  return 0;\n}"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "title": "Loops",
+        "text": [
+            "Loops can execute a block of code as long as a specified condition is reached.",
+            "Loops are handy because they save time, reduce errors, and they make code \nmore readable."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Java While Loop",
+        "text": [
+            "The while loop loops through a block of code as long as a specified condition is true:",
+            "Syntax\nwhile (condition) {\n  // code block to be executed\n}",
+            "In the example below, the code in the loop will run, over and over again, as long as \na variable (i) is less than 5:",
+            "Example\nint i = 0;\nwhile (i < 5) {\n  System.out.println(i);\n  i++;\n}\n\n\nTry it Yourself »",
+            "Note: Do not forget to increase the variable used in the condition, otherwise \nthe loop will never end!",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

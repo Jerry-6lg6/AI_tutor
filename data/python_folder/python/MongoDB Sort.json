@@ -1,0 +1,33 @@
+[
+    {
+        "title": "Sort the Result",
+        "text": [
+            "Use the sort() method to sort the result in \nascending or descending order.",
+            "The sort() method takes one parameter for \n\"fieldname\" and one parameter for \"direction\" (ascending is the default \ndirection).",
+            "Example\nSort the result alphabetically by name:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmydoc = mycol.find().sort(\"name\")for x in mydoc:  print(x)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmydoc = mycol.find().sort(\"name\")for x in mydoc:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Sort Descending",
+        "text": [
+            "Use the value -1 as the second parameter to sort descending.",
+            "sort(\"name\", 1) #ascending\n  sort(\"name\", -1) #descending",
+            "Example\nSort the result reverse alphabetically by name:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmydoc = mycol.find().sort(\"name\", -1)for x in mydoc:  print(x)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmydoc = mycol.find().sort(\"name\", -1)for x in mydoc:  print(x)"
+            }
+        ],
+        "tables": []
+    }
+]

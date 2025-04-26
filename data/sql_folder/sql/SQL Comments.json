@@ -1,0 +1,77 @@
+[
+    {
+        "title": "SQL Comments",
+        "text": [
+            "Comments are used to explain sections of SQL statements, or to prevent execution \nof SQL statements.",
+            "Note: Comments are not supported in Microsoft Access databases!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Single Line Comments",
+        "text": [
+            "Single line comments start with --.",
+            "Any text between -- and the end of the line will be ignored (will not be executed).",
+            "The following example uses a single-line comment as an explanation:",
+            "Example\n\n-- Select all:\nSELECT * FROM Customers;\n\n\n Try it Yourself »",
+            "The following example uses a single-line comment to ignore the end of a line:",
+            "Example\n\nSELECT * FROM Customers -- WHERE City='Berlin';\n\n\n Try it Yourself »",
+            "The following example uses a single-line comment to ignore a statement:",
+            "Example\n\n-- SELECT * FROM Customers;\nSELECT * FROM Products;\n\n\n Try it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "-- Select all:\nSELECT * FROM Customers;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers -- WHERE City='Berlin';"
+            },
+            {
+                "heading": "Example",
+                "code": "-- SELECT * FROM Customers;\nSELECT * FROM Products;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Multi-line Comments",
+        "text": [
+            "Multi-line comments start with /* and end with \n*/.",
+            "Any text between /* and */ will be ignored.",
+            "The following example uses a multi-line comment as an explanation:",
+            "Example\n\n/*Select all the columns\nof all the records\nin the Customers table:*/\nSELECT * FROM Customers;\n\n\n Try it Yourself »",
+            "The following example uses a multi-line comment to ignore many statements:",
+            "Example\n\n/*SELECT * FROM Customers;\nSELECT * FROM Products;\nSELECT * FROM Orders;\nSELECT * FROM Categories;*/\nSELECT * FROM Suppliers;\n\n\n Try it Yourself »",
+            "To ignore just a part of a statement, also use the /* */ comment.",
+            "The following example uses a comment to ignore part of a line:",
+            "Example\n\nSELECT CustomerName, /*City,*/ Country FROM Customers;\n\n\n Try it Yourself »",
+            "The following example uses a comment to ignore part of a statement:",
+            "Example\n\nSELECT * FROM Customers WHERE (CustomerName LIKE 'L%'\nOR CustomerName LIKE 'R%' /*OR CustomerName LIKE 'S%'\nOR CustomerName LIKE 'T%'*/ OR CustomerName LIKE 'W%')\nAND Country='USA'\nORDER BY CustomerName;\n\n Try it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "/*Select all the columns\nof all the records\nin the Customers table:*/\nSELECT * FROM Customers;"
+            },
+            {
+                "heading": "Example",
+                "code": "/*SELECT * FROM Customers;\nSELECT * FROM Products;\nSELECT * FROM Orders;\nSELECT * FROM Categories;*/\nSELECT * FROM Suppliers;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, /*City,*/ Country FROM Customers;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers WHERE (CustomerName LIKE 'L%'\nOR CustomerName LIKE 'R%' /*OR CustomerName LIKE 'S%'\nOR CustomerName LIKE 'T%'*/ OR CustomerName LIKE 'W%')\nAND Country='USA'\nORDER BY CustomerName;"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,37 @@
+[
+    {
+        "title": "Access Items",
+        "text": [
+            "You cannot access items in a set by referring to an index or a key.",
+            "But you can loop through the set items using a for \nloop, or ask if a specified value is present in a set, by using the\nin keyword.",
+            "Example\nLoop through the set, and print the values:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}for x in thisset:  print(x)\nTry it Yourself »",
+            "Example\nCheck if \"banana\" is present in the set:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}print(\"banana\" \n  in thisset)\nTry it Yourself »",
+            "Example\nCheck if \"banana\" is NOT present in the set:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}print(\"banana\" \n  not in thisset)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}for x in thisset:  print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}print(\"banana\" \n  in thisset)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}print(\"banana\" \n  not in thisset)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Change Items",
+        "text": [
+            "Once a set is created, you cannot change its items, but you can add new items.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

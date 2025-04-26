@@ -1,0 +1,40 @@
+[
+    {
+        "title": "ALTER TABLE",
+        "text": [
+            "The ALTER TABLE command adds, deletes, or \nmodifies columns in a table.",
+            "The ALTER TABLE command also adds and \ndeletes various constraints in a table.",
+            "The following SQL adds an \"Email\" column to the \"Customers\" table:",
+            "Example\n\n  ALTER TABLE CustomersADD Email varchar(255);",
+            "The following SQL deletes the \"Email\" column from the \"Customers\" table:",
+            "Example\n\n  ALTER TABLE CustomersDROP COLUMN Email;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE CustomersADD Email varchar(255);"
+            },
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE CustomersDROP COLUMN Email;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "ALTER COLUMN",
+        "text": [
+            "The ALTER COLUMN command is used to change the data type of a column in a table.",
+            "The following SQL changes the data type of the column named \"BirthDate\" in \nthe \"Employees\" table to type year:",
+            "Example\n\n  ALTER TABLE EmployeesALTER COLUMN BirthDate \n  year;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE EmployeesALTER COLUMN BirthDate \n  year;"
+            }
+        ],
+        "tables": []
+    }
+]

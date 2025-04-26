@@ -1,0 +1,162 @@
+[
+    {
+        "title": "HTML Links - Hyperlinks",
+        "text": [
+            "HTML links are hyperlinks.",
+            "You can click on a link and jump to another document.",
+            "When you move the mouse over a link, the mouse arrow will turn into a little hand.",
+            "Note: A link does not have to be text. A link can be an image \n  or any other HTML element!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Links - Syntax",
+        "text": [
+            "The HTML <a> tag defines a hyperlink. \nIt has the following syntax:",
+            "<a href=\"url\">link text</a>",
+            "The most important attribute of the <a>  element is the \nhref attribute, which indicates the link's destination.",
+            "The link text is the part that will be visible to the reader.",
+            "Clicking on the link text, will send the reader to the specified URL address.",
+            "Example\nThis example shows how to create a link to W3Schools.com:\n\n<a href=\"https://www.w3schools.com/\">Visit W3Schools.com!</a>\n\nTry it Yourself »",
+            "By default, links will appear as follows in all browsers:",
+            "Tip: Links can of course be styled with CSS, to get \n  another look!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<a href=\"https://www.w3schools.com/\">Visit W3Schools.com!</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Links - The target Attribute",
+        "text": [
+            "By default, the linked page will be displayed in the current browser window. \nTo change this, you must specify another target for the link.",
+            "The target attribute specifies where to open the linked document.",
+            "The target attribute can have one of the following values:",
+            "Example\nUse target=\"_blank\" to open the linked document in a new browser window or tab:\n\n <a href=\"https://www.w3schools.com/\"\ntarget=\"_blank\">Visit W3Schools!</a>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<a href=\"https://www.w3schools.com/\"\ntarget=\"_blank\">Visit W3Schools!</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Absolute URLs vs. Relative URLs",
+        "text": [
+            "Both examples above are using an absolute URL (a full web address) \nin the href attribute.",
+            "A local link (a link to a page within the same website) is specified with a \nrelative URL (without \nthe \"https://www\" part):",
+            "Example\n\n  <h2>Absolute URLs</h2><p><a href=\"https://www.w3.org/\">W3C</a></p>\n  <p><a href=\"https://www.google.com/\">Google</a></p><h2>Relative \n  URLs</h2><p><a href=\"html_images.asp\">HTML Images</a></p><p><a href=\"/css/default.asp\">CSS \n  Tutorial</a></p>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h2>Absolute URLs</h2><p><a href=\"https://www.w3.org/\">W3C</a></p>\n  <p><a href=\"https://www.google.com/\">Google</a></p><h2>Relative \n  URLs</h2><p><a href=\"html_images.asp\">HTML Images</a></p><p><a href=\"/css/default.asp\">CSS \n  Tutorial</a></p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Links - Use an Image as a Link",
+        "text": [
+            "To use an image as a link, just put the <img> \ntag inside the <a> tag:",
+            "Example\n\n<a href=\"default.asp\"><img src=\"smiley.gif\" alt=\"HTML tutorial\" style=\"width:42px;height:42px;\"></a>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<a href=\"default.asp\"><img src=\"smiley.gif\" alt=\"HTML tutorial\" style=\"width:42px;height:42px;\"></a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Link to an Email Address",
+        "text": [
+            "Use \nmailto: inside the \nhref attribute to create a link that opens the user's email program (to \nlet them send a new email):",
+            "Example\n\n  <a href=\"mailto:someone@example.com\">Send email</a>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<a href=\"mailto:someone@example.com\">Send email</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Button as a Link",
+        "text": [
+            "To use an HTML button as a link, you have to add some JavaScript code.",
+            "JavaScript allows you to specify what happens at certain events, such as a click of a button:",
+            "Example\n\n<button \n  onclick=\"document.location='default.asp'\">HTML Tutorial</button>\n\nTry it Yourself »",
+            "Tip: Learn more about JavaScript in our JavaScript Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<button \n  onclick=\"document.location='default.asp'\">HTML Tutorial</button>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Link Titles",
+        "text": [
+            "The title attribute specifies extra information about an element.\nThe information is most often shown as a tooltip text when the mouse moves over the element.",
+            "Example\n\n  <a href=\"https://www.w3schools.com/html/\" title=\"Go to W3Schools HTML \n  section\">Visit our HTML Tutorial</a>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<a href=\"https://www.w3schools.com/html/\" title=\"Go to W3Schools HTML \n  section\">Visit our HTML Tutorial</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "More on Absolute URLs and Relative URLs",
+        "text": [
+            "Example\nUse a full URL to link to a web page: \n\n  <a href=\"https://www.w3schools.com/html/default.asp\">HTML tutorial</a>\n\nTry it Yourself »",
+            "Example\nLink to a page located in the html folder on the current web site: \n\n  <a href=\"/html/default.asp\">HTML tutorial</a>\n\nTry it Yourself »",
+            "Example\nLink to a page located in the same folder as the current page: \n\n  <a href=\"default.asp\">HTML tutorial</a>\n\nTry it Yourself »",
+            "You can read more about file paths in the chapter HTML \nFile Paths."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<a href=\"https://www.w3schools.com/html/default.asp\">HTML tutorial</a>"
+            },
+            {
+                "heading": "Example",
+                "code": "<a href=\"/html/default.asp\">HTML tutorial</a>"
+            },
+            {
+                "heading": "Example",
+                "code": "<a href=\"default.asp\">HTML tutorial</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Link Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

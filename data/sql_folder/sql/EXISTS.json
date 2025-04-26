@@ -1,0 +1,24 @@
+[
+    {
+        "title": "EXISTS",
+        "text": [
+            "The EXISTS command tests for the existence of any record in a subquery, \nand returns true if the subquery returns one or more records.",
+            "The following SQL lists the suppliers with a product price less than 20:",
+            "Example\n\n  SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE SupplierId = Suppliers.supplierId AND Price < 20);\n\n  Try it Yourself »",
+            "The following SQL lists the suppliers with a product price \nequal to 22:",
+            "Example\n\n  SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE SupplierId = Suppliers.supplierId AND Price = 22);\n\n  Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE SupplierId = Suppliers.supplierId AND Price < 20);"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT SupplierNameFROM SuppliersWHERE EXISTS (SELECT ProductName FROM \n  Products WHERE SupplierId = Suppliers.supplierId AND Price = 22);"
+            }
+        ],
+        "tables": []
+    }
+]

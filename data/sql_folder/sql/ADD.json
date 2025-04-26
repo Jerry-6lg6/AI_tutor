@@ -1,0 +1,17 @@
+[
+    {
+        "title": "ADD",
+        "text": [
+            "The ADD command is used to add a column in an \nexisting table.",
+            "Example\nAdd an \"Email\" column to the \"Customers\" table:\n\n  ALTER TABLE CustomersADD Email varchar(255);",
+            "❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE CustomersADD Email varchar(255);"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,18 @@
+[
+    {
+        "title": "DROP VIEW",
+        "text": [
+            "The DROP VIEW command deletes a view.",
+            "The following SQL drops the \"Brazil Customers\" view:",
+            "Example\n\nDROP VIEW [Brazil Customers];",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP VIEW [Brazil Customers];"
+            }
+        ],
+        "tables": []
+    }
+]

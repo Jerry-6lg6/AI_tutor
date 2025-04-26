@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Change Tuple Values",
+        "text": [
+            "Once a tuple is created, you cannot change its values. Tuples are unchangeable, \nor immutable as it also is called.",
+            "But there is a workaround. You can convert the tuple into a list, change the \nlist, and convert the list back into a tuple.",
+            "Example\nConvert the tuple into a list to be able to change it:\n\n  x = (\"apple\", \"banana\", \"cherry\")y = list(x)y[1] = \"kiwi\"x = \n  tuple(y)print(x)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = (\"apple\", \"banana\", \"cherry\")y = list(x)y[1] = \"kiwi\"x = \n  tuple(y)print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Add Items",
+        "text": [
+            "Since tuples are immutable, they do not have a built-in \nappend() method, but \nthere are other ways to add items to a tuple.",
+            "1. Convert into a list: Just like the workaround for changing a tuple, you can convert it into a list, add your item(s), and convert it back into a tuple.",
+            "Example\nConvert the tuple into a list, add \"orange\", and convert it back into a tuple:\n\n  thistuple = (\"apple\", \"banana\", \"cherry\")y = list(thistuple)y.append(\"orange\")\n  thistuple = \n  tuple(y)\nTry it Yourself »",
+            "2. Add tuple to a tuple. You are allowed to add tuples to \ntuples, so if you want to add one item, (or many), create a new tuple with the \nitem(s), and add it to the existing tuple:",
+            "Example\nCreate a new tuple with the value \"orange\", and add that tuple:\n\n  thistuple = (\"apple\", \"banana\", \"cherry\")y = (\"orange\",)thistuple += y\nprint(thistuple)\nTry it Yourself »",
+            "Note: When creating a tuple with only one item, remember to include a comma \n  after the item, otherwise it will not be identified as a tuple.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\")y = list(thistuple)y.append(\"orange\")\n  thistuple = \n  tuple(y)"
+            },
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\")y = (\"orange\",)thistuple += y\nprint(thistuple)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Remove Items",
+        "text": [
+            "Note: You cannot remove items in a tuple.",
+            "Tuples are unchangeable, so you cannot remove items \nfrom it, but you can use the same workaround as we used for changing and adding tuple items:",
+            "Example\nConvert the tuple into a list, remove \"apple\", and convert it back into a tuple:\n\n  thistuple = (\"apple\", \"banana\", \"cherry\")y = list(thistuple)y.remove(\"apple\")\n  thistuple = \n  tuple(y)\nTry it Yourself »",
+            "Or you can delete the tuple completely:",
+            "Example\nThe del keyword can delete the tuple \ncompletely:\n\nthistuple = (\"apple\", \"banana\", \"cherry\")\n  del\nthistupleprint(thistuple)\n  #this will raise an error because the tuple no longer exists\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\")y = list(thistuple)y.remove(\"apple\")\n  thistuple = \n  tuple(y)"
+            },
+            {
+                "heading": "Example",
+                "code": "thistuple = (\"apple\", \"banana\", \"cherry\")\n  del\nthistupleprint(thistuple)\n  #this will raise an error because the tuple no longer exists"
+            }
+        ],
+        "tables": []
+    }
+]

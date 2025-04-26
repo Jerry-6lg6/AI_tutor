@@ -1,0 +1,159 @@
+[
+    {
+        "title": "The SQL UNION Operator",
+        "text": [
+            "The UNION operator is used to combine the result-set of two or more \nSELECT \nstatements.",
+            "The UNION operator selects only distinct values by default. To allow \nduplicate values, use UNION ALL:",
+            "SELECT column_name(s) FROM table1\n UNION ALL\n SELECT column_name(s) FROM table2;",
+            "Note: The column names in the result-set are usually equal to \nthe column names in the first SELECT statement."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "In this tutorial we will use the well-known Northwind sample database.",
+            "Below is a selection from the \"Customers\" table:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico",
+            "And a selection from the \"Suppliers\" table:",
+            "SupplierID\nSupplierName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nExotic Liquid\nCharlotte Cooper\n49 Gilbert St.\nLondon\nEC1 4SD\nUK\n\n\n2\nNew Orleans Cajun Delights\nShelley Burke\nP.O. Box 78934\nNew Orleans\n70117\nUSA\n\n\n3\nGrandma Kelly's Homestead\nRegina Murphy\n707 Oxford Rd.\nAnn Arbor\n48104\nUSA",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                }
+            ],
+            [
+                {
+                    "SupplierID": "1",
+                    "SupplierName": "Exotic Liquid",
+                    "ContactName": "Charlotte Cooper",
+                    "Address": "49 Gilbert St.",
+                    "City": "London",
+                    "PostalCode": "EC1 4SD",
+                    "Country": "UK"
+                },
+                {
+                    "SupplierID": "2",
+                    "SupplierName": "New Orleans Cajun Delights",
+                    "ContactName": "Shelley Burke",
+                    "Address": "P.O. Box 78934",
+                    "City": "New Orleans",
+                    "PostalCode": "70117",
+                    "Country": "USA"
+                },
+                {
+                    "SupplierID": "3",
+                    "SupplierName": "Grandma Kelly's Homestead",
+                    "ContactName": "Regina Murphy",
+                    "Address": "707 Oxford Rd.",
+                    "City": "Ann Arbor",
+                    "PostalCode": "48104",
+                    "Country": "USA"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL UNION Example",
+        "text": [
+            "The following SQL statement returns the cities \n(only distinct values) from both the \"Customers\" and the \"Suppliers\" table:",
+            "Example\n\n SELECT City FROM CustomersUNIONSELECT City FROM SuppliersORDER BY City;\n\n\n Try it Yourself »",
+            "Note: If some customers or suppliers have the same city, each city will only be \nlisted once, because UNION selects only distinct values. Use \nUNION ALL to also select \nduplicate values!"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT City FROM CustomersUNIONSELECT City FROM SuppliersORDER BY City;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "SQL UNION ALL Example",
+        "text": [
+            "The following SQL statement returns the cities \n(duplicate values also) from both the \"Customers\" and the \"Suppliers\" table:",
+            "Example\n\n SELECT City FROM CustomersUNION ALLSELECT City FROM Suppliers\n ORDER BY City;\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT City FROM CustomersUNION ALLSELECT City FROM Suppliers\n ORDER BY City;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "SQL UNION With WHERE",
+        "text": [
+            "The following SQL statement returns the German cities \n(only distinct values) from both the \"Customers\" and the \"Suppliers\" table:",
+            "Example\n\n SELECT City, Country FROM CustomersWHERE Country='Germany'UNION\n SELECT City, Country FROM SuppliersWHERE Country='Germany'ORDER BY City;\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT City, Country FROM CustomersWHERE Country='Germany'UNION\n SELECT City, Country FROM SuppliersWHERE Country='Germany'ORDER BY City;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "SQL UNION ALL With WHERE",
+        "text": [
+            "The following SQL statement returns the German cities (duplicate values also) from \nboth the \"Customers\" and the \"Suppliers\" table:",
+            "Example\n\n SELECT City, Country FROM CustomersWHERE Country='Germany'UNION ALL\n SELECT City, Country FROM SuppliersWHERE Country='Germany'ORDER BY City;\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT City, Country FROM CustomersWHERE Country='Germany'UNION ALL\n SELECT City, Country FROM SuppliersWHERE Country='Germany'ORDER BY City;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Another UNION Example",
+        "text": [
+            "The following SQL statement lists all customers and suppliers:",
+            "Example\n\n  SELECT 'Customer' AS Type, ContactName, City, CountryFROM Customers\n  UNIONSELECT 'Supplier', ContactName, City, CountryFROM Suppliers;\n\n\n Try it Yourself »",
+            "Notice the \"AS Type\" above - it is an alias. SQL \nAliases are used to give a table or a column a temporary name.\nAn alias only exists for the duration of the query. So, here we have created a \ntemporary column named \"Type\", that list whether the contact person is a \n\"Customer\" or a \"Supplier\".",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT 'Customer' AS Type, ContactName, City, CountryFROM Customers\n  UNIONSELECT 'Supplier', ContactName, City, CountryFROM Suppliers;"
+            }
+        ],
+        "tables": []
+    }
+]

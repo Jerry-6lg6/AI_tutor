@@ -1,0 +1,276 @@
+[
+    {
+        "title": "What is RSS?",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Why use RSS?",
+        "text": [
+            "RSS was designed to show selected data.",
+            "Without RSS, users will have to check your site daily for new \nupdates. This may be too time-consuming for many users. With an RSS feed (RSS is \noften called a News feed or RSS feed) they can \ncheck your site faster using an RSS aggregator (a site or program that \ngathers and sorts out RSS feeds).",
+            "Since RSS data is small and fast-loading, it can easily be used \nwith services like cell phones or PDA's.",
+            "Web-rings with similar information can easily share data on their web sites to make \nthem better and more useful.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Who Should use RSS?",
+        "text": [
+            "Webmasters who seldom update their web sites do not need RSS!",
+            "RSS is useful for web sites that are updated frequently, \nlike:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Benefits of RSS",
+        "text": [
+            "Here are some benefits of using RSS:",
+            "Choose your news\nWith RSS you can choose to view the news you want, the news that interest you and are relevant to your work.",
+            "Remove unwanted information\nWith RSS you can (finally) separate wanted information from unwanted information (spam)!",
+            "Increase your site traffic\nWith RSS you can create your own news channel, and publish it to the Internet!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The History of RSS",
+        "text": [
+            "RSS 1.0 is the only version that was developed using the W3C RDF (Resource Description Framework) standard.",
+            "The idea behind RDF was to help create a Semantic Web. However, this does not matter too much for ordinary users,\nbut by using web standards it will be easier for persons and applications to exchange data."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "What RSS Version Should I Use?",
+        "text": [
+            "RSS 0.91 and RSS 2.0 are easier to understand than RSS 1.0. Our tutorial is based on RSS 2.0.",
+            "The syntax rules of RSS 2.0 are very simple and very strict."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Is RSS a Web Standard?",
+        "text": [
+            "There is no official standard for RSS."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "How RSS Works",
+        "text": [
+            "RSS is used to share content between websites.",
+            "With RSS, you register your content with companies called aggregators.",
+            "So, to be a part of it: First, create an RSS document and save it with an .xml extension. Then, upload the file to your \nwebsite. Next, register with an RSS aggregator. Each day the aggregator searches the registered websites for RSS documents, verifies the link, and displays \ninformation about the feed so clients can link to documents that interests them.",
+            "Tip: Read our RSS Publishing chapter to view free RSS aggregation services."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RSS Example",
+        "text": [
+            "RSS documents use a self-describing and simple syntax.",
+            "Here is a simple RSS document:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<rss version=\"2.0\">\n<channel>\n   \n  <title>W3Schools Home Page</title>\n   \n  <link>https://www.w3schools.com</link>\n   \n  <description>Free web building tutorials</description>\n   \n  <item>\n       \n    <title>RSS Tutorial</title>\n       \n    <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n       \n    <description>New RSS tutorial on W3Schools</description>\n   \n  </item>\n   \n  <item>\n       \n    <title>XML Tutorial</title>\n       \n    <link>https://www.w3schools.com/xml</link>\n       \n    <description>New XML tutorial on W3Schools</description>\n   \n  </item>\n</channel>\n</rss>",
+            "The first line in the document - the XML declaration - defines\nthe XML version and the character encoding used in the document. In this case the document conforms to the 1.0 specification\nof XML and uses the UTF-8 character set.",
+            "The next line is the RSS declaration which identifies that this is an RSS document (in this case, RSS version 2.0).",
+            "The next line contains the <channel> element. This element is used to describe the RSS feed.",
+            "The <channel> element has three required child elements:",
+            "Each <channel> element can have one or more <item> elements.",
+            "Each <item> element defines an article or \"story\" in the RSS feed.",
+            "The <item> element has three required child elements:",
+            "Finally, the two last lines close the <channel> and <rss> elements."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Comments in RSS",
+        "text": [
+            "The syntax for writing comments in RSS is similar to that of HTML:",
+            "<!-- This is an RSS comment -->"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RSS is Written in XML",
+        "text": [
+            "Because RSS is XML, keep in mind that:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The RSS <channel> Element",
+        "text": [
+            "The RSS <channel> element describes the RSS feed.",
+            "Look at the following RSS document:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<rss version=\"2.0\">\n<channel>\n   \n  <title>W3Schools Home Page</title>\n   \n  <link>https://www.w3schools.com</link>\n   \n  <description>Free web building tutorials</description>\n   \n  <item>\n       \n    <title>RSS Tutorial</title>\n       \n    <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n       \n    <description>New RSS tutorial on W3Schools</description>\n   \n  </item>\n</channel>\n</rss>",
+            "As mentioned before, the <channel> element describes the RSS feed, and has three required child elements:",
+            "The <channel> element usually contains one or more <item> elements. Each <item> element defines an article \nor \"story\" in the RSS feed.",
+            "Furthermore, there are several optional child elements of <channel>. We will explain the most important ones below."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <category> Element",
+        "text": [
+            "The <category> child element is used to specify a category for your feed.",
+            "The <category> element makes it possible for RSS aggregators to group sites based on category.",
+            "The category for the RSS document above could be:",
+            "<category>Web development</category>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <copyright> Element",
+        "text": [
+            "The <copyright> child element notifies about copyrighted material.",
+            "The copyright for the RSS document above could be:",
+            "<copyright>2006 Refsnes Data as. All rights reserved.</copyright>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <image> Element",
+        "text": [
+            "The <image> child element allows an image to be displayed when aggregators present a feed.",
+            "The <image> element has three required child elements:",
+            "The image for the RSS document above could be:",
+            "<image>\n   \n  <url>https://www.w3schools.com/images/logo.gif</url>\n   \n  <title>W3Schools.com</title>\n   \n  <link>https://www.w3schools.com</link>\n</image>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <language> Element",
+        "text": [
+            "The <language> child element is used to specify the language used to write your document.",
+            "The <language> element makes it possible for RSS aggregators to group sites based on language.",
+            "The language for the RSS document above could be:",
+            "<language>en-us</language>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <item> Element",
+        "text": [
+            "Each <item> element defines an article or \"story\" in \nan RSS feed.",
+            "Look at the following RSS document:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<rss version=\"2.0\">\n<channel>\n   \n  <title>W3Schools Home Page</title>\n   \n  <link>https://www.w3schools.com</link>\n   \n  <description>Free web building tutorials</description>\n   \n  <item>\n       \n    <title>RSS Tutorial</title>\n       \n    <link>https://www.w3schools.com/xml/xml_rss.asp</link>\n       \n    <description>New RSS tutorial on W3Schools</description>\n   \n  </item>\n</channel>\n</rss>",
+            "As mentioned before, each <item> element defines an article or \"story\" in the RSS feed.",
+            "The <item> element has three required child elements:",
+            "Furthermore, there are several optional child elements of <item>. We will explain the most important ones below."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <author> Element",
+        "text": [
+            "The <author> child element is used to specify the e-mail address of the author of an item.",
+            "Note: To prevent spam e-mails, some developers do not include the <author> element.",
+            "The author of the item in the RSS document above could be:",
+            "<author>hege@refsnesdata.no</author>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <comments> Element",
+        "text": [
+            "The <comments> child element allows an item to link to comments about that item.",
+            "A comment of the item in the RSS document above could be:",
+            "<comments>https://www.w3schools.com/comments</comments>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <enclosure> Element",
+        "text": [
+            "The <enclosure> child element allows a media-file to be included with an item.",
+            "The <enclosure> element has three required attributes:",
+            "A media-file included in the item in the RSS document above could be:",
+            "<enclosure url=\"https://www.w3schools.com/xml/rss.mp3\"\nlength=\"5000\" type=\"audio/mpeg\" />"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Get Your RSS Feed Up On The Web",
+        "text": [
+            "Having an RSS document is not useful if other people cannot \nreach it.",
+            "Now it's time to get your RSS file up on the web. Here are the steps:",
+            "1. Name your RSS file. Notice that the file must have an .xml extension.",
+            "2. Validate your RSS file",
+            "3. Upload the RSS file to your web directory on your web server.",
+            "4. Copy the little orange  or\n button to your web directory.",
+            "5. Put the little orange \"RSS\" or \"XML\" button on the page where you will \noffer RSS to the world (e.g. on your home page). Then add a link to the button \nthat links to the RSS file. The code will look something like this:\n<a href=\"https://www.w3schools.com/xml/myfirstrss.xml\">\n<img src=\"https://www.w3schools.com/xml/pic_rss.gif\" width=\"36\" height=\"14\">\n</a>.",
+            "6. Submit your RSS feed to the RSS Feed Directories (you can Google or Yahoo \nfor \"RSS Feed Directories\"). Note! The URL to \nyour feed is not your home page, it is the URL to your feed, like \n\"https://www.w3schools.com/xml/myfirstrss.xml\".",
+            "7. Register your feed with the major search engines:",
+            "8. Update your feed - After registering your RSS feed, you must make sure that you update your content frequently \nand that your RSS feed is constantly available."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Can I Manage my RSS Feed Myself?",
+        "text": [
+            "The best way to ensure your RSS feed works \nthe way you want, is to manage it yourself.",
+            "However, this can be very time consuming, \nespecially for pages with lot of updates.",
+            "An alternative is to use a third-party automated RSS."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Automated RSS",
+        "text": [
+            "For users who only need an RSS feed for their personal website, some of the most popular blog (Web Log) managers \nthat offer built-in RSS services are:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RSS Readers",
+        "text": [
+            "An RSS Reader is used to read RSS Feeds!",
+            "RSS readers are available for many different devices and OS.",
+            "There are a lot of different RSS readers. Some work as web services, and some are limited to windows (or Mac, PDA or UNIX):",
+            "Tip: Most browsers have a built-in RSS Reader. If you go to a web site that offers RSS feeds, you will see \nan RSS icon\n in the address bar, \nor toolbar. Click on the icon to view a list of the different feeds. Choose the feed you want to read."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "I have an RSS Reader. Now what?",
+        "text": [
+            "Click on the little  or \n  button next to the RSS feed you \nwant to read. Copy The URL you get in the browser window and paste it in your RSS reader."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RSS Reference",
+        "text": [
+            "The links in the \"Element\" column point to more information about each \nspecific element.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

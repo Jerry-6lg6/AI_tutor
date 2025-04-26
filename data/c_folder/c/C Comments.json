@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Comments in C",
+        "text": [
+            "Comments can be used to explain code, and to make it more readable. It can also be used to \nprevent execution when testing alternative code.",
+            "Comments can be singled-lined or multi-lined."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Single-line Comments",
+        "text": [
+            "Single-line comments start with two forward slashes (//).",
+            "Any text between // and the end of the line \nis ignored by the compiler (will not be executed).",
+            "This example uses a single-line comment before a line of code:",
+            "Example\n\n  // This is a commentprintf(\"Hello World!\");\nTry it Yourself »",
+            "This example uses a single-line comment at the end of a line of code:",
+            "Example\n\n  printf(\"Hello World!\"); // This is a comment\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// This is a commentprintf(\"Hello World!\");"
+            },
+            {
+                "heading": "Example",
+                "code": "printf(\"Hello World!\"); // This is a comment"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "C Multi-line Comments",
+        "text": [
+            "Multi-line comments start with /* and ends with */.",
+            "Any text between /* and */ will be ignored by \nthe compiler:",
+            "Example\n\n  /* The code below will print the words Hello World!to the screen, and it is \n  amazing */printf(\"Hello World!\");\nTry it Yourself »",
+            "Single or multi-line comments?\nIt is up to you which you want to use. Normally, we use // for short comments, and /* */ for longer.\nGood to know: Before version C99 (released in 1999), you could only use multi-line comments in C.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "/* The code below will print the words Hello World!to the screen, and it is \n  amazing */printf(\"Hello World!\");"
+            }
+        ],
+        "tables": []
+    }
+]

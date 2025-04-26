@@ -1,0 +1,43 @@
+[
+    {
+        "title": "HTML Table - Cell Padding",
+        "text": [
+            "Cell padding is the space between the cell edges and the cell content.",
+            "By default the padding is set to 0.",
+            "To add padding on table cells, use the CSS padding property:",
+            "Example\n\nth, td\n{\n  padding: 15px;\n}\nTry it Yourself »",
+            "To add padding only above the content, use the padding-top property.",
+            "Add padding to the other sides with the padding-bottom, padding-left,\nand padding-right properties:",
+            "Example\n\nth, td\n{\n  padding-top: 10px;\n  padding-bottom: 20px;\n  padding-left: 30px;\n  padding-right: 40px;\n}\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "th, td\n{\n  padding: 15px;\n}"
+            },
+            {
+                "heading": "Example",
+                "code": "th, td\n{\n  padding-top: 10px;\n  padding-bottom: 20px;\n  padding-left: 30px;\n  padding-right: 40px;\n}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Table - Cell Spacing",
+        "text": [
+            "Cell spacing is the space between each cell.",
+            "By default the space is set to 2 pixels.",
+            "To change the space between table cells, use the CSS \nborder-spacing property on the table \nelement:",
+            "Example\n\n  table\n{\n  border-spacing: \n  30px;\n}\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "table\n{\n  border-spacing: \n  30px;\n}"
+            }
+        ],
+        "tables": []
+    }
+]

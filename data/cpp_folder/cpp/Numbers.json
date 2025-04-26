@@ -1,0 +1,34 @@
+[
+    {
+        "title": "Numeric Types",
+        "text": [
+            "Use int when you need to store a whole number without decimals, like 35 or 1000, and float or double when you need a \nfloating point number (with decimals), like 9.99 or 3.14515.",
+            "int\n\n  int myNum = 1000;\n  cout << myNum;\nTry it Yourself »",
+            "float\n\n  float myNum = 5.75;\n  cout << myNum;\nTry it Yourself »",
+            "double\n\n  double myNum = 19.99;\n  cout << myNum;\nTry it Yourself »",
+            "A floating point number can also be a scientific number with an \"e\" to indicate the power of 10:",
+            "Example\n\n  float f1 = 35e3;\n  double d1 = 12E4;\n  cout << f1;cout << d1;\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "int",
+                "code": "int myNum = 1000;\n  cout << myNum;"
+            },
+            {
+                "heading": "float",
+                "code": "float myNum = 5.75;\n  cout << myNum;"
+            },
+            {
+                "heading": "double",
+                "code": "double myNum = 19.99;\n  cout << myNum;"
+            },
+            {
+                "heading": "Example",
+                "code": "float f1 = 35e3;\n  double d1 = 12E4;\n  cout << f1;cout << d1;"
+            }
+        ],
+        "tables": []
+    }
+]

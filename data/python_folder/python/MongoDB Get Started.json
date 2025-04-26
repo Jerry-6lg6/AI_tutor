@@ -1,0 +1,38 @@
+[
+    {
+        "title": "MongoDB",
+        "text": [
+            "MongoDB stores data in JSON-like documents, which makes the database very \nflexible and scalable.",
+            "To be able to experiment with the code examples in this tutorial, you will need access to a MongoDB database.",
+            "You can download a free MongoDB database at\nhttps://www.mongodb.com.",
+            "Or get started right away with a MongoDB cloud service at \nhttps://www.mongodb.com/cloud/atlas."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "PyMongo",
+        "text": [
+            "Python needs a MongoDB driver to access the MongoDB database.",
+            "In this tutorial we will use the MongoDB driver \"PyMongo\".",
+            "We recommend that you use PIP to install \"PyMongo\".",
+            "PIP is most likely already installed in your Python environment.",
+            "Navigate your command line to the location of PIP, and type the following:",
+            "Download and install \"PyMongo\":\n\nC:\\Users\\Your Name\\AppData\\Local\\Programs\\Python\\Python36-32\\Scripts>python -m pip install pymongo",
+            "Now you have downloaded and installed a mongoDB driver."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Test PyMongo",
+        "text": [
+            "To test if the installation was successful, or if you already have \"pymongo\" \ninstalled, create a Python page with \nthe following content:",
+            "demo_mongodb_test.py:\n\n  import pymongo\nRun example »",
+            "If the above code was executed with no errors, \"pymongo\" is installed and \nready to be used.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

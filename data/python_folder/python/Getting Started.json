@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Where To Start?",
+        "text": [
+            "In this tutorial we will go back to mathematics and study statistics, and how to calculate \nimportant numbers based on data sets.",
+            "We will also learn how to use various Python modules to get the answers we \nneed.",
+            "And we will learn how to make functions that are able to predict the outcome \nbased on what we have learned."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Data Set",
+        "text": [
+            "In the mind of a computer, a data set is any collection of data.\nIt can be anything from an array to a complete database.",
+            "Example of an array:",
+            "[99,86,87,88,111,86,103,87,94,78,77,85,86]",
+            "Example of a database:",
+            "By looking at the array, we can guess that the average value is probably around 80 \nor 90, and we are also able to determine the highest value and the lowest value, but what else can we do?",
+            "And by looking at the database we can see that the most popular color is white, and the oldest car is 17 years,\nbut what if we could predict if a car had an AutoPass, just by looking at the other values?",
+            "That is what Machine Learning is for! Analyzing data and predicting the outcome!",
+            "In Machine Learning it is common to work with very large data sets. In this \n  tutorial we will try to make it as easy as possible to understand the \n  different concepts of machine learning, and we will work with small \n  easy-to-understand data sets.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Data Types",
+        "text": [
+            "To analyze data, it is important to know what type of data we are dealing with.",
+            "We can split the data types into three main categories:",
+            "Numerical data are numbers, and can be split into two \nnumerical categories:",
+            "Categorical data are values that cannot be measured up \nagainst each other. Example: a color value, or any yes/no values.",
+            "Ordinal data are like categorical data, but can be measured \nup against each other. Example: school grades where A is better than B and so \non.",
+            "By knowing the data type of your data source, you will be able to know what \ntechnique to use when analyzing them.",
+            "You will learn more about statistics and analyzing data in the next chapters.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

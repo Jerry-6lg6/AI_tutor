@@ -1,0 +1,67 @@
+[
+    {
+        "title": "XML Attributes Must be Quoted",
+        "text": [
+            "Attribute values must always be quoted. Either single or double quotes can be used.",
+            "For a person's \ngender, the <person> \nelement can be written like this:",
+            "<person gender=\"female\">",
+            "or like this:",
+            "<person gender='female'>",
+            "If the attribute value itself contains double quotes you can use single quotes, like in this example:",
+            "<gangster name='George \"Shotgun\" Ziegler'>",
+            "or you can use character entities:",
+            "<gangster name=\"George &quot;Shotgun&quot; Ziegler\">"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Elements vs. Attributes",
+        "text": [
+            "Take a look at these two examples:",
+            "<person gender=\"female\">\n   \n  <firstname>Anna</firstname>\n   \n  <lastname>Smith</lastname>\n</person>",
+            "<person>\n   \n  <gender>female</gender>\n   \n  <firstname>Anna</firstname>\n   \n  <lastname>Smith</lastname>\n</person>",
+            "In the first example, gender is an attribute. In the last example, gender is an element.\nBoth examples provide the same information.",
+            "There are no rules about when to use attributes or when to use elements in XML.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "My Favorite Way",
+        "text": [
+            "The following three XML documents contain exactly the same information:",
+            "A date attribute is used in the first example:",
+            "<note date=\"2008-01-10\">\n \n<to>Tove</to>\n \n<from>Jani</from>\n</note>",
+            "A <date> element is used in the second example:",
+            "<note>\n \n<date>2008-01-10</date>\n \n<to>Tove</to>\n \n<from>Jani</from>\n</note>",
+            "An expanded <date> element is used in the third example: (THIS IS MY FAVORITE):",
+            "<note>\n \n<date>\n     \n  <year>2008</year>\n     \n  <month>01</month>\n     \n  <day>10</day>\n \n</date>\n \n<to>Tove</to>\n \n<from>Jani</from>\n</note>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Avoid XML Attributes?",
+        "text": [
+            "Some things to consider when using attributes are:",
+            "Don't end up like this:",
+            "<note day=\"10\" month=\"01\" year=\"2008\"\nto=\"Tove\" from=\"Jani\" heading=\"Reminder\"\nbody=\"Don't forget me this weekend!\">\n</note>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Attributes for Metadata",
+        "text": [
+            "Sometimes ID references are assigned to elements. These IDs can be used to identify XML elements in much the same way as the \nid attribute in HTML. This example demonstrates this:",
+            "<messages>\n   \n  <note id=\"501\">\n       \n    <to>Tove</to>\n       \n    <from>Jani</from>\n       \n    <heading>Reminder</heading>\n       \n    <body>Don't forget me this weekend!</body>\n   \n  </note>\n   \n  <note id=\"502\">\n       \n    <to>Jani</to>\n       \n    <from>Tove</from>\n       \n    <heading>Re: Reminder</heading>\n       \n    <body>I will not</body>\n   \n  </note>\n</messages>",
+            "The id attributes above are for identifying the different notes. It is not a part of the note itself.",
+            "What I'm trying to say here is that metadata (data about data) should be stored as attributes, and the data itself should be stored as elements.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

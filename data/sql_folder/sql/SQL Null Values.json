@@ -1,0 +1,112 @@
+[
+    {
+        "title": "What is a NULL Value?",
+        "text": [
+            "A field with a NULL value is a field with no value.",
+            "If a field in a table is optional, it is possible to insert a new record or \nupdate a record without adding a value to this field. Then, the field will be \nsaved with a NULL value.",
+            "Note: A NULL value is different from a zero value or a field that \ncontains spaces. A field with a NULL value is one that has been left blank \nduring record creation!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "How to Test for NULL Values?",
+        "text": [
+            "It is not possible to test for NULL values with comparison operators, such as \n=, <, or <>.",
+            "We will have to use the IS NULL and \nIS NOT NULL operators instead.",
+            "SELECT column_namesFROM table_name\n  WHERE column_name IS NOT NULL;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Customers table used in the examples:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "The IS NULL Operator",
+        "text": [
+            "The IS NULL operator is used to test for empty values (NULL values).",
+            "The following SQL lists all customers with a NULL value in the \"Address\" field:",
+            "Example\n\n  SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NULL;\n\n\n  Try it Yourself Â»",
+            "Tip: Always use IS NULL to look for NULL values."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NULL;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The IS NOT NULL Operator",
+        "text": [
+            "The IS NOT NULL operator is used to test for non-empty values (NOT NULL \nvalues).",
+            "The following SQL lists all customers with a value in the \"Address\" field:",
+            "Example\n\n  SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NOT NULL;\n\n\n  Try it Yourself Â»",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, ContactName, AddressFROM CustomersWHERE Address \n  IS NOT NULL;"
+            }
+        ],
+        "tables": []
+    }
+]

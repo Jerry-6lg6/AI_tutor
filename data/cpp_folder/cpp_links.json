@@ -1,0 +1,310 @@
+[
+    {
+        "title": "C++ Intro",
+        "url": "https://www.w3schools.com/cpp/cpp_intro.asp"
+    },
+    {
+        "title": "C++ Get Started",
+        "url": "https://www.w3schools.com/cpp/cpp_getstarted.asp"
+    },
+    {
+        "title": "C++ Syntax",
+        "url": "https://www.w3schools.com/cpp/cpp_syntax.asp"
+    },
+    {
+        "title": "Syntax",
+        "url": "https://www.w3schools.com/cpp/cpp_syntax.asp"
+    },
+    {
+        "title": "Statements",
+        "url": "https://www.w3schools.com/cpp/cpp_statements.asp"
+    },
+    {
+        "title": "C++ Output",
+        "url": "https://www.w3schools.com/cpp/cpp_output.asp"
+    },
+    {
+        "title": "Print Text",
+        "url": "https://www.w3schools.com/cpp/cpp_output.asp"
+    },
+    {
+        "title": "Print Numbers",
+        "url": "https://www.w3schools.com/cpp/cpp_output_numbers.asp"
+    },
+    {
+        "title": "New Lines",
+        "url": "https://www.w3schools.com/cpp/cpp_new_lines.asp"
+    },
+    {
+        "title": "C++ Comments",
+        "url": "https://www.w3schools.com/cpp/cpp_comments.asp"
+    },
+    {
+        "title": "C++ Variables",
+        "url": "https://www.w3schools.com/cpp/cpp_variables.asp"
+    },
+    {
+        "title": "Declare Variables",
+        "url": "https://www.w3schools.com/cpp/cpp_variables.asp"
+    },
+    {
+        "title": "Multiple Variables",
+        "url": "https://www.w3schools.com/cpp/cpp_variables_multiple.asp"
+    },
+    {
+        "title": "Identifiers",
+        "url": "https://www.w3schools.com/cpp/cpp_variables_identifiers.asp"
+    },
+    {
+        "title": "Constants",
+        "url": "https://www.w3schools.com/cpp/cpp_variables_constants.asp"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/cpp/cpp_variables_reallife.asp"
+    },
+    {
+        "title": "C++ User Input",
+        "url": "https://www.w3schools.com/cpp/cpp_user_input.asp"
+    },
+    {
+        "title": "C++ Data Types",
+        "url": "https://www.w3schools.com/cpp/cpp_data_types.asp"
+    },
+    {
+        "title": "Basic Data Types",
+        "url": "https://www.w3schools.com/cpp/cpp_data_types.asp"
+    },
+    {
+        "title": "Numbers",
+        "url": "https://www.w3schools.com/cpp/cpp_data_types_numeric.asp"
+    },
+    {
+        "title": "Booleans",
+        "url": "https://www.w3schools.com/cpp/cpp_data_types_bool.asp"
+    },
+    {
+        "title": "Characters",
+        "url": "https://www.w3schools.com/cpp/cpp_data_types_char.asp"
+    },
+    {
+        "title": "Strings",
+        "url": "https://www.w3schools.com/cpp/cpp_data_types_string.asp"
+    },
+    {
+        "title": "Real-Life Example",
+        "url": "https://www.w3schools.com/cpp/cpp_data_types_reallife.asp"
+    },
+    {
+        "title": "C++ Operators",
+        "url": "https://www.w3schools.com/cpp/cpp_operators.asp"
+    },
+    {
+        "title": "Arithmetic",
+        "url": "https://www.w3schools.com/cpp/cpp_operators.asp"
+    },
+    {
+        "title": "Assignment",
+        "url": "https://www.w3schools.com/cpp/cpp_operators_assignment.asp"
+    },
+    {
+        "title": "Comparison",
+        "url": "https://www.w3schools.com/cpp/cpp_operators_comparison.asp"
+    },
+    {
+        "title": "Logical",
+        "url": "https://www.w3schools.com/cpp/cpp_operators_logical.asp"
+    },
+    {
+        "title": "C++ Strings",
+        "url": "https://www.w3schools.com/cpp/cpp_strings.asp"
+    },
+    {
+        "title": "Strings Intro",
+        "url": "https://www.w3schools.com/cpp/cpp_strings.asp"
+    },
+    {
+        "title": "Concatenation",
+        "url": "https://www.w3schools.com/cpp/cpp_strings_concat.asp"
+    },
+    {
+        "title": "Numbers and Strings",
+        "url": "https://www.w3schools.com/cpp/cpp_strings_numbers.asp"
+    },
+    {
+        "title": "String Length",
+        "url": "https://www.w3schools.com/cpp/cpp_strings_length.asp"
+    },
+    {
+        "title": "Access Strings",
+        "url": "https://www.w3schools.com/cpp/cpp_strings_access.asp"
+    },
+    {
+        "title": "Special Characters",
+        "url": "https://www.w3schools.com/cpp/cpp_strings_esc.asp"
+    },
+    {
+        "title": "User Input Strings",
+        "url": "https://www.w3schools.com/cpp/cpp_strings_input.asp"
+    },
+    {
+        "title": "Omitting Namespace",
+        "url": "https://www.w3schools.com/cpp/cpp_strings_namespace.asp"
+    },
+    {
+        "title": "C-Style Strings",
+        "url": "https://www.w3schools.com/cpp/cpp_strings_cstyle.asp"
+    },
+    {
+        "title": "C++ Math",
+        "url": "https://www.w3schools.com/cpp/cpp_math.asp"
+    },
+    {
+        "title": "C++ Booleans",
+        "url": "https://www.w3schools.com/cpp/cpp_booleans.asp"
+    },
+    {
+        "title": "Boolean Values",
+        "url": "https://www.w3schools.com/cpp/cpp_booleans.asp"
+    },
+    {
+        "title": "Boolean Expressions",
+        "url": "https://www.w3schools.com/cpp/cpp_booleans_expressions.asp"
+    },
+    {
+        "title": "Real-Life Example",
+        "url": "https://www.w3schools.com/cpp/cpp_booleans_reallife.asp"
+    },
+    {
+        "title": "C++ If...Else",
+        "url": "https://www.w3schools.com/cpp/cpp_conditions.asp"
+    },
+    {
+        "title": "if",
+        "url": "https://www.w3schools.com/cpp/cpp_conditions.asp"
+    },
+    {
+        "title": "else",
+        "url": "https://www.w3schools.com/cpp/cpp_conditions_else.asp"
+    },
+    {
+        "title": "else if",
+        "url": "https://www.w3schools.com/cpp/cpp_conditions_elseif.asp"
+    },
+    {
+        "title": "Short hand if..else",
+        "url": "https://www.w3schools.com/cpp/cpp_conditions_shorthand.asp"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/cpp/cpp_conditions_reallife.asp"
+    },
+    {
+        "title": "C++ Switch",
+        "url": "https://www.w3schools.com/cpp/cpp_switch.asp"
+    },
+    {
+        "title": "C++ While Loop",
+        "url": "https://www.w3schools.com/cpp/cpp_while_loop.asp"
+    },
+    {
+        "title": "While Loop",
+        "url": "https://www.w3schools.com/cpp/cpp_while_loop.asp"
+    },
+    {
+        "title": "Do/While Loop",
+        "url": "https://www.w3schools.com/cpp/cpp_do_while_loop.asp"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/cpp/cpp_while_loop_reallife.asp"
+    },
+    {
+        "title": "C++ For Loop",
+        "url": "https://www.w3schools.com/cpp/cpp_for_loop.asp"
+    },
+    {
+        "title": "For Loop",
+        "url": "https://www.w3schools.com/cpp/cpp_for_loop.asp"
+    },
+    {
+        "title": "Nested Loops",
+        "url": "https://www.w3schools.com/cpp/cpp_for_loop_nested.asp"
+    },
+    {
+        "title": "The foreach Loop",
+        "url": "https://www.w3schools.com/cpp/cpp_for_loop_foreach.asp"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/cpp/cpp_for_loop_reallife.asp"
+    },
+    {
+        "title": "C++ Break/Continue",
+        "url": "https://www.w3schools.com/cpp/cpp_break.asp"
+    },
+    {
+        "title": "C++ Arrays",
+        "url": "https://www.w3schools.com/cpp/cpp_arrays.asp"
+    },
+    {
+        "title": "Arrays",
+        "url": "https://www.w3schools.com/cpp/cpp_arrays.asp"
+    },
+    {
+        "title": "Arrays and Loops",
+        "url": "https://www.w3schools.com/cpp/cpp_arrays_loop.asp"
+    },
+    {
+        "title": "Omit Array Size",
+        "url": "https://www.w3schools.com/cpp/cpp_arrays_omit.asp"
+    },
+    {
+        "title": "Get Array Size",
+        "url": "https://www.w3schools.com/cpp/cpp_arrays_size.asp"
+    },
+    {
+        "title": "Real-Life Example",
+        "url": "https://www.w3schools.com/cpp/cpp_arrays_reallife.asp"
+    },
+    {
+        "title": "Multidimensional Arrays",
+        "url": "https://www.w3schools.com/cpp/cpp_arrays_multi.asp"
+    },
+    {
+        "title": "C++ Structures",
+        "url": "https://www.w3schools.com/cpp/cpp_structs.asp"
+    },
+    {
+        "title": "C++ Enums",
+        "url": "https://www.w3schools.com/cpp/cpp_enum.asp"
+    },
+    {
+        "title": "C++ References",
+        "url": "https://www.w3schools.com/cpp/cpp_references.asp"
+    },
+    {
+        "title": "Create References",
+        "url": "https://www.w3schools.com/cpp/cpp_references.asp"
+    },
+    {
+        "title": "Memory Address",
+        "url": "https://www.w3schools.com/cpp/cpp_references_memory.asp"
+    },
+    {
+        "title": "C++ Pointers",
+        "url": "https://www.w3schools.com/cpp/cpp_pointers.asp"
+    },
+    {
+        "title": "Create Pointers",
+        "url": "https://www.w3schools.com/cpp/cpp_pointers.asp"
+    },
+    {
+        "title": "Dereferencing",
+        "url": "https://www.w3schools.com/cpp/cpp_pointers_dereference.asp"
+    },
+    {
+        "title": "Modify Pointers",
+        "url": "https://www.w3schools.com/cpp/cpp_pointers_modify.asp"
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Creating a Database",
+        "text": [
+            "To create a database in MySQL, use the \"CREATE DATABASE\" statement:",
+            "Example\ncreate a database named \"mydatabase\":\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\")mycursor = mydb.cursor()mycursor.execute(\"CREATE DATABASE \n  mydatabase\")\nRun example »",
+            "If the above code was executed with no errors, you have successfully \ncreated a database."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\")mycursor = mydb.cursor()mycursor.execute(\"CREATE DATABASE \n  mydatabase\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Check if Database Exists",
+        "text": [
+            "You can check if a database exist by listing all databases in your system by \nusing the \"SHOW DATABASES\" statement:",
+            "Example\nReturn a list of your system's databases:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",  \n  user=\"yourusername\",  password=\"yourpassword\")mycursor = mydb.cursor()\n  mycursor.execute(\"SHOW DATABASES\")for x in mycursor:  \n  print(x)\nRun example »",
+            "Or you can try to access the database when making the connection:",
+            "Example\nTry connecting to the database \"mydatabase\":\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",  \n  user=\"yourusername\",  password=\"yourpassword\",\n  \n  database=\"mydatabase\")\nRun example »",
+            "If the database does not exist, you will get an error.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",  \n  user=\"yourusername\",  password=\"yourpassword\")mycursor = mydb.cursor()\n  mycursor.execute(\"SHOW DATABASES\")for x in mycursor:  \n  print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",  \n  user=\"yourusername\",  password=\"yourpassword\",\n  \n  database=\"mydatabase\")"
+            }
+        ],
+        "tables": []
+    }
+]

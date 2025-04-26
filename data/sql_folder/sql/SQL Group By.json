@@ -1,0 +1,155 @@
+[
+    {
+        "title": "The SQL GROUP BY Statement",
+        "text": [
+            "The GROUP BY statement groups rows that have the same values into summary \nrows, like \"find the number of customers in each country\".",
+            "The GROUP BY statement is often used with aggregate functions (COUNT(), \nMAX(), \nMIN(), SUM(), \nAVG()) to group the result-set by one or more columns.",
+            "SELECT column_name(s)\n  FROM table_name\n  WHERE condition\n  GROUP BY column_name(s)ORDER BY column_name(s);"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the \"Customers\" table in the Northwind sample \ndatabase:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL GROUP BY Examples",
+        "text": [
+            "The following SQL statement lists the number of customers in each country:",
+            "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country;\n\n\n  Try it Yourself Â»",
+            "The following SQL statement lists the number of customers in each country, \nsorted high to low:",
+            "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  ORDER BY COUNT(CustomerID) DESC;\n\n\n  Try it Yourself Â»"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  ORDER BY COUNT(CustomerID) DESC;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the \"Orders\" table in the Northwind sample database:",
+            "OrderID\nCustomerID\nEmployeeID\nOrderDate\nShipperID\n\n\n10248\n90\n5\n1996-07-04\n3\n\n\n10249\n81\n6\n1996-07-05\n1\n\n\n10250\n34\n4\n1996-07-08\n2",
+            "And a selection from the \"Shippers\" table:",
+            "ShipperID\nShipperName\n\n\n1\nSpeedy Express\n\n\n2\nUnited Package\n\n\n3\nFederal Shipping"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "OrderID": "10248",
+                    "CustomerID": "90",
+                    "EmployeeID": "5",
+                    "OrderDate": "1996-07-04",
+                    "ShipperID": "3"
+                },
+                {
+                    "OrderID": "10249",
+                    "CustomerID": "81",
+                    "EmployeeID": "6",
+                    "OrderDate": "1996-07-05",
+                    "ShipperID": "1"
+                },
+                {
+                    "OrderID": "10250",
+                    "CustomerID": "34",
+                    "EmployeeID": "4",
+                    "OrderDate": "1996-07-08",
+                    "ShipperID": "2"
+                }
+            ],
+            [
+                {
+                    "ShipperID": "1",
+                    "ShipperName": "Speedy Express"
+                },
+                {
+                    "ShipperID": "2",
+                    "ShipperName": "United Package"
+                },
+                {
+                    "ShipperID": "3",
+                    "ShipperName": "Federal Shipping"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "GROUP BY With JOIN Example",
+        "text": [
+            "The following SQL statement lists the number of orders sent by each shipper:",
+            "Example\n\n  SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders FROM \n  OrdersLEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID\n  GROUP BY ShipperName;\n\n\n  Try it Yourself Â»",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Shippers.ShipperName, COUNT(Orders.OrderID) AS NumberOfOrders FROM \n  OrdersLEFT JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID\n  GROUP BY ShipperName;"
+            }
+        ],
+        "tables": []
+    }
+]

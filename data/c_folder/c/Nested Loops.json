@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Nested Loops",
+        "text": [
+            "It is also possible to place a loop inside another loop. This is called a \nnested loop.",
+            "The \"inner loop\" will be executed one time for each iteration of the \"outer loop\":",
+            "Example\n\n  int i, j;// Outer loopfor (i = 1; i <= 2; ++i) {  printf(\"Outer: \n  %d\\n\", i);  // Executes 2 times  // Inner loop  for (j = 1; j <= 3; ++j) {    \n  printf(\" Inner: %d\\n\", j);  // Executes 6 times (2 * 3)  }}\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int i, j;// Outer loopfor (i = 1; i <= 2; ++i) {  printf(\"Outer: \n  %d\\n\", i);  // Executes 2 times  // Inner loop  for (j = 1; j <= 3; ++j) {    \n  printf(\" Inner: %d\\n\", j);  // Executes 6 times (2 * 3)  }}"
+            }
+        ],
+        "tables": []
+    }
+]

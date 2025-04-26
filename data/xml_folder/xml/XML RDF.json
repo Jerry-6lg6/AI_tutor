@@ -1,0 +1,490 @@
+[
+    {
+        "title": "What is RDF?",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF - Examples of Use",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF is Designed to be Read by Computers",
+        "text": [
+            "RDF was designed to provide a common way to describe information so it can be \nread and understood by computer applications.",
+            "RDF descriptions are not designed to be displayed on the web.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF is Written in XML",
+        "text": [
+            "RDF documents are written in XML. The \nXML language used by RDF is called RDF/XML.",
+            "By using XML, RDF information can easily be exchanged between different types \nof computers using different types of operating systems and application \nlanguages."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF and \"The Semantic Web\"",
+        "text": [
+            "The RDF language is a part of the \nW3C's Semantic Web Activity. W3C's \"Semantic Web Vision\" is a future where:",
+            "RDF uses Web identifiers (URIs) to identify resources.",
+            "RDF describes resources with properties and property values."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Resource, Property, and Property Value",
+        "text": [
+            "RDF identifies things using Web identifiers (URIs), and describes resources with properties and property values.",
+            "Explanation of Resource, Property, and Property value:",
+            "The following RDF document could describe the resource \"https://www.w3schools.com/rdf\":",
+            "<?xml version=\"1.0\"?>\n<RDF>\n   \n  <Description about=\"https://www.w3schools.com/rdf\">\n       \n    <author>Jan Egil Refsnes</author>\n       \n    <homepage>https://www.w3schools.com</homepage>\n   \n  </Description>\n</RDF>",
+            "The example above is simplified. Namespaces are omitted."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Statements",
+        "text": [
+            "The combination of a Resource, a Property, and a Property value forms a Statement (known as the subject, predicate and object of a Statement).",
+            "Let's look at some example statements to get a better understanding:",
+            "Statement: \"The author of https://www.w3schools.com/rdf is Jan Egil Refsnes\".",
+            "Statement: \"The homepage of https://www.w3schools.com/rdf is https://www.w3schools.com\"."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Example",
+        "text": [
+            "Here are two records from a CD-list:",
+            "Title\nArtist\nCountry\nCompany\nPrice\nYear\n\n\nEmpire Burlesque\nBob Dylan\nUSA\nColumbia\n10.90\n1985\n\n\nHide your heart\nBonnie Tyler\nUK\nCBS Records\n9.90\n1988",
+            "Below is a few lines from an RDF document:",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n<rdf:Description\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\">\n   \n  <cd:artist>Bob Dylan</cd:artist>\n   \n  <cd:country>USA</cd:country>\n   \n  <cd:company>Columbia</cd:company>\n   \n  <cd:price>10.90</cd:price>\n   \n  <cd:year>1985</cd:year>\n</rdf:Description>\n<rdf:Description\n rdf:about=\"http://www.recshop.fake/cd/Hide your heart\">\n   \n  <cd:artist>Bonnie Tyler</cd:artist>\n   \n  <cd:country>UK</cd:country>\n   \n  <cd:company>CBS Records</cd:company>\n   \n  <cd:price>9.90</cd:price>\n   \n  <cd:year>1988</cd:year>\n</rdf:Description>\n.\n.\n.\n</rdf:RDF>",
+            "The first line of the RDF document is the XML declaration. The XML declaration is followed by the root element of RDF documents: <rdf:RDF>.",
+            "The xmlns:rdf namespace, specifies that elements with the rdf prefix are from the namespace \"http://www.w3.org/1999/02/22-rdf-syntax-ns#\".",
+            "The xmlns:cd namespace, specifies that elements with the cd prefix are from the namespace \"http://www.recshop.fake/cd#\".",
+            "The <rdf:Description> element contains the description of the resource identified by the rdf:about attribute.",
+            "The elements: <cd:artist>, <cd:country>, <cd:company>, etc. are properties of the resource."
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Title": "Empire Burlesque",
+                    "Artist": "Bob Dylan",
+                    "Country": "USA",
+                    "Company": "Columbia",
+                    "Price": "10.90",
+                    "Year": "1985"
+                },
+                {
+                    "Title": "Hide your heart",
+                    "Artist": "Bonnie Tyler",
+                    "Country": "UK",
+                    "Company": "CBS Records",
+                    "Price": "9.90",
+                    "Year": "1988"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "RDF Online Validator",
+        "text": [
+            "W3C's RDF Validation Service is useful when learning RDF. Here you can experiment with RDF files.",
+            "The online RDF Validator parses your RDF document, checks your syntax, and generates tabular and graphical views of your RDF document.",
+            "Copy and paste the example below into W3C's RDF validator:",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:si=\"https://www.w3schools.com/rdf/\">\n  <rdf:Description rdf:about=\"https://www.w3schools.com\">\n     \n    <si:title>W3Schools.com</si:title>\n \n    <si:author>Jan Egil Refsnes</si:author>\n  </rdf:Description>\n</rdf:RDF>",
+            "When you parse the example above, \nthe result will look something like this."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Elements",
+        "text": [
+            "The main elements of RDF are the root element, <RDF>, and the <Description> element, which identifies a resource."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <rdf:RDF> Element",
+        "text": [
+            "<rdf:RDF> is the root element of an RDF document. It defines the XML document to be an RDF document. It also contains a reference to the RDF namespace:",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\">\n \n...Description goes here...\n</rdf:RDF>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <rdf:Description> Element",
+        "text": [
+            "The <rdf:Description> element identifies a resource with the about attribute.",
+            "The <rdf:Description> element contains elements that describe the resource:",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n<rdf:Description\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\">\n   \n  <cd:artist>Bob Dylan</cd:artist>\n   \n  <cd:country>USA</cd:country>\n   \n  <cd:company>Columbia</cd:company>\n   \n  <cd:price>10.90</cd:price>\n   \n  <cd:year>1985</cd:year>\n</rdf:Description>\n</rdf:RDF>",
+            "The elements, artist, country, company, price, and year, are defined in the http://www.recshop.fake/cd# \nnamespace. This namespace is outside RDF (and not a part of RDF). RDF defines only the \nframework. The elements, artist, country, company, price, and year, must be defined by someone else (company, \norganization, person, etc)."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Properties as Attributes",
+        "text": [
+            "The property elements can also be defined as attributes (instead of elements):",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n<rdf:Description\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\"\n  cd:artist=\"Bob Dylan\"  cd:country=\"USA\"\n  cd:company=\"Columbia\"  cd:price=\"10.90\"\n  cd:year=\"1985\" />\n</rdf:RDF>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Properties as Resources",
+        "text": [
+            "The property elements can also be defined as resources:",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n<rdf:Description\n rdf:about=\"http://www.recshop.fake/cd/Empire Burlesque\">\n   \n  <cd:artist rdf:resource=\"http://www.recshop.fake/cd/dylan\" />\n   \n  ...\n   \n  ...\n</rdf:Description>\n</rdf:RDF>",
+            "In the example above, the property artist does not have a value, but a reference to a resource containing information about the artist."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Containers",
+        "text": [
+            "RDF containers are used to describe group of things.",
+            "The following RDF elements are used to describe groups: <Bag>, <Seq>, and <Alt>."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <rdf:Bag> Element",
+        "text": [
+            "The <rdf:Bag> element is used to describe a list of values that do \nnot have to be in a specific order.",
+            "The <rdf:Bag> element may contain duplicate values.",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n<rdf:Description\n rdf:about=\"http://www.recshop.fake/cd/Beatles\">\n  \n <cd:artist>\n      \n   <rdf:Bag>\n          \n     <rdf:li>John</rdf:li>\n          \n     <rdf:li>Paul</rdf:li>\n          \n     <rdf:li>George</rdf:li>\n          \n     <rdf:li>Ringo</rdf:li>\n      \n   </rdf:Bag>\n   \n  </cd:artist>\n</rdf:Description>\n</rdf:RDF>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <rdf:Seq> Element",
+        "text": [
+            "The <rdf:Seq> element is used to describe an ordered list of values (For example, in alphabetical order).",
+            "The <rdf:Seq> element may contain duplicate values.",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n<rdf:Description\n rdf:about=\"http://www.recshop.fake/cd/Beatles\">\n  \n <cd:artist>\n      \n   <rdf:Seq>\n          \n     <rdf:li>George</rdf:li>\n          \n     <rdf:li>John</rdf:li>\n          \n     <rdf:li>Paul</rdf:li>\n          \n     <rdf:li>Ringo</rdf:li>\n      \n   </rdf:Seq>\n   \n  </cd:artist>\n</rdf:Description>\n</rdf:RDF>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The <rdf:Alt> Element",
+        "text": [
+            "The <rdf:Alt> element is used to describe a list of alternative values (the user can select only one of the values).",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:cd=\"http://www.recshop.fake/cd#\">\n<rdf:Description\n rdf:about=\"http://www.recshop.fake/cd/Beatles\">\n  \n <cd:format>\n      \n   <rdf:Alt>\n          \n     <rdf:li>CD</rdf:li>\n          \n     <rdf:li>Record</rdf:li>\n          \n     <rdf:li>Tape</rdf:li>\n      \n   </rdf:Alt>\n   \n  </cd:format>\n</rdf:Description>\n</rdf:RDF>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Terms",
+        "text": [
+            "In the examples above we have talked about \"list of values\" when describing \nthe container elements. In RDF these \"list of values\" are called members.",
+            "So, we have the following:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Collections",
+        "text": [
+            "RDF collections describe groups that can ONLY contain the specified members."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The rdf:parseType=\"Collection\" Attribute",
+        "text": [
+            "As seen in the previous chapter, a container says that the containing resources are members - it does not say \nthat other members are not allowed.",
+            "RDF collections are used to describe groups that can ONLY contain the specified members.",
+            "A collection is described by the attribute rdf:parseType=\"Collection\".",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:cd=\"http://recshop.fake/cd#\">\n<rdf:Description\nrdf:about=\"http://recshop.fake/cd/Beatles\">\n \n<cd:artist rdf:parseType=\"Collection\">\n   \n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/George\"/>\n   \n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/John\"/>\n   \n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/Paul\"/>\n   \n<rdf:Description rdf:about=\"http://recshop.fake/cd/Beatles/Ringo\"/>\n \n</cd:artist>\n</rdf:Description>\n</rdf:RDF>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Schema and Application Classes",
+        "text": [
+            "RDF Schema (RDFS) is an extension to RDF.",
+            "RDF describes resources with classes, properties, and values.",
+            "In addition, RDF also needs a way to define application-specific classes and properties. Application-specific classes and properties must be defined using extensions to RDF.",
+            "One such extension is RDF Schema."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Schema (RDFS)",
+        "text": [
+            "RDF Schema does not provide actual application-specific classes and properties.",
+            "Instead RDF Schema provides the framework to describe application-specific classes and properties.",
+            "Classes in RDF Schema are much like classes in object oriented programming languages. This allows resources to be defined as instances of classes, and subclasses of classes."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDFS Example",
+        "text": [
+            "The following example demonstrates some of the RDFS facilities:",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\nxml:base=\"http://www.animals.fake/animals#\">\n<rdf:Description rdf:ID=\"animal\">\n   \n  <rdf:type\n   rdf:resource=\"http://www.w3.org/2000/01/rdf-schema#Class\"/>\n</rdf:Description>\n<rdf:Description rdf:ID=\"horse\">\n   \n  <rdf:type\n   rdf:resource=\"http://www.w3.org/2000/01/rdf-schema#Class\"/>\n   \n  <rdfs:subClassOf rdf:resource=\"#animal\"/>\n</rdf:Description>\n</rdf:RDF>",
+            "In the example above, the resource \"horse\" is a subclass of the class \"animal\"."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Example Abbreviated",
+        "text": [
+            "Since an RDFS class is an RDF resource we can abbreviate the example above by \nusing rdfs:Class instead of rdf:Description, and drop the rdf:type information:",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:rdfs=\"http://www.w3.org/2000/01/rdf-schema#\"\nxml:base=\"http://www.animals.fake/animals#\">\n<rdfs:Class rdf:ID=\"animal\" />\n<rdfs:Class rdf:ID=\"horse\">\n   \n  <rdfs:subClassOf rdf:resource=\"#animal\"/>\n</rdfs:Class>\n</rdf:RDF>",
+            "That's it!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The Dublin Core",
+        "text": [
+            "The Dublin Core Metadata Initiative (DCMI) has created some \npredefined properties for describing documents.",
+            "RDF is metadata (data about data). RDF is used to describe information resources.",
+            "The Dublin Core is a set of predefined properties for describing documents.",
+            "The first Dublin Core properties were defined at the Metadata Workshop \nin Dublin, Ohio in 1995 and is currently maintained by the\nDublin Core Metadata Initiative.",
+            "A quick look at the table above indicates that RDF is ideal for representing Dublin Core information."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Example",
+        "text": [
+            "The following example demonstrates the use of some of the Dublin Core \nproperties in an RDF document:",
+            "<?xml version=\"1.0\"?>\n<rdf:RDF\nxmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"\nxmlns:dc= \"http://purl.org/dc/elements/1.1/\">\n<rdf:Description rdf:about=\"https://www.w3schools.com\">\n   \n  <dc:description>W3Schools - Free tutorials</dc:description>\n   \n  <dc:publisher>Refsnes Data as</dc:publisher>\n   \n  <dc:date>2008-09-01</dc:date>\n   \n  <dc:type>Web Development</dc:type>\n   \n  <dc:format>text/html</dc:format>\n   \n  <dc:language>en</dc:language>\n</rdf:Description>\n</rdf:RDF>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF Reference",
+        "text": [
+            "The RDF namespace  (xmlns:rdf) is:\nhttp://www.w3.org/1999/02/22-rdf-syntax-ns#",
+            "The RDFS namespace  (xmlns:rdfs ) is:\nhttp://www.w3.org/2000/01/rdf-schema#",
+            "The recommended file extension for RDF files is .rdf. However, the \nextension .xml is \noften used to provide compatibility with old xml parsers.",
+            "The MIME type should be \"application/rdf+xml\"."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDFS / RDF Classes",
+        "text": [
+            "Element\nClass of\nSubclass of\n\n\nrdfs:Class\nAll classes\n \n\n\nrdfs:Datatype\nData types\nClass\n\n\nrdfs:Resource\nAll resources\nClass\n\n\nrdfs:Container\nContainers\nResource\n\n\nrdfs:Literal\nLiteral values (text and numbers)\nResource\n\n\nrdf:List\nLists\nResource\n\n\nrdf:Property\nProperties\nResource\n\n\nrdf:Statement\nStatements\nResource\n\n\nrdf:Alt\nContainers of alternatives\nContainer\n\n\nrdf:Bag\nUnordered containers\nContainer\n\n\nrdf:Seq\nOrdered containers\nContainer\n\n\nrdfs:ContainerMembershipProperty\nContainer membership properties\nProperty\n\n\nrdf:XMLLiteral\nXML literal values\nLiteral"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Element": "rdfs:Class",
+                    "Class of": "All classes",
+                    "Subclass of": ""
+                },
+                {
+                    "Element": "rdfs:Datatype",
+                    "Class of": "Data types",
+                    "Subclass of": "Class"
+                },
+                {
+                    "Element": "rdfs:Resource",
+                    "Class of": "All resources",
+                    "Subclass of": "Class"
+                },
+                {
+                    "Element": "rdfs:Container",
+                    "Class of": "Containers",
+                    "Subclass of": "Resource"
+                },
+                {
+                    "Element": "rdfs:Literal",
+                    "Class of": "Literal values (text and numbers)",
+                    "Subclass of": "Resource"
+                },
+                {
+                    "Element": "rdf:List",
+                    "Class of": "Lists",
+                    "Subclass of": "Resource"
+                },
+                {
+                    "Element": "rdf:Property",
+                    "Class of": "Properties",
+                    "Subclass of": "Resource"
+                },
+                {
+                    "Element": "rdf:Statement",
+                    "Class of": "Statements",
+                    "Subclass of": "Resource"
+                },
+                {
+                    "Element": "rdf:Alt",
+                    "Class of": "Containers of alternatives",
+                    "Subclass of": "Container"
+                },
+                {
+                    "Element": "rdf:Bag",
+                    "Class of": "Unordered containers",
+                    "Subclass of": "Container"
+                },
+                {
+                    "Element": "rdf:Seq",
+                    "Class of": "Ordered containers",
+                    "Subclass of": "Container"
+                },
+                {
+                    "Element": "rdfs:ContainerMembershipProperty",
+                    "Class of": "Container membership properties",
+                    "Subclass of": "Property"
+                },
+                {
+                    "Element": "rdf:XMLLiteral",
+                    "Class of": "XML literal values",
+                    "Subclass of": "Literal"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "RDFS / RDF Properties",
+        "text": [
+            "Element\nDomain\nRange\nDescription\n\n\nrdfs:domain\nProperty\nClass\nThe domain of the resource\n\n\nrdfs:range\nProperty\nClass\nThe range of the resource\n\n\nrdfs:subPropertyOf\nProperty\nProperty\nThe property is a sub property of a property\n\n\nrdfs:subClassOf\nClass\nClass\nThe resource is a subclass of a class\n\n\nrdfs:comment\nResource\nLiteral\nThe human readable description of the resource\n\n\nrdfs:label\nResource\nLiteral\nThe human readable label (name)  of the resource\n\n\nrdfs:isDefinedBy\nResource\nResource\nThe definition of the resource\n\n\nrdfs:seeAlso\nResource\nResource\nThe additional information about the resource\n\n\nrdfs:member\nResource\nResource\nThe member of the resource\n\n\nrdf:first\nList\nResource\n \n\n\nrdf:rest\nList\nList\n \n\n\nrdf:subject\nStatement\nResource\nThe subject of the resource in an RDF Statement\n\n\nrdf:predicate\nStatement\nResource\nThe predicate of the resource in an RDF Statement\n\n\nrdf:object\nStatement \nResource\nThe object of the resource in an RDF Statement\n\n\nrdf:value\nResource\nResource\nThe property used for values\n\n\nrdf:type\nResource\nClass\nThe resource is an instance of a class"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Element": "rdfs:domain",
+                    "Domain": "Property",
+                    "Range": "Class",
+                    "Description": "The domain of the resource"
+                },
+                {
+                    "Element": "rdfs:range",
+                    "Domain": "Property",
+                    "Range": "Class",
+                    "Description": "The range of the resource"
+                },
+                {
+                    "Element": "rdfs:subPropertyOf",
+                    "Domain": "Property",
+                    "Range": "Property",
+                    "Description": "The property is a sub property of a property"
+                },
+                {
+                    "Element": "rdfs:subClassOf",
+                    "Domain": "Class",
+                    "Range": "Class",
+                    "Description": "The resource is a subclass of a class"
+                },
+                {
+                    "Element": "rdfs:comment",
+                    "Domain": "Resource",
+                    "Range": "Literal",
+                    "Description": "The human readable description of the resource"
+                },
+                {
+                    "Element": "rdfs:label",
+                    "Domain": "Resource",
+                    "Range": "Literal",
+                    "Description": "The human readable label (name)  of the resource"
+                },
+                {
+                    "Element": "rdfs:isDefinedBy",
+                    "Domain": "Resource",
+                    "Range": "Resource",
+                    "Description": "The definition of the resource"
+                },
+                {
+                    "Element": "rdfs:seeAlso",
+                    "Domain": "Resource",
+                    "Range": "Resource",
+                    "Description": "The additional information about the resource"
+                },
+                {
+                    "Element": "rdfs:member",
+                    "Domain": "Resource",
+                    "Range": "Resource",
+                    "Description": "The member of the resource"
+                },
+                {
+                    "Element": "rdf:first",
+                    "Domain": "List",
+                    "Range": "Resource",
+                    "Description": ""
+                },
+                {
+                    "Element": "rdf:rest",
+                    "Domain": "List",
+                    "Range": "List",
+                    "Description": ""
+                },
+                {
+                    "Element": "rdf:subject",
+                    "Domain": "Statement",
+                    "Range": "Resource",
+                    "Description": "The subject of the resource in an RDF Statement"
+                },
+                {
+                    "Element": "rdf:predicate",
+                    "Domain": "Statement",
+                    "Range": "Resource",
+                    "Description": "The predicate of the resource in an RDF Statement"
+                },
+                {
+                    "Element": "rdf:object",
+                    "Domain": "Statement",
+                    "Range": "Resource",
+                    "Description": "The object of the resource in an RDF Statement"
+                },
+                {
+                    "Element": "rdf:value",
+                    "Domain": "Resource",
+                    "Range": "Resource",
+                    "Description": "The property used for values"
+                },
+                {
+                    "Element": "rdf:type",
+                    "Domain": "Resource",
+                    "Range": "Class",
+                    "Description": "The resource is an instance of a class"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "RDF Attributes",
+        "text": [
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

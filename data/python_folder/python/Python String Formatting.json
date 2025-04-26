@@ -1,0 +1,184 @@
+[
+    {
+        "title": "F-Strings",
+        "text": [
+            "F-string allows you to format selected parts of a string.",
+            "To specify a string as an f-string, simply put an f in front of the string \nliteral, like this:",
+            "Example\nCreate an f-string:\n\ntxt = f\"The price is 49 dollars\"\n\nprint(txt)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "txt = f\"The price is 49 dollars\"\n\nprint(txt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Placeholders and Modifiers",
+        "text": [
+            "To format values in an f-string, add placeholders {}, \na placeholder can contain variables,\noperations, functions, and modifiers to format the value.",
+            "Example\nAdd a placeholder for the price variable:\n\nprice = 59\n\ntxt = f\"The price is {price} dollars\"\n\nprint(txt)\n\nTry it Yourself »",
+            "A placeholder can also include a modifier to format the value.",
+            "A modifier is included by adding a colon : followed by a legal formatting type, like \n.2f which means fixed point number with 2 decimals:",
+            "Example\nDisplay the price with 2 decimals:\n\nprice = 59\n\ntxt = f\"The price is {price:.2f} dollars\"\n\nprint(txt)\n\nTry it Yourself »",
+            "You can also format a value directly without keeping it in a variable:",
+            "Example\nDisplay the value 95 with 2 decimals:\n\ntxt = f\"The price is {95:.2f} dollars\"\n\nprint(txt)\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "price = 59\n\ntxt = f\"The price is {price} dollars\"\n\nprint(txt)"
+            },
+            {
+                "heading": "Example",
+                "code": "price = 59\n\ntxt = f\"The price is {price:.2f} dollars\"\n\nprint(txt)"
+            },
+            {
+                "heading": "Example",
+                "code": "txt = f\"The price is {95:.2f} dollars\"\n\nprint(txt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Perform Operations in F-Strings",
+        "text": [
+            "You can perform Python operations inside the placeholders.",
+            "You can do math operations:",
+            "Example\nPerform a math operation in the placeholder, and return the result:\n\ntxt = f\"The price is {20 * 59} dollars\"\n\nprint(txt)\n\nTry it Yourself »",
+            "You can perform math operations on variables:",
+            "Example\nAdd taxes before displaying the price:\n\nprice = 59\ntax = 0.25\ntxt = f\"The price is {price + (price * tax)} dollars\"\n\nprint(txt)\n\nTry it Yourself »",
+            "You can perform if...else statements inside the placeholders:",
+            "Example\nReturn \"Expensive\" if the price is over 50, otherwise return \"Cheap\":\n\nprice = 49\ntxt = f\"It is very {'Expensive' if price>50 else 'Cheap'}\"\n\nprint(txt)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "txt = f\"The price is {20 * 59} dollars\"\n\nprint(txt)"
+            },
+            {
+                "heading": "Example",
+                "code": "price = 59\ntax = 0.25\ntxt = f\"The price is {price + (price * tax)} dollars\"\n\nprint(txt)"
+            },
+            {
+                "heading": "Example",
+                "code": "price = 49\ntxt = f\"It is very {'Expensive' if price>50 else 'Cheap'}\"\n\nprint(txt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Execute Functions in F-Strings",
+        "text": [
+            "You can execute functions inside the placeholder:",
+            "Example\nUse the string method upper()to convert a \nvalue into upper case letters: \n\nfruit = \"apples\"\ntxt = f\"I love {fruit.upper()}\"\n\nprint(txt)\n\nTry it Yourself »",
+            "The function does not have to be a built-in Python method, you can create your own functions and use them:",
+            "Example\nCreate a function that converts feet into meters:\n\ndef myconverter(x):\n  return x * 0.3048\n \ntxt = f\"The plane is flying at a {myconverter(30000)} meter altitude\"\n\nprint(txt)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "fruit = \"apples\"\ntxt = f\"I love {fruit.upper()}\"\n\nprint(txt)"
+            },
+            {
+                "heading": "Example",
+                "code": "def myconverter(x):\n  return x * 0.3048\n \ntxt = f\"The plane is flying at a {myconverter(30000)} meter altitude\"\n\nprint(txt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "More Modifiers",
+        "text": [
+            "At the beginning of this chapter we explained how to use the .2f modifier to \nformat a number into a fixed point number with 2 decimals.",
+            "There are several other modifiers that can be used to format values:",
+            "Example\nUse a comma as a thousand separator:\n\nprice = 59000\n\ntxt = f\"The price is {price:,} dollars\"\n\nprint(txt)\n\nTry it Yourself »",
+            "Here is a list of all the formatting types."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "price = 59000\n\ntxt = f\"The price is {price:,} dollars\"\n\nprint(txt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "String format()",
+        "text": [
+            "Before Python 3.6 we used the format() method to format strings.",
+            "The format() method can still be used,\nbut f-strings are faster and the preferred way to format strings.",
+            "The next examples in this page demonstrates how to format strings with the\nformat() method.",
+            "The format() method also uses curly brackets as placeholders\n{}, but the syntax is slightly different:",
+            "Example\nAdd a placeholder where you want to display the price:\n\n  price = 49txt = \"The price is {} dollars\"print(txt.format(price))\n\nTry it Yourself »",
+            "You can add parameters inside the curly brackets to specify how to convert \nthe value:",
+            "Example\nFormat the price to be displayed as a number with two decimals:\n\n  txt = \"The price is {:.2f} dollars\"\n\nTry it Yourself »",
+            "Check out all formatting types in our String format() Reference."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "price = 49txt = \"The price is {} dollars\"print(txt.format(price))"
+            },
+            {
+                "heading": "Example",
+                "code": "txt = \"The price is {:.2f} dollars\""
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Multiple Values",
+        "text": [
+            "If you want to use more values, just add more values to the format() method:",
+            "print(txt.format(price, itemno, count))",
+            "And add more placeholders:",
+            "Example\n\n  quantity = 3itemno = 567price = 49myorder = \"I want {} pieces of \n  item number {} for {:.2f} dollars.\"print(myorder.format(quantity, itemno, price))\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "quantity = 3itemno = 567price = 49myorder = \"I want {} pieces of \n  item number {} for {:.2f} dollars.\"print(myorder.format(quantity, itemno, price))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Index Numbers",
+        "text": [
+            "You can use index numbers (a number inside the curly brackets {0}) to be sure the \nvalues are placed \nin the correct placeholders:",
+            "Example\n\n  quantity = 3itemno = 567price = 49myorder = \"I want {0} pieces of \n  item number {1} for {2:.2f} dollars.\"print(myorder.format(quantity, itemno, price))\n\nTry it Yourself »",
+            "Also, if you want to refer to the same value more than once, use the index number:",
+            "Example\n\n  age = 36name = \"John\"txt = \"His name is {1}. {1} is {0} years old.\"print(txt.format(age, \n  name))\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "quantity = 3itemno = 567price = 49myorder = \"I want {0} pieces of \n  item number {1} for {2:.2f} dollars.\"print(myorder.format(quantity, itemno, price))"
+            },
+            {
+                "heading": "Example",
+                "code": "age = 36name = \"John\"txt = \"His name is {1}. {1} is {0} years old.\"print(txt.format(age, \n  name))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Named Indexes",
+        "text": [
+            "You can also use named indexes by entering a name inside the curly brackets {carname}, \nbut then you must use names when you pass the parameter values\ntxt.format(carname = \"Ford\"):",
+            "Example\n\n  myorder = \"I have a {carname}, it is a {model}.\"print(myorder.format(carname \n  = \"Ford\", model = \"Mustang\"))\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "myorder = \"I have a {carname}, it is a {model}.\"print(myorder.format(carname \n  = \"Ford\", model = \"Mustang\"))"
+            }
+        ],
+        "tables": []
+    }
+]

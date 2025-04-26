@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Loop Items",
+        "text": [
+            "You can loop through the set items by using a for \nloop:",
+            "Example\nLoop through the set, and print the values:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}for x in thisset:  print(x)\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}for x in thisset:  print(x)"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "title": "C string Functions",
+        "text": [
+            "The <string.h> library has many functions that allow you to perform tasks on strings.",
+            "A list of all string functions can be found in the table below:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Related Pages",
+        "text": [
+            "C Strings Tutorial",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

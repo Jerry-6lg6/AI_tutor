@@ -1,0 +1,95 @@
+[
+    {
+        "title": "Unordered HTML List",
+        "text": [
+            "An unordered list starts with the <ul> tag. Each list item starts with the \n<li> tag.",
+            "The list items will be marked with bullets (small black circles) by default:",
+            "Example\n\n<ul>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ul>\n\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<ul>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ul>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Unordered HTML List - Choose List Item Marker",
+        "text": [
+            "The CSS list-style-type property is used to define the style of the \nlist item marker. It can have one of the following values:",
+            "Example - Disc\n\n<ul style=\"list-style-type:disc;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>\n\nTry it Yourself »",
+            "Example - Circle\n\n<ul style=\"list-style-type:circle;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>\n\nTry it Yourself »",
+            "Example - Square\n\n<ul style=\"list-style-type:square;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>\n\nTry it Yourself »",
+            "Example - None\n\n<ul style=\"list-style-type:none;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example - Disc",
+                "code": "<ul style=\"list-style-type:disc;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>"
+            },
+            {
+                "heading": "Example - Circle",
+                "code": "<ul style=\"list-style-type:circle;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>"
+            },
+            {
+                "heading": "Example - Square",
+                "code": "<ul style=\"list-style-type:square;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>"
+            },
+            {
+                "heading": "Example - None",
+                "code": "<ul style=\"list-style-type:none;\">  <li>Coffee</li>\n  <li>Tea</li>  <li>Milk</li></ul>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Nested HTML Lists",
+        "text": [
+            "Lists can be nested (list inside list):",
+            "Example\n\n<ul>  <li>Coffee</li>  <li>Tea\n    <ul>      \n<li>Black tea</li>      <li>Green tea</li>\n    </ul>  \n</li>  <li>Milk</li></ul>\n\nTry it Yourself »",
+            "Note: A list item (<li>) can contain \n  a new list, and other HTML elements, like images and links, etc."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<ul>  <li>Coffee</li>  <li>Tea\n    <ul>      \n<li>Black tea</li>      <li>Green tea</li>\n    </ul>  \n</li>  <li>Milk</li></ul>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Horizontal List with CSS",
+        "text": [
+            "HTML lists can be styled in many different ways with CSS.",
+            "One popular way is to style a list horizontally, to create a navigation menu:",
+            "Example\n\n <!DOCTYPE html><html><head><style>ul {  list-style-type: none;\n    margin: 0;  padding: 0;  overflow: hidden;  background-color: #333333;}li {  float: left;}li a {  display: block;  color: white;  text-align: center;  padding: 16px;  text-decoration: none;}\nli a:hover {  background-color: #111111;}\n </style></head><body><ul>  <li><a href=\"#home\">Home</a></li>  <li><a href=\"#news\">News</a></li>  <li><a href=\"#contact\">Contact</a></li>  <li><a href=\"#about\">About</a></li>\n </ul></body></html>\n\nTry it Yourself »",
+            "Tip: You can learn much more about CSS in our CSS Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html><head><style>ul {  list-style-type: none;\n    margin: 0;  padding: 0;  overflow: hidden;  background-color: #333333;}li {  float: left;}li a {  display: block;  color: white;  text-align: center;  padding: 16px;  text-decoration: none;}\nli a:hover {  background-color: #111111;}\n </style></head><body><ul>  <li><a href=\"#home\">Home</a></li>  <li><a href=\"#news\">News</a></li>  <li><a href=\"#contact\">Contact</a></li>  <li><a href=\"#about\">About</a></li>\n </ul></body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML List Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,172 @@
+[
+    {
+        "title": "The SQL HAVING Clause",
+        "text": [
+            "The HAVING clause was added to SQL because the \nWHERE keyword cannot be \nused with aggregate functions.",
+            "SELECT column_name(s)\n  FROM table_name\n  WHERE condition\n  GROUP BY column_name(s)HAVING conditionORDER BY \n  column_name(s);"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the \"Customers\" table in the Northwind sample \ndatabase:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL HAVING Examples",
+        "text": [
+            "The following SQL statement lists the number of customers in each country. \nOnly include countries with more than 5 customers:",
+            "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  HAVING COUNT(CustomerID) > 5;\n\n\n  Try it Yourself »",
+            "The following SQL statement lists the number of customers in each country, \nsorted high to low (Only include countries with more than 5 customers):",
+            "Example\n\n  SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY CountryHAVING COUNT(CustomerID) \n  > 5\n  ORDER BY COUNT(CustomerID) DESC;\n\n\n  Try it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY Country\n  HAVING COUNT(CustomerID) > 5;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT COUNT(CustomerID), CountryFROM CustomersGROUP BY CountryHAVING COUNT(CustomerID) \n  > 5\n  ORDER BY COUNT(CustomerID) DESC;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the \"Orders\" table in the Northwind sample database:",
+            "OrderID\nCustomerID\nEmployeeID\nOrderDate\nShipperID\n\n\n10248\n90\n5\n1996-07-04\n3\n\n\n10249\n81\n6\n1996-07-05\n1\n\n\n10250\n34\n4\n1996-07-08\n2",
+            "And a selection from the \"Employees\" table:",
+            "EmployeeID\nLastName\nFirstName\nBirthDate\nPhoto\nNotes\n\n\n1\nDavolio\nNancy\n1968-12-08\nEmpID1.pic\nEducation includes a BA....\n\n\n2\nFuller\nAndrew\n1952-02-19\nEmpID2.pic\nAndrew received his BTS....\n\n\n3\nLeverling\nJanet\n1963-08-30\nEmpID3.pic\nJanet has a BS degree...."
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "OrderID": "10248",
+                    "CustomerID": "90",
+                    "EmployeeID": "5",
+                    "OrderDate": "1996-07-04",
+                    "ShipperID": "3"
+                },
+                {
+                    "OrderID": "10249",
+                    "CustomerID": "81",
+                    "EmployeeID": "6",
+                    "OrderDate": "1996-07-05",
+                    "ShipperID": "1"
+                },
+                {
+                    "OrderID": "10250",
+                    "CustomerID": "34",
+                    "EmployeeID": "4",
+                    "OrderDate": "1996-07-08",
+                    "ShipperID": "2"
+                }
+            ],
+            [
+                {
+                    "EmployeeID": "1",
+                    "LastName": "Davolio",
+                    "FirstName": "Nancy",
+                    "BirthDate": "1968-12-08",
+                    "Photo": "EmpID1.pic",
+                    "Notes": "Education includes a BA...."
+                },
+                {
+                    "EmployeeID": "2",
+                    "LastName": "Fuller",
+                    "FirstName": "Andrew",
+                    "BirthDate": "1952-02-19",
+                    "Photo": "EmpID2.pic",
+                    "Notes": "Andrew received his BTS...."
+                },
+                {
+                    "EmployeeID": "3",
+                    "LastName": "Leverling",
+                    "FirstName": "Janet",
+                    "BirthDate": "1963-08-30",
+                    "Photo": "EmpID3.pic",
+                    "Notes": "Janet has a BS degree...."
+                }
+            ]
+        ]
+    },
+    {
+        "title": "More HAVING Examples",
+        "text": [
+            "The following SQL statement lists the employees that have registered more \nthan 10 orders:",
+            "Example\n\n  SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrdersFROM \n  (OrdersINNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID)\n  GROUP BY LastNameHAVING COUNT(Orders.OrderID) > 10;\n\n\n  Try it Yourself »",
+            "The following SQL statement lists if the employees \"Davolio\" or \"Fuller\" have registered \nmore than 25 orders:",
+            "Example\n\n  SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrdersFROM Orders\n  INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n  WHERE LastName = 'Davolio' OR LastName = 'Fuller'GROUP BY LastNameHAVING \n  COUNT(Orders.OrderID) > 25;\n\n\n  Try it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrdersFROM \n  (OrdersINNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID)\n  GROUP BY LastNameHAVING COUNT(Orders.OrderID) > 10;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT Employees.LastName, COUNT(Orders.OrderID) AS NumberOfOrdersFROM Orders\n  INNER JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n  WHERE LastName = 'Davolio' OR LastName = 'Fuller'GROUP BY LastNameHAVING \n  COUNT(Orders.OrderID) > 25;"
+            }
+        ],
+        "tables": []
+    }
+]

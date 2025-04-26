@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Real-Life Example",
+        "text": [
+            "To demonstrate a practical example of using arrays, let's create a program that calculates the average of different ages:",
+            "Example\n// An array storing different ages\nint ages[] = {20, 22, 18, 35, 48, 26, 87, 70};\n\nfloat avg, sum = 0;\n\n// Get the length of the array\nint length = ages.length;\n\n// Loop through the elements of the array\nfor (int age : ages) {\n  sum += age;\n}\n\n// Calculate the average by dividing the sum by the length\navg = sum / length;\n\n// Print the average\nSystem.out.println(\"The average age is: \" + avg);\n\nTry it Yourself »",
+            "And in this example, we create a program that finds the lowest age among different ages:",
+            "Example\n// An array storing different ages\nint ages[] = {20, 22, 18, 35, 48, 26, 87, 70};\n\n// Get the length of the array\nint length = ages.length;\n\n// Create a 'lowest age' variable and assign the first array element of ages to it\nint lowestAge = ages[0];\n\n// Loop through the elements of the ages array to find the lowest age\nfor (int age : ages) {\n  // Check if the current age is smaller than the current 'lowest age'\n  if (lowestAge > age) {\n    // If the smaller age is found, update 'lowest age' with that element\n    lowestAge = age;\n  }\n}\n\n// Output the value of the lowest age\nSystem.out.println(\"The lowest age in the array is: \" + lowestAge);\n\nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,32 @@
+[
+    {
+        "title": "CREATE OR REPLACE VIEW",
+        "text": [
+            "The CREATE OR REPLACE VIEW command updates a view.",
+            "The following SQL adds the \"City\" column to the \"Brazil Customers\" view:",
+            "Example\n\nCREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = \"Brazil\";"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE OR REPLACE VIEW [Brazil Customers] AS\nSELECT CustomerName, ContactName, City\nFROM Customers\nWHERE Country = \"Brazil\";"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Query The View",
+        "text": [
+            "We can query the view above as follows:",
+            "Example\n\nSELECT * FROM [Brazil \n  Customers];",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM [Brazil \n  Customers];"
+            }
+        ],
+        "tables": []
+    }
+]

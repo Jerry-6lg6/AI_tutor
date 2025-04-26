@@ -1,0 +1,123 @@
+[
+    {
+        "title": "Python Inheritance",
+        "text": [
+            "Inheritance allows us to define a class that inherits all the methods and properties from another class.",
+            "Parent class is the class being inherited from, also called \nbase class.",
+            "Child class is the class that inherits from another class, \nalso called derived class."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Create a Parent Class",
+        "text": [
+            "Any class can be a parent class, so the syntax is the same as creating any \nother class:",
+            "Example\nCreate a class named Person, with\nfirstname and lastname properties, \nand a printname method:\n\nclass Person:  def __init__(self, fname, lname):    \n  self.firstname = fname    self.lastname = lname  \n  def printname(self):    print(self.firstname, \n  self.lastname)#Use the Person class to create an object, and then \n  execute the printname method:x = Person(\"John\", \"Doe\")\n  x.printname()\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "class Person:  def __init__(self, fname, lname):    \n  self.firstname = fname    self.lastname = lname  \n  def printname(self):    print(self.firstname, \n  self.lastname)#Use the Person class to create an object, and then \n  execute the printname method:x = Person(\"John\", \"Doe\")\n  x.printname()"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Create a Child Class",
+        "text": [
+            "To create a class that inherits the functionality from another class, send the parent class as a parameter when creating the child \nclass:",
+            "Example\nCreate a class named Student, which will inherit the properties \nand methods from \nthe Person class:\n\nclass Student(Person):  pass",
+            "Note: Use the pass \n  keyword when you do not want to add any other properties or methods to the \n  class.",
+            "Now the Student class has the same properties and methods as the Person \nclass.",
+            "Example\nUse the Student class to create an object, \nand then execute the printname method:\n\n  x = Student(\"Mike\", \"Olsen\")x.printname()\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "class Student(Person):  pass"
+            },
+            {
+                "heading": "Example",
+                "code": "x = Student(\"Mike\", \"Olsen\")x.printname()"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Add the __init__() Function",
+        "text": [
+            "So far we have created a child class that inherits the properties and methods \nfrom its parent.",
+            "We want to add the __init__() function to the child class (instead of the pass keyword).",
+            "Note: The __init__() function is called automatically every time the class is being used to create a new object.",
+            "Example\nAdd the __init__() function to the\nStudent class:\n\n  class Student(Person):  def __init__(self, fname, lname):    \n  #add properties etc.",
+            "When you add the __init__() function, the child class will no longer inherit \nthe parent's __init__() function.",
+            "Note: The child's __init__() \n  function overrides the inheritance of the parent's \n  __init__() function.",
+            "To keep the inheritance of the parent's __init__() \nfunction, add a call to the \nparent's __init__() function:",
+            "Example\n\n  class Student(Person):  def __init__(self, fname, lname):    \n  Person.__init__(self, fname, lname)\nTry it Yourself »",
+            "Now we have successfully added the __init__() function, and kept the \ninheritance of the parent class, and we are ready to add functionality in the\n__init__() function."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "class Student(Person):  def __init__(self, fname, lname):    \n  #add properties etc."
+            },
+            {
+                "heading": "Example",
+                "code": "class Student(Person):  def __init__(self, fname, lname):    \n  Person.__init__(self, fname, lname)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Use the super() Function",
+        "text": [
+            "Python also has a super() function that \nwill make the child class inherit all the methods and properties from its \nparent:",
+            "Example\n\n  class Student(Person):  def __init__(self, fname, lname):    \n    super().__init__(fname, lname)\nTry it Yourself »",
+            "By using the super() function, you do not \nhave to use the name of the parent element, it will automatically inherit the \nmethods and properties from its parent."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "class Student(Person):  def __init__(self, fname, lname):    \n    super().__init__(fname, lname)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Add Properties",
+        "text": [
+            "Example\nAdd a property called graduationyear to the\nStudent class:\n\n  class Student(Person):  def __init__(self, fname, lname):    \n  super().__init__(fname, lname)    self.graduationyear \n  = 2019\nTry it Yourself »",
+            "In the example below, the year 2019 should be a variable, and passed into the \nStudent class when creating student objects.\nTo do so, add another parameter in the __init__() function:",
+            "Example\nAdd a year parameter, and pass the correct \nyear when creating objects:\n\n  class Student(Person):  def __init__(self, fname, lname, year):    \n  super().__init__(fname, lname)    self.graduationyear \n  = yearx = Student(\"Mike\", \"Olsen\", 2019)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "class Student(Person):  def __init__(self, fname, lname):    \n  super().__init__(fname, lname)    self.graduationyear \n  = 2019"
+            },
+            {
+                "heading": "Example",
+                "code": "class Student(Person):  def __init__(self, fname, lname, year):    \n  super().__init__(fname, lname)    self.graduationyear \n  = yearx = Student(\"Mike\", \"Olsen\", 2019)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Add Methods",
+        "text": [
+            "Example\nAdd a method called welcome to the\nStudent class:\n\n  class Student(Person):  def __init__(self, fname, lname, year):    \n  super().__init__(fname, lname)    self.graduationyear \n  = year  def welcome(self):    print(\"Welcome\", \n  self.firstname, self.lastname, \"to the class of\", self.graduationyear)\nTry it Yourself »",
+            "If you add a method in the child class with the same name as a function in \nthe parent class, the inheritance of the parent method will be overridden.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "class Student(Person):  def __init__(self, fname, lname, year):    \n  super().__init__(fname, lname)    self.graduationyear \n  = year  def welcome(self):    print(\"Welcome\", \n  self.firstname, self.lastname, \"to the class of\", self.graduationyear)"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "title": "XML Schema",
+        "text": [
+            "XML Schema is an XML-based alternative to DTD:",
+            "<xs:element name=\"note\">\n<xs:complexType>\n  <xs:sequence>\n    <xs:element name=\"to\" type=\"xs:string\"/>\n    <xs:element name=\"from\" type=\"xs:string\"/>\n    <xs:element name=\"heading\" type=\"xs:string\"/>\n    <xs:element name=\"body\" type=\"xs:string\"/>\n  </xs:sequence>\n</xs:complexType>\n</xs:element>",
+            "The Schema above is interpreted like this:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Schemas are More Powerful than DTD",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Why Use an XML Schema?",
+        "text": [
+            "With XML Schema, your XML files can carry a description of its own format.",
+            "With XML Schema, independent groups of people can agree on a standard for interchanging data.",
+            "With XML Schema, you can verify data."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Schemas Support Data Types",
+        "text": [
+            "One of the greatest strengths of XML Schemas is the support for data types:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Schemas use XML Syntax",
+        "text": [
+            "Another great strength about XML Schemas is that they are written in XML:",
+            "If you want to study XML Schema, please read our\nXML Schema Tutorial.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

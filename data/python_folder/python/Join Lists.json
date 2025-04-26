@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Join Two Lists",
+        "text": [
+            "There are several ways to join, or concatenate, two or more lists in Python.",
+            "One of the easiest ways are by using the + \noperator.",
+            "Example\nJoin two list:\n\n  list1 = [\"a\", \"b\", \"c\"]list2 = [1, 2, 3]list3 = list1 + list2\n  print(list3)\nTry it Yourself »",
+            "Another way to join two lists is by appending all the items from list2 into \nlist1, one by one:",
+            "Example\nAppend list2 into list1:\n\n  list1 = [\"a\", \"b\" , \"c\"]list2 = [1, 2, 3]\nfor x in list2:  list1.append(x)print(list1)\nTry it Yourself »",
+            "Or you can use the extend() \nmethod, \nwhere the purpose is to add elements from one list to another \nlist:",
+            "Example\nUse the extend() method to add list2 at the end of list1:\n\n  list1 = [\"a\", \"b\" , \"c\"]list2 = [1, 2, 3]list1.extend(list2)\n  print(list1)\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "list1 = [\"a\", \"b\", \"c\"]list2 = [1, 2, 3]list3 = list1 + list2\n  print(list3)"
+            },
+            {
+                "heading": "Example",
+                "code": "list1 = [\"a\", \"b\" , \"c\"]list2 = [1, 2, 3]\nfor x in list2:  list1.append(x)print(list1)"
+            },
+            {
+                "heading": "Example",
+                "code": "list1 = [\"a\", \"b\" , \"c\"]list2 = [1, 2, 3]list1.extend(list2)\n  print(list1)"
+            }
+        ],
+        "tables": []
+    }
+]

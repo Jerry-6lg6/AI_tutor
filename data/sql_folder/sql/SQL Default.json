@@ -1,0 +1,53 @@
+[
+    {
+        "title": "SQL DEFAULT Constraint",
+        "text": [
+            "The DEFAULT constraint is used to set a default value for a column.",
+            "The default value will be added to all new records, if no other value is specified."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL DEFAULT on CREATE TABLE",
+        "text": [
+            "The following SQL sets a DEFAULT value for the \"City\" column when the \"Persons\" table is created:",
+            "My SQL / SQL Server / Oracle / MS Access:",
+            "CREATE TABLE Persons\n(\n    ID int NOT NULL,\n   \nLastName varchar(255) NOT NULL,\n   \nFirstName varchar(255),\n   \nAge int,\n   \nCity varchar(255) DEFAULT 'Sandnes'\n);",
+            "The DEFAULT constraint can also be used to insert system values, by using functions like \nGETDATE():",
+            "CREATE TABLE Orders\n(\n    ID int NOT NULL,\n   \nOrderNumber int NOT NULL,\n   \nOrderDate date DEFAULT GETDATE()\n);"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL DEFAULT on ALTER TABLE",
+        "text": [
+            "To create a DEFAULT constraint on the \"City\" column when the table is already created, use the following SQL:",
+            "MySQL:",
+            "ALTER TABLE Persons\nALTER City SET DEFAULT 'Sandnes';",
+            "SQL Server:",
+            "ALTER TABLE PersonsADD CONSTRAINT df_City DEFAULT 'Sandnes' FOR City;",
+            "MS Access:",
+            "ALTER TABLE Persons\nALTER COLUMN City SET DEFAULT 'Sandnes';",
+            "Oracle:",
+            "ALTER TABLE Persons\nMODIFY City DEFAULT 'Sandnes';"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP a DEFAULT Constraint",
+        "text": [
+            "To drop a DEFAULT constraint, use the following SQL:",
+            "MySQL:",
+            "ALTER TABLE Persons\nALTER City DROP DEFAULT;",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nALTER COLUMN City DROP DEFAULT;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

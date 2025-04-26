@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Sort the Result",
+        "text": [
+            "Use the ORDER BY statement to sort the result in ascending or descending \norder.",
+            "The ORDER BY keyword sorts the result ascending by default. To sort the \nresult in descending order, use the DESC keyword.",
+            "Example\nSort the result alphabetically by name:\n  result:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"SELECT * FROM customers ORDER BY name\"mycursor.execute(sql)\n  myresult = mycursor.fetchall()for x in myresult:  print(x)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = \n  mydb.cursor()sql = \"SELECT * FROM customers ORDER BY name\"mycursor.execute(sql)\n  myresult = mycursor.fetchall()for x in myresult:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "ORDER BY DESC",
+        "text": [
+            "Use the DESC keyword to sort the result in a descending order.",
+            "Example\nSort the result reverse alphabetically by name:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"SELECT * FROM customers ORDER BY \n  name DESC\"mycursor.execute(sql)myresult = mycursor.fetchall()for x in myresult:  \n  print(x)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\", \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")\nmycursor = mydb.cursor()sql = \"SELECT * FROM customers ORDER BY \n  name DESC\"mycursor.execute(sql)myresult = mycursor.fetchall()for x in myresult:  \n  print(x)"
+            }
+        ],
+        "tables": []
+    }
+]

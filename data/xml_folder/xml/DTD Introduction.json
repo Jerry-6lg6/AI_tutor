@@ -1,0 +1,53 @@
+[
+    {
+        "title": "What is a DTD?",
+        "text": [
+            "A DTD is a Document Type Definition.",
+            "A DTD defines the structure and the legal elements and attributes of an XML document."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Why Use a DTD?",
+        "text": [
+            "With a DTD, independent groups of people can agree on a standard DTD for interchanging data.",
+            "An application can use a DTD to verify that XML data is valid."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "An Internal DTD Declaration",
+        "text": [
+            "If the DTD is declared inside the XML file, it must be wrapped inside the <!DOCTYPE> definition:",
+            "XML document with an internal DTD\n\n<?xml version=\"1.0\"?>\n<!DOCTYPE note [\n  <!ELEMENT note (to,from,heading,body)>\n  <!ELEMENT to      (#PCDATA)>\n  <!ELEMENT from    (#PCDATA)>\n  <!ELEMENT heading (#PCDATA)>\n  <!ELEMENT body    (#PCDATA)>\n]>\n<note>\n  <to>Tove</to>\n  <from>Jani</from>\n  <heading>Reminder</heading>\n  <body>Don't forget me this weekend</body>\n</note>\n\nView XML file »\nIn the XML file, select \"view source\" to view the DTD.",
+            "The DTD above is interpreted like this:",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "XML document with an internal DTD",
+                "code": "<?xml version=\"1.0\"?>\n<!DOCTYPE note [\n  <!ELEMENT note (to,from,heading,body)>\n  <!ELEMENT to      (#PCDATA)>\n  <!ELEMENT from    (#PCDATA)>\n  <!ELEMENT heading (#PCDATA)>\n  <!ELEMENT body    (#PCDATA)>\n]>\n<note>\n  <to>Tove</to>\n  <from>Jani</from>\n  <heading>Reminder</heading>\n  <body>Don't forget me this weekend</body>\n</note>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "An External DTD Declaration",
+        "text": [
+            "If the DTD is declared in an external file, the <!DOCTYPE> definition must \ncontain a reference to the DTD file:",
+            "XML document with a reference to an external DTD\n\n<?xml version=\"1.0\"?>\n<!DOCTYPE note SYSTEM \"note.dtd\">\n<note>\n \n<to>Tove</to>\n \n<from>Jani</from>\n \n<heading>Reminder</heading>\n \n<body>Don't forget me this weekend!</body>\n</note>\n\nView XML file »",
+            "And here is the file \"note.dtd\", which contains the DTD:",
+            "<!ELEMENT note (to,from,heading,body)>\n<!ELEMENT to (#PCDATA)>\n<!ELEMENT from (#PCDATA)>\n<!ELEMENT heading (#PCDATA)>\n<!ELEMENT body (#PCDATA)>",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "XML document with a reference to an external DTD",
+                "code": "<?xml version=\"1.0\"?>\n<!DOCTYPE note SYSTEM \"note.dtd\">\n<note>\n \n<to>Tove</to>\n \n<from>Jani</from>\n \n<heading>Reminder</heading>\n \n<body>Don't forget me this weekend!</body>\n</note>"
+            }
+        ],
+        "tables": []
+    }
+]

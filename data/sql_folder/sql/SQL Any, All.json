@@ -1,0 +1,229 @@
+[
+    {
+        "title": "The SQL ANY and ALL Operators",
+        "text": [
+            "The ANY and ALL operators allow you to perform a comparison between a single \ncolumn value and a range of other values."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The SQL ANY Operator",
+        "text": [
+            "The ANY operator:",
+            "ANY means that the condition will be true if the operation is true for \nany of the values in the range.",
+            "SELECT column_name(s)\n  FROM table_name\n  WHERE \n  column_name operator ANY  (SELECT column_name  FROM table_name  WHERE\n  condition);",
+            "Note: The operator must be a standard comparison \noperator (=, <>, !=, >, >=, <, or <=)."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The SQL ALL Operator",
+        "text": [
+            "The ALL operator:",
+            "ALL means that the condition will be true only if the operation is true \nfor all values in the range.",
+            "SELECT column_name(s)\n  FROM table_name\n  WHERE \n  column_name operator ALL  (SELECT column_name  FROM table_name  WHERE condition);",
+            "Note: The operator must be a standard comparison \noperator (=, <>, !=, >, >=, <, or <=)."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the \"Products\" table in the Northwind sample database:",
+            "ProductID\nProductName\nSupplierID\nCategoryID\nUnit\nPrice\n\n\n1\nChais\n1\n1\n10 boxes x 20 bags\n18\n\n\n2\nChang\n1\n1\n24 - 12 oz bottles\n19\n\n\n3\nAniseed Syrup\n1\n2\n12 - 550 ml bottles\n10\n\n\n4\nChef Anton's Cajun Seasoning\n2\n2\n48 - 6 oz jars\n22\n\n\n5\nChef Anton's Gumbo Mix\n2\n2\n36 boxes\n21.35\n\n\n6\nGrandma's Boysenberry Spread\n3\n2\n12 - 8 oz jars\n25\n\n\n7\nUncle Bob's Organic Dried Pears\n3\n7\n12 - 1 lb pkgs.\n30\n\n\n8\nNorthwoods Cranberry Sauce\n3\n2\n12 - 12 oz jars\n40\n\n\n9\nMishi Kobe Niku\n4\n6\n18 - 500 g pkgs.\n97",
+            "And a selection from the \"OrderDetails\" table:",
+            "OrderDetailID\nOrderID\nProductID\nQuantity\n\n\n1\n10248\n11\n12\n\n\n2\n10248\n42\n10\n\n\n3\n10248\n72\n5\n\n\n4\n10249\n14\n9\n\n\n5\n10249\n51\n40\n\n\n6\n10250\n41\n10\n\n\n7\n10250\n51\n35\n\n\n8\n10250\n65\n15\n\n\n9\n10251\n22\n6\n\n\n10\n10251\n57\n15",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "ProductID": "1",
+                    "ProductName": "Chais",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "10 boxes x 20 bags",
+                    "Price": "18"
+                },
+                {
+                    "ProductID": "2",
+                    "ProductName": "Chang",
+                    "SupplierID": "1",
+                    "CategoryID": "1",
+                    "Unit": "24 - 12 oz bottles",
+                    "Price": "19"
+                },
+                {
+                    "ProductID": "3",
+                    "ProductName": "Aniseed Syrup",
+                    "SupplierID": "1",
+                    "CategoryID": "2",
+                    "Unit": "12 - 550 ml bottles",
+                    "Price": "10"
+                },
+                {
+                    "ProductID": "4",
+                    "ProductName": "Chef Anton's Cajun Seasoning",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "48 - 6 oz jars",
+                    "Price": "22"
+                },
+                {
+                    "ProductID": "5",
+                    "ProductName": "Chef Anton's Gumbo Mix",
+                    "SupplierID": "2",
+                    "CategoryID": "2",
+                    "Unit": "36 boxes",
+                    "Price": "21.35"
+                },
+                {
+                    "ProductID": "6",
+                    "ProductName": "Grandma's Boysenberry Spread",
+                    "SupplierID": "3",
+                    "CategoryID": "2",
+                    "Unit": "12 - 8 oz jars",
+                    "Price": "25"
+                },
+                {
+                    "ProductID": "7",
+                    "ProductName": "Uncle Bob's Organic Dried Pears",
+                    "SupplierID": "3",
+                    "CategoryID": "7",
+                    "Unit": "12 - 1 lb pkgs.",
+                    "Price": "30"
+                },
+                {
+                    "ProductID": "8",
+                    "ProductName": "Northwoods Cranberry Sauce",
+                    "SupplierID": "3",
+                    "CategoryID": "2",
+                    "Unit": "12 - 12 oz jars",
+                    "Price": "40"
+                },
+                {
+                    "ProductID": "9",
+                    "ProductName": "Mishi Kobe Niku",
+                    "SupplierID": "4",
+                    "CategoryID": "6",
+                    "Unit": "18 - 500 g pkgs.",
+                    "Price": "97"
+                }
+            ],
+            [
+                {
+                    "OrderDetailID": "1",
+                    "OrderID": "10248",
+                    "ProductID": "11",
+                    "Quantity": "12"
+                },
+                {
+                    "OrderDetailID": "2",
+                    "OrderID": "10248",
+                    "ProductID": "42",
+                    "Quantity": "10"
+                },
+                {
+                    "OrderDetailID": "3",
+                    "OrderID": "10248",
+                    "ProductID": "72",
+                    "Quantity": "5"
+                },
+                {
+                    "OrderDetailID": "4",
+                    "OrderID": "10249",
+                    "ProductID": "14",
+                    "Quantity": "9"
+                },
+                {
+                    "OrderDetailID": "5",
+                    "OrderID": "10249",
+                    "ProductID": "51",
+                    "Quantity": "40"
+                },
+                {
+                    "OrderDetailID": "6",
+                    "OrderID": "10250",
+                    "ProductID": "41",
+                    "Quantity": "10"
+                },
+                {
+                    "OrderDetailID": "7",
+                    "OrderID": "10250",
+                    "ProductID": "51",
+                    "Quantity": "35"
+                },
+                {
+                    "OrderDetailID": "8",
+                    "OrderID": "10250",
+                    "ProductID": "65",
+                    "Quantity": "15"
+                },
+                {
+                    "OrderDetailID": "9",
+                    "OrderID": "10251",
+                    "ProductID": "22",
+                    "Quantity": "6"
+                },
+                {
+                    "OrderDetailID": "10",
+                    "OrderID": "10251",
+                    "ProductID": "57",
+                    "Quantity": "15"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL ANY Examples",
+        "text": [
+            "The following SQL statement lists the ProductName if it \nfinds ANY records in the OrderDetails table has Quantity equal to 10 (this will \nreturn TRUE because the Quantity column has some values of 10):",
+            "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  FROM OrderDetails  WHERE Quantity = 10);\n\n  Try it Yourself »",
+            "The following SQL statement lists the ProductName if it \nfinds ANY records in the OrderDetails table has Quantity larger than 99 (this \nwill return TRUE because the Quantity column has some values larger than 99):",
+            "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  \n  FROM OrderDetails  WHERE Quantity > 99);\n\n  Try it Yourself »",
+            "The following SQL statement lists the ProductName if it \nfinds ANY records in the OrderDetails table has Quantity larger than 1000 (this \nwill return FALSE because the Quantity column has no values larger than 1000):",
+            "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  \n  FROM OrderDetails  WHERE Quantity > 1000);\n\n  Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  FROM OrderDetails  WHERE Quantity = 10);"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  \n  FROM OrderDetails  WHERE Quantity > 99);"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT ProductNameFROM ProductsWHERE ProductID = ANY  (SELECT ProductID  \n  FROM OrderDetails  WHERE Quantity > 1000);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "SQL ALL Examples",
+        "text": [
+            "The following SQL statement lists ALL the product names:",
+            "Example\n\n  SELECT ALL ProductNameFROM ProductsWHERE TRUE;\n\n  Try it Yourself »",
+            "The following SQL statement lists the ProductName if ALL the records in the \nOrderDetails table has Quantity equal to 10. This will of course return FALSE \nbecause the Quantity column has many different values (not only the value of 10):",
+            "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ALL  (SELECT ProductID  FROM OrderDetails  WHERE Quantity = 10);\n\n  Try it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT ALL ProductNameFROM ProductsWHERE TRUE;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT ProductNameFROM ProductsWHERE ProductID = ALL  (SELECT ProductID  FROM OrderDetails  WHERE Quantity = 10);"
+            }
+        ],
+        "tables": []
+    }
+]

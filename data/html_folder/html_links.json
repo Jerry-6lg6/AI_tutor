@@ -1,0 +1,278 @@
+[
+    {
+        "title": "HTML Introduction",
+        "url": "https://www.w3schools.com/html/html_intro.asp"
+    },
+    {
+        "title": "HTML Editors",
+        "url": "https://www.w3schools.com/html/html_editors.asp"
+    },
+    {
+        "title": "HTML Basic",
+        "url": "https://www.w3schools.com/html/html_basic.asp"
+    },
+    {
+        "title": "HTML Elements",
+        "url": "https://www.w3schools.com/html/html_elements.asp"
+    },
+    {
+        "title": "HTML Attributes",
+        "url": "https://www.w3schools.com/html/html_attributes.asp"
+    },
+    {
+        "title": "HTML Headings",
+        "url": "https://www.w3schools.com/html/html_headings.asp"
+    },
+    {
+        "title": "HTML Paragraphs",
+        "url": "https://www.w3schools.com/html/html_paragraphs.asp"
+    },
+    {
+        "title": "HTML Styles",
+        "url": "https://www.w3schools.com/html/html_styles.asp"
+    },
+    {
+        "title": "HTML Formatting",
+        "url": "https://www.w3schools.com/html/html_formatting.asp"
+    },
+    {
+        "title": "HTML Quotations",
+        "url": "https://www.w3schools.com/html/html_quotation_elements.asp"
+    },
+    {
+        "title": "HTML Comments",
+        "url": "https://www.w3schools.com/html/html_comments.asp"
+    },
+    {
+        "title": "HTML Colors",
+        "url": "https://www.w3schools.com/html/html_colors.asp"
+    },
+    {
+        "title": "Colors",
+        "url": "https://www.w3schools.com/html/html_colors.asp"
+    },
+    {
+        "title": "RGB",
+        "url": "https://www.w3schools.com/html/html_colors_rgb.asp"
+    },
+    {
+        "title": "HEX",
+        "url": "https://www.w3schools.com/html/html_colors_hex.asp"
+    },
+    {
+        "title": "HSL",
+        "url": "https://www.w3schools.com/html/html_colors_hsl.asp"
+    },
+    {
+        "title": "HTML CSS",
+        "url": "https://www.w3schools.com/html/html_css.asp"
+    },
+    {
+        "title": "HTML Links",
+        "url": "https://www.w3schools.com/html/html_links.asp"
+    },
+    {
+        "title": "Links",
+        "url": "https://www.w3schools.com/html/html_links.asp"
+    },
+    {
+        "title": "Link Colors",
+        "url": "https://www.w3schools.com/html/html_links_colors.asp"
+    },
+    {
+        "title": "Link Bookmarks",
+        "url": "https://www.w3schools.com/html/html_links_bookmarks.asp"
+    },
+    {
+        "title": "HTML Images",
+        "url": "https://www.w3schools.com/html/html_images.asp"
+    },
+    {
+        "title": "Images",
+        "url": "https://www.w3schools.com/html/html_images.asp"
+    },
+    {
+        "title": "Image Map",
+        "url": "https://www.w3schools.com/html/html_images_imagemap.asp"
+    },
+    {
+        "title": "Background Images",
+        "url": "https://www.w3schools.com/html/html_images_background.asp"
+    },
+    {
+        "title": "The Picture Element",
+        "url": "https://www.w3schools.com/html/html_images_picture.asp"
+    },
+    {
+        "title": "HTML Favicon",
+        "url": "https://www.w3schools.com/html/html_favicon.asp"
+    },
+    {
+        "title": "HTML Page Title",
+        "url": "https://www.w3schools.com/html/html_page_title.asp"
+    },
+    {
+        "title": "HTML Tables",
+        "url": "https://www.w3schools.com/html/html_tables.asp"
+    },
+    {
+        "title": "HTML Tables",
+        "url": "https://www.w3schools.com/html/html_tables.asp"
+    },
+    {
+        "title": "Table Borders",
+        "url": "https://www.w3schools.com/html/html_table_borders.asp"
+    },
+    {
+        "title": "Table Sizes",
+        "url": "https://www.w3schools.com/html/html_table_sizes.asp"
+    },
+    {
+        "title": "Table Headers",
+        "url": "https://www.w3schools.com/html/html_table_headers.asp"
+    },
+    {
+        "title": "Padding & Spacing",
+        "url": "https://www.w3schools.com/html/html_table_padding_spacing.asp"
+    },
+    {
+        "title": "Colspan & Rowspan",
+        "url": "https://www.w3schools.com/html/html_table_colspan_rowspan.asp"
+    },
+    {
+        "title": "Table Styling",
+        "url": "https://www.w3schools.com/html/html_table_styling.asp"
+    },
+    {
+        "title": "Table Colgroup",
+        "url": "https://www.w3schools.com/html/html_table_colgroup.asp"
+    },
+    {
+        "title": "HTML Lists",
+        "url": "https://www.w3schools.com/html/html_lists.asp"
+    },
+    {
+        "title": "Lists",
+        "url": "https://www.w3schools.com/html/html_lists.asp"
+    },
+    {
+        "title": "Unordered Lists",
+        "url": "https://www.w3schools.com/html/html_lists_unordered.asp"
+    },
+    {
+        "title": "Ordered Lists",
+        "url": "https://www.w3schools.com/html/html_lists_ordered.asp"
+    },
+    {
+        "title": "Other Lists",
+        "url": "https://www.w3schools.com/html/html_lists_other.asp"
+    },
+    {
+        "title": "HTML Block & Inline",
+        "url": "https://www.w3schools.com/html/html_blocks.asp"
+    },
+    {
+        "title": "HTML Div",
+        "url": "https://www.w3schools.com/html/html_div.asp"
+    },
+    {
+        "title": "HTML Classes",
+        "url": "https://www.w3schools.com/html/html_classes.asp"
+    },
+    {
+        "title": "HTML Id",
+        "url": "https://www.w3schools.com/html/html_id.asp"
+    },
+    {
+        "title": "HTML Iframes",
+        "url": "https://www.w3schools.com/html/html_iframe.asp"
+    },
+    {
+        "title": "HTML JavaScript",
+        "url": "https://www.w3schools.com/html/html_scripts.asp"
+    },
+    {
+        "title": "HTML File Paths",
+        "url": "https://www.w3schools.com/html/html_filepaths.asp"
+    },
+    {
+        "title": "HTML Head",
+        "url": "https://www.w3schools.com/html/html_head.asp"
+    },
+    {
+        "title": "HTML Layout",
+        "url": "https://www.w3schools.com/html/html_layout.asp"
+    },
+    {
+        "title": "HTML Responsive",
+        "url": "https://www.w3schools.com/html/html_responsive.asp"
+    },
+    {
+        "title": "HTML Computercode",
+        "url": "https://www.w3schools.com/html/html_computercode_elements.asp"
+    },
+    {
+        "title": "HTML Entities",
+        "url": "https://www.w3schools.com/html/html_entities.asp"
+    },
+    {
+        "title": "HTML Symbols",
+        "url": "https://www.w3schools.com/html/html_symbols.asp"
+    },
+    {
+        "title": "HTML Emojis",
+        "url": "https://www.w3schools.com/html/html_emojis.asp"
+    },
+    {
+        "title": "HTML Charsets",
+        "url": "https://www.w3schools.com/html/html_charset.asp"
+    },
+    {
+        "title": "HTML URL Encode",
+        "url": "https://www.w3schools.com/html/html_urlencode.asp"
+    },
+    {
+        "title": "HTML vs. XHTML",
+        "url": "https://www.w3schools.com/html/html_xhtml.asp"
+    },
+    {
+        "title": "HTML Forms",
+        "url": "https://www.w3schools.com/html/html_forms.asp"
+    },
+    {
+        "title": "HTML Form Attributes",
+        "url": "https://www.w3schools.com/html/html_forms_attributes.asp"
+    },
+    {
+        "title": "HTML Form Elements",
+        "url": "https://www.w3schools.com/html/html_form_elements.asp"
+    },
+    {
+        "title": "HTML Input Types",
+        "url": "https://www.w3schools.com/html/html_form_input_types.asp"
+    },
+    {
+        "title": "HTML Input Attributes",
+        "url": "https://www.w3schools.com/html/html_form_attributes.asp"
+    },
+    {
+        "title": "Input Form Attributes",
+        "url": "https://www.w3schools.com/html/html_form_attributes_form.asp"
+    },
+    {
+        "title": "HTML Media",
+        "url": "https://www.w3schools.com/html/html_media.asp"
+    },
+    {
+        "title": "HTML Plug-ins",
+        "url": "https://www.w3schools.com/html/html_object.asp"
+    },
+    {
+        "title": "HTML YouTube",
+        "url": "https://www.w3schools.com/html/html_youtube.asp"
+    },
+    {
+        "title": "Next ❯",
+        "url": "https://www.w3schools.com/html/html_intro.asp"
+    }
+]

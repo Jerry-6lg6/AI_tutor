@@ -1,0 +1,54 @@
+[
+    {
+        "title": "The XMLHttpRequest Object",
+        "text": [
+            "The XMLHttpRequest object can be used to request data from a web server.",
+            "The XMLHttpRequest object is a developers dream, because you can:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XMLHttpRequest Example",
+        "text": [
+            "When you type a character in the input field below, an XMLHttpRequest is sent to the server,\nand some name suggestions are returned \n(from the server):",
+            "Example\n\nStart typing a name in the input field below:\n \nName: \n  Suggestions:",
+            "The example above is explained in the AJAX chapters of this tutorial."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Sending an XMLHttpRequest",
+        "text": [
+            "A common JavaScript syntax for using the XMLHttpRequest object looks much like this:",
+            "Example\n\nvar xhttp = new XMLHttpRequest();xhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n        // Typical action to be performed when the document is ready:       \n document.getElementById(\"demo\").innerHTML = xhttp.responseText;\n    }};\nxhttp.open(\"GET\", \"filename\", true);\nxhttp.send();\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "var xhttp = new XMLHttpRequest();xhttp.onreadystatechange = function() {\n    if (this.readyState == 4 && this.status == 200) {\n        // Typical action to be performed when the document is ready:       \n document.getElementById(\"demo\").innerHTML = xhttp.responseText;\n    }};\nxhttp.open(\"GET\", \"filename\", true);\nxhttp.send();"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Example Explained",
+        "text": [
+            "The first line in the example above creates an XMLHttpRequest \nobject:",
+            "var xhttp = new XMLHttpRequest();",
+            "The onreadystatechange property specifies a function to be executed \nevery time the status of the XMLHttpRequest object changes:",
+            "xhttp.onreadystatechange = function()",
+            "When readyState property is 4 and the status \nproperty is 200, the response is ready:",
+            "if (this.readyState == 4 && this.status == 200)",
+            "The responseText property returns the server response as a \ntext string.",
+            "The text string can be used to update a web page:",
+            "document.getElementById(\"demo\").innerHTML = xhttp.responseText;",
+            "You will learn a lot more about the XMLHttpRequest object in the AJAX chapters of this tutorial.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

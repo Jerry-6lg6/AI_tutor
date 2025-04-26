@@ -1,0 +1,47 @@
+[
+    {
+        "title": "The HTML <picture> Element",
+        "text": [
+            "The HTML <picture> element gives web \ndevelopers more flexibility in \nspecifying image resources.",
+            "The <picture> element contains one or \nmore <source> elements, each referring \nto different images through the srcset \nattribute. This way the browser can choose the image that best \nfits the current view and/or device.",
+            "Each <source> element has a\nmedia attribute that defines when the image is the \nmost suitable.",
+            "Example\nShow different images for different screen sizes:\n\n  <picture>  <source media=\"(min-width: 650px)\" srcset=\"img_food.jpg\">\n   \n  <source media=\"(min-width: 465px)\" srcset=\"img_car.jpg\">  <img src=\"img_girl.jpg\"></picture>\nTry it Yourself »",
+            "Note: Always specify an <img> element as the last child \nelement of the <picture> element. The <img> element is used by browsers that do \nnot support the <picture> element, or if none of the <source> tags match.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<picture>  <source media=\"(min-width: 650px)\" srcset=\"img_food.jpg\">\n   \n  <source media=\"(min-width: 465px)\" srcset=\"img_car.jpg\">  <img src=\"img_girl.jpg\"></picture>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "When to use the Picture Element",
+        "text": [
+            "There are two main purposes for the <picture> element:",
+            "If you have a small screen or device, it is not necessary to load a large \nimage file. The browser will use the first <source> \nelement with matching attribute values, and ignore any of the following \nelements.",
+            "Some browsers or devices may not support all image formats. By using the\n<picture> element, you can add images of all \nformats, and the browser will use the first format it recognizes, and ignore any \nof the following elements.",
+            "Example\nThe browser will use the first image format it recognizes:\n\n  <picture>  <source srcset=\"img_avatar.png\">\n    <source srcset=\"img_girl.jpg\">\n    <img src=\"img_beatles.gif\" \n  alt=\"Beatles\" style=\"width:auto;\"></picture>\nTry it Yourself »",
+            "Note: The browser will use the first <source> element with matching attribute \nvalues, and ignore any following <source> elements.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<picture>  <source srcset=\"img_avatar.png\">\n    <source srcset=\"img_girl.jpg\">\n    <img src=\"img_beatles.gif\" \n  alt=\"Beatles\" style=\"width:auto;\"></picture>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Image Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

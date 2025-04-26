@@ -1,0 +1,136 @@
+[
+    {
+        "title": "INNER JOIN",
+        "text": [
+            "The INNER JOIN keyword selects records that have matching values in \nboth tables.",
+            "Let's look at a selection of the Products table:",
+            "ProductID\nProductName\nCategoryID\nPrice\n\n\n1\nChais\n1\n18\n\n2\nChang\n1\n19\n\n3\nAniseed Syrup\n2\n10",
+            "And a selection of the Categories table:",
+            "CategoryID\nCategoryName\nDescription\n\n\n1\nBeverages\nSoft drinks, coffees, teas, beers, and ales\n\n\n2\nCondiments\nSweet and savory sauces, relishes, spreads, and seasonings\n\n\n3\nConfections\nDesserts, candies, and sweet breads",
+            "We will join the Products table with the Categories table, by using the CategoryID field from both tables:",
+            "Example\nJoin Products and Categories with the INNER JOIN keyword:\n\n  SELECT ProductID, ProductName, CategoryNameFROM ProductsINNER JOIN \n  Categories ON Products.CategoryID = Categories.CategoryID;\n\n Try it Yourself »",
+            "",
+            "Note: The INNER JOIN keyword returns only rows with a match in both tables.\nWhich means that if you have a product with no CategoryID, or with a CategoryID that is not present in the Categories table, that record would not be returned in the result."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT ProductID, ProductName, CategoryNameFROM ProductsINNER JOIN \n  Categories ON Products.CategoryID = Categories.CategoryID;"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "ProductID": "1",
+                    "ProductName": "Chais",
+                    "CategoryID": "1",
+                    "Price": "18"
+                },
+                {
+                    "ProductID": "2",
+                    "ProductName": "Chang",
+                    "CategoryID": "1",
+                    "Price": "19"
+                },
+                {
+                    "ProductID": "3",
+                    "ProductName": "Aniseed Syrup",
+                    "CategoryID": "2",
+                    "Price": "10"
+                }
+            ],
+            [
+                {
+                    "CategoryID": "1",
+                    "CategoryName": "Beverages",
+                    "Description": "Soft drinks, coffees, teas, beers, and ales"
+                },
+                {
+                    "CategoryID": "2",
+                    "CategoryName": "Condiments",
+                    "Description": "Sweet and savory sauces, relishes, spreads, and seasonings"
+                },
+                {
+                    "CategoryID": "3",
+                    "CategoryName": "Confections",
+                    "Description": "Desserts, candies, and sweet breads"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Syntax",
+        "text": [
+            "SELECT column_name(s)\nFROM table1\nINNER JOIN table2 ON table1.column_name = table2.column_name;",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Naming the Columns",
+        "text": [
+            "It is a good practice to include the table name when specifying columns in the SQL statement.",
+            "Example\nSpecify the table names:\n\nSELECT Products.ProductID, Products.ProductName, Categories.CategoryName\nFROM Products\nINNER JOIN Categories ON Products.CategoryID = Categories.CategoryID;\n\n\n Try it Yourself »",
+            "The example above works without specifying table names, because none of the \nspecified column names are present in both tables.\nIf you try to include CategoryID in the \nSELECT statement, you will get an error if you do not specify the table name \n(because CategoryID is present in both tables)."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Products.ProductID, Products.ProductName, Categories.CategoryName\nFROM Products\nINNER JOIN Categories ON Products.CategoryID = Categories.CategoryID;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "JOIN or INNER JOIN",
+        "text": [
+            "JOIN and INNER JOIN will return the same result.",
+            "INNER is the default join type for JOIN,\nso when you write JOIN the parser actually writes INNER JOIN.",
+            "Example\nJOIN is the same as INNER JOIN:\n\nSELECT Products.ProductID, Products.ProductName, Categories.CategoryName\nFROM Products\nJOIN Categories ON Products.CategoryID = Categories.CategoryID;\n\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Products.ProductID, Products.ProductName, Categories.CategoryName\nFROM Products\nJOIN Categories ON Products.CategoryID = Categories.CategoryID;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "JOIN Three Tables",
+        "text": [
+            "The following SQL statement selects all orders with customer and shipper information:",
+            "Here is the Shippers table:",
+            "ShipperID\nShipperName\nPhone\n\n\n1\nSpeedy Express\n(503) 555-9831\n\n\n2\nUnited Package\n(503) 555-3199\n\n\n3\nFederal Shipping\n(503) 555-9931",
+            "Example\n\n  SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperNameFROM \n  ((OrdersINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)\n  INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);\n\n Try it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperNameFROM \n  ((OrdersINNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)\n  INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "ShipperID": "1",
+                    "ShipperName": "Speedy Express",
+                    "Phone": "(503) 555-9831"
+                },
+                {
+                    "ShipperID": "2",
+                    "ShipperName": "United Package",
+                    "Phone": "(503) 555-3199"
+                },
+                {
+                    "ShipperID": "3",
+                    "ShipperName": "Federal Shipping",
+                    "Phone": "(503) 555-9931"
+                }
+            ]
+        ]
+    }
+]

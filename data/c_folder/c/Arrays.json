@@ -1,0 +1,99 @@
+[
+    {
+        "title": "Arrays",
+        "text": [
+            "Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each \nvalue.",
+            "To create an array, define the data type (like int) and specify the name \nof the array followed by square brackets [].",
+            "To insert values to it, use a comma-separated list inside curly braces, and \nmake sure all values are of the same data type:",
+            "int myNumbers[] = {25, \n  50, 75, 100};",
+            "We have now created a variable that holds an array of four integers."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Access the Elements of an Array",
+        "text": [
+            "To access an array element, refer to its index number.",
+            "Array indexes start with 0: [0] is the first element. [1] is the second element, etc.",
+            "This statement accesses the value of the first element [0] in \nmyNumbers:",
+            "Example\n\n  int myNumbers[] = {25, 50, 75, 100};\n  printf(\"%d\", myNumbers[0]);// Outputs 25\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myNumbers[] = {25, 50, 75, 100};\n  printf(\"%d\", myNumbers[0]);// Outputs 25"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Change an Array Element",
+        "text": [
+            "To change the value of a specific element, refer to the index number:",
+            "Example\n\n  myNumbers[0] = 33;",
+            "Example\n\n  int myNumbers[] = {25, 50, 75, 100};myNumbers[0] = 33;\n  printf(\"%d\", myNumbers[0]);\n  // Now outputs 33 instead of 25\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "myNumbers[0] = 33;"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[] = {25, 50, 75, 100};myNumbers[0] = 33;\n  printf(\"%d\", myNumbers[0]);\n  // Now outputs 33 instead of 25"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Loop Through an Array",
+        "text": [
+            "You can loop through the array elements with the for \nloop.",
+            "The following example outputs all elements in the myNumbers \narray:",
+            "Example\n\n  int myNumbers[] = {25, 50, 75, 100};int i;for (i = 0; i < 4; i++) \n  {  printf(\"%d\\n\", myNumbers[i]);}\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myNumbers[] = {25, 50, 75, 100};int i;for (i = 0; i < 4; i++) \n  {  printf(\"%d\\n\", myNumbers[i]);}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Set Array Size",
+        "text": [
+            "Another common way to create arrays, is to specify the size of the array, and add \nelements later:",
+            "Example\n\n  // Declare an array of four integers:int myNumbers[4];// Add \n  elementsmyNumbers[0] = 25;myNumbers[1] = 50;myNumbers[2] = 75;\n  myNumbers[3] = 100;\n\nTry it Yourself »",
+            "Using this method, you should know the number of array elements in advance, \nin order for the program to store enough memory.",
+            "You are not able to change the size of the array after creation."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Declare an array of four integers:int myNumbers[4];// Add \n  elementsmyNumbers[0] = 25;myNumbers[1] = 50;myNumbers[2] = 75;\n  myNumbers[3] = 100;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Avoid Mixing Data Types",
+        "text": [
+            "It is important to note that all elements in an array must be of the same \ndata type.",
+            "This means you cannot mix different types of values, like integers and \nfloating point numbers, in the same array:",
+            "Example\n\n  int myArray[] = {25, 50, 75, \n  3.15, 5.99};\n\nTry it Yourself »",
+            "In the example above, the values 3.15 and 5.99 will be truncated to 3 and 5. In some cases it might also result in an error, so \nit is important to always make sure that the elements in the array are of the \nsame type.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myArray[] = {25, 50, 75, \n  3.15, 5.99};"
+            }
+        ],
+        "tables": []
+    }
+]

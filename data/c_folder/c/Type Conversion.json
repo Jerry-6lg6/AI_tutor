@@ -1,0 +1,93 @@
+[
+    {
+        "title": "Type Conversion",
+        "text": [
+            "Sometimes, you have to convert the value of one data type to another \ntype. This is known as type conversion.",
+            "For example, if you try to divide two integers, 5 by 2, you \nwould \nexpect the result to be 2.5. But since we are \nworking with integers (and not floating-point values), the following example will just output 2:",
+            "Example\n\n    int x = 5;int y = 2;int sum = 5 / 2;printf(\"%d\", \n    sum); // Outputs 2\nTry it Yourself »",
+            "To get the right result, you need to know how type conversion \nworks.",
+            "There are two types of conversion in C:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x = 5;int y = 2;int sum = 5 / 2;printf(\"%d\", \n    sum); // Outputs 2"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Implicit Conversion",
+        "text": [
+            "Implicit conversion is done automatically by the compiler when you assign a \nvalue of one type to another.",
+            "For example, if you assign an int value to a \nfloat type:",
+            "Example\n\n    // Automatic conversion: int to floatfloat myFloat = 9;printf(\"%f\", \n  myFloat); // 9.000000\nTry it Yourself »",
+            "As you can see, the compiler automatically converts the int value 9 to a \nfloat value of 9.000000.",
+            "This can be risky, as you might lose control over specific values in \ncertain situations.",
+            "Especially if it was the other way around - the following example \nautomatically converts the float value 9.99 to an int value of 9:",
+            "Example\n\n  // Automatic conversion: float to intint myInt = 9.99;printf(\"%d\", \n  myInt); // 9\nTry it Yourself »",
+            "What happened to .99? We might want that \ndata in our program! \nSo be careful. It is important that you know how the compiler work in these situations, to \navoid unexpected results.",
+            "As another example, if you divide two integers: 5 by 2, \nyou know that the sum is 2.5. And as you know from the beginning \nof this page, if you store the sum as an integer, the result will \nonly display the number \n2. Therefore, it would be better to store the sum \nas a \nfloat or a double, right?",
+            "Example\n\n  float sum = 5 / 2;\n  printf(\"%f\", sum); // 2.000000\nTry it Yourself »",
+            "Why is the result 2.00000 and not 2.5? Well, it is because \n5 and 2 are still integers in the division. \nIn this case, you need to manually convert the integer values to \nfloating-point values. (see below)."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Automatic conversion: int to floatfloat myFloat = 9;printf(\"%f\", \n  myFloat); // 9.000000"
+            },
+            {
+                "heading": "Example",
+                "code": "// Automatic conversion: float to intint myInt = 9.99;printf(\"%d\", \n  myInt); // 9"
+            },
+            {
+                "heading": "Example",
+                "code": "float sum = 5 / 2;\n  printf(\"%f\", sum); // 2.000000"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Explicit Conversion",
+        "text": [
+            "Explicit conversion is done manually by placing the type in parentheses () \nin front of the value.",
+            "Considering our problem from the example above, we can now get the right \nresult:",
+            "Example\n\n  // Manual conversion: int to floatfloat sum = (float) 5 / 2;printf(\"%f\", \n  sum); // 2.500000\nTry it Yourself »",
+            "You can also place the type in front of a variable:",
+            "Example\n\n  int num1 = 5;int num2 = 2;float sum = (float) num1 / num2;printf(\"%f\", \n  sum); // 2.500000\nTry it Yourself »",
+            "And since you learned about \"decimal precision\" in the previous chapter, \nyou could make the output even cleaner by removing the extra zeros (if you \nlike):",
+            "Example\n\n  int num1 = 5;int num2 = 2;float sum = (float) num1 / num2;printf(\"%.1f\", \n  sum); // 2.5\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Manual conversion: int to floatfloat sum = (float) 5 / 2;printf(\"%f\", \n  sum); // 2.500000"
+            },
+            {
+                "heading": "Example",
+                "code": "int num1 = 5;int num2 = 2;float sum = (float) num1 / num2;printf(\"%f\", \n  sum); // 2.500000"
+            },
+            {
+                "heading": "Example",
+                "code": "int num1 = 5;int num2 = 2;float sum = (float) num1 / num2;printf(\"%.1f\", \n  sum); // 2.5"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Real-Life Example",
+        "text": [
+            "Here's a real-life example of data types and type conversion where we create a program to calculate the percentage of a user's score in relation to the maximum score in a game:",
+            "Example\n\n  // Set the maximum possible score in the game to 500int maxScore = 500;\n// The actual score of the userint userScore = 423;/* \n  Calculate the percantage of the user's score in relation to the maximum \n  available score. Convert userScore to float to make sure that the division \n  is accurate */float percentage = (float) userScore / maxScore * 100.0;\n// Print the percentageprintf(\"User's percentage is %.2f\", percentage);\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Set the maximum possible score in the game to 500int maxScore = 500;\n// The actual score of the userint userScore = 423;/* \n  Calculate the percantage of the user's score in relation to the maximum \n  available score. Convert userScore to float to make sure that the division \n  is accurate */float percentage = (float) userScore / maxScore * 100.0;\n// Print the percentageprintf(\"User's percentage is %.2f\", percentage);"
+            }
+        ],
+        "tables": []
+    }
+]

@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Create a Bookmark in HTML",
+        "text": [
+            "Bookmarks can be useful if a web page is very long.",
+            "To create a bookmark - first create the bookmark, then add a link \nto it.",
+            "When the link is clicked, the page will scroll down or up to the location with the \nbookmark."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Example",
+        "text": [
+            "First, use the id attribute to create a \nbookmark:",
+            "<h2 id=\"C4\">Chapter 4</h2>",
+            "Then, add a link to the bookmark (\"Jump to Chapter 4\"), from within the same page:",
+            "Example\n\n <a href=\"#C4\">Jump to Chapter 4</a>\n\nTry it Yourself »",
+            "You can also add a link to a bookmark on another page:",
+            "<a href=\"html_demo.html#C4\">Jump to Chapter 4</a>",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<a href=\"#C4\">Jump to Chapter 4</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Link Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

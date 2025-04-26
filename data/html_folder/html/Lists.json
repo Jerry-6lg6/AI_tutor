@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Unordered HTML List",
+        "text": [
+            "An unordered list starts with the <ul> tag. Each list item starts with the \n<li> tag.",
+            "The list items will be marked with bullets (small black circles) by default:",
+            "Example\n\n<ul>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ul>\n\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<ul>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ul>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Ordered HTML List",
+        "text": [
+            "An ordered list starts with the <ol> tag. Each list item starts with the <li> tag.",
+            "The list items will be marked with numbers by default:",
+            "Example\n\n<ol>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ol>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<ol>\n \n<li>Coffee</li>  <li>Tea</li>\n \n<li>Milk</li>\n</ol>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Description Lists",
+        "text": [
+            "HTML also supports description lists.",
+            "A description list is a list of terms, with a description of each term.",
+            "The <dl> tag defines the description list, the <dt> tag defines the term (name), and the <dd>  \ntag describes each term:",
+            "Example\n\n<dl>\n \n<dt>Coffee</dt>\n \n<dd>- black hot drink</dd>\n \n<dt>Milk</dt>\n \n<dd>- white cold drink</dd>\n</dl>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<dl>\n \n<dt>Coffee</dt>\n \n<dd>- black hot drink</dd>\n \n<dt>Milk</dt>\n \n<dd>- white cold drink</dd>\n</dl>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML List Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

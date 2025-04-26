@@ -1,0 +1,106 @@
+[
+    {
+        "title": "HTML <blockquote> for Quotations",
+        "text": [
+            "The HTML <blockquote> element defines a section that \nis quoted from another source.",
+            "Browsers usually indent <blockquote> elements.",
+            "Example\n\n <p>Here is a quote from WWF's website:</p><blockquote cite=\"http://www.worldwildlife.org/who/index.html\">\n  For 60 years, WWF has worked to help people and nature thrive. As the world's \n  leading conservation organization, WWF works in nearly 100 countries. At every \n  level, we collaborate with people around the world to develop and deliver \n  innovative solutions that protect communities, wildlife, and the places in \n  which they live.</blockquote>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>Here is a quote from WWF's website:</p><blockquote cite=\"http://www.worldwildlife.org/who/index.html\">\n  For 60 years, WWF has worked to help people and nature thrive. As the world's \n  leading conservation organization, WWF works in nearly 100 countries. At every \n  level, we collaborate with people around the world to develop and deliver \n  innovative solutions that protect communities, wildlife, and the places in \n  which they live.</blockquote>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <q> for Short Quotations",
+        "text": [
+            "The HTML <q> tag defines a short quotation.",
+            "Browsers normally insert quotation marks around the quotation.",
+            "Example\n\n <p>WWF's goal is to: <q>Build a future where people live in harmony with \n nature.</q></p>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>WWF's goal is to: <q>Build a future where people live in harmony with \n nature.</q></p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <abbr> for Abbreviations",
+        "text": [
+            "The HTML <abbr> tag defines an abbreviation or an acronym, like \"HTML\", \n\"CSS\", \"Mr.\", \n\"Dr.\", \"ASAP\", \"ATM\".",
+            "Marking abbreviations can give useful information to browsers, translation \nsystems and search-engines.",
+            "Tip: Use the global title attribute to \nshow the description for the \nabbreviation/acronym when you mouse over the element.",
+            "Example\n\n <p>The <abbr title=\"World Health Organization\">WHO</abbr> was founded in \n 1948.</p>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>The <abbr title=\"World Health Organization\">WHO</abbr> was founded in \n 1948.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <address> for Contact Information",
+        "text": [
+            "The HTML <address> tag defines the contact information for the author/owner of a document \nor an article.",
+            "The contact information can be an email address, URL, physical address, phone \nnumber, social media handle, etc.",
+            "The text in the <address> element usually renders in italic, \nand browsers will\nalways add a line break before and after the <address> element.",
+            "Example\n\n\n <address>Written by John Doe.<br> Visit us at:<br>Example.com<br>\n Box 564, Disneyland<br>USA</address>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<address>Written by John Doe.<br> Visit us at:<br>Example.com<br>\n Box 564, Disneyland<br>USA</address>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <cite> for Work Title",
+        "text": [
+            "The HTML <cite> tag defines the title of a \ncreative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).",
+            "Note: A person's name is not the title of a work.",
+            "The text in the <cite> element usually renders in italic.",
+            "Example\n\n <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <bdo> for Bi-Directional Override",
+        "text": [
+            "BDO stands for Bi-Directional Override.",
+            "The HTML <bdo> tag is used to override \nthe current text direction:",
+            "Example\n\n <bdo dir=\"rtl\">This text will be written from right to left</bdo>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<bdo dir=\"rtl\">This text will be written from right to left</bdo>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Quotation and Citation Elements",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Adding Numbers and Strings",
+        "text": [
+            "WARNING!\nC++ uses the + operator for both addition and \n concatenation.\nNumbers are added. Strings are concatenated.",
+            "If you add two numbers, the result will be a number:",
+            "Example\n\n  int x = 10;\n  int y = 20;\n  int z = x + y;      // z will be 30 (an integer)\n\nTry it Yourself »",
+            "If you add two strings, the result will be a string concatenation:",
+            "Example\n\n  string x = \"10\";\n  string y = \"20\";\n  string z = x + y;   // z will be 1020 (a string)\n\nTry it Yourself »",
+            "If you try to add a number to a string, an error occurs:",
+            "Example\n\n  string x = \"10\";\n  int y = 20;\n  string z = x + y;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x = 10;\n  int y = 20;\n  int z = x + y;      // z will be 30 (an integer)"
+            },
+            {
+                "heading": "Example",
+                "code": "string x = \"10\";\n  string y = \"20\";\n  string z = x + y;   // z will be 1020 (a string)"
+            },
+            {
+                "heading": "Example",
+                "code": "string x = \"10\";\n  int y = 20;\n  string z = x + y;"
+            }
+        ],
+        "tables": []
+    }
+]

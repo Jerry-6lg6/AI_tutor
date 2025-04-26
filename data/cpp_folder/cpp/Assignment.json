@@ -1,0 +1,96 @@
+[
+    {
+        "title": "Assignment Operators",
+        "text": [
+            "Assignment operators are used to assign values to variables.",
+            "In the example below, we use the assignment operator (=) \nto assign the value 10 to a variable called x:",
+            "Example\n\nint x = 10;\nTry it Yourself »",
+            "The addition assignment operator (+=) adds a value to a variable:",
+            "Example\n\nint x = 10;x += 5;\nTry it Yourself »",
+            "A list of all assignment operators:",
+            "Operator\nExample\nSame As\nTry it\n\n\n=\nx = 5\nx = 5\nTry it »\n\n\n+=\nx += 3\nx = x + 3\nTry it »\n\n\n-=\nx -= 3\nx = x - 3\nTry it »\n\n\n*=\nx *= 3\nx = x * 3\nTry it »\n\n\n/=\nx /= 3\nx = x / 3\nTry it »\n\n\n%=\nx %= 3\nx = x % 3\nTry it »\n\n\n&=\nx &= 3\nx = x & 3\nTry it »\n\n\n|=\nx |= 3\nx = x | 3\nTry it »\n\n\n^=\nx ^= 3\nx = x ^ 3\nTry it »\n\n\n>>=\nx >>= 3\nx = x >> 3\nTry it »\n\n\n<<=\nx <<= 3\nx = x << 3\nTry it »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x = 10;"
+            },
+            {
+                "heading": "Example",
+                "code": "int x = 10;x += 5;"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "Operator": "=",
+                    "Example": "x = 5",
+                    "Same As": "x = 5",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "+=",
+                    "Example": "x += 3",
+                    "Same As": "x = x + 3",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "-=",
+                    "Example": "x -= 3",
+                    "Same As": "x = x - 3",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "*=",
+                    "Example": "x *= 3",
+                    "Same As": "x = x * 3",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "/=",
+                    "Example": "x /= 3",
+                    "Same As": "x = x / 3",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "%=",
+                    "Example": "x %= 3",
+                    "Same As": "x = x % 3",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "&=",
+                    "Example": "x &= 3",
+                    "Same As": "x = x & 3",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "|=",
+                    "Example": "x |= 3",
+                    "Same As": "x = x | 3",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "^=",
+                    "Example": "x ^= 3",
+                    "Same As": "x = x ^ 3",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": ">>=",
+                    "Example": "x >>= 3",
+                    "Same As": "x = x >> 3",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "<<=",
+                    "Example": "x <<= 3",
+                    "Same As": "x = x << 3",
+                    "Try it": "Try it »"
+                }
+            ]
+        ]
+    }
+]

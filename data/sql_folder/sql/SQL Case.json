@@ -1,0 +1,84 @@
+[
+    {
+        "title": "The SQL CASE Expression",
+        "text": [
+            "The CASE expression goes through conditions and returns a value when the first condition is \nmet (like an if-then-else statement). So, once a condition is true, it will stop \nreading and return the result. If no conditions are true, it returns \nthe value in the ELSE clause.",
+            "If there is no ELSE part and no conditions are true, it returns NULL."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "CASE Syntax",
+        "text": [
+            "CASE    WHEN condition1 THEN result1    \n  WHEN condition2 THEN result2    WHEN \n  conditionN THEN resultN    ELSE resultEND;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the \"OrderDetails\" table in the Northwind sample database:",
+            "OrderDetailID\nOrderID\nProductID\nQuantity\n\n\n1\n10248\n11\n12\n\n\n2\n10248\n42\n10\n\n\n3\n10248\n72\n5\n\n\n4\n10249\n14\n9\n\n\n5\n10249\n51\n40",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "OrderDetailID": "1",
+                    "OrderID": "10248",
+                    "ProductID": "11",
+                    "Quantity": "12"
+                },
+                {
+                    "OrderDetailID": "2",
+                    "OrderID": "10248",
+                    "ProductID": "42",
+                    "Quantity": "10"
+                },
+                {
+                    "OrderDetailID": "3",
+                    "OrderID": "10248",
+                    "ProductID": "72",
+                    "Quantity": "5"
+                },
+                {
+                    "OrderDetailID": "4",
+                    "OrderID": "10249",
+                    "ProductID": "14",
+                    "Quantity": "9"
+                },
+                {
+                    "OrderDetailID": "5",
+                    "OrderID": "10249",
+                    "ProductID": "51",
+                    "Quantity": "40"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL CASE Examples",
+        "text": [
+            "The following SQL goes through conditions and returns a value when the first condition is met:",
+            "Example\n\n  SELECT OrderID, Quantity,CASE    WHEN Quantity > 30 \n  THEN 'The quantity is greater than 30'    WHEN Quantity = 30 THEN 'The \n  quantity is 30'    ELSE 'The quantity is under 30'END AS QuantityTextFROM OrderDetails;\nTry it Yourself »",
+            "The following SQL will order the customers by City. However, if City is NULL, then order by Country:",
+            "Example\n\n  SELECT CustomerName, City, CountryFROM CustomersORDER BY(CASE    \n  WHEN City IS NULL THEN Country    ELSE CityEND);\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT OrderID, Quantity,CASE    WHEN Quantity > 30 \n  THEN 'The quantity is greater than 30'    WHEN Quantity = 30 THEN 'The \n  quantity is 30'    ELSE 'The quantity is under 30'END AS QuantityTextFROM OrderDetails;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, City, CountryFROM CustomersORDER BY(CASE    \n  WHEN City IS NULL THEN Country    ELSE CityEND);"
+            }
+        ],
+        "tables": []
+    }
+]

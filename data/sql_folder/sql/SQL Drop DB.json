@@ -1,0 +1,29 @@
+[
+    {
+        "title": "The SQL DROP DATABASE Statement",
+        "text": [
+            "The DROP DATABASE statement is used to drop an existing SQL database.",
+            "DROP DATABASE databasename;",
+            "Note: Be careful before dropping a database. Deleting \na database will result in loss of complete information stored in the database!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "DROP DATABASE Example",
+        "text": [
+            "The following SQL statement drops the existing database \"testDB\":",
+            "Example\n\n  DROP DATABASE testDB;",
+            "Tip: Make sure you have admin privilege before dropping any database. Once a \ndatabase is dropped, you can check it in the list of databases with the \nfollowing SQL command: SHOW DATABASES;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "DROP DATABASE testDB;"
+            }
+        ],
+        "tables": []
+    }
+]

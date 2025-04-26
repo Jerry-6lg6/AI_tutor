@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Creating a Table",
+        "text": [
+            "To create a table in MySQL, use the \"CREATE TABLE\" statement.",
+            "Make sure you define the name of the database when you create the connection",
+            "Example\nCreate a table named \"customers\":\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",\n    database=\"mydatabase\")mycursor = mydb.cursor()\nmycursor.execute(\"CREATE TABLE customers (name VARCHAR(255), \n  address VARCHAR(255))\")\nRun example »",
+            "If the above code was executed with no errors, you have now successfully \ncreated a table."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",\n    database=\"mydatabase\")mycursor = mydb.cursor()\nmycursor.execute(\"CREATE TABLE customers (name VARCHAR(255), \n  address VARCHAR(255))\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Check if Table Exists",
+        "text": [
+            "You can check if a table exist by listing all tables in your database with the \"SHOW TABLES\" statement:",
+            "Example\nReturn a list of your system's databases:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",  \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = mydb.cursor()\n  mycursor.execute(\"SHOW TABLES\")for x in mycursor:  \n  print(x)\nRun example »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",  \n  user=\"yourusername\",  password=\"yourpassword\",  database=\"mydatabase\")mycursor = mydb.cursor()\n  mycursor.execute(\"SHOW TABLES\")for x in mycursor:  \n  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Primary Key",
+        "text": [
+            "When creating a table, you should also create a column with a unique key for each \nrecord.",
+            "This can be done by defining a PRIMARY KEY.",
+            "We use the statement \"INT AUTO_INCREMENT PRIMARY KEY\" which will insert a \nunique number for each record. Starting at 1, and increased by one for each \nrecord.",
+            "Example\nCreate primary key when creating the table:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",\n    database=\"mydatabase\")mycursor = mydb.cursor()\nmycursor.execute(\"CREATE TABLE customers (id INT AUTO_INCREMENT \n  PRIMARY KEY, name VARCHAR(255), \n  address VARCHAR(255))\")\nRun example »",
+            "If the table already exists, use the ALTER TABLE keyword:",
+            "Example\nCreate primary key on an existing table:\n\n  import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",\n    database=\"mydatabase\")mycursor = mydb.cursor()\nmycursor.execute(\"ALTER TABLE customers ADD COLUMN id INT AUTO_INCREMENT \n  PRIMARY KEY\")\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",\n    database=\"mydatabase\")mycursor = mydb.cursor()\nmycursor.execute(\"CREATE TABLE customers (id INT AUTO_INCREMENT \n  PRIMARY KEY, name VARCHAR(255), \n  address VARCHAR(255))\")"
+            },
+            {
+                "heading": "Example",
+                "code": "import mysql.connectormydb = mysql.connector.connect(  host=\"localhost\",\n   \n  user=\"yourusername\",  password=\"yourpassword\",\n    database=\"mydatabase\")mycursor = mydb.cursor()\nmycursor.execute(\"ALTER TABLE customers ADD COLUMN id INT AUTO_INCREMENT \n  PRIMARY KEY\")"
+            }
+        ],
+        "tables": []
+    }
+]

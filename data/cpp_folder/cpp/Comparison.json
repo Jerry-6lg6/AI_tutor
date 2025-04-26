@@ -1,0 +1,62 @@
+[
+    {
+        "title": "Comparison Operators",
+        "text": [
+            "Comparison operators are used to compare two values (or variables). This is important in programming, because it helps us to find answers and make decisions.",
+            "The return value of a comparison is either 1 or 0, which means true (1) or false (0). These values are known as \nBoolean values, and you will learn more about them in the Booleans and If..Else chapter.",
+            "In the following example, we use the greater than operator (>) to find out if 5 is greater than 3:",
+            "Example\n\n  int x = 5;int y = 3;cout << (x > y); // returns 1 (true) because 5 is greater than 3\nTry it Yourself »",
+            "A list of all comparison operators:",
+            "Operator\nName\nExample\nTry it\n\n\n==\nEqual to\nx == y\nTry it »\n\n\n!=\nNot equal\nx != y\nTry it »\n\n\n>\nGreater than\nx > y\nTry it »\n\n\n<\nLess than\nx < y\nTry it »\n\n\n>=\nGreater than or equal to\nx >= y\nTry it »\n\n\n<=\nLess than or equal to\nx <= y\nTry it »",
+            "You will learn much more about comparison operators and how to use them in a later chapter.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x = 5;int y = 3;cout << (x > y); // returns 1 (true) because 5 is greater than 3"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "Operator": "==",
+                    "Name": "Equal to",
+                    "Example": "x == y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "!=",
+                    "Name": "Not equal",
+                    "Example": "x != y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": ">",
+                    "Name": "Greater than",
+                    "Example": "x > y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "<",
+                    "Name": "Less than",
+                    "Example": "x < y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": ">=",
+                    "Name": "Greater than or equal to",
+                    "Example": "x >= y",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "<=",
+                    "Name": "Less than or equal to",
+                    "Example": "x <= y",
+                    "Try it": "Try it »"
+                }
+            ]
+        ]
+    }
+]

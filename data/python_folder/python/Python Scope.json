@@ -1,0 +1,80 @@
+[
+    {
+        "title": "Local Scope",
+        "text": [
+            "A variable created inside a function belongs to the local scope of \nthat function, and can only be used inside that function.",
+            "As explained in the example above, the variable x is not available outside the function, \nbut it is available for any function inside the function:",
+            "Example\nThe local variable can be accessed from a function within the function:\n\n  def myfunc():  x = 300  def myinnerfunc():    print(x)  \n  myinnerfunc()myfunc()\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def myfunc():  x = 300  print(x)myfunc()"
+            },
+            {
+                "heading": "Example",
+                "code": "def myfunc():  x = 300  def myinnerfunc():    print(x)  \n  myinnerfunc()myfunc()"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Global Scope",
+        "text": [
+            "A variable created in the main body of the Python code is a global variable \nand belongs to the global scope.",
+            "Global variables are available from within any scope, global and local.",
+            "If you operate with the same variable name inside and outside of a function, Python will treat them as two \nseparate variables,\none available in the global scope (outside the function) and one available in the local scope (inside the function):",
+            "Example\nThe function will print the local x, and \n  then the code will print the global x:\n\n    x = 300def myfunc():  x = 200  \n    print(x)myfunc()print(x)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = 300def myfunc():  print(x)myfunc()print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = 300def myfunc():  x = 200  \n    print(x)myfunc()print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Global Keyword",
+        "text": [
+            "If you need to create a global variable, but are stuck in the local scope, you can use the \nglobal keyword.",
+            "The global keyword makes the variable global.",
+            "Example\nIf you use the global keyword, the variable belongs to the global scope:\n\n    def myfunc():  global x  x = 300myfunc()\n    print(x)\nTry it Yourself »",
+            "Also, use the global keyword if you want to \nmake a change to a global variable inside a function.",
+            "Example\nTo change the value of a global variable inside a function, refer to the \n  variable by using the global keyword:\n\n  x = 300def myfunc():  global x  x = 200myfunc()\nprint(x)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def myfunc():  global x  x = 300myfunc()\n    print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = 300def myfunc():  global x  x = 200myfunc()\nprint(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Nonlocal Keyword",
+        "text": [
+            "The nonlocal keyword is used to work with variables inside nested functions.",
+            "The nonlocal keyword makes the variable belong to the outer function.",
+            "Example\nIf you use the nonlocal keyword, the variable will belong to the outer function:\n\ndef myfunc1():\n  x = \"Jane\"\n  def myfunc2():\n    nonlocal x\n    x = \"hello\"\n  myfunc2()\n  return x\n\nprint(myfunc1())\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def myfunc1():\n  x = \"Jane\"\n  def myfunc2():\n    nonlocal x\n    x = \"hello\"\n  myfunc2()\n  return x\n\nprint(myfunc1())"
+            }
+        ],
+        "tables": []
+    }
+]

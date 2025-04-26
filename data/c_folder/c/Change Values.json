@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Change Variable Values",
+        "text": [
+            "If you assign a new value to an existing variable, it will overwrite the previous value:",
+            "Example\n\n  int myNum = 15;  // myNum is 15myNum = 10;  // Now myNum is 10\nTry it Yourself »",
+            "You can also assign the value of one variable to another:",
+            "Example\n\n  int myNum = 15;int myOtherNum = 23;// Assign the value of \n  myOtherNum (23) to myNummyNum = myOtherNum;// myNum is now 23, \n  instead of 15printf(\"%d\", myNum);\nTry it Yourself »",
+            "Or copy values to empty variables:",
+            "Example\n\n  // Create a variable and assign the value 15 to itint myNum = 15;\n  // Declare a variable without assigning it a valueint myOtherNum;\n  // Assign the value of myNum to myOtherNummyOtherNum = myNum;// \n  myOtherNum now has 15 as a valueprintf(\"%d\", myOtherNum);\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myNum = 15;  // myNum is 15myNum = 10;  // Now myNum is 10"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNum = 15;int myOtherNum = 23;// Assign the value of \n  myOtherNum (23) to myNummyNum = myOtherNum;// myNum is now 23, \n  instead of 15printf(\"%d\", myNum);"
+            },
+            {
+                "heading": "Example",
+                "code": "// Create a variable and assign the value 15 to itint myNum = 15;\n  // Declare a variable without assigning it a valueint myOtherNum;\n  // Assign the value of myNum to myOtherNummyOtherNum = myNum;// \n  myOtherNum now has 15 as a valueprintf(\"%d\", myOtherNum);"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Add Variables Together",
+        "text": [
+            "To add a variable to another variable, you can use the + \noperator:",
+            "Example\n\n  int x = 5;int y = 6;int sum = x + y;printf(\"%d\", sum);\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int x = 5;int y = 6;int sum = x + y;printf(\"%d\", sum);"
+            }
+        ],
+        "tables": []
+    }
+]

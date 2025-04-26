@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Display Variables",
+        "text": [
+            "The println() method is often used to display variables.",
+            "To combine both text and a variable, use the + character:",
+            "Example\nString name = \"John\";\nSystem.out.println(\"Hello \" + name);\n\n\nTry it Yourself »",
+            "You can also use the + character to add a variable to another variable:",
+            "Example\nString firstName = \"John \";\nString lastName = \"Doe\";\nString fullName = firstName + lastName;\nSystem.out.println(fullName);\n\n\nTry it Yourself »",
+            "For numeric values, the + character works as a mathematical operator (notice that we use int (integer) variables here):",
+            "Example\nint x = 5;\nint y = 6;\nSystem.out.println(x + y); // Print the value of x + y\n\n\nTry it Yourself »",
+            "From the example above, you can expect:",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,25 @@
+[
+    {
+        "title": "The foreach Loop",
+        "text": [
+            "There is also a \"for-each loop\" (also known as ranged-based for loop), which is \nused exclusively to loop through elements in an array (or other data structures):",
+            "Syntax\n\n  for (type variableName : arrayName) {  // code block to be executed\n  }",
+            "The following example outputs all elements in an array, using a \"for-each loop\":",
+            "Example\n\n  int myNumbers[5] = {10, 20, 30, 40, 50};for (int i : myNumbers) {  \n  cout << i << \"\\n\";}\n\nTry it Yourself »",
+            "Note: Don't worry if you don't understand the example above. You will learn more about arrays in the C++ Arrays chapter.\nGood to know: The for-each loop was introduced in C++ version 11 (2011).",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Syntax",
+                "code": "for (type variableName : arrayName) {  // code block to be executed\n  }"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[5] = {10, 20, 30, 40, 50};for (int i : myNumbers) {  \n  cout << i << \"\\n\";}"
+            }
+        ],
+        "tables": []
+    }
+]

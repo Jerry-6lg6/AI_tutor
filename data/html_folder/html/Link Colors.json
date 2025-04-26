@@ -1,0 +1,43 @@
+[
+    {
+        "title": "HTML Link Colors",
+        "text": [
+            "By default, a link will appear like this (in all browsers):",
+            "You can change the link state colors, by using CSS:",
+            "Example\nHere, an unvisited link will be green with no underline. A visited link \nwill be pink with no underline. An active link will be yellow and underlined. \nIn addition, when mousing over a link (a:hover) it will become red and underlined:\n\n<style>a:link {  color: green;   background-color: transparent; \n    text-decoration: none;}\na:visited {  color: pink;  background-color: transparent;  \n  text-decoration: none;}a:hover {  color: red;  background-color: transparent;\n    text-decoration: underline;}\n  a:active {  color: yellow;  background-color: transparent;  \n  text-decoration: underline;}</style>\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>a:link {  color: green;   background-color: transparent; \n    text-decoration: none;}\na:visited {  color: pink;  background-color: transparent;  \n  text-decoration: none;}a:hover {  color: red;  background-color: transparent;\n    text-decoration: underline;}\n  a:active {  color: yellow;  background-color: transparent;  \n  text-decoration: underline;}</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Link Buttons",
+        "text": [
+            "A link can also be styled as a button, by using CSS:",
+            "Example\n\n<style>a:link, a:visited {  background-color: #f44336;  \n  color: white;  padding: 15px 25px;  text-align: center;  \n  text-decoration: none;  display: inline-block;}a:hover, a:active {  \n  background-color: red;}</style>\n\nTry it Yourself »",
+            "To learn more about CSS, go to our CSS Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>a:link, a:visited {  background-color: #f44336;  \n  color: white;  padding: 15px 25px;  text-align: center;  \n  text-decoration: none;  display: inline-block;}a:hover, a:active {  \n  background-color: red;}</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Link Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

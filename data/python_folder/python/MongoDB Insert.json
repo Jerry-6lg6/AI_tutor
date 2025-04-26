@@ -1,0 +1,66 @@
+[
+    {
+        "title": "Insert Into Collection",
+        "text": [
+            "To insert a record, or document as it is called in MongoDB, into a collection, we use the \ninsert_one() method.",
+            "The first parameter of the insert_one() method is a \ndictionary containing the \nname(s) and value(s) of each field in the document you want to insert.",
+            "Example\nInsert a record in the \"customers\" collection:\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmydict = { \"name\": \"John\", \"address\": \"Highway 37\" }\n  x =\n  mycol.insert_one(mydict)\nRun example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmydict = { \"name\": \"John\", \"address\": \"Highway 37\" }\n  x =\n  mycol.insert_one(mydict)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Return the _id Field",
+        "text": [
+            "The insert_one() method returns a InsertOneResult object, which has a \nproperty, inserted_id, that holds the id of the inserted document.",
+            "Example\nInsert another record in the \"customers\" collection, and return the value of the\n_id field:\n\n  mydict = { \"name\": \"Peter\", \"address\": \"Lowstreet 27\" }\n  x = mycol.insert_one(mydict)print(x.inserted_id)\nRun example »",
+            "If you do not specify an _id field, then MongoDB \nwill add one for you and assign a unique id for each document.",
+            "In the example above no _id field was \nspecified, so MongoDB assigned a unique \n_id for the record (document).",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "mydict = { \"name\": \"Peter\", \"address\": \"Lowstreet 27\" }\n  x = mycol.insert_one(mydict)print(x.inserted_id)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Insert Multiple Documents",
+        "text": [
+            "To insert multiple documents into a collection in MongoDB, we use the \ninsert_many() method.",
+            "The first parameter of the insert_many() method \nis a list containing dictionaries with the data you want to insert:",
+            "Example\n\n    import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nmydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmylist = [  { \"name\": \"Amy\", \"address\": \"Apple st 652\"},  \n    { \"name\": \"Hannah\", \"address\": \"Mountain 21\"},  { \"name\": \n    \"Michael\", \"address\": \"Valley 345\"},  { \"name\": \"Sandy\", \"address\": \n    \"Ocean blvd 2\"},  { \"name\": \"Betty\", \"address\": \"Green Grass 1\"},  \n    { \"name\": \"Richard\", \"address\": \"Sky st 331\"},  { \"name\": \"Susan\", \n    \"address\": \"One way 98\"},  { \"name\": \"Vicky\", \"address\": \"Yellow \n    Garden 2\"},  { \"name\": \"Ben\", \"address\": \"Park Lane 38\"},  \n    { \"name\": \"William\", \"address\": \"Central st 954\"},  { \"name\": \n    \"Chuck\", \"address\": \"Main Road 989\"},  { \"name\": \"Viola\", \n    \"address\": \"Sideway 1633\"}]x = mycol.insert_many(mylist)#print list of the _id values of the inserted \n    documents:print(x.inserted_ids)\nRun example »",
+            "The insert_many() method returns a InsertManyResult object, which has a property, inserted_ids, that holds the ids of the inserted documents."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nmydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmylist = [  { \"name\": \"Amy\", \"address\": \"Apple st 652\"},  \n    { \"name\": \"Hannah\", \"address\": \"Mountain 21\"},  { \"name\": \n    \"Michael\", \"address\": \"Valley 345\"},  { \"name\": \"Sandy\", \"address\": \n    \"Ocean blvd 2\"},  { \"name\": \"Betty\", \"address\": \"Green Grass 1\"},  \n    { \"name\": \"Richard\", \"address\": \"Sky st 331\"},  { \"name\": \"Susan\", \n    \"address\": \"One way 98\"},  { \"name\": \"Vicky\", \"address\": \"Yellow \n    Garden 2\"},  { \"name\": \"Ben\", \"address\": \"Park Lane 38\"},  \n    { \"name\": \"William\", \"address\": \"Central st 954\"},  { \"name\": \n    \"Chuck\", \"address\": \"Main Road 989\"},  { \"name\": \"Viola\", \n    \"address\": \"Sideway 1633\"}]x = mycol.insert_many(mylist)#print list of the _id values of the inserted \n    documents:print(x.inserted_ids)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Insert Multiple Documents, with Specified IDs",
+        "text": [
+            "If you do not want MongoDB to assign unique ids for your document, you can \nspecify the _id field when you insert the document(s).",
+            "Remember that the values has to be unique. Two documents cannot have the same \n_id.",
+            "Example\n\n    import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nmydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmylist = [  { \"_id\": 1, \"name\": \"John\", \"address\": \"Highway 37\"},  \n    { \"_id\": 2, \"name\": \"Peter\", \"address\": \"Lowstreet 27\"},  { \"_id\": \n    3, \"name\": \"Amy\", \"address\": \"Apple st 652\"},  { \"_id\": 4, \"name\": \n    \"Hannah\", \"address\": \"Mountain 21\"},  { \"_id\": 5, \"name\": \n    \"Michael\", \"address\": \"Valley 345\"},  { \"_id\": 6, \"name\": \"Sandy\", \n    \"address\": \"Ocean blvd 2\"},  { \"_id\": 7, \"name\": \"Betty\", \n    \"address\": \"Green Grass 1\"},  { \"_id\": 8, \"name\": \"Richard\", \n    \"address\": \"Sky st 331\"},  { \"_id\": 9, \"name\": \"Susan\", \"address\": \n    \"One way 98\"},  { \"_id\": 10, \"name\": \"Vicky\", \"address\": \"Yellow \n    Garden 2\"},  { \"_id\": 11, \"name\": \"Ben\", \"address\": \"Park Lane \n    38\"},  { \"_id\": 12, \"name\": \"William\", \"address\": \"Central st \n    954\"},  { \"_id\": 13, \"name\": \"Chuck\", \"address\": \"Main Road 989\"},  \n    { \"_id\": 14, \"name\": \"Viola\", \"address\": \"Sideway 1633\"}]x = mycol.insert_many(mylist)#print list of the _id values of the inserted \n    documents:print(x.inserted_ids)\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nmydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nmylist = [  { \"_id\": 1, \"name\": \"John\", \"address\": \"Highway 37\"},  \n    { \"_id\": 2, \"name\": \"Peter\", \"address\": \"Lowstreet 27\"},  { \"_id\": \n    3, \"name\": \"Amy\", \"address\": \"Apple st 652\"},  { \"_id\": 4, \"name\": \n    \"Hannah\", \"address\": \"Mountain 21\"},  { \"_id\": 5, \"name\": \n    \"Michael\", \"address\": \"Valley 345\"},  { \"_id\": 6, \"name\": \"Sandy\", \n    \"address\": \"Ocean blvd 2\"},  { \"_id\": 7, \"name\": \"Betty\", \n    \"address\": \"Green Grass 1\"},  { \"_id\": 8, \"name\": \"Richard\", \n    \"address\": \"Sky st 331\"},  { \"_id\": 9, \"name\": \"Susan\", \"address\": \n    \"One way 98\"},  { \"_id\": 10, \"name\": \"Vicky\", \"address\": \"Yellow \n    Garden 2\"},  { \"_id\": 11, \"name\": \"Ben\", \"address\": \"Park Lane \n    38\"},  { \"_id\": 12, \"name\": \"William\", \"address\": \"Central st \n    954\"},  { \"_id\": 13, \"name\": \"Chuck\", \"address\": \"Main Road 989\"},  \n    { \"_id\": 14, \"name\": \"Viola\", \"address\": \"Sideway 1633\"}]x = mycol.insert_many(mylist)#print list of the _id values of the inserted \n    documents:print(x.inserted_ids)"
+            }
+        ],
+        "tables": []
+    }
+]

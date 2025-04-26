@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Logical Operators",
+        "text": [
+            "As with comparison operators, you can also test for true (1) or false (0) values with \nlogical operators.",
+            "Logical operators are used to determine the logic between variables or \nvalues:",
+            "Operator\nName\nDescription\nExample\nTry it\n\n\n&& \nLogical and\nReturns true if both statements are true\nx < 5 &&  x < 10\nTry it »\n\n\n|| \nLogical or\nReturns true if one of the statements is true\nx < 5 || x < 4\nTry it »\n\n\n!\nLogical not\nReverse the result, returns false if the result is true\n!(x < 5 && x < 10)\nTry it »",
+            "You will learn much more about true and false values in a later chapter.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Operator": "&&",
+                    "Name": "Logical and",
+                    "Description": "Returns true if both statements are true",
+                    "Example": "x < 5 &&  x < 10",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "||",
+                    "Name": "Logical or",
+                    "Description": "Returns true if one of the statements is true",
+                    "Example": "x < 5 || x < 4",
+                    "Try it": "Try it »"
+                },
+                {
+                    "Operator": "!",
+                    "Name": "Logical not",
+                    "Description": "Reverse the result, returns false if the result is true",
+                    "Example": "!(x < 5 && x < 10)",
+                    "Try it": "Try it »"
+                }
+            ]
+        ]
+    }
+]

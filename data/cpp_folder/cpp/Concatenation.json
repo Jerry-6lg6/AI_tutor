@@ -1,0 +1,39 @@
+[
+    {
+        "title": "String Concatenation",
+        "text": [
+            "The + operator can be used between strings to add them together to make a new \nstring. This is called concatenation:",
+            "Example\n\n  string firstName = \"John \";string lastName = \"Doe\";string fullName = \n  firstName + lastName;cout << fullName;\nTry it Yourself »",
+            "In the example above, we added a space after firstName to create a space \nbetween John and Doe on output. However, you could also add a space with quotes (\" \" or ' '):",
+            "Example\n\n  string firstName = \"John\";string lastName = \"Doe\";string fullName = \n  firstName + \" \" + lastName;cout << fullName;\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string firstName = \"John \";string lastName = \"Doe\";string fullName = \n  firstName + lastName;cout << fullName;"
+            },
+            {
+                "heading": "Example",
+                "code": "string firstName = \"John\";string lastName = \"Doe\";string fullName = \n  firstName + \" \" + lastName;cout << fullName;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Append",
+        "text": [
+            "A string in C++ is actually an object, which contain functions that can perform certain operations on strings. For example, you can also concatenate strings with the append() function:",
+            "Example\n\n  string firstName = \"John \";string lastName = \"Doe\";string fullName = \n  firstName.append(lastName);cout << fullName;\nTry it Yourself »",
+            "Tip: A list of other useful string functions, can be found in our String Functions Reference.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string firstName = \"John \";string lastName = \"Doe\";string fullName = \n  firstName.append(lastName);cout << fullName;"
+            }
+        ],
+        "tables": []
+    }
+]

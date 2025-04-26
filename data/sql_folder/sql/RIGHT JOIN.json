@@ -1,0 +1,19 @@
+[
+    {
+        "title": "RIGHT JOIN",
+        "text": [
+            "The RIGHT JOIN command returns all rows from \nthe right table, and the matching records from the left table. The result is \nNULL from the left side, when there is no match.",
+            "The following SQL will return all employees, and any orders they \nmight have placed:",
+            "Example\n\n SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n ORDER BY Orders.OrderID;\nTry it Yourself »",
+            "Note: The RIGHT JOIN keyword returns all records from the \nright table (Employees), even if there are no matches in the left table \n(Orders).",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n ORDER BY Orders.OrderID;"
+            }
+        ],
+        "tables": []
+    }
+]

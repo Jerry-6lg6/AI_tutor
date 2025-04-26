@@ -1,0 +1,99 @@
+[
+    {
+        "title": "Color Names",
+        "text": [
+            "In HTML, a color can be specified by using a color name:",
+            "Tomato\n\n\nOrange\n\n\nDodgerBlue\n\n\nMediumSeaGreen\n\n\nGray\n\n\nSlateBlue\n\n\nViolet\n\n\nLightGray",
+            "Try it Yourself »",
+            "HTML supports 140 standard color names."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Background Color",
+        "text": [
+            "You can set the background color for HTML elements:",
+            "Hello World",
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.\n  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+            "Example\n\n  <h1 style=\"background-color:DodgerBlue;\">Hello World</h1><p style=\"background-color:Tomato;\">Lorem \n  ipsum...</p>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"background-color:DodgerBlue;\">Hello World</h1><p style=\"background-color:Tomato;\">Lorem \n  ipsum...</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Text Color",
+        "text": [
+            "You can set the color of text:",
+            "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+            "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+            "Example\n\n  <h1 style=\"color:Tomato;\">Hello \n  World</h1><p style=\"color:DodgerBlue;\">Lorem \n  ipsum...</p><p style=\"color:MediumSeaGreen;\">Ut wisi \n  enim...</p>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"color:Tomato;\">Hello \n  World</h1><p style=\"color:DodgerBlue;\">Lorem \n  ipsum...</p><p style=\"color:MediumSeaGreen;\">Ut wisi \n  enim...</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Border Color",
+        "text": [
+            "You can set the color of borders:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Hello World",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Hello World",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Hello World",
+        "text": [
+            "Example\n\n  <h1 style=\"border:2px \n  solid Tomato;\">Hello \n  World</h1><h1 style=\"border:2px \n  solid DodgerBlue;\">Hello \n  World</h1><h1 style=\"border:2px \n  solid Violet;\">Hello \n  World</h1>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"border:2px \n  solid Tomato;\">Hello \n  World</h1><h1 style=\"border:2px \n  solid DodgerBlue;\">Hello \n  World</h1><h1 style=\"border:2px \n  solid Violet;\">Hello \n  World</h1>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Color Values",
+        "text": [
+            "In HTML, colors can also be specified using RGB values, HEX values, HSL \nvalues, RGBA values, and HSLA values.",
+            "The following three <div> elements have their background color set with RGB, \nHEX, and HSL values:",
+            "rgb(255, 99, 71)\n#ff6347\nhsl(9, 100%, 64%)",
+            "The following two <div> elements have their background color set with RGBA \nand HSLA values, which add an Alpha channel to the color (here we have 50% \ntransparency):",
+            "rgba(255, 99, 71, 0.5)\nhsla(9, 100%, 64%, 0.5)",
+            "Example\n\n  <h1 style=\"background-color:rgb(255, \n  99, 71);\">...</h1><h1 style=\"background-color:#ff6347;\">...</h1><h1 style=\"background-color:hsl(9, \n  100%, 64%);\">...</h1><h1 style=\"background-color:rgba(255, \n  99, 71, 0.5);\">...</h1><h1 style=\"background-color:hsla(9, \n  100%, 64%, 0.5);\">...</h1>\nTry it Yourself »",
+            "",
+            "Learn more about Color Values\nYou will learn more about RGB, HEX and HSL in the next chapters."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<h1 style=\"background-color:rgb(255, \n  99, 71);\">...</h1><h1 style=\"background-color:#ff6347;\">...</h1><h1 style=\"background-color:hsl(9, \n  100%, 64%);\">...</h1><h1 style=\"background-color:rgba(255, \n  99, 71, 0.5);\">...</h1><h1 style=\"background-color:hsla(9, \n  100%, 64%, 0.5);\">...</h1>"
+            }
+        ],
+        "tables": []
+    }
+]

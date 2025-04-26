@@ -1,0 +1,106 @@
+[
+    {
+        "title": "What is XML?",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Does Not DO Anything",
+        "text": [
+            "Maybe it is a little hard to understand, but XML does not DO anything.",
+            "This note is a note to Tove from Jani, stored as XML:",
+            "<note>\n \n<to>Tove</to>\n \n<from>Jani</from>\n \n<heading>Reminder</heading>\n \n<body>Don't forget me this weekend!</body>\n</note>",
+            "The XML above is quite self-descriptive:",
+            "But still, the XML above does not DO anything. XML is just information wrapped in tags.",
+            "Someone must write a piece of software to send, receive, store, or display it:",
+            "Note\nTo: Tove\nFrom: Jani\nReminder\nDon't forget me this weekend!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Note",
+        "text": [
+            "To: Tove",
+            "From: Jani",
+            "Don't forget me this weekend!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The Difference Between XML and HTML",
+        "text": [
+            "XML and HTML were designed with different goals:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Does Not Use Predefined Tags",
+        "text": [
+            "The XML language has no predefined tags.",
+            "The tags in the example above (like <to> and <from>) are not defined in any XML standard. These tags are \"invented\" by the author of the XML document.",
+            "HTML works with predefined tags like <p>, <h1>, <table>, etc.",
+            "With XML, the author must define both the tags and the document structure."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML is Extensible",
+        "text": [
+            "Most XML applications will work as expected even if new data is added (or \nremoved).",
+            "Imagine an application designed to display the original version of note.xml \n(<to> <from> <heading> <body>).",
+            "Then imagine a newer version of note.xml with added <date> and <hour> \nelements, and a removed <heading>.",
+            "The way XML is constructed, older version of the application can still work:",
+            "<note>\n \n <date>2015-09-01</date>  <hour>08:30</hour>  <to>Tove</to>\n \n<from>Jani</from>\n \n<body>Don't forget me this weekend!</body>\n</note>",
+            "Old Version\n\nNote\nTo: Tove\nFrom: Jani\nReminder\nDon't forget me this weekend!\n\n\n\nNew Version\n\nNote\nTo: Tove\nFrom: Jani\nDate: 2015-09-01 08:30\nDon't forget me this weekend!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Note",
+        "text": [
+            "To: Tove",
+            "From: Jani",
+            "Don't forget me this weekend!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Note",
+        "text": [
+            "To: Tove",
+            "From: Jani",
+            "Date: 2015-09-01 08:30",
+            "Don't forget me this weekend!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML Simplifies Things",
+        "text": [
+            "Many computer systems contain data in incompatible formats. Exchanging data \nbetween incompatible systems (or upgraded systems) is a time-consuming task \nfor web developers. Large amounts of data must be converted, and incompatible data is \noften lost.",
+            "XML stores data in plain text format. This provides a software- and\nhardware-independent way of storing, transporting, and sharing data.",
+            "XML also makes it easier to expand or upgrade to new operating systems, new \napplications, or new browsers, without losing data.",
+            "With XML, data can be available to all kinds of \"reading\nmachines\" like people, computers, voice machines, news feeds, etc."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML is a W3C Recommendation",
+        "text": [
+            "XML became a W3C Recommendation as early as in February 1998.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

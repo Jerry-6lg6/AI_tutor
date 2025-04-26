@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Unpacking a Tuple",
+        "text": [
+            "When we create a tuple, we normally assign values to it. This is called \"packing\" a tuple:",
+            "Example\nPacking a tuple:\n\nfruits = (\"apple\", \"banana\", \"cherry\")\n\nTry it Yourself »",
+            "But, in Python, we are also allowed to extract the values back into variables. This is called \"unpacking\":",
+            "Example\nUnpacking a tuple:\n\nfruits = (\"apple\", \"banana\", \"cherry\")\n\n(green, yellow, red) = fruits\n\nprint(green)\nprint(yellow)\nprint(red)\n\nTry it Yourself »",
+            "Note: The number of variables must match the number of values in the tuple, \n  if not, you must use an asterisk to collect the remaining values as a list.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "fruits = (\"apple\", \"banana\", \"cherry\")"
+            },
+            {
+                "heading": "Example",
+                "code": "fruits = (\"apple\", \"banana\", \"cherry\")\n\n(green, yellow, red) = fruits\n\nprint(green)\nprint(yellow)\nprint(red)"
+            }
+        ],
+        "tables": []
+    }
+]

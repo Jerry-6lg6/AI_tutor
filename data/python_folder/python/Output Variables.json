@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Output Variables",
+        "text": [
+            "The Python print() function is often used to output variables.",
+            "Example\n\nx = \"Python is awesome\"\nprint(x)\n\nTry it Yourself »",
+            "In the print() function, you output multiple \nvariables, separated by a comma:",
+            "Example\n\n  x = \"Python\"y = \"is\"z = \"awesome\"print(x, y, z)\n\nTry it Yourself »",
+            "You can also use the + operator to output \nmultiple variables:",
+            "Example\n\nx = \"Python \"y = \"is \"z = \"awesome\"print(x \n  + y + z)\n\nTry it Yourself »",
+            "Notice the space character after \"Python \" and \"is \",\n  without them the result would be \"Pythonisawesome\".",
+            "For numbers, the + character works as a mathematical operator:",
+            "Example\n\nx = 5y = 10print(x + y)\n\nTry it Yourself »",
+            "In the print() function, when you try to \ncombine a string and a number with the + \noperator, Python will give you an error:",
+            "Example\n\n  x = 5y = \"John\"print(x + y)\n\nTry it Yourself »",
+            "The best way to output multiple variables in the print() function is to separate them with commas,\nwhich even support different data types:",
+            "Example\n\nx = 5y = \"John\"print(x, y)\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = \"Python is awesome\"\nprint(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = \"Python\"y = \"is\"z = \"awesome\"print(x, y, z)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = \"Python \"y = \"is \"z = \"awesome\"print(x \n  + y + z)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = 5y = 10print(x + y)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = 5y = \"John\"print(x + y)"
+            },
+            {
+                "heading": "Example",
+                "code": "x = 5y = \"John\"print(x, y)"
+            }
+        ],
+        "tables": []
+    }
+]

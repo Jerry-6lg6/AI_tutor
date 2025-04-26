@@ -1,0 +1,81 @@
+[
+    {
+        "title": "Upper Case",
+        "text": [
+            "Example\nThe upper() method returns the string in upper case:\n\na = \"Hello, World!\"\nprint(a.upper())\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \"Hello, World!\"\nprint(a.upper())"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Lower Case",
+        "text": [
+            "Example\nThe lower() method returns the string in lower case:\n\na = \"Hello, World!\"\nprint(a.lower())\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \"Hello, World!\"\nprint(a.lower())"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Remove Whitespace",
+        "text": [
+            "Whitespace is the space before and/or after the actual text, and very often you want to remove this space.",
+            "Example\nThe strip() method removes any whitespace from the beginning or the end:\n\na = \" Hello, World! \"\nprint(a.strip()) # returns \"Hello, World!\"\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \" Hello, World! \"\nprint(a.strip()) # returns \"Hello, World!\""
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Replace String",
+        "text": [
+            "Example\nThe replace() method replaces a string with another string:\n\na = \"Hello, World!\"\nprint(a.replace(\"H\", \"J\"))\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \"Hello, World!\"\nprint(a.replace(\"H\", \"J\"))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Split String",
+        "text": [
+            "The split() method returns a list where the text between the specified separator becomes the list items.",
+            "Example\nThe split() method splits the string into substrings if it finds instances of the separator:\n\na = \"Hello, World!\"\nprint(a.split(\",\")) # \n  returns ['Hello', ' World!']\n\nTry it Yourself »",
+            "Learn more about Lists in our Python Lists chapter."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "a = \"Hello, World!\"\nprint(a.split(\",\")) # \n  returns ['Hello', ' World!']"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "String Methods",
+        "text": [
+            "Learn more about String Methods with our String Methods Reference",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

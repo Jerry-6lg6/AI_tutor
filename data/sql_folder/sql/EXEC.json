@@ -1,0 +1,18 @@
+[
+    {
+        "title": "EXEC",
+        "text": [
+            "The EXEC command is used to execute a stored procedure.",
+            "The following SQL executes a stored procedure named \"SelectAllCustomers\":",
+            "Example\n\n  EXEC SelectAllCustomers;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "EXEC SelectAllCustomers;"
+            }
+        ],
+        "tables": []
+    }
+]

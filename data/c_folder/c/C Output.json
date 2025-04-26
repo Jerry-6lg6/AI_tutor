@@ -1,0 +1,31 @@
+[
+    {
+        "title": "Output (Print Text)",
+        "text": [
+            "To output values or print text in C, you can use the printf() \nfunction:",
+            "Example\n\n  #include <stdio.h>int main() {  printf(\"Hello World!\");  \n  return 0;}\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "#include <stdio.h>int main() {  printf(\"Hello World!\");  \n  return 0;}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Double Quotes",
+        "text": [
+            "When you are working with text, it must be wrapped inside double quotations marks \"\".",
+            "If you forget the double quotes, an error occurs:",
+            "Example\n\n  printf(\"This sentence will work!\");\n\n\n  printf(This \n    sentence will produce an error.);\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "printf(\"This sentence will work!\");"
+            }
+        ],
+        "tables": []
+    }
+]

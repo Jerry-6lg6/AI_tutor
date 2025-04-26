@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Creating a Collection",
+        "text": [
+            "To create a collection in MongoDB, use database object and specify the name \nof the collection you want to create.",
+            "MongoDB will create the collection if it does not exist.",
+            "Example\nCreate a collection called \"customers\":\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]\nRun example »",
+            "Important: In MongoDB, a collection is not created until it \n  gets content!",
+            "MongoDB waits until you have inserted a document before it actually creates the collection."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\n  mydb = myclient[\"mydatabase\"]mycol = mydb[\"customers\"]"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Check if Collection Exists",
+        "text": [
+            "Remember: In MongoDB, a collection is not created until it \n  gets content, so if this is your first time creating a collection, you should \n  complete the next chapter (create document) before \n  you check if the collection exists!",
+            "You can check if a collection exist in a database by listing all collections:",
+            "Example\nReturn a list of all collections in your database:\n\n  print(mydb.list_collection_names())\nRun example »",
+            "Or you can check a specific collection by name:",
+            "Example\nCheck if the \"customers\" collection exists:\n\n  collist = mydb.list_collection_names()if \"customers\" in collist:  \n  print(\"The collection exists.\")\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(mydb.list_collection_names())"
+            },
+            {
+                "heading": "Example",
+                "code": "collist = mydb.list_collection_names()if \"customers\" in collist:  \n  print(\"The collection exists.\")"
+            }
+        ],
+        "tables": []
+    }
+]

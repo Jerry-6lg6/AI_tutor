@@ -1,0 +1,120 @@
+[
+    {
+        "title": "The SQL SELECT DISTINCT Statement",
+        "text": [
+            "The SELECT DISTINCT statement is used to return only distinct \n(different) values.",
+            "Example\nSelect all the different countries from the \"Customers\" table:\n\nSELECT DISTINCT Country FROM Customers;\n\nTry it Yourself »",
+            "Inside a table, a column often contains many duplicate values; and sometimes you \nonly want to list the different (distinct) values."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT DISTINCT Country FROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Syntax",
+        "text": [
+            "SELECT DISTINCT column1, column2, ...\n FROM table_name;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Customers table used in the examples:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SELECT Example Without DISTINCT",
+        "text": [
+            "If you omit the DISTINCT keyword, the SQL statement \nreturns the \"Country\" value from all the records of the \"Customers\" table:",
+            "Example\n\nSELECT Country FROM Customers;\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Country FROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Count Distinct",
+        "text": [
+            "By using the DISTINCT keyword in a function called \nCOUNT, we can return the number of different countries.",
+            "Example\n\n  SELECT COUNT(DISTINCT Country) FROM Customers;",
+            "Note: The COUNT(DISTINCT column_name) is not supported in Microsoft Access databases.",
+            "Here is a workaround for MS Access:",
+            "Example\n\n  SELECT Count(*) AS DistinctCountriesFROM (SELECT DISTINCT Country FROM Customers);",
+            "You will learn about the COUNT function later in this tutorial.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT COUNT(DISTINCT Country) FROM Customers;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT Count(*) AS DistinctCountriesFROM (SELECT DISTINCT Country FROM Customers);"
+            }
+        ],
+        "tables": []
+    }
+]

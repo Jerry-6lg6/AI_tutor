@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Real-Life Example",
+        "text": [
+            "Here's a real-life example of using different data types, to calculate and output the total cost of a number of items:",
+            "Example\n// Create variables of different data types\nint items = 50;\nfloat costPerItem = 9.99f;\nfloat totalCost = items * costPerItem;\nchar currency = '$';\n\n// Print variables\nSystem.out.println(\"Number of items: \" + items);\nSystem.out.println(\"Cost per item: \" + costPerItem + currency);\nSystem.out.println(\"Total cost = \" + totalCost + currency);\n\nTry it Yourself »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,24 @@
+[
+    {
+        "title": "What is Python?",
+        "text": [
+            "Python is a popular programming language. It was created by Guido van Rossum, \nand released in 1991.",
+            "It is used for:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Why Python?",
+        "text": [
+            "Example\n\nprint(\"Hello, World!\")\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(\"Hello, World!\")"
+            }
+        ],
+        "tables": []
+    }
+]

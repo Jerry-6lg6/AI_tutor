@@ -1,0 +1,89 @@
+[
+    {
+        "title": "SQL RIGHT JOIN Keyword",
+        "text": [
+            "The RIGHT JOIN keyword returns all records from the right table (table2), and the \nmatching records from the left table (table1). The result is 0 records from the left side, \nif there is no match.",
+            "SELECT column_name(s)\nFROM table1\nRIGHT JOIN table2 ON table1.column_name = table2.column_name;",
+            "Note: In some databases RIGHT JOIN is called \nRIGHT OUTER JOIN.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "In this tutorial we will use the well-known Northwind sample database.",
+            "Below is a selection from the \"Orders\" table:",
+            "OrderID\nCustomerID\nEmployeeID\nOrderDate\nShipperID\n\n\n10308\n2\n7\n1996-09-18\n3\n\n\n10309\n37\n3\n1996-09-19\n1\n\n\n10310\n77\n8\n1996-09-20\n2",
+            "And a selection from the \"Employees\" table:",
+            "EmployeeID\nLastName\nFirstName\nBirthDate\nPhoto\n\n\n1\nDavolio\nNancy\n12/8/1968\nEmpID1.pic\n\n\n2\nFuller\nAndrew\n2/19/1952\nEmpID2.pic\n\n\n3\nLeverling\nJanet\n8/30/1963\nEmpID3.pic"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "OrderID": "10308",
+                    "CustomerID": "2",
+                    "EmployeeID": "7",
+                    "OrderDate": "1996-09-18",
+                    "ShipperID": "3"
+                },
+                {
+                    "OrderID": "10309",
+                    "CustomerID": "37",
+                    "EmployeeID": "3",
+                    "OrderDate": "1996-09-19",
+                    "ShipperID": "1"
+                },
+                {
+                    "OrderID": "10310",
+                    "CustomerID": "77",
+                    "EmployeeID": "8",
+                    "OrderDate": "1996-09-20",
+                    "ShipperID": "2"
+                }
+            ],
+            [
+                {
+                    "EmployeeID": "1",
+                    "LastName": "Davolio",
+                    "FirstName": "Nancy",
+                    "BirthDate": "12/8/1968",
+                    "Photo": "EmpID1.pic"
+                },
+                {
+                    "EmployeeID": "2",
+                    "LastName": "Fuller",
+                    "FirstName": "Andrew",
+                    "BirthDate": "2/19/1952",
+                    "Photo": "EmpID2.pic"
+                },
+                {
+                    "EmployeeID": "3",
+                    "LastName": "Leverling",
+                    "FirstName": "Janet",
+                    "BirthDate": "8/30/1963",
+                    "Photo": "EmpID3.pic"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "SQL RIGHT JOIN Example",
+        "text": [
+            "The following SQL statement will return all employees, and any orders they \nmight have placed:",
+            "Example\n\n SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n ORDER BY Orders.OrderID;\nTry it Yourself »",
+            "Note: The RIGHT JOIN keyword returns all records from the \nright table (Employees), even if there are no matches in the left table \n(Orders).",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT Orders.OrderID, Employees.LastName, Employees.FirstNameFROM OrdersRIGHT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID\n ORDER BY Orders.OrderID;"
+            }
+        ],
+        "tables": []
+    }
+]

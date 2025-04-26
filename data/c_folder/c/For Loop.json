@@ -1,0 +1,30 @@
+[
+    {
+        "title": "For Loop",
+        "text": [
+            "When you know exactly how many times you want to loop through a block of \ncode, use the for loop instead of a while loop:",
+            "Syntax\n\n\nfor (expression 1; expression 2; expression 3) {\n      // code block to be executed\n }",
+            "Expression 1 is executed (one time) before the execution of the code block.",
+            "Expression 2 defines the condition for executing the code block.",
+            "Expression 3 is executed (every time) after the code block has been executed.",
+            "The example below will print the numbers 0 to 4:",
+            "Example\n\n  int i;for (i = 0; i < 5; i++) {  printf(\"%d\\n\", \n  i);}\n\nTry it Yourself »",
+            "Expression 1 sets a variable before the loop starts (int i = 0).",
+            "Expression 2 defines the condition for the loop to run (i must be less than \n5). If the condition is true, the loop will start over again, if it is false, \nthe loop will end.",
+            "Expression 3 increases a value (i++) each time the code block in the loop has \nbeen executed.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Syntax",
+                "code": "for (expression 1; expression 2; expression 3) {\n      // code block to be executed\n }"
+            },
+            {
+                "heading": "Example",
+                "code": "int i;for (i = 0; i < 5; i++) {  printf(\"%d\\n\", \n  i);}"
+            }
+        ],
+        "tables": []
+    }
+]

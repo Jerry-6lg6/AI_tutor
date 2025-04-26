@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Variable Names",
+        "text": [
+            "A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).",
+            "Rules for Python variables:",
+            "Example\nLegal variable names:\n\nmyvar = \"John\"my_var = \"John\"_my_var = \"John\"myVar = \"John\"\n  MYVAR = \"John\"myvar2 = \"John\"\nTry it Yourself »",
+            "Example\nIllegal variable names:\n\n2myvar = \"John\"my-var = \"John\"\n  my var = \"John\"\nTry it Yourself »",
+            "Remember that variable names are case-sensitive",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "myvar = \"John\"my_var = \"John\"_my_var = \"John\"myVar = \"John\"\n  MYVAR = \"John\"myvar2 = \"John\""
+            },
+            {
+                "heading": "Example",
+                "code": "2myvar = \"John\"my-var = \"John\"\n  my var = \"John\""
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Multi Words Variable Names",
+        "text": [
+            "Variable names with more than one word can be difficult to read.",
+            "There are several techniques you can use to make them more readable:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Camel Case",
+        "text": [
+            "Each word, except the first, starts with a capital letter:",
+            "myVariableName = \"John\""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Pascal Case",
+        "text": [
+            "Each word starts with a capital letter:",
+            "MyVariableName = \"John\""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Snake Case",
+        "text": [
+            "Each word is separated by an underscore character:",
+            "my_variable_name = \"John\"",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

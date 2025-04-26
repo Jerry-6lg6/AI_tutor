@@ -1,0 +1,61 @@
+[
+    {
+        "title": "Syntax",
+        "text": [
+            "lambda arguments : expression",
+            "The expression is executed and the result is returned:",
+            "Example\nAdd 10 to argument a, and \n  return the result:\n\n  x = lambda a : a + 10print(x(5))\nTry it Yourself »",
+            "Lambda functions can take any number of arguments:",
+            "Example\nMultiply argument a with argument \n  b and return the \n  result:\n\n  x = lambda a, b : a * bprint(x(5, 6))\nTry it Yourself »",
+            "Example\nSummarize argument a, \n  b, and c and \n  return the \n  result:\n\n  x = lambda a, b, c : a + b + cprint(x(5, 6, \n  2))\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = lambda a : a + 10print(x(5))"
+            },
+            {
+                "heading": "Example",
+                "code": "x = lambda a, b : a * bprint(x(5, 6))"
+            },
+            {
+                "heading": "Example",
+                "code": "x = lambda a, b, c : a + b + cprint(x(5, 6, \n  2))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Why Use Lambda Functions?",
+        "text": [
+            "The power of lambda is better shown when you use them as an anonymous \nfunction inside another function.",
+            "Say you have a function definition that takes one argument, and that argument \nwill be multiplied with an unknown number:",
+            "def myfunc(n):\n  return lambda a : a * n",
+            "Use that function definition to make a function that always doubles the \nnumber you send in:",
+            "Example\n\ndef myfunc(n):\n  return lambda a : a * n\n\n  mydoubler = myfunc(2)\nprint(mydoubler(11))\n\nTry it Yourself »",
+            "Or, use the same function definition to make a function that always triples the \nnumber you send in:",
+            "Example\n\ndef myfunc(n):\n  return lambda a : a * n\n\n  mytripler = myfunc(3)\nprint(mytripler(11))\n\nTry it Yourself »",
+            "Or, use the same function definition to make both functions, in the same \nprogram:",
+            "Example\n\ndef myfunc(n):\n  return lambda a : a * n\n\n  mydoubler = myfunc(2)mytripler = myfunc(3)\nprint(mydoubler(11))\nprint(mytripler(11))\n\nTry it Yourself »",
+            "Use lambda functions when an anonymous function is required for a short period of time.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def myfunc(n):\n  return lambda a : a * n\n\n  mydoubler = myfunc(2)\nprint(mydoubler(11))"
+            },
+            {
+                "heading": "Example",
+                "code": "def myfunc(n):\n  return lambda a : a * n\n\n  mytripler = myfunc(3)\nprint(mytripler(11))"
+            },
+            {
+                "heading": "Example",
+                "code": "def myfunc(n):\n  return lambda a : a * n\n\n  mydoubler = myfunc(2)mytripler = myfunc(3)\nprint(mydoubler(11))\nprint(mytripler(11))"
+            }
+        ],
+        "tables": []
+    }
+]

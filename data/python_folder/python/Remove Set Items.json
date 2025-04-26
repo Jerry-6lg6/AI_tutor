@@ -1,0 +1,43 @@
+[
+    {
+        "title": "Remove Item",
+        "text": [
+            "To remove an item in a set, use the remove(), or the discard() method.",
+            "Example\nRemove \"banana\" by using the remove() \nmethod:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}\n  thisset.remove(\"banana\")\n  print(thisset)\nTry it Yourself »",
+            "Note: If the item to remove does not exist, remove() will raise an error.",
+            "Example\nRemove \"banana\" by using the discard() \nmethod:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}\n  thisset.discard(\"banana\")\n  print(thisset)\nTry it Yourself »",
+            "Note: If the item to remove does not exist, discard() will \n  NOT raise an error.",
+            "You can also use the pop() method to remove \nan item, but this method will remove a random item, so you cannot be sure what item that gets removed.",
+            "The return value of the pop() method is the \nremoved item.",
+            "Example\nRemove a random item by using the pop() \nmethod:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}\n  x =\n  thisset.pop()print(x)\n  print(thisset)\nTry it Yourself »",
+            "Note: Sets are unordered, so when using the pop() method, \nyou do not know which item that gets removed.",
+            "Example\nThe clear() \nmethod empties the set:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}\n  thisset.clear()\n  print(thisset)\nTry it Yourself »",
+            "Example\nThe del keyword will delete the set \ncompletely:\n\n  thisset = {\"apple\", \"banana\", \"cherry\"}\n  del\n  thisset\n  print(thisset)\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}\n  thisset.remove(\"banana\")\n  print(thisset)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}\n  thisset.discard(\"banana\")\n  print(thisset)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}\n  x =\n  thisset.pop()print(x)\n  print(thisset)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}\n  thisset.clear()\n  print(thisset)"
+            },
+            {
+                "heading": "Example",
+                "code": "thisset = {\"apple\", \"banana\", \"cherry\"}\n  del\n  thisset\n  print(thisset)"
+            }
+        ],
+        "tables": []
+    }
+]

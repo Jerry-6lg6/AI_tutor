@@ -1,0 +1,39 @@
+[
+    {
+        "title": "Loop Through a Dictionary",
+        "text": [
+            "You can loop through a dictionary by using a\nfor loop.",
+            "When looping through a dictionary, the return value are the keys of \nthe dictionary, but there are methods to return the values as well.",
+            "Example\nPrint all key names in the dictionary, one by one:\n\n  for x in thisdict:  print(x)\nTry it Yourself »",
+            "Example\nPrint all values in the dictionary, one by one:\n\n  for x in thisdict:  print(thisdict[x])\nTry it Yourself »",
+            "Example\nYou can also use the values() method to \nreturn values of a dictionary:\n\n  for x in thisdict.values():  print(x)\nTry it Yourself »",
+            "Example\nYou can use the keys() method to \nreturn the keys of a dictionary:\n\n  for x in thisdict.keys():  print(x)\nTry it Yourself »",
+            "Example\nLoop through both keys and values, by using the\nitems() method:\n\n  for x, y in thisdict.items():  print(x, y)\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for x in thisdict:  print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "for x in thisdict:  print(thisdict[x])"
+            },
+            {
+                "heading": "Example",
+                "code": "for x in thisdict.values():  print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "for x in thisdict.keys():  print(x)"
+            },
+            {
+                "heading": "Example",
+                "code": "for x, y in thisdict.items():  print(x, y)"
+            }
+        ],
+        "tables": []
+    }
+]

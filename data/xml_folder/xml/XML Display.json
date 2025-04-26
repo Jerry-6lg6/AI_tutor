@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Viewing XML Files",
+        "text": [
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n- <note>\n  <to>Tove</to>\n  <from>Jani</from>\n  <heading>Reminder</heading>\n  <body>Don't forget me this weekend!</body>\n</note>",
+            "Look at the XML file above in your browser: note.xml",
+            "Most browsers will display an XML document with color-coded elements.",
+            "Often a plus (+) or minus sign (-) to the left\nof the elements can be clicked to expand or collapse the element structure.",
+            "To view raw XML source, try to select \"View Page Source\" or \"View Source\" from the browser menu.",
+            "Note: In Safari 5 (and earlier), only the element text will be displayed. To view the raw XML, you must right click the page and select \"View Source\"."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Viewing an Invalid XML File",
+        "text": [
+            "If an erroneous XML file is opened, some browsers will report the error, and some will display it, or display it incorrectly.",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n- <note>\n  <to>Tove</to>\n  <From>Jani</from>\n  <heading>Reminder</heading>\n  <body>Don't forget me this weekend!</body>\n</note>",
+            "Try to open the following XML file: note_error.xml"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Other XML Examples",
+        "text": [
+            "Viewing some XML documents will help you get the XML feeling:",
+            "An XML breakfast menu\nThis is a breakfast food menu from a restaurant, stored as XML.",
+            "An XML CD catalog\nThis is a CD collection, stored as XML.",
+            "An XML plant catalog\nThis is a plant catalog from a plant shop, stored as XML.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Why Does XML Display Like This?",
+        "text": [
+            "XML documents do not carry information about how to display the data.",
+            "Since XML tags are \"invented\" by the author of the XML document, browsers do not know if a tag like <table> describes an HTML table or a dining table.",
+            "Without any information about how to display the data, the browsers can just display the XML document as it is.",
+            "Tip: If you want to style an XML document, use\nXSLT.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

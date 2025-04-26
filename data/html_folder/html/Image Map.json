@@ -1,0 +1,132 @@
+[
+    {
+        "title": "Image Maps",
+        "text": [
+            "The HTML <map> tag defines an image map. An image map is an image with \nclickable areas. The areas are defined with one or more <area> tags.",
+            "Try to click on the computer, phone, or the cup of coffee in the image below:",
+            "Example\nHere is the HTML source code for the image map above:\n\n<img src=\"workplace.jpg\" alt=\"Workplace\" usemap=\"#workmap\">\n<map name=\"workmap\">  <area shape=\"rect\" coords=\"34,44,270,350\" \n  alt=\"Computer\" href=\"computer.htm\">  <area shape=\"rect\" coords=\"290,172,333,250\" \n  alt=\"Phone\" href=\"phone.htm\">  <area shape=\"circle\" coords=\"337,300,44\" \n  alt=\"Coffee\" href=\"coffee.htm\"></map>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<img src=\"workplace.jpg\" alt=\"Workplace\" usemap=\"#workmap\">\n<map name=\"workmap\">  <area shape=\"rect\" coords=\"34,44,270,350\" \n  alt=\"Computer\" href=\"computer.htm\">  <area shape=\"rect\" coords=\"290,172,333,250\" \n  alt=\"Phone\" href=\"phone.htm\">  <area shape=\"circle\" coords=\"337,300,44\" \n  alt=\"Coffee\" href=\"coffee.htm\"></map>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "How Does it Work?",
+        "text": [
+            "The idea behind an image map is that you should be able to perform different \nactions depending on where in the image you click.",
+            "To create an image map you need an image, and some HTML code that describes the clickable areas.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The Image",
+        "text": [
+            "The image is inserted using the <img> tag. \nThe only difference from other images is that you must \nadd a usemap attribute:",
+            "<img src=\"workplace.jpg\" alt=\"Workplace\" usemap=\"#workmap\">",
+            "The usemap value starts with a hash tag\n# followed by the name of the image map, and is used to create a relationship \nbetween the image and the image map.",
+            "Tip: You can use any image as an image map!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Create Image Map",
+        "text": [
+            "Then, add a <map> element.",
+            "The <map> element is used to create an image map, and is linked to the image by using the \nrequired name \nattribute:",
+            "<map name=\"workmap\">",
+            "The name attribute must have the same value as the\n<img>'s usemap attribute ."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The Areas",
+        "text": [
+            "Then, add the clickable areas.",
+            "A clickable area is defined using an <area> element.",
+            "You must define the shape of the clickable area, and you can choose one of these \nvalues:",
+            "You must also define some coordinates to be able to place the clickable area onto \nthe image.",
+            "The coordinates for shape=\"rect\" come in pairs, one for the x-axis and one for the y-axis.",
+            "So, the coordinates 34,44 is located 34 pixels \nfrom the left margin and 44 pixels from the top:",
+            "",
+            "The coordinates 270,350 is located 270 \npixels from the left margin and 350 pixels from the top:",
+            "",
+            "Now we have enough data to create a clickable rectangular area:",
+            "Example\n\n<area shape=\"rect\" coords=\"34, 44, 270, 350\" href=\"computer.htm\">\n\nTry it Yourself »",
+            "This is the area that becomes clickable and will send the user to the page \"computer.htm\":",
+            "",
+            "To add a circle area, first locate the coordinates of the center of the circle:",
+            "337,300",
+            "",
+            "Then specify the radius of the circle:",
+            "44 pixels",
+            "",
+            "Now you have enough data to create a clickable circular area:",
+            "Example\n\n<area shape=\"circle\" coords=\"337, 300, 44\" href=\"coffee.htm\">\n\nTry it Yourself »",
+            "This is the area that becomes clickable and will send the user to the page \"coffee.htm\":",
+            "",
+            "The shape=\"poly\" contains several coordinate \npoints, which creates a shape formed with straight lines (a polygon).",
+            "This can be used to create any shape.",
+            "Like maybe a croissant shape!",
+            "How can we make the croissant in the image below become a clickable link?",
+            "We have to find the x and y coordinates for all edges of the \ncroissant:",
+            "The coordinates come in pairs, one for the x-axis and one for the y-axis:",
+            "Example\n\n<area shape=\"poly\" coords=\"140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147\" href=\"croissant.htm\">\n\nTry it Yourself »",
+            "This is the area that becomes clickable and will send the user to the page \"croissant.htm\":"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<area shape=\"rect\" coords=\"34, 44, 270, 350\" href=\"computer.htm\">"
+            },
+            {
+                "heading": "Example",
+                "code": "<area shape=\"circle\" coords=\"337, 300, 44\" href=\"coffee.htm\">"
+            },
+            {
+                "heading": "Example",
+                "code": "<area shape=\"poly\" coords=\"140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147\" href=\"croissant.htm\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Image Map and JavaScript",
+        "text": [
+            "A clickable area can also \ntrigger a JavaScript function.",
+            "Add a click event to the <area> element\nto execute a JavaScript function:",
+            "Example\nHere, we use the onclick attribute to execute a JavaScript function when the \n  area is clicked:\n\n  <map name=\"workmap\"> \n  <area shape=\"circle\" coords=\"337,300,44\" \n  href=\"coffee.htm\" onclick=\"myFunction()\"></map><script>function \n  myFunction() {  alert(\"You clicked the coffee cup!\");}\n  </script>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<map name=\"workmap\"> \n  <area shape=\"circle\" coords=\"337,300,44\" \n  href=\"coffee.htm\" onclick=\"myFunction()\"></map><script>function \n  myFunction() {  alert(\"You clicked the coffee cup!\");}\n  </script>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Image Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

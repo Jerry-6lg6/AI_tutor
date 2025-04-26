@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Strings - Special Characters",
+        "text": [
+            "Because strings must be written within quotes, C++ will misunderstand this string, \nand generate an error:",
+            "string txt = \"We are the so-called \"Vikings\" from the north.\";",
+            "The solution to avoid this problem, is to use the backslash escape character.",
+            "The backslash (\\) escape character turns special characters into string characters:",
+            "The sequence \\\"  inserts a double quote in a string:\n\nExample\n\n  string txt = \"We are the so-called \\\"Vikings\\\" from the north.\";\n\nTry it Yourself »\n\nThe sequence \\'  inserts a single quote in a string:\n\nExample\n\n  string txt = \"It\\'s alright.\";\n\nTry it Yourself »\n\nThe sequence \\\\  inserts a single backslash in a string:\n\nExample\n\n  string txt = \"The character \\\\ is called backslash.\";\n\nTry it Yourself »\n\nOther popular escape characters in C++ are:\n\n\nEscape Character\nResult\nTry it\n\n\n\\n\nNew Line\nTry it »\n\n\n\\t\nTab\nTry it »\n\n\n\n\n\n\n\n❮ Previous\nNext ❯\n\n\n\n\n\n\n\n\n\n\n\n\n★\n+1\n\n\n\n \n\n\n\nTrack your progress - it's free!\n\n\n \n\n\n\n\n\n\n\n          Log in\n        \n\n          Sign Up"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

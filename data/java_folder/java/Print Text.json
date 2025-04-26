@@ -1,0 +1,36 @@
+[
+    {
+        "title": "Print Text",
+        "text": [
+            "You learned from the previous chapter that you can use the println() method to output values or print text in Java:",
+            "Example\nSystem.out.println(\"Hello World!\");\n\n\nTry it Yourself »",
+            "You can add as many println() methods as you want. Note that it will add a new line for each method:",
+            "Example\nSystem.out.println(\"Hello World!\");\nSystem.out.println(\"I am learning Java.\");\nSystem.out.println(\"It is awesome!\");\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Double Quotes",
+        "text": [
+            "Text must be wrapped inside double quotations marks \"\".",
+            "If you forget the double quotes, an error occurs:",
+            "Example\nSystem.out.println(\"This sentence will work!\");\nSystem.out.println(This sentence will produce an error);\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The Print() Method",
+        "text": [
+            "There is also a print() method, which is similar to println().",
+            "The only difference is that it does not insert a new line at the end of the output:",
+            "Example\nSystem.out.print(\"Hello World! \");\nSystem.out.print(\"I will print on the same line.\");\n\n\nTry it Yourself »",
+            "Note that we add an extra space (after \"Hello World!\" in the example above) \nfor better readability.",
+            "In this tutorial, we will only use println() \nas it makes the code output easier to read.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,64 @@
+[
+    {
+        "title": "The SQL CREATE TABLE Statement",
+        "text": [
+            "The CREATE TABLE statement is used to create a new table in a database.",
+            "CREATE TABLE table_name (\n    column1 datatype,\n    column2 datatype,\n    column3 datatype,\n  \n....\n);",
+            "The column parameters specify the names of the columns of the table.",
+            "The datatype parameter specifies the type of data the column can hold (e.g. varchar, integer, date, etc.).",
+            "Tip: For an overview of the available data types, \ngo to our complete Data Types Reference."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SQL CREATE TABLE Example",
+        "text": [
+            "The following example creates a table called \"Persons\" that contains five columns: PersonID, LastName, FirstName, \nAddress, and City:",
+            "Example\n\nCREATE TABLE Persons\n(\n   \nPersonID int,\n   \nLastName varchar(255),\n   \nFirstName varchar(255),\n   \nAddress varchar(255),\n   \nCity varchar(255) \n);",
+            "The PersonID column is of type int and will hold an integer.",
+            "The LastName, FirstName, Address, and City columns are of\ntype varchar and will hold characters, and the maximum length for these fields \nis 255 characters.",
+            "The empty \"Persons\" table will now look like this:",
+            "PersonID\nLastName\nFirstName\nAddress\nCity",
+            "Tip: The empty \"Persons\" table can now be filled with data with the \nSQL INSERT INTO statement.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE TABLE Persons\n(\n   \nPersonID int,\n   \nLastName varchar(255),\n   \nFirstName varchar(255),\n   \nAddress varchar(255),\n   \nCity varchar(255) \n);"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "PersonID": "",
+                    "LastName": "",
+                    "FirstName": "",
+                    "Address": "",
+                    "City": ""
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Create Table Using Another Table",
+        "text": [
+            "A copy of an existing table can also be created using \nCREATE TABLE.",
+            "The new table gets the same column definitions. All columns or specific \ncolumns can be selected.",
+            "If you create a new table using an existing table, the new table will be \nfilled with the existing values from the old table.",
+            "CREATE TABLE new_table_name AS    \n  SELECT column1, column2,...    FROM \n  existing_table_name    WHERE ....;",
+            "The following SQL creates a new table called \"TestTable\" (which is \na copy of the \"Customers\" table):",
+            "Example\n\nCREATE TABLE TestTable ASSELECT customername, contactnameFROM customers;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE TABLE TestTable ASSELECT customername, contactnameFROM customers;"
+            }
+        ],
+        "tables": []
+    }
+]

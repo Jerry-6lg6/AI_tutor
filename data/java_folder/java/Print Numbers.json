@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Print Numbers",
+        "text": [
+            "You can also use the println() method to \nprint numbers.",
+            "However, unlike text, we don't put numbers inside double \nquotes:",
+            "Example\nSystem.out.println(3);\nSystem.out.println(358);\nSystem.out.println(50000);\n\nTry it Yourself »",
+            "You can also perform mathematical calculations inside the println() method:",
+            "Example\nSystem.out.println(3 + 3);\n\nTry it Yourself »",
+            "Example\nSystem.out.println(2 * 5);\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

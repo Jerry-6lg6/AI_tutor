@@ -1,0 +1,189 @@
+[
+    {
+        "title": "The SQL SELECT TOP Clause",
+        "text": [
+            "The SELECT TOP clause is used to specify the number of records to return.",
+            "The SELECT TOP clause is useful on large tables with thousands of \nrecords. Returning a large number of records can impact performance.",
+            "Example\nSelect only the first 3 records of the Customers table:\n\n SELECT TOP 3 * FROM Customers;\n\n\n Try it Yourself »",
+            "Note: Not all database systems support the \nSELECT TOP clause. MySQL \nsupports the LIMIT clause to select a limited number of records, while Oracle uses \nFETCH FIRST n ROWS ONLY and ROWNUM.",
+            "SQL Server / MS Access Syntax:",
+            "SELECT TOP number|percent column_name(s)\nFROM table_nameWHERE condition;",
+            "MySQL Syntax:",
+            "SELECT column_name(s)\nFROM table_nameWHERE condition\nLIMIT number;",
+            "Oracle 12 Syntax:",
+            "SELECT column_name(s)\nFROM table_nameORDER BY \n  column_name(s)\n  FETCH FIRST number ROWS ONLY;",
+            "Older Oracle Syntax:",
+            "SELECT column_name(s)\nFROM table_name\nWHERE ROWNUM <= number;",
+            "Older Oracle Syntax (with ORDER BY):",
+            "SELECT *FROM (SELECT column_name(s) FROM table_name \n  ORDER BY column_name(s))\nWHERE ROWNUM <= number;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT TOP 3 * FROM Customers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the Customers table used in the examples:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "LIMIT",
+        "text": [
+            "The following SQL statement shows the equivalent example for MySQL:",
+            "Example\nSelect the first 3 records of the Customers table:\n\n SELECT * FROM CustomersLIMIT 3;\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersLIMIT 3;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "FETCH FIRST",
+        "text": [
+            "The following SQL statement shows the equivalent example for \nOracle:",
+            "Example\nSelect the first 3 records of the Customers table:\n\nSELECT * FROM CustomersFETCH FIRST 3 ROWS ONLY;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersFETCH FIRST 3 ROWS ONLY;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "SQL TOP PERCENT Example",
+        "text": [
+            "The following SQL statement selects the first 50% of the records from the \n\"Customers\" table (for SQL Server/MS Access):",
+            "Example\n\n SELECT TOP 50 PERCENT * FROM Customers;\n\n\n Try it Yourself »",
+            "The following SQL statement shows the equivalent example for \nOracle:",
+            "Example\n\nSELECT * FROM CustomersFETCH FIRST 50 PERCENT ROWS ONLY;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT TOP 50 PERCENT * FROM Customers;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersFETCH FIRST 50 PERCENT ROWS ONLY;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "ADD a WHERE CLAUSE",
+        "text": [
+            "The following SQL statement selects the first three records from the \"Customers\" table, \nwhere the country is \"Germany\" (for SQL Server/MS Access):",
+            "Example\n\nSELECT TOP 3 * FROM CustomersWHERE Country='Germany';\n\n\n Try it Yourself »",
+            "The following SQL statement shows the equivalent example for MySQL:",
+            "Example\n\n SELECT * FROM CustomersWHERE Country='Germany'LIMIT 3;\n\n Try it Yourself »",
+            "The following SQL statement shows the equivalent example for \nOracle:",
+            "Example\n\nSELECT * FROM CustomersWHERE Country='Germany'FETCH FIRST 3 ROWS ONLY;"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT TOP 3 * FROM CustomersWHERE Country='Germany';"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersWHERE Country='Germany'LIMIT 3;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersWHERE Country='Germany'FETCH FIRST 3 ROWS ONLY;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "ADD the ORDER BY Keyword",
+        "text": [
+            "Add the ORDER BY keyword when you want to sort the result, and return the first 3 records of the sorted result.",
+            "For SQL Server and MS Access:",
+            "Example\nSort the result reverse alphabetically by CustomerName, and return the first 3 records:\n\nSELECT TOP 3 * FROM CustomersORDER BY CustomerName DESC;\n\n\n Try it Yourself »",
+            "The following SQL statement shows the equivalent example for MySQL:",
+            "Example\n\n SELECT * FROM CustomersORDER BY CustomerName DESCLIMIT 3;\n\n Try it Yourself »",
+            "The following SQL statement shows the equivalent example for \nOracle:",
+            "Example\n\nSELECT * FROM CustomersORDER BY CustomerName DESCFETCH FIRST 3 ROWS ONLY;",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT TOP 3 * FROM CustomersORDER BY CustomerName DESC;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersORDER BY CustomerName DESCLIMIT 3;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersORDER BY CustomerName DESCFETCH FIRST 3 ROWS ONLY;"
+            }
+        ],
+        "tables": []
+    }
+]

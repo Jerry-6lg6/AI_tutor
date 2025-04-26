@@ -1,0 +1,56 @@
+[
+    {
+        "title": "Loop Through an Array",
+        "text": [
+            "You can loop through the array elements with the for \nloop.",
+            "The following example outputs all elements in the cars \narray:",
+            "Example\n\n  // Create an array of stringsstring cars[5] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\", \n  \"Tesla\"};// Loop through stringsfor (int i = 0; i < 5; \n  i++) {  cout << cars[i] << \"\\n\";}\n\nTry it Yourself »",
+            "This example outputs the index of each element together with its value:",
+            "Example\n\n  string cars[5] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\", \n  \"Tesla\"};for (int i = 0; i < 5; \n  i++) {  cout << i << \" = \" << cars[i] << \"\\n\";}\n\nTry it Yourself »",
+            "And this example shows how to loop through an array of integers:",
+            "Example\n\n  int myNumbers[5] = {10, 20, 30, 40, 50};for (int i = 0; i < 5; i++) {  \n  cout << myNumbers[i] << \"\\n\";}\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Create an array of stringsstring cars[5] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\", \n  \"Tesla\"};// Loop through stringsfor (int i = 0; i < 5; \n  i++) {  cout << cars[i] << \"\\n\";}"
+            },
+            {
+                "heading": "Example",
+                "code": "string cars[5] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\", \n  \"Tesla\"};for (int i = 0; i < 5; \n  i++) {  cout << i << \" = \" << cars[i] << \"\\n\";}"
+            },
+            {
+                "heading": "Example",
+                "code": "int myNumbers[5] = {10, 20, 30, 40, 50};for (int i = 0; i < 5; i++) {  \n  cout << myNumbers[i] << \"\\n\";}"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The foreach Loop",
+        "text": [
+            "There is also a \"for-each loop\" (introduced in C++ version 11 (2011)), which is used exclusively to loop through elements in an array (and other data structures, like vectors and lists):",
+            "Syntax\n\n  for (type variableName : arrayName) {  // code block to be executed\n  }",
+            "The following examples output all elements in an array using a \"for-each loop\":",
+            "Example\nLoop through integers:\n\n  // Create an array of integersint myNumbers[5] = {10, 20, 30, 40, 50};\n// Loop through integersfor (int i : myNumbers) {  \n  cout << i << \"\\n\";}\n\nTry it Yourself »",
+            "Example\nLoop through strings:\n\n  // Create an array of stringsstring cars[5] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\", \"Tesla\"};\n// Loop through stringsfor (string \n  car : cars) {  cout << car << \"\\n\";}\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Syntax",
+                "code": "for (type variableName : arrayName) {  // code block to be executed\n  }"
+            },
+            {
+                "heading": "Example",
+                "code": "// Create an array of integersint myNumbers[5] = {10, 20, 30, 40, 50};\n// Loop through integersfor (int i : myNumbers) {  \n  cout << i << \"\\n\";}"
+            },
+            {
+                "heading": "Example",
+                "code": "// Create an array of stringsstring cars[5] = {\"Volvo\", \"BMW\", \"Ford\", \"Mazda\", \"Tesla\"};\n// Loop through stringsfor (string \n  car : cars) {  cout << car << \"\\n\";}"
+            }
+        ],
+        "tables": []
+    }
+]

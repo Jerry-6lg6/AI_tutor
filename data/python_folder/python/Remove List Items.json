@@ -1,0 +1,71 @@
+[
+    {
+        "title": "Remove Specified Item",
+        "text": [
+            "The remove() method removes the specified item.",
+            "Example\nRemove \"banana\":\n\nthislist = [\"apple\", \"banana\", \"cherry\"]\nthislist.remove(\"banana\")\nprint(thislist)\n\nTry it Yourself »",
+            "If there are more than one item with the specified value, the remove() method removes the first \noccurrence:",
+            "Example\nRemove the first occurrence of \"banana\":\n\nthislist = [\"apple\", \"banana\", \"cherry\", \"banana\", \"kiwi\"]\nthislist.remove(\"banana\")\nprint(thislist)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\"]\nthislist.remove(\"banana\")\nprint(thislist)"
+            },
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\", \"banana\", \"kiwi\"]\nthislist.remove(\"banana\")\nprint(thislist)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Remove Specified Index",
+        "text": [
+            "The pop() method removes the specified \nindex.",
+            "Example\nRemove the second item:\n\nthislist = [\"apple\", \"banana\", \"cherry\"]\nthislist.pop(1)\nprint(thislist)\n\nTry it Yourself »",
+            "If you do not specify the index, the pop() method removes the last item.",
+            "Example\nRemove the last item:\n\nthislist = [\"apple\", \"banana\", \"cherry\"]\nthislist.pop()\nprint(thislist)\n\nTry it Yourself »",
+            "The del keyword also removes the specified \nindex:",
+            "Example\nRemove the first item:\n\nthislist = [\"apple\", \"banana\", \"cherry\"]\n  del\nthislist[0]print(thislist)\n\nTry it Yourself »",
+            "The del keyword can also delete the list completely.",
+            "Example\nDelete the entire list:\n\nthislist = [\"apple\", \"banana\", \"cherry\"]\n  del\nthislist\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\"]\nthislist.pop(1)\nprint(thislist)"
+            },
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\"]\nthislist.pop()\nprint(thislist)"
+            },
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\"]\n  del\nthislist[0]print(thislist)"
+            },
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\"]\n  del\nthislist"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Clear the List",
+        "text": [
+            "The clear() method empties the list.",
+            "The list still remains, but it has no content.",
+            "Example\nClear the list content:\n\nthislist = [\"apple\", \"banana\", \"cherry\"]\n  thislist.clear()print(thislist)\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "thislist = [\"apple\", \"banana\", \"cherry\"]\n  thislist.clear()print(thislist)"
+            }
+        ],
+        "tables": []
+    }
+]

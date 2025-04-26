@@ -1,0 +1,54 @@
+[
+    {
+        "title": "Constants",
+        "text": [
+            "If you don't want others (or yourself) to change existing variable values, you can use the const keyword.",
+            "This will declare the variable as \"constant\", which means unchangeable and read-only:",
+            "Example\n\nconst int myNum = 15;  // myNum will always be 15myNum = 10;  // error: \n  assignment of read-only variable 'myNum'\nTry it Yourself »",
+            "You should always declare the variable as constant when you have values that are unlikely to change:",
+            "Example\n\nconst int minutesPerHour = 60;\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "const int myNum = 15;  // myNum will always be 15myNum = 10;  // error: \n  assignment of read-only variable 'myNum'"
+            },
+            {
+                "heading": "Example",
+                "code": "const int minutesPerHour = 60;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Notes On Constants",
+        "text": [
+            "When you declare a constant variable, it must be assigned with a value:",
+            "Example\nLike this:\n\n  const int minutesPerHour = 60;\n\nThis however, will not work:\n\n  const int minutesPerHour;minutesPerHour = 60; // error\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "const int minutesPerHour = 60;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Good Practice",
+        "text": [
+            "Another thing about constant variables, is that it is considered good practice to declare them with uppercase.",
+            "It is not required, but useful for code readability and common for C programmers:",
+            "Example\n\nconst int BIRTHYEAR = 1980;\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "const int BIRTHYEAR = 1980;"
+            }
+        ],
+        "tables": []
+    }
+]

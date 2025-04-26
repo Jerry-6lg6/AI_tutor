@@ -1,0 +1,130 @@
+[
+    {
+        "title": "XML Introduction",
+        "url": "https://www.w3schools.com/xml/xml_whatis.asp"
+    },
+    {
+        "title": "XML How to use",
+        "url": "https://www.w3schools.com/xml/xml_usedfor.asp"
+    },
+    {
+        "title": "XML Tree",
+        "url": "https://www.w3schools.com/xml/xml_tree.asp"
+    },
+    {
+        "title": "XML Syntax",
+        "url": "https://www.w3schools.com/xml/xml_syntax.asp"
+    },
+    {
+        "title": "XML Elements",
+        "url": "https://www.w3schools.com/xml/xml_elements.asp"
+    },
+    {
+        "title": "XML Attributes",
+        "url": "https://www.w3schools.com/xml/xml_attributes.asp"
+    },
+    {
+        "title": "XML Namespaces",
+        "url": "https://www.w3schools.com/xml/xml_namespaces.asp"
+    },
+    {
+        "title": "XML Display",
+        "url": "https://www.w3schools.com/xml/xml_display.asp"
+    },
+    {
+        "title": "XML HttpRequest",
+        "url": "https://www.w3schools.com/xml/xml_http.asp"
+    },
+    {
+        "title": "XML Parser",
+        "url": "https://www.w3schools.com/xml/xml_parser.asp"
+    },
+    {
+        "title": "XML DOM",
+        "url": "https://www.w3schools.com/xml/xml_dom.asp"
+    },
+    {
+        "title": "XML XPath",
+        "url": "https://www.w3schools.com/xml/xml_xpath.asp"
+    },
+    {
+        "title": "XML XSLT",
+        "url": "https://www.w3schools.com/xml/xml_xslt.asp"
+    },
+    {
+        "title": "XML XQuery",
+        "url": "https://www.w3schools.com/xml/xml_xquery.asp"
+    },
+    {
+        "title": "XML XLink",
+        "url": "https://www.w3schools.com/xml/xml_xlink.asp"
+    },
+    {
+        "title": "XML Validator",
+        "url": "https://www.w3schools.com/xml/xml_validator.asp"
+    },
+    {
+        "title": "XML DTD",
+        "url": "https://www.w3schools.com/xml/xml_dtd.asp"
+    },
+    {
+        "title": "XML Schema",
+        "url": "https://www.w3schools.com/xml/xml_schema.asp"
+    },
+    {
+        "title": "XML Server",
+        "url": "https://www.w3schools.com/xml/xml_server.asp"
+    },
+    {
+        "title": "DTD Introduction",
+        "url": "https://www.w3schools.com/xml/xml_dtd_intro.asp"
+    },
+    {
+        "title": "DTD Building Blocks",
+        "url": "https://www.w3schools.com/xml/xml_dtd_building.asp"
+    },
+    {
+        "title": "DTD Elements",
+        "url": "https://www.w3schools.com/xml/xml_dtd_elements.asp"
+    },
+    {
+        "title": "DTD Attributes",
+        "url": "https://www.w3schools.com/xml/xml_dtd_attributes.asp"
+    },
+    {
+        "title": "DTD Elements vs Attr",
+        "url": "https://www.w3schools.com/xml/xml_dtd_el_vs_attr.asp"
+    },
+    {
+        "title": "DTD Entities",
+        "url": "https://www.w3schools.com/xml/xml_dtd_entities.asp"
+    },
+    {
+        "title": "DTD Examples",
+        "url": "https://www.w3schools.com/xml/xml_dtd_examples.asp"
+    },
+    {
+        "title": "XML Services",
+        "url": "https://www.w3schools.com/xml/xml_services.asp"
+    },
+    {
+        "title": "XML WSDL",
+        "url": "https://www.w3schools.com/xml/xml_wsdl.asp"
+    },
+    {
+        "title": "XML SOAP",
+        "url": "https://www.w3schools.com/xml/xml_soap.asp"
+    },
+    {
+        "title": "XML RDF",
+        "url": "https://www.w3schools.com/xml/xml_rdf.asp"
+    },
+    {
+        "title": "XML RSS",
+        "url": "https://www.w3schools.com/xml/xml_rss.asp"
+    },
+    {
+        "title": "Next ❯",
+        "url": "https://www.w3schools.com/xml/xml_whatis.asp"
+    }
+]

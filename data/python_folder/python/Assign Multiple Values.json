@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Many Values to Multiple Variables",
+        "text": [
+            "Python allows you to assign values to multiple variables in one line:",
+            "Example\n\n  x, y, z = \"Orange\", \"Banana\", \"Cherry\"print(x)print(y)print(z)\n\nTry it Yourself »",
+            "Note: Make sure the number of variables matches the number of values, or else you will get an error."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x, y, z = \"Orange\", \"Banana\", \"Cherry\"print(x)print(y)print(z)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "One Value to Multiple Variables",
+        "text": [
+            "And you can assign the same value to multiple variables in one line:",
+            "Example\n\n  x = y = z = \"Orange\"print(x)print(y)print(z)\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = y = z = \"Orange\"print(x)print(y)print(z)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Unpack a Collection",
+        "text": [
+            "If you have a collection of values in a list, tuple etc.\nPython allows you to extract the values into variables. This is called unpacking.",
+            "",
+            "Example\nUnpack a list:\n\nfruits = [\"apple\", \"banana\", \"cherry\"]\nx, y, z = fruits\nprint(x)\nprint(y)\nprint(z)\n\nTry it Yourself »",
+            "Learn more about unpacking in our Unpack Tuples Chapter.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "fruits = [\"apple\", \"banana\", \"cherry\"]\nx, y, z = fruits\nprint(x)\nprint(y)\nprint(z)"
+            }
+        ],
+        "tables": []
+    }
+]

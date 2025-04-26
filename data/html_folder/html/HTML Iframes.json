@@ -1,0 +1,92 @@
+[
+    {
+        "title": "HTML Iframe Syntax",
+        "text": [
+            "The HTML <iframe> tag specifies an \ninline frame.",
+            "An inline frame is used to embed another document within the current HTML document.",
+            "Syntax\n\n<iframe src=\"url\" title=\"description\"></iframe>",
+            "Tip: It is a good practice to always include a \ntitle attribute for the <iframe>. \nThis is used by screen readers to read out what the content of the iframe is."
+        ],
+        "examples": [
+            {
+                "heading": "Syntax",
+                "code": "<iframe src=\"url\" title=\"description\"></iframe>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Iframe - Set Height and Width",
+        "text": [
+            "Use the height and width attributes to specify the \nsize of the iframe.",
+            "The height and width are specified in pixels by default:",
+            "Example\n\n<iframe src=\"demo_iframe.htm\" height=\"200\" width=\"300\" \n  title=\"Iframe Example\"></iframe>\nTry it Yourself »",
+            "Or you can add the style attribute and use \nthe CSS height and width \nproperties:",
+            "Example\n\n<iframe src=\"demo_iframe.htm\" style=\"height:200px;width:300px;\" \n  title=\"Iframe Example\"></iframe>\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<iframe src=\"demo_iframe.htm\" height=\"200\" width=\"300\" \n  title=\"Iframe Example\"></iframe>"
+            },
+            {
+                "heading": "Example",
+                "code": "<iframe src=\"demo_iframe.htm\" style=\"height:200px;width:300px;\" \n  title=\"Iframe Example\"></iframe>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Iframe - Remove the Border",
+        "text": [
+            "By default, an iframe has a border around it.",
+            "To remove the border, add the style attribute and use the CSS \nborder property:",
+            "Example\n\n<iframe src=\"demo_iframe.htm\" style=\"border:none;\" \n  title=\"Iframe Example\"></iframe>\nTry it Yourself »",
+            "With CSS, you can also change the size, style and color of the iframe's border:",
+            "Example\n\n<iframe src=\"demo_iframe.htm\" style=\"border:2px solid red;\" \n  title=\"Iframe Example\"></iframe>\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<iframe src=\"demo_iframe.htm\" style=\"border:none;\" \n  title=\"Iframe Example\"></iframe>"
+            },
+            {
+                "heading": "Example",
+                "code": "<iframe src=\"demo_iframe.htm\" style=\"border:2px solid red;\" \n  title=\"Iframe Example\"></iframe>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Iframe - Target for a Link",
+        "text": [
+            "An iframe can be used as the target frame for a link.",
+            "The target attribute \nof the link must refer to the name attribute of the iframe:",
+            "Example\n\n <iframe src=\"demo_iframe.htm\" name=\"iframe_a\" title=\"Iframe \n  Example\"></iframe>\n <p><a href=\"https://www.w3schools.com\" target=\"iframe_a\">W3Schools.com</a></p>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<iframe src=\"demo_iframe.htm\" name=\"iframe_a\" title=\"Iframe \n  Example\"></iframe>\n <p><a href=\"https://www.w3schools.com\" target=\"iframe_a\">W3Schools.com</a></p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML iframe Tag",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference."
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

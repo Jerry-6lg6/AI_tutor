@@ -1,0 +1,18 @@
+[
+    {
+        "title": "ALL",
+        "text": [
+            "The ALL command returns true if all of the subquery values meet \nthe \ncondition.",
+            "The following SQL statement returns TRUE and lists the productnames if ALL \nthe records in the OrderDetails table has quantity = 10:",
+            "Example\n\n  SELECT ProductNameFROM ProductsWHERE ProductID = ALL (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);\n\n  Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT ProductNameFROM ProductsWHERE ProductID = ALL (SELECT ProductID FROM OrderDetails WHERE Quantity = 10);"
+            }
+        ],
+        "tables": []
+    }
+]

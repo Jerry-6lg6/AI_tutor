@@ -1,0 +1,22 @@
+[
+    {
+        "title": "C-Style Strings",
+        "text": [
+            "C-style strings are created with the char type instead of string.",
+            "The name comes from the C language, which, unlike many other programming languages, does not have a string type \nfor easily creating string variables. Instead, you must use the char type and create an array \nof characters to make a \"string\" in C.",
+            "As C++ was developed as an extension of C, it continued to support this way of creating strings in C++:",
+            "Example\n\n  string greeting1 = \"Hello\";  // Regular Stringchar greeting2[] = \n  \"Hello\";  // C-Style String (an array of characters)\nTry it Yourself »",
+            "Note: It is more convenient to work with the standard string \ntype, rather than C-style strings. However, one reason some users continue to \nuse C-style strings is that \nthey have access to functions from the C standard library.",
+            "A list of all C-style string functions, can be found in our CString Functions Reference.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string greeting1 = \"Hello\";  // Regular Stringchar greeting2[] = \n  \"Hello\";  // C-Style String (an array of characters)"
+            }
+        ],
+        "tables": []
+    }
+]

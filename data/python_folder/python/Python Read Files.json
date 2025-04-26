@@ -1,0 +1,83 @@
+[
+    {
+        "title": "Open a File on the Server",
+        "text": [
+            "Assume we have the following file, located in the same folder as Python:",
+            "demofile.txt\n\n  Hello! Welcome to demofile.txtThis file is for testing purposes.Good \n  Luck!",
+            "To open the file, use the built-in open() function.",
+            "The open() function returns a file object, which has a \nread() method for reading the content of the file:",
+            "Example\n\n  f = open(\"demofile.txt\", \"r\")print(f.read())\nRun Example »",
+            "If the file is located in a different location, you will have to specify the file path, \nlike this:",
+            "Example\nOpen a file on a different location:\n\n  f = open(\"D:\\\\myfiles\\welcome.txt\", \"r\")print(f.read())\nRun Example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "f = open(\"demofile.txt\", \"r\")print(f.read())"
+            },
+            {
+                "heading": "Example",
+                "code": "f = open(\"D:\\\\myfiles\\welcome.txt\", \"r\")print(f.read())"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Read Only Parts of the File",
+        "text": [
+            "By default the read() method returns the whole text, but you can also specify how many characters you want to return:",
+            "Example\nReturn the 5 first characters of the file:\n\n  f = open(\"demofile.txt\", \"r\")print(f.read(5))\nRun Example »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "f = open(\"demofile.txt\", \"r\")print(f.read(5))"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Read Lines",
+        "text": [
+            "You can return one line by using the readline() method:",
+            "Example\nRead one line of the file:\n\n  f = open(\"demofile.txt\", \"r\")print(f.readline())\nRun Example »",
+            "By calling readline() two times, you can read the \ntwo first lines:",
+            "Example\nRead two lines of the file:\n\n  f = open(\"demofile.txt\", \"r\")print(f.readline())print(f.readline())\nRun Example »",
+            "By looping through the lines of the file, you can read the whole file, line by line:",
+            "Example\nLoop through the file line by line:\n\n  f = open(\"demofile.txt\", \"r\")for x in f:  print(x)\nRun Example »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "f = open(\"demofile.txt\", \"r\")print(f.readline())"
+            },
+            {
+                "heading": "Example",
+                "code": "f = open(\"demofile.txt\", \"r\")print(f.readline())print(f.readline())"
+            },
+            {
+                "heading": "Example",
+                "code": "f = open(\"demofile.txt\", \"r\")for x in f:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Close Files",
+        "text": [
+            "It is a good practice to always close the file when you are done with it.",
+            "Example\nClose the file when you are finished with it:\n\n  f = open(\"demofile.txt\", \"r\")print(f.readline())\n  f.close()\nRun Example »",
+            "Note: You should always close your files. In some cases, due to buffering, changes made to a file may not show until you close the file.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "f = open(\"demofile.txt\", \"r\")print(f.readline())\n  f.close()"
+            }
+        ],
+        "tables": []
+    }
+]

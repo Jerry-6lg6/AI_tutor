@@ -1,0 +1,82 @@
+[
+    {
+        "title": "XLink Browser Support",
+        "text": [
+            "There is no browser support for XLink in XML documents.",
+            "However, all major \nbrowsers support XLinks in SVG."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XLink Syntax",
+        "text": [
+            "In HTML, the <a> element \ndefines a hyperlink. However, this is not how it works in XML. In XML documents, you can use \nwhatever element names you want - therefore it is impossible for browsers to predict \nwhat link elements will be called in XML documents.",
+            "Below is a simple example of how to use XLink to create links in an XML document:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<homepages xmlns:xlink=\"http://www.w3.org/1999/xlink\"> \n  <homepage xlink:type=\"simple\"\n  xlink:href=\"https://www.w3schools.com\">Visit W3Schools</homepage> \n  <homepage xlink:type=\"simple\"\n  xlink:href=\"http://www.w3.org\">Visit W3C</homepage></homepages>",
+            "To get access to the XLink features we must declare the XLink namespace. The XLink namespace is: \"http://www.w3.org/1999/xlink\".",
+            "The xlink:type and the xlink:href attributes in the <homepage> elements come from the \nXLink namespace.",
+            "The xlink:type=\"simple\" creates a simple \"HTML-like\" link (means \"click here \nto go there\").",
+            "The xlink:href attribute specifies the URL to link to."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XLink Example",
+        "text": [
+            "The following XML document contains XLink features:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<bookstore xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<book title=\"Harry Potter\">\n   \n  <description\n   \n  xlink:type=\"simple\"\n   \n  xlink:href=\"/images/HPotter.gif\"\n   \n  xlink:show=\"new\">\n   \n  As his fifth year at Hogwarts School of Witchcraft and\n   \n  Wizardry approaches, 15-year-old Harry Potter is.......\n   \n  </description>\n</book>\n<book title=\"XQuery Kick Start\">\n   \n  <description\n   \n  xlink:type=\"simple\"\n   \n  xlink:href=\"/images/XQuery.gif\"\n   \n  xlink:show=\"new\">\n   \n  XQuery Kick Start delivers a concise introduction\n   \n  to the XQuery standard.......\n   \n  </description>\n</book>\n</bookstore>",
+            "Example explained:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XLink - Going Further",
+        "text": [
+            "In the example above we have demonstrated simple XLinks. XLink is getting \nmore \ninteresting when accessing remote locations as resources, instead of \nstandalone pages.",
+            "If we set the value of the xlink:show \nattribute to \"embed\", the linked resource should be processed inline \nwithin the page. When you consider that this could be \nanother XML document you could, for example, build a hierarchy of XML documents.",
+            "You can also specify WHEN the resource should appear, with \nthe xlink:actuate attribute."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XLink Attribute Reference",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XPointer",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XPointer Browser Support",
+        "text": [
+            "There is no browser support for XPointer. But XPointer is used in other \nXML languages."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XPointer Example",
+        "text": [
+            "In this example, we will use XPointer in conjunction with XLink to point to a specific part of another document.",
+            "We will start by looking at the target XML document (the document we are \nlinking to):",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<dogbreeds>\n<dog breed=\"Rottweiler\" id=\"Rottweiler\">\n   \n  <picture url=\"https://dog.com/rottweiler.gif\" />\n   \n  <history>The Rottweiler's ancestors were probably Roman\n   \n  drover dogs.....</history>\n   \n  <temperament>Confident, bold, alert and imposing, the Rottweiler\n   \n  is a popular choice for its ability to protect....</temperament>\n</dog>\n<dog breed=\"FCRetriever\" id=\"FCRetriever\">\n   \n  <picture url=\"https://dog.com/fcretriever.gif\" />\n   \n  <history>One of the earliest uses of retrieving dogs was to\n   \n  help fishermen retrieve fish from the water....</history>\n   \n  <temperament>The flat-coated retriever is a sweet, exuberant,\n   \n  lively dog that loves to play and retrieve....</temperament>\n</dog>\n</dogbreeds>",
+            "Note that the XML document above uses id attributes on each element!",
+            "So, instead of linking to the entire document (as with XLink), XPointer allows you to link to specific parts of the document. To link to a specific part of a \npage, add a number sign (#) and an XPointer expression after the URL in the xlink:href \nattribute, like this: xlink:href=\"https://dog.com/dogbreeds.xml#xpointer(id('Rottweiler'))\". The expression refers to the element in the target document, with the id value of \"Rottweiler\".",
+            "XPointer also allows a shorthand method for linking to an element with an id. You can use the \nvalue of the id directly, like this: xlink:href=\"https://dog.com/dogbreeds.xml#Rottweiler\".",
+            "The following XML document contains links to more information of the dog breed for each of \nmy dogs:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<mydogs xmlns:xlink=\"http://www.w3.org/1999/xlink\">\n<mydog>\n   \n  <description>\n   \n  Anton is my favorite dog. He has won a lot of.....\n   \n  </description> \n<fact xlink:type=\"simple\" xlink:href=\"https://dog.com/dogbreeds.xml#Rottweiler\">  Fact about Rottweiler   </fact>\n</mydog>\n<mydog>\n   \n  <description>\n   \n  Pluto is the sweetest dog on earth......\n   \n  </description>\n \n<fact xlink:type=\"simple\" xlink:href=\"https://dog.com/dogbreeds.xml#FCRetriever\">  Fact about flat-coated Retriever   </fact>\n</mydog>\n</mydogs>",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

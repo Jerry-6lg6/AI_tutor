@@ -1,0 +1,12 @@
+[
+    {
+        "title": "C Reference",
+        "text": [
+            "A list of C keywords and popular libraries can be found here:",
+            "Keywords\n<stdio.h>\n<stdlib.h>\n<string.h>\n<math.h>\n<ctype.h>",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

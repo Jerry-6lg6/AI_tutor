@@ -1,0 +1,84 @@
+[
+    {
+        "title": "Example Explained",
+        "text": [
+            "We have a string, \"Hello World\", which we want to reverse:",
+            "The String to Reverse\n\ntxt = \"Hello World\"[::-1]\n  print(txt)",
+            "Create a slice that starts at the end of the string, and moves backwards.",
+            "In this particular example, the slice statement [::-1] means start at \nthe end of the string and end at position 0, move with the \nstep -1, negative one, which means one step backwards.",
+            "Slice the String\n\ntxt = \"Hello World\"[::-1]\n  print(txt)",
+            "Now we have a string txt that reads \"Hello \nWorld\" backwards.",
+            "Print the String to demonstrate the result",
+            "Print the List\n\ntxt = \"Hello World\"[::-1]\nprint(txt)",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "The String to Reverse",
+                "code": "txt = \"Hello World\"[::-1]\n  print(txt)"
+            },
+            {
+                "heading": "Slice the String",
+                "code": "txt = \"Hello World\"[::-1]\n  print(txt)"
+            },
+            {
+                "heading": "Print the List",
+                "code": "txt = \"Hello World\"[::-1]\nprint(txt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Create a Function",
+        "text": [
+            "If you like to have a function where you can send your strings, and return \nthem \nbackwards, you can create a function and insert the code from the \nexample above.",
+            "Example\n\n  def my_function(x):  return x[::-1]mytxt = \n  my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "def my_function(x):  return x[::-1]mytxt = \n  my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Example Explained",
+        "text": [
+            "Create a function that takes a String as an argument.",
+            "Create a Function\n\ndef my_function(x):\n    return x[::-1]mytxt = \n  my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt)",
+            "Slice the string starting at the end of the string and move backwards.",
+            "Slice the String\n\ndef my_function(x):\n    return x[::-1]mytxt = \n  my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt)",
+            "Return the backward String",
+            "Return the String\n\ndef my_function(x):\n    return \n  x[::-1]mytxt = \n  my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt )",
+            "Call the function, with a string as a parameter:",
+            "Call the Function\n\ndef my_function(x):\n    return \n  x[::-1]\nmytxt = my_function(\"I \n  wonder how this text looks like backwards\")\nprint(mytxt)",
+            "Print the result:",
+            "Print the Result\n\ndef my_function(x):\n    return \n  x[::-1]\n  mytxt = my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt)",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Create a Function",
+                "code": "def my_function(x):\n    return x[::-1]mytxt = \n  my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt)"
+            },
+            {
+                "heading": "Slice the String",
+                "code": "def my_function(x):\n    return x[::-1]mytxt = \n  my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt)"
+            },
+            {
+                "heading": "Return the String",
+                "code": "def my_function(x):\n    return \n  x[::-1]mytxt = \n  my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt )"
+            },
+            {
+                "heading": "Call the Function",
+                "code": "def my_function(x):\n    return \n  x[::-1]\nmytxt = my_function(\"I \n  wonder how this text looks like backwards\")\nprint(mytxt)"
+            },
+            {
+                "heading": "Print the Result",
+                "code": "def my_function(x):\n    return \n  x[::-1]\n  mytxt = my_function(\"I wonder how this text looks like backwards\")\nprint(mytxt)"
+            }
+        ],
+        "tables": []
+    }
+]

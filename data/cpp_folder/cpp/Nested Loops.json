@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Nested Loops",
+        "text": [
+            "It is also possible to place a loop inside another loop. This is called a \nnested loop.",
+            "The \"inner loop\" will be executed one time for each iteration of the \"outer loop\":",
+            "Example\n\n  // Outer loopfor (int i = 1; i <= 2; ++i) {  \n  cout << \"Outer: \" << i << \"\\n\"; // Executes 2 times  // Inner \n  loop  for (int j = 1; j <= 3; ++j) {    cout << \" \n  Inner: \" << j << \"\\n\"; // Executes 6 times (2 * 3)  }}\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Outer loopfor (int i = 1; i <= 2; ++i) {  \n  cout << \"Outer: \" << i << \"\\n\"; // Executes 2 times  // Inner \n  loop  for (int j = 1; j <= 3; ++j) {    cout << \" \n  Inner: \" << j << \"\\n\"; // Executes 6 times (2 * 3)  }}"
+            }
+        ],
+        "tables": []
+    }
+]

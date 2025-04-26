@@ -1,0 +1,70 @@
+[
+    {
+        "title": "Booleans",
+        "text": [
+            "Very often, in programming, you will need a data type that can only have one of two values, like:",
+            "For this, C has a bool data type, which is \nknown as booleans.",
+            "Booleans represent values that are either true or false."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Boolean Variables",
+        "text": [
+            "In C, the bool type is not a built-in data type, like int or char.",
+            "It was introduced in C99, and you must import the following header file to use it:",
+            "#include <stdbool.h>",
+            "A boolean variable is declared with the bool keyword and can take the \nvalues true or false:",
+            "bool isProgrammingFun = true;bool isFishTasty = false;",
+            "Before trying to print the boolean variables, you should know that boolean \nvalues are returned as integers:",
+            "Therefore, you must use the %d \nformat specifier to print a boolean value:",
+            "Example\n\n  // Create boolean variablesbool isProgrammingFun = true;bool isFishTasty = false;// \n  Return boolean valuesprintf(\"%d\", \n  isProgrammingFun);   // Returns 1 (true)printf(\"%d\", isFishTasty);        \n  // Returns 0 (false)\nTry it Yourself »",
+            "However, it is more common to return a boolean value by comparing values and \nvariables."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "// Create boolean variablesbool isProgrammingFun = true;bool isFishTasty = false;// \n  Return boolean valuesprintf(\"%d\", \n  isProgrammingFun);   // Returns 1 (true)printf(\"%d\", isFishTasty);        \n  // Returns 0 (false)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Comparing Values and Variables",
+        "text": [
+            "Comparing values are useful in programming, because it helps us to find answers and make decisions.",
+            "For example, you can use a comparison operator, \nsuch as the greater than (>) \noperator, to compare two values:",
+            "Example\n\n  printf(\"%d\", 10 > 9);  // Returns 1 (true) because 10 is greater than 9\nTry it Yourself »",
+            "From the example above, you can see that the return value is a boolean value (1).",
+            "You can also compare two variables:",
+            "Example\n\n  int x = 10;int y = 9;printf(\"%d\", x > y);\nTry it Yourself »",
+            "In the example below, we use the equal to (==) \noperator to compare different values:",
+            "Example\n\n  printf(\"%d\", 10 == 10); // Returns 1 (true), because 10 is equal to 10\n  printf(\"%d\", 10 == 15); // Returns 0 (false), because 10 is not equal \n  to 15printf(\"%d\", 5 == 55);  // Returns 0 (false) because \n  5 is not equal to 55\nTry it Yourself »",
+            "You are not limited to only compare numbers. You can also compare boolean \nvariables, or even special structures, like arrays (which you will learn more about in \na later chapter):",
+            "Example\n\n  bool isHamburgerTasty = true;bool isPizzaTasty = true;// Find out \n  if both hamburger and pizza is tastyprintf(\"%d\", isHamburgerTasty == \n  isPizzaTasty);\nTry it Yourself »",
+            "Remember to include the <stdbool.h> header file when working with bool variables.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "printf(\"%d\", 10 > 9);  // Returns 1 (true) because 10 is greater than 9"
+            },
+            {
+                "heading": "Example",
+                "code": "int x = 10;int y = 9;printf(\"%d\", x > y);"
+            },
+            {
+                "heading": "Example",
+                "code": "printf(\"%d\", 10 == 10); // Returns 1 (true), because 10 is equal to 10\n  printf(\"%d\", 10 == 15); // Returns 0 (false), because 10 is not equal \n  to 15printf(\"%d\", 5 == 55);  // Returns 0 (false) because \n  5 is not equal to 55"
+            },
+            {
+                "heading": "Example",
+                "code": "bool isHamburgerTasty = true;bool isPizzaTasty = true;// Find out \n  if both hamburger and pizza is tastyprintf(\"%d\", isHamburgerTasty == \n  isPizzaTasty);"
+            }
+        ],
+        "tables": []
+    }
+]

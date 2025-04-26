@@ -1,0 +1,25 @@
+[
+    {
+        "title": "The Do/While Loop",
+        "text": [
+            "The do/while loop is a variant of the while loop. This loop will \nexecute the code block once, before checking if the condition is true, then it will\nrepeat the loop as long as the condition is true.",
+            "Syntax\n\n  do {\n  // code block to be executed\n}\nwhile (condition);",
+            "The example below uses a do/while loop. The loop will always be \nexecuted at least once, even if the condition is false, because the code block \nis executed before the condition is tested:",
+            "Example\n\n  int i = 0;do {\n    cout << i << \"\\n\";\n  i++;}while (i < 5);\n\nTry it Yourself »",
+            "Do not forget to increase the variable used in the condition, otherwise \nthe loop will never end!",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Syntax",
+                "code": "do {\n  // code block to be executed\n}\nwhile (condition);"
+            },
+            {
+                "heading": "Example",
+                "code": "int i = 0;do {\n    cout << i << \"\\n\";\n  i++;}while (i < 5);"
+            }
+        ],
+        "tables": []
+    }
+]

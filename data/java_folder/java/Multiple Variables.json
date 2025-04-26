@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Declare Many Variables",
+        "text": [
+            "To declare more than one variable of the same type, you can \nuse a comma-separated list:",
+            "Example\nInstead of writing:\nint x = 5;\nint y = 6;\nint z = 50;\nSystem.out.println(x + y + z);\n\nYou can simply write:\nint x = 5, y = 6, z = 50;\nSystem.out.println(x + y + z);\n\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "One Value to Multiple Variables",
+        "text": [
+            "You can also assign the same value to multiple variables in one line:",
+            "Example\nint x, y, z;\nx = y = z = 50;\nSystem.out.println(x + y + z);\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

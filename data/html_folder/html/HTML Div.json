@@ -1,0 +1,323 @@
+[
+    {
+        "title": "The <div> Element",
+        "text": [
+            "The <div> element is by default a \nblock element, meaning that it takes all available width, and comes with line \nbreaks before and after.",
+            "Example\nA <div> element takes up all available width:\n\n  Lorem Ipsum <div>I am a div</div>\n  dolor sit amet.\nResult\n\nLorem Ipsum\n  I am a div\n\ndolor sit amet.\n\n\nTry it Yourself »",
+            "The <div> element has no required attributes, but style, class and id are common."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "Lorem Ipsum <div>I am a div</div>\n  dolor sit amet."
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "<div> as a container",
+        "text": [
+            "The <div> element is often used to group sections of a web page together.",
+            "Example\nA <div> element with HTML elements:\n\n<div>\n   <h2>London</h2>  <p>London is the capital city of England.</p>  \n  <p>London has over 9 million inhabitants.</p>\n </div>\n\nResult\n\n\nLondon\nLondon is the capital city of England.\nLondon has over 9 million inhabitants.\n\n\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<div>\n   <h2>London</h2>  <p>London is the capital city of England.</p>  \n  <p>London has over 9 million inhabitants.</p>\n </div>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "London",
+        "text": [
+            "London is the capital city of England.",
+            "London has over 9 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Center align a <div> element",
+        "text": [
+            "If you have a <div> element that is \nnot 100% wide, and you want to center-align it, set the CSS\nmargin property to \nauto.",
+            "Example\n\n<style>div {  width:300px;  margin:auto;}\n  </style>\nResult\n\n\nLondon\nLondon is the capital city of England.\nLondon has over 9 million inhabitants.\n\n\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>div {  width:300px;  margin:auto;}\n  </style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "London",
+        "text": [
+            "London is the capital city of England.",
+            "London has over 9 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Multiple <div> elements",
+        "text": [
+            "You can have many <div> containers on the same page.",
+            "Example\n\n<div>\n   <h2>London</h2>  <p>London is the capital city of England.</p>  \n  <p>London has over 9 million inhabitants.</p>\n </div><div>\n   <h2>Oslo</h2>  <p>Oslo is the capital city of \n  Norway.</p>  \n  <p>Oslo has over 700,000 inhabitants.</p>\n </div><div>\n   <h2>Rome</h2>  <p>Rome is the capital city of \n  Italy.</p>  \n  <p>Rome has over 4 million inhabitants.</p>\n </div>\n\nResult\n\n\nLondon\nLondon is the capital city of England.\nLondon has over 9 million inhabitants.\n\n\nOslo\nOslo is the capital city of Norway.\nOslo has over 700,000 inhabitants.\n\n\nRome\nRome is the capital city of Italy.\nRome has over 4 million inhabitants.\n\n\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<div>\n   <h2>London</h2>  <p>London is the capital city of England.</p>  \n  <p>London has over 9 million inhabitants.</p>\n </div><div>\n   <h2>Oslo</h2>  <p>Oslo is the capital city of \n  Norway.</p>  \n  <p>Oslo has over 700,000 inhabitants.</p>\n </div><div>\n   <h2>Rome</h2>  <p>Rome is the capital city of \n  Italy.</p>  \n  <p>Rome has over 4 million inhabitants.</p>\n </div>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "London",
+        "text": [
+            "London is the capital city of England.",
+            "London has over 9 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Oslo",
+        "text": [
+            "Oslo is the capital city of Norway.",
+            "Oslo has over 700,000 inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Rome",
+        "text": [
+            "Rome is the capital city of Italy.",
+            "Rome has over 4 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Aligning <div> elements side by side",
+        "text": [
+            "When building web pages, you often want to have two or more \n<div> elements side by side, like this:",
+            "London\nLondon is the capital city of England.\nLondon has over 9 million inhabitants.\n\n\nOslo\nOslo is the capital city of Norway.\nOslo has over 700,000 inhabitants.\n\n\nRome\nRome is the capital city of Italy.\nRome has over 4 million inhabitants.",
+            "There are different methods for aligning elements side by side, all include some CSS styling.\nWe will look at the most common methods:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "London",
+        "text": [
+            "London is the capital city of England.",
+            "London has over 9 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Oslo",
+        "text": [
+            "Oslo is the capital city of Norway.",
+            "Oslo has over 700,000 inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Rome",
+        "text": [
+            "Rome is the capital city of Italy.",
+            "Rome has over 4 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Float",
+        "text": [
+            "The CSS float property was not originally meant to align \n<div> elements side-by-side,\nbut has been used for this purpose for many years.",
+            "The CSS float property is used for positioning and formatting content \nand allows elements to be positioned horizontally, rather than vertically.",
+            "Example\nHow to use float to align div elements side by side:\n\n<style>.mycontainer {  width:100%;  overflow:auto;\n  }.mycontainer div {  width:33%;   float:left;}</style>\n\n\nResult\n\n\nLondon\nLondon is the capital city of England.\nLondon has over 9 million inhabitants.\n\n\nOslo\nOslo is the capital city of Norway.\nOslo has over 700,000 inhabitants.\n\n\nRome\nRome is the capital city of Italy.\nRome has over 4 million inhabitants.\n\n\n\nTry it Yourself »",
+            "Learn more about float in our CSS float tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>.mycontainer {  width:100%;  overflow:auto;\n  }.mycontainer div {  width:33%;   float:left;}</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "London",
+        "text": [
+            "London is the capital city of England.",
+            "London has over 9 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Oslo",
+        "text": [
+            "Oslo is the capital city of Norway.",
+            "Oslo has over 700,000 inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Rome",
+        "text": [
+            "Rome is the capital city of Italy.",
+            "Rome has over 4 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Inline-block",
+        "text": [
+            "If you change the <div> element's \ndisplay property from block to \ninline-block,\nthe <div> elements will no longer add a line break before and after,\nand will be displayed side by side instead of on top of each other.",
+            "Example\nHow to use display: inline-block to align div elements side by side:\n\n<style>div {  width: 30%;  display: \n  inline-block;}</style>\n\n\nResult\n\n\nLondon\nLondon is the capital city of England.\nLondon has over 9 million inhabitants.\n\n\nOslo\nOslo is the capital city of Norway.\nOslo has over 700,000 inhabitants.\n\n\nRome\nRome is the capital city of Italy.\nRome has over 4 million inhabitants.\n\n\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>div {  width: 30%;  display: \n  inline-block;}</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "London",
+        "text": [
+            "London is the capital city of England.",
+            "London has over 9 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Oslo",
+        "text": [
+            "Oslo is the capital city of Norway.",
+            "Oslo has over 700,000 inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Rome",
+        "text": [
+            "Rome is the capital city of Italy.",
+            "Rome has over 4 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Flex",
+        "text": [
+            "The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout\nstructure without using float or positioning.",
+            "To make the CSS flex method work, surround the <div> elements with another \n<div> element and give\nit the status as a flex container.",
+            "Example\nHow to use flex to align div elements side by side:\n\n<style>.mycontainer {  display: flex;}.mycontainer \n  > div {  width:33%;}</style>\n\n\nResult\n\n\n\nLondon\nLondon is the capital city of England.\nLondon has over 9 million inhabitants.\n\n\nOslo\nOslo is the capital city of Norway.\nOslo has over 700,000 inhabitants.\n\n\nRome\nRome is the capital city of Italy.\nRome has over 4 million inhabitants.\n\n\n\n\nTry it Yourself »",
+            "Learn more about flex in our CSS flexbox tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>.mycontainer {  display: flex;}.mycontainer \n  > div {  width:33%;}</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "London",
+        "text": [
+            "London is the capital city of England.",
+            "London has over 9 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Oslo",
+        "text": [
+            "Oslo is the capital city of Norway.",
+            "Oslo has over 700,000 inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Rome",
+        "text": [
+            "Rome is the capital city of Italy.",
+            "Rome has over 4 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Grid",
+        "text": [
+            "The CSS Grid Layout Module offers a grid-based layout system,\nwith rows and columns,\nmaking it easier to design web pages without having to use floats and positioning.",
+            "Sounds almost the same as flex, but has the ability to define more than one row and position each row \nindividually.",
+            "The CSS grid method requires that you surround the \n<div> elements with another <div> element and give\nthe status as a grid container, and you must specify the width of each column.",
+            "Example\nHow to use grid to align <div> elements side by side:\n\n<style>.grid-container {  display: grid;  \n  grid-template-columns: 33% 33% 33%;}</style>\n\n\nResult\n\n\n\nLondon\nLondon is the capital city of England.\nLondon has over 9 million inhabitants.\n\n\nOslo\nOslo is the capital city of Norway.\nOslo has over 700,000 inhabitants.\n\n\nRome\nRome is the capital city of Italy.\nRome has over 4 million inhabitants.\n\n\n\n\nTry it Yourself »",
+            "Learn more about grid in our CSS grid tutorial.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>.grid-container {  display: grid;  \n  grid-template-columns: 33% 33% 33%;}</style>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "London",
+        "text": [
+            "London is the capital city of England.",
+            "London has over 9 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Oslo",
+        "text": [
+            "Oslo is the capital city of Norway.",
+            "Oslo has over 700,000 inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Rome",
+        "text": [
+            "Rome is the capital city of Italy.",
+            "Rome has over 4 million inhabitants."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

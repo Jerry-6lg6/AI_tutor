@@ -1,0 +1,28 @@
+[
+    {
+        "title": "TV Schedule DTD",
+        "text": [
+            "<!DOCTYPE TVSCHEDULE [\n<!ELEMENT TVSCHEDULE (CHANNEL+)>\n<!ELEMENT CHANNEL (BANNER,DAY+)>\n<!ELEMENT BANNER (#PCDATA)>\n<!ELEMENT DAY (DATE,(HOLIDAY|PROGRAMSLOT+)+)>\n<!ELEMENT HOLIDAY (#PCDATA)>\n<!ELEMENT DATE (#PCDATA)>\n<!ELEMENT PROGRAMSLOT (TIME,TITLE,DESCRIPTION?)>\n<!ELEMENT TIME (#PCDATA)>\n<!ELEMENT TITLE (#PCDATA)> \n<!ELEMENT DESCRIPTION (#PCDATA)>\n<!ATTLIST TVSCHEDULE NAME CDATA #REQUIRED>\n<!ATTLIST CHANNEL CHAN CDATA #REQUIRED>\n<!ATTLIST PROGRAMSLOT VTR CDATA #IMPLIED>\n<!ATTLIST TITLE RATING CDATA #IMPLIED>\n<!ATTLIST TITLE LANGUAGE CDATA #IMPLIED>\n]>"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Newspaper Article DTD",
+        "text": [
+            "<!DOCTYPE NEWSPAPER [\n<!ELEMENT NEWSPAPER (ARTICLE+)>\n<!ELEMENT ARTICLE (HEADLINE,BYLINE,LEAD,BODY,NOTES)>\n<!ELEMENT HEADLINE (#PCDATA)>\n<!ELEMENT BYLINE (#PCDATA)>\n<!ELEMENT LEAD (#PCDATA)>\n<!ELEMENT BODY (#PCDATA)>\n<!ELEMENT NOTES (#PCDATA)>\n<!ATTLIST ARTICLE AUTHOR CDATA #REQUIRED>\n<!ATTLIST ARTICLE EDITOR CDATA #IMPLIED>\n<!ATTLIST ARTICLE DATE CDATA #IMPLIED>\n<!ATTLIST ARTICLE EDITION CDATA #IMPLIED>\n<!ENTITY NEWSPAPER \"Vervet Logic Times\">\n<!ENTITY PUBLISHER \"Vervet Logic Press\">\n<!ENTITY COPYRIGHT \"Copyright 1998 Vervet Logic Press\">\n]>",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Product Catalog DTD",
+        "text": [
+            "<!DOCTYPE CATALOG [\n<!ENTITY AUTHOR \"John Doe\">\n<!ENTITY COMPANY \"JD Power Tools, Inc.\">\n<!ENTITY EMAIL \"jd@jd-tools.com\">\n<!ELEMENT CATALOG (PRODUCT+)>\n<!ELEMENT PRODUCT\n(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>\n<!ATTLIST PRODUCT\nNAME CDATA #IMPLIED\nCATEGORY (HandTool|Table|Shop-Professional) \"HandTool\"\nPARTNUM CDATA #IMPLIED\nPLANT (Pittsburgh|Milwaukee|Chicago) \"Chicago\"\nINVENTORY (InStock|Backordered|Discontinued) \"InStock\">\n<!ELEMENT SPECIFICATIONS (#PCDATA)>\n<!ATTLIST SPECIFICATIONS\nWEIGHT CDATA #IMPLIED\nPOWER CDATA #IMPLIED>\n<!ELEMENT OPTIONS (#PCDATA)>\n<!ATTLIST OPTIONS\nFINISH (Metal|Polished|Matte) \"Matte\"\nADAPTER (Included|Optional|NotApplicable) \"Included\"\nCASE (HardShell|Soft|NotApplicable) \"HardShell\">\n<!ELEMENT PRICE (#PCDATA)>\n<!ATTLIST PRICE\nMSRP CDATA #IMPLIED\nWHOLESALE CDATA #IMPLIED\nSTREET CDATA #IMPLIED\nSHIPPING CDATA #IMPLIED>\n<!ELEMENT NOTES (#PCDATA)>\n]>",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

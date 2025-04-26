@@ -1,0 +1,47 @@
+[
+    {
+        "title": "Delete a File",
+        "text": [
+            "To delete a file, you must import the OS module, and run its\nos.remove() function:",
+            "Example\nRemove the file \"demofile.txt\":\n\n  import osos.remove(\"demofile.txt\")"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import osos.remove(\"demofile.txt\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Check if File exist:",
+        "text": [
+            "To avoid getting an error, you might want to check if the file exists before you try to delete it:",
+            "Example\nCheck if file exists, then delete it:\n\n  import osif os.path.exists(\"demofile.txt\"):  os.remove(\"demofile.txt\")\n  else:  print(\"The file does not exist\")"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import osif os.path.exists(\"demofile.txt\"):  os.remove(\"demofile.txt\")\n  else:  print(\"The file does not exist\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Delete Folder",
+        "text": [
+            "To delete an entire folder, use the os.rmdir() method:",
+            "Example\nRemove the folder \"myfolder\":\n\n  import osos.rmdir(\"myfolder\")",
+            "Note: You can only remove empty folders.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import osos.rmdir(\"myfolder\")"
+            }
+        ],
+        "tables": []
+    }
+]

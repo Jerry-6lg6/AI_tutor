@@ -1,0 +1,18 @@
+[
+    {
+        "title": "ADD CONSTRAINT",
+        "text": [
+            "The ADD CONSTRAINT command is used to create \na constraint after a table is already created.",
+            "The following SQL adds a constraint named \"PK_Person\" that is a \nPRIMARY KEY constraint on multiple columns (ID and LastName):",
+            "Example\n\nALTER TABLE PersonsADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "ALTER TABLE PersonsADD CONSTRAINT PK_Person PRIMARY KEY (ID,LastName);"
+            }
+        ],
+        "tables": []
+    }
+]

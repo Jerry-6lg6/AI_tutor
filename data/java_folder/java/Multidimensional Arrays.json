@@ -1,0 +1,46 @@
+[
+    {
+        "title": "Multidimensional Arrays",
+        "text": [
+            "A multidimensional array is an array of arrays.",
+            "Multidimensional arrays are useful when you want to store data as a tabular form, like a table with rows and columns.",
+            "To create a two-dimensional array, add each array within its own set of \ncurly braces:",
+            "Example\nint[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };",
+            "myNumbers is now an array with two arrays as its elements."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Access Elements",
+        "text": [
+            "To access the elements of the myNumbers array, \nspecify two indexes: one for the array, and one for the element inside that array. \nThis example accesses the third element (2) in the second array (1) of \nmyNumbers:",
+            "Example\nint[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };\nSystem.out.println(myNumbers[1][2]); // Outputs 7\n\nTry it Yourself »",
+            "Remember that: Array indexes start with 0: [0] is the first element. [1] is the second element, etc."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Change Element Values",
+        "text": [
+            "You can also change the value of an element:",
+            "Example\nint[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };\nmyNumbers[1][2] = 9;\nSystem.out.println(myNumbers[1][2]); // Outputs 9 instead of 7\n\nTry it Yourself »"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Loop Through a Multi-Dimensional Array",
+        "text": [
+            "You can also use a for loop inside another for loop to get the elements of a two-dimensional array (we still have to point to the two indexes):",
+            "Example\nint[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };\nfor (int i = 0; i < myNumbers.length; ++i) {\n  for (int j = 0; j < myNumbers[i].length; ++j) {\n    System.out.println(myNumbers[i][j]);\n  }}\n\nTry it Yourself »",
+            "Or you could just use a for-each loop, which is considered easier \nto read and write:",
+            "Example\nint[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };\nfor (int[] row : myNumbers) {\n  for (int i : row) {\n    System.out.println(i);\n  }\n}\n\nTry it Yourself »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

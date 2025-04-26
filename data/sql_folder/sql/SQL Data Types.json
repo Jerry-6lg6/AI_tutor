@@ -1,0 +1,384 @@
+[
+    {
+        "title": "SQL Data Types",
+        "text": [
+            "Each column in a database table is required to have a name and a data type.",
+            "An SQL developer must decide what type of data that will be stored inside each \ncolumn when creating a table. The data type is a \nguideline for SQL to understand what type of data is expected inside of each \ncolumn, and it also identifies how SQL will interact with the stored data.",
+            "Note: Data types might have different names in different database.\nAnd even if the name is the same, the size and other details may be different! \nAlways check the \ndocumentation!"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "MySQL Data Types (Version 8.0)",
+        "text": [
+            "In MySQL there are three main data types: string, numeric, and date and time.",
+            "Data type\nDescription\n\n\nBIT(size)\nA bit-value type. The number of bits per value is specified in size. \n      The size parameter can hold a value from 1 to 64. The default \n      value for size is 1.\n\n\nTINYINT(size)\nA very small integer. Signed range is from -128 to 127. Unsigned range \n      is from 0 to 255. The size parameter specifies the maximum \n      display width (which is 255)\n\n\nBOOL\nZero is considered as false, nonzero values are considered as true. \n\n\nBOOLEAN\nEqual to BOOL\n\n\nSMALLINT(size)\nA small integer. Signed range is from -32768 to 32767. Unsigned range \n      is from 0 to 65535. The size parameter specifies the maximum \n      display width (which is 255)\n\n\nMEDIUMINT(size)\nA medium integer. Signed range is from -8388608 to 8388607. Unsigned \n      range is from 0 to 16777215. The size parameter specifies the \n      maximum display width (which is 255)\n\n\nINT(size)\nA medium integer. Signed range is from -2147483648 to 2147483647. \n      Unsigned range is from 0 to 4294967295. The size parameter \n      specifies the maximum display width (which is 255)\n\n\nINTEGER(size)\nEqual to INT(size)\n\n\nBIGINT(size)\nA large integer. Signed range is from -9223372036854775808 to \n      9223372036854775807. Unsigned range is from 0 to 18446744073709551615. The\n      size parameter specifies the maximum display width (which is 255)\n\n\nFLOAT(size, d)\nA floating point number. The total number of digits is specified in \n      size. The   number of digits after the decimal point is specified \n      in the d parameter. This syntax is deprecated in MySQL 8.0.17, \n      and it will be removed in future MySQL versions\n\n\nFLOAT(p)\nA floating point number. MySQL uses the p value to determine \n      whether to use FLOAT or DOUBLE for the resulting data type. If p \n      is from 0 to 24, the data type becomes FLOAT(). If p is from 25 to \n      53, the data type becomes DOUBLE()\n\n\nDOUBLE(size, d)\nA normal-size floating point number. The total number of digits is specified in \n      size. The   number of digits after the decimal point is specified \n      in the d parameter\n\n\nDOUBLE PRECISION(size, d)\n \n\n\nDECIMAL(size, d)\nAn exact fixed-point number. The   total number of digits is specified in \n      size. The   number of digits after the decimal point is specified \n      in the d parameter. The maximum number for size is 65. \n      The maximum number for d is 30. The default value for size \n      is 10. The default value for d is 0.\n\n\nDEC(size, d)\nEqual to DECIMAL(size,d)",
+            "Note: All the numeric data types may have an extra option: UNSIGNED \nor ZEROFILL. If you add the UNSIGNED option, MySQL disallows negative values for \nthe column. If you add the ZEROFILL option, MySQL automatically also adds the \nUNSIGNED attribute to the column.",
+            ""
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Data type": "CHAR(size)",
+                    "Description": "A FIXED length string (can contain letters, numbers, and special characters). The\n      size parameter specifies the column length in characters - can be \n      from 0 to   255. Default is 1"
+                },
+                {
+                    "Data type": "VARCHAR(size)",
+                    "Description": "A VARIABLE length string (can contain letters, numbers, and special \n      characters). The size parameter specifies the maximum string \n      length in characters - can be from 0 to 65535"
+                },
+                {
+                    "Data type": "BINARY(size)",
+                    "Description": "Equal to CHAR(), but stores binary byte strings. The size \n      parameter specifies the column length in bytes. Default is 1"
+                },
+                {
+                    "Data type": "VARBINARY(size)",
+                    "Description": "Equal to VARCHAR(), but stores binary byte strings. The size \n      parameter specifies the maximum column length in bytes."
+                },
+                {
+                    "Data type": "TINYBLOB",
+                    "Description": "For BLOBs (Binary Large Objects). Max length: 255 bytes"
+                },
+                {
+                    "Data type": "TINYTEXT",
+                    "Description": "Holds a string with a maximum length of 255 characters"
+                },
+                {
+                    "Data type": "TEXT(size)",
+                    "Description": "Holds a string with a maximum length of 65,535 bytes"
+                },
+                {
+                    "Data type": "BLOB(size)",
+                    "Description": "For BLOBs (Binary Large Objects). Holds up to 65,535 bytes of data"
+                },
+                {
+                    "Data type": "MEDIUMTEXT",
+                    "Description": "Holds a string with a maximum length of 16,777,215 characters"
+                },
+                {
+                    "Data type": "MEDIUMBLOB",
+                    "Description": "For BLOBs (Binary Large Objects). Holds up to 16,777,215 bytes of data"
+                },
+                {
+                    "Data type": "LONGTEXT",
+                    "Description": "Holds a string with a maximum length of 4,294,967,295 characters"
+                },
+                {
+                    "Data type": "LONGBLOB",
+                    "Description": "For BLOBs (Binary Large Objects). Holds up to 4,294,967,295 bytes of data"
+                },
+                {
+                    "Data type": "ENUM(val1, val2, val3, ...)",
+                    "Description": "A string object that can have only one value, chosen from a list of possible values. You can list up to 65535 values in an ENUM list. If a value is inserted that is not in the list, a   blank value will be inserted. \n      The values are sorted in the order you enter them"
+                },
+                {
+                    "Data type": "SET(val1, val2, val3, ...)",
+                    "Description": "A string object that can have 0 or more values, chosen from a list of \n      possible values. You can list up to 64 values in a SET list"
+                }
+            ],
+            [
+                {
+                    "Data type": "BIT(size)",
+                    "Description": "A bit-value type. The number of bits per value is specified in size. \n      The size parameter can hold a value from 1 to 64. The default \n      value for size is 1."
+                },
+                {
+                    "Data type": "TINYINT(size)",
+                    "Description": "A very small integer. Signed range is from -128 to 127. Unsigned range \n      is from 0 to 255. The size parameter specifies the maximum \n      display width (which is 255)"
+                },
+                {
+                    "Data type": "BOOL",
+                    "Description": "Zero is considered as false, nonzero values are considered as true."
+                },
+                {
+                    "Data type": "BOOLEAN",
+                    "Description": "Equal to BOOL"
+                },
+                {
+                    "Data type": "SMALLINT(size)",
+                    "Description": "A small integer. Signed range is from -32768 to 32767. Unsigned range \n      is from 0 to 65535. The size parameter specifies the maximum \n      display width (which is 255)"
+                },
+                {
+                    "Data type": "MEDIUMINT(size)",
+                    "Description": "A medium integer. Signed range is from -8388608 to 8388607. Unsigned \n      range is from 0 to 16777215. The size parameter specifies the \n      maximum display width (which is 255)"
+                },
+                {
+                    "Data type": "INT(size)",
+                    "Description": "A medium integer. Signed range is from -2147483648 to 2147483647. \n      Unsigned range is from 0 to 4294967295. The size parameter \n      specifies the maximum display width (which is 255)"
+                },
+                {
+                    "Data type": "INTEGER(size)",
+                    "Description": "Equal to INT(size)"
+                },
+                {
+                    "Data type": "BIGINT(size)",
+                    "Description": "A large integer. Signed range is from -9223372036854775808 to \n      9223372036854775807. Unsigned range is from 0 to 18446744073709551615. The\n      size parameter specifies the maximum display width (which is 255)"
+                },
+                {
+                    "Data type": "FLOAT(size, d)",
+                    "Description": "A floating point number. The total number of digits is specified in \n      size. The   number of digits after the decimal point is specified \n      in the d parameter. This syntax is deprecated in MySQL 8.0.17, \n      and it will be removed in future MySQL versions"
+                },
+                {
+                    "Data type": "FLOAT(p)",
+                    "Description": "A floating point number. MySQL uses the p value to determine \n      whether to use FLOAT or DOUBLE for the resulting data type. If p \n      is from 0 to 24, the data type becomes FLOAT(). If p is from 25 to \n      53, the data type becomes DOUBLE()"
+                },
+                {
+                    "Data type": "DOUBLE(size, d)",
+                    "Description": "A normal-size floating point number. The total number of digits is specified in \n      size. The   number of digits after the decimal point is specified \n      in the d parameter"
+                },
+                {
+                    "Data type": "DOUBLE PRECISION(size, d)",
+                    "Description": ""
+                },
+                {
+                    "Data type": "DECIMAL(size, d)",
+                    "Description": "An exact fixed-point number. The   total number of digits is specified in \n      size. The   number of digits after the decimal point is specified \n      in the d parameter. The maximum number for size is 65. \n      The maximum number for d is 30. The default value for size \n      is 10. The default value for d is 0."
+                },
+                {
+                    "Data type": "DEC(size, d)",
+                    "Description": "Equal to DECIMAL(size,d)"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "MS SQL Server Data Types",
+        "text": [],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Data type": "char(n)",
+                    "Description": "Fixed-length non-Unicode character data (n must be between 1 and 8000)",
+                    "Max char length": "8,000",
+                    "Storage": "n bytes (uses one byte for each character)"
+                },
+                {
+                    "Data type": "varchar(n)",
+                    "Description": "Variable-length non-Unicode character data (n must be between 1 and 8000)",
+                    "Max char length": "8,000",
+                    "Storage": "n bytes + 2 bytes"
+                },
+                {
+                    "Data type": "varchar(max)",
+                    "Description": "Variable-length non-Unicode character data",
+                    "Max char length": "",
+                    "Storage": "up to 2 GB"
+                },
+                {
+                    "Data type": "nchar(n)",
+                    "Description": "Fixed-length Unicode character data (n must be between 1 and 4000)",
+                    "Max char length": "4,000",
+                    "Storage": "2 * n bytes (uses two bytes for each character)"
+                },
+                {
+                    "Data type": "nvarchar(n)",
+                    "Description": "Variable-length Unicode character data (n must be between 1 and 4000)",
+                    "Max char length": "4,000",
+                    "Storage": "2 * n bytes + 2 bytes (uses two bytes for each character)"
+                },
+                {
+                    "Data type": "nvarchar(max)",
+                    "Description": "Variable-length Unicode character data",
+                    "Max char length": "",
+                    "Storage": "up to 2 GB"
+                },
+                {
+                    "Data type": "binary(n)",
+                    "Description": "Fixed-length binary data (n must be between 1 and 8000)",
+                    "Max char length": "8,000",
+                    "Storage": "n bytes"
+                },
+                {
+                    "Data type": "varbinary(n)",
+                    "Description": "Variable-length binary data (n must be between 1 and 8000)",
+                    "Max char length": "8,000",
+                    "Storage": "actual length of data entered + 2 bytes"
+                },
+                {
+                    "Data type": "varbinary(max)",
+                    "Description": "Variable-length binary data",
+                    "Max char length": "2GB",
+                    "Storage": ""
+                }
+            ],
+            [
+                {
+                    "Data type": "bit",
+                    "Description": "Integer that can be 0, 1, or NULL",
+                    "Storage": ""
+                },
+                {
+                    "Data type": "tinyint",
+                    "Description": "Allows whole numbers from 0 to 255",
+                    "Storage": "1 byte"
+                },
+                {
+                    "Data type": "smallint",
+                    "Description": "Allows whole numbers between -32,768 and 32,767",
+                    "Storage": "2 bytes"
+                },
+                {
+                    "Data type": "int",
+                    "Description": "Allows whole numbers between -2,147,483,648 and 2,147,483,647",
+                    "Storage": "4 bytes"
+                },
+                {
+                    "Data type": "bigint",
+                    "Description": "Allows whole numbers between -9,223,372,036,854,775,808 and   9,223,372,036,854,775,807",
+                    "Storage": "8 bytes"
+                },
+                {
+                    "Data type": "decimal(p,s)",
+                    "Description": "Fixed precision and scale numbers.\n      Allows numbers from -10^38 +1 to 10^38 â1.\nThe p parameter indicates the maximum total number of digits that can  be stored (both to the left and to the right of the decimal point). p  must be a value from 1 to 38. Default is 18.\nThe s parameter indicates the maximum number of digits stored to the  right of the decimal point. s must be a value from 0 to p. Default value  is 0",
+                    "Storage": "5-17 bytes"
+                },
+                {
+                    "Data type": "numeric(p,s)",
+                    "Description": "Fixed precision and scale numbers.\n      Allows numbers from -10^38 +1 to 10^38 â1.\nThe p parameter indicates the maximum total number of digits that can  be stored (both to the left and to the right of the decimal point). p  must be a value from 1 to 38. Default is 18.\nThe s parameter indicates the maximum number of digits stored to the  right of the decimal point. s must be a value from 0 to p. Default value  is 0",
+                    "Storage": "5-17 bytes"
+                },
+                {
+                    "Data type": "smallmoney",
+                    "Description": "Monetary data from -214,748.3648 to 214,748.3647",
+                    "Storage": "4 bytes"
+                },
+                {
+                    "Data type": "money",
+                    "Description": "Monetary data from -922,337,203,685,477.5808 to   922,337,203,685,477.5807",
+                    "Storage": "8 bytes"
+                },
+                {
+                    "Data type": "float(n)",
+                    "Description": "Floating precision number data from -1.79E + 308 to 1.79E + 308.The   n parameter indicates whether the field should hold 4 or 8 bytes.   float(24) holds a 4-byte field and float(53) holds an 8-byte field.   Default value of n is 53.",
+                    "Storage": "4 or 8 bytes"
+                },
+                {
+                    "Data type": "real",
+                    "Description": "Floating precision number data from -3.40E + 38 to 3.40E + 38",
+                    "Storage": "4 bytes"
+                }
+            ],
+            [
+                {
+                    "Data type": "datetime",
+                    "Description": "From January 1, 1753 to December 31, 9999 with an accuracy of 3.33   milliseconds",
+                    "Storage": "8 bytes"
+                },
+                {
+                    "Data type": "datetime2",
+                    "Description": "From January 1, 0001 to December 31, 9999 with an accuracy of 100   nanoseconds",
+                    "Storage": "6-8 bytes"
+                },
+                {
+                    "Data type": "smalldatetime",
+                    "Description": "From January 1, 1900 to June 6, 2079 with an accuracy of 1 minute",
+                    "Storage": "4 bytes"
+                },
+                {
+                    "Data type": "date",
+                    "Description": "Store a date only. From January 1, 0001 to December 31, 9999",
+                    "Storage": "3 bytes"
+                },
+                {
+                    "Data type": "time",
+                    "Description": "Store a time only to an accuracy of 100 nanoseconds",
+                    "Storage": "3-5 bytes"
+                },
+                {
+                    "Data type": "datetimeoffset",
+                    "Description": "The same as datetime2 with the addition of a time zone offset",
+                    "Storage": "8-10 bytes"
+                },
+                {
+                    "Data type": "timestamp",
+                    "Description": "Stores a unique number that gets updated every time a row gets created   or modified. The timestamp value is based upon an internal clock and does   not correspond to real time. Each table may have only one timestamp   variable",
+                    "Storage": ""
+                }
+            ]
+        ]
+    },
+    {
+        "title": "MS Access Data Types",
+        "text": [
+            "Data type\nDescription\nStorage\n\n\nText\nUse for text or combinations of text and numbers. 255 characters maximum\n \n\n\nMemo\nMemo is used for larger amounts of text. Stores up to 65,536 characters. Note: You cannot sort a memo field. However, they are   searchable\n \n\n\nByte\nAllows whole numbers from 0 to 255\n1 byte\n\n\nInteger\nAllows whole numbers between -32,768 and 32,767\n2 bytes\n\n\nLong\nAllows whole numbers between -2,147,483,648 and 2,147,483,647\n4 bytes\n\n\nSingle\nSingle precision floating-point. Will handle most decimals \n4 bytes\n\n\nDouble\nDouble precision floating-point. Will handle most decimals\n8 bytes\n\n\nCurrency\nUse for currency. Holds up to 15 digits of whole dollars, plus 4 decimal places. Tip: You can choose which country's currency to use\n8 bytes\n\n\nAutoNumber\nAutoNumber fields automatically give each record its own number, usually starting at 1\n4 bytes\n\n\nDate/Time\nUse for dates and times\n8 bytes\n\n\nYes/No\nA logical field can be displayed as Yes/No, True/False, or On/Off. In code, use the constants True and False (equivalent to -1 and 0). Note:   Null values are not allowed in Yes/No fields\n1 bit\n\n\nOle Object\nCan store pictures, audio, video, or other BLOBs (Binary Large Objects)\nup to 1GB\n\n\nHyperlink\nContain links to other files, including web pages\n \n\n\nLookup Wizard\nLet you type a list of options, which can then be chosen from a drop-down list\n4 bytes",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Data type": "Text",
+                    "Description": "Use for text or combinations of text and numbers. 255 characters maximum",
+                    "Storage": ""
+                },
+                {
+                    "Data type": "Memo",
+                    "Description": "Memo is used for larger amounts of text. Stores up to 65,536 characters. Note: You cannot sort a memo field. However, they are   searchable",
+                    "Storage": ""
+                },
+                {
+                    "Data type": "Byte",
+                    "Description": "Allows whole numbers from 0 to 255",
+                    "Storage": "1 byte"
+                },
+                {
+                    "Data type": "Integer",
+                    "Description": "Allows whole numbers between -32,768 and 32,767",
+                    "Storage": "2 bytes"
+                },
+                {
+                    "Data type": "Long",
+                    "Description": "Allows whole numbers between -2,147,483,648 and 2,147,483,647",
+                    "Storage": "4 bytes"
+                },
+                {
+                    "Data type": "Single",
+                    "Description": "Single precision floating-point. Will handle most decimals",
+                    "Storage": "4 bytes"
+                },
+                {
+                    "Data type": "Double",
+                    "Description": "Double precision floating-point. Will handle most decimals",
+                    "Storage": "8 bytes"
+                },
+                {
+                    "Data type": "Currency",
+                    "Description": "Use for currency. Holds up to 15 digits of whole dollars, plus 4 decimal places. Tip: You can choose which country's currency to use",
+                    "Storage": "8 bytes"
+                },
+                {
+                    "Data type": "AutoNumber",
+                    "Description": "AutoNumber fields automatically give each record its own number, usually starting at 1",
+                    "Storage": "4 bytes"
+                },
+                {
+                    "Data type": "Date/Time",
+                    "Description": "Use for dates and times",
+                    "Storage": "8 bytes"
+                },
+                {
+                    "Data type": "Yes/No",
+                    "Description": "A logical field can be displayed as Yes/No, True/False, or On/Off. In code, use the constants True and False (equivalent to -1 and 0). Note:   Null values are not allowed in Yes/No fields",
+                    "Storage": "1 bit"
+                },
+                {
+                    "Data type": "Ole Object",
+                    "Description": "Can store pictures, audio, video, or other BLOBs (Binary Large Objects)",
+                    "Storage": "up to 1GB"
+                },
+                {
+                    "Data type": "Hyperlink",
+                    "Description": "Contain links to other files, including web pages",
+                    "Storage": ""
+                },
+                {
+                    "Data type": "Lookup Wizard",
+                    "Description": "Let you type a list of options, which can then be chosen from a drop-down list",
+                    "Storage": "4 bytes"
+                }
+            ]
+        ]
+    }
+]

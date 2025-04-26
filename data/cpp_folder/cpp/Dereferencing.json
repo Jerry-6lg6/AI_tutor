@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Get Memory Address and Value",
+        "text": [
+            "In the example from the previous page, we used the pointer variable to get the memory address of a variable \n(used together with the & reference operator). However, you can also \nuse the pointer to get the value of the variable, by using the * operator \n(the dereference operator):",
+            "Example\n\n    string food = \"Pizza\";  // Variable declarationstring* ptr = \n    &food;    // Pointer declaration// \n    Reference: Output the memory address of food with the pointer (0x6dfed4)cout << \n    ptr << \"\\n\";// \n    Dereference: Output the value of food with the pointer (Pizza)cout << \n    *ptr << \"\\n\";\n\nTry it Yourself »",
+            "Note that the * sign can be confusing here, as it does two different things \nin our code:\n\nWhen used in declaration (string* ptr), it creates a pointer variable.\nWhen not used in declaration, it act as a dereference operator.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "string food = \"Pizza\";  // Variable declarationstring* ptr = \n    &food;    // Pointer declaration// \n    Reference: Output the memory address of food with the pointer (0x6dfed4)cout << \n    ptr << \"\\n\";// \n    Dereference: Output the value of food with the pointer (Pizza)cout << \n    *ptr << \"\\n\";"
+            }
+        ],
+        "tables": []
+    }
+]

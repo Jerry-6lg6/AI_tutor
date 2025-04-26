@@ -1,0 +1,12 @@
+[
+    {
+        "title": "C stdio Functions",
+        "text": [
+            "The <stdio.h> header provides a variety of functions for input, output and file handling.",
+            "A list of all stdio functions can be found in the table below:",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

@@ -1,0 +1,89 @@
+[
+    {
+        "title": "The id Attribute",
+        "text": [
+            "The id attribute specifies a unique id \nfor an HTML element. The value of the id \nattribute must be unique within the HTML document.",
+            "The id attribute is used to point \nto a specific style declaration in a style sheet. It is also used by JavaScript to access and \nmanipulate the element with the specific id.",
+            "The syntax for id is: write a hash character (#), followed by an id name. \nThen, define the CSS properties within curly braces {}.",
+            "In the following example we have an <h1> element that points to the \nid name \n\"myHeader\". This <h1> \nelement will be styled according to the #myHeader \nstyle definition in the head section:",
+            "Example\n\n  <!DOCTYPE html><html><head><style>#myHeader {  \n  background-color: lightblue;  color: black;  padding: 40px;  \n  text-align: center;} </style></head><body><h1 id=\"myHeader\">My \n  Header</h1></body></html>\n\n Try it Yourself »",
+            "Note: The id name is case sensitive!\nNote: The id name must contain at least one \n  character, cannot start with a number, and must not contain whitespaces (spaces, tabs, \n  etc.)."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<!DOCTYPE html><html><head><style>#myHeader {  \n  background-color: lightblue;  color: black;  padding: 40px;  \n  text-align: center;} </style></head><body><h1 id=\"myHeader\">My \n  Header</h1></body></html>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Difference Between Class and ID",
+        "text": [
+            "A \nclass name can be used by multiple HTML elements, while an id name must only be \nused by one HTML element \nwithin the page:",
+            "Example\n\n  <style>/* Style the element with the id \"myHeader\" \n  */\n#myHeader {  background-color: lightblue;  \n  color: black;  padding: \n  40px;  text-align: center;}/* Style all \n  elements with the class name \"city\" */.city\n  {  background-color: tomato;  color: white;  padding: 10px;} </style>\n<!-- An element with a unique id --><h1 id=\"myHeader\">My \n  Cities</h1><!-- Multiple elements with same class --><h2 class=\"city\">London</h2><p>London is the capital of England.</p>\n  <h2 class=\"city\">Paris</h2><p>Paris is the capital of France.</p>\n  <h2 class=\"city\">Tokyo</h2><p>Tokyo is the capital of Japan.</p>\n\n Try it Yourself »",
+            "Tip: You can learn much more about CSS in our CSS Tutorial.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<style>/* Style the element with the id \"myHeader\" \n  */\n#myHeader {  background-color: lightblue;  \n  color: black;  padding: \n  40px;  text-align: center;}/* Style all \n  elements with the class name \"city\" */.city\n  {  background-color: tomato;  color: white;  padding: 10px;} </style>\n<!-- An element with a unique id --><h1 id=\"myHeader\">My \n  Cities</h1><!-- Multiple elements with same class --><h2 class=\"city\">London</h2><p>London is the capital of England.</p>\n  <h2 class=\"city\">Paris</h2><p>Paris is the capital of France.</p>\n  <h2 class=\"city\">Tokyo</h2><p>Tokyo is the capital of Japan.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML Bookmarks with ID and Links",
+        "text": [
+            "HTML bookmarks are used to allow readers to jump to specific parts of a webpage.",
+            "Bookmarks can be useful if your page is very long.",
+            "To use a bookmark, you must first create it, and then add a link \nto it.",
+            "Then, when the link is clicked, the page will scroll to the location with the \nbookmark."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Example",
+        "text": [
+            "First, create a bookmark with the id attribute:",
+            "<h2 id=\"C4\">Chapter 4</h2>",
+            "Then, add a link to the bookmark (\"Jump to Chapter 4\"), from within the same page:",
+            "Example\n\n <a href=\"#C4\">Jump to Chapter 4</a>\n\nTry it Yourself »",
+            "Or, add a link to the bookmark (\"Jump to Chapter 4\"), from another page:",
+            "<a href=\"html_demo.html#C4\">Jump to Chapter 4</a>"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<a href=\"#C4\">Jump to Chapter 4</a>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using the id Attribute in JavaScript",
+        "text": [
+            "The id attribute can also be used by JavaScript to perform \nsome tasks for that specific element.",
+            "JavaScript can access an element with a specific id with the getElementById() method:",
+            "Example\nUse the id attribute to manipulate text with JavaScript:\n\n  <script>function displayResult() {  document.getElementById(\"myHeader\").innerHTML = \"Have a nice day!\";}\n  </script>\n\n Try it Yourself »",
+            "Tip: Study JavaScript in the HTML JavaScript chapter, or in our\nJavaScript Tutorial."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<script>function displayResult() {  document.getElementById(\"myHeader\").innerHTML = \"Have a nice day!\";}\n  </script>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

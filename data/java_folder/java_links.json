@@ -1,0 +1,206 @@
+[
+    {
+        "title": "Java Intro",
+        "url": "https://www.w3schools.com/java/java_intro.asp"
+    },
+    {
+        "title": "Java Get Started",
+        "url": "https://www.w3schools.com/java/java_getstarted.asp"
+    },
+    {
+        "title": "Java Syntax",
+        "url": "https://www.w3schools.com/java/java_syntax.asp"
+    },
+    {
+        "title": "Java Output",
+        "url": "https://www.w3schools.com/java/java_output.asp"
+    },
+    {
+        "title": "Print Text",
+        "url": "https://www.w3schools.com/java/java_output.asp"
+    },
+    {
+        "title": "Print Numbers",
+        "url": "https://www.w3schools.com/java/java_output_numbers.asp"
+    },
+    {
+        "title": "Java Comments",
+        "url": "https://www.w3schools.com/java/java_comments.asp"
+    },
+    {
+        "title": "Java Variables",
+        "url": "https://www.w3schools.com/java/java_variables.asp"
+    },
+    {
+        "title": "Variables",
+        "url": "https://www.w3schools.com/java/java_variables.asp"
+    },
+    {
+        "title": "Print Variables",
+        "url": "https://www.w3schools.com/java/java_variables_print.asp"
+    },
+    {
+        "title": "Multiple Variables",
+        "url": "https://www.w3schools.com/java/java_variables_multiple.asp"
+    },
+    {
+        "title": "Identifiers",
+        "url": "https://www.w3schools.com/java/java_variables_identifiers.asp"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/java/java_variables_reallife.asp"
+    },
+    {
+        "title": "Java Data Types",
+        "url": "https://www.w3schools.com/java/java_data_types.asp"
+    },
+    {
+        "title": "Data Types",
+        "url": "https://www.w3schools.com/java/java_data_types.asp"
+    },
+    {
+        "title": "Numbers",
+        "url": "https://www.w3schools.com/java/java_data_types_numbers.asp"
+    },
+    {
+        "title": "Booleans",
+        "url": "https://www.w3schools.com/java/java_data_types_boolean.asp"
+    },
+    {
+        "title": "Characters",
+        "url": "https://www.w3schools.com/java/java_data_types_characters.asp"
+    },
+    {
+        "title": "Real-Life Example",
+        "url": "https://www.w3schools.com/java/java_data_types_reallife.asp"
+    },
+    {
+        "title": "Non-primitive Types",
+        "url": "https://www.w3schools.com/java/java_data_types_non-prim.asp"
+    },
+    {
+        "title": "Java Type Casting",
+        "url": "https://www.w3schools.com/java/java_type_casting.asp"
+    },
+    {
+        "title": "Java Operators",
+        "url": "https://www.w3schools.com/java/java_operators.asp"
+    },
+    {
+        "title": "Java Strings",
+        "url": "https://www.w3schools.com/java/java_strings.asp"
+    },
+    {
+        "title": "Strings",
+        "url": "https://www.w3schools.com/java/java_strings.asp"
+    },
+    {
+        "title": "Concatenation",
+        "url": "https://www.w3schools.com/java/java_strings_concat.asp"
+    },
+    {
+        "title": "Numbers and Strings",
+        "url": "https://www.w3schools.com/java/java_strings_numbers.asp"
+    },
+    {
+        "title": "Special Characters",
+        "url": "https://www.w3schools.com/java/java_strings_specchars.asp"
+    },
+    {
+        "title": "Java Math",
+        "url": "https://www.w3schools.com/java/java_math.asp"
+    },
+    {
+        "title": "Java Booleans",
+        "url": "https://www.w3schools.com/java/java_booleans.asp"
+    },
+    {
+        "title": "Java If...Else",
+        "url": "https://www.w3schools.com/java/java_conditions.asp"
+    },
+    {
+        "title": "if",
+        "url": "https://www.w3schools.com/java/java_conditions.asp"
+    },
+    {
+        "title": "else",
+        "url": "https://www.w3schools.com/java/java_conditions_else.asp"
+    },
+    {
+        "title": "else if",
+        "url": "https://www.w3schools.com/java/java_conditions_elseif.asp"
+    },
+    {
+        "title": "Short Hand If...Else",
+        "url": "https://www.w3schools.com/java/java_conditions_shorthand.asp"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/java/java_conditions_reallife.asp"
+    },
+    {
+        "title": "Java Switch",
+        "url": "https://www.w3schools.com/java/java_switch.asp"
+    },
+    {
+        "title": "Java While Loop",
+        "url": "https://www.w3schools.com/java/java_while_loop.asp"
+    },
+    {
+        "title": "While Loop",
+        "url": "https://www.w3schools.com/java/java_while_loop.asp"
+    },
+    {
+        "title": "Do/While Loop",
+        "url": "https://www.w3schools.com/java/java_while_loop_do.asp"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/java/java_while_loop_reallife.asp"
+    },
+    {
+        "title": "Java For Loop",
+        "url": "https://www.w3schools.com/java/java_for_loop.asp"
+    },
+    {
+        "title": "For Loop",
+        "url": "https://www.w3schools.com/java/java_for_loop.asp"
+    },
+    {
+        "title": "Nested Loops",
+        "url": "https://www.w3schools.com/java/java_for_loop_nested.asp"
+    },
+    {
+        "title": "For-Each Loop",
+        "url": "https://www.w3schools.com/java/java_foreach_loop.asp"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/java/java_for_loop_reallife.asp"
+    },
+    {
+        "title": "Java Break/Continue",
+        "url": "https://www.w3schools.com/java/java_break.asp"
+    },
+    {
+        "title": "Java Arrays",
+        "url": "https://www.w3schools.com/java/java_arrays.asp"
+    },
+    {
+        "title": "Arrays",
+        "url": "https://www.w3schools.com/java/java_arrays.asp"
+    },
+    {
+        "title": "Loop Through an Array",
+        "url": "https://www.w3schools.com/java/java_arrays_loop.asp"
+    },
+    {
+        "title": "Real-Life Examples",
+        "url": "https://www.w3schools.com/java/java_arrays_reallife.asp"
+    },
+    {
+        "title": "Multidimensional Arrays",
+        "url": "https://www.w3schools.com/java/java_arrays_multi.asp"
+    }
+]

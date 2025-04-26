@@ -1,0 +1,91 @@
+[
+    {
+        "title": "HTML <kbd> For Keyboard Input",
+        "text": [
+            "The HTML <kbd> element is used \nto define keyboard input. The content inside is displayed in the browser's \ndefault monospace font.",
+            "Example\nDefine some text as keyboard input in a document:\n\n<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>\nResult:\n\nSave the document by pressing Ctrl + S\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <samp> For Program Output",
+        "text": [
+            "The HTML <samp> element is used to \ndefine sample output from a computer program. The content inside is displayed in \nthe browser's default monospace font.",
+            "Example\nDefine some text as sample output from a computer program in a document:\n\n  <p>Message from my computer:</p><p><samp>File not found.<br>Press F1 to \n  continue</samp></p>\nResult:\n\nMessage from my computer:\nFile not found.Press F1 to continue\n\nTry it Yourself »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>Message from my computer:</p><p><samp>File not found.<br>Press F1 to \n  continue</samp></p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <code> For Computer Code",
+        "text": [
+            "The HTML <code> element  is used \nto define a piece of computer code. The content inside is displayed in the \nbrowser's default monospace font.",
+            "Example\nDefine some text as computer code in a document:\n\n  <code>x = 5;y = 6;z = x + y;</code>\nResult:\n\n\n  x = 5;\n  y = 6;\n  z = x + y;\n\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<code>x = 5;y = 6;z = x + y;</code>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Preserve Line-Breaks",
+        "text": [
+            "Notice that the <code> element does \nNOT preserve extra whitespace and line-breaks.",
+            "To preserve extra whitespace and line-breaks, you can put the <code> element inside a <pre> element:",
+            "Example\n\n <pre><code>x = 5;y = 6;z = x + y;</code></pre>\nResult:\n\n\nx = 5;\ny = 6;\nz = x + y;\n\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<pre><code>x = 5;y = 6;z = x + y;</code></pre>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "HTML <var> For Variables",
+        "text": [
+            "The HTML <var> element  is used \nto define a variable in programming or in a mathematical expression. The \ncontent inside is typically displayed in italic.",
+            "Example\nDefine some text as variables in a document:\n\n  <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> \n  is the base, and <var>h</var> is the vertical height.</p>\nResult:\n\nThe area of a triangle is: 1/2 x b x h, where b is the base, and h is the vertical height.\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> \n  is the base, and <var>h</var> is the vertical height.</p>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML Computer Code Elements",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

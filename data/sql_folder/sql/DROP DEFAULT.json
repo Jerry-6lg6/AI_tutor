@@ -1,0 +1,16 @@
+[
+    {
+        "title": "DROP DEFAULT",
+        "text": [
+            "The DROP DEFAULT command is used to delete \na DEFAULT constraint.",
+            "To drop a DEFAULT constraint, use the following SQL:",
+            "SQL Server / Oracle / MS Access:",
+            "ALTER TABLE Persons\nALTER COLUMN City DROP DEFAULT;",
+            "MySQL:",
+            "ALTER TABLE Persons\nALTER City DROP DEFAULT;",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

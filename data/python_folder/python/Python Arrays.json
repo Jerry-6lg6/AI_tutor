@@ -1,0 +1,125 @@
+[
+    {
+        "title": "Arrays",
+        "text": [
+            "Note: This page shows you how to use LISTS as ARRAYS, however, to work with arrays in Python you will have to import\n  a library, like the NumPy library.",
+            "Arrays are used to store multiple values in one single variable:",
+            "Example\nCreate an array containing car names:\n\n  cars = [\"Ford\", \"Volvo\", \"BMW\"]\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "cars = [\"Ford\", \"Volvo\", \"BMW\"]"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "What is an Array?",
+        "text": [
+            "An array is a special variable, which can hold more than one value at a time.",
+            "If you have a list of items (a list of car names, for example), storing the \ncars in single variables could look like this:",
+            "car1 = \"Ford\"\n  car2 = \"Volvo\"\n  car3 = \"BMW\"",
+            "However, what if you want to loop through the cars and find a specific one? \nAnd what if you had not 3 cars, but 300?",
+            "The solution is an array!",
+            "An array can hold many values under a single name, and you can \naccess the values by referring to an index number."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Access the Elements of an Array",
+        "text": [
+            "You refer to an array element by referring to the index number.",
+            "Example\nGet the value of the first array item:\n\n  x = cars[0]\nTry it Yourself »",
+            "Example\nModify the value of the first array item:\n\n  cars[0] = \"Toyota\"\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = cars[0]"
+            },
+            {
+                "heading": "Example",
+                "code": "cars[0] = \"Toyota\""
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The Length of an Array",
+        "text": [
+            "Use the len() method to return the length of \nan array (the number of elements in an array).",
+            "Example\nReturn the number of elements in the cars \narray:\n\n  x = len(cars)\nTry it Yourself »",
+            "Note: The length of an array is always one more than the highest array index.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "x = len(cars)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Looping Array Elements",
+        "text": [
+            "You can use the for in loop to loop through all the elements of an array.",
+            "Example\nPrint each item in the cars array:\n\n  for x in cars:  print(x)\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "for x in cars:  print(x)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Adding Array Elements",
+        "text": [
+            "You can use the append() method to add an element to an array.",
+            "Example\nAdd one more element to the cars array:\n\ncars.append(\"Honda\")\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "cars.append(\"Honda\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Removing Array Elements",
+        "text": [
+            "You can use the pop() method to remove an element from the array.",
+            "Example\nDelete the second element of the cars array:\n\ncars.pop(1)\nTry it Yourself »",
+            "You can also use the remove() method to remove an element from the array.",
+            "Example\nDelete the element that has the value \"Volvo\":\n\ncars.remove(\"Volvo\")\nTry it Yourself »",
+            "Note: The list's remove() method \n  only removes the first occurrence of the specified value."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "cars.pop(1)"
+            },
+            {
+                "heading": "Example",
+                "code": "cars.remove(\"Volvo\")"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Array Methods",
+        "text": [
+            "Python has a set of built-in methods that you can use on lists/arrays.",
+            "Note: Python does not have built-in support for Arrays, \n  but Python Lists can be used instead.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

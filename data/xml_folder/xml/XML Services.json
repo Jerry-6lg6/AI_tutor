@@ -1,0 +1,127 @@
+[
+    {
+        "title": "WSDL",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "SOAP",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RDF",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "RSS",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "What You Should Already Know",
+        "text": [
+            "Before you study web services you should have a basic understanding of XML and XML Namespaces.",
+            "If you want to study these subjects first, please read our XML Tutorial.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Web Services",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Interoperability has Highest Priority",
+        "text": [
+            "When all major platforms could access the Web using Web browsers, different \nplatforms couldn't interact. For these platforms to work together, Web-applications \nwere developed.",
+            "Web-applications are simply applications that run on the web. These are built \naround the Web browser standards and can be used by any browser on any \nplatform."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Web Services take Web-applications to the Next Level",
+        "text": [
+            "By using Web services, your application can publish its function or message to \nthe rest of the world.",
+            "Web services use XML to code and to decode data, and SOAP to transport it \n(using open protocols).",
+            "With Web services, your accounting department's Win 2k server's billing system \ncan connect with your IT supplier's UNIX server."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Web Services have Two Types of Uses",
+        "text": [
+            "Reusable application-components.",
+            "There are things applications need very often. \nSo why make these over and over again?",
+            "Web services can offer application-components like: currency conversion, \nweather reports, or even language translation as services.",
+            "Connect existing software.",
+            "Web services can help to solve the interoperability problem \nby giving different applications a way to link their data.",
+            "With Web services you can exchange data between different applications and \ndifferent platforms.",
+            "Any application can have a Web Service component.",
+            "Web Services can be created regardless of programming language."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "A Web Service Example",
+        "text": [
+            "In the following example we will use ASP.NET to create a simple Web Service \nthat converts the temperature from Fahrenheit to Celsius, and vice versa:",
+            "<%@ WebService Language=\"VBScript\" Class=\"TempConvert\" %>\nImports System\nImports System.Web.Services\nPublic Class TempConvert :Inherits WebService\n<WebMethod()> Public Function FahrenheitToCelsius(ByVal Fahrenheit As String) As String\n   \n  dim fahr\n   \n  fahr=trim(replace(Fahrenheit,\",\",\".\"))\n   \n  if fahr=\"\" or IsNumeric(fahr)=false then return \"Error\"\n   \n  return ((((fahr) - 32) / 9) * 5)\nend function\n<WebMethod()> Public Function CelsiusToFahrenheit(ByVal Celsius As String) As String\n   \n  dim cel\n   \n  cel=trim(replace(Celsius,\",\",\".\"))\n   \n  if cel=\"\" or IsNumeric(cel)=false then return \"Error\"\n   \n  return ((((cel) * 9) / 5) + 32)\nend function\nend class",
+            "This document is saved as an .asmx file. This is the ASP.NET file extension for XML Web Services."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Example Explained",
+        "text": [
+            "Note: To run this example, you will need a .NET server.",
+            "The first line in the example states that this is a Web Service, written in VBScript, and has the class name \"TempConvert\":",
+            "<%@ WebService Language=\"VBScript\" Class=\"TempConvert\" %>",
+            "The next lines import the namespace \"System.Web.Services\" from the .NET framework:",
+            "Imports System\nImports System.Web.Services",
+            "The next line defines that the \"TempConvert\" class is a WebService class type:",
+            "Public Class TempConvert :Inherits WebService",
+            "The next steps are basic VB programming. This application has two functions. One to convert from Fahrenheit to Celsius, and one to convert from Celsius to Fahrenheit.",
+            "The only difference from a normal application is that this function is defined as a \"WebMethod()\".",
+            "Use \"WebMethod()\" to convert the functions in your application into web services:",
+            "<WebMethod()> Public Function FahrenheitToCelsius(ByVal Fahrenheit As String) As String\n   \n  dim fahr\n   \n  fahr=trim(replace(Fahrenheit,\",\",\".\"))\n   \n  if fahr=\"\" or IsNumeric(fahr)=false then return \"Error\"\n   \n  return ((((fahr) - 32) / 9) * 5)\nend function\n<WebMethod()> Public Function CelsiusToFahrenheit(ByVal Celsius As String) As String\n   \n  dim cel\n   \n  cel=trim(replace(Celsius,\",\",\".\"))\n   \n  if cel=\"\" or IsNumeric(cel)=false then return \"Error\"\n   \n  return ((((cel) * 9) / 5) + 32)\nend function",
+            "Then, end the class:",
+            "end class",
+            "Publish the .asmx file on a server with .NET support, and you will have your first working Web Service."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Put the Web Service on Your Web Site",
+        "text": [
+            "Using a form and the HTTP POST method, you can put the web service on your site, like this:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "How To Do It",
+        "text": [
+            "Here is the code to add the Web Service to a web page:",
+            "<form\naction='tempconvert.asmx/FahrenheitToCelsius'\nmethod=\"post\" target=\"_blank\">\n<table>\n   \n  <tr>\n       \n    <td>Fahrenheit to Celsius:</td>\n       \n    <td>\n    <input class=\"frmInput\" type=\"text\"\n    size=\"30\" name=\"Fahrenheit\">\n    </td>\n   \n  </tr>\n   \n  <tr>\n       \n    <td></td>\n       \n    <td align=\"right\">\n     <input type=\"submit\"\n    value=\"Submit\" class=\"button\">\n     </td>\n   \n  </tr>\n</table>\n</form>\n<form\naction='tempconvert.asmx/CelsiusToFahrenheit'\nmethod=\"post\" target=\"_blank\">\n<table>\n   \n  <tr>\n       \n    <td>Celsius to Fahrenheit:</td>\n       \n    <td>\n    <input class=\"frmInput\" type=\"text\"\n    size=\"30\" name=\"Celsius\">\n    </td>\n   \n  </tr>\n   \n  <tr>\n       \n    <td></td>\n       \n    <td align=\"right\">\n    <input type=\"submit\"\n    value=\"Submit\" class=\"button\">\n    </td>\n   \n  </tr>\n</table>\n</form>",
+            "Substitute the \"tempconvert.asmx\" with the address \nof your web service like:",
+            "http://www.example.com/xml/tempconvert.asmx",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

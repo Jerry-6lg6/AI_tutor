@@ -1,0 +1,24 @@
+[
+    {
+        "title": "SELECT",
+        "text": [
+            "The SELECT command is used to select data \nfrom a database. The data returned is stored in a result table, called the result set.",
+            "The following SQL statement selects the \"CustomerName\" and \"City\" columns \nfrom the \"Customers\" table:",
+            "Example\n\n SELECT CustomerName, City FROM Customers;\n\n\n Try it Yourself »",
+            "The following SQL statement selects all the columns from the \"Customers\" \ntable:",
+            "Example\n\n SELECT * FROM Customers;\n\n\n Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT CustomerName, City FROM Customers;"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers;"
+            }
+        ],
+        "tables": []
+    }
+]

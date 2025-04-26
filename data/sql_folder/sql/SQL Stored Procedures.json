@@ -1,0 +1,134 @@
+[
+    {
+        "title": "What is a Stored Procedure?",
+        "text": [
+            "A stored procedure is a prepared SQL code that you can save, so the \ncode can be reused over and over again.",
+            "So if you have an SQL query that you write over and over again, save \nit as a stored procedure, and then just call it to execute it.",
+            "You can also pass parameters to a stored procedure, so that the stored procedure can act based on the parameter value(s) \nthat is passed.",
+            "EXEC procedure_name;"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Demo Database",
+        "text": [
+            "Below is a selection from the \"Customers\" table in the Northwind sample database:",
+            "CustomerID\nCustomerName\nContactName\nAddress\nCity\nPostalCode\nCountry\n\n\n1\nAlfreds Futterkiste\nMaria Anders\nObere Str. 57\nBerlin\n12209\nGermany\n\n\n2\nAna Trujillo Emparedados y helados\nAna Trujillo\nAvda. de la ConstituciÃ³n 2222\nMÃ©xico D.F.\n05021\nMexico\n\n\n3\nAntonio Moreno TaquerÃ­a\nAntonio Moreno\nMataderos 2312\nMÃ©xico D.F.\n05023\nMexico\n\n\n4\nAround the Horn\nThomas Hardy\n120 Hanover Sq.\nLondon\nWA1 1DP\nUK\n\n\n5\nBerglunds snabbkÃ¶p\nChristina Berglund\nBerguvsvÃ¤gen 8\nLuleÃ¥\nS-958 22\nSweden"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "CustomerID": "1",
+                    "CustomerName": "Alfreds Futterkiste",
+                    "ContactName": "Maria Anders",
+                    "Address": "Obere Str. 57",
+                    "City": "Berlin",
+                    "PostalCode": "12209",
+                    "Country": "Germany"
+                },
+                {
+                    "CustomerID": "2",
+                    "CustomerName": "Ana Trujillo Emparedados y helados",
+                    "ContactName": "Ana Trujillo",
+                    "Address": "Avda. de la ConstituciÃ³n 2222",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05021",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "3",
+                    "CustomerName": "Antonio Moreno TaquerÃ­a",
+                    "ContactName": "Antonio Moreno",
+                    "Address": "Mataderos 2312",
+                    "City": "MÃ©xico D.F.",
+                    "PostalCode": "05023",
+                    "Country": "Mexico"
+                },
+                {
+                    "CustomerID": "4",
+                    "CustomerName": "Around the Horn",
+                    "ContactName": "Thomas Hardy",
+                    "Address": "120 Hanover Sq.",
+                    "City": "London",
+                    "PostalCode": "WA1 1DP",
+                    "Country": "UK"
+                },
+                {
+                    "CustomerID": "5",
+                    "CustomerName": "Berglunds snabbkÃ¶p",
+                    "ContactName": "Christina Berglund",
+                    "Address": "BerguvsvÃ¤gen 8",
+                    "City": "LuleÃ¥",
+                    "PostalCode": "S-958 22",
+                    "Country": "Sweden"
+                }
+            ]
+        ]
+    },
+    {
+        "title": "Stored Procedure Example",
+        "text": [
+            "The following SQL statement creates a stored procedure named \"SelectAllCustomers\" \nthat selects all records from the \"Customers\" table:",
+            "Example\n\n  CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;",
+            "Execute the stored procedure above as follows:",
+            "Example\n\n  EXEC SelectAllCustomers;",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE PROCEDURE SelectAllCustomersASSELECT * FROM CustomersGO;"
+            },
+            {
+                "heading": "Example",
+                "code": "EXEC SelectAllCustomers;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Stored Procedure With One Parameter",
+        "text": [
+            "The following SQL statement creates a stored procedure  \nthat selects Customers from a particular City from the \"Customers\" table:",
+            "Example\n\n  CREATE PROCEDURE SelectAllCustomers \n  @City nvarchar(30)ASSELECT * FROM Customers WHERE \n  City = @CityGO;",
+            "Execute the stored procedure above as follows:",
+            "Example\n\n  EXEC SelectAllCustomers @City = 'London';"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE PROCEDURE SelectAllCustomers \n  @City nvarchar(30)ASSELECT * FROM Customers WHERE \n  City = @CityGO;"
+            },
+            {
+                "heading": "Example",
+                "code": "EXEC SelectAllCustomers @City = 'London';"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Stored Procedure With Multiple Parameters",
+        "text": [
+            "Setting up multiple parameters is very easy. Just list each parameter and the \ndata type separated by a comma as shown below.",
+            "The following SQL statement creates a stored procedure  \nthat selects Customers from a particular City with a particular PostalCode from the \"Customers\" table:",
+            "Example\n\n  CREATE PROCEDURE SelectAllCustomers \n  @City nvarchar(30), @PostalCode nvarchar(10)ASSELECT * FROM Customers WHERE \n  City = @City AND PostalCode = @PostalCodeGO;",
+            "Execute the stored procedure above as follows:",
+            "Example\n\n  EXEC SelectAllCustomers @City = 'London', @PostalCode = 'WA1 1DP';",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "CREATE PROCEDURE SelectAllCustomers \n  @City nvarchar(30), @PostalCode nvarchar(10)ASSELECT * FROM Customers WHERE \n  City = @City AND PostalCode = @PostalCodeGO;"
+            },
+            {
+                "heading": "Example",
+                "code": "EXEC SelectAllCustomers @City = 'London', @PostalCode = 'WA1 1DP';"
+            }
+        ],
+        "tables": []
+    }
+]

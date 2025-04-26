@@ -1,0 +1,61 @@
+[
+    {
+        "title": "What is XQuery?",
+        "text": [
+            "XQuery is to XML what SQL is to databases.",
+            "XQuery was designed to query XML data."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "What is XQuery?",
+        "text": [],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XQuery is About Querying XML",
+        "text": [
+            "XQuery is a language for finding and extracting elements and attributes from XML \ndocuments.",
+            "Here is an example of what XQuery could solve:",
+            "\"Select all CD records with a price less than $10 from the CD collection \nstored in cd_catalog.xml\""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XQuery and XPath",
+        "text": [
+            "XQuery 1.0 and XPath 2.0 share the same data model and support the same functions \nand operators. If you have already studied XPath you will have no problems with \nunderstanding XQuery."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XQuery - Examples of Use",
+        "text": [
+            "XQuery can be used to:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XQuery is a W3C Recommendation",
+        "text": [
+            "XQuery is compatible with several W3C standards, such as XML, Namespaces, \nXSLT, XPath, and XML Schema.",
+            "XQuery 1.0 became a W3C Recommendation in 2007."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XQuery Tutorial",
+        "text": [
+            "You will learn a lot more about XQuery in our XQuery Tutorial.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

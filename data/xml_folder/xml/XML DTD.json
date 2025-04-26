@@ -1,0 +1,75 @@
+[
+    {
+        "title": "What is a DTD?",
+        "text": [
+            "DTD stands for Document Type Definition.",
+            "A DTD defines the structure and the legal elements and attributes of an XML document."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Valid XML Documents",
+        "text": [
+            "A \"Valid\" XML document is \"Well Formed\", as well as it conforms to the rules of a \nDTD:",
+            "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE note SYSTEM \"Note.dtd\">\n<note>\n<to>Tove</to>\n<from>Jani</from>\n<heading>Reminder</heading>\n<body>Don't forget me this weekend!</body>\n</note>",
+            "The DOCTYPE declaration above contains a reference to a DTD file. The content of the \nDTD file is shown and explained below."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "XML DTD",
+        "text": [
+            "The purpose of a DTD is to define the structure and the legal elements and \nattributes of an XML document:",
+            "Note.dtd:\n\n<!DOCTYPE note\n[\n  <!ELEMENT note (to,from,heading,body)>\n  <!ELEMENT to      (#PCDATA)>\n  <!ELEMENT from    (#PCDATA)>\n  <!ELEMENT heading (#PCDATA)>\n  <!ELEMENT body    (#PCDATA)>\n]>",
+            "The DTD above is interpreted like this:",
+            "Tip: #PCDATA means parseable character data.",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Note.dtd:",
+                "code": "<!DOCTYPE note\n[\n  <!ELEMENT note (to,from,heading,body)>\n  <!ELEMENT to      (#PCDATA)>\n  <!ELEMENT from    (#PCDATA)>\n  <!ELEMENT heading (#PCDATA)>\n  <!ELEMENT body    (#PCDATA)>\n]>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Using DTD for Entity Declaration",
+        "text": [
+            "A DOCTYPE declaration can also be used to define special characters or strings, used in the document:",
+            "Example\n\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE note [<!ENTITY nbsp \n\"&#xA0;\"> <!ENTITY writer \"Writer: Donald Duck.\">\n<!ENTITY copyright \"Copyright: W3Schools.\">]>\n<note><to>Tove</to><from>Jani</from>\n<heading>Reminder</heading><body>Don't forget me this weekend!</body>\n<footer>&writer;&nbsp;&copyright;</footer>\n</note>\n\nTry it Yourself »",
+            "Tip: An entity has three parts: it starts with an ampersand (&), \nthen comes the entity name, and it ends with a semicolon (;)."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE note [<!ENTITY nbsp \n\"&#xA0;\"> <!ENTITY writer \"Writer: Donald Duck.\">\n<!ENTITY copyright \"Copyright: W3Schools.\">]>\n<note><to>Tove</to><from>Jani</from>\n<heading>Reminder</heading><body>Don't forget me this weekend!</body>\n<footer>&writer;&nbsp;&copyright;</footer>\n</note>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "When to Use a DTD?",
+        "text": [
+            "With a DTD, independent groups of people can agree to use a standard DTD for \ninterchanging data.",
+            "With a DTD, you can verify that the data you receive from the outside world is valid.",
+            "You can also use a DTD to verify your own data.",
+            "If you want to study DTD, please read our DTD Tutorial."
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "When NOT to Use a DTD?",
+        "text": [
+            "XML does not require a DTD.",
+            "When you are experimenting with XML, or when you are working with small XML \nfiles, creating DTDs may be a waste of time.",
+            "If you develop applications, \nwait until the specification is stable before you add a DTD. \nOtherwise, your software might stop working because of validation errors.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

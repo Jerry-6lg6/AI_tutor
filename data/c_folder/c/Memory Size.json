@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Get the Memory Size",
+        "text": [
+            "We introduced in the data types chapter that the memory size of a variable varies depending on the type:",
+            "Data Type\nSize\n\n\nint\n2 or 4 bytes\n\n\nfloat\n4 bytes\n\n\ndouble\n8 bytes\n\n\nchar\n1 byte",
+            "The memory size refers to how much space a type occupies in the computer's memory.",
+            "To actually get the size (in bytes) of a data type or variable, use the sizeof operator:",
+            "Example\n\n  int myInt;float myFloat;double myDouble;char myChar;\nprintf(\"%lu\\n\", sizeof(myInt));printf(\"%lu\\n\", sizeof(myFloat));\n  printf(\"%lu\\n\", sizeof(myDouble));printf(\"%lu\\n\", sizeof(myChar));\nTry it Yourself »",
+            "Note that we use the %lu format specifer to print the result, instead of %d. It is because the compiler expects the sizeof operator to return a long unsigned int (%lu), instead of int (%d). On some computers it might work with %d, but it is safer to use %lu.\nWhy Should I Know the Size of Data Types?\n\nKnowing the size of different data types is important because it says something about memory usage and performance.\nFor example, the size of a char type is 1 byte. Which means if you have an array of 1000 char values, it will occupy 1000 bytes (1 KB) of memory.\nUsing the right data type for the right purpose will save memory and improve the performance of your program. \nYou will learn more about the sizeof operator later in this tutorial, and how to use it in different scenarios.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "int myInt;float myFloat;double myDouble;char myChar;\nprintf(\"%lu\\n\", sizeof(myInt));printf(\"%lu\\n\", sizeof(myFloat));\n  printf(\"%lu\\n\", sizeof(myDouble));printf(\"%lu\\n\", sizeof(myChar));"
+            }
+        ],
+        "tables": [
+            [
+                {
+                    "Data Type": "int",
+                    "Size": "2 or 4 bytes"
+                },
+                {
+                    "Data Type": "float",
+                    "Size": "4 bytes"
+                },
+                {
+                    "Data Type": "double",
+                    "Size": "8 bytes"
+                },
+                {
+                    "Data Type": "char",
+                    "Size": "1 byte"
+                }
+            ]
+        ]
+    }
+]

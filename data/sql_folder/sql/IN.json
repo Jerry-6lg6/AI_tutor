@@ -1,0 +1,31 @@
+[
+    {
+        "title": "IN",
+        "text": [
+            "The IN command allows you to specify \nmultiple values in a WHERE clause.",
+            "The IN operator is a shorthand for multiple OR conditions.",
+            "The following SQL selects all customers that are located in \"Germany\", \"France\" and \"UK\":",
+            "Example\n\n SELECT * FROM Customers\n  WHERE Country IN ('Germany', 'France', 'UK');\n\nTry it Yourself »",
+            "The following SQL selects all customers that are NOT located in \"Germany\", \"France\" or \"UK\":",
+            "Example\n\n SELECT * FROM Customers\n  WHERE Country NOT IN ('Germany', 'France', 'UK');\n\nTry it Yourself »",
+            "The following SQL selects all customers that are from the same \ncountries as the suppliers:",
+            "Example\n\n SELECT * FROM Customers\n  WHERE Country IN (SELECT Country FROM Suppliers);\n\nTry it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n  WHERE Country IN ('Germany', 'France', 'UK');"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n  WHERE Country NOT IN ('Germany', 'France', 'UK');"
+            },
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM Customers\n  WHERE Country IN (SELECT Country FROM Suppliers);"
+            }
+        ],
+        "tables": []
+    }
+]

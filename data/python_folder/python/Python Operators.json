@@ -1,0 +1,103 @@
+[
+    {
+        "title": "Python Operators",
+        "text": [
+            "Operators are used to perform operations on variables and values.",
+            "In the example below, we use the + operator to add together two values:",
+            "Example\n\n  print(10 + 5)\nRun example »",
+            "Python divides the operators in the following groups:"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(10 + 5)"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Python Arithmetic Operators",
+        "text": [
+            "Arithmetic operators are used with numeric values to perform common mathematical operations:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Python Assignment Operators",
+        "text": [
+            "Assignment operators are used to assign values to variables:",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Python Comparison Operators",
+        "text": [
+            "Comparison operators are used to compare two values:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Python Logical Operators",
+        "text": [
+            "Logical operators are used to combine conditional statements:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Python Identity Operators",
+        "text": [
+            "Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Python Membership Operators",
+        "text": [
+            "Membership operators are used to test if a sequence is presented in an object:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Python Bitwise Operators",
+        "text": [
+            "Bitwise operators are used to compare (binary) numbers:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Operator Precedence",
+        "text": [
+            "Operator precedence describes the order in which operations are performed.",
+            "Example\nParentheses has the highest precedence, meaning that expressions inside \nparentheses must be evaluated first:\n\n  print((6 + 3) - (6 + 3))\nRun example »",
+            "Example\nMultiplication * has higher precedence than\naddition +, and therefore multiplications are \nevaluated before additions:\n\n  print(100 + 5 * 3)\nRun example »",
+            "The precedence order is described in the table below, starting with the highest precedence at the top:",
+            "If two operators have the same precedence, the expression is evaluated from left \nto right.",
+            "Example\nAddition + and\nsubtraction - has the same precedence, and therefore\nwe evaluate the expression from left to right:\n\n  print(5 + 4 - 7 + 3)\nRun example »",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print((6 + 3) - (6 + 3))"
+            },
+            {
+                "heading": "Example",
+                "code": "print(100 + 5 * 3)"
+            },
+            {
+                "heading": "Example",
+                "code": "print(5 + 4 - 7 + 3)"
+            }
+        ],
+        "tables": []
+    }
+]

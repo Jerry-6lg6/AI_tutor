@@ -1,0 +1,34 @@
+[
+    {
+        "title": "HTML Description Lists",
+        "text": [
+            "A description list is a list of terms, with a description of each term.",
+            "The <dl> tag defines the description list, the \n<dt> tag defines the term (name), and the \n<dd> \ntag describes each term:",
+            "Example\n\n<dl>\n \n<dt>Coffee</dt>\n \n<dd>- black hot drink</dd>\n \n<dt>Milk</dt>\n \n<dd>- white cold drink</dd>\n</dl>\n\nTry it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<dl>\n \n<dt>Coffee</dt>\n \n<dd>- black hot drink</dd>\n \n<dt>Milk</dt>\n \n<dd>- white cold drink</dd>\n</dl>"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Chapter Summary",
+        "text": [
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "HTML List Tags",
+        "text": [
+            "For a complete list of all available HTML tags, visit our HTML Tag Reference.",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": []
+    }
+]

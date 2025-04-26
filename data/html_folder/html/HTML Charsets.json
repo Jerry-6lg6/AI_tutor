@@ -1,0 +1,1865 @@
+[
+    {
+        "title": "The HTML charset Attribute",
+        "text": [
+            "The character set is specified in the <meta> tag:",
+            "Example\n\n<meta charset=\"UTF-8\">",
+            "The HTML5 specification encourages web developers to use the UTF-8 character set.",
+            "UTF-8 covers almost all of the characters and symbols in the world!",
+            "Full UTF-8 Reference"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "<meta charset=\"UTF-8\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The ASCII Character Set",
+        "text": [
+            "ASCII was the first character encoding standard for the web.\nIt defined 128 different characters that could be used on the internet:"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The ANSI Character Set",
+        "text": [
+            "ANSI (Windows-1252) was the original Windows character set:",
+            "<meta charset=\"Windows-1252\">"
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "The ISO-8859-1 Character Set",
+        "text": [
+            "ISO-8859-1 was the default character set for HTML 4. This character set \nsupported 256 different character codes. HTML 4 also supported UTF-8.",
+            "HTML 4 Example\n\n<meta http-equiv=\"Content-Type\" content=\"text/html;charset=ISO-8859-1\">\n\nHTML 5 Example\n\n<meta charset=\"ISO-8859-1\">"
+        ],
+        "examples": [
+            {
+                "heading": "HTML 4 Example",
+                "code": "<meta http-equiv=\"Content-Type\" content=\"text/html;charset=ISO-8859-1\">"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "The UTF-8 Character Set",
+        "text": [
+            "<meta charset=\"UTF-8\">",
+            "Full HTML Character Set Reference.",
+            ""
+        ],
+        "examples": [],
+        "tables": []
+    },
+    {
+        "title": "Differences Between Character Sets",
+        "text": [
+            "The following table displays the differences between the character sets described above:",
+            "Numb\nASCII\nANSI\n8859\nUTF‑8\nDescription\n\n32    space\n33!!!!exclamation mark\n34\"\"\"\"quotation mark\n35####number sign\n36$$$$dollar sign\n37%%%%percent sign\n38&&&&ampersand\n39''''apostrophe\n40((((left parenthesis\n41))))right parenthesis\n42****asterisk\n43++++plus sign\n44,,,,comma\n45----hyphen-minus\n46....full stop\n47////solidus\n480000digit zero\n491111digit one\n502222digit two\n513333digit three\n524444digit four\n535555digit five\n546666digit six\n557777digit seven\n568888digit eight\n579999digit nine\n58::::colon\n59;;;;semicolon\n60<<<<less than\n61====equals sign\n62>>>>greater than\n63????question mark\n64@@@@commercial at\n65AAAALatin A\n66BBBBLatin B\n67CCCCLatin C\n68DDDDLatin D\n69EEEELatin E\n70FFFFLatin F\n71GGGGLatin G\n72HHHHLatin H\n73IIIILatin I\n74JJJJLatin J\n75KKKKLatin K\n76LLLLLatin L\n77MMMMLatin M\n78NNNNLatin N\n79OOOOLatin O\n80PPPPLatin P\n81QQQQLatin Q\n82RRRRLatin R\n83SSSSLatin S\n84TTTTLatin T\n85UUUULatin U\n86VVVVLatin V\n87WWWWLatin W\n88XXXXLatin X\n89YYYYLatin Y\n90ZZZZLatin Z\n91[[[[left square bracket\n92\\\\\\\\reverse solidus\n93]]]]right square bracket\n94^^^^circumflex accent\n95____low line\n96````grave accent\n97aaaaLatin small a\n98bbbbLatin small b\n99ccccLatin small c\n100ddddLatin small d\n101eeeeLatin small e\n102ffffLatin small f\n103ggggLatin small g\n104hhhhLatin small h\n105iiiiLatin small i\n106jjjjLatin small j\n107kkkkLatin small k\n108llllLatin small l\n109mmmmLatin small m\n110nnnnLatin small n\n111ooooLatin small o\n112ppppLatin small p\n113qqqqLatin small q\n114rrrrLatin small r\n115ssssLatin small s\n116ttttLatin small t\n117uuuuLatin small u\n118vvvvLatin small v\n119wwwwLatin small w\n120xxxxLatin small x\n121yyyyLatin small y\n122zzzzLatin small z\n123{{{{left curly bracket\n124||||vertical line\n125}}}}right curly bracket\n126~~~~tilde\n127DEL    \n128 €  euro sign\n129 NOT USED\n130 ‚  single low-9 quotation mark\n131 ƒ  Latin small f with hook\n132 „  double low-9 quotation mark\n133 …  horizontal ellipsis\n134 †  dagger\n135 ‡  double dagger\n136 ˆ  modifier letter circumflex accent\n137 ‰  per mille sign\n138 Š  Latin S with caron\n139 ‹  single left-pointing angle quotation mark\n140 Œ  Latin capital ligature OE\n141 NOT USED\n142 Ž  Latin Z with caron\n143 NOT USED\n144 NOT USED\n145 ‘  left single quotation mark\n146 ’  right single quotation mark\n147 “  left double quotation mark\n148 ”  right double quotation mark\n149 •  bullet\n150 –  en dash\n151 —  em dash\n152 ˜  small tilde\n153 ™  trade mark sign\n154 š  Latin small s with caron\n155 ›  single right-pointing angle quotation mark\n156 œ  Latin small ligature oe\n157 NOT USED\n158 ž  Latin small z with caron\n159 Ÿ  Latin Y with diaeresis\n160    no-break space\n161 ¡¡¡inverted exclamation mark\n162 ¢¢¢cent sign\n163 £££pound sign\n164 ¤¤¤currency sign\n165 ¥¥¥yen sign\n166 ¦¦¦broken bar\n167 §§§section sign\n168 ¨¨¨diaeresis\n169 ©©©copyright sign\n170 ªªªfeminine ordinal indicator\n171 «««left-pointing double angle quotation mark\n172 ¬¬¬not sign\n173 ­­­soft hyphen\n174 ®®®registered sign\n175 ¯¯¯macron\n176 °°°degree sign\n177 ±±±plus-minus sign\n178 ²²²superscript two\n179 ³³³superscript three\n180 ´´´acute accent\n181 µµµmicro sign\n182 ¶¶¶pilcrow sign\n183 ···middle dot\n184 ¸¸¸cedilla\n185 ¹¹¹superscript one\n186 ºººmasculine ordinal indicator\n187 »»»right-pointing double angle quotation mark\n188 ¼¼¼vulgar fraction one quarter\n189 ½½½vulgar fraction one half\n190 ¾¾¾vulgar fraction three quarters\n191 ¿¿¿inverted question mark\n192 ÀÀÀLatin A with grave\n193 ÁÁÁLatin A with acute\n194 ÂÂÂLatin A with circumflex\n195 ÃÃÃLatin A with tilde\n196 ÄÄÄLatin A with diaeresis\n197 ÅÅÅLatin A with ring above\n198 ÆÆÆLatin AE\n199 ÇÇÇLatin C with cedilla\n200 ÈÈÈLatin E with grave\n201 ÉÉÉLatin E with acute\n202 ÊÊÊLatin E with circumflex\n203 ËËËLatin E with diaeresis\n204 ÌÌÌLatin I with grave\n205 ÍÍÍLatin I with acute\n206 ÎÎÎLatin I with circumflex\n207 ÏÏÏLatin I with diaeresis\n208 ÐÐÐLatin Eth\n209 ÑÑÑLatin N with tilde\n210 ÒÒÒLatin O with grave\n211 ÓÓÓLatin O with acute\n212 ÔÔÔLatin O with circumflex\n213 ÕÕÕLatin O with tilde\n214 ÖÖÖLatin O with diaeresis\n215 ×××multiplication sign\n216 ØØØLatin O with stroke\n217 ÙÙÙLatin U with grave\n218 ÚÚÚLatin U with acute\n219 ÛÛÛLatin U with circumflex\n220 ÜÜÜLatin U with diaeresis\n221 ÝÝÝLatin Y with acute\n222 ÞÞÞLatin Thorn\n223 ßßßLatin small sharp s\n224 àààLatin small a with grave\n225 áááLatin small a with acute\n226 âââLatin small a with circumflex\n227 ãããLatin small a with tilde\n228 äääLatin small a with diaeresis\n229 åååLatin small a with ring above\n230 æææLatin small ae\n231 çççLatin small c with cedilla\n232 èèèLatin small e with grave\n233 éééLatin small e with acute\n234 êêêLatin small e with circumflex\n235 ëëëLatin small e with diaeresis\n236 ìììLatin small i with grave\n237 íííLatin small i with acute\n238 îîîLatin small i with circumflex\n239 ïïïLatin small i with diaeresis\n240 ðððLatin small eth\n241 ñññLatin small n with tilde\n242 òòòLatin small o with grave\n243 óóóLatin small o with acute\n244 ôôôLatin small o with circumflex\n245 õõõLatin small o with tilde\n246 öööLatin small o with diaeresis\n247 ÷÷÷division sign\n248 øøøLatin small o with stroke\n249 ùùùLatin small u with grave\n250 úúúLatin small u with acute\n251 ûûûLatin small with circumflex\n252 üüüLatin small u with diaeresis\n253 ýýýLatin small y with acute\n254 þþþLatin small thorn\n255 ÿÿÿLatin small y with diaeresis",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [],
+        "tables": [
+            [
+                {
+                    "Numb": "32",
+                    "ASCII": "",
+                    "ANSI": "",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "space"
+                },
+                {
+                    "Numb": "33",
+                    "ASCII": "!",
+                    "ANSI": "!",
+                    "8859": "!",
+                    "UTF‑8": "!",
+                    "Description": "exclamation mark"
+                },
+                {
+                    "Numb": "34",
+                    "ASCII": "\"",
+                    "ANSI": "\"",
+                    "8859": "\"",
+                    "UTF‑8": "\"",
+                    "Description": "quotation mark"
+                },
+                {
+                    "Numb": "35",
+                    "ASCII": "#",
+                    "ANSI": "#",
+                    "8859": "#",
+                    "UTF‑8": "#",
+                    "Description": "number sign"
+                },
+                {
+                    "Numb": "36",
+                    "ASCII": "$",
+                    "ANSI": "$",
+                    "8859": "$",
+                    "UTF‑8": "$",
+                    "Description": "dollar sign"
+                },
+                {
+                    "Numb": "37",
+                    "ASCII": "%",
+                    "ANSI": "%",
+                    "8859": "%",
+                    "UTF‑8": "%",
+                    "Description": "percent sign"
+                },
+                {
+                    "Numb": "38",
+                    "ASCII": "&",
+                    "ANSI": "&",
+                    "8859": "&",
+                    "UTF‑8": "&",
+                    "Description": "ampersand"
+                },
+                {
+                    "Numb": "39",
+                    "ASCII": "'",
+                    "ANSI": "'",
+                    "8859": "'",
+                    "UTF‑8": "'",
+                    "Description": "apostrophe"
+                },
+                {
+                    "Numb": "40",
+                    "ASCII": "(",
+                    "ANSI": "(",
+                    "8859": "(",
+                    "UTF‑8": "(",
+                    "Description": "left parenthesis"
+                },
+                {
+                    "Numb": "41",
+                    "ASCII": ")",
+                    "ANSI": ")",
+                    "8859": ")",
+                    "UTF‑8": ")",
+                    "Description": "right parenthesis"
+                },
+                {
+                    "Numb": "42",
+                    "ASCII": "*",
+                    "ANSI": "*",
+                    "8859": "*",
+                    "UTF‑8": "*",
+                    "Description": "asterisk"
+                },
+                {
+                    "Numb": "43",
+                    "ASCII": "+",
+                    "ANSI": "+",
+                    "8859": "+",
+                    "UTF‑8": "+",
+                    "Description": "plus sign"
+                },
+                {
+                    "Numb": "44",
+                    "ASCII": ",",
+                    "ANSI": ",",
+                    "8859": ",",
+                    "UTF‑8": ",",
+                    "Description": "comma"
+                },
+                {
+                    "Numb": "45",
+                    "ASCII": "-",
+                    "ANSI": "-",
+                    "8859": "-",
+                    "UTF‑8": "-",
+                    "Description": "hyphen-minus"
+                },
+                {
+                    "Numb": "46",
+                    "ASCII": ".",
+                    "ANSI": ".",
+                    "8859": ".",
+                    "UTF‑8": ".",
+                    "Description": "full stop"
+                },
+                {
+                    "Numb": "47",
+                    "ASCII": "/",
+                    "ANSI": "/",
+                    "8859": "/",
+                    "UTF‑8": "/",
+                    "Description": "solidus"
+                },
+                {
+                    "Numb": "48",
+                    "ASCII": "0",
+                    "ANSI": "0",
+                    "8859": "0",
+                    "UTF‑8": "0",
+                    "Description": "digit zero"
+                },
+                {
+                    "Numb": "49",
+                    "ASCII": "1",
+                    "ANSI": "1",
+                    "8859": "1",
+                    "UTF‑8": "1",
+                    "Description": "digit one"
+                },
+                {
+                    "Numb": "50",
+                    "ASCII": "2",
+                    "ANSI": "2",
+                    "8859": "2",
+                    "UTF‑8": "2",
+                    "Description": "digit two"
+                },
+                {
+                    "Numb": "51",
+                    "ASCII": "3",
+                    "ANSI": "3",
+                    "8859": "3",
+                    "UTF‑8": "3",
+                    "Description": "digit three"
+                },
+                {
+                    "Numb": "52",
+                    "ASCII": "4",
+                    "ANSI": "4",
+                    "8859": "4",
+                    "UTF‑8": "4",
+                    "Description": "digit four"
+                },
+                {
+                    "Numb": "53",
+                    "ASCII": "5",
+                    "ANSI": "5",
+                    "8859": "5",
+                    "UTF‑8": "5",
+                    "Description": "digit five"
+                },
+                {
+                    "Numb": "54",
+                    "ASCII": "6",
+                    "ANSI": "6",
+                    "8859": "6",
+                    "UTF‑8": "6",
+                    "Description": "digit six"
+                },
+                {
+                    "Numb": "55",
+                    "ASCII": "7",
+                    "ANSI": "7",
+                    "8859": "7",
+                    "UTF‑8": "7",
+                    "Description": "digit seven"
+                },
+                {
+                    "Numb": "56",
+                    "ASCII": "8",
+                    "ANSI": "8",
+                    "8859": "8",
+                    "UTF‑8": "8",
+                    "Description": "digit eight"
+                },
+                {
+                    "Numb": "57",
+                    "ASCII": "9",
+                    "ANSI": "9",
+                    "8859": "9",
+                    "UTF‑8": "9",
+                    "Description": "digit nine"
+                },
+                {
+                    "Numb": "58",
+                    "ASCII": ":",
+                    "ANSI": ":",
+                    "8859": ":",
+                    "UTF‑8": ":",
+                    "Description": "colon"
+                },
+                {
+                    "Numb": "59",
+                    "ASCII": ";",
+                    "ANSI": ";",
+                    "8859": ";",
+                    "UTF‑8": ";",
+                    "Description": "semicolon"
+                },
+                {
+                    "Numb": "60",
+                    "ASCII": "<",
+                    "ANSI": "<",
+                    "8859": "<",
+                    "UTF‑8": "<",
+                    "Description": "less than"
+                },
+                {
+                    "Numb": "61",
+                    "ASCII": "=",
+                    "ANSI": "=",
+                    "8859": "=",
+                    "UTF‑8": "=",
+                    "Description": "equals sign"
+                },
+                {
+                    "Numb": "62",
+                    "ASCII": ">",
+                    "ANSI": ">",
+                    "8859": ">",
+                    "UTF‑8": ">",
+                    "Description": "greater than"
+                },
+                {
+                    "Numb": "63",
+                    "ASCII": "?",
+                    "ANSI": "?",
+                    "8859": "?",
+                    "UTF‑8": "?",
+                    "Description": "question mark"
+                },
+                {
+                    "Numb": "64",
+                    "ASCII": "@",
+                    "ANSI": "@",
+                    "8859": "@",
+                    "UTF‑8": "@",
+                    "Description": "commercial at"
+                },
+                {
+                    "Numb": "65",
+                    "ASCII": "A",
+                    "ANSI": "A",
+                    "8859": "A",
+                    "UTF‑8": "A",
+                    "Description": "Latin A"
+                },
+                {
+                    "Numb": "66",
+                    "ASCII": "B",
+                    "ANSI": "B",
+                    "8859": "B",
+                    "UTF‑8": "B",
+                    "Description": "Latin B"
+                },
+                {
+                    "Numb": "67",
+                    "ASCII": "C",
+                    "ANSI": "C",
+                    "8859": "C",
+                    "UTF‑8": "C",
+                    "Description": "Latin C"
+                },
+                {
+                    "Numb": "68",
+                    "ASCII": "D",
+                    "ANSI": "D",
+                    "8859": "D",
+                    "UTF‑8": "D",
+                    "Description": "Latin D"
+                },
+                {
+                    "Numb": "69",
+                    "ASCII": "E",
+                    "ANSI": "E",
+                    "8859": "E",
+                    "UTF‑8": "E",
+                    "Description": "Latin E"
+                },
+                {
+                    "Numb": "70",
+                    "ASCII": "F",
+                    "ANSI": "F",
+                    "8859": "F",
+                    "UTF‑8": "F",
+                    "Description": "Latin F"
+                },
+                {
+                    "Numb": "71",
+                    "ASCII": "G",
+                    "ANSI": "G",
+                    "8859": "G",
+                    "UTF‑8": "G",
+                    "Description": "Latin G"
+                },
+                {
+                    "Numb": "72",
+                    "ASCII": "H",
+                    "ANSI": "H",
+                    "8859": "H",
+                    "UTF‑8": "H",
+                    "Description": "Latin H"
+                },
+                {
+                    "Numb": "73",
+                    "ASCII": "I",
+                    "ANSI": "I",
+                    "8859": "I",
+                    "UTF‑8": "I",
+                    "Description": "Latin I"
+                },
+                {
+                    "Numb": "74",
+                    "ASCII": "J",
+                    "ANSI": "J",
+                    "8859": "J",
+                    "UTF‑8": "J",
+                    "Description": "Latin J"
+                },
+                {
+                    "Numb": "75",
+                    "ASCII": "K",
+                    "ANSI": "K",
+                    "8859": "K",
+                    "UTF‑8": "K",
+                    "Description": "Latin K"
+                },
+                {
+                    "Numb": "76",
+                    "ASCII": "L",
+                    "ANSI": "L",
+                    "8859": "L",
+                    "UTF‑8": "L",
+                    "Description": "Latin L"
+                },
+                {
+                    "Numb": "77",
+                    "ASCII": "M",
+                    "ANSI": "M",
+                    "8859": "M",
+                    "UTF‑8": "M",
+                    "Description": "Latin M"
+                },
+                {
+                    "Numb": "78",
+                    "ASCII": "N",
+                    "ANSI": "N",
+                    "8859": "N",
+                    "UTF‑8": "N",
+                    "Description": "Latin N"
+                },
+                {
+                    "Numb": "79",
+                    "ASCII": "O",
+                    "ANSI": "O",
+                    "8859": "O",
+                    "UTF‑8": "O",
+                    "Description": "Latin O"
+                },
+                {
+                    "Numb": "80",
+                    "ASCII": "P",
+                    "ANSI": "P",
+                    "8859": "P",
+                    "UTF‑8": "P",
+                    "Description": "Latin P"
+                },
+                {
+                    "Numb": "81",
+                    "ASCII": "Q",
+                    "ANSI": "Q",
+                    "8859": "Q",
+                    "UTF‑8": "Q",
+                    "Description": "Latin Q"
+                },
+                {
+                    "Numb": "82",
+                    "ASCII": "R",
+                    "ANSI": "R",
+                    "8859": "R",
+                    "UTF‑8": "R",
+                    "Description": "Latin R"
+                },
+                {
+                    "Numb": "83",
+                    "ASCII": "S",
+                    "ANSI": "S",
+                    "8859": "S",
+                    "UTF‑8": "S",
+                    "Description": "Latin S"
+                },
+                {
+                    "Numb": "84",
+                    "ASCII": "T",
+                    "ANSI": "T",
+                    "8859": "T",
+                    "UTF‑8": "T",
+                    "Description": "Latin T"
+                },
+                {
+                    "Numb": "85",
+                    "ASCII": "U",
+                    "ANSI": "U",
+                    "8859": "U",
+                    "UTF‑8": "U",
+                    "Description": "Latin U"
+                },
+                {
+                    "Numb": "86",
+                    "ASCII": "V",
+                    "ANSI": "V",
+                    "8859": "V",
+                    "UTF‑8": "V",
+                    "Description": "Latin V"
+                },
+                {
+                    "Numb": "87",
+                    "ASCII": "W",
+                    "ANSI": "W",
+                    "8859": "W",
+                    "UTF‑8": "W",
+                    "Description": "Latin W"
+                },
+                {
+                    "Numb": "88",
+                    "ASCII": "X",
+                    "ANSI": "X",
+                    "8859": "X",
+                    "UTF‑8": "X",
+                    "Description": "Latin X"
+                },
+                {
+                    "Numb": "89",
+                    "ASCII": "Y",
+                    "ANSI": "Y",
+                    "8859": "Y",
+                    "UTF‑8": "Y",
+                    "Description": "Latin Y"
+                },
+                {
+                    "Numb": "90",
+                    "ASCII": "Z",
+                    "ANSI": "Z",
+                    "8859": "Z",
+                    "UTF‑8": "Z",
+                    "Description": "Latin Z"
+                },
+                {
+                    "Numb": "91",
+                    "ASCII": "[",
+                    "ANSI": "[",
+                    "8859": "[",
+                    "UTF‑8": "[",
+                    "Description": "left square bracket"
+                },
+                {
+                    "Numb": "92",
+                    "ASCII": "\\",
+                    "ANSI": "\\",
+                    "8859": "\\",
+                    "UTF‑8": "\\",
+                    "Description": "reverse solidus"
+                },
+                {
+                    "Numb": "93",
+                    "ASCII": "]",
+                    "ANSI": "]",
+                    "8859": "]",
+                    "UTF‑8": "]",
+                    "Description": "right square bracket"
+                },
+                {
+                    "Numb": "94",
+                    "ASCII": "^",
+                    "ANSI": "^",
+                    "8859": "^",
+                    "UTF‑8": "^",
+                    "Description": "circumflex accent"
+                },
+                {
+                    "Numb": "95",
+                    "ASCII": "_",
+                    "ANSI": "_",
+                    "8859": "_",
+                    "UTF‑8": "_",
+                    "Description": "low line"
+                },
+                {
+                    "Numb": "96",
+                    "ASCII": "`",
+                    "ANSI": "`",
+                    "8859": "`",
+                    "UTF‑8": "`",
+                    "Description": "grave accent"
+                },
+                {
+                    "Numb": "97",
+                    "ASCII": "a",
+                    "ANSI": "a",
+                    "8859": "a",
+                    "UTF‑8": "a",
+                    "Description": "Latin small a"
+                },
+                {
+                    "Numb": "98",
+                    "ASCII": "b",
+                    "ANSI": "b",
+                    "8859": "b",
+                    "UTF‑8": "b",
+                    "Description": "Latin small b"
+                },
+                {
+                    "Numb": "99",
+                    "ASCII": "c",
+                    "ANSI": "c",
+                    "8859": "c",
+                    "UTF‑8": "c",
+                    "Description": "Latin small c"
+                },
+                {
+                    "Numb": "100",
+                    "ASCII": "d",
+                    "ANSI": "d",
+                    "8859": "d",
+                    "UTF‑8": "d",
+                    "Description": "Latin small d"
+                },
+                {
+                    "Numb": "101",
+                    "ASCII": "e",
+                    "ANSI": "e",
+                    "8859": "e",
+                    "UTF‑8": "e",
+                    "Description": "Latin small e"
+                },
+                {
+                    "Numb": "102",
+                    "ASCII": "f",
+                    "ANSI": "f",
+                    "8859": "f",
+                    "UTF‑8": "f",
+                    "Description": "Latin small f"
+                },
+                {
+                    "Numb": "103",
+                    "ASCII": "g",
+                    "ANSI": "g",
+                    "8859": "g",
+                    "UTF‑8": "g",
+                    "Description": "Latin small g"
+                },
+                {
+                    "Numb": "104",
+                    "ASCII": "h",
+                    "ANSI": "h",
+                    "8859": "h",
+                    "UTF‑8": "h",
+                    "Description": "Latin small h"
+                },
+                {
+                    "Numb": "105",
+                    "ASCII": "i",
+                    "ANSI": "i",
+                    "8859": "i",
+                    "UTF‑8": "i",
+                    "Description": "Latin small i"
+                },
+                {
+                    "Numb": "106",
+                    "ASCII": "j",
+                    "ANSI": "j",
+                    "8859": "j",
+                    "UTF‑8": "j",
+                    "Description": "Latin small j"
+                },
+                {
+                    "Numb": "107",
+                    "ASCII": "k",
+                    "ANSI": "k",
+                    "8859": "k",
+                    "UTF‑8": "k",
+                    "Description": "Latin small k"
+                },
+                {
+                    "Numb": "108",
+                    "ASCII": "l",
+                    "ANSI": "l",
+                    "8859": "l",
+                    "UTF‑8": "l",
+                    "Description": "Latin small l"
+                },
+                {
+                    "Numb": "109",
+                    "ASCII": "m",
+                    "ANSI": "m",
+                    "8859": "m",
+                    "UTF‑8": "m",
+                    "Description": "Latin small m"
+                },
+                {
+                    "Numb": "110",
+                    "ASCII": "n",
+                    "ANSI": "n",
+                    "8859": "n",
+                    "UTF‑8": "n",
+                    "Description": "Latin small n"
+                },
+                {
+                    "Numb": "111",
+                    "ASCII": "o",
+                    "ANSI": "o",
+                    "8859": "o",
+                    "UTF‑8": "o",
+                    "Description": "Latin small o"
+                },
+                {
+                    "Numb": "112",
+                    "ASCII": "p",
+                    "ANSI": "p",
+                    "8859": "p",
+                    "UTF‑8": "p",
+                    "Description": "Latin small p"
+                },
+                {
+                    "Numb": "113",
+                    "ASCII": "q",
+                    "ANSI": "q",
+                    "8859": "q",
+                    "UTF‑8": "q",
+                    "Description": "Latin small q"
+                },
+                {
+                    "Numb": "114",
+                    "ASCII": "r",
+                    "ANSI": "r",
+                    "8859": "r",
+                    "UTF‑8": "r",
+                    "Description": "Latin small r"
+                },
+                {
+                    "Numb": "115",
+                    "ASCII": "s",
+                    "ANSI": "s",
+                    "8859": "s",
+                    "UTF‑8": "s",
+                    "Description": "Latin small s"
+                },
+                {
+                    "Numb": "116",
+                    "ASCII": "t",
+                    "ANSI": "t",
+                    "8859": "t",
+                    "UTF‑8": "t",
+                    "Description": "Latin small t"
+                },
+                {
+                    "Numb": "117",
+                    "ASCII": "u",
+                    "ANSI": "u",
+                    "8859": "u",
+                    "UTF‑8": "u",
+                    "Description": "Latin small u"
+                },
+                {
+                    "Numb": "118",
+                    "ASCII": "v",
+                    "ANSI": "v",
+                    "8859": "v",
+                    "UTF‑8": "v",
+                    "Description": "Latin small v"
+                },
+                {
+                    "Numb": "119",
+                    "ASCII": "w",
+                    "ANSI": "w",
+                    "8859": "w",
+                    "UTF‑8": "w",
+                    "Description": "Latin small w"
+                },
+                {
+                    "Numb": "120",
+                    "ASCII": "x",
+                    "ANSI": "x",
+                    "8859": "x",
+                    "UTF‑8": "x",
+                    "Description": "Latin small x"
+                },
+                {
+                    "Numb": "121",
+                    "ASCII": "y",
+                    "ANSI": "y",
+                    "8859": "y",
+                    "UTF‑8": "y",
+                    "Description": "Latin small y"
+                },
+                {
+                    "Numb": "122",
+                    "ASCII": "z",
+                    "ANSI": "z",
+                    "8859": "z",
+                    "UTF‑8": "z",
+                    "Description": "Latin small z"
+                },
+                {
+                    "Numb": "123",
+                    "ASCII": "{",
+                    "ANSI": "{",
+                    "8859": "{",
+                    "UTF‑8": "{",
+                    "Description": "left curly bracket"
+                },
+                {
+                    "Numb": "124",
+                    "ASCII": "|",
+                    "ANSI": "|",
+                    "8859": "|",
+                    "UTF‑8": "|",
+                    "Description": "vertical line"
+                },
+                {
+                    "Numb": "125",
+                    "ASCII": "}",
+                    "ANSI": "}",
+                    "8859": "}",
+                    "UTF‑8": "}",
+                    "Description": "right curly bracket"
+                },
+                {
+                    "Numb": "126",
+                    "ASCII": "~",
+                    "ANSI": "~",
+                    "8859": "~",
+                    "UTF‑8": "~",
+                    "Description": "tilde"
+                },
+                {
+                    "Numb": "127",
+                    "ASCII": "DEL",
+                    "ANSI": "",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": ""
+                },
+                {
+                    "Numb": "128",
+                    "ASCII": "",
+                    "ANSI": "€",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "euro sign"
+                },
+                {
+                    "Numb": "129",
+                    "ASCII": "",
+                    "ANSI": "",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "NOT USED"
+                },
+                {
+                    "Numb": "130",
+                    "ASCII": "",
+                    "ANSI": "‚",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "single low-9 quotation mark"
+                },
+                {
+                    "Numb": "131",
+                    "ASCII": "",
+                    "ANSI": "ƒ",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "Latin small f with hook"
+                },
+                {
+                    "Numb": "132",
+                    "ASCII": "",
+                    "ANSI": "„",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "double low-9 quotation mark"
+                },
+                {
+                    "Numb": "133",
+                    "ASCII": "",
+                    "ANSI": "…",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "horizontal ellipsis"
+                },
+                {
+                    "Numb": "134",
+                    "ASCII": "",
+                    "ANSI": "†",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "dagger"
+                },
+                {
+                    "Numb": "135",
+                    "ASCII": "",
+                    "ANSI": "‡",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "double dagger"
+                },
+                {
+                    "Numb": "136",
+                    "ASCII": "",
+                    "ANSI": "ˆ",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "modifier letter circumflex accent"
+                },
+                {
+                    "Numb": "137",
+                    "ASCII": "",
+                    "ANSI": "‰",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "per mille sign"
+                },
+                {
+                    "Numb": "138",
+                    "ASCII": "",
+                    "ANSI": "Š",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "Latin S with caron"
+                },
+                {
+                    "Numb": "139",
+                    "ASCII": "",
+                    "ANSI": "‹",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "single left-pointing angle quotation mark"
+                },
+                {
+                    "Numb": "140",
+                    "ASCII": "",
+                    "ANSI": "Œ",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "Latin capital ligature OE"
+                },
+                {
+                    "Numb": "141",
+                    "ASCII": "",
+                    "ANSI": "",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "NOT USED"
+                },
+                {
+                    "Numb": "142",
+                    "ASCII": "",
+                    "ANSI": "Ž",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "Latin Z with caron"
+                },
+                {
+                    "Numb": "143",
+                    "ASCII": "",
+                    "ANSI": "",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "NOT USED"
+                },
+                {
+                    "Numb": "144",
+                    "ASCII": "",
+                    "ANSI": "",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "NOT USED"
+                },
+                {
+                    "Numb": "145",
+                    "ASCII": "",
+                    "ANSI": "‘",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "left single quotation mark"
+                },
+                {
+                    "Numb": "146",
+                    "ASCII": "",
+                    "ANSI": "’",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "right single quotation mark"
+                },
+                {
+                    "Numb": "147",
+                    "ASCII": "",
+                    "ANSI": "“",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "left double quotation mark"
+                },
+                {
+                    "Numb": "148",
+                    "ASCII": "",
+                    "ANSI": "”",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "right double quotation mark"
+                },
+                {
+                    "Numb": "149",
+                    "ASCII": "",
+                    "ANSI": "•",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "bullet"
+                },
+                {
+                    "Numb": "150",
+                    "ASCII": "",
+                    "ANSI": "–",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "en dash"
+                },
+                {
+                    "Numb": "151",
+                    "ASCII": "",
+                    "ANSI": "—",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "em dash"
+                },
+                {
+                    "Numb": "152",
+                    "ASCII": "",
+                    "ANSI": "˜",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "small tilde"
+                },
+                {
+                    "Numb": "153",
+                    "ASCII": "",
+                    "ANSI": "™",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "trade mark sign"
+                },
+                {
+                    "Numb": "154",
+                    "ASCII": "",
+                    "ANSI": "š",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "Latin small s with caron"
+                },
+                {
+                    "Numb": "155",
+                    "ASCII": "",
+                    "ANSI": "›",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "single right-pointing angle quotation mark"
+                },
+                {
+                    "Numb": "156",
+                    "ASCII": "",
+                    "ANSI": "œ",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "Latin small ligature oe"
+                },
+                {
+                    "Numb": "157",
+                    "ASCII": "",
+                    "ANSI": "",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "NOT USED"
+                },
+                {
+                    "Numb": "158",
+                    "ASCII": "",
+                    "ANSI": "ž",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "Latin small z with caron"
+                },
+                {
+                    "Numb": "159",
+                    "ASCII": "",
+                    "ANSI": "Ÿ",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "Latin Y with diaeresis"
+                },
+                {
+                    "Numb": "160",
+                    "ASCII": "",
+                    "ANSI": "",
+                    "8859": "",
+                    "UTF‑8": "",
+                    "Description": "no-break space"
+                },
+                {
+                    "Numb": "161",
+                    "ASCII": "",
+                    "ANSI": "¡",
+                    "8859": "¡",
+                    "UTF‑8": "¡",
+                    "Description": "inverted exclamation mark"
+                },
+                {
+                    "Numb": "162",
+                    "ASCII": "",
+                    "ANSI": "¢",
+                    "8859": "¢",
+                    "UTF‑8": "¢",
+                    "Description": "cent sign"
+                },
+                {
+                    "Numb": "163",
+                    "ASCII": "",
+                    "ANSI": "£",
+                    "8859": "£",
+                    "UTF‑8": "£",
+                    "Description": "pound sign"
+                },
+                {
+                    "Numb": "164",
+                    "ASCII": "",
+                    "ANSI": "¤",
+                    "8859": "¤",
+                    "UTF‑8": "¤",
+                    "Description": "currency sign"
+                },
+                {
+                    "Numb": "165",
+                    "ASCII": "",
+                    "ANSI": "¥",
+                    "8859": "¥",
+                    "UTF‑8": "¥",
+                    "Description": "yen sign"
+                },
+                {
+                    "Numb": "166",
+                    "ASCII": "",
+                    "ANSI": "¦",
+                    "8859": "¦",
+                    "UTF‑8": "¦",
+                    "Description": "broken bar"
+                },
+                {
+                    "Numb": "167",
+                    "ASCII": "",
+                    "ANSI": "§",
+                    "8859": "§",
+                    "UTF‑8": "§",
+                    "Description": "section sign"
+                },
+                {
+                    "Numb": "168",
+                    "ASCII": "",
+                    "ANSI": "¨",
+                    "8859": "¨",
+                    "UTF‑8": "¨",
+                    "Description": "diaeresis"
+                },
+                {
+                    "Numb": "169",
+                    "ASCII": "",
+                    "ANSI": "©",
+                    "8859": "©",
+                    "UTF‑8": "©",
+                    "Description": "copyright sign"
+                },
+                {
+                    "Numb": "170",
+                    "ASCII": "",
+                    "ANSI": "ª",
+                    "8859": "ª",
+                    "UTF‑8": "ª",
+                    "Description": "feminine ordinal indicator"
+                },
+                {
+                    "Numb": "171",
+                    "ASCII": "",
+                    "ANSI": "«",
+                    "8859": "«",
+                    "UTF‑8": "«",
+                    "Description": "left-pointing double angle quotation mark"
+                },
+                {
+                    "Numb": "172",
+                    "ASCII": "",
+                    "ANSI": "¬",
+                    "8859": "¬",
+                    "UTF‑8": "¬",
+                    "Description": "not sign"
+                },
+                {
+                    "Numb": "173",
+                    "ASCII": "",
+                    "ANSI": "­",
+                    "8859": "­",
+                    "UTF‑8": "­",
+                    "Description": "soft hyphen"
+                },
+                {
+                    "Numb": "174",
+                    "ASCII": "",
+                    "ANSI": "®",
+                    "8859": "®",
+                    "UTF‑8": "®",
+                    "Description": "registered sign"
+                },
+                {
+                    "Numb": "175",
+                    "ASCII": "",
+                    "ANSI": "¯",
+                    "8859": "¯",
+                    "UTF‑8": "¯",
+                    "Description": "macron"
+                },
+                {
+                    "Numb": "176",
+                    "ASCII": "",
+                    "ANSI": "°",
+                    "8859": "°",
+                    "UTF‑8": "°",
+                    "Description": "degree sign"
+                },
+                {
+                    "Numb": "177",
+                    "ASCII": "",
+                    "ANSI": "±",
+                    "8859": "±",
+                    "UTF‑8": "±",
+                    "Description": "plus-minus sign"
+                },
+                {
+                    "Numb": "178",
+                    "ASCII": "",
+                    "ANSI": "²",
+                    "8859": "²",
+                    "UTF‑8": "²",
+                    "Description": "superscript two"
+                },
+                {
+                    "Numb": "179",
+                    "ASCII": "",
+                    "ANSI": "³",
+                    "8859": "³",
+                    "UTF‑8": "³",
+                    "Description": "superscript three"
+                },
+                {
+                    "Numb": "180",
+                    "ASCII": "",
+                    "ANSI": "´",
+                    "8859": "´",
+                    "UTF‑8": "´",
+                    "Description": "acute accent"
+                },
+                {
+                    "Numb": "181",
+                    "ASCII": "",
+                    "ANSI": "µ",
+                    "8859": "µ",
+                    "UTF‑8": "µ",
+                    "Description": "micro sign"
+                },
+                {
+                    "Numb": "182",
+                    "ASCII": "",
+                    "ANSI": "¶",
+                    "8859": "¶",
+                    "UTF‑8": "¶",
+                    "Description": "pilcrow sign"
+                },
+                {
+                    "Numb": "183",
+                    "ASCII": "",
+                    "ANSI": "·",
+                    "8859": "·",
+                    "UTF‑8": "·",
+                    "Description": "middle dot"
+                },
+                {
+                    "Numb": "184",
+                    "ASCII": "",
+                    "ANSI": "¸",
+                    "8859": "¸",
+                    "UTF‑8": "¸",
+                    "Description": "cedilla"
+                },
+                {
+                    "Numb": "185",
+                    "ASCII": "",
+                    "ANSI": "¹",
+                    "8859": "¹",
+                    "UTF‑8": "¹",
+                    "Description": "superscript one"
+                },
+                {
+                    "Numb": "186",
+                    "ASCII": "",
+                    "ANSI": "º",
+                    "8859": "º",
+                    "UTF‑8": "º",
+                    "Description": "masculine ordinal indicator"
+                },
+                {
+                    "Numb": "187",
+                    "ASCII": "",
+                    "ANSI": "»",
+                    "8859": "»",
+                    "UTF‑8": "»",
+                    "Description": "right-pointing double angle quotation mark"
+                },
+                {
+                    "Numb": "188",
+                    "ASCII": "",
+                    "ANSI": "¼",
+                    "8859": "¼",
+                    "UTF‑8": "¼",
+                    "Description": "vulgar fraction one quarter"
+                },
+                {
+                    "Numb": "189",
+                    "ASCII": "",
+                    "ANSI": "½",
+                    "8859": "½",
+                    "UTF‑8": "½",
+                    "Description": "vulgar fraction one half"
+                },
+                {
+                    "Numb": "190",
+                    "ASCII": "",
+                    "ANSI": "¾",
+                    "8859": "¾",
+                    "UTF‑8": "¾",
+                    "Description": "vulgar fraction three quarters"
+                },
+                {
+                    "Numb": "191",
+                    "ASCII": "",
+                    "ANSI": "¿",
+                    "8859": "¿",
+                    "UTF‑8": "¿",
+                    "Description": "inverted question mark"
+                },
+                {
+                    "Numb": "192",
+                    "ASCII": "",
+                    "ANSI": "À",
+                    "8859": "À",
+                    "UTF‑8": "À",
+                    "Description": "Latin A with grave"
+                },
+                {
+                    "Numb": "193",
+                    "ASCII": "",
+                    "ANSI": "Á",
+                    "8859": "Á",
+                    "UTF‑8": "Á",
+                    "Description": "Latin A with acute"
+                },
+                {
+                    "Numb": "194",
+                    "ASCII": "",
+                    "ANSI": "Â",
+                    "8859": "Â",
+                    "UTF‑8": "Â",
+                    "Description": "Latin A with circumflex"
+                },
+                {
+                    "Numb": "195",
+                    "ASCII": "",
+                    "ANSI": "Ã",
+                    "8859": "Ã",
+                    "UTF‑8": "Ã",
+                    "Description": "Latin A with tilde"
+                },
+                {
+                    "Numb": "196",
+                    "ASCII": "",
+                    "ANSI": "Ä",
+                    "8859": "Ä",
+                    "UTF‑8": "Ä",
+                    "Description": "Latin A with diaeresis"
+                },
+                {
+                    "Numb": "197",
+                    "ASCII": "",
+                    "ANSI": "Å",
+                    "8859": "Å",
+                    "UTF‑8": "Å",
+                    "Description": "Latin A with ring above"
+                },
+                {
+                    "Numb": "198",
+                    "ASCII": "",
+                    "ANSI": "Æ",
+                    "8859": "Æ",
+                    "UTF‑8": "Æ",
+                    "Description": "Latin AE"
+                },
+                {
+                    "Numb": "199",
+                    "ASCII": "",
+                    "ANSI": "Ç",
+                    "8859": "Ç",
+                    "UTF‑8": "Ç",
+                    "Description": "Latin C with cedilla"
+                },
+                {
+                    "Numb": "200",
+                    "ASCII": "",
+                    "ANSI": "È",
+                    "8859": "È",
+                    "UTF‑8": "È",
+                    "Description": "Latin E with grave"
+                },
+                {
+                    "Numb": "201",
+                    "ASCII": "",
+                    "ANSI": "É",
+                    "8859": "É",
+                    "UTF‑8": "É",
+                    "Description": "Latin E with acute"
+                },
+                {
+                    "Numb": "202",
+                    "ASCII": "",
+                    "ANSI": "Ê",
+                    "8859": "Ê",
+                    "UTF‑8": "Ê",
+                    "Description": "Latin E with circumflex"
+                },
+                {
+                    "Numb": "203",
+                    "ASCII": "",
+                    "ANSI": "Ë",
+                    "8859": "Ë",
+                    "UTF‑8": "Ë",
+                    "Description": "Latin E with diaeresis"
+                },
+                {
+                    "Numb": "204",
+                    "ASCII": "",
+                    "ANSI": "Ì",
+                    "8859": "Ì",
+                    "UTF‑8": "Ì",
+                    "Description": "Latin I with grave"
+                },
+                {
+                    "Numb": "205",
+                    "ASCII": "",
+                    "ANSI": "Í",
+                    "8859": "Í",
+                    "UTF‑8": "Í",
+                    "Description": "Latin I with acute"
+                },
+                {
+                    "Numb": "206",
+                    "ASCII": "",
+                    "ANSI": "Î",
+                    "8859": "Î",
+                    "UTF‑8": "Î",
+                    "Description": "Latin I with circumflex"
+                },
+                {
+                    "Numb": "207",
+                    "ASCII": "",
+                    "ANSI": "Ï",
+                    "8859": "Ï",
+                    "UTF‑8": "Ï",
+                    "Description": "Latin I with diaeresis"
+                },
+                {
+                    "Numb": "208",
+                    "ASCII": "",
+                    "ANSI": "Ð",
+                    "8859": "Ð",
+                    "UTF‑8": "Ð",
+                    "Description": "Latin Eth"
+                },
+                {
+                    "Numb": "209",
+                    "ASCII": "",
+                    "ANSI": "Ñ",
+                    "8859": "Ñ",
+                    "UTF‑8": "Ñ",
+                    "Description": "Latin N with tilde"
+                },
+                {
+                    "Numb": "210",
+                    "ASCII": "",
+                    "ANSI": "Ò",
+                    "8859": "Ò",
+                    "UTF‑8": "Ò",
+                    "Description": "Latin O with grave"
+                },
+                {
+                    "Numb": "211",
+                    "ASCII": "",
+                    "ANSI": "Ó",
+                    "8859": "Ó",
+                    "UTF‑8": "Ó",
+                    "Description": "Latin O with acute"
+                },
+                {
+                    "Numb": "212",
+                    "ASCII": "",
+                    "ANSI": "Ô",
+                    "8859": "Ô",
+                    "UTF‑8": "Ô",
+                    "Description": "Latin O with circumflex"
+                },
+                {
+                    "Numb": "213",
+                    "ASCII": "",
+                    "ANSI": "Õ",
+                    "8859": "Õ",
+                    "UTF‑8": "Õ",
+                    "Description": "Latin O with tilde"
+                },
+                {
+                    "Numb": "214",
+                    "ASCII": "",
+                    "ANSI": "Ö",
+                    "8859": "Ö",
+                    "UTF‑8": "Ö",
+                    "Description": "Latin O with diaeresis"
+                },
+                {
+                    "Numb": "215",
+                    "ASCII": "",
+                    "ANSI": "×",
+                    "8859": "×",
+                    "UTF‑8": "×",
+                    "Description": "multiplication sign"
+                },
+                {
+                    "Numb": "216",
+                    "ASCII": "",
+                    "ANSI": "Ø",
+                    "8859": "Ø",
+                    "UTF‑8": "Ø",
+                    "Description": "Latin O with stroke"
+                },
+                {
+                    "Numb": "217",
+                    "ASCII": "",
+                    "ANSI": "Ù",
+                    "8859": "Ù",
+                    "UTF‑8": "Ù",
+                    "Description": "Latin U with grave"
+                },
+                {
+                    "Numb": "218",
+                    "ASCII": "",
+                    "ANSI": "Ú",
+                    "8859": "Ú",
+                    "UTF‑8": "Ú",
+                    "Description": "Latin U with acute"
+                },
+                {
+                    "Numb": "219",
+                    "ASCII": "",
+                    "ANSI": "Û",
+                    "8859": "Û",
+                    "UTF‑8": "Û",
+                    "Description": "Latin U with circumflex"
+                },
+                {
+                    "Numb": "220",
+                    "ASCII": "",
+                    "ANSI": "Ü",
+                    "8859": "Ü",
+                    "UTF‑8": "Ü",
+                    "Description": "Latin U with diaeresis"
+                },
+                {
+                    "Numb": "221",
+                    "ASCII": "",
+                    "ANSI": "Ý",
+                    "8859": "Ý",
+                    "UTF‑8": "Ý",
+                    "Description": "Latin Y with acute"
+                },
+                {
+                    "Numb": "222",
+                    "ASCII": "",
+                    "ANSI": "Þ",
+                    "8859": "Þ",
+                    "UTF‑8": "Þ",
+                    "Description": "Latin Thorn"
+                },
+                {
+                    "Numb": "223",
+                    "ASCII": "",
+                    "ANSI": "ß",
+                    "8859": "ß",
+                    "UTF‑8": "ß",
+                    "Description": "Latin small sharp s"
+                },
+                {
+                    "Numb": "224",
+                    "ASCII": "",
+                    "ANSI": "à",
+                    "8859": "à",
+                    "UTF‑8": "à",
+                    "Description": "Latin small a with grave"
+                },
+                {
+                    "Numb": "225",
+                    "ASCII": "",
+                    "ANSI": "á",
+                    "8859": "á",
+                    "UTF‑8": "á",
+                    "Description": "Latin small a with acute"
+                },
+                {
+                    "Numb": "226",
+                    "ASCII": "",
+                    "ANSI": "â",
+                    "8859": "â",
+                    "UTF‑8": "â",
+                    "Description": "Latin small a with circumflex"
+                },
+                {
+                    "Numb": "227",
+                    "ASCII": "",
+                    "ANSI": "ã",
+                    "8859": "ã",
+                    "UTF‑8": "ã",
+                    "Description": "Latin small a with tilde"
+                },
+                {
+                    "Numb": "228",
+                    "ASCII": "",
+                    "ANSI": "ä",
+                    "8859": "ä",
+                    "UTF‑8": "ä",
+                    "Description": "Latin small a with diaeresis"
+                },
+                {
+                    "Numb": "229",
+                    "ASCII": "",
+                    "ANSI": "å",
+                    "8859": "å",
+                    "UTF‑8": "å",
+                    "Description": "Latin small a with ring above"
+                },
+                {
+                    "Numb": "230",
+                    "ASCII": "",
+                    "ANSI": "æ",
+                    "8859": "æ",
+                    "UTF‑8": "æ",
+                    "Description": "Latin small ae"
+                },
+                {
+                    "Numb": "231",
+                    "ASCII": "",
+                    "ANSI": "ç",
+                    "8859": "ç",
+                    "UTF‑8": "ç",
+                    "Description": "Latin small c with cedilla"
+                },
+                {
+                    "Numb": "232",
+                    "ASCII": "",
+                    "ANSI": "è",
+                    "8859": "è",
+                    "UTF‑8": "è",
+                    "Description": "Latin small e with grave"
+                },
+                {
+                    "Numb": "233",
+                    "ASCII": "",
+                    "ANSI": "é",
+                    "8859": "é",
+                    "UTF‑8": "é",
+                    "Description": "Latin small e with acute"
+                },
+                {
+                    "Numb": "234",
+                    "ASCII": "",
+                    "ANSI": "ê",
+                    "8859": "ê",
+                    "UTF‑8": "ê",
+                    "Description": "Latin small e with circumflex"
+                },
+                {
+                    "Numb": "235",
+                    "ASCII": "",
+                    "ANSI": "ë",
+                    "8859": "ë",
+                    "UTF‑8": "ë",
+                    "Description": "Latin small e with diaeresis"
+                },
+                {
+                    "Numb": "236",
+                    "ASCII": "",
+                    "ANSI": "ì",
+                    "8859": "ì",
+                    "UTF‑8": "ì",
+                    "Description": "Latin small i with grave"
+                },
+                {
+                    "Numb": "237",
+                    "ASCII": "",
+                    "ANSI": "í",
+                    "8859": "í",
+                    "UTF‑8": "í",
+                    "Description": "Latin small i with acute"
+                },
+                {
+                    "Numb": "238",
+                    "ASCII": "",
+                    "ANSI": "î",
+                    "8859": "î",
+                    "UTF‑8": "î",
+                    "Description": "Latin small i with circumflex"
+                },
+                {
+                    "Numb": "239",
+                    "ASCII": "",
+                    "ANSI": "ï",
+                    "8859": "ï",
+                    "UTF‑8": "ï",
+                    "Description": "Latin small i with diaeresis"
+                },
+                {
+                    "Numb": "240",
+                    "ASCII": "",
+                    "ANSI": "ð",
+                    "8859": "ð",
+                    "UTF‑8": "ð",
+                    "Description": "Latin small eth"
+                },
+                {
+                    "Numb": "241",
+                    "ASCII": "",
+                    "ANSI": "ñ",
+                    "8859": "ñ",
+                    "UTF‑8": "ñ",
+                    "Description": "Latin small n with tilde"
+                },
+                {
+                    "Numb": "242",
+                    "ASCII": "",
+                    "ANSI": "ò",
+                    "8859": "ò",
+                    "UTF‑8": "ò",
+                    "Description": "Latin small o with grave"
+                },
+                {
+                    "Numb": "243",
+                    "ASCII": "",
+                    "ANSI": "ó",
+                    "8859": "ó",
+                    "UTF‑8": "ó",
+                    "Description": "Latin small o with acute"
+                },
+                {
+                    "Numb": "244",
+                    "ASCII": "",
+                    "ANSI": "ô",
+                    "8859": "ô",
+                    "UTF‑8": "ô",
+                    "Description": "Latin small o with circumflex"
+                },
+                {
+                    "Numb": "245",
+                    "ASCII": "",
+                    "ANSI": "õ",
+                    "8859": "õ",
+                    "UTF‑8": "õ",
+                    "Description": "Latin small o with tilde"
+                },
+                {
+                    "Numb": "246",
+                    "ASCII": "",
+                    "ANSI": "ö",
+                    "8859": "ö",
+                    "UTF‑8": "ö",
+                    "Description": "Latin small o with diaeresis"
+                },
+                {
+                    "Numb": "247",
+                    "ASCII": "",
+                    "ANSI": "÷",
+                    "8859": "÷",
+                    "UTF‑8": "÷",
+                    "Description": "division sign"
+                },
+                {
+                    "Numb": "248",
+                    "ASCII": "",
+                    "ANSI": "ø",
+                    "8859": "ø",
+                    "UTF‑8": "ø",
+                    "Description": "Latin small o with stroke"
+                },
+                {
+                    "Numb": "249",
+                    "ASCII": "",
+                    "ANSI": "ù",
+                    "8859": "ù",
+                    "UTF‑8": "ù",
+                    "Description": "Latin small u with grave"
+                },
+                {
+                    "Numb": "250",
+                    "ASCII": "",
+                    "ANSI": "ú",
+                    "8859": "ú",
+                    "UTF‑8": "ú",
+                    "Description": "Latin small u with acute"
+                },
+                {
+                    "Numb": "251",
+                    "ASCII": "",
+                    "ANSI": "û",
+                    "8859": "û",
+                    "UTF‑8": "û",
+                    "Description": "Latin small with circumflex"
+                },
+                {
+                    "Numb": "252",
+                    "ASCII": "",
+                    "ANSI": "ü",
+                    "8859": "ü",
+                    "UTF‑8": "ü",
+                    "Description": "Latin small u with diaeresis"
+                },
+                {
+                    "Numb": "253",
+                    "ASCII": "",
+                    "ANSI": "ý",
+                    "8859": "ý",
+                    "UTF‑8": "ý",
+                    "Description": "Latin small y with acute"
+                },
+                {
+                    "Numb": "254",
+                    "ASCII": "",
+                    "ANSI": "þ",
+                    "8859": "þ",
+                    "UTF‑8": "þ",
+                    "Description": "Latin small thorn"
+                },
+                {
+                    "Numb": "255",
+                    "ASCII": "",
+                    "ANSI": "ÿ",
+                    "8859": "ÿ",
+                    "UTF‑8": "ÿ",
+                    "Description": "Latin small y with diaeresis"
+                }
+            ]
+        ]
+    }
+]

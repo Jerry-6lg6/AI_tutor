@@ -1,0 +1,41 @@
+[
+    {
+        "title": "Creating a Database",
+        "text": [
+            "To create a database in MongoDB, start by creating a MongoClient object, then specify a connection URL with the \ncorrect ip address and the name of the database you want to create.",
+            "MongoDB will create the database if it does not exist, and make a connection \nto it.",
+            "Example\nCreate a database called \"mydatabase\":\n\n  import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nmydb = myclient[\"mydatabase\"]\nRun example »",
+            "Important: In MongoDB, a database is not created until it \n  gets content!",
+            "MongoDB waits until you have created a collection (table), with at least one document (record) before it actually creates the database (and collection)."
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pymongomyclient = pymongo.MongoClient(\"mongodb://localhost:27017/\")\nmydb = myclient[\"mydatabase\"]"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "Check if Database Exists",
+        "text": [
+            "Remember: In MongoDB, a database is not created until it \n  gets content, so if this is your first time creating a database, you should \n  complete the next two chapters (create collection and create document) before \n  you check if the database exists!",
+            "You can check if a database exist by listing all databases in you system:",
+            "Example\nReturn a list of your system's databases:\n\n  print(myclient.list_database_names())\nRun example »",
+            "Or you can check a specific database by name:",
+            "Example\nCheck if \"mydatabase\" exists:\n\n  dblist = myclient.list_database_names()if \"mydatabase\" in dblist:  \n  print(\"The database exists.\")\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "print(myclient.list_database_names())"
+            },
+            {
+                "heading": "Example",
+                "code": "dblist = myclient.list_database_names()if \"mydatabase\" in dblist:  \n  print(\"The database exists.\")"
+            }
+        ],
+        "tables": []
+    }
+]

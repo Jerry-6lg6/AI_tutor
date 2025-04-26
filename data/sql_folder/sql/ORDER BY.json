@@ -1,0 +1,49 @@
+[
+    {
+        "title": "ORDER BY",
+        "text": [
+            "The ORDER BY command is used to sort the result set in ascending or descending order.",
+            "The ORDER BY command sorts the result set in \nascending order by default. To sort the records in descending order, use the \nDESC keyword.",
+            "The following SQL statement selects all the columns from the \"Customers\" \ntable, sorted by the \"CustomerName\" column:",
+            "Example\n\n SELECT * FROM CustomersORDER BY CustomerName;\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersORDER BY CustomerName;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "ASC",
+        "text": [
+            "The ASC command is used to sort the data \nreturned in ascending order.",
+            "The following SQL statement selects all the columns from the \"Customers\" \ntable, sorted by the \"CustomerName\" column:",
+            "Example\n\n SELECT * FROM CustomersORDER BY CustomerName ASC;\n\n Try it Yourself »"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersORDER BY CustomerName ASC;"
+            }
+        ],
+        "tables": []
+    },
+    {
+        "title": "DESC",
+        "text": [
+            "The DESC command is used to sort the data \nreturned in descending order.",
+            "The following SQL statement selects all the columns from the \"Customers\" \ntable, sorted descending by the \"CustomerName\" column:",
+            "Example\n\n SELECT * FROM CustomersORDER BY CustomerName DESC;\n\n Try it Yourself »",
+            "❮ Previous\n❮ SQL Keywords Reference\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "SELECT * FROM CustomersORDER BY CustomerName DESC;"
+            }
+        ],
+        "tables": []
+    }
+]

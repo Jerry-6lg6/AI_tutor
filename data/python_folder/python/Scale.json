@@ -1,0 +1,48 @@
+[
+    {
+        "title": "Scale Features",
+        "text": [
+            "When your data has different values, and even different measurement units, it can be difficult to \ncompare them. What is kilograms compared to meters? Or altitude compared to time?",
+            "The answer to this problem is scaling. We can scale data into new values that are easier to \ncompare.",
+            "Take a look at the table below, it is the same data set that we used in the \nmultiple regression chapter, but this time the volume column \ncontains values in liters instead of cm3 (1.0 instead of 1000).",
+            "Car\nModel\nVolume\nWeight\nCO2\n\n\n\n\n\n\n\nToyota\nAygo\n1.0\n790\n99\n\n\nMitsubishi\nSpace Star\n1.2\n1160\n95\n\n\nSkoda\nCitigo\n1.0\n929\n95\n\n\nFiat\n500\n0.9\n865\n90\n\n\nMini\nCooper\n1.5\n1140\n105\n\n\nVW\nUp!\n1.0\n929\n105\n\n\nSkoda\nFabia\n1.4\n1109\n90\n\n\nMercedes\nA-Class\n1.5\n1365\n92\n\n\nFord\nFiesta\n1.5\n1112\n98\n\n\nAudi\nA1\n1.6\n1150\n99\n\n\nHyundai\nI20\n1.1\n980\n99\n\n\nSuzuki\nSwift\n1.3\n990\n101\n\n\nFord\nFiesta\n1.0\n1112\n99\n\n\nHonda\nCivic\n1.6\n1252\n94\n\n\nHundai\nI30\n1.6\n1326\n97\n\n\nOpel\nAstra\n1.6\n1330\n97\n\n\nBMW\n1\n1.6\n1365\n99\n\n\nMazda\n3\n2.2\n1280\n104\n\n\nSkoda\nRapid\n1.6\n1119\n104\n\n\nFord\nFocus\n2.0\n1328\n105\n\n\nFord\nMondeo\n1.6\n1584\n94\n\n\nOpel\nInsignia\n2.0\n1428\n99\n\n\nMercedes\nC-Class\n2.1\n1365\n99\n\n\nSkoda\nOctavia\n1.6\n1415\n99\n\n\nVolvo\nS60\n2.0\n1415\n99\n\n\nMercedes\nCLA\n1.5\n1465\n102\n\n\nAudi\nA4\n2.0\n1490\n104\n\n\nAudi\nA6\n2.0\n1725\n114\n\n\nVolvo\nV70\n1.6\n1523\n109\n\n\nBMW\n5\n2.0\n1705\n114\n\n\nMercedes\nE-Class\n2.1\n1605\n115\n\n\nVolvo\nXC70\n2.0\n1746\n117\n\n\nFord\nB-Max\n1.6\n1235\n104\n\n\nBMW\n2\n1.6\n1390\n108\n\n\nOpel\nZafira\n1.6\n1405\n109\n\n\nMercedes\nSLK\n2.5\n1395\n120",
+            "It can be difficult to compare the volume 1.0 with the weight 790, but if we \nscale them both into comparable values, we can easily see how much one value \nis compared to the other.",
+            "There are different methods for scaling data, in this tutorial we will use a \nmethod called standardization.",
+            "The standardization method  \nuses this formula:",
+            "z = (x - u) / s",
+            "Where z is the new value, \nx is the original value, \nu is the mean and s is the \nstandard deviation.",
+            "If you take the weight column from the data set above, the first value \nis 790, and the scaled value will be:",
+            "If you take the volume column from the data set above, the first value \nis 1.0, and the scaled value \nwill be:",
+            "(1.0 - 1.61) / 0.38 = -1.59",
+            "Now you can compare -2.1 with -1.59 instead of comparing 790 with 1.0.",
+            "You do not have to do this manually,\nthe Python sklearn module has a method called StandardScaler()\nwhich returns a Scaler object with methods for transforming data sets.",
+            "Example\nScale all values in the Weight and Volume columns:\n\n  import pandasfrom sklearn import linear_modelfrom \n  sklearn.preprocessing import StandardScalerscale = StandardScaler()\ndf = pandas.read_csv(\"data.csv\")X = df[['Weight', 'Volume']]\nscaledX = scale.fit_transform(X)\n  print(scaledX)\nResult:\nNote that the first two values are -2.1 and -1.59, which corresponds to our \n  calculations: \n\n[[-2.10389253 -1.59336644]\n [-0.55407235 -1.07190106]\n [-1.52166278 -1.59336644]\n [-1.78973979 -1.85409913]\n [-0.63784641 -0.28970299]\n [-1.52166278 -1.59336644]\n [-0.76769621 -0.55043568]\n [ 0.3046118  -0.28970299]\n [-0.7551301  -0.28970299]\n [-0.59595938 -0.0289703 ]\n [-1.30803892 -1.33263375]\n [-1.26615189 -0.81116837]\n [-0.7551301  -1.59336644]\n [-0.16871166 -0.0289703 ]\n [ 0.14125238 -0.0289703 ]\n [ 0.15800719 -0.0289703 ]\n [ 0.3046118  -0.0289703 ]\n [-0.05142797  1.53542584]\n [-0.72580918 -0.0289703 ]\n [ 0.14962979  1.01396046]\n [ 1.2219378  -0.0289703 ]\n [ 0.5685001   1.01396046]\n [ 0.3046118   1.27469315]\n [ 0.51404696 -0.0289703 ]\n [ 0.51404696  1.01396046]\n [ 0.72348212 -0.28970299]\n [ 0.8281997   1.01396046]\n [ 1.81254495  1.01396046]\n [ 0.96642691 -0.0289703 ]\n [ 1.72877089  1.01396046]\n [ 1.30990057  1.27469315]\n [ 1.90050772  1.01396046]\n [-0.23991961 -0.0289703 ]\n [ 0.40932938 -0.0289703 ]\n [ 0.47215993 -0.0289703 ]\n [ 0.4302729   2.31762392]]\n\n\nRun example »",
+            ""
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pandasfrom sklearn import linear_modelfrom \n  sklearn.preprocessing import StandardScalerscale = StandardScaler()\ndf = pandas.read_csv(\"data.csv\")X = df[['Weight', 'Volume']]\nscaledX = scale.fit_transform(X)\n  print(scaledX)"
+            }
+        ],
+        "tables": [
+            []
+        ]
+    },
+    {
+        "title": "Predict CO2 Values",
+        "text": [
+            "The task in the Multiple Regression chapter was to predict the CO2 emission from a car \nwhen you only knew its weight and volume.",
+            "When the data set is scaled, you will have to use the scale when you predict values:",
+            "Example\nPredict the CO2 emission from a 1.3 liter car that weighs 2300 kilograms:\n\n  import pandasfrom sklearn import linear_modelfrom \n  sklearn.preprocessing import StandardScalerscale = StandardScaler()\ndf = pandas.read_csv(\"data.csv\")X = df[['Weight', 'Volume']]\n  y = df['CO2']\nscaledX = scale.fit_transform(X)\n  regr = linear_model.LinearRegression()regr.fit(scaledX, y)scaled = \n  scale.transform([[2300, 1.3]])predictedCO2 = regr.predict([scaled[0]])\n  print(predictedCO2)\nResult:\n\n[107.2087328]\n\n\nRun example »",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "import pandasfrom sklearn import linear_modelfrom \n  sklearn.preprocessing import StandardScalerscale = StandardScaler()\ndf = pandas.read_csv(\"data.csv\")X = df[['Weight', 'Volume']]\n  y = df['CO2']\nscaledX = scale.fit_transform(X)\n  regr = linear_model.LinearRegression()regr.fit(scaledX, y)scaled = \n  scale.transform([[2300, 1.3]])predictedCO2 = regr.predict([scaled[0]])\n  print(predictedCO2)"
+            }
+        ],
+        "tables": []
+    }
+]

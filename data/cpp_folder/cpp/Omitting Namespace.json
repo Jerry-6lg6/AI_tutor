@@ -1,0 +1,19 @@
+[
+    {
+        "title": "Omitting Namespace",
+        "text": [
+            "You might see some C++ programs that run without the standard namespace library. The using namespace std line can be omitted and replaced with the std keyword, \nfollowed by the :: operator \nfor string (and cout) objects:",
+            "Example\n\n  #include <iostream>#include <string>// using namespace \n  std; - Remove this lineint main() { \n  std::string greeting = \"Hello\";  std::cout \n  << greeting;  return 0;}\nTry it Yourself »",
+            "It is up to you if you want to include the standard namespace library or not.\nIn our tutorial, we will continue to include the library.",
+            "",
+            "❮ Previous\nNext ❯"
+        ],
+        "examples": [
+            {
+                "heading": "Example",
+                "code": "#include <iostream>#include <string>// using namespace \n  std; - Remove this lineint main() { \n  std::string greeting = \"Hello\";  std::cout \n  << greeting;  return 0;}"
+            }
+        ],
+        "tables": []
+    }
+]
