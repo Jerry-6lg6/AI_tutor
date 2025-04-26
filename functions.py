@@ -18,12 +18,12 @@ def get_dropdown_options_from_folder(folder_path):
     for folder_name in os.listdir(folder_path):
         folder_path_full = os.path.join(folder_path, folder_name)
         if os.path.isdir(folder_path_full):
-            # 新格式支持检测
+            # New format supports detection
             index_base = os.path.join(folder_path_full, "index")
             if os.path.exists(index_base + ".faiss") and os.path.exists(index_base + ".pkl"):
                 label = folder_name.replace("_folder", "")
                 options.append({'label': label, 'value': label})
-            # 原格式支持
+            # Original format support
             elif os.path.exists(os.path.join(folder_path_full, "f_index")):
                 label = folder_name.replace("_folder", "")
                 options.append({'label': label, 'value': label})
@@ -58,10 +58,10 @@ def form_prompt(q, key):
 
 def load_vectorstore(path_base: str):
     """
-    加载 FAISS 索引和对应的 metadata。
-    参数:
-        path_base: 不带扩展名的路径（如 group_project/data/Database Systems_folder/index）
-    返回:
+    Loading FAISS index and corresponded metadata。
+    Parameter:
+        path_base: A path without an extension（such as: group_project/data/Database Systems_folder/index）
+    Return:
         index: faiss.Index
         metadata: List[str]
     """
@@ -69,7 +69,7 @@ def load_vectorstore(path_base: str):
     meta_path = path_base + ".pkl"
 
     if not os.path.exists(faiss_path) or not os.path.exists(meta_path):
-        raise FileNotFoundError("向量数据库或元数据文件不存在")
+        raise FileNotFoundError("The vector database or metadata file does not exist")
 
     index = faiss.read_index(faiss_path)
     with open(meta_path, "rb") as f:
