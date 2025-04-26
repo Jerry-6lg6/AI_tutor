@@ -12,6 +12,9 @@ Welcome to the RAG-powered AI tutor for computer science learning. This system i
 - Programming & Software Engineering  
   Suitable for students in Software Engineering (COMP201)
 
+- Other related programming language
+  Python， Java，C, C++...
+
 This system leverages Retrieval-Augmented Generation (RAG) and the DeepSeek-R18B large language model to deliver context-aware, accurate responses — a significant enhancement over standard LLMs.
 
 ---
