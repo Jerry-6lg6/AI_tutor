@@ -157,7 +157,7 @@ app.layout = html.Div([
                     dcc.Loading(html.Div([
                         html.Div(id="history-list", className="overflow-auto",
                                  style={"height": "400px", "overflowY": "auto"}),
-                        html.Div(id="scroll-anchor")  # 锚点元素
+                        html.Div(id="scroll-anchor")  
                     ])),
                     dcc.Interval(id='scroll-interval', interval=500, n_intervals=0, max_intervals=0)
                 ])
