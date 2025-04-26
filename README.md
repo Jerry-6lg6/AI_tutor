@@ -39,93 +39,89 @@ This system leverages Retrieval-Augmented Generation (RAG) and the DeepSeek-R18B
 
 ---
 
-# Installation Guide 
+# 🚀 Installation Guide
 
-Welcome! This guide will walk you through installing Ollama, downloading the 
+This guide will walk you through installing Ollama, downloading the DeepSeek-R1:8B model, and setting up the Python development environment for the project.
 
-DeepSeek-R1:8B model, and setting up the Python development environment for 
+---
 
-the project. 
+## 📦 1. Install Ollama
 
-## 1. Install Ollama 
+**Ollama** is a tool for running large language models locally.
 
-Ollama is a tool for running large language models locally. 
+### 🔧 Installation Steps
 
-Installation Steps 
+1. Visit the official website: [https://ollama.com/](https://ollama.com/)
+2. Download and install Ollama according to your operating system.
+3. After installation, open your terminal and run:
 
-1. 
+```bash
+ollama list
+```
 
-Visit the official website: https://ollama.com/ 
+> ✅ If a list (even if empty) appears, Ollama has been installed successfully!
 
-2. 
+---
 
-3. 
+## 🧐 2. Download and Run DeepSeek-R1:8B Model
 
-Download and install Ollama according to your operating system. 
+### 🚀 Run the following command in your terminal:
 
-4. 
+```bash
+ollama run deepseek-r1:8b
+```
 
-5. 
+> ⚠️ **Note:** The model file is large (\~20GB+). Downloading may take a significant amount of time depending on your internet speed.
 
-After installation, open your terminal and run: 
+---
 
-6.  
+## 🐍 3. Set Up Python Development Environment
 
-> ollama list
+### 📁 Step 1: Clone or Download Project Source Code
 
-✅ If a list (even if empty) appears, Ollama has been 
+Clone the repository or download the project files to your local machine.
 
-installed successfully! 
+### 📊 Step 2: Create and Activate a Python Virtual Environment
 
-## 2. Download and Run DeepSeek-R1:8B Model 
+#### macOS / Linux:
 
-Run the following command in your terminal: ollama run deepseek-r1:8b 
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
 
-Note: The model file is large (~20GB+). Downloading may 
+#### Windows:
 
-take a significant amount of time depending on your internet 
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
 
-speed. 
+### 📦 Step 3: Install Required Dependencies
 
-## 3. Set Up Python Development Environment 
+#### ✅ Recommended: Use `requirements.txt`
 
-Step 1: Clone or Download Project Source Code 
+Make sure you are in the `group_project` folder, then run:
 
-Clone the repository or download the project files to your local machine. 
+```bash
+pip install -r requirements.txt
+```
 
-Step 2: Create and Activate a Python Virtual Environment 
+#### 🛠️ Alternatively, install manually:
 
-macOS / Linux: 
+```bash
+pip install dash dash-bootstrap-components feffery-antd-components transformers torch faiss-cpu httpx pandas numpy plotly
+```
+### 
+--- 📦 Step 4: Install Required Dependencies
 
-python3 -m venv venv 
+## ✅ All Set!
 
-source venv/bin/activate 
+You have successfully installed all required tools and dependencies. 🎉\
+You are now ready to start developing and running your local AI projects!
 
-Windows: 
+---
 
-python -m venv venv 
+> If you encounter any issues, please refer to the official documentation or reach out to the project maintainers.
 
-venv\Scripts\activate 
-
-Step 3: Install Required Dependencies 
-
-✅ Recommended: Use requirements.txt 
-
-Make sure you are in the group_project folder, then run: 
-
-pip install -r requirements.txt 
-
-Alternatively, install manually: 
-
-pip install dash dash-bootstrap-components feffery-antd-components 
-
-transformers torch faiss-cpu httpx pandas numpy plotly 
-
-## ✅ All Set! You have successfully installed all required tools and dependencies. 
-
-You are now ready to start developing and running your local AI projects! 
-
-If you encounter any issues, please refer to the official 
-
-documentation or reach out to the project maintainers.
 
