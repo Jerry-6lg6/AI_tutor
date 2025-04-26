@@ -218,7 +218,7 @@ app.layout = html.Div([
                 className="mb-4",
                 style={
                     "position": "fixed",
-                    "top": "10vh", "right": "0.78vw", "width": "12vw"
+                    "top": "10vh", "right": "0.78vw", "width": "10vw"
                 }
             )
         ])
