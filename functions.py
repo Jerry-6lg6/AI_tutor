@@ -29,6 +29,7 @@ def get_dropdown_options_from_folder(folder_path):
                 options.append({'label': label, 'value': label})
     return options
 
+
 def get_text_auto(key, query):
     base_folder = os.path.join("data", f"{key}_folder")
     new_index_path = os.path.join(base_folder, "index")
@@ -40,7 +41,7 @@ def get_text_auto(key, query):
         return search_top_k(query, index, metadata, emboding_bge)
     else:
         return get_text_old(key, query)
-    
+
 
 def form_prompt(q, key):
     base_path = os.path.join("data", f"{key}_folder", "index")
@@ -77,16 +78,16 @@ def load_vectorstore(path_base: str):
 
     return index, metadata
 
+
 def search_top_k(query: str, index, metadata, embed_model, k=5):
     # 将query进行embedding
     emb = embed_model(query)
     emb_np = emb.numpy().astype('float32').reshape(1, -1)
-    
+
     # 检索 top-k
     D, I = index.search(emb_np, k)
     matched_texts = [metadata[i] for i in I[0] if i < len(metadata)]
     return "\n\n".join(matched_texts)
-
 
 
 def emboding_bge(s):
@@ -166,7 +167,7 @@ def get_text(key='sql', query: str = None):
     for root, dirs, files in os.walk(path):
         if len(root.split("\\")) == 3:
             path_index = os.path.join("data", f"{key}_folder", "f_index")
-            path_map   = os.path.join("data", f"{key}_folder", f"{key}_index")
+            path_map = os.path.join("data", f"{key}_folder", f"{key}_index")
             print(path_index)
             with open(path_map, 'r', encoding='utf-8') as file:
                 map = json.load(file)
@@ -187,8 +188,9 @@ def get_text_old(key, query):
     # 加载旧结构的 f_index、c_index、links.json 等
     f_index_path = os.path.join("data", f"{key}_folder", "f_index")
     c_index_path = os.path.join("data", f"{key}_folder", f"{key}_index.json")
-    links_path   = os.path.join("data", f"{key}_folder", "c_links.json")
+    links_path = os.path.join("data", f"{key}_folder", "c_links.json")
     return get_text(key, query)  # alias 原来旧函数
+
 
 def form_history(text):
     history = f'''
@@ -234,7 +236,6 @@ def form_prompt(q, key):
 
 def query_ollama(q, user_id: str, session_id: str, key: str, prompt_new: str, model='deepseek-r1:8b', temperature=0.6,
                  input_prompt=None) -> str:
-
     if input_prompt and prompt_new:
         prompt = prompt_new
     else:
@@ -245,7 +246,7 @@ def query_ollama(q, user_id: str, session_id: str, key: str, prompt_new: str, mo
         "model": model,
         "prompt": prompt,
         "temperature": temperature,
-        "stream": False  # 非流式模式
+        "stream": False  # Non-streaming output
     }
 
     try:

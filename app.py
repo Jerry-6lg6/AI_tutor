@@ -27,6 +27,32 @@ initial_session_id = str(uuid.uuid4())
 # 初始数据文件路径
 CONVO_FILE = "data_history/saved_conversations.json"
 
+app.index_string = '''
+ <!DOCTYPE html>
+ <html>
+     <head>
+         {%metas%}
+         <title>{%title%}</title>
+         {%favicon%}
+         {%css%}
+         <style>
+             html, body {
+                 overflow: hidden;
+                 height: 100%;
+             }
+         </style>
+     </head>
+     <body>
+         {%app_entry%}
+         <footer>
+             {%config%}
+             {%scripts%}
+             {%renderer%}
+         </footer>
+     </body>
+ </html>
+ '''
+
 
 # 加载历史记录（若存在）
 def load_json(path, default):
@@ -56,12 +82,14 @@ def save_file(contents, filename):
         f.write(decoded)
     return path
 
+
 # 保存函数
 def save_to_file():
     os.makedirs("data", exist_ok=True)
     with open(CONVO_FILE, "w", encoding="utf-8") as f:
         json.dump(saved_conversations, f, ensure_ascii=False, indent=2)
     print("✅ Using history is downloaded")
+
 
 initial_convo = load_json(CONVO_FILE, default_convo)
 saved_conversations = initial_convo
@@ -82,13 +110,13 @@ app.layout = html.Div([
             dbc.Button("☰", id="sidebar-toggle", color="secondary"),
             dbc.Button("💾", id="save-convo", color="success")
         ], vertical=True,
-            style={"position": "absolute", "right": "-48px", "top": "50%", "transform": "translateY(-50%)"}),
+            style={"position": "absolute", "right": "-47px", "top": "50%", "transform": "translateY(-50%)"}),
 
         html.H4("Chat History", className="p-3 border-bottom"),
         dbc.Button("🧹 Clear All", id="clear-convos", color="danger", style={"width": "100%", "marginBottom": "10px"}),
         html.Div(id="sidebar-history", className="overflow-auto", style={"height": "85vh"})
     ], id="sidebar", style={
-        "position": "fixed", "left": "-250px", "width": "250px", "height": "100%",
+        "position": "fixed", "left": "-13vw", "width": "13vw", "height": "100%",
         "transition": "all 0.3s", "backgroundColor": "#f8f9fa", "zIndex": 1000,
         "boxShadow": "2px 0 5px rgba(0,0,0,0.1)"
     }),
@@ -103,7 +131,7 @@ app.layout = html.Div([
             style={
                 "display": "none",
                 "position": "fixed",
-                "bottom": "20px",
+                "bottom": "1.25vh",
                 "left": "50%",
                 "transform": "translateX(-50%)",
                 "background-color": "rgba(0, 0, 0, 0.7)",
@@ -119,7 +147,7 @@ app.layout = html.Div([
     html.Div([
         dbc.Container([
             dbc.Button("🌙/☀️", id="theme-toggle", color="secondary",
-                       style={"position": "fixed", "top": "10px", "right": "20px", "zIndex": 1000}),
+                       style={"position": "fixed", "top": "0.62vh", "right": "0.78vw", "zIndex": 1000}),
 
             html.Div([
                 dcc.Upload(
@@ -128,7 +156,7 @@ app.layout = html.Div([
                     multiple=False,
                     accept=".pdf"
                 )
-            ], style={"position": "fixed", "top": "60px", "right": "20px", "zIndex": 1000}),
+            ], style={"position": "fixed", "top": "5vh", "right": "0.78vw", "zIndex": 1000}),
 
             # Chat Card
 
@@ -156,7 +184,7 @@ app.layout = html.Div([
                 dbc.CardBody([
                     dcc.Loading(html.Div([
                         html.Div(id="history-list", className="overflow-auto",
-                                 style={"height": "400px", "overflowY": "auto"}),
+                                 style={"height": "40vh", "overflowY": "auto"}),
                         html.Div(id="scroll-anchor")  # 锚点元素
                     ])),
                     dcc.Interval(id='scroll-interval', interval=500, n_intervals=0, max_intervals=0)
@@ -187,7 +215,8 @@ app.layout = html.Div([
                             style={
                                 'display': 'flex',
                                 'justifyContent': 'space-between',
-                                'alignItems': 'center'
+                                'alignItems': 'center',
+
                             })
                     ),
 
@@ -202,7 +231,12 @@ app.layout = html.Div([
                         style={
                             'fontSize': 16,
                             'height': '180px',
-                            'padding': '15px 0'
+                            'padding': '15px 0',
+                            'overflowX': 'auto',
+                            'overflowY': 'auto',
+                            'whiteSpace': 'pre',
+                            'overflowWrap': 'normal',
+                            'wordBreak': 'normal',
                         }
                     ),
                     fac.AntdText(id='prompt-feedback', style={'fontSize': 14, 'marginTop': '4px'}),
@@ -217,23 +251,15 @@ app.layout = html.Div([
                 ],
                 className="mb-4",
                 style={
-                    "position": "absolute",
-                    "top": "110px",
-                    "right": "20px",
-                    "width": "10%"
+                    "position": "fixed",
+                    "top": "10vh", "right": "0.78vw", "width": "10vw"
                 }
             )
         ])
     ], id="main-content", style={
-        "width": "100vw",    # 占满视窗宽度
-        "height": "100vh",   # 占满视窗高度
-        "margin": "0",       # 消除边距
-        "padding": "0",      # 消除内边距
-        "boxSizing": "border-box",  # 包含边框和内边距
-        "overflow": "hidden",  # 隐藏滚动条（按需调整）
         "transition": "all 0.3s"
-    },)
-], id="main-container", className="light-theme", style={"height": "100vh"})
+    }, )
+], id="main-container", className="light-theme", style={"height": "100vh", "overflow": "hidden"})
 
 # Clientside scroll callback
 app.clientside_callback(
@@ -272,9 +298,9 @@ def toggle_theme(n):
 def toggle_sidebar(n, style):
     if n is None:
         return style, dash.no_update
-    is_open = style["left"] == "-250px"
-    new_left = "0" if is_open else "-250px"
-    new_margin = "50px" if is_open else "0"
+    is_open = style["left"] == "-13vw"
+    new_left = "0" if is_open else "-13vw"
+    new_margin = "1.95vw" if is_open else "0"
     style["left"] = new_left
     return style, {"marginLeft": new_margin, "transition": "all 0.3s"}
 
@@ -463,20 +489,43 @@ def handle_file_upload(contents, filename, history):
     return history + [{"role": "user", "content": f"(Uploaded file: {filename})"}]
 
 
-# 添加 Dropdown 动态更新的回调
 @app.callback(
     [Output("subject-dropdown", "options"),
-     Output("subject-dropdown", "value")],
+     Output("subject-dropdown", "value"),
+     Output("subject-dropdown", "style")],  # 新增动态 style 输出
     Input("interval-update-subjects", "n_intervals"),
+    State("subject-dropdown", "value"),
     prevent_initial_call=False
 )
-def update_subject_dropdown(n_intervals):
+def update_subject_dropdown(n_intervals, current_value):
     from functions import get_dropdown_options_from_folder
+
     folder = './data'
     options = get_dropdown_options_from_folder(folder)
+
     if not options:
-        return [], None
-    return options, options[0]['value']
+        return [], None, {'width': '200px'}
+
+    # 提取所有 label
+    labels = [opt['label'] for opt in options]
+    # 计算最长 label 的字符长度
+    max_label_length = max(len(label) for label in labels)
+
+    # 根据最长 label 估算一个合适的宽度
+    # 比如每个字符大概 10px + 基础 padding 60px
+    estimated_width = 10 * max_label_length + 60
+    estimated_width = min(max(estimated_width, 200), 600)  # 限制在200~600px之间
+
+    dynamic_style = {
+        'width': f'{estimated_width}px'
+    }
+
+    # 判断 value 是否还能保留
+    new_values = [opt['value'] for opt in options]
+    if current_value in new_values:
+        return options, current_value, dynamic_style
+    else:
+        return options, options[0]['value'], dynamic_style
 
 
 # @app.callback(
@@ -517,9 +566,6 @@ def validate_prompt(n_clicks, value, checked):
         return 'error', '❌ Your prompt must include {q} and {source}', 'danger'
 
 
-
-
-
 # 定期更新数据（可以绑定前端 Store 的变化）
 @app.callback(
     Output('sync-dummy', 'children'),  # hidden div 占位
@@ -531,9 +577,6 @@ def sync_data_to_server(convos):
     saved_conversations = convos
     print(saved_conversations)
     return ""
-
-
-
 
 
 atexit.register(save_to_file)
