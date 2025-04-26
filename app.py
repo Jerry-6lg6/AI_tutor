@@ -28,6 +28,7 @@ initial_session_id = str(uuid.uuid4())
 CONVO_FILE = "data_history/saved_conversations.json"
 
 app.index_string = '''
+
  <!DOCTYPE html>
  <html>
      <head>
@@ -52,6 +53,8 @@ app.index_string = '''
      </body>
  </html>
  '''
+
+
 
 
 # 加载历史记录（若存在）
@@ -258,7 +261,9 @@ app.layout = html.Div([
         ])
     ], id="main-content", style={
         "transition": "all 0.3s"
-    }, )
+
+    },)
+
 ], id="main-container", className="light-theme", style={"height": "100vh", "overflow": "hidden"})
 
 # Clientside scroll callback
