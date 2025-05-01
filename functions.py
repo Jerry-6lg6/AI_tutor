@@ -10,8 +10,9 @@ import httpx
 from typing import AsyncGenerator
 from memory import history_pool
 import pickle
-from utils.vector_utils import load_vectorstore, search_top_k
+import sys
 
+sys.path.append(os.path.join(os.path.dirname(__file__), '.'))
 
 def get_dropdown_options_from_folder(folder_path):
     options = []
@@ -80,24 +81,24 @@ def load_vectorstore(path_base: str):
 
 
 def search_top_k(query: str, index, metadata, embed_model, k=5):
-    # 将query进行embedding
+    # Embedding the query
     emb = embed_model(query)
     emb_np = emb.numpy().astype('float32').reshape(1, -1)
 
-    # 检索 top-k
+    # Retrieve top-k
     D, I = index.search(emb_np, k)
     matched_texts = [metadata[i] for i in I[0] if i < len(metadata)]
     return "\n\n".join(matched_texts)
 
 
 def emboding_bge(s):
-    # 使用相对路径加载模型
+    # Use relative paths to load models
     relative_model_path = "bge-large-en-v1.5"
 
     tokenizer = AutoTokenizer.from_pretrained(relative_model_path)
     model = AutoModel.from_pretrained(relative_model_path)
 
-    # 测试推理
+    # Test the reasoning
     max_length = 512
     encoded_input = tokenizer(s, max_length=max_length, padding=True, truncation=True, return_tensors='pt')
 
@@ -185,11 +186,11 @@ def get_text(key='sql', query: str = None):
 
 
 def get_text_old(key, query):
-    # 加载旧结构的 f_index、c_index、links.json 等
+    # Load f_index, c_index, links.json, etc. of the old structures
     f_index_path = os.path.join("data", f"{key}_folder", "f_index")
     c_index_path = os.path.join("data", f"{key}_folder", f"{key}_index.json")
     links_path = os.path.join("data", f"{key}_folder", "c_links.json")
-    return get_text(key, query)  # alias 原来旧函数
+    return get_text(key, query)  # alias original old function
 
 
 def form_history(text):

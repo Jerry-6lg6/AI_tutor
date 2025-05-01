@@ -8,7 +8,11 @@ import base64
 import os
 import json
 import atexit
+
+from marshmallow.utils import timestamp
+
 from functions import prompt_based, query_ollama
+import subprocess
 
 UPLOAD_DIR = "uploads"
 os.makedirs(UPLOAD_DIR, exist_ok=True)
@@ -42,6 +46,13 @@ app.index_string = '''
                  height: 100%;
              }
          </style>
+         <script>
+            window.addEventListener("beforeunload", function () {
+                
+                let data = sessionStorage.getItem("saved-conversations");
+                navigator.sendBeacon("/save_on_close", data || JSON.stringify({msg: "No data"}));
+            });
+        </script>
      </head>
      <body>
          {%app_entry%}
@@ -102,7 +113,7 @@ app.layout = html.Div([
     dcc.Interval(id="interval-update-subjects", interval=5000, n_intervals=0),  # 每5秒检查一次
     dcc.Store(id='theme-store', data='light'),
     dcc.Store(id='chat-history', data=[]),
-    dcc.Store(id='saved-conversations', data=initial_convo),
+    dcc.Store(id='saved-conversations', data=initial_convo, storage_type="session"),
     dcc.Store(id='current-session-id', data=initial_session_id),
 
     html.Div(id='sync-dummy', style={"display": "none"}),
@@ -228,7 +239,7 @@ app.layout = html.Div([
                         mode='text-area',
                         autoSize=False,
                         allowClear=True,
-                        placeholder='请输入提示词模板：',
+                        placeholder='Please entering you prompt：',
                         defaultValue=prompt_based,
                         status=None,  # 动态设置状态 success / error
                         style={
@@ -287,9 +298,12 @@ app.clientside_callback(
     [Output("theme-store", "data"),
      Output("main-container", "className"),
      Output("prompt-header", "style")],
-    Input("theme-toggle", "n_clicks"), prevent_initial_call=True
+    Input("theme-toggle", "n_clicks"),
+    [State("chat-history", "data")],prevent_initial_call=True
 )
-def toggle_theme(n):
+def toggle_theme(n, chat_history):
+    if chat_history != [{'role': 'assistant', 'content': 'Start asking your questions!'}]:
+        return dash.no_update, dash.no_update, dash.no_update
     theme = "dark-theme" if n % 2 == 1 else "light-theme"
     header_style = {"color": "#fff"} if theme == "dark-theme" else {"color": "#000"}
     return theme, theme, header_style
@@ -418,7 +432,6 @@ def save_chat(n_clicks, chat_history, saved_convos, session_id):
     print(f'the new session id is {new_session_id}')
     global saved_conversations
     saved_conversations = saved_convos + [new_entry]
-    save_to_file()
     return saved_convos + [new_entry], [], new_session_id
 
 
@@ -446,15 +459,16 @@ def render_sidebar(convos, theme):
         preview = next((m["content"] for m in convo["messages"] if m["role"] == "user"), "Empty")
         items.append(
             dbc.ListGroupItem(
-                [html.Small(convo["title"], className="text-muted"),
+                [html.Small(convo["title"], style={"color": "#dfe6e9" if theme == "dark-theme" else "#2c3e50"}),
                  html.P((preview[:30] + "...") if len(preview) > 30 else preview, className="mb-0")],
                 id={"type": "convo-item", "index": convo["id"]}, action=True,
                 style={
-                    "backgroundColor": "#404040" if theme == "dark" else "white",
-                    "color": "#dfe6e9" if theme == "dark" else "#2c3e50"
+                    "backgroundColor": "#2a2a40" if theme == "dark-theme" else "white",
+                    "color": "#dfe6e9" if theme == "dark-theme" else "#2c3e50"
                 }
             )
         )
+
     return items
 
 
@@ -490,14 +504,37 @@ def load_conversation(n_clicks_list, saved):
 def handle_file_upload(contents, filename, history):
     if contents is None:
         return dash.no_update
+
+    # Save the uploaded PDF file
     save_file(contents, filename)
-    return history + [{"role": "user", "content": f"(Uploaded file: {filename})"}]
+
+    # Call utils/run_pipeline.py to process uploaded PDFs
+    try:
+        result = subprocess.run(
+            ["python", "utils/run_pipeline.py"],
+            cwd=os.path.dirname(os.path.abspath(__file__)),
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True
+        )
+        print("Successful pipeline execution:\n", result.stdout)
+        return history + [
+            {"role": "user", "content": f"(Uploaded file: {filename})"},
+            {"role": "assistant", "content": f"Vector database update（{filename}）"}
+        ]
+    except subprocess.CalledProcessError as e:
+        print("pipeline execution failure:\n", e.stderr)
+        return history + [
+            {"role": "user", "content": f"(Uploaded file: {filename})"},
+            {"role": "assistant", "content": f"Vector database update failed{e.stderr}"}
+        ]
 
 
 @app.callback(
     [Output("subject-dropdown", "options"),
      Output("subject-dropdown", "value"),
-     Output("subject-dropdown", "style")],  # 新增动态 style 输出
+     Output("subject-dropdown", "style")],
     Input("interval-update-subjects", "n_intervals"),
     State("subject-dropdown", "value"),
     prevent_initial_call=False
@@ -511,42 +548,26 @@ def update_subject_dropdown(n_intervals, current_value):
     if not options:
         return [], None, {'width': '200px'}
 
-    # 提取所有 label
+    # Extract all labels
     labels = [opt['label'] for opt in options]
-    # 计算最长 label 的字符长度
+    # Calculate the character length of the longest label
     max_label_length = max(len(label) for label in labels)
 
-    # 根据最长 label 估算一个合适的宽度
-    # 比如每个字符大概 10px + 基础 padding 60px
+    # Estimate a suitable width based on the longest label
+    # say about 10px per character + base padding 60px
     estimated_width = 10 * max_label_length + 60
-    estimated_width = min(max(estimated_width, 200), 600)  # 限制在200~600px之间
+    estimated_width = min(max(estimated_width, 200), 600)  # Restricted between 200~600px
 
     dynamic_style = {
         'width': f'{estimated_width}px'
     }
 
-    # 判断 value 是否还能保留
+    # Determine if value can be retained
     new_values = [opt['value'] for opt in options]
     if current_value in new_values:
         return options, current_value, dynamic_style
     else:
         return options, options[0]['value'], dynamic_style
-
-
-# @app.callback(
-#     [Output("prompt-box", "children"),
-#      Output("prompt-input", "value")],
-#     Input("submit-btn", "n_clicks"),
-#     State("user-input", "value"),
-#     prevent_initial_call=True
-# )
-# def update_prompt(n_clicks, prompt_input):
-#     try:
-#         filled_prompt = prompt_input.format(q=" ", source=' ')
-#     except (KeyError, ValueError, AttributeError) as e:
-#         return html.P("❌ Prompt 格式错误：请输入包含 {q} 的有效模板字符串。", style={"color": "red"}), ""
-#
-#     return html.P(f"✅ Updated Prompt：{prompt_input}", style={"color": "#333"}), ""
 
 
 # 回调
@@ -585,6 +606,32 @@ def sync_data_to_server(convos):
 
 
 atexit.register(save_to_file)
+
+from flask import request
+server = app.server  # 获取 Flask 实例
+
+# 注册 Flask 路由（保存数据的接口）
+@server.route('/save_on_close', methods=['POST'])
+def save_on_close():
+    try:
+        data = request.get_data(as_text=True)
+        saved_conversation = json.loads(data)
+
+        print("📴 Window closed")
+        os.makedirs("data_history", exist_ok=True)
+
+        time_stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        convo_file = f"data_history/conversation_{time_stamp}.json"
+
+        with open(convo_file, "w", encoding="utf-8") as f:
+            json.dump(saved_conversation, f, ensure_ascii=False, indent=2)
+
+        print(f"✅ History saved to {convo_file}")
+        return '', 204  # Beacon 成功响应，无内容
+
+    except Exception as e:
+        print("❌ Failed to save:", e)
+        return 'Internal Server Error', 500
 
 if __name__ == "__main__":
     app.run(debug=True)
